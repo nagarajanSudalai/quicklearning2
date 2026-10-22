@@ -6,7 +6,7 @@ export function Header() {
       <div className="site-header__inner">
         <div className="logo">
           <span className="logo__word">
-            Min<span style={{ color: '#ff7a3d' }}>d</span>or<span style={{ color: '#ff4f8b' }}>a</span>
+            Quick<span style={{ color: '#ff7a3d' }}>S</span>te<span style={{ color: '#ff4f8b' }}>p</span>
           </span>
           <span className="logo__tagline">Learn · Think · Discover</span>
         </div>
@@ -17,7 +17,6 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <button className="btn-3d btn-get-app">Get the App</button>
       </div>
     </header>
   );

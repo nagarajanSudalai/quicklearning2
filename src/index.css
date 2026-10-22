@@ -24,8 +24,6 @@ button { font: inherit; }
 .nav-link { padding: 8px 16px; border-radius: 999px; color: #1c1a3a; font-weight: 700; font-size: 15px; }
 .nav-link:hover { background: #f4f2ff; color: #1c1a3a; }
 .nav-link--active, .nav-link--active:hover { background: #eeebff; color: #3b2fd0; font-weight: 800; }
-.btn-get-app { flex: none; white-space: nowrap; font-family: Nunito; font-weight: 800; font-size: 15px; padding: 12px 22px; border-radius: 14px; box-shadow: 0 4px 0 #2f24a8; }
-.btn-get-app:active { transform: translateY(3px); box-shadow: 0 1px 0 #2f24a8; }
 
 /* Hero */
 .hero { background: linear-gradient(180deg, #f1eeff 0%, #fff6ee 100%); position: relative; overflow: hidden; }

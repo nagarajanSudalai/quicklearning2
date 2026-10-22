@@ -15,7 +15,7 @@ export function Features({ animations }: { animations: boolean }) {
         <div className="features__copy">
           <h2 className="features__title">Learn, Play, Practice All in One Place</h2>
           <p className="features__lead">
-            From interactive lessons to exciting puzzles and adaptive practice, Mindora keeps children engaged while building real skills.
+            From interactive lessons to exciting puzzles and adaptive practice, QuickStep keeps children engaged while building real skills.
           </p>
           <div className="features__points">
             {POINTS.map((pt) => (

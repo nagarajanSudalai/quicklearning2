@@ -16,7 +16,7 @@ export default function App({ animations = true }: { animations?: boolean }) {
       </main>
       <footer className="site-footer">
         <div className="site-footer__inner">
-          <span>© 2026 Mindora</span>
+          <span>© 2026 QuickStep</span>
           <span className="site-footer__links">
             <a href="#">Privacy</a>
             <a href="#">For Schools</a>
