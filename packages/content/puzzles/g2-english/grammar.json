@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g2-grammar-01",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 1,
+    "prompt": "This is ___ fish.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ fish.",
+      "picture": "🐟",
+      "rule": "article",
+      "base": "fish"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g2-grammar-02",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 1,
+    "prompt": "This is ___ umbrella.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ umbrella.",
+      "picture": "☂️",
+      "rule": "article",
+      "base": "umbrella"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "an"
+  },
+  {
+    "id": "g2-grammar-03",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 1,
+    "prompt": "This is ___ tree.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ tree.",
+      "picture": "🌳",
+      "rule": "article",
+      "base": "tree"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g2-grammar-04",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 1,
+    "prompt": "This is ___ book.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ book.",
+      "picture": "📖",
+      "rule": "article",
+      "base": "book"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g2-grammar-05",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 1,
+    "prompt": "This is ___ banana.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ banana.",
+      "picture": "🍌",
+      "rule": "article",
+      "base": "banana"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g2-grammar-06",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 1,
+    "prompt": "This is ___ ball.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ ball.",
+      "picture": "⚽",
+      "rule": "article",
+      "base": "ball"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g2-grammar-07",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 1,
+    "prompt": "This is ___ octopus.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ octopus.",
+      "picture": "🐙",
+      "rule": "article",
+      "base": "octopus"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "an"
+  },
+  {
+    "id": "g2-grammar-08",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 2,
+    "prompt": "The dogs ___ barking.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The dogs ___ barking.",
+      "picture": "🐶🐶",
+      "rule": "is-are",
+      "base": "The dogs"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "are"
+  },
+  {
+    "id": "g2-grammar-09",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 2,
+    "prompt": "The mango ___ sweet.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The mango ___ sweet.",
+      "picture": "🥭",
+      "rule": "is-are",
+      "base": "The mango"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "is"
+  },
+  {
+    "id": "g2-grammar-10",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 2,
+    "prompt": "The flowers ___ red.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The flowers ___ red.",
+      "picture": "🌹🌹",
+      "rule": "is-are",
+      "base": "The flowers"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "are"
+  },
+  {
+    "id": "g2-grammar-11",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 2,
+    "prompt": "The mice ___ small.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The mice ___ small.",
+      "picture": "🐭🐭",
+      "rule": "is-are",
+      "base": "The mice"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "are"
+  },
+  {
+    "id": "g2-grammar-12",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 2,
+    "prompt": "The birds ___ flying.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The birds ___ flying.",
+      "picture": "🐦🐦",
+      "rule": "is-are",
+      "base": "The birds"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "are"
+  },
+  {
+    "id": "g2-grammar-13",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 2,
+    "prompt": "The sun ___ hot.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The sun ___ hot.",
+      "picture": "☀️",
+      "rule": "is-are",
+      "base": "The sun"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "is"
+  },
+  {
+    "id": "g2-grammar-14",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 2,
+    "prompt": "The baby ___ crying.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The baby ___ crying.",
+      "picture": "👶",
+      "rule": "is-are",
+      "base": "The baby"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "is"
+  },
+  {
+    "id": "g2-grammar-15",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 3,
+    "prompt": "This is ___ elephant.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ elephant.",
+      "picture": "🐘",
+      "rule": "article",
+      "base": "elephant"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "an"
+  },
+  {
+    "id": "g2-grammar-16",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 3,
+    "prompt": "The mangoes ___ sweet.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The mangoes ___ sweet.",
+      "picture": "🥭🥭",
+      "rule": "is-are",
+      "base": "The mangoes"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "are"
+  },
+  {
+    "id": "g2-grammar-17",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 3,
+    "prompt": "This is ___ onion.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ onion.",
+      "picture": "🧅",
+      "rule": "article",
+      "base": "onion"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "an"
+  },
+  {
+    "id": "g2-grammar-18",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 3,
+    "prompt": "The bird ___ flying.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The bird ___ flying.",
+      "picture": "🐦",
+      "rule": "is-are",
+      "base": "The bird"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "is"
+  },
+  {
+    "id": "g2-grammar-19",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 3,
+    "prompt": "This is ___ dog.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "This is ___ dog.",
+      "picture": "🐶",
+      "rule": "article",
+      "base": "dog"
+    },
+    "options": [
+      "a",
+      "an"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g2-grammar-20",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-grammar",
+    "difficulty": 3,
+    "prompt": "The fish ___ swimming.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The fish ___ swimming.",
+      "picture": "🐟",
+      "rule": "is-are",
+      "base": "The fish"
+    },
+    "options": [
+      "is",
+      "are"
+    ],
+    "answer": "is"
+  }
+]

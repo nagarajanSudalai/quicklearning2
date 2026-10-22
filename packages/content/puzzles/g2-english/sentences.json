@@ -1,0 +1,532 @@
+[
+  {
+    "id": "g2-sentences-01",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 1,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "We",
+        "play",
+        "cricket."
+      ],
+      "tiles": [
+        "play",
+        "cricket.",
+        "We"
+      ],
+      "picture": "🏏",
+      "say": "We play cricket.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-02",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 1,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "Birds",
+        "can",
+        "fly."
+      ],
+      "tiles": [
+        "fly.",
+        "can",
+        "Birds"
+      ],
+      "picture": "🐦",
+      "say": "Birds can fly.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-03",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 1,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "Dogs",
+        "can",
+        "bark."
+      ],
+      "tiles": [
+        "can",
+        "Dogs",
+        "bark."
+      ],
+      "picture": "🐶",
+      "say": "Dogs can bark.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-04",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 1,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "I",
+        "like",
+        "mangoes."
+      ],
+      "tiles": [
+        "like",
+        "I",
+        "mangoes."
+      ],
+      "picture": "🥭",
+      "say": "I like mangoes.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-05",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 1,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "The",
+        "sun",
+        "shines."
+      ],
+      "tiles": [
+        "shines.",
+        "The",
+        "sun"
+      ],
+      "picture": "☀️",
+      "say": "The sun shines.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-06",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 1,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "Ravi",
+        "reads",
+        "books."
+      ],
+      "tiles": [
+        "books.",
+        "Ravi",
+        "reads"
+      ],
+      "picture": "📚",
+      "say": "Ravi reads books.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-07",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 1,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "Fish",
+        "can",
+        "swim."
+      ],
+      "tiles": [
+        "swim.",
+        "Fish",
+        "can"
+      ],
+      "picture": "🐟",
+      "say": "Fish can swim.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-08",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 2,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "I",
+        "drink",
+        "warm",
+        "milk."
+      ],
+      "tiles": [
+        "I",
+        "drink",
+        "milk.",
+        "warm"
+      ],
+      "picture": "🥛",
+      "say": "I drink warm milk.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-09",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 2,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "Meena",
+        "has",
+        "a",
+        "teddy."
+      ],
+      "tiles": [
+        "a",
+        "Meena",
+        "teddy.",
+        "has"
+      ],
+      "picture": "🧸",
+      "say": "Meena has a teddy.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-10",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 2,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "We",
+        "go",
+        "to",
+        "school."
+      ],
+      "tiles": [
+        "go",
+        "school.",
+        "to",
+        "We"
+      ],
+      "picture": "🏫",
+      "say": "We go to school.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-11",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 2,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "The",
+        "cat",
+        "is",
+        "sleeping."
+      ],
+      "tiles": [
+        "sleeping.",
+        "cat",
+        "is",
+        "The"
+      ],
+      "picture": "🐱",
+      "say": "The cat is sleeping.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-12",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 2,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "My",
+        "kite",
+        "is",
+        "red."
+      ],
+      "tiles": [
+        "kite",
+        "is",
+        "red.",
+        "My"
+      ],
+      "picture": "🪁",
+      "say": "My kite is red.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-13",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 2,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "The",
+        "baby",
+        "is",
+        "crying."
+      ],
+      "tiles": [
+        "is",
+        "The",
+        "crying.",
+        "baby"
+      ],
+      "picture": "👶",
+      "say": "The baby is crying.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-14",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 2,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "The",
+        "bus",
+        "is",
+        "yellow."
+      ],
+      "tiles": [
+        "yellow.",
+        "bus",
+        "The",
+        "is"
+      ],
+      "picture": "🚌",
+      "say": "The bus is yellow.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-15",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 3,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "My",
+        "mother",
+        "cooks",
+        "tasty",
+        "food."
+      ],
+      "tiles": [
+        "cooks",
+        "My",
+        "under",
+        "mother",
+        "tasty",
+        "food."
+      ],
+      "picture": "🍲",
+      "say": "My mother cooks tasty food.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-16",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 3,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "The",
+        "cat",
+        "is",
+        "on",
+        "the",
+        "mat."
+      ],
+      "tiles": [
+        "on",
+        "is",
+        "sing",
+        "cat",
+        "the",
+        "mat.",
+        "The"
+      ],
+      "picture": "🐈",
+      "say": "The cat is on the mat.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-17",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 3,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "I",
+        "eat",
+        "rice",
+        "and",
+        "dal."
+      ],
+      "tiles": [
+        "dal.",
+        "I",
+        "and",
+        "green",
+        "rice",
+        "eat"
+      ],
+      "picture": "🍛",
+      "say": "I eat rice and dal.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-18",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 3,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "The",
+        "parrot",
+        "is",
+        "in",
+        "the",
+        "tree."
+      ],
+      "tiles": [
+        "tree.",
+        "The",
+        "is",
+        "under",
+        "in",
+        "the",
+        "parrot"
+      ],
+      "picture": "🦜",
+      "say": "The parrot is in the tree.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-19",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 3,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "The",
+        "boy",
+        "is",
+        "flying",
+        "a",
+        "kite."
+      ],
+      "tiles": [
+        "a",
+        "boy",
+        "under",
+        "is",
+        "kite.",
+        "flying",
+        "The"
+      ],
+      "picture": "🪁",
+      "say": "The boy is flying a kite.",
+      "joiner": " "
+    }
+  },
+  {
+    "id": "g2-sentences-20",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-sentences",
+    "difficulty": 3,
+    "prompt": "Put the words in order.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "We",
+        "go",
+        "to",
+        "the",
+        "park."
+      ],
+      "tiles": [
+        "park.",
+        "We",
+        "the",
+        "to",
+        "go",
+        "jump"
+      ],
+      "picture": "🌳",
+      "say": "We go to the park.",
+      "joiner": " "
+    }
+  }
+]

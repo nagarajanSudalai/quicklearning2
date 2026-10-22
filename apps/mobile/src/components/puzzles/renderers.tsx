@@ -191,6 +191,23 @@ export const RENDERERS: Renderers = {
     columns: () => 3,
     label: (n) => `${n} rupees`,
   },
+  'fill-blank': {
+    Stimulus: ({ puzzle }) => {
+      const [before, after] = puzzle.payload.sentence.split('___');
+      return (
+        <View style={[styles.panel, styles.pictureBox]}>
+          {puzzle.payload.picture && <Text style={styles.picture}>{puzzle.payload.picture}</Text>}
+          <View style={styles.sentence}>
+            <Text style={styles.sentenceText}>{before.trim()}</Text>
+            <View style={[styles.blank, styles.wordBlank]}><Text style={styles.blankText}>?</Text></View>
+            {after.trim() ? <Text style={styles.sentenceText}>{after.trim()}</Text> : null}
+          </View>
+        </View>
+      );
+    },
+    option: (w) => <Text style={styles.word} adjustsFontSizeToFit numberOfLines={1}>{w}</Text>,
+    columns: (p) => p.options.length,
+  },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,
     columns: (p) => (p.options.length === 5 ? 3 : 2),
@@ -233,6 +250,9 @@ const styles = StyleSheet.create({
   optionPicture: { fontSize: 44, lineHeight: 54 },
   seqNumber: { fontFamily: font.display, fontSize: 30, color: colors.ink, minWidth: 40, textAlign: 'center' },
   timeOption: { fontFamily: font.displaySemi, fontSize: 22, color: colors.ink, textAlign: 'center' },
+  sentence: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 6 },
+  sentenceText: { fontFamily: font.displaySemi, fontSize: 24, color: colors.ink },
+  wordBlank: { width: 70, height: 40 },
   oddItem: { fontSize: 56, lineHeight: 68 },
   wordSmall: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
 });

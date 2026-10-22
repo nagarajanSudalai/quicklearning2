@@ -37,6 +37,7 @@ export function speakable(text: string) {
     .replace(/₹\s?(\d+)/g, (_, n) => `${n} ${n === '1' ? 'rupee' : 'rupees'}`)
     .replace(/\s*=\s*\?/g, ' equals what?')
     .replace(/★/g, ' stars')
+    .replace(/_{2,}/g, ' blank ')
     .replace(/\s+/g, ' ')
     .trim();
 }

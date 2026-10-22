@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g2-opposites-01",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 1,
+    "prompt": "The opposite of happy is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of happy is ___.",
+      "rule": "opposite",
+      "base": "happy"
+    },
+    "options": [
+      "early",
+      "sad",
+      "wet"
+    ],
+    "answer": "sad"
+  },
+  {
+    "id": "g2-opposites-02",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 1,
+    "prompt": "The opposite of fast is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of fast is ___.",
+      "rule": "opposite",
+      "base": "fast"
+    },
+    "options": [
+      "push",
+      "slow",
+      "tall"
+    ],
+    "answer": "slow"
+  },
+  {
+    "id": "g2-opposites-03",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 1,
+    "prompt": "The opposite of full is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of full is ___.",
+      "rule": "opposite",
+      "base": "full"
+    },
+    "options": [
+      "near",
+      "empty",
+      "fast"
+    ],
+    "answer": "empty"
+  },
+  {
+    "id": "g2-opposites-04",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 1,
+    "prompt": "The opposite of tall is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of tall is ___.",
+      "rule": "opposite",
+      "base": "tall"
+    },
+    "options": [
+      "small",
+      "cold",
+      "short"
+    ],
+    "answer": "short"
+  },
+  {
+    "id": "g2-opposites-05",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 1,
+    "prompt": "The opposite of hot is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of hot is ___.",
+      "rule": "opposite",
+      "base": "hot"
+    },
+    "options": [
+      "full",
+      "cold",
+      "wet"
+    ],
+    "answer": "cold"
+  },
+  {
+    "id": "g2-opposites-06",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 1,
+    "prompt": "The opposite of wet is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of wet is ___.",
+      "rule": "opposite",
+      "base": "wet"
+    },
+    "options": [
+      "dry",
+      "late",
+      "clean"
+    ],
+    "answer": "dry"
+  },
+  {
+    "id": "g2-opposites-07",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 1,
+    "prompt": "The opposite of day is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of day is ___.",
+      "rule": "opposite",
+      "base": "day"
+    },
+    "options": [
+      "night",
+      "far",
+      "happy"
+    ],
+    "answer": "night"
+  },
+  {
+    "id": "g2-opposites-08",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 2,
+    "prompt": "The opposite of rich is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of rich is ___.",
+      "rule": "opposite",
+      "base": "rich"
+    },
+    "options": [
+      "poor",
+      "in",
+      "tall"
+    ],
+    "answer": "poor"
+  },
+  {
+    "id": "g2-opposites-09",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 2,
+    "prompt": "The opposite of near is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of near is ___.",
+      "rule": "opposite",
+      "base": "near"
+    },
+    "options": [
+      "pull",
+      "fast",
+      "far"
+    ],
+    "answer": "far"
+  },
+  {
+    "id": "g2-opposites-10",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 2,
+    "prompt": "The opposite of early is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of early is ___.",
+      "rule": "opposite",
+      "base": "early"
+    },
+    "options": [
+      "cry",
+      "late",
+      "inside"
+    ],
+    "answer": "late"
+  },
+  {
+    "id": "g2-opposites-11",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 2,
+    "prompt": "The opposite of hard is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of hard is ___.",
+      "rule": "opposite",
+      "base": "hard"
+    },
+    "options": [
+      "soft",
+      "hot",
+      "take"
+    ],
+    "answer": "soft"
+  },
+  {
+    "id": "g2-opposites-12",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 2,
+    "prompt": "The opposite of heavy is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of heavy is ___.",
+      "rule": "opposite",
+      "base": "heavy"
+    },
+    "options": [
+      "thick",
+      "light",
+      "out"
+    ],
+    "answer": "light"
+  },
+  {
+    "id": "g2-opposites-13",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 2,
+    "prompt": "The opposite of clean is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of clean is ___.",
+      "rule": "opposite",
+      "base": "clean"
+    },
+    "options": [
+      "come",
+      "dirty",
+      "fast"
+    ],
+    "answer": "dirty"
+  },
+  {
+    "id": "g2-opposites-14",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 2,
+    "prompt": "The opposite of old is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of old is ___.",
+      "rule": "opposite",
+      "base": "old"
+    },
+    "options": [
+      "full",
+      "new",
+      "cold"
+    ],
+    "answer": "new"
+  },
+  {
+    "id": "g2-opposites-15",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 3,
+    "prompt": "The opposite of inside is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of inside is ___.",
+      "rule": "opposite",
+      "base": "inside"
+    },
+    "options": [
+      "down",
+      "clean",
+      "outside"
+    ],
+    "answer": "outside"
+  },
+  {
+    "id": "g2-opposites-16",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 3,
+    "prompt": "The opposite of push is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of push is ___.",
+      "rule": "opposite",
+      "base": "push"
+    },
+    "options": [
+      "cold",
+      "late",
+      "pull"
+    ],
+    "answer": "pull"
+  },
+  {
+    "id": "g2-opposites-17",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 3,
+    "prompt": "The opposite of in is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of in is ___.",
+      "rule": "opposite",
+      "base": "in"
+    },
+    "options": [
+      "full",
+      "up",
+      "out"
+    ],
+    "answer": "out"
+  },
+  {
+    "id": "g2-opposites-18",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 3,
+    "prompt": "The opposite of give is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of give is ___.",
+      "rule": "opposite",
+      "base": "give"
+    },
+    "options": [
+      "rich",
+      "take",
+      "down"
+    ],
+    "answer": "take"
+  },
+  {
+    "id": "g2-opposites-19",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 3,
+    "prompt": "The opposite of open is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of open is ___.",
+      "rule": "opposite",
+      "base": "open"
+    },
+    "options": [
+      "happy",
+      "close",
+      "push"
+    ],
+    "answer": "close"
+  },
+  {
+    "id": "g2-opposites-20",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-opposites",
+    "difficulty": 3,
+    "prompt": "The opposite of come is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The opposite of come is ___.",
+      "rule": "opposite",
+      "base": "come"
+    },
+    "options": [
+      "go",
+      "hard",
+      "near"
+    ],
+    "answer": "go"
+  }
+]

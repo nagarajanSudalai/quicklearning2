@@ -6,6 +6,7 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CATEGORIES, oddCandidates } from '../src/categories.ts';
 import { timeLabel } from '../src/time.ts';
+import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
@@ -101,6 +102,16 @@ function check(p: any): string | null {
       const total = [...q.coins, ...q.notes].reduce((s: number, x: number) => s + x, 0);
       return total === p.answer ? null : `coins and notes add up to ₹${total}`;
     }
+    case 'fill-blank': {
+      if ((q.sentence.match(/___/g) ?? []).length !== 1) return 'sentence needs exactly one ___';
+      let want: string | undefined;
+      if (q.rule === 'plural') want = PLURALS[q.base]?.plural;
+      else if (q.rule === 'opposite') want = OPPOSITES.find(([w]) => w === q.base)?.[1];
+      else if (q.rule === 'article') want = article(q.base);
+      else if (q.rule === 'is-are') { const s = IS_ARE.find((x) => x.subject === q.base); want = s ? (s.plural ? 'are' : 'is') : undefined; }
+      if (!want) return `no ${q.rule} rule for "${q.base}"`;
+      return want === p.answer ? null : `answer should be "${want}"`;
+    }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);
       if (!group) return `unknown group ${q.group}`;
@@ -150,6 +161,19 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     for (const c of q.cards) counts.set(c, (counts.get(c) ?? 0) + 1);
     if ([...counts.values()].some((n) => n !== 2)) return 'every picture must appear exactly twice';
     return q.cards.length % q.cols === 0 ? null : 'cards must fill the grid';
+  },
+  build(q) {
+    if (!q.answer.length) return 'nothing to build';
+    if (q.answer.join(q.joiner) !== q.say) return `answer "${q.answer.join(q.joiner)}" doesn't match "${q.say}"`;
+    // Every answer piece must be on a tile (tiles may include one spare).
+    const left = [...q.tiles];
+    for (const t of q.answer) {
+      const k = left.indexOf(t);
+      if (k === -1) return `no tile for "${t}"`;
+      left.splice(k, 1);
+    }
+    if (left.length > 1) return 'at most one spare tile';
+    return q.tiles.slice(0, q.answer.length).join(q.joiner) === q.say ? 'tiles are already in order' : null;
   },
   maze(q) {
     const { rows, cols, cells, start, goal } = q;

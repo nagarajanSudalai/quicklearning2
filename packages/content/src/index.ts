@@ -21,6 +21,11 @@ import g2SkipCounting from '../puzzles/g2-maths/skip-counting.json';
 import g2Groups from '../puzzles/g2-maths/groups.json';
 import g2Time from '../puzzles/g2-maths/time.json';
 import g2Money from '../puzzles/g2-maths/money.json';
+import g2Plurals from '../puzzles/g2-english/plurals.json';
+import g2Opposites from '../puzzles/g2-english/opposites.json';
+import g2Grammar from '../puzzles/g2-english/grammar.json';
+import g2Spelling from '../puzzles/g2-english/spelling.json';
+import g2Sentences from '../puzzles/g2-english/sentences.json';
 
 export * from './types';
 export * from './tokens';
@@ -29,6 +34,7 @@ export * from './voice';
 export * from './words';
 export * from './categories';
 export * from './time';
+export * from './words2';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -37,6 +43,7 @@ export const PUZZLES = [
   ...oddOneOut, ...crossword,
   ...sorting, ...memory, ...mazes,
   ...g2PlaceValue, ...g2Addition, ...g2Subtraction, ...g2SkipCounting, ...g2Groups, ...g2Time, ...g2Money,
+  ...g2Plurals, ...g2Opposites, ...g2Grammar, ...g2Spelling, ...g2Sentences,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

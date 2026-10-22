@@ -126,6 +126,14 @@ export type MoneyPuzzle = Base & {
   answer: number;
 };
 
+/** A sentence with a blank (___) to fill; `rule` and `base` let the checker work out the answer. */
+export type FillBlankPuzzle = Base & {
+  type: 'fill-blank';
+  payload: { sentence: string; picture?: string; rule: 'plural' | 'opposite' | 'article' | 'is-are'; base: string };
+  options: string[];
+  answer: string;
+};
+
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
 
 export type CrosswordWord = { word: string; picture: string; row: number; col: number; dir: 'across' | 'down' };
@@ -159,6 +167,12 @@ export type MazePuzzle = Base & {
   payload: { rows: number; cols: number; cells: number[]; start: [number, number]; goal: [number, number]; hero: string; target: string };
 };
 
+/** Tap tiles in order to spell a word (`joiner` '') or build a sentence (`joiner` ' '). */
+export type BuildPuzzle = Base & {
+  type: 'build';
+  payload: { answer: string[]; tiles: string[]; picture: string; say: string; joiner: '' | ' ' };
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -174,10 +188,11 @@ export type ChoicePuzzle =
   | PlaceValuePuzzle
   | NumberPatternPuzzle
   | ClockPuzzle
-  | MoneyPuzzle;
+  | MoneyPuzzle
+  | FillBlankPuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -185,7 +200,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {

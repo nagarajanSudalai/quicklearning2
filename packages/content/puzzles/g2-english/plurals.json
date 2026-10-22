@@ -1,0 +1,418 @@
+[
+  {
+    "id": "g2-plurals-01",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 1,
+    "prompt": "One tree, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One tree, two ___.",
+      "picture": "🌳 🌳",
+      "rule": "plural",
+      "base": "tree"
+    },
+    "options": [
+      "trees",
+      "tree"
+    ],
+    "answer": "trees"
+  },
+  {
+    "id": "g2-plurals-02",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 1,
+    "prompt": "One kite, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One kite, two ___.",
+      "picture": "🪁 🪁",
+      "rule": "plural",
+      "base": "kite"
+    },
+    "options": [
+      "kites",
+      "kite"
+    ],
+    "answer": "kites"
+  },
+  {
+    "id": "g2-plurals-03",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 1,
+    "prompt": "One dog, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One dog, two ___.",
+      "picture": "🐶 🐶",
+      "rule": "plural",
+      "base": "dog"
+    },
+    "options": [
+      "dog",
+      "dogs",
+      "doges"
+    ],
+    "answer": "dogs"
+  },
+  {
+    "id": "g2-plurals-04",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 1,
+    "prompt": "One pen, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One pen, two ___.",
+      "picture": "🖊️ 🖊️",
+      "rule": "plural",
+      "base": "pen"
+    },
+    "options": [
+      "pens",
+      "penes",
+      "pen"
+    ],
+    "answer": "pens"
+  },
+  {
+    "id": "g2-plurals-05",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 1,
+    "prompt": "One ball, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One ball, two ___.",
+      "picture": "⚽ ⚽",
+      "rule": "plural",
+      "base": "ball"
+    },
+    "options": [
+      "ball",
+      "balls",
+      "balles"
+    ],
+    "answer": "balls"
+  },
+  {
+    "id": "g2-plurals-06",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 1,
+    "prompt": "One cat, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One cat, two ___.",
+      "picture": "🐱 🐱",
+      "rule": "plural",
+      "base": "cat"
+    },
+    "options": [
+      "cat",
+      "cats",
+      "cates"
+    ],
+    "answer": "cats"
+  },
+  {
+    "id": "g2-plurals-07",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 1,
+    "prompt": "One star, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One star, two ___.",
+      "picture": "⭐ ⭐",
+      "rule": "plural",
+      "base": "star"
+    },
+    "options": [
+      "star",
+      "stars"
+    ],
+    "answer": "stars"
+  },
+  {
+    "id": "g2-plurals-08",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 2,
+    "prompt": "One box, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One box, two ___.",
+      "picture": "📦 📦",
+      "rule": "plural",
+      "base": "box"
+    },
+    "options": [
+      "boxs",
+      "box",
+      "boxes"
+    ],
+    "answer": "boxes"
+  },
+  {
+    "id": "g2-plurals-09",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 2,
+    "prompt": "One watch, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One watch, two ___.",
+      "picture": "⌚ ⌚",
+      "rule": "plural",
+      "base": "watch"
+    },
+    "options": [
+      "watchs",
+      "watch",
+      "watches"
+    ],
+    "answer": "watches"
+  },
+  {
+    "id": "g2-plurals-10",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 2,
+    "prompt": "One bus, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One bus, two ___.",
+      "picture": "🚌 🚌",
+      "rule": "plural",
+      "base": "bus"
+    },
+    "options": [
+      "buses",
+      "bus",
+      "buss"
+    ],
+    "answer": "buses"
+  },
+  {
+    "id": "g2-plurals-11",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 2,
+    "prompt": "One glass, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One glass, two ___.",
+      "picture": "🥛 🥛",
+      "rule": "plural",
+      "base": "glass"
+    },
+    "options": [
+      "glasses",
+      "glasss",
+      "glass"
+    ],
+    "answer": "glasses"
+  },
+  {
+    "id": "g2-plurals-12",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 2,
+    "prompt": "One peach, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One peach, two ___.",
+      "picture": "🍑 🍑",
+      "rule": "plural",
+      "base": "peach"
+    },
+    "options": [
+      "peachs",
+      "peach",
+      "peaches"
+    ],
+    "answer": "peaches"
+  },
+  {
+    "id": "g2-plurals-13",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 2,
+    "prompt": "One dress, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One dress, two ___.",
+      "picture": "👗 👗",
+      "rule": "plural",
+      "base": "dress"
+    },
+    "options": [
+      "dresss",
+      "dress",
+      "dresses"
+    ],
+    "answer": "dresses"
+  },
+  {
+    "id": "g2-plurals-14",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 2,
+    "prompt": "One fox, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One fox, two ___.",
+      "picture": "🦊 🦊",
+      "rule": "plural",
+      "base": "fox"
+    },
+    "options": [
+      "foxes",
+      "fox",
+      "foxs"
+    ],
+    "answer": "foxes"
+  },
+  {
+    "id": "g2-plurals-15",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 3,
+    "prompt": "One man, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One man, two ___.",
+      "picture": "👨 👨",
+      "rule": "plural",
+      "base": "man"
+    },
+    "options": [
+      "men",
+      "mans",
+      "mens"
+    ],
+    "answer": "men"
+  },
+  {
+    "id": "g2-plurals-16",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 3,
+    "prompt": "One child, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One child, two ___.",
+      "picture": "🧒 🧒",
+      "rule": "plural",
+      "base": "child"
+    },
+    "options": [
+      "childrens",
+      "childs",
+      "children"
+    ],
+    "answer": "children"
+  },
+  {
+    "id": "g2-plurals-17",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 3,
+    "prompt": "One sheep, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One sheep, two ___.",
+      "picture": "🐑 🐑",
+      "rule": "plural",
+      "base": "sheep"
+    },
+    "options": [
+      "sheep",
+      "sheeps",
+      "sheepes"
+    ],
+    "answer": "sheep"
+  },
+  {
+    "id": "g2-plurals-18",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 3,
+    "prompt": "One woman, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One woman, two ___.",
+      "picture": "👩 👩",
+      "rule": "plural",
+      "base": "woman"
+    },
+    "options": [
+      "womens",
+      "women",
+      "womans"
+    ],
+    "answer": "women"
+  },
+  {
+    "id": "g2-plurals-19",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 3,
+    "prompt": "One foot, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One foot, two ___.",
+      "picture": "🦶 🦶",
+      "rule": "plural",
+      "base": "foot"
+    },
+    "options": [
+      "feet",
+      "feets",
+      "foots"
+    ],
+    "answer": "feet"
+  },
+  {
+    "id": "g2-plurals-20",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-plurals",
+    "difficulty": 3,
+    "prompt": "One fish, two ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "One fish, two ___.",
+      "picture": "🐟 🐟",
+      "rule": "plural",
+      "base": "fish"
+    },
+    "options": [
+      "fishs",
+      "fish"
+    ],
+    "answer": "fish"
+  }
+]

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, type CrosswordPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
+import { PHRASES, type BuildPuzzle, type CrosswordPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
@@ -22,6 +22,7 @@ export const PLAYERS: Players = {
   'sort-into-groups': Sorting,
   'memory-match': Memory,
   maze: Maze,
+  build: Build,
 };
 
 /** A tappable box that wiggles each time `wiggle` increments. */
@@ -223,6 +224,64 @@ function MemoryCard({ face, up, matched, onPress, width, index }: { face: string
   );
 }
 
+// ---------- Spell it / Make a sentence ----------
+
+function Build({ puzzle, sound, onSolved, onMistake }: PlayerProps<BuildPuzzle>) {
+  const { answer, tiles, picture, say: line, joiner } = puzzle.payload;
+  const [used, setUsed] = useState<number[]>([]);
+  const [mistakes, setMistakes] = useState(0);
+  const [wiggle, setWiggle] = useState<{ k: number; n: number }>({ k: -1, n: 0 });
+  const done = used.length === answer.length;
+  const words = joiner === ' ';
+
+  const tap = (k: number) => {
+    if (done || used.includes(k)) return;
+    if (tiles[k] === answer[used.length]) {
+      buzz('right');
+      const next = [...used, k];
+      setUsed(next);
+      if (next.length === answer.length) {
+        say(line, sound);
+        onSolved(mistakes === 0);
+      }
+    } else {
+      buzz('wrong');
+      setMistakes((m) => m + 1);
+      setWiggle((w) => ({ k, n: w.n + 1 }));
+      onMistake();
+    }
+  };
+
+  return (
+    <View style={{ gap: 14 }}>
+      <Pressable onPress={() => say(line, true)} accessibilityRole="button" accessibilityLabel={words ? 'Hear the sentence' : `Hear the word ${line}`}>
+        <View style={styles.panel}>
+          <Text style={{ fontSize: 60, lineHeight: 74 }}>{picture}</Text>
+          <Text style={styles.hint}>🔈 tap to hear</Text>
+        </View>
+      </Pressable>
+      <View style={styles.slots}>
+        {answer.map((_, s) => (
+          <View key={s} style={[words ? styles.wordSlot : styles.letterSlot, s < used.length && styles.slotDone, s === used.length && !done && styles.slotActive]}>
+            <Text style={words ? styles.wordSlotText : styles.letterKeyText}>{s < used.length ? tiles[used[s]] : ''}</Text>
+          </View>
+        ))}
+      </View>
+      <View style={styles.letterRow}>
+        {tiles.map((t, k) =>
+          used.includes(k) ? (
+            <View key={k} style={[words ? styles.wordTile : styles.letterKey, styles.tileGone]} />
+          ) : (
+            <Tap key={k} onPress={() => tap(k)} wiggle={wiggle.k === k ? wiggle.n : 0} label={t} disabled={done} style={words ? styles.wordTile : styles.letterKey}>
+              <Text style={words ? styles.wordSlotText : styles.letterKeyText}>{t}</Text>
+            </Tap>
+          ),
+        )}
+      </View>
+    </View>
+  );
+}
+
 // ---------- Maze ----------
 
 const MOVES = { up: [-1, 0, 1], right: [0, 1, 2], down: [1, 0, 4], left: [0, -1, 8] } as const;
@@ -343,6 +402,15 @@ const styles = StyleSheet.create({
   letterRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, justifyContent: 'center' },
   letterKey: { width: 56, height: 60 },
   letterKeyText: { fontFamily: font.display, fontSize: 30, color: colors.ink },
+  hint: { fontFamily: font.bodyBold, fontSize: 12, color: colors.muted },
+  slots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' },
+  letterSlot: { width: 46, height: 52, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },
+  wordSlot: { minWidth: 56, height: 44, paddingHorizontal: 8, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },
+  slotActive: { borderStyle: 'solid', borderColor: colors.brand, backgroundColor: colors.brandTint },
+  slotDone: { borderStyle: 'solid', borderColor: colors.right, backgroundColor: colors.rightTint },
+  wordTile: { minWidth: 64, height: 50, paddingHorizontal: 10 },
+  wordSlotText: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
+  tileGone: { opacity: 0.25, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.choiceBorder, borderRadius: 16 },
   itemName: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink, textAlign: 'center' },
   groupRow: { flexDirection: 'row', gap: 10 },
   group: { padding: 8, minHeight: 130, justifyContent: 'flex-start', gap: 2 },

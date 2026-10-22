@@ -1,0 +1,526 @@
+[
+  {
+    "id": "g2-spelling-01",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 1,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "b",
+        "e",
+        "e"
+      ],
+      "tiles": [
+        "e",
+        "e",
+        "b"
+      ],
+      "picture": "🐝",
+      "say": "bee",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-02",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 1,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "w",
+        "e",
+        "b"
+      ],
+      "tiles": [
+        "w",
+        "b",
+        "e"
+      ],
+      "picture": "🕸️",
+      "say": "web",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-03",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 1,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "h",
+        "e",
+        "n"
+      ],
+      "tiles": [
+        "n",
+        "e",
+        "h"
+      ],
+      "picture": "🐔",
+      "say": "hen",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-04",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 1,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "c",
+        "u",
+        "p"
+      ],
+      "tiles": [
+        "p",
+        "c",
+        "u"
+      ],
+      "picture": "☕",
+      "say": "cup",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-05",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 1,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "b",
+        "u",
+        "s"
+      ],
+      "tiles": [
+        "s",
+        "u",
+        "b"
+      ],
+      "picture": "🚌",
+      "say": "bus",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-06",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 1,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "p",
+        "i",
+        "g"
+      ],
+      "tiles": [
+        "i",
+        "g",
+        "p"
+      ],
+      "picture": "🐷",
+      "say": "pig",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-07",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 1,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "b",
+        "a",
+        "t"
+      ],
+      "tiles": [
+        "t",
+        "b",
+        "a"
+      ],
+      "picture": "🦇",
+      "say": "bat",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-08",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 2,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "c",
+        "a",
+        "k",
+        "e"
+      ],
+      "tiles": [
+        "c",
+        "a",
+        "e",
+        "k"
+      ],
+      "picture": "🎂",
+      "say": "cake",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-09",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 2,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "c",
+        "o",
+        "a",
+        "t"
+      ],
+      "tiles": [
+        "t",
+        "a",
+        "c",
+        "o"
+      ],
+      "picture": "🧥",
+      "say": "coat",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-10",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 2,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "b",
+        "i",
+        "r",
+        "d"
+      ],
+      "tiles": [
+        "b",
+        "i",
+        "d",
+        "r"
+      ],
+      "picture": "🐦",
+      "say": "bird",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-11",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 2,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "s",
+        "t",
+        "a",
+        "r"
+      ],
+      "tiles": [
+        "a",
+        "s",
+        "r",
+        "t"
+      ],
+      "picture": "⭐",
+      "say": "star",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-12",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 2,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "f",
+        "r",
+        "o",
+        "g"
+      ],
+      "tiles": [
+        "o",
+        "r",
+        "g",
+        "f"
+      ],
+      "picture": "🐸",
+      "say": "frog",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-13",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 2,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "d",
+        "u",
+        "c",
+        "k"
+      ],
+      "tiles": [
+        "d",
+        "k",
+        "u",
+        "c"
+      ],
+      "picture": "🦆",
+      "say": "duck",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-14",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 2,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "s",
+        "o",
+        "c",
+        "k"
+      ],
+      "tiles": [
+        "s",
+        "k",
+        "c",
+        "o"
+      ],
+      "picture": "🧦",
+      "say": "sock",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-15",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 3,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "t",
+        "h",
+        "r",
+        "e",
+        "e"
+      ],
+      "tiles": [
+        "e",
+        "h",
+        "m",
+        "r",
+        "e",
+        "t"
+      ],
+      "picture": "3️⃣",
+      "say": "three",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-16",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 3,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "m",
+        "o",
+        "u",
+        "s",
+        "e"
+      ],
+      "tiles": [
+        "t",
+        "m",
+        "o",
+        "e",
+        "s",
+        "u"
+      ],
+      "picture": "🐭",
+      "say": "mouse",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-17",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 3,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "s",
+        "p",
+        "o",
+        "o",
+        "n"
+      ],
+      "tiles": [
+        "y",
+        "o",
+        "p",
+        "s",
+        "n",
+        "o"
+      ],
+      "picture": "🥄",
+      "say": "spoon",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-18",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 3,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "s",
+        "n",
+        "a",
+        "k",
+        "e"
+      ],
+      "tiles": [
+        "e",
+        "s",
+        "n",
+        "k",
+        "y",
+        "a"
+      ],
+      "picture": "🐍",
+      "say": "snake",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-19",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 3,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "s",
+        "h",
+        "e",
+        "l",
+        "l"
+      ],
+      "tiles": [
+        "s",
+        "l",
+        "t",
+        "l",
+        "h",
+        "e"
+      ],
+      "picture": "🐚",
+      "say": "shell",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g2-spelling-20",
+    "grade": 2,
+    "subject": "english",
+    "topic": "g2-spelling",
+    "difficulty": 3,
+    "prompt": "Spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "c",
+        "h",
+        "a",
+        "i",
+        "r"
+      ],
+      "tiles": [
+        "s",
+        "h",
+        "c",
+        "i",
+        "r",
+        "a"
+      ],
+      "picture": "🪑",
+      "say": "chair",
+      "joiner": ""
+    }
+  }
+]
