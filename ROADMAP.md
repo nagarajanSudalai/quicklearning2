@@ -37,7 +37,12 @@
 - Timed topic tests with a report for parents.
 
 ## Phase 5 — Grades 3, 4 and 5
-- Grade 3: times tables, logic grids. Grade 4: fractions, sudoku 4×4/6×6, word ladders. Grade 5: decimals, brain teasers.
+- **Grade 3 ✅** — NCERT/CBSE Class 3, all four subjects (340 puzzles):
+  - **Maths:** numbers to 1000, 3-digit add/subtract, times tables, sharing (÷), fractions, time and calendar, money and length.
+  - **English:** word classes, past tense, synonyms and homophones, spelling bee, reading comprehension.
+  - **Puzzles:** text-clue crosswords, 6×6 sudoku.
+  - **Thinking:** logic grids, analogies, magic squares.
+- Grade 4: fractions (equivalent, add), sudoku 6×6, word ladders. Grade 5: decimals, brain teasers.
 - Spreadsheet → JSON importer so non-developers can add puzzles.
 
 ## Phase 6 — Growth

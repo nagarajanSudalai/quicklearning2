@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1 and 2 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (640 puzzles) — with adaptive difficulty.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1, 2 and 3 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (980 puzzles) — with adaptive difficulty.**
 
 ## Getting started
 
@@ -112,11 +112,46 @@ Content lives in `src/words2.ts` (plurals, opposites, a/an nouns, is/are subject
 - each sudoku has exactly one solution;
 - ordered steps match their sequence.
 
+## Grade 3, NCERT/CBSE Class 3
+
+17 topics, 20 puzzles each across 3 levels — 340 puzzles.
+
+| Subject | Topic | Puzzle type | Levels |
+|---|---|---|---|
+| Maths | Numbers to 1000 | `place-value` (hundreds), `compare-numbers` | read the blocks · "How many hundreds/tens?" · <, =, > |
+| Maths | Add and subtract | `arithmetic` | 3-digit, no carrying · carrying in one place · in two places |
+| Maths | Times tables | `arithmetic` × | tables 2–5 · 6–9 · missing factor (? × 5 = 45) |
+| Maths | Sharing equally | `arithmetic` ÷ | with pictures · numbers · word problems |
+| Maths | Fractions | `fraction` | halves and quarters · thirds · "Which picture shows ¾?" |
+| Maths | Time and calendar | `clock`, `calendar` | 5-minute times · days of the week · months and days in a month |
+| Maths | Money and length | `money`, `measure` | totals with ₹100/₹200 · change · ruler in cm |
+| English | Naming, doing, describing | `word-class` | nouns · verbs · adjectives |
+| English | Past tense | `fill-blank` (past) | -ed · cried, stopped, danced · went, ate, swam |
+| English | Synonyms and homophones | `fill-blank` (synonym, homophone) | same meaning · there/their, to/two/too · mixed |
+| English | Spelling bee | `build` | 6 letters · 7 · 8 + a spare |
+| English | Read and answer | `passage` | who · what · why |
+| Puzzles | Clue crossword | `crossword` (text clues) | 3 words · 4 words · 4 words, 8 blanks |
+| Puzzles | Sudoku 6×6 | `sudoku` | 8 blanks · 14 · 20 |
+| Thinking | Logic grids | `logic-grid` | 2×2 · 3×3 with "has" clues · 3×3 with "does not have" clues |
+| Thinking | Analogies | `analogy` | pictures · words · harder words |
+| Thinking | Magic squares | `magic-square` | 2 blanks · 4 · 6 |
+
+Content lives in:
+- `src/words3.ts`: tagged sentences, past tense, synonyms, homophones, spelling words, passages.
+- `src/thinking3.ts`: crossword clues, logic-grid sets, analogies.
+- `src/calendar.ts`, `src/crossword.ts` (layout shared with Grade 2), `src/sudoku.ts` (4×4 and 6×6) and `src/logic.ts`.
+
+The checker recomputes every answer:
+- no wrong fraction equals the right one (1/2 vs 2/4);
+- each sentence asks about a word class that appears exactly once;
+- each logic grid and magic square has exactly one solution;
+- each 6×6 sudoku has exactly one solution.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
 
-How play works: Each question is read aloud (with a 🔊 button to repeat it). A wrong pick wiggles and the child can try again. A star is earned only for a right answer on the first try. Stars, solved puzzles and the daily streak are saved on the device. Parent settings (progress, sound, change grade, reset) are behind a parent gate: a 2-digit × 1-digit question.
+How play works: Each question is read aloud (with a 🔊 button to repeat it). A wrong pick wiggles and the child can try again. A star is earned only for a right answer on the first try. Stars, solved puzzles and the daily streak are saved on the device. Parent settings (progress, sound, change grade, reset) are behind a parent gate: a 2-digit × 2-digit question.
 
 ## Voice
 
@@ -124,7 +159,7 @@ Every question is read aloud in Indian English.
 
 - **Now:** the app picks the best voice on each device. It prefers Indian English, then high-quality voices (iOS Enhanced, Android network, browser cloud voices), and falls back to British English. Speech is slightly slower and higher-pitched than normal, for children (`apps/mobile/src/lib/voice.ts`).
 - **Recorded clips (optional, sounds much more natural):** `npm run voice -w packages/content` records one clip for every puzzle prompt and fixed phrase with Google Cloud Text-to-Speech (`en-IN-Neural2-A`). It needs `GOOGLE_TTS_API_KEY`. Clips go to `apps/mobile/assets/voice/` and are listed in `src/lib/voice-manifest.ts`. The app plays a clip when one exists and uses the device voice for anything else. Re-run it after adding puzzles; only new lines are recorded. Use `--sample 5` to audition a few clips first, and `--voice` / `--rate` / `--pitch` to change the voice.
-- Spoken fixed lines ("Great job!", result messages) live in `packages/content/src/voice.ts`, so they get clips too. `npm test` checks the voice picker and adaptive difficulty.
+- Spoken fixed lines ("Great job!", result messages) live in `packages/content/src/voice.ts`, so they get clips too. `npm test` checks the voice picker, speech rules, adaptive difficulty and the sudoku, logic-grid and magic-square solvers.
 
 ## Adding content
 
@@ -168,3 +203,13 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | What comes first? | Who am I? | Bigger maze |
 |---|---|---|
 | ![](docs/screenshots/g2-order.png) | ![](docs/screenshots/g2-riddle.png) | ![](docs/screenshots/g2-maze.png) |
+
+### Grade 3
+
+| Subjects | Numbers | Fractions | Ruler | Sharing | Reading |
+|---|---|---|---|---|---|
+| ![](docs/screenshots/g3-subjects.png) | ![](docs/screenshots/g3-numbers.png) | ![](docs/screenshots/g3-fractions.png) | ![](docs/screenshots/g3-ruler.png) | ![](docs/screenshots/g3-sharing.png) | ![](docs/screenshots/g3-reading.png) |
+
+| Word classes | Clue crossword | Sudoku 6×6 | Logic grid | Analogy | Magic square |
+|---|---|---|---|---|---|
+| ![](docs/screenshots/g3-word-class.png) | ![](docs/screenshots/g3-crossword.png) | ![](docs/screenshots/g3-sudoku.png) | ![](docs/screenshots/g3-logic.png) | ![](docs/screenshots/g3-analogy.png) | ![](docs/screenshots/g3-magic.png) |
