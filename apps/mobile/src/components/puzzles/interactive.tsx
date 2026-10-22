@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, sudokuShape, type BuildPuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
+import { PHRASES, clueText, sudokuShape, type BuildPuzzle, type LogicGridPuzzle, type MagicSquarePuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
@@ -25,6 +25,8 @@ export const PLAYERS: Players = {
   build: Build,
   sudoku: Sudoku,
   'order-steps': OrderSteps,
+  'logic-grid': LogicGrid,
+  'magic-square': MagicSquare,
 };
 
 /** A tappable box that wiggles each time `wiggle` increments. */
@@ -408,6 +410,157 @@ function OrderSteps({ puzzle, sound, onSolved, onMistake }: PlayerProps<OrderSte
   );
 }
 
+// ---------- Logic grid ----------
+
+function LogicGrid({ puzzle, sound, onSolved, onMistake }: PlayerProps<LogicGridPuzzle>) {
+  const { people, items, clues, solution } = puzzle.payload;
+  const n = people.length;
+  // choice[p] = the item index the child has ticked for person p.
+  const [choice, setChoice] = useState<(number | null)[]>(() => people.map(() => null));
+  const [locked, setLocked] = useState<boolean[]>(() => people.map(() => false));
+  const [mistakes, setMistakes] = useState(0);
+  const [wiggle, setWiggle] = useState<{ p: number; n: number }>({ p: -1, n: 0 });
+  const done = locked.every(Boolean);
+
+  const tick = (p: number, it: number) => {
+    if (done || locked[p]) return;
+    if (solution[p] === it) {
+      buzz('right');
+      const c = [...choice]; c[p] = it;
+      const l = [...locked]; l[p] = true;
+      // When only one person is left, their item is forced — fill it in.
+      const open = l.flatMap((x, k) => (x ? [] : [k]));
+      if (open.length === 1) { c[open[0]] = solution[open[0]]; l[open[0]] = true; }
+      setChoice(c);
+      setLocked(l);
+      if (l.every(Boolean)) onSolved(mistakes === 0);
+    } else {
+      buzz('wrong');
+      setMistakes((m) => m + 1);
+      setWiggle((w) => ({ p, n: w.n + 1 }));
+      onMistake();
+    }
+  };
+
+  const cell = n === 2 ? 72 : 64;
+  return (
+    <View style={{ gap: 14 }}>
+      <View style={styles.clueList}>
+        {clues.map((c, k) => {
+          const t = clueText(c, people, items);
+          return (
+            <Pressable key={k} onPress={() => say(t, sound)} accessibilityRole="button" accessibilityLabel={`Clue: ${t}`}>
+              <Text style={styles.clueLine}><Text style={styles.clueLineNum}>{c.has ? '✓' : '✗'}</Text>  {t}</Text>
+            </Pressable>
+          );
+        })}
+      </View>
+      <View style={{ alignSelf: 'center' }}>
+        <View style={{ flexDirection: 'row', marginLeft: 76 }}>
+          {items.map((it) => (
+            <View key={it.name} style={{ width: cell, alignItems: 'center' }}>
+              <Text style={{ fontSize: 28 }}>{it.emoji}</Text>
+              <Text style={styles.orderName} numberOfLines={1}>{it.name}</Text>
+            </View>
+          ))}
+        </View>
+        {people.map((name, p) => (
+          <LogicRow key={name} name={name} wiggle={wiggle.p === p ? wiggle.n : 0}>
+            {items.map((it, k) => {
+              const on = choice[p] === k;
+              const ruledOut = locked[p] ? !on : choice.some((x, q) => q !== p && locked[q] && x === k);
+              return (
+                <Pressable key={k} onPress={() => tick(p, k)} disabled={locked[p] || ruledOut} accessibilityRole="button"
+                  accessibilityLabel={`${name} has the ${it.name}`} accessibilityState={{ selected: on }}
+                  style={[styles.lCell, { width: cell, height: cell }, on && styles.cellDone, ruledOut && styles.lOut]}>
+                  <Text style={on ? styles.lTick : styles.lCross}>{on ? '✓' : ruledOut ? '✗' : ''}</Text>
+                </Pressable>
+              );
+            })}
+          </LogicRow>
+        ))}
+      </View>
+    </View>
+  );
+}
+
+function LogicRow({ name, wiggle, children }: { name: string; wiggle: number; children: ReactNode }) {
+  const wig = useWiggle(wiggle);
+  return (
+    <Animated.View style={[{ flexDirection: 'row', alignItems: 'center' }, wig]}>
+      <Text style={styles.lName} numberOfLines={1}>{name}</Text>
+      {children}
+    </Animated.View>
+  );
+}
+
+// ---------- Magic square ----------
+
+function MagicSquare({ puzzle, onSolved, onMistake }: PlayerProps<MagicSquarePuzzle>) {
+  const { grid: start, solution, target } = puzzle.payload;
+  const [grid, setGrid] = useState(start);
+  const [sel, setSel] = useState(() => start.indexOf(null));
+  const [mistakes, setMistakes] = useState(0);
+  const [wiggle, setWiggle] = useState<{ v: number; n: number }>({ v: -1, n: 0 });
+  const done = !grid.includes(null);
+  const left = [1, 2, 3, 4, 5, 6, 7, 8, 9].filter((v) => !grid.includes(v));
+
+  const place = (v: number) => {
+    if (done || sel === -1) return;
+    if (solution[sel] !== v) {
+      buzz('wrong');
+      setMistakes((m) => m + 1);
+      setWiggle((w) => ({ v, n: w.n + 1 }));
+      onMistake();
+      return;
+    }
+    buzz('right');
+    const g = [...grid];
+    g[sel] = v;
+    setGrid(g);
+    const next = [...g.keys()].map((k) => (sel + 1 + k) % 9).find((k) => g[k] === null) ?? -1;
+    setSel(next);
+    if (next === -1) onSolved(mistakes === 0);
+  };
+
+  const sum = (idx: number[]) => idx.reduce((s, i) => s + (grid[i] ?? 0), 0);
+  const full = (idx: number[]) => idx.every((i) => grid[i] !== null);
+  const Sum = ({ idx }: { idx: number[] }) => (
+    <Text style={[styles.mSum, full(idx) && { color: sum(idx) === target ? colors.rightText : colors.wrongText }]}>{full(idx) ? sum(idx) : ''}</Text>
+  );
+  return (
+    <View style={{ gap: 14, alignItems: 'center' }}>
+      <View>
+        {[0, 1, 2].map((r) => (
+          <View key={r} style={{ flexDirection: 'row', alignItems: 'center' }}>
+            {[0, 1, 2].map((c) => {
+              const k = r * 3 + c, v = grid[k], given = start[k] !== null;
+              return (
+                <Pressable key={c} onPress={() => !given && v === null && setSel(k)} accessibilityRole="button"
+                  accessibilityLabel={v !== null ? String(v) : `Empty square, row ${r + 1}, column ${c + 1}`}
+                  style={[styles.mCell, given && styles.sGiven, !given && v !== null && styles.cellDone, sel === k && styles.cellActive]}>
+                  <Text style={styles.mNum}>{v ?? ''}</Text>
+                </Pressable>
+              );
+            })}
+            <Sum idx={[r * 3, r * 3 + 1, r * 3 + 2]} />
+          </View>
+        ))}
+        <View style={{ flexDirection: 'row' }}>
+          {[0, 1, 2].map((c) => <View key={c} style={{ width: 72, alignItems: 'center' }}><Sum idx={[c, c + 3, c + 6]} /></View>)}
+        </View>
+      </View>
+      <View style={styles.letterRow}>
+        {left.map((v) => (
+          <Tap key={v} onPress={() => place(v)} wiggle={wiggle.v === v ? wiggle.n : 0} label={`Place ${v}`} disabled={done} style={styles.letterKey}>
+            <Text style={styles.sNumber}>{v}</Text>
+          </Tap>
+        ))}
+      </View>
+    </View>
+  );
+}
+
 // ---------- Maze ----------
 
 const MOVES = { up: [-1, 0, 1], right: [0, 1, 2], down: [1, 0, 4], left: [0, -1, 8] } as const;
@@ -540,6 +693,14 @@ const styles = StyleSheet.create({
   clueList: { gap: 4, backgroundColor: colors.panel, borderRadius: 14, padding: 12 },
   clueLine: { fontFamily: font.bodyBold, fontSize: 15, color: colors.ink },
   clueLineNum: { fontFamily: font.bodyHeavy, color: colors.brand },
+  lName: { width: 76, fontFamily: font.bodyHeavy, fontSize: 15, color: colors.ink },
+  lCell: { borderWidth: 1.5, borderColor: colors.ink, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface, margin: -0.75 },
+  lOut: { backgroundColor: colors.panel },
+  lTick: { fontFamily: font.display, fontSize: 30, color: colors.rightText },
+  lCross: { fontFamily: font.display, fontSize: 24, color: colors.faint },
+  mCell: { width: 72, height: 72, borderWidth: 2, borderColor: colors.ink, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface, margin: -1 },
+  mNum: { fontFamily: font.display, fontSize: 32, color: colors.ink },
+  mSum: { width: 36, textAlign: 'center', fontFamily: font.bodyHeavy, fontSize: 15, color: colors.muted },
   hint: { fontFamily: font.bodyBold, fontSize: 12, color: colors.muted },
   slots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' },
   letterSlot: { width: 46, height: 52, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },

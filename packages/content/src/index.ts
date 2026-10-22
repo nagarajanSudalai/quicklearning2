@@ -49,6 +49,10 @@ import g3EReading from '../puzzles/g3-english/reading.json';
 import g3Crossword from '../puzzles/g3-puzzles/crossword.json';
 import g3Sudoku from '../puzzles/g3-puzzles/sudoku.json';
 
+import g3Logic from '../puzzles/g3-thinking/logic.json';
+import g3Analogies from '../puzzles/g3-thinking/analogies.json';
+import g3Magic from '../puzzles/g3-thinking/magic.json';
+
 export * from './types';
 export * from './tokens';
 export * from './curriculum';
@@ -64,6 +68,7 @@ export * from './calendar';
 export * from './words3';
 export * from './crossword';
 export * from './thinking3';
+export * from './logic';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -78,6 +83,7 @@ export const PUZZLES = [
   ...g3Numbers, ...g3AddSub, ...g3Tables, ...g3Sharing, ...g3Fractions, ...g3Time, ...g3MoneyMeasure,
   ...g3EWordClass, ...g3EPast, ...g3ESynonyms, ...g3ESpelling, ...g3EReading,
   ...g3Crossword, ...g3Sudoku,
+  ...g3Logic, ...g3Analogies, ...g3Magic,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

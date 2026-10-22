@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g3-analogies-01",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 1,
+    "prompt": "🐟 is to 🌊 as 🐫 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "🐟",
+      "b": "🌊",
+      "c": "🐫"
+    },
+    "options": [
+      "🌳",
+      "🏜️",
+      "🏔️"
+    ],
+    "answer": "🏜️"
+  },
+  {
+    "id": "g3-analogies-02",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 1,
+    "prompt": "☀️ is to 🌞 as 🌙 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "☀️",
+      "b": "🌞",
+      "c": "🌙"
+    },
+    "options": [
+      "🌃",
+      "⭐",
+      "☁️"
+    ],
+    "answer": "🌃"
+  },
+  {
+    "id": "g3-analogies-03",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 1,
+    "prompt": "🧦 is to 🦶 as 🧤 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "🧦",
+      "b": "🦶",
+      "c": "🧤"
+    },
+    "options": [
+      "👕",
+      "✋",
+      "🧢"
+    ],
+    "answer": "✋"
+  },
+  {
+    "id": "g3-analogies-04",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 1,
+    "prompt": "🌧️ is to ☂️ as ☀️ is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "🌧️",
+      "b": "☂️",
+      "c": "☀️"
+    },
+    "options": [
+      "🕶️",
+      "🧥",
+      "🌈"
+    ],
+    "answer": "🕶️"
+  },
+  {
+    "id": "g3-analogies-05",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 1,
+    "prompt": "🐄 is to 🥛 as 🐔 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "🐄",
+      "b": "🥛",
+      "c": "🐔"
+    },
+    "options": [
+      "🌽",
+      "🥚",
+      "🐣"
+    ],
+    "answer": "🥚"
+  },
+  {
+    "id": "g3-analogies-06",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 1,
+    "prompt": "✏️ is to 📝 as 🖌️ is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "✏️",
+      "b": "📝",
+      "c": "🖌️"
+    },
+    "options": [
+      "✂️",
+      "🎨",
+      "📏"
+    ],
+    "answer": "🎨"
+  },
+  {
+    "id": "g3-analogies-07",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 1,
+    "prompt": "🐶 is to 🦴 as 🐰 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "🐶",
+      "b": "🦴",
+      "c": "🐰"
+    },
+    "options": [
+      "🥕",
+      "🧀",
+      "🍌"
+    ],
+    "answer": "🥕"
+  },
+  {
+    "id": "g3-analogies-08",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 2,
+    "prompt": "hot is to cold as day is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "hot",
+      "b": "cold",
+      "c": "day"
+    },
+    "options": [
+      "sun",
+      "warm",
+      "night"
+    ],
+    "answer": "night"
+  },
+  {
+    "id": "g3-analogies-09",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 2,
+    "prompt": "eye is to see as ear is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "eye",
+      "b": "see",
+      "c": "ear"
+    },
+    "options": [
+      "look",
+      "hear",
+      "nose"
+    ],
+    "answer": "hear"
+  },
+  {
+    "id": "g3-analogies-10",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 2,
+    "prompt": "one is to two as three is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "one",
+      "b": "two",
+      "c": "three"
+    },
+    "options": [
+      "ten",
+      "six",
+      "four"
+    ],
+    "answer": "four"
+  },
+  {
+    "id": "g3-analogies-11",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 2,
+    "prompt": "book is to read as song is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "book",
+      "b": "read",
+      "c": "song"
+    },
+    "options": [
+      "sing",
+      "write",
+      "dance"
+    ],
+    "answer": "sing"
+  },
+  {
+    "id": "g3-analogies-12",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 2,
+    "prompt": "puppy is to dog as kitten is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "puppy",
+      "b": "dog",
+      "c": "kitten"
+    },
+    "options": [
+      "mouse",
+      "cat",
+      "milk"
+    ],
+    "answer": "cat"
+  },
+  {
+    "id": "g3-analogies-13",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 2,
+    "prompt": "Monday is to Tuesday as Friday is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "Monday",
+      "b": "Tuesday",
+      "c": "Friday"
+    },
+    "options": [
+      "Thursday",
+      "Sunday",
+      "Saturday"
+    ],
+    "answer": "Saturday"
+  },
+  {
+    "id": "g3-analogies-14",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 2,
+    "prompt": "big is to bigger as small is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "big",
+      "b": "bigger",
+      "c": "small"
+    },
+    "options": [
+      "smallest",
+      "smaller",
+      "tiny"
+    ],
+    "answer": "smaller"
+  },
+  {
+    "id": "g3-analogies-15",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 3,
+    "prompt": "pen is to write as knife is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "pen",
+      "b": "write",
+      "c": "knife"
+    },
+    "options": [
+      "cut",
+      "eat",
+      "cook"
+    ],
+    "answer": "cut"
+  },
+  {
+    "id": "g3-analogies-16",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 3,
+    "prompt": "doctor is to hospital as teacher is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "doctor",
+      "b": "hospital",
+      "c": "teacher"
+    },
+    "options": [
+      "school",
+      "market",
+      "book"
+    ],
+    "answer": "school"
+  },
+  {
+    "id": "g3-analogies-17",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 3,
+    "prompt": "January is to February as November is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "January",
+      "b": "February",
+      "c": "November"
+    },
+    "options": [
+      "January",
+      "December",
+      "October"
+    ],
+    "answer": "December"
+  },
+  {
+    "id": "g3-analogies-18",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 3,
+    "prompt": "lion is to roar as dog is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "lion",
+      "b": "roar",
+      "c": "dog"
+    },
+    "options": [
+      "tail",
+      "run",
+      "bark"
+    ],
+    "answer": "bark"
+  },
+  {
+    "id": "g3-analogies-19",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 3,
+    "prompt": "water is to drink as food is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "water",
+      "b": "drink",
+      "c": "food"
+    },
+    "options": [
+      "eat",
+      "plate",
+      "cook"
+    ],
+    "answer": "eat"
+  },
+  {
+    "id": "g3-analogies-20",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-analogies",
+    "difficulty": 3,
+    "prompt": "finger is to hand as toe is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "finger",
+      "b": "hand",
+      "c": "toe"
+    },
+    "options": [
+      "foot",
+      "shoe",
+      "leg"
+    ],
+    "answer": "foot"
+  }
+]

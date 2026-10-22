@@ -9,7 +9,8 @@ import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
 import { calendarAnswer } from '../src/calendar.ts';
-import { CLUES } from '../src/thinking3.ts';
+import { ANALOGIES, CLUES } from '../src/thinking3.ts';
+import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
@@ -174,6 +175,12 @@ function check(p: any): string | null {
       if (p.options.some((o: string) => o !== b.answer && !b.wrong.includes(o))) return 'unknown option';
       return b.answer === p.answer ? null : `answer is "${b.answer}"`;
     }
+    case 'analogy': {
+      const a = ANALOGIES.find((x) => x.a === q.a && x.b === q.b && x.c === q.c);
+      if (!a) return 'analogy not in the bank';
+      if (p.options.some((o: string) => o !== a.d && !a.wrong.includes(o))) return 'unknown option';
+      return a.d === p.answer ? null : `answer is ${a.d}`;
+    }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);
       if (!group) return `unknown group ${q.group}`;
@@ -258,6 +265,20 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     const shown = [...q.shown].sort((a: number, b: number) => a - b);
     if (shown.some((v: number, k: number) => v !== k)) return 'shown must list every step once';
     return q.shown.every((v: number, k: number) => v === k) ? 'pictures are already in order' : null;
+  },
+  'logic-grid'(q) {
+    const n = q.people.length;
+    if (q.items.length !== n || q.solution.length !== n) return 'people, items and solution must match in size';
+    const sols = logicSolutions(n, q.clues);
+    if (sols.length !== 1) return `${sols.length} ways fit the clues`;
+    return sols[0].every((v: number, k: number) => v === q.solution[k]) ? null : 'solution does not fit the clues';
+  },
+  'magic-square'(q) {
+    if (q.target !== 15 || !isMagic(q.solution)) return 'solution is not a 1–9 magic square';
+    if (q.grid.some((v: number | null, i: number) => v !== null && v !== q.solution[i])) return 'a given number disagrees with the solution';
+    if (!q.grid.includes(null)) return 'no blanks';
+    const n = magicSolutions(q.grid);
+    return n === 1 ? null : `${n} ways to fill the square`;
   },
   maze(q) {
     const { rows, cols, cells, start, goal } = q;

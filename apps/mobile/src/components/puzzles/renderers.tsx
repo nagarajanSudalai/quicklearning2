@@ -300,6 +300,26 @@ export const RENDERERS: Renderers = {
     columns: () => 1,
     optionHeight: 58,
   },
+  analogy: {
+    Stimulus: ({ puzzle }) => {
+      const { a, b, c } = puzzle.payload;
+      const pic = [...a].length <= 2;
+      const T = ({ t }: { t: string }) => <Text style={pic ? styles.analogyPic : [styles.sentenceText, fit(t, 24, 7)]}>{t}</Text>;
+      return (
+        <View style={[styles.panel, styles.pictureBox, { gap: 10 }]}>
+          <View style={styles.analogyRow}><T t={a} /><Text style={styles.analogyIs}>is to</Text><T t={b} /></View>
+          <Text style={styles.analogyAs}>as</Text>
+          <View style={styles.analogyRow}>
+            <T t={c} /><Text style={styles.analogyIs}>is to</Text>
+            <View style={[styles.blank, { width: 56, height: 50 }]}><Text style={styles.blankText}>?</Text></View>
+          </View>
+        </View>
+      );
+    },
+    option: (o) => ([...o].length <= 2 ? <Text style={styles.oddItem}>{o}</Text> : <Text style={[styles.word, fit(o, 24, 6)]} numberOfLines={1}>{o}</Text>),
+    columns: () => 3,
+    optionHeight: 96,
+  },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,
     columns: (p) => (p.options.length === 5 ? 3 : 2),
@@ -349,6 +369,10 @@ const styles = StyleSheet.create({
   clue: { fontFamily: font.bodyBold, fontSize: 18, color: colors.ink, lineHeight: 24 },
   passage: { fontFamily: font.body, fontSize: 18, lineHeight: 27, color: colors.ink },
   question: { fontFamily: font.bodyHeavy, fontSize: 18, color: colors.brandDeep },
+  analogyRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  analogyPic: { fontSize: 44, lineHeight: 54 },
+  analogyIs: { fontFamily: font.bodyBold, fontSize: 16, color: colors.muted },
+  analogyAs: { fontFamily: font.bodyHeavy, fontSize: 16, color: colors.brand },
   oddItem: { fontSize: 56, lineHeight: 68 },
   wordSmall: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
 });

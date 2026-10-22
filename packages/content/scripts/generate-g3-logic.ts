@@ -1,10 +1,12 @@
-// Seeds the Grade 3 Puzzles bank (text-clue crosswords, 6×6 sudoku). The JSON it writes is the
-// source of truth; re-running overwrites puzzles/g3-puzzles/.
+// Seeds the Grade 3 Puzzles bank (text-clue crosswords, 6×6 sudoku) and Thinking Skills bank
+// (logic grids, analogies, magic squares). The JSON it writes is the source of truth; re-running
+// overwrites puzzles/g3-puzzles/ and puzzles/g3-thinking/.
 //   node scripts/generate-g3-logic.ts
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CLUES } from '../src/thinking3.ts';
+import { logicSolutions, magicSolutions } from '../src/logic.ts';
+import { ANALOGIES, CLUES, LOGIC_PEOPLE, LOGIC_SETS } from '../src/thinking3.ts';
 import { cellsOf, layoutCrossword } from '../src/crossword.ts';
 import { countSolutions, isSolved } from '../src/sudoku.ts';
 
@@ -87,4 +89,89 @@ mkdirSync(join(ROOT, 'g3-puzzles'), { recursive: true });
 for (const [name, puzzles] of Object.entries({ crossword: crossword(), sudoku: sudoku6() })) {
   writeFileSync(join(ROOT, 'g3-puzzles', `${name}.json`), JSON.stringify(puzzles, null, 2) + '\n');
   console.log(`g3-puzzles/${name}: ${puzzles.length} puzzles`);
+}
+
+function logicGrids() {
+  const seen = new Set<string>();
+  return levels([7, 7, 6]).map((d, i) => {
+    for (;;) {
+      const n = d === 1 ? 2 : 3;
+      const set = LOGIC_SETS[i % LOGIC_SETS.length];
+      const people = shuffle(LOGIC_PEOPLE).slice(0, n);
+      const items = shuffle(set.items).slice(0, n).map(([emoji, name]) => ({ emoji, name }));
+      const solution = shuffle([...Array(n).keys()]);
+      // All true facts, as "has" and "does not have" clues; level 3 leans on "does not have".
+      const facts = shuffle(people.flatMap((_, p) => items.map((_, it) => ({ person: p, item: it, has: solution[p] === it }))))
+        .filter((c) => (d === 3 ? !c.has || rand() < 0.25 : d === 2 ? c.has || rand() < 0.3 : true));
+      // Add clues until exactly one matching is left, then drop any clue that isn't needed.
+      const clues: typeof facts = [];
+      for (const f of facts) { if (logicSolutions(n, clues).length === 1) break; clues.push(f); }
+      if (logicSolutions(n, clues).length !== 1) continue;
+      for (const c of [...clues]) { const without = clues.filter((x) => x !== c); if (logicSolutions(n, without).length === 1) clues.splice(clues.indexOf(c), 1); }
+      if (d === 3 && clues.every((c) => c.has)) continue;
+      const key = `${people.join()}|${items.map((x) => x.name).join()}|${solution.join()}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      return {
+        ...base('g3-logic', i, d, `${set.question} Read the clues.`, 'thinking'), type: 'logic-grid',
+        payload: { kind: set.kind, people, items, clues, solution },
+      };
+    }
+  });
+}
+
+function analogies() {
+  const byLevel = (l: number) => shuffle(ANALOGIES.filter((a) => a.level === l));
+  const pools: Record<number, typeof ANALOGIES> = { 1: byLevel(1), 2: byLevel(2), 3: byLevel(3) };
+  const used: Record<number, number> = {};
+  return levels([7, 7, 6]).map((d, i) => {
+    const a = pools[d][(used[d] = (used[d] ?? -1) + 1) % pools[d].length];
+    return {
+      ...base('g3-analogies', i, d, `${a.a} is to ${a.b} as ${a.c} is to what?`, 'thinking'), type: 'analogy',
+      payload: { a: a.a, b: a.b, c: a.c }, options: shuffle([a.d, ...a.wrong]), answer: a.d,
+    };
+  });
+}
+
+/** The 8 rotations and reflections of the Lo Shu square. */
+function loShu() {
+  const base = [2, 7, 6, 9, 5, 1, 4, 3, 8];
+  const rot = (g: number[]) => [6, 3, 0, 7, 4, 1, 8, 5, 2].map((i) => g[i]);
+  const flip = (g: number[]) => [2, 1, 0, 5, 4, 3, 8, 7, 6].map((i) => g[i]);
+  const out: number[][] = [];
+  let g = base;
+  for (let k = 0; k < 4; k++) { out.push(g, flip(g)); g = rot(g); }
+  return out;
+}
+
+function magicSquares() {
+  const squares = loShu();
+  const seen = new Set<string>();
+  return levels([7, 7, 6]).map((d, i) => {
+    for (;;) {
+      const solution = squares[i % squares.length];
+      const target = d === 1 ? 2 : d === 2 ? 4 : 6;
+      const grid: (number | null)[] = [...solution];
+      for (const k of shuffle([...Array(9).keys()])) {
+        if (grid.filter((x) => x === null).length >= target) break;
+        const keep = grid[k];
+        grid[k] = null;
+        if (magicSolutions(grid) !== 1) grid[k] = keep;
+      }
+      const key = grid.join();
+      if (grid.filter((x) => x === null).length !== target || seen.has(key)) continue;
+      seen.add(key);
+      return {
+        ...base('g3-magic', i, d, 'Fill the square so every row, column and diagonal adds up to 15.', 'thinking'), type: 'magic-square',
+        payload: { grid, solution, target: 15 },
+      };
+    }
+  });
+}
+
+// Thinking Skills runs after Puzzles so adding it didn't change the Puzzles bank.
+mkdirSync(join(ROOT, 'g3-thinking'), { recursive: true });
+for (const [name, puzzles] of Object.entries({ logic: logicGrids(), analogies: analogies(), magic: magicSquares() })) {
+  writeFileSync(join(ROOT, 'g3-thinking', `${name}.json`), JSON.stringify(puzzles, null, 2) + '\n');
+  console.log(`g3-thinking/${name}: ${puzzles.length} puzzles`);
 }

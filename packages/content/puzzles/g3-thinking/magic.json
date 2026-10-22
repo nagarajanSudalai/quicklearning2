@@ -1,0 +1,682 @@
+[
+  {
+    "id": "g3-magic-01",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 1,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        7,
+        null,
+        9,
+        5,
+        1,
+        4,
+        3,
+        8
+      ],
+      "solution": [
+        2,
+        7,
+        6,
+        9,
+        5,
+        1,
+        4,
+        3,
+        8
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-02",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 1,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        6,
+        7,
+        null,
+        1,
+        5,
+        9,
+        8,
+        3,
+        null
+      ],
+      "solution": [
+        6,
+        7,
+        2,
+        1,
+        5,
+        9,
+        8,
+        3,
+        4
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-03",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 1,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        4,
+        9,
+        2,
+        null,
+        5,
+        7,
+        8,
+        null,
+        6
+      ],
+      "solution": [
+        4,
+        9,
+        2,
+        3,
+        5,
+        7,
+        8,
+        1,
+        6
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-04",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 1,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        2,
+        9,
+        4,
+        7,
+        null,
+        3,
+        null,
+        1,
+        8
+      ],
+      "solution": [
+        2,
+        9,
+        4,
+        7,
+        5,
+        3,
+        6,
+        1,
+        8
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-05",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 1,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        8,
+        3,
+        4,
+        1,
+        5,
+        9,
+        6,
+        null,
+        null
+      ],
+      "solution": [
+        8,
+        3,
+        4,
+        1,
+        5,
+        9,
+        6,
+        7,
+        2
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-06",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 1,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        4,
+        3,
+        8,
+        9,
+        null,
+        1,
+        2,
+        7,
+        null
+      ],
+      "solution": [
+        4,
+        3,
+        8,
+        9,
+        5,
+        1,
+        2,
+        7,
+        6
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-07",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 1,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        6,
+        null,
+        8,
+        7,
+        5,
+        3,
+        2,
+        9,
+        null
+      ],
+      "solution": [
+        6,
+        1,
+        8,
+        7,
+        5,
+        3,
+        2,
+        9,
+        4
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-08",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 2,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        1,
+        6,
+        3,
+        null,
+        null,
+        null,
+        9,
+        2
+      ],
+      "solution": [
+        8,
+        1,
+        6,
+        3,
+        5,
+        7,
+        4,
+        9,
+        2
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-09",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 2,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        2,
+        7,
+        6,
+        null,
+        null,
+        null,
+        4,
+        3,
+        null
+      ],
+      "solution": [
+        2,
+        7,
+        6,
+        9,
+        5,
+        1,
+        4,
+        3,
+        8
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-10",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 2,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        6,
+        7,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        4
+      ],
+      "solution": [
+        6,
+        7,
+        2,
+        1,
+        5,
+        9,
+        8,
+        3,
+        4
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-11",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 2,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        9,
+        2,
+        3,
+        5,
+        null,
+        8,
+        null,
+        null
+      ],
+      "solution": [
+        4,
+        9,
+        2,
+        3,
+        5,
+        7,
+        8,
+        1,
+        6
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-12",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 2,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        2,
+        9,
+        null,
+        7,
+        null,
+        3,
+        null,
+        1,
+        null
+      ],
+      "solution": [
+        2,
+        9,
+        4,
+        7,
+        5,
+        3,
+        6,
+        1,
+        8
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-13",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 2,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        3,
+        4,
+        1,
+        5,
+        null,
+        6,
+        null,
+        null
+      ],
+      "solution": [
+        8,
+        3,
+        4,
+        1,
+        5,
+        9,
+        6,
+        7,
+        2
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-14",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 2,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        4,
+        null,
+        null,
+        9,
+        null,
+        1,
+        2,
+        7,
+        null
+      ],
+      "solution": [
+        4,
+        3,
+        8,
+        9,
+        5,
+        1,
+        2,
+        7,
+        6
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-15",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 3,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        null,
+        null,
+        7,
+        null,
+        3,
+        null,
+        null,
+        4
+      ],
+      "solution": [
+        6,
+        1,
+        8,
+        7,
+        5,
+        3,
+        2,
+        9,
+        4
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-16",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 3,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        null,
+        null,
+        3,
+        5,
+        null,
+        4,
+        null,
+        null
+      ],
+      "solution": [
+        8,
+        1,
+        6,
+        3,
+        5,
+        7,
+        4,
+        9,
+        2
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-17",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 3,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        7,
+        null,
+        9,
+        null,
+        null,
+        null,
+        3,
+        null
+      ],
+      "solution": [
+        2,
+        7,
+        6,
+        9,
+        5,
+        1,
+        4,
+        3,
+        8
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-18",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 3,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        8,
+        null,
+        4
+      ],
+      "solution": [
+        6,
+        7,
+        2,
+        1,
+        5,
+        9,
+        8,
+        3,
+        4
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-19",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 3,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        null,
+        2,
+        null,
+        5,
+        7,
+        null,
+        null,
+        null
+      ],
+      "solution": [
+        4,
+        9,
+        2,
+        3,
+        5,
+        7,
+        8,
+        1,
+        6
+      ],
+      "target": 15
+    }
+  },
+  {
+    "id": "g3-magic-20",
+    "grade": 3,
+    "subject": "thinking",
+    "topic": "g3-magic",
+    "difficulty": 3,
+    "prompt": "Fill the square so every row, column and diagonal adds up to 15.",
+    "type": "magic-square",
+    "payload": {
+      "grid": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        6,
+        null,
+        8
+      ],
+      "solution": [
+        2,
+        9,
+        4,
+        7,
+        5,
+        3,
+        6,
+        1,
+        8
+      ],
+      "target": 15
+    }
+  }
+]

@@ -190,6 +190,14 @@ export type PassagePuzzle = Base & {
   answer: string;
 };
 
+/** "a is to b as c is to ___". */
+export type AnalogyPuzzle = Base & {
+  type: 'analogy';
+  payload: { a: string; b: string; c: string };
+  options: string[];
+  answer: string;
+};
+
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
 
 /** A crossword word; the clue is a `picture` (emoji) or, from Grade 3, a text `clue`. */
@@ -242,6 +250,20 @@ export type OrderStepsPuzzle = Base & {
   payload: { title: string; steps: { item: string; name: string }[]; shown: number[] };
 };
 
+export type LogicClue = { person: number; item: number; has: boolean };
+
+/** Logic grid: match each person to one item using the clues. `solution[p]` is person p's item. */
+export type LogicGridPuzzle = Base & {
+  type: 'logic-grid';
+  payload: { kind: string; people: string[]; items: { emoji: string; name: string }[]; clues: LogicClue[]; solution: number[] };
+};
+
+/** 3×3 magic square with numbers 1–9: every row, column and diagonal adds up to 15. */
+export type MagicSquarePuzzle = Base & {
+  type: 'magic-square';
+  payload: { grid: (number | null)[]; solution: number[]; target: number };
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -265,10 +287,11 @@ export type ChoicePuzzle =
   | CalendarPuzzle
   | MeasurePuzzle
   | WordClassPuzzle
-  | PassagePuzzle;
+  | PassagePuzzle
+  | AnalogyPuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -276,7 +299,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {
