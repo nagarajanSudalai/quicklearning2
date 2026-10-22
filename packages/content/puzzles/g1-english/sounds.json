@@ -1,0 +1,388 @@
+[
+  {
+    "id": "g1-sounds-01",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 1,
+    "prompt": "Which letter does coat start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "coat",
+      "picture": "🧥"
+    },
+    "options": [
+      "j",
+      "r",
+      "c"
+    ],
+    "answer": "c"
+  },
+  {
+    "id": "g1-sounds-02",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 1,
+    "prompt": "Which letter does bus start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "bus",
+      "picture": "🚌"
+    },
+    "options": [
+      "y",
+      "i",
+      "b"
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "g1-sounds-03",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 1,
+    "prompt": "Which letter does key start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "key",
+      "picture": "🔑"
+    },
+    "options": [
+      "k",
+      "w",
+      "m"
+    ],
+    "answer": "k"
+  },
+  {
+    "id": "g1-sounds-04",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 1,
+    "prompt": "Which letter does tree start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "tree",
+      "picture": "🌳"
+    },
+    "options": [
+      "q",
+      "t",
+      "c"
+    ],
+    "answer": "t"
+  },
+  {
+    "id": "g1-sounds-05",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 1,
+    "prompt": "Which letter does rose start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "rose",
+      "picture": "🌹"
+    },
+    "options": [
+      "r",
+      "c",
+      "j"
+    ],
+    "answer": "r"
+  },
+  {
+    "id": "g1-sounds-06",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 1,
+    "prompt": "Which letter does star start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "star",
+      "picture": "⭐"
+    },
+    "options": [
+      "o",
+      "m",
+      "s"
+    ],
+    "answer": "s"
+  },
+  {
+    "id": "g1-sounds-07",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 1,
+    "prompt": "Which letter does van start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "van",
+      "picture": "🚐"
+    },
+    "options": [
+      "o",
+      "b",
+      "v"
+    ],
+    "answer": "v"
+  },
+  {
+    "id": "g1-sounds-08",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 2,
+    "prompt": "Which letter does sock start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "sock",
+      "picture": "🧦"
+    },
+    "options": [
+      "l",
+      "a",
+      "s"
+    ],
+    "answer": "s"
+  },
+  {
+    "id": "g1-sounds-09",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 2,
+    "prompt": "Which letter does pig start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "pig",
+      "picture": "🐷"
+    },
+    "options": [
+      "g",
+      "a",
+      "p"
+    ],
+    "answer": "p"
+  },
+  {
+    "id": "g1-sounds-10",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 2,
+    "prompt": "Which letter does pear start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "pear",
+      "picture": "🍐"
+    },
+    "options": [
+      "k",
+      "j",
+      "p"
+    ],
+    "answer": "p"
+  },
+  {
+    "id": "g1-sounds-11",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 2,
+    "prompt": "Which letter does snake start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "snake",
+      "picture": "🐍"
+    },
+    "options": [
+      "r",
+      "m",
+      "s"
+    ],
+    "answer": "s"
+  },
+  {
+    "id": "g1-sounds-12",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 2,
+    "prompt": "Which letter does bird start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "bird",
+      "picture": "🐦"
+    },
+    "options": [
+      "b",
+      "l",
+      "c"
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "g1-sounds-13",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 2,
+    "prompt": "Which letter does leg start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "leg",
+      "picture": "🦵"
+    },
+    "options": [
+      "c",
+      "l",
+      "z"
+    ],
+    "answer": "l"
+  },
+  {
+    "id": "g1-sounds-14",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 2,
+    "prompt": "Which letter does pen start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "pen",
+      "picture": "🖊️"
+    },
+    "options": [
+      "x",
+      "o",
+      "p"
+    ],
+    "answer": "p"
+  },
+  {
+    "id": "g1-sounds-15",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 3,
+    "prompt": "Which letter does boat start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "boat",
+      "picture": "⛵"
+    },
+    "options": [
+      "q",
+      "b",
+      "p",
+      "d"
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "g1-sounds-16",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 3,
+    "prompt": "Which letter does fish start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "fish",
+      "picture": "🐟"
+    },
+    "options": [
+      "c",
+      "t",
+      "f",
+      "o"
+    ],
+    "answer": "f"
+  },
+  {
+    "id": "g1-sounds-17",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 3,
+    "prompt": "Which letter does house start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "house",
+      "picture": "🏠"
+    },
+    "options": [
+      "m",
+      "r",
+      "h",
+      "n"
+    ],
+    "answer": "h"
+  },
+  {
+    "id": "g1-sounds-18",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 3,
+    "prompt": "Which letter does cup start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "cup",
+      "picture": "☕"
+    },
+    "options": [
+      "j",
+      "x",
+      "v",
+      "c"
+    ],
+    "answer": "c"
+  },
+  {
+    "id": "g1-sounds-19",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 3,
+    "prompt": "Which letter does book start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "book",
+      "picture": "📖"
+    },
+    "options": [
+      "d",
+      "p",
+      "b",
+      "q"
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "g1-sounds-20",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-sounds",
+    "difficulty": 3,
+    "prompt": "Which letter does ant start with?",
+    "type": "first-letter",
+    "payload": {
+      "word": "ant",
+      "picture": "🐜"
+    },
+    "options": [
+      "e",
+      "o",
+      "a",
+      "d"
+    ],
+    "answer": "a"
+  }
+]

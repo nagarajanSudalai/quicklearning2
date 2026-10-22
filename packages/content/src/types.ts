@@ -54,7 +54,48 @@ export type ComparePuzzle = Base & {
   answer: 'left' | 'right';
 };
 
-export type Puzzle = PatternPuzzle | CountPuzzle | ArithmeticPuzzle | ShapeMatchPuzzle | ComparePuzzle;
+/** "Find the small letter for B." */
+export type LetterMatchPuzzle = Base & {
+  type: 'letter-match';
+  payload: { upper: string };
+  options: string[];
+  answer: string;
+};
+
+/** "Which letter does dog start with?" — shows the picture and word. */
+export type FirstLetterPuzzle = Base & {
+  type: 'first-letter';
+  payload: { word: string; picture: string };
+  options: string[];
+  answer: string;
+};
+
+/** Pick the word for a picture, or — with `blank` — the missing letter at that index. */
+export type PictureWordPuzzle = Base & {
+  type: 'picture-word';
+  payload: { word: string; picture: string; blank?: number };
+  options: string[];
+  answer: string;
+};
+
+/** "Which word rhymes with cat?" — options are words, each shown with its picture. */
+export type RhymePuzzle = Base & {
+  type: 'rhyme';
+  payload: { word: string; picture: string; pictures: Record<string, string> };
+  options: string[];
+  answer: string;
+};
+
+export type Puzzle =
+  | PatternPuzzle
+  | CountPuzzle
+  | ArithmeticPuzzle
+  | ShapeMatchPuzzle
+  | ComparePuzzle
+  | LetterMatchPuzzle
+  | FirstLetterPuzzle
+  | PictureWordPuzzle
+  | RhymePuzzle;
 export type PuzzleType = Puzzle['type'];
 export type PuzzleOption = Puzzle['options'][number];
 

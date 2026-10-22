@@ -4,6 +4,7 @@
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { KNOWN_WORDS, rhymes } from '../src/words.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
 const SHAPES = ['star', 'circle', 'square', 'tri', 'diamond', 'rectangle'];
@@ -47,6 +48,27 @@ function check(p: any): string | null {
         if (seq.every((s, i) => s === seq[i % n])) return seq[seq.length % n] === p.answer ? null : `pattern continues with ${seq[seq.length % n]}`;
       }
       return 'sequence has no repeating unit';
+    }
+    case 'letter-match':
+      return q.upper.toLowerCase() === p.answer ? null : `small ${q.upper} is ${q.upper.toLowerCase()}`;
+    case 'first-letter':
+      if (!q.picture) return 'missing picture';
+      return q.word[0] === p.answer ? null : `${q.word} starts with ${q.word[0]}`;
+    case 'picture-word': {
+      if (!q.picture) return 'missing picture';
+      if (q.blank === undefined) return q.word === p.answer ? null : `answer should be ${q.word}`;
+      if (q.word[q.blank] !== p.answer) return `missing letter is ${q.word[q.blank]}`;
+      // A wrong letter must not spell another real word, or there'd be two right answers.
+      const fill = (l: string) => q.word.slice(0, q.blank) + l + q.word.slice(q.blank + 1);
+      const clash = p.options.find((o: string) => o !== p.answer && KNOWN_WORDS.has(fill(o)));
+      return clash ? `"${fill(clash)}" is also a word` : null;
+    }
+    case 'rhyme': {
+      if (!rhymes(q.word, p.answer)) return `${p.answer} doesn't rhyme with ${q.word}`;
+      const extra = p.options.find((o: string) => o !== p.answer && rhymes(q.word, o));
+      if (extra) return `${extra} also rhymes with ${q.word}`;
+      const noPic = p.options.find((o: string) => !q.pictures?.[o]);
+      return noPic ? `no picture for ${noPic}` : null;
     }
     default:
       return `unknown type "${p.type}"`;

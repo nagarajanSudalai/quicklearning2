@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -38,6 +38,10 @@ export const TOPICS: Topic[] = [
   { id: 'g1-shapes', grade: 1, subject: 'maths', title: 'Shapes', blurb: 'Know your shapes', glyph: '▲', color: colors.blue },
   { id: 'g1-compare', grade: 1, subject: 'maths', title: 'More or fewer', blurb: 'Compare groups', glyph: '⚖', color: colors.purple },
   { id: 'g1-patterns', grade: 1, subject: 'maths', title: 'Patterns', blurb: 'What comes next?', glyph: '★●', color: colors.teal },
+  { id: 'g1-letters', grade: 1, subject: 'english', title: 'Big & small letters', blurb: 'Match A to a', glyph: 'Aa', color: colors.blue },
+  { id: 'g1-sounds', grade: 1, subject: 'english', title: 'First letters', blurb: 'How does a word start?', glyph: 'b…', color: colors.pink },
+  { id: 'g1-words', grade: 1, subject: 'english', title: 'Picture words', blurb: 'Read short words', glyph: 'cat', color: colors.orange },
+  { id: 'g1-rhymes', grade: 1, subject: 'english', title: 'Rhyming words', blurb: 'Cat, hat, bat!', glyph: '♪', color: colors.purple },
 ];
 
 export const topicsFor = (grade: Grade, subject: SubjectId) => TOPICS.filter((t) => t.grade === grade && t.subject === subject);

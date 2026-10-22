@@ -1,0 +1,494 @@
+[
+  {
+    "id": "g1-rhymes-01",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 1,
+    "prompt": "Which word rhymes with bee?",
+    "type": "rhyme",
+    "payload": {
+      "word": "bee",
+      "picture": "🐝",
+      "pictures": {
+        "dog": "🐶",
+        "three": "3️⃣",
+        "car": "🚗"
+      }
+    },
+    "options": [
+      "dog",
+      "three",
+      "car"
+    ],
+    "answer": "three"
+  },
+  {
+    "id": "g1-rhymes-02",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 1,
+    "prompt": "Which word rhymes with star?",
+    "type": "rhyme",
+    "payload": {
+      "word": "star",
+      "picture": "⭐",
+      "pictures": {
+        "car": "🚗",
+        "nose": "👃",
+        "leg": "🦵"
+      }
+    },
+    "options": [
+      "car",
+      "nose",
+      "leg"
+    ],
+    "answer": "car"
+  },
+  {
+    "id": "g1-rhymes-03",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 1,
+    "prompt": "Which word rhymes with three?",
+    "type": "rhyme",
+    "payload": {
+      "word": "three",
+      "picture": "3️⃣",
+      "pictures": {
+        "pig": "🐷",
+        "rose": "🌹",
+        "bee": "🐝"
+      }
+    },
+    "options": [
+      "pig",
+      "rose",
+      "bee"
+    ],
+    "answer": "bee"
+  },
+  {
+    "id": "g1-rhymes-04",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 1,
+    "prompt": "Which word rhymes with boat?",
+    "type": "rhyme",
+    "payload": {
+      "word": "boat",
+      "picture": "⛵",
+      "pictures": {
+        "spoon": "🥄",
+        "coat": "🧥",
+        "leg": "🦵"
+      }
+    },
+    "options": [
+      "spoon",
+      "coat",
+      "leg"
+    ],
+    "answer": "coat"
+  },
+  {
+    "id": "g1-rhymes-05",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 1,
+    "prompt": "Which word rhymes with ten?",
+    "type": "rhyme",
+    "payload": {
+      "word": "ten",
+      "picture": "🔟",
+      "pictures": {
+        "bee": "🐝",
+        "hen": "🐔",
+        "book": "📖"
+      }
+    },
+    "options": [
+      "bee",
+      "hen",
+      "book"
+    ],
+    "answer": "hen"
+  },
+  {
+    "id": "g1-rhymes-06",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 1,
+    "prompt": "Which word rhymes with dog?",
+    "type": "rhyme",
+    "payload": {
+      "word": "dog",
+      "picture": "🐶",
+      "pictures": {
+        "leg": "🦵",
+        "ball": "⚽",
+        "frog": "🐸"
+      }
+    },
+    "options": [
+      "leg",
+      "ball",
+      "frog"
+    ],
+    "answer": "frog"
+  },
+  {
+    "id": "g1-rhymes-07",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 1,
+    "prompt": "Which word rhymes with bear?",
+    "type": "rhyme",
+    "payload": {
+      "word": "bear",
+      "picture": "🐻",
+      "pictures": {
+        "nose": "👃",
+        "mouse": "🐭",
+        "pear": "🍐"
+      }
+    },
+    "options": [
+      "nose",
+      "mouse",
+      "pear"
+    ],
+    "answer": "pear"
+  },
+  {
+    "id": "g1-rhymes-08",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 2,
+    "prompt": "Which word rhymes with fox?",
+    "type": "rhyme",
+    "payload": {
+      "word": "fox",
+      "picture": "🦊",
+      "pictures": {
+        "fish": "🐟",
+        "lion": "🦁",
+        "box": "📦"
+      }
+    },
+    "options": [
+      "fish",
+      "lion",
+      "box"
+    ],
+    "answer": "box"
+  },
+  {
+    "id": "g1-rhymes-09",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 2,
+    "prompt": "Which word rhymes with chair?",
+    "type": "rhyme",
+    "payload": {
+      "word": "chair",
+      "picture": "🪑",
+      "pictures": {
+        "coat": "🧥",
+        "three": "3️⃣",
+        "pear": "🍐"
+      }
+    },
+    "options": [
+      "coat",
+      "three",
+      "pear"
+    ],
+    "answer": "pear"
+  },
+  {
+    "id": "g1-rhymes-10",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 2,
+    "prompt": "Which word rhymes with key?",
+    "type": "rhyme",
+    "payload": {
+      "word": "key",
+      "picture": "🔑",
+      "pictures": {
+        "fox": "🦊",
+        "cup": "☕",
+        "bee": "🐝"
+      }
+    },
+    "options": [
+      "fox",
+      "cup",
+      "bee"
+    ],
+    "answer": "bee"
+  },
+  {
+    "id": "g1-rhymes-11",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 2,
+    "prompt": "Which word rhymes with cake?",
+    "type": "rhyme",
+    "payload": {
+      "word": "cake",
+      "picture": "🎂",
+      "pictures": {
+        "nose": "👃",
+        "cow": "🐮",
+        "snake": "🐍"
+      }
+    },
+    "options": [
+      "nose",
+      "cow",
+      "snake"
+    ],
+    "answer": "snake"
+  },
+  {
+    "id": "g1-rhymes-12",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 2,
+    "prompt": "Which word rhymes with shell?",
+    "type": "rhyme",
+    "payload": {
+      "word": "shell",
+      "picture": "🐚",
+      "pictures": {
+        "car": "🚗",
+        "sun": "☀️",
+        "bell": "🔔"
+      }
+    },
+    "options": [
+      "car",
+      "sun",
+      "bell"
+    ],
+    "answer": "bell"
+  },
+  {
+    "id": "g1-rhymes-13",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 2,
+    "prompt": "Which word rhymes with pear?",
+    "type": "rhyme",
+    "payload": {
+      "word": "pear",
+      "picture": "🍐",
+      "pictures": {
+        "bear": "🐻",
+        "pig": "🐷",
+        "duck": "🦆"
+      }
+    },
+    "options": [
+      "bear",
+      "pig",
+      "duck"
+    ],
+    "answer": "bear"
+  },
+  {
+    "id": "g1-rhymes-14",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 2,
+    "prompt": "Which word rhymes with hen?",
+    "type": "rhyme",
+    "payload": {
+      "word": "hen",
+      "picture": "🐔",
+      "pictures": {
+        "hat": "🎩",
+        "ten": "🔟",
+        "cow": "🐮"
+      }
+    },
+    "options": [
+      "hat",
+      "ten",
+      "cow"
+    ],
+    "answer": "ten"
+  },
+  {
+    "id": "g1-rhymes-15",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 3,
+    "prompt": "Which word rhymes with moon?",
+    "type": "rhyme",
+    "payload": {
+      "word": "moon",
+      "picture": "🌙",
+      "pictures": {
+        "lion": "🦁",
+        "milk": "🥛",
+        "spoon": "🥄",
+        "hat": "🎩"
+      }
+    },
+    "options": [
+      "lion",
+      "milk",
+      "spoon",
+      "hat"
+    ],
+    "answer": "spoon"
+  },
+  {
+    "id": "g1-rhymes-16",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 3,
+    "prompt": "Which word rhymes with box?",
+    "type": "rhyme",
+    "payload": {
+      "word": "box",
+      "picture": "📦",
+      "pictures": {
+        "fox": "🦊",
+        "bus": "🚌",
+        "shell": "🐚",
+        "sock": "🧦"
+      }
+    },
+    "options": [
+      "fox",
+      "bus",
+      "shell",
+      "sock"
+    ],
+    "answer": "fox"
+  },
+  {
+    "id": "g1-rhymes-17",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 3,
+    "prompt": "Which word rhymes with frog?",
+    "type": "rhyme",
+    "payload": {
+      "word": "frog",
+      "picture": "🐸",
+      "pictures": {
+        "bat": "🦇",
+        "fox": "🦊",
+        "pen": "🖊️",
+        "dog": "🐶"
+      }
+    },
+    "options": [
+      "bat",
+      "fox",
+      "pen",
+      "dog"
+    ],
+    "answer": "dog"
+  },
+  {
+    "id": "g1-rhymes-18",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 3,
+    "prompt": "Which word rhymes with coat?",
+    "type": "rhyme",
+    "payload": {
+      "word": "coat",
+      "picture": "🧥",
+      "pictures": {
+        "bed": "🛏️",
+        "nose": "👃",
+        "goat": "🐐",
+        "cake": "🎂"
+      }
+    },
+    "options": [
+      "bed",
+      "nose",
+      "goat",
+      "cake"
+    ],
+    "answer": "goat"
+  },
+  {
+    "id": "g1-rhymes-19",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 3,
+    "prompt": "Which word rhymes with bell?",
+    "type": "rhyme",
+    "payload": {
+      "word": "bell",
+      "picture": "🔔",
+      "pictures": {
+        "bat": "🦇",
+        "shell": "🐚",
+        "key": "🔑",
+        "duck": "🦆"
+      }
+    },
+    "options": [
+      "bat",
+      "shell",
+      "key",
+      "duck"
+    ],
+    "answer": "shell"
+  },
+  {
+    "id": "g1-rhymes-20",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-rhymes",
+    "difficulty": 3,
+    "prompt": "Which word rhymes with cat?",
+    "type": "rhyme",
+    "payload": {
+      "word": "cat",
+      "picture": "🐱",
+      "pictures": {
+        "bat": "🦇",
+        "egg": "🥚",
+        "chair": "🪑",
+        "three": "3️⃣"
+      }
+    },
+    "options": [
+      "bat",
+      "egg",
+      "chair",
+      "three"
+    ],
+    "answer": "bat"
+  }
+]

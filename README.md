@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Phase 1 — Grade 1 Maths.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Phase 1 — Grade 1 Maths and English are playable.**
 
 ## Getting started
 
@@ -43,6 +43,19 @@ Six topics, 20 puzzles each across 3 levels — 120 puzzles:
 | More or fewer | `compare` | big gap · gap of 2 · gap of 1 |
 | Patterns | `pattern` | AB · AAB/ABB · ABC/ABBC |
 
+## Grade 1 English (Phase 1)
+
+Four topics, 20 puzzles each across 3 levels — 80 puzzles, built from the word bank in `packages/content/src/words.ts`:
+
+| Topic | Puzzle type | Levels |
+|---|---|---|
+| Big & small letters | `letter-match` | very different letters · mixed · look-alikes (b d p q) |
+| First letters | `first-letter` | 3 very different letters · mixed · 4 options with look-alikes |
+| Picture words | `picture-word` | different first letters · same first letter (moon/mouse/milk) · missing letter (v_n) |
+| Rhyming words | `rhyme` | 3 options · with a same-start decoy (cat → cake) · 4 options |
+
+Rhymes are grouped by sound, not spelling (bear/chair, bee/key), in `RHYME_FAMILIES`. A missing-letter puzzle never offers a wrong letter that spells another real word (c_t: no "o", because "cot" is a word). The content checker enforces both. No puzzle depends on hearing an isolated letter sound, because the device voice can't say "buh"; recorded clips can add that later.
+
 How play works: a session is 10 puzzles, unsolved ones first and easiest first. Each question is read aloud (with a 🔊 button to repeat it). A wrong pick wiggles and the child can try again. A star is earned only for a right answer on the first try. Stars, solved puzzles and the daily streak are saved on the device. Parent settings (progress, sound, change grade, reset) are behind a multiplication-question parent gate.
 
 ## Voice
@@ -73,3 +86,7 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Pick grade | Topics | Adding | Patterns | Result |
 |---|---|---|---|---|
 | ![](docs/screenshots/app-1-grades.png) | ![](docs/screenshots/app-3-topics.png) | ![](docs/screenshots/app-5-right.png) | ![](docs/screenshots/app-type-g1-patterns.png) | ![](docs/screenshots/app-6-result.png) |
+
+| English topics | Picture words | Missing letter | First letters | Rhymes |
+|---|---|---|---|---|
+| ![](docs/screenshots/app-7-english-topics.png) | ![](docs/screenshots/app-8-picture-words.png) | ![](docs/screenshots/app-hard-g1-words.png) | ![](docs/screenshots/app-hard-g1-sounds.png) | ![](docs/screenshots/app-type-g1-rhymes.png) |

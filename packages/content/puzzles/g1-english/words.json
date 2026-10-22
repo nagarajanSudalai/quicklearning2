@@ -1,0 +1,388 @@
+[
+  {
+    "id": "g1-words-01",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 1,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "three",
+      "picture": "3️⃣"
+    },
+    "options": [
+      "box",
+      "three",
+      "van"
+    ],
+    "answer": "three"
+  },
+  {
+    "id": "g1-words-02",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 1,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "hat",
+      "picture": "🎩"
+    },
+    "options": [
+      "ball",
+      "ten",
+      "hat"
+    ],
+    "answer": "hat"
+  },
+  {
+    "id": "g1-words-03",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 1,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "web",
+      "picture": "🕸️"
+    },
+    "options": [
+      "web",
+      "bird",
+      "hen"
+    ],
+    "answer": "web"
+  },
+  {
+    "id": "g1-words-04",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 1,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "car",
+      "picture": "🚗"
+    },
+    "options": [
+      "frog",
+      "car",
+      "three"
+    ],
+    "answer": "car"
+  },
+  {
+    "id": "g1-words-05",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 1,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "bee",
+      "picture": "🐝"
+    },
+    "options": [
+      "bee",
+      "three",
+      "leg"
+    ],
+    "answer": "bee"
+  },
+  {
+    "id": "g1-words-06",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 1,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "pear",
+      "picture": "🍐"
+    },
+    "options": [
+      "lion",
+      "pear",
+      "key"
+    ],
+    "answer": "pear"
+  },
+  {
+    "id": "g1-words-07",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 1,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "egg",
+      "picture": "🥚"
+    },
+    "options": [
+      "frog",
+      "egg",
+      "chair"
+    ],
+    "answer": "egg"
+  },
+  {
+    "id": "g1-words-08",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 2,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "moon",
+      "picture": "🌙"
+    },
+    "options": [
+      "mouse",
+      "milk",
+      "moon"
+    ],
+    "answer": "moon"
+  },
+  {
+    "id": "g1-words-09",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 2,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "frog",
+      "picture": "🐸"
+    },
+    "options": [
+      "fox",
+      "fish",
+      "frog"
+    ],
+    "answer": "frog"
+  },
+  {
+    "id": "g1-words-10",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 2,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "spoon",
+      "picture": "🥄"
+    },
+    "options": [
+      "snake",
+      "spoon",
+      "shell"
+    ],
+    "answer": "spoon"
+  },
+  {
+    "id": "g1-words-11",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 2,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "chair",
+      "picture": "🪑"
+    },
+    "options": [
+      "chair",
+      "cup",
+      "car"
+    ],
+    "answer": "chair"
+  },
+  {
+    "id": "g1-words-12",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 2,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "box",
+      "picture": "📦"
+    },
+    "options": [
+      "boat",
+      "bird",
+      "box"
+    ],
+    "answer": "box"
+  },
+  {
+    "id": "g1-words-13",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 2,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "hat",
+      "picture": "🎩"
+    },
+    "options": [
+      "hen",
+      "hat",
+      "house"
+    ],
+    "answer": "hat"
+  },
+  {
+    "id": "g1-words-14",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 2,
+    "prompt": "Which word matches the picture?",
+    "type": "picture-word",
+    "payload": {
+      "word": "fox",
+      "picture": "🦊"
+    },
+    "options": [
+      "fish",
+      "frog",
+      "fox"
+    ],
+    "answer": "fox"
+  },
+  {
+    "id": "g1-words-15",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 3,
+    "prompt": "Which letter is missing?",
+    "type": "picture-word",
+    "payload": {
+      "word": "van",
+      "picture": "🚐",
+      "blank": 1
+    },
+    "options": [
+      "a",
+      "e",
+      "o"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g1-words-16",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 3,
+    "prompt": "Which letter is missing?",
+    "type": "picture-word",
+    "payload": {
+      "word": "fox",
+      "picture": "🦊",
+      "blank": 1
+    },
+    "options": [
+      "o",
+      "u",
+      "e"
+    ],
+    "answer": "o"
+  },
+  {
+    "id": "g1-words-17",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 3,
+    "prompt": "Which letter is missing?",
+    "type": "picture-word",
+    "payload": {
+      "word": "bus",
+      "picture": "🚌",
+      "blank": 1
+    },
+    "options": [
+      "u",
+      "i",
+      "o"
+    ],
+    "answer": "u"
+  },
+  {
+    "id": "g1-words-18",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 3,
+    "prompt": "Which letter is missing?",
+    "type": "picture-word",
+    "payload": {
+      "word": "dog",
+      "picture": "🐶",
+      "blank": 1
+    },
+    "options": [
+      "a",
+      "o",
+      "e"
+    ],
+    "answer": "o"
+  },
+  {
+    "id": "g1-words-19",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 3,
+    "prompt": "Which letter is missing?",
+    "type": "picture-word",
+    "payload": {
+      "word": "cup",
+      "picture": "☕",
+      "blank": 1
+    },
+    "options": [
+      "u",
+      "e",
+      "i"
+    ],
+    "answer": "u"
+  },
+  {
+    "id": "g1-words-20",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-words",
+    "difficulty": 3,
+    "prompt": "Which letter is missing?",
+    "type": "picture-word",
+    "payload": {
+      "word": "sun",
+      "picture": "☀️",
+      "blank": 1
+    },
+    "options": [
+      "e",
+      "a",
+      "u"
+    ],
+    "answer": "u"
+  }
+]

@@ -1,0 +1,368 @@
+[
+  {
+    "id": "g1-letters-01",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 1,
+    "prompt": "Find the small letter for capital Y.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "Y"
+    },
+    "options": [
+      "y",
+      "h",
+      "t"
+    ],
+    "answer": "y"
+  },
+  {
+    "id": "g1-letters-02",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 1,
+    "prompt": "Find the small letter for capital T.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "T"
+    },
+    "options": [
+      "s",
+      "t",
+      "h"
+    ],
+    "answer": "t"
+  },
+  {
+    "id": "g1-letters-03",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 1,
+    "prompt": "Find the small letter for capital F.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "F"
+    },
+    "options": [
+      "z",
+      "f",
+      "a"
+    ],
+    "answer": "f"
+  },
+  {
+    "id": "g1-letters-04",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 1,
+    "prompt": "Find the small letter for capital P.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "P"
+    },
+    "options": [
+      "l",
+      "w",
+      "p"
+    ],
+    "answer": "p"
+  },
+  {
+    "id": "g1-letters-05",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 1,
+    "prompt": "Find the small letter for capital N.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "N"
+    },
+    "options": [
+      "n",
+      "e",
+      "w"
+    ],
+    "answer": "n"
+  },
+  {
+    "id": "g1-letters-06",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 1,
+    "prompt": "Find the small letter for capital D.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "D"
+    },
+    "options": [
+      "d",
+      "v",
+      "s"
+    ],
+    "answer": "d"
+  },
+  {
+    "id": "g1-letters-07",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 1,
+    "prompt": "Find the small letter for capital E.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "E"
+    },
+    "options": [
+      "t",
+      "e",
+      "j"
+    ],
+    "answer": "e"
+  },
+  {
+    "id": "g1-letters-08",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 2,
+    "prompt": "Find the small letter for capital I.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "I"
+    },
+    "options": [
+      "o",
+      "i",
+      "a"
+    ],
+    "answer": "i"
+  },
+  {
+    "id": "g1-letters-09",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 2,
+    "prompt": "Find the small letter for capital H.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "H"
+    },
+    "options": [
+      "h",
+      "r",
+      "m"
+    ],
+    "answer": "h"
+  },
+  {
+    "id": "g1-letters-10",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 2,
+    "prompt": "Find the small letter for capital R.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "R"
+    },
+    "options": [
+      "m",
+      "r",
+      "j"
+    ],
+    "answer": "r"
+  },
+  {
+    "id": "g1-letters-11",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 2,
+    "prompt": "Find the small letter for capital G.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "G"
+    },
+    "options": [
+      "g",
+      "w",
+      "i"
+    ],
+    "answer": "g"
+  },
+  {
+    "id": "g1-letters-12",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 2,
+    "prompt": "Find the small letter for capital M.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "M"
+    },
+    "options": [
+      "n",
+      "t",
+      "m"
+    ],
+    "answer": "m"
+  },
+  {
+    "id": "g1-letters-13",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 2,
+    "prompt": "Find the small letter for capital L.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "L"
+    },
+    "options": [
+      "i",
+      "l",
+      "t"
+    ],
+    "answer": "l"
+  },
+  {
+    "id": "g1-letters-14",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 2,
+    "prompt": "Find the small letter for capital K.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "K"
+    },
+    "options": [
+      "k",
+      "u",
+      "x"
+    ],
+    "answer": "k"
+  },
+  {
+    "id": "g1-letters-15",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 3,
+    "prompt": "Find the small letter for capital Q.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "Q"
+    },
+    "options": [
+      "q",
+      "b",
+      "d",
+      "p"
+    ],
+    "answer": "q"
+  },
+  {
+    "id": "g1-letters-16",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 3,
+    "prompt": "Find the small letter for capital A.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "A"
+    },
+    "options": [
+      "o",
+      "e",
+      "a",
+      "j"
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "g1-letters-17",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 3,
+    "prompt": "Find the small letter for capital J.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "J"
+    },
+    "options": [
+      "t",
+      "l",
+      "j",
+      "i"
+    ],
+    "answer": "j"
+  },
+  {
+    "id": "g1-letters-18",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 3,
+    "prompt": "Find the small letter for capital B.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "B"
+    },
+    "options": [
+      "d",
+      "q",
+      "b",
+      "p"
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "g1-letters-19",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 3,
+    "prompt": "Find the small letter for capital L.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "L"
+    },
+    "options": [
+      "j",
+      "t",
+      "i",
+      "l"
+    ],
+    "answer": "l"
+  },
+  {
+    "id": "g1-letters-20",
+    "grade": 1,
+    "subject": "english",
+    "topic": "g1-letters",
+    "difficulty": 3,
+    "prompt": "Find the small letter for capital J.",
+    "type": "letter-match",
+    "payload": {
+      "upper": "J"
+    },
+    "options": [
+      "i",
+      "j",
+      "t",
+      "l"
+    ],
+    "answer": "j"
+  }
+]

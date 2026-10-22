@@ -12,10 +12,11 @@
 
 ## Phase 1 — Grade 1, offline, no accounts
 - **Maths ✅** — counting, adding, taking away, shapes, more/fewer, patterns (120 puzzles, 3 levels).
-- English — letters & sounds, picture words, rhyming (`picture-word`, `letter-sound`).
+- **English ✅** — big & small letters, first letters, picture words (with missing letters), rhyming words (80 puzzles, 3 levels).
 - Puzzles — odd one out, 3×3 picture crossword (`odd-one-out`, `picture-crossword`).
 - Thinking Skills — sorting, memory pairs, mazes (`sort-into-groups`, `memory-match`).
-- Still to do: mascot animation (Lottie/Rive) once art is ready, sound effects, recorded voice prompts to replace text-to-speech, internal test builds with EAS (TestFlight + Play internal track).
+- **Voice ✅** — best Indian English device voice; optional recorded natural voice (Google Cloud TTS en-IN) once an API key is added.
+- Still to do: letter-sound puzzles (need recorded clips), mascot animation (Lottie/Rive) once art is ready, sound effects, internal test builds with EAS (TestFlight + Play internal track).
 
 ## Phase 2 — Accounts, progress and store launch
 - Supabase: parent sign-up, up to 4 child profiles, progress synced across devices.

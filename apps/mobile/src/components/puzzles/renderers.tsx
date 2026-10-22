@@ -68,7 +68,7 @@ export const RENDERERS: Renderers = {
     Stimulus: ({ puzzle }) => {
       const { a, b, op, item } = puzzle.payload;
       return (
-        <View style={[styles.panel, { flexDirection: 'column', gap: 12 }]}>
+        <View style={[styles.panel, { flexDirection: 'column', flexWrap: 'nowrap', gap: 12 }]}>
           {item && (
             <View style={styles.sumRow}>
               <View style={styles.sumSide}><EmojiGroup item={item} count={a} size={28} /></View>
@@ -93,7 +93,64 @@ export const RENDERERS: Renderers = {
     columns: () => 2,
     optionHeight: 190,
   },
+  'letter-match': {
+    Stimulus: ({ puzzle }) => (
+      <View style={styles.panel}>
+        <Text style={styles.bigLetter}>{puzzle.payload.upper}</Text>
+      </View>
+    ),
+    option: (l) => <Text style={styles.letter}>{l}</Text>,
+    columns: (p) => (p.options.length === 4 ? 2 : 3),
+  },
+  'first-letter': {
+    Stimulus: ({ puzzle }) => <Picture picture={puzzle.payload.picture} word={puzzle.payload.word} />,
+    option: (l) => <Text style={styles.letter}>{l}</Text>,
+    columns: (p) => (p.options.length === 4 ? 2 : 3),
+  },
+  'picture-word': {
+    Stimulus: ({ puzzle }) => {
+      const { picture, word, blank } = puzzle.payload;
+      if (blank === undefined) return <Picture picture={picture} />;
+      return (
+        <Picture picture={picture}>
+          <View style={styles.spelled}>
+            {word.split('').map((ch, i) =>
+              i === blank ? (
+                <View key={i} style={[styles.blank, styles.letterBlank]}><Text style={styles.blankText}>?</Text></View>
+              ) : (
+                <Text key={i} style={styles.spelledLetter}>{ch}</Text>
+              ),
+            )}
+          </View>
+        </Picture>
+      );
+    },
+    option: (w) => <Text style={w.length > 1 ? styles.word : styles.letter} adjustsFontSizeToFit numberOfLines={1}>{w}</Text>,
+    columns: () => 3,
+  },
+  rhyme: {
+    Stimulus: ({ puzzle }) => <Picture picture={puzzle.payload.picture} word={puzzle.payload.word} />,
+    option: (w, p) => (
+      <View style={styles.wordCard}>
+        <Text style={styles.optionPicture}>{p.payload.pictures[w]}</Text>
+        <Text style={styles.wordSmall} adjustsFontSizeToFit numberOfLines={1}>{w}</Text>
+      </View>
+    ),
+    columns: (p) => (p.options.length === 4 ? 2 : 3),
+    optionHeight: 120,
+  },
 };
+
+/** A big picture, with an optional word or spelled-out word under it. */
+function Picture({ picture, word, children }: { picture: string; word?: string; children?: ReactNode }) {
+  return (
+    <View style={[styles.panel, styles.pictureBox]}>
+      <Text style={styles.picture}>{picture}</Text>
+      {word && <Text style={styles.pictureWord}>{word}</Text>}
+      {children}
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
   panel: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, backgroundColor: colors.panel, borderRadius: 18, padding: 16, justifyContent: 'center', alignItems: 'center', minHeight: 90 },
@@ -105,4 +162,16 @@ const styles = StyleSheet.create({
   sumSide: { flex: 1, alignItems: 'center' },
   op: { fontFamily: font.display, fontSize: 30, color: colors.brand },
   equation: { fontFamily: font.display, fontSize: 40, color: colors.ink, textAlign: 'center' },
+  bigLetter: { fontFamily: font.display, fontSize: 96, lineHeight: 110, color: colors.brand },
+  letter: { fontFamily: font.display, fontSize: 48, lineHeight: 58, color: colors.ink },
+  pictureBox: { flexDirection: 'column', flexWrap: 'nowrap', gap: 6 },
+  picture: { fontSize: 72, lineHeight: 88, textAlign: 'center' },
+  pictureWord: { fontFamily: font.display, fontSize: 32, color: colors.ink },
+  spelled: { flexDirection: 'row', alignItems: 'center', gap: 4 },
+  spelledLetter: { fontFamily: font.display, fontSize: 40, color: colors.ink, width: 34, textAlign: 'center' },
+  letterBlank: { width: 38, height: 46 },
+  word: { fontFamily: font.display, fontSize: 26, color: colors.ink },
+  wordCard: { alignItems: 'center', gap: 2, width: '100%' },
+  optionPicture: { fontSize: 44, lineHeight: 54 },
+  wordSmall: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
 });
