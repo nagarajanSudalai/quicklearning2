@@ -6,6 +6,7 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CATEGORIES, oddCandidates } from '../src/categories.ts';
 import { countSolutions, isSolved } from '../src/sudoku.ts';
+import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
@@ -113,6 +114,13 @@ function check(p: any): string | null {
       if (!want) return `no ${q.rule} rule for "${q.base}"`;
       return want === p.answer ? null : `answer should be "${want}"`;
     }
+    case 'riddle': {
+      const r = RIDDLES.find((x) => x.answer[0] === p.answer);
+      if (!r) return `${p.answer} is not a riddle answer`;
+      if (!q.clues.length || q.clues.some((c: string, k: number) => r.clues[k] !== c)) return 'clues do not match the riddle bank';
+      // A wrong option must not be another riddle's answer with the same clues.
+      return p.options.every((o: string) => q.names[o]) ? null : 'every option needs a name';
+    }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);
       if (!group) return `unknown group ${q.group}`;
@@ -188,6 +196,14 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     if (!q.grid.includes(null)) return 'no blanks';
     const n = countSolutions(q.grid);
     return n === 1 ? null : `${n === 0 ? 'no' : 'more than one'} solution`;
+  },
+  'order-steps'(q) {
+    const s = SEQUENCES.find((x) => x.title === q.title);
+    if (!s) return `unknown sequence "${q.title}"`;
+    if (s.steps.length !== q.steps.length || s.steps.some(([e, n], k) => q.steps[k].item !== e || q.steps[k].name !== n)) return 'steps are not in the right order';
+    const shown = [...q.shown].sort((a: number, b: number) => a - b);
+    if (shown.some((v: number, k: number) => v !== k)) return 'shown must list every step once';
+    return q.shown.every((v: number, k: number) => v === k) ? 'pictures are already in order' : null;
   },
   maze(q) {
     const { rows, cols, cells, start, goal } = q;

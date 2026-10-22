@@ -28,6 +28,9 @@ import g2Spelling from '../puzzles/g2-english/spelling.json';
 import g2Sentences from '../puzzles/g2-english/sentences.json';
 import g2Crossword from '../puzzles/g2-puzzles/crossword.json';
 import g2Sudoku from '../puzzles/g2-puzzles/sudoku.json';
+import g2Order from '../puzzles/g2-thinking/order.json';
+import g2Riddles from '../puzzles/g2-thinking/riddles.json';
+import g2Mazes from '../puzzles/g2-thinking/mazes.json';
 
 export * from './types';
 export * from './tokens';
@@ -38,6 +41,7 @@ export * from './categories';
 export * from './time';
 export * from './words2';
 export * from './sudoku';
+export * from './thinking2';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -48,6 +52,7 @@ export const PUZZLES = [
   ...g2PlaceValue, ...g2Addition, ...g2Subtraction, ...g2SkipCounting, ...g2Groups, ...g2Time, ...g2Money,
   ...g2Plurals, ...g2Opposites, ...g2Grammar, ...g2Spelling, ...g2Sentences,
   ...g2Crossword, ...g2Sudoku,
+  ...g2Order, ...g2Riddles, ...g2Mazes,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -60,6 +60,9 @@ export const TOPICS: Topic[] = [
   { id: 'g2-sentences', grade: 2, subject: 'english', title: 'Make a sentence', blurb: 'Put the words in order', glyph: 'Aa.', color: colors.purple },
   { id: 'g2-crossword', grade: 2, subject: 'puzzles', title: 'Mini crossword', blurb: 'Up to three words', glyph: '▦', color: colors.blue },
   { id: 'g2-sudoku', grade: 2, subject: 'puzzles', title: 'Picture sudoku', blurb: 'One of each in every row', glyph: '🍎', color: colors.green },
+  { id: 'g2-order', grade: 2, subject: 'thinking', title: 'What comes first?', blurb: 'Put steps in order', glyph: '1·2·3', color: colors.orange },
+  { id: 'g2-riddles', grade: 2, subject: 'thinking', title: 'Who am I?', blurb: 'Listen to the clues', glyph: '?', color: colors.purple },
+  { id: 'g2-mazes', grade: 2, subject: 'thinking', title: 'Bigger mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

@@ -1,0 +1,547 @@
+[
+  {
+    "id": "g2-riddles-01",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 1,
+    "prompt": "Who am I? I am yellow. I am a fruit.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I am yellow.",
+        "I am a fruit."
+      ],
+      "names": {
+        "🍌": "banana",
+        "🐝": "bee",
+        "⚽": "football"
+      }
+    },
+    "options": [
+      "🍌",
+      "🐝",
+      "⚽"
+    ],
+    "answer": "🍌"
+  },
+  {
+    "id": "g2-riddles-02",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 1,
+    "prompt": "Who am I? I have hands but no fingers. I tell the time.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have hands but no fingers.",
+        "I tell the time."
+      ],
+      "names": {
+        "📖": "book",
+        "⏰": "clock",
+        "☀️": "sun"
+      }
+    },
+    "options": [
+      "📖",
+      "⏰",
+      "☀️"
+    ],
+    "answer": "⏰"
+  },
+  {
+    "id": "g2-riddles-03",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 1,
+    "prompt": "Who am I? I shine in the sky at night. I change shape.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I shine in the sky at night.",
+        "I change shape."
+      ],
+      "names": {
+        "🥭": "mango",
+        "⏰": "clock",
+        "🌙": "moon"
+      }
+    },
+    "options": [
+      "🥭",
+      "⏰",
+      "🌙"
+    ],
+    "answer": "🌙"
+  },
+  {
+    "id": "g2-riddles-04",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 1,
+    "prompt": "Who am I? I have a long trunk. I am big and grey.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have a long trunk.",
+        "I am big and grey."
+      ],
+      "names": {
+        "👟": "shoe",
+        "🐘": "elephant",
+        "🦚": "peacock"
+      }
+    },
+    "options": [
+      "👟",
+      "🐘",
+      "🦚"
+    ],
+    "answer": "🐘"
+  },
+  {
+    "id": "g2-riddles-05",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 1,
+    "prompt": "Who am I? I am a bird. I cannot fly.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I am a bird.",
+        "I cannot fly."
+      ],
+      "names": {
+        "🍦": "ice cream",
+        "🦚": "peacock",
+        "⚽": "football"
+      }
+    },
+    "options": [
+      "🍦",
+      "🦚",
+      "⚽"
+    ],
+    "answer": "🦚"
+  },
+  {
+    "id": "g2-riddles-06",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 1,
+    "prompt": "Who am I? I have a shell on my back. I am very slow.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have a shell on my back.",
+        "I am very slow."
+      ],
+      "names": {
+        "🐢": "turtle",
+        "🚂": "train",
+        "🌙": "moon"
+      }
+    },
+    "options": [
+      "🐢",
+      "🚂",
+      "🌙"
+    ],
+    "answer": "🐢"
+  },
+  {
+    "id": "g2-riddles-07",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 1,
+    "prompt": "Who am I? I am round. You kick me.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I am round.",
+        "You kick me."
+      ],
+      "names": {
+        "⚽": "football",
+        "👟": "shoe",
+        "☀️": "sun"
+      }
+    },
+    "options": [
+      "⚽",
+      "👟",
+      "☀️"
+    ],
+    "answer": "⚽"
+  },
+  {
+    "id": "g2-riddles-08",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 2,
+    "prompt": "Who am I? I have four wheels. I carry many people. Children ride me to school.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have four wheels.",
+        "I carry many people.",
+        "Children ride me to school."
+      ],
+      "names": {
+        "🚗": "car",
+        "🚌": "bus",
+        "🚂": "train"
+      }
+    },
+    "options": [
+      "🚗",
+      "🚌",
+      "🚂"
+    ],
+    "answer": "🚌"
+  },
+  {
+    "id": "g2-riddles-09",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 2,
+    "prompt": "Who am I? I am hot. I give light in the day. I rise in the morning.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I am hot.",
+        "I give light in the day.",
+        "I rise in the morning."
+      ],
+      "names": {
+        "⭐": "star",
+        "🌙": "moon",
+        "☀️": "sun"
+      }
+    },
+    "options": [
+      "⭐",
+      "🌙",
+      "☀️"
+    ],
+    "answer": "☀️"
+  },
+  {
+    "id": "g2-riddles-10",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 2,
+    "prompt": "Who am I? I keep you dry. You open me in the rain. I fold up small.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I keep you dry.",
+        "You open me in the rain.",
+        "I fold up small."
+      ],
+      "names": {
+        "☂️": "umbrella",
+        "⛱️": "beach umbrella",
+        "🧥": "coat"
+      }
+    },
+    "options": [
+      "☂️",
+      "⛱️",
+      "🧥"
+    ],
+    "answer": "☂️"
+  },
+  {
+    "id": "g2-riddles-11",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 2,
+    "prompt": "Who am I? I am the king of fruits. I am sweet and yellow inside. I grow in summer.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I am the king of fruits.",
+        "I am sweet and yellow inside.",
+        "I grow in summer."
+      ],
+      "names": {
+        "🍌": "banana",
+        "🥭": "mango",
+        "🍊": "orange"
+      }
+    },
+    "options": [
+      "🍌",
+      "🥭",
+      "🍊"
+    ],
+    "answer": "🥭"
+  },
+  {
+    "id": "g2-riddles-12",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 2,
+    "prompt": "Who am I? I say moo. I give milk. I eat grass.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I say moo.",
+        "I give milk.",
+        "I eat grass."
+      ],
+      "names": {
+        "🐐": "goat",
+        "🐄": "cow",
+        "🐑": "sheep"
+      }
+    },
+    "options": [
+      "🐐",
+      "🐄",
+      "🐑"
+    ],
+    "answer": "🐄"
+  },
+  {
+    "id": "g2-riddles-13",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 2,
+    "prompt": "Who am I? I have eight arms. I live in the sea. I can squirt ink.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have eight arms.",
+        "I live in the sea.",
+        "I can squirt ink."
+      ],
+      "names": {
+        "🐙": "octopus",
+        "🐟": "fish",
+        "🐬": "dolphin"
+      }
+    },
+    "options": [
+      "🐙",
+      "🐟",
+      "🐬"
+    ],
+    "answer": "🐙"
+  },
+  {
+    "id": "g2-riddles-14",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 2,
+    "prompt": "Who am I? I have black and orange stripes. I am a big cat. I am India’s national animal.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have black and orange stripes.",
+        "I am a big cat.",
+        "I am India’s national animal."
+      ],
+      "names": {
+        "🦓": "zebra",
+        "🐯": "tiger",
+        "🦁": "lion"
+      }
+    },
+    "options": [
+      "🦓",
+      "🐯",
+      "🦁"
+    ],
+    "answer": "🐯"
+  },
+  {
+    "id": "g2-riddles-15",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 3,
+    "prompt": "Who am I? I have pages. You read me. I live on a shelf.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have pages.",
+        "You read me.",
+        "I live on a shelf."
+      ],
+      "names": {
+        "📏": "ruler",
+        "🎒": "school bag",
+        "📖": "book",
+        "✏️": "pencil"
+      }
+    },
+    "options": [
+      "📏",
+      "🎒",
+      "📖",
+      "✏️"
+    ],
+    "answer": "📖"
+  },
+  {
+    "id": "g2-riddles-16",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 3,
+    "prompt": "Who am I? I fly in the sky. I carry people far away. I land at the airport.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I fly in the sky.",
+        "I carry people far away.",
+        "I land at the airport."
+      ],
+      "names": {
+        "🐦": "bird",
+        "🚂": "train",
+        "✈️": "aeroplane",
+        "🚁": "helicopter"
+      }
+    },
+    "options": [
+      "🐦",
+      "🚂",
+      "✈️",
+      "🚁"
+    ],
+    "answer": "✈️"
+  },
+  {
+    "id": "g2-riddles-17",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 3,
+    "prompt": "Who am I? I am cold. I melt in the sun. You eat me on a stick or in a cone.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I am cold.",
+        "I melt in the sun.",
+        "You eat me on a stick or in a cone."
+      ],
+      "names": {
+        "🥛": "milk",
+        "🍰": "cake",
+        "🍦": "ice cream",
+        "🧊": "ice"
+      }
+    },
+    "options": [
+      "🥛",
+      "🍰",
+      "🍦",
+      "🧊"
+    ],
+    "answer": "🍦"
+  },
+  {
+    "id": "g2-riddles-18",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 3,
+    "prompt": "Who am I? You write with me. I have a rubber at one end. You sharpen me.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "You write with me.",
+        "I have a rubber at one end.",
+        "You sharpen me."
+      ],
+      "names": {
+        "🖊️": "pen",
+        "✏️": "pencil",
+        "🖍️": "crayon",
+        "📏": "ruler"
+      }
+    },
+    "options": [
+      "🖊️",
+      "✏️",
+      "🖍️",
+      "📏"
+    ],
+    "answer": "✏️"
+  },
+  {
+    "id": "g2-riddles-19",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 3,
+    "prompt": "Who am I? I am green. I can talk like you. I love red chillies.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I am green.",
+        "I can talk like you.",
+        "I love red chillies."
+      ],
+      "names": {
+        "🦜": "parrot",
+        "🐦": "bird",
+        "🦆": "duck",
+        "🐸": "frog"
+      }
+    },
+    "options": [
+      "🦜",
+      "🐦",
+      "🦆",
+      "🐸"
+    ],
+    "answer": "🦜"
+  },
+  {
+    "id": "g2-riddles-20",
+    "grade": 2,
+    "subject": "thinking",
+    "topic": "g2-riddles",
+    "difficulty": 3,
+    "prompt": "Who am I? I have a very long neck. I eat leaves from tall trees. I have brown spots.",
+    "type": "riddle",
+    "payload": {
+      "clues": [
+        "I have a very long neck.",
+        "I eat leaves from tall trees.",
+        "I have brown spots."
+      ],
+      "names": {
+        "🦓": "zebra",
+        "🦒": "giraffe",
+        "🐘": "elephant",
+        "🐪": "camel"
+      }
+    },
+    "options": [
+      "🦓",
+      "🦒",
+      "🐘",
+      "🐪"
+    ],
+    "answer": "🦒"
+  }
+]

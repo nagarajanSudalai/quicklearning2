@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, type BuildPuzzle, type CrosswordPuzzle, type SudokuPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
+import { PHRASES, type BuildPuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
@@ -24,6 +24,7 @@ export const PLAYERS: Players = {
   maze: Maze,
   build: Build,
   sudoku: Sudoku,
+  'order-steps': OrderSteps,
 };
 
 /** A tappable box that wiggles each time `wiggle` increments. */
@@ -343,6 +344,58 @@ function Sudoku({ puzzle, onSolved, onMistake }: PlayerProps<SudokuPuzzle>) {
   );
 }
 
+// ---------- What comes first? ----------
+
+function OrderSteps({ puzzle, sound, onSolved, onMistake }: PlayerProps<OrderStepsPuzzle>) {
+  const { title, steps, shown } = puzzle.payload;
+  const [placed, setPlaced] = useState<number[]>([]);
+  const [mistakes, setMistakes] = useState(0);
+  const [wiggle, setWiggle] = useState<{ k: number; n: number }>({ k: -1, n: 0 });
+  const done = placed.length === steps.length;
+
+  const tap = (step: number) => {
+    if (done || placed.includes(step)) return;
+    if (step === placed.length) {
+      buzz('right');
+      say(steps[step].name, sound);
+      const next = [...placed, step];
+      setPlaced(next);
+      if (next.length === steps.length) onSolved(mistakes === 0);
+    } else {
+      buzz('wrong');
+      setMistakes((m) => m + 1);
+      setWiggle((w) => ({ k: step, n: w.n + 1 }));
+      onMistake();
+    }
+  };
+
+  return (
+    <View style={{ gap: 14 }}>
+      <Text style={[styles.itemName, { color: colors.muted }]}>{title}</Text>
+      <View style={styles.slots}>
+        {steps.map((s, k) => (
+          <View key={k} style={[styles.orderSlot, k < placed.length && styles.slotDone, k === placed.length && !done && styles.slotActive]}>
+            <Text style={styles.orderNum}>{k + 1}</Text>
+            <Text style={{ fontSize: 32 }}>{k < placed.length ? s.item : ''}</Text>
+          </View>
+        ))}
+      </View>
+      <View style={styles.letterRow}>
+        {shown.map((step) =>
+          placed.includes(step) ? (
+            <View key={step} style={[styles.orderTile, styles.tileGone]} />
+          ) : (
+            <Tap key={step} onPress={() => tap(step)} wiggle={wiggle.k === step ? wiggle.n : 0} label={steps[step].name} disabled={done} style={styles.orderTile}>
+              <Text style={{ fontSize: 40 }}>{steps[step].item}</Text>
+              <Text style={styles.orderName} numberOfLines={2}>{steps[step].name}</Text>
+            </Tap>
+          ),
+        )}
+      </View>
+    </View>
+  );
+}
+
 // ---------- Maze ----------
 
 const MOVES = { up: [-1, 0, 1], right: [0, 1, 2], down: [1, 0, 4], left: [0, -1, 8] } as const;
@@ -466,6 +519,10 @@ const styles = StyleSheet.create({
   sudoku: { borderWidth: 3, borderColor: colors.ink, borderRadius: 10, overflow: 'hidden', backgroundColor: colors.surface },
   sCell: { alignItems: 'center', justifyContent: 'center', borderColor: colors.ink },
   sGiven: { backgroundColor: colors.panel },
+  orderSlot: { width: 62, height: 70, borderRadius: 12, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },
+  orderNum: { position: 'absolute', top: 2, left: 6, fontFamily: font.bodyHeavy, fontSize: 12, color: colors.muted },
+  orderTile: { width: 92, height: 100, padding: 4 },
+  orderName: { fontFamily: font.bodyBold, fontSize: 12, color: colors.inkSoft, textAlign: 'center' },
   hint: { fontFamily: font.bodyBold, fontSize: 12, color: colors.muted },
   slots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' },
   letterSlot: { width: 46, height: 52, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },

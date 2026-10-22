@@ -134,6 +134,14 @@ export type FillBlankPuzzle = Base & {
   answer: string;
 };
 
+/** "Who am I?" — clues are read aloud; options are pictures. */
+export type RiddlePuzzle = Base & {
+  type: 'riddle';
+  payload: { clues: string[]; names: Record<string, string> };
+  options: string[];
+  answer: string;
+};
+
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
 
 export type CrosswordWord = { word: string; picture: string; row: number; col: number; dir: 'across' | 'down' };
@@ -179,6 +187,12 @@ export type SudokuPuzzle = Base & {
   payload: { symbols: string[]; grid: (number | null)[]; solution: number[] };
 };
 
+/** Tap pictures in the order they happen. `steps` is the right order; `shown` is the shuffled order. */
+export type OrderStepsPuzzle = Base & {
+  type: 'order-steps';
+  payload: { title: string; steps: { item: string; name: string }[]; shown: number[] };
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -195,10 +209,11 @@ export type ChoicePuzzle =
   | NumberPatternPuzzle
   | ClockPuzzle
   | MoneyPuzzle
-  | FillBlankPuzzle;
+  | FillBlankPuzzle
+  | RiddlePuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -206,7 +221,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {

@@ -208,6 +208,19 @@ export const RENDERERS: Renderers = {
     option: (w) => <Text style={styles.word} adjustsFontSizeToFit numberOfLines={1}>{w}</Text>,
     columns: (p) => p.options.length,
   },
+  riddle: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.clues]}>
+        {puzzle.payload.clues.map((c, i) => (
+          <Text key={i} style={styles.clue}>• {c}</Text>
+        ))}
+      </View>
+    ),
+    option: (e) => <Text style={styles.oddItem}>{e}</Text>,
+    columns: (p) => (p.options.length === 4 ? 2 : 3),
+    optionHeight: 100,
+    label: (e) => e,
+  },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,
     columns: (p) => (p.options.length === 5 ? 3 : 2),
@@ -253,6 +266,8 @@ const styles = StyleSheet.create({
   sentence: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 6 },
   sentenceText: { fontFamily: font.displaySemi, fontSize: 24, color: colors.ink },
   wordBlank: { width: 70, height: 40 },
+  clues: { flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'flex-start', gap: 6 },
+  clue: { fontFamily: font.bodyBold, fontSize: 18, color: colors.ink, lineHeight: 24 },
   oddItem: { fontSize: 56, lineHeight: 68 },
   wordSmall: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
 });

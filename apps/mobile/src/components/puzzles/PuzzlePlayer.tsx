@@ -22,7 +22,7 @@ export function PuzzlePlayer(props: Props) {
     <View style={styles.card}>
       <View style={styles.promptRow}>
         {/* Fill-blank shows its sentence in the panel, so the title stays short; the full sentence is still read aloud. */}
-        <Text style={[text.h2, { flex: 1 }]}>{puzzle.type === 'fill-blank' ? 'Fill in the blank.' : puzzle.prompt}</Text>
+        <Text style={[text.h2, { flex: 1 }]}>{puzzle.type === 'fill-blank' ? 'Fill in the blank.' : puzzle.type === 'riddle' ? 'Who am I?' : puzzle.prompt}</Text>
         <Pressable onPress={() => say(puzzle.prompt, true)} style={styles.speak} accessibilityRole="button" accessibilityLabel="Read the question aloud" hitSlop={8}>
           <Text style={{ fontSize: 22 }}>🔊</Text>
         </Pressable>

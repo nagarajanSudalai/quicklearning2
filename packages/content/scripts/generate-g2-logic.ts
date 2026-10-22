@@ -1,10 +1,12 @@
-// Seeds the Grade 2 Puzzles bank: mini crosswords (up to 3 words) and 4×4 picture sudoku.
-// The JSON it writes is the source of truth; re-running overwrites puzzles/g2-puzzles/.
+// Seeds the Grade 2 Puzzles bank (mini crosswords, 4×4 picture sudoku) and Thinking Skills bank
+// (ordering steps, riddles, bigger mazes). The JSON it writes is the source of truth;
+// re-running overwrites puzzles/g2-puzzles/ and puzzles/g2-thinking/.
 //   node scripts/generate-g2-logic.ts
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { countSolutions } from '../src/sudoku.ts';
+import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { PICTURES } from '../src/words.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
@@ -21,8 +23,8 @@ const shuffle = <T>(xs: readonly T[]) => {
   return a;
 };
 const levels = (counts: [number, number, number]) => counts.flatMap((c, i) => Array(c).fill(i + 1) as number[]);
-const base = (topic: string, i: number, difficulty: number, prompt: string) => ({
-  id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade: 2, subject: 'puzzles', topic, difficulty, prompt,
+const base = (topic: string, i: number, difficulty: number, prompt: string, subject = 'puzzles') => ({
+  id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade: 2, subject, topic, difficulty, prompt,
 });
 
 type Word = { word: string; picture: string; row: number; col: number; dir: 'across' | 'down' };
@@ -130,8 +132,93 @@ function sudoku() {
   });
 }
 
+function orderSteps() {
+  const byLen = (lo: number, hi: number) => SEQUENCES.filter((q) => q.steps.length >= lo && q.steps.length <= hi);
+  const pools: Record<number, typeof SEQUENCES> = { 1: byLen(2, 3), 2: byLen(4, 4), 3: byLen(4, 5) };
+  const counts: Record<string, number> = {};
+  return levels([7, 7, 6]).map((d, i) => {
+    // Rotate through the pool; repeats get a different shuffle.
+    const pool = pools[d];
+    const q = pool[(counts[d] = (counts[d] ?? -1) + 1) % pool.length];
+    const order = [...q.steps.keys()];
+    let shown = shuffle(order);
+    while (shown.every((v, k) => v === k)) shown = shuffle(order);
+    return {
+      ...base('g2-order', i, d, 'Tap the pictures in order. What comes first?', 'thinking'), type: 'order-steps',
+      payload: { title: q.title, steps: q.steps.map(([item, name]) => ({ item, name })), shown },
+    };
+  });
+}
+
+function riddles() {
+  const order = shuffle(RIDDLES.map((_, k) => k));
+  const others = RIDDLES.map((r) => r.answer);
+  return levels([7, 7, 6]).map((d, i) => {
+    const r = RIDDLES[order[i % order.length]];
+    const clues = r.clues.slice(0, d === 1 ? 2 : 3);
+    // Level 1: answers from other riddles (very different). Level 2–3: look-alikes.
+    const wrong = d === 1 ? shuffle(others.filter(([e]) => e !== r.answer[0] && !r.similar.some(([s]) => s === e))).slice(0, 2) : shuffle(r.similar).slice(0, d === 2 ? 2 : 3);
+    const opts = shuffle([r.answer, ...wrong]);
+    return {
+      ...base('g2-riddles', i, d, `Who am I? ${clues.join(' ')}`, 'thinking'), type: 'riddle',
+      payload: { clues, names: Object.fromEntries(opts) }, options: opts.map(([e]) => e), answer: r.answer[0],
+    };
+  });
+}
+
+/** Same depth-first maze carving as Grade 1. */
+function carve(rows: number, cols: number) {
+  const cells = Array(rows * cols).fill(0);
+  const seen = new Set<number>([0]);
+  const stack = [0];
+  const dirs = [[-1, 0, 1, 4], [0, 1, 2, 8], [1, 0, 4, 1], [0, -1, 8, 2]] as const;
+  while (stack.length) {
+    const cur = stack[stack.length - 1];
+    const r = Math.floor(cur / cols), c = cur % cols;
+    const next = shuffle(dirs).find(([dr, dc]) => {
+      const nr = r + dr, nc = c + dc;
+      return nr >= 0 && nr < rows && nc >= 0 && nc < cols && !seen.has(nr * cols + nc);
+    });
+    if (!next) { stack.pop(); continue; }
+    const [dr, dc, bit, back] = next;
+    const n = (r + dr) * cols + (c + dc);
+    cells[cur] |= bit;
+    cells[n] |= back;
+    seen.add(n);
+    stack.push(n);
+  }
+  return cells;
+}
+
+const HEROES = [
+  { hero: '🐘', target: '🍌', prompt: 'Help the elephant get to the bananas.' },
+  { hero: '🦜', target: '🌶️', prompt: 'Help the parrot get to the chilli.' },
+  { hero: '🐯', target: '🏠', prompt: 'Help the tiger get home.' },
+  { hero: '🐢', target: '🌊', prompt: 'Help the turtle get to the sea.' },
+  { hero: '🐿️', target: '🌰', prompt: 'Help the squirrel get to the nut.' },
+];
+
+function mazes() {
+  return levels([7, 7, 6]).map((d, i) => {
+    const size = d + 4;
+    const h = HEROES[i % HEROES.length];
+    const goal: [number, number] = [size - 1, Math.floor(rand() * size)];
+    return {
+      ...base('g2-mazes', i, d, h.prompt, 'thinking'), type: 'maze',
+      payload: { rows: size, cols: size, cells: carve(size, size), start: [0, 0], goal, hero: h.hero, target: h.target },
+    };
+  });
+}
+
 mkdirSync(join(ROOT, 'g2-puzzles'), { recursive: true });
 for (const [name, puzzles] of Object.entries({ crossword: crossword(), sudoku: sudoku() })) {
   writeFileSync(join(ROOT, 'g2-puzzles', `${name}.json`), JSON.stringify(puzzles, null, 2) + '\n');
   console.log(`g2-puzzles/${name}: ${puzzles.length} puzzles`);
+}
+
+// Thinking Skills runs after Puzzles so adding it didn't change the Puzzles bank.
+mkdirSync(join(ROOT, 'g2-thinking'), { recursive: true });
+for (const [name, puzzles] of Object.entries({ order: orderSteps(), riddles: riddles(), mazes: mazes() })) {
+  writeFileSync(join(ROOT, 'g2-thinking', `${name}.json`), JSON.stringify(puzzles, null, 2) + '\n');
+  console.log(`g2-thinking/${name}: ${puzzles.length} puzzles`);
 }
