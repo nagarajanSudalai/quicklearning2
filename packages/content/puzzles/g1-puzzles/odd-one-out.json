@@ -1,0 +1,388 @@
+[
+  {
+    "id": "g1-odd-one-out-01",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 1,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "vegetables"
+    },
+    "options": [
+      "🌽",
+      "🥔",
+      "🍆",
+      "🦁"
+    ],
+    "answer": "🦁"
+  },
+  {
+    "id": "g1-odd-one-out-02",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 1,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "vehicles"
+    },
+    "options": [
+      "🚗",
+      "✈️",
+      "☀️",
+      "🚂"
+    ],
+    "answer": "☀️"
+  },
+  {
+    "id": "g1-odd-one-out-03",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 1,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "farm"
+    },
+    "options": [
+      "🐔",
+      "🚌",
+      "🐑",
+      "🐮"
+    ],
+    "answer": "🚌"
+  },
+  {
+    "id": "g1-odd-one-out-04",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 1,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "fruit"
+    },
+    "options": [
+      "🍐",
+      "🍎",
+      "🍒",
+      "🌈"
+    ],
+    "answer": "🌈"
+  },
+  {
+    "id": "g1-odd-one-out-05",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 1,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "farm"
+    },
+    "options": [
+      "🐔",
+      "🐴",
+      "🐮",
+      "🥕"
+    ],
+    "answer": "🥕"
+  },
+  {
+    "id": "g1-odd-one-out-06",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 1,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "clothes"
+    },
+    "options": [
+      "👟",
+      "🧦",
+      "🧣",
+      "🐷"
+    ],
+    "answer": "🐷"
+  },
+  {
+    "id": "g1-odd-one-out-07",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 1,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "fruit"
+    },
+    "options": [
+      "🍓",
+      "🐒",
+      "🍇",
+      "🍎"
+    ],
+    "answer": "🐒"
+  },
+  {
+    "id": "g1-odd-one-out-08",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 2,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "fruit"
+    },
+    "options": [
+      "🍎",
+      "🍓",
+      "🍒",
+      "🥦"
+    ],
+    "answer": "🥦"
+  },
+  {
+    "id": "g1-odd-one-out-09",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 2,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "wild"
+    },
+    "options": [
+      "🦁",
+      "🦓",
+      "🐐",
+      "🐯"
+    ],
+    "answer": "🐐"
+  },
+  {
+    "id": "g1-odd-one-out-10",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 2,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "clothes"
+    },
+    "options": [
+      "👕",
+      "🧦",
+      "🖍️",
+      "🧤"
+    ],
+    "answer": "🖍️"
+  },
+  {
+    "id": "g1-odd-one-out-11",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 2,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "school"
+    },
+    "options": [
+      "✂️",
+      "🚗",
+      "🖍️",
+      "🎒"
+    ],
+    "answer": "🚗"
+  },
+  {
+    "id": "g1-odd-one-out-12",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 2,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "school"
+    },
+    "options": [
+      "🖍️",
+      "📏",
+      "✏️",
+      "👟"
+    ],
+    "answer": "👟"
+  },
+  {
+    "id": "g1-odd-one-out-13",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 2,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "sea"
+    },
+    "options": [
+      "🦈",
+      "🐙",
+      "🦒",
+      "🐳"
+    ],
+    "answer": "🦒"
+  },
+  {
+    "id": "g1-odd-one-out-14",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 2,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "wild"
+    },
+    "options": [
+      "🐑",
+      "🐒",
+      "🦓",
+      "🦁"
+    ],
+    "answer": "🐑"
+  },
+  {
+    "id": "g1-odd-one-out-15",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 3,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "sea"
+    },
+    "options": [
+      "🐟",
+      "🐙",
+      "🐬",
+      "🐒",
+      "🦈"
+    ],
+    "answer": "🐒"
+  },
+  {
+    "id": "g1-odd-one-out-16",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 3,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "fruit"
+    },
+    "options": [
+      "🍊",
+      "🍐",
+      "🥦",
+      "🍇",
+      "🍓"
+    ],
+    "answer": "🥦"
+  },
+  {
+    "id": "g1-odd-one-out-17",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 3,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "vegetables"
+    },
+    "options": [
+      "🥕",
+      "🌽",
+      "🥦",
+      "🥒",
+      "🍊"
+    ],
+    "answer": "🍊"
+  },
+  {
+    "id": "g1-odd-one-out-18",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 3,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "wild"
+    },
+    "options": [
+      "🐘",
+      "🦓",
+      "🐒",
+      "🐷",
+      "🦁"
+    ],
+    "answer": "🐷"
+  },
+  {
+    "id": "g1-odd-one-out-19",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 3,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "school"
+    },
+    "options": [
+      "📚",
+      "🖍️",
+      "🧣",
+      "📏",
+      "✂️"
+    ],
+    "answer": "🧣"
+  },
+  {
+    "id": "g1-odd-one-out-20",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-odd-one-out",
+    "difficulty": 3,
+    "prompt": "Which one does not belong?",
+    "type": "odd-one-out",
+    "payload": {
+      "group": "vegetables"
+    },
+    "options": [
+      "🥒",
+      "🍌",
+      "🥔",
+      "🌽",
+      "🥕"
+    ],
+    "answer": "🍌"
+  }
+]

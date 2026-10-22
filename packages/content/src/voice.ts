@@ -4,6 +4,8 @@ export const PHRASES = {
   great: 'Great job!',
   gotIt: 'You got it!',
   tryAgain: 'Almost! Try again.',
+  wall: 'Oops, that is a wall!',
+  pair: 'A pair!',
 } as const;
 
 export const CHEERS = ['Perfect!', 'Well done!', 'Good try!'] as const;

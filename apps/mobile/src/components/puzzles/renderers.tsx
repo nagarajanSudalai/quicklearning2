@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Animated, StyleSheet, Text, View } from 'react-native';
-import type { Puzzle, PuzzleOption, PuzzleType } from '@quickstep/content';
+import { nameOf, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@quickstep/content';
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
@@ -9,13 +9,15 @@ import { Shape } from '../Shape';
  * One entry per puzzle type: what to show above the answers, how to draw one
  * answer option, and how many option columns. Adding a puzzle type = adding an entry here.
  */
-type Renderer<P extends Puzzle> = {
+type Renderer<P extends ChoicePuzzle> = {
   Stimulus?: (props: { puzzle: P }) => ReactNode;
   option: (opt: P['options'][number], puzzle: P) => ReactNode;
   columns: (puzzle: P) => number;
   optionHeight?: number;
+  /** Screen-reader name for an option; defaults to the option itself. */
+  label?: (opt: P['options'][number]) => string;
 };
-type Renderers = { [T in PuzzleType]: Renderer<Extract<Puzzle, { type: T }>> };
+type Renderers = { [T in ChoiceType]: Renderer<Extract<ChoicePuzzle, { type: T }>> };
 
 /** Wraps emoji in rows so a child can count them; big counts get smaller emoji. */
 export function EmojiGroup({ item, count, size }: { item: string; count: number; size?: number }) {
@@ -139,6 +141,12 @@ export const RENDERERS: Renderers = {
     columns: (p) => (p.options.length === 4 ? 2 : 3),
     optionHeight: 120,
   },
+  'odd-one-out': {
+    option: (e) => <Text style={styles.oddItem}>{e}</Text>,
+    columns: (p) => (p.options.length === 5 ? 3 : 2),
+    optionHeight: 110,
+    label: (e) => nameOf(e),
+  },
 };
 
 /** A big picture, with an optional word or spelled-out word under it. */
@@ -173,5 +181,6 @@ const styles = StyleSheet.create({
   word: { fontFamily: font.display, fontSize: 26, color: colors.ink },
   wordCard: { alignItems: 'center', gap: 2, width: '100%' },
   optionPicture: { fontSize: 44, lineHeight: 54 },
+  oddItem: { fontSize: 56, lineHeight: 68 },
   wordSmall: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
 });

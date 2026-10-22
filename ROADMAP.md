@@ -13,8 +13,8 @@
 ## Phase 1 — Grade 1, offline, no accounts
 - **Maths ✅** — counting, adding, taking away, shapes, more/fewer, patterns (120 puzzles, 3 levels).
 - **English ✅** — big & small letters, first letters, picture words (with missing letters), rhyming words (80 puzzles, 3 levels).
-- Puzzles — odd one out, 3×3 picture crossword (`odd-one-out`, `picture-crossword`).
-- Thinking Skills — sorting, memory pairs, mazes (`sort-into-groups`, `memory-match`).
+- **Puzzles ✅** — odd one out, picture crossword (40 puzzles).
+- **Thinking Skills ✅** — sorting, memory pairs, mazes (60 puzzles).
 - **Voice ✅** — best Indian English device voice; optional recorded natural voice (Google Cloud TTS en-IN) once an API key is added.
 - Still to do: letter-sound puzzles (need recorded clips), mascot animation (Lottie/Rive) once art is ready, sound effects, internal test builds with EAS (TestFlight + Play internal track).
 

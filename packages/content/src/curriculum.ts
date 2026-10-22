@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -42,6 +42,11 @@ export const TOPICS: Topic[] = [
   { id: 'g1-sounds', grade: 1, subject: 'english', title: 'First letters', blurb: 'How does a word start?', glyph: 'b…', color: colors.pink },
   { id: 'g1-words', grade: 1, subject: 'english', title: 'Picture words', blurb: 'Read short words', glyph: 'cat', color: colors.orange },
   { id: 'g1-rhymes', grade: 1, subject: 'english', title: 'Rhyming words', blurb: 'Cat, hat, bat!', glyph: '♪', color: colors.purple },
+  { id: 'g1-odd-one-out', grade: 1, subject: 'puzzles', title: 'Odd one out', blurb: 'Which one does not belong?', glyph: '?', color: colors.orange },
+  { id: 'g1-crossword', grade: 1, subject: 'puzzles', title: 'Picture crossword', blurb: 'Fill in the letters', glyph: '▦', color: colors.blue },
+  { id: 'g1-sorting', grade: 1, subject: 'thinking', title: 'Sorting', blurb: 'Put things in groups', glyph: '⇄', color: colors.green },
+  { id: 'g1-memory', grade: 1, subject: 'thinking', title: 'Memory pairs', blurb: 'Find the matching cards', glyph: '▢▢', color: colors.purple },
+  { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 
 export const topicsFor = (grade: Grade, subject: SubjectId) => TOPICS.filter((t) => t.grade === grade && t.subject === subject);

@@ -1,0 +1,957 @@
+[
+  {
+    "id": "g1-crossword-01",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 1,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "van",
+          "picture": "🚐",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "sun",
+          "picture": "☀️",
+          "row": 0,
+          "col": 2,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "letters": [
+        "a",
+        "s",
+        "i",
+        "n"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-02",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 1,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "web",
+          "picture": "🕸️",
+          "row": 0,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "bat",
+          "picture": "🦇",
+          "row": 0,
+          "col": 2,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "letters": [
+        "w",
+        "u",
+        "t",
+        "g"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-03",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 1,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "sun",
+          "picture": "☀️",
+          "row": 1,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "bug",
+          "picture": "🐛",
+          "row": 0,
+          "col": 1,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "letters": [
+        "v",
+        "g",
+        "k",
+        "s"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-04",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 1,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "leg",
+          "picture": "🦵",
+          "row": 1,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "bed",
+          "picture": "🛏️",
+          "row": 0,
+          "col": 1,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "letters": [
+        "b",
+        "g",
+        "f",
+        "t"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-05",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 1,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "bee",
+          "picture": "🐝",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "web",
+          "picture": "🕸️",
+          "row": 0,
+          "col": 0,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "letters": [
+        "w",
+        "y",
+        "e",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-06",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 1,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "hen",
+          "picture": "🐔",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "sun",
+          "picture": "☀️",
+          "row": 0,
+          "col": 2,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "letters": [
+        "l",
+        "u",
+        "y",
+        "h"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-07",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 1,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "hen",
+          "picture": "🐔",
+          "row": 1,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "ant",
+          "picture": "🐜",
+          "row": 0,
+          "col": 2,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "letters": [
+        "j",
+        "a",
+        "m",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-08",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 2,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "rose",
+          "picture": "🌹",
+          "row": 1,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "leg",
+          "picture": "🦵",
+          "row": 0,
+          "col": 3,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "letters": [
+        "s",
+        "g",
+        "r",
+        "f",
+        "u"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-09",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 2,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "cup",
+          "picture": "☕",
+          "row": 0,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "cake",
+          "picture": "🎂",
+          "row": 0,
+          "col": 0,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "letters": [
+        "c",
+        "w",
+        "p",
+        "e",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-10",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 2,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "cup",
+          "picture": "☕",
+          "row": 1,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "sun",
+          "picture": "☀️",
+          "row": 0,
+          "col": 1,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "letters": [
+        "l",
+        "p",
+        "c",
+        "n",
+        "h"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-11",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 2,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "lion",
+          "picture": "🦁",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "ten",
+          "picture": "🔟",
+          "row": 0,
+          "col": 3,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "letters": [
+        "r",
+        "o",
+        "t",
+        "g",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-12",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 2,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "ball",
+          "picture": "⚽",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "bell",
+          "picture": "🔔",
+          "row": 0,
+          "col": 3,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "letters": [
+        "l",
+        "a",
+        "n",
+        "b",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-13",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 2,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "van",
+          "picture": "🚐",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "hen",
+          "picture": "🐔",
+          "row": 0,
+          "col": 2,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "letters": [
+        "h",
+        "e",
+        "v",
+        "a",
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-14",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 2,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "ten",
+          "picture": "🔟",
+          "row": 1,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "bell",
+          "picture": "🔔",
+          "row": 0,
+          "col": 1,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "letters": [
+        "t",
+        "m",
+        "b",
+        "l",
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-15",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 3,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "boat",
+          "picture": "⛵",
+          "row": 0,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "three",
+          "picture": "3️⃣",
+          "row": 0,
+          "col": 3,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "letters": [
+        "o",
+        "p",
+        "b",
+        "a",
+        "h",
+        "t"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-16",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 3,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "coat",
+          "picture": "🧥",
+          "row": 1,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "mouse",
+          "picture": "🐭",
+          "row": 0,
+          "col": 1,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "letters": [
+        "t",
+        "e",
+        "h",
+        "c",
+        "w",
+        "o"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-17",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 3,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "bear",
+          "picture": "🐻",
+          "row": 0,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "ball",
+          "picture": "⚽",
+          "row": 0,
+          "col": 0,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "letters": [
+        "a",
+        "v",
+        "k",
+        "l",
+        "y",
+        "b"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-18",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 3,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "lion",
+          "picture": "🦁",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "spoon",
+          "picture": "🥄",
+          "row": 0,
+          "col": 2,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "letters": [
+        "o",
+        "n",
+        "r",
+        "s",
+        "l",
+        "h"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-19",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 3,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "pear",
+          "picture": "🍐",
+          "row": 2,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "shell",
+          "picture": "🐚",
+          "row": 0,
+          "col": 1,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "letters": [
+        "t",
+        "b",
+        "l",
+        "r",
+        "s",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g1-crossword-20",
+    "grade": 1,
+    "subject": "puzzles",
+    "topic": "g1-crossword",
+    "difficulty": 3,
+    "prompt": "Fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "three",
+          "picture": "3️⃣",
+          "row": 4,
+          "col": 0,
+          "dir": "across"
+        },
+        {
+          "word": "chair",
+          "picture": "🪑",
+          "row": 0,
+          "col": 2,
+          "dir": "down"
+        }
+      ],
+      "blanks": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "letters": [
+        "t",
+        "e",
+        "i",
+        "r",
+        "c",
+        "y"
+      ]
+    }
+  }
+]

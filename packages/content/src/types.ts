@@ -86,7 +86,49 @@ export type RhymePuzzle = Base & {
   answer: string;
 };
 
-export type Puzzle =
+/** "Which one does not belong?" — `group` names the category the other items share. */
+export type OddOneOutPuzzle = Base & {
+  type: 'odd-one-out';
+  payload: { group: string };
+  options: string[];
+  answer: string;
+};
+
+// ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
+
+export type CrosswordWord = { word: string; picture: string; row: number; col: number; dir: 'across' | 'down' };
+
+/** Picture crossword: fill the `blanks` cells (in order) by tapping letters from `letters`. */
+export type CrosswordPuzzle = Base & {
+  type: 'crossword';
+  payload: { words: CrosswordWord[]; blanks: [number, number][]; letters: string[] };
+};
+
+export type SortItem = { item: string; name: string; group: string };
+
+/** Tap each item, then the group it belongs in. */
+export type SortPuzzle = Base & {
+  type: 'sort-into-groups';
+  payload: { groups: { id: string; label: string; picture: string }[]; items: SortItem[] };
+};
+
+/** Flip cards to find pairs. `cards` holds each emoji twice, already shuffled. */
+export type MemoryPuzzle = Base & {
+  type: 'memory-match';
+  payload: { cards: string[]; cols: number };
+};
+
+/**
+ * Grid maze. `cells[r * cols + c]` is a bitmask of open sides: 1 = up, 2 = right, 4 = down, 8 = left.
+ * Move the hero from `start` to `goal`.
+ */
+export type MazePuzzle = Base & {
+  type: 'maze';
+  payload: { rows: number; cols: number; cells: number[]; start: [number, number]; goal: [number, number]; hero: string; target: string };
+};
+
+/** Puzzles answered with one tap from a list of options. */
+export type ChoicePuzzle =
   | PatternPuzzle
   | CountPuzzle
   | ArithmeticPuzzle
@@ -95,9 +137,20 @@ export type Puzzle =
   | LetterMatchPuzzle
   | FirstLetterPuzzle
   | PictureWordPuzzle
-  | RhymePuzzle;
+  | RhymePuzzle
+  | OddOneOutPuzzle;
+
+/** Puzzles with their own multi-step play. */
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle;
+
+export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
-export type PuzzleOption = Puzzle['options'][number];
+export type ChoiceType = ChoicePuzzle['type'];
+export type InteractiveType = InteractivePuzzle['type'];
+export type PuzzleOption = ChoicePuzzle['options'][number];
+
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze'];
+export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {
   id: string;

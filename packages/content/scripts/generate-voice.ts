@@ -3,13 +3,16 @@
 // synthesised, so re-running after adding puzzles is cheap.
 //
 //   GOOGLE_TTS_API_KEY=... npm run voice -w packages/content
+// Lines: every puzzle prompt, the fixed phrases in src/voice.ts, and picture words.
 //   options: --voice en-IN-Neural2-A  --rate 0.9  --pitch 1  --sample 5 (record only N lines, to audition)
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
+import { CATEGORIES } from '../src/categories.ts';
 import { clipKey, fixedLines, speakable } from '../src/voice.ts';
+import { PICTURES } from '../src/words.ts';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PUZZLES = join(HERE, '..', 'puzzles');
@@ -40,7 +43,9 @@ const files = (dir: string): string[] =>
   readdirSync(dir).flatMap((f) => (statSync(join(dir, f)).isDirectory() ? files(join(dir, f)) : f.endsWith('.json') ? [join(dir, f)] : []));
 
 const prompts = files(PUZZLES).flatMap((f) => (JSON.parse(readFileSync(f, 'utf8')) as { prompt: string }[]).map((p) => p.prompt));
-let lines = [...new Set([...prompts, ...fixedLines()].map(clipKey))].sort();
+// Words said when a child taps a crossword clue or a sorting item.
+const words = [...Object.keys(PICTURES), ...CATEGORIES.flatMap((c) => c.items.map(([, name]) => name))];
+let lines = [...new Set([...prompts, ...fixedLines(), ...words].map(clipKey))].sort();
 if (opt.sample) lines = lines.slice(0, Number(opt.sample));
 
 // The voice settings are part of the name, so changing voice re-records everything.

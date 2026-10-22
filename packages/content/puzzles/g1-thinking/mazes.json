@@ -1,0 +1,827 @@
+[
+  {
+    "id": "g1-mazes-01",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 1,
+    "prompt": "Help the bunny get to the carrot.",
+    "type": "maze",
+    "payload": {
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        4,
+        2,
+        12,
+        5,
+        6,
+        13,
+        3,
+        9,
+        1
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        2
+      ],
+      "hero": "🐰",
+      "target": "🥕"
+    }
+  },
+  {
+    "id": "g1-mazes-02",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 1,
+    "prompt": "Help the puppy get to the bone.",
+    "type": "maze",
+    "payload": {
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        2,
+        10,
+        12,
+        6,
+        12,
+        5,
+        1,
+        3,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        2
+      ],
+      "hero": "🐶",
+      "target": "🦴"
+    }
+  },
+  {
+    "id": "g1-mazes-03",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 1,
+    "prompt": "Help the mouse get to the cheese.",
+    "type": "maze",
+    "payload": {
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        4,
+        6,
+        12,
+        3,
+        9,
+        5,
+        2,
+        10,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        2
+      ],
+      "hero": "🐭",
+      "target": "🧀"
+    }
+  },
+  {
+    "id": "g1-mazes-04",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 1,
+    "prompt": "Help the bee get to the flower.",
+    "type": "maze",
+    "payload": {
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        2,
+        12,
+        4,
+        4,
+        5,
+        5,
+        3,
+        11,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        2
+      ],
+      "hero": "🐝",
+      "target": "🌸"
+    }
+  },
+  {
+    "id": "g1-mazes-05",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 1,
+    "prompt": "Help the monkey get to the banana.",
+    "type": "maze",
+    "payload": {
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        2,
+        12,
+        4,
+        4,
+        3,
+        13,
+        3,
+        10,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        2
+      ],
+      "hero": "🐵",
+      "target": "🍌"
+    }
+  },
+  {
+    "id": "g1-mazes-06",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 1,
+    "prompt": "Help the bunny get to the carrot.",
+    "type": "maze",
+    "payload": {
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        4,
+        6,
+        8,
+        5,
+        3,
+        12,
+        3,
+        10,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        2
+      ],
+      "hero": "🐰",
+      "target": "🥕"
+    }
+  },
+  {
+    "id": "g1-mazes-07",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 1,
+    "prompt": "Help the puppy get to the bone.",
+    "type": "maze",
+    "payload": {
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        4,
+        6,
+        8,
+        5,
+        3,
+        12,
+        3,
+        10,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        2
+      ],
+      "hero": "🐶",
+      "target": "🦴"
+    }
+  },
+  {
+    "id": "g1-mazes-08",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 2,
+    "prompt": "Help the mouse get to the cheese.",
+    "type": "maze",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        2,
+        12,
+        6,
+        12,
+        4,
+        5,
+        1,
+        5,
+        5,
+        5,
+        6,
+        13,
+        3,
+        11,
+        9,
+        1
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        3,
+        2
+      ],
+      "hero": "🐭",
+      "target": "🧀"
+    }
+  },
+  {
+    "id": "g1-mazes-09",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 2,
+    "prompt": "Help the bee get to the flower.",
+    "type": "maze",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        4,
+        2,
+        14,
+        12,
+        5,
+        6,
+        9,
+        5,
+        3,
+        9,
+        4,
+        5,
+        2,
+        10,
+        11,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        3,
+        1
+      ],
+      "hero": "🐝",
+      "target": "🌸"
+    }
+  },
+  {
+    "id": "g1-mazes-10",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 2,
+    "prompt": "Help the monkey get to the banana.",
+    "type": "maze",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        2,
+        12,
+        6,
+        12,
+        4,
+        5,
+        1,
+        5,
+        5,
+        5,
+        6,
+        13,
+        3,
+        11,
+        9,
+        1
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        3,
+        0
+      ],
+      "hero": "🐵",
+      "target": "🍌"
+    }
+  },
+  {
+    "id": "g1-mazes-11",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 2,
+    "prompt": "Help the bunny get to the carrot.",
+    "type": "maze",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        4,
+        2,
+        10,
+        12,
+        3,
+        10,
+        12,
+        5,
+        6,
+        12,
+        5,
+        5,
+        1,
+        3,
+        11,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        3,
+        2
+      ],
+      "hero": "🐰",
+      "target": "🥕"
+    }
+  },
+  {
+    "id": "g1-mazes-12",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 2,
+    "prompt": "Help the puppy get to the bone.",
+    "type": "maze",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        4,
+        2,
+        14,
+        8,
+        3,
+        12,
+        3,
+        12,
+        4,
+        5,
+        6,
+        13,
+        3,
+        11,
+        9,
+        1
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        3,
+        0
+      ],
+      "hero": "🐶",
+      "target": "🦴"
+    }
+  },
+  {
+    "id": "g1-mazes-13",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 2,
+    "prompt": "Help the mouse get to the cheese.",
+    "type": "maze",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        2,
+        10,
+        12,
+        4,
+        6,
+        12,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        1,
+        3,
+        11,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        3,
+        1
+      ],
+      "hero": "🐭",
+      "target": "🧀"
+    }
+  },
+  {
+    "id": "g1-mazes-14",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 2,
+    "prompt": "Help the bee get to the flower.",
+    "type": "maze",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        4,
+        2,
+        14,
+        8,
+        3,
+        12,
+        7,
+        12,
+        4,
+        5,
+        1,
+        5,
+        3,
+        11,
+        10,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        3,
+        1
+      ],
+      "hero": "🐝",
+      "target": "🌸"
+    }
+  },
+  {
+    "id": "g1-mazes-15",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 3,
+    "prompt": "Help the monkey get to the banana.",
+    "type": "maze",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        4,
+        2,
+        10,
+        14,
+        12,
+        5,
+        6,
+        10,
+        9,
+        5,
+        5,
+        5,
+        4,
+        6,
+        9,
+        5,
+        5,
+        5,
+        5,
+        4,
+        3,
+        9,
+        3,
+        11,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        0
+      ],
+      "hero": "🐵",
+      "target": "🍌"
+    }
+  },
+  {
+    "id": "g1-mazes-16",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 3,
+    "prompt": "Help the bunny get to the carrot.",
+    "type": "maze",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        2,
+        10,
+        10,
+        12,
+        4,
+        2,
+        14,
+        12,
+        5,
+        5,
+        6,
+        9,
+        5,
+        5,
+        5,
+        5,
+        2,
+        9,
+        3,
+        13,
+        3,
+        10,
+        10,
+        10,
+        9
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        1
+      ],
+      "hero": "🐰",
+      "target": "🥕"
+    }
+  },
+  {
+    "id": "g1-mazes-17",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 3,
+    "prompt": "Help the puppy get to the bone.",
+    "type": "maze",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        2,
+        12,
+        6,
+        10,
+        12,
+        6,
+        9,
+        3,
+        8,
+        5,
+        5,
+        6,
+        10,
+        10,
+        13,
+        5,
+        3,
+        10,
+        12,
+        5,
+        3,
+        10,
+        10,
+        9,
+        1
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        2
+      ],
+      "hero": "🐶",
+      "target": "🦴"
+    }
+  },
+  {
+    "id": "g1-mazes-18",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 3,
+    "prompt": "Help the mouse get to the cheese.",
+    "type": "maze",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        4,
+        6,
+        14,
+        10,
+        12,
+        5,
+        1,
+        5,
+        4,
+        5,
+        3,
+        10,
+        9,
+        5,
+        5,
+        6,
+        8,
+        6,
+        11,
+        9,
+        3,
+        10,
+        11,
+        10,
+        8
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        1
+      ],
+      "hero": "🐭",
+      "target": "🧀"
+    }
+  },
+  {
+    "id": "g1-mazes-19",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 3,
+    "prompt": "Help the bee get to the flower.",
+    "type": "maze",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        4,
+        2,
+        10,
+        14,
+        12,
+        3,
+        10,
+        12,
+        1,
+        5,
+        6,
+        12,
+        5,
+        6,
+        13,
+        5,
+        1,
+        5,
+        5,
+        5,
+        3,
+        10,
+        11,
+        9,
+        1
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        2
+      ],
+      "hero": "🐝",
+      "target": "🌸"
+    }
+  },
+  {
+    "id": "g1-mazes-20",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-mazes",
+    "difficulty": 3,
+    "prompt": "Help the monkey get to the banana.",
+    "type": "maze",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        2,
+        10,
+        10,
+        10,
+        12,
+        6,
+        10,
+        10,
+        12,
+        5,
+        5,
+        6,
+        12,
+        1,
+        5,
+        5,
+        5,
+        3,
+        10,
+        9,
+        3,
+        11,
+        10,
+        10,
+        8
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        4
+      ],
+      "hero": "🐵",
+      "target": "🍌"
+    }
+  }
+]

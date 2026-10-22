@@ -1,0 +1,452 @@
+[
+  {
+    "id": "g1-memory-01",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 1,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🍊",
+        "🐒",
+        "🐴",
+        "🍊",
+        "🐴",
+        "🐒"
+      ],
+      "cols": 3
+    }
+  },
+  {
+    "id": "g1-memory-02",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 1,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🚲",
+        "🌈",
+        "🌈",
+        "🚲",
+        "🥕",
+        "🥕"
+      ],
+      "cols": 3
+    }
+  },
+  {
+    "id": "g1-memory-03",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 1,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🍐",
+        "🌽",
+        "🌽",
+        "🍐",
+        "🚗",
+        "🚗"
+      ],
+      "cols": 3
+    }
+  },
+  {
+    "id": "g1-memory-04",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 1,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🐙",
+        "🌽",
+        "🌽",
+        "🎒",
+        "🎒",
+        "🐙"
+      ],
+      "cols": 3
+    }
+  },
+  {
+    "id": "g1-memory-05",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 1,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "👕",
+        "👕",
+        "🐳",
+        "🍒",
+        "🐳",
+        "🍒"
+      ],
+      "cols": 3
+    }
+  },
+  {
+    "id": "g1-memory-06",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 1,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🦁",
+        "🦁",
+        "📏",
+        "🎩",
+        "📏",
+        "🎩"
+      ],
+      "cols": 3
+    }
+  },
+  {
+    "id": "g1-memory-07",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 1,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🦒",
+        "🧦",
+        "🚜",
+        "🧦",
+        "🦒",
+        "🚜"
+      ],
+      "cols": 3
+    }
+  },
+  {
+    "id": "g1-memory-08",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 2,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "✈️",
+        "🚜",
+        "🍌",
+        "👕",
+        "✈️",
+        "🚜",
+        "👕",
+        "🍌"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-09",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 2,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🐮",
+        "🌧️",
+        "🍒",
+        "🐑",
+        "🐮",
+        "🌧️",
+        "🍒",
+        "🐑"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-10",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 2,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🦈",
+        "👕",
+        "🐒",
+        "📏",
+        "👕",
+        "🦈",
+        "📏",
+        "🐒"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-11",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 2,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🖍️",
+        "🐴",
+        "🦒",
+        "🖍️",
+        "🦒",
+        "⛅",
+        "⛅",
+        "🐴"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-12",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 2,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🚜",
+        "🦁",
+        "🦀",
+        "🚜",
+        "👕",
+        "🦀",
+        "👕",
+        "🦁"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-13",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 2,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🐑",
+        "🐙",
+        "🍓",
+        "🐑",
+        "🍓",
+        "🦓",
+        "🐙",
+        "🦓"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-14",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 2,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🍊",
+        "🐟",
+        "🍊",
+        "🐟",
+        "🥕",
+        "🍉",
+        "🥕",
+        "🍉"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-15",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 3,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🧥",
+        "🚌",
+        "🚌",
+        "🧥",
+        "🥦",
+        "🥦",
+        "⛅",
+        "🐮",
+        "🐟",
+        "🐟",
+        "🐮",
+        "⛅"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-16",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 3,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🍇",
+        "🧥",
+        "🧥",
+        "🧦",
+        "🍇",
+        "🚲",
+        "🚲",
+        "☀️",
+        "🧦",
+        "🚂",
+        "🚂",
+        "☀️"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-17",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 3,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🐑",
+        "🐙",
+        "🐴",
+        "🐑",
+        "👗",
+        "🐴",
+        "🌽",
+        "👗",
+        "🐙",
+        "☀️",
+        "☀️",
+        "🌽"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-18",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 3,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "👕",
+        "🥕",
+        "🥕",
+        "👕",
+        "🖍️",
+        "🚂",
+        "🦈",
+        "🖍️",
+        "🍐",
+        "🍐",
+        "🚂",
+        "🦈"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-19",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 3,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🦁",
+        "🚲",
+        "🐒",
+        "🦁",
+        "🐒",
+        "👕",
+        "🐳",
+        "🚲",
+        "🚌",
+        "👕",
+        "🐳",
+        "🚌"
+      ],
+      "cols": 4
+    }
+  },
+  {
+    "id": "g1-memory-20",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-memory",
+    "difficulty": 3,
+    "prompt": "Find the matching pairs.",
+    "type": "memory-match",
+    "payload": {
+      "cards": [
+        "🚗",
+        "🐘",
+        "🦒",
+        "🦒",
+        "🍒",
+        "🍓",
+        "🎩",
+        "🚗",
+        "🎩",
+        "🍓",
+        "🍒",
+        "🐘"
+      ],
+      "cols": 4
+    }
+  }
+]

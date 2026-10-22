@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "g1-sorting-01",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "sea",
+          "label": "Sea animals",
+          "picture": "🌊"
+        },
+        {
+          "id": "fruit",
+          "label": "Fruit",
+          "picture": "🧺"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍇",
+          "name": "grapes",
+          "group": "fruit"
+        },
+        {
+          "item": "🐳",
+          "name": "whale",
+          "group": "sea"
+        },
+        {
+          "item": "🍌",
+          "name": "banana",
+          "group": "fruit"
+        },
+        {
+          "item": "🐬",
+          "name": "dolphin",
+          "group": "sea"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-02",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "farm",
+          "label": "Farm animals",
+          "picture": "🚜"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        }
+      ],
+      "items": [
+        {
+          "item": "👗",
+          "name": "dress",
+          "group": "clothes"
+        },
+        {
+          "item": "🐐",
+          "name": "goat",
+          "group": "farm"
+        },
+        {
+          "item": "🐔",
+          "name": "hen",
+          "group": "farm"
+        },
+        {
+          "item": "🧤",
+          "name": "gloves",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-03",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "wild",
+          "label": "Wild animals",
+          "picture": "🌴"
+        },
+        {
+          "id": "vegetables",
+          "label": "Vegetables",
+          "picture": "🥬"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥦",
+          "name": "broccoli",
+          "group": "vegetables"
+        },
+        {
+          "item": "🐯",
+          "name": "tiger",
+          "group": "wild"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "wild"
+        },
+        {
+          "item": "🥔",
+          "name": "potato",
+          "group": "vegetables"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-04",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        },
+        {
+          "id": "weather",
+          "label": "Weather",
+          "picture": "🌤️"
+        }
+      ],
+      "items": [
+        {
+          "item": "❄️",
+          "name": "snow",
+          "group": "weather"
+        },
+        {
+          "item": "⚡",
+          "name": "lightning",
+          "group": "weather"
+        },
+        {
+          "item": "🎩",
+          "name": "hat",
+          "group": "clothes"
+        },
+        {
+          "item": "🧥",
+          "name": "coat",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-05",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "wild",
+          "label": "Wild animals",
+          "picture": "🌴"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧥",
+          "name": "coat",
+          "group": "clothes"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "wild"
+        },
+        {
+          "item": "🐒",
+          "name": "monkey",
+          "group": "wild"
+        },
+        {
+          "item": "👕",
+          "name": "shirt",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-06",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "fruit",
+          "label": "Fruit",
+          "picture": "🧺"
+        },
+        {
+          "id": "farm",
+          "label": "Farm animals",
+          "picture": "🚜"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍒",
+          "name": "cherries",
+          "group": "fruit"
+        },
+        {
+          "item": "🍌",
+          "name": "banana",
+          "group": "fruit"
+        },
+        {
+          "item": "🐴",
+          "name": "horse",
+          "group": "farm"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "farm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-07",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "farm",
+          "label": "Farm animals",
+          "picture": "🚜"
+        },
+        {
+          "id": "school",
+          "label": "School things",
+          "picture": "🏫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🖍️",
+          "name": "crayon",
+          "group": "school"
+        },
+        {
+          "item": "🎒",
+          "name": "school bag",
+          "group": "school"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "farm"
+        },
+        {
+          "item": "🐔",
+          "name": "hen",
+          "group": "farm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-08",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        },
+        {
+          "id": "sea",
+          "label": "Sea animals",
+          "picture": "🌊"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧤",
+          "name": "gloves",
+          "group": "clothes"
+        },
+        {
+          "item": "🎩",
+          "name": "hat",
+          "group": "clothes"
+        },
+        {
+          "item": "🐟",
+          "name": "fish",
+          "group": "sea"
+        },
+        {
+          "item": "🐬",
+          "name": "dolphin",
+          "group": "sea"
+        },
+        {
+          "item": "🐳",
+          "name": "whale",
+          "group": "sea"
+        },
+        {
+          "item": "👕",
+          "name": "shirt",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-09",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "weather",
+          "label": "Weather",
+          "picture": "🌤️"
+        },
+        {
+          "id": "farm",
+          "label": "Farm animals",
+          "picture": "🚜"
+        }
+      ],
+      "items": [
+        {
+          "item": "⛅",
+          "name": "cloud",
+          "group": "weather"
+        },
+        {
+          "item": "⚡",
+          "name": "lightning",
+          "group": "weather"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "farm"
+        },
+        {
+          "item": "🐐",
+          "name": "goat",
+          "group": "farm"
+        },
+        {
+          "item": "🌈",
+          "name": "rainbow",
+          "group": "weather"
+        },
+        {
+          "item": "🐔",
+          "name": "hen",
+          "group": "farm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-10",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "sea",
+          "label": "Sea animals",
+          "picture": "🌊"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧦",
+          "name": "socks",
+          "group": "clothes"
+        },
+        {
+          "item": "🦀",
+          "name": "crab",
+          "group": "sea"
+        },
+        {
+          "item": "🐙",
+          "name": "octopus",
+          "group": "sea"
+        },
+        {
+          "item": "🎩",
+          "name": "hat",
+          "group": "clothes"
+        },
+        {
+          "item": "🐟",
+          "name": "fish",
+          "group": "sea"
+        },
+        {
+          "item": "🧥",
+          "name": "coat",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-11",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "weather",
+          "label": "Weather",
+          "picture": "🌤️"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        }
+      ],
+      "items": [
+        {
+          "item": "❄️",
+          "name": "snow",
+          "group": "weather"
+        },
+        {
+          "item": "⛅",
+          "name": "cloud",
+          "group": "weather"
+        },
+        {
+          "item": "🧣",
+          "name": "scarf",
+          "group": "clothes"
+        },
+        {
+          "item": "👕",
+          "name": "shirt",
+          "group": "clothes"
+        },
+        {
+          "item": "🌧️",
+          "name": "rain",
+          "group": "weather"
+        },
+        {
+          "item": "👗",
+          "name": "dress",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-12",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "weather",
+          "label": "Weather",
+          "picture": "🌤️"
+        },
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "picture": "🛣️"
+        }
+      ],
+      "items": [
+        {
+          "item": "☀️",
+          "name": "sun",
+          "group": "weather"
+        },
+        {
+          "item": "🚂",
+          "name": "train",
+          "group": "vehicles"
+        },
+        {
+          "item": "🌧️",
+          "name": "rain",
+          "group": "weather"
+        },
+        {
+          "item": "❄️",
+          "name": "snow",
+          "group": "weather"
+        },
+        {
+          "item": "🚲",
+          "name": "bicycle",
+          "group": "vehicles"
+        },
+        {
+          "item": "🚜",
+          "name": "tractor",
+          "group": "vehicles"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-13",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        },
+        {
+          "id": "school",
+          "label": "School things",
+          "picture": "🏫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧣",
+          "name": "scarf",
+          "group": "clothes"
+        },
+        {
+          "item": "📚",
+          "name": "books",
+          "group": "school"
+        },
+        {
+          "item": "✏️",
+          "name": "pencil",
+          "group": "school"
+        },
+        {
+          "item": "✂️",
+          "name": "scissors",
+          "group": "school"
+        },
+        {
+          "item": "👗",
+          "name": "dress",
+          "group": "clothes"
+        },
+        {
+          "item": "👟",
+          "name": "shoe",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-14",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "weather",
+          "label": "Weather",
+          "picture": "🌤️"
+        },
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "picture": "🛣️"
+        }
+      ],
+      "items": [
+        {
+          "item": "⛅",
+          "name": "cloud",
+          "group": "weather"
+        },
+        {
+          "item": "🌈",
+          "name": "rainbow",
+          "group": "weather"
+        },
+        {
+          "item": "🚂",
+          "name": "train",
+          "group": "vehicles"
+        },
+        {
+          "item": "🚗",
+          "name": "car",
+          "group": "vehicles"
+        },
+        {
+          "item": "✈️",
+          "name": "aeroplane",
+          "group": "vehicles"
+        },
+        {
+          "item": "🌧️",
+          "name": "rain",
+          "group": "weather"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-15",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "picture": "🛣️"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        },
+        {
+          "id": "school",
+          "label": "School things",
+          "picture": "🏫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🎒",
+          "name": "school bag",
+          "group": "school"
+        },
+        {
+          "item": "👗",
+          "name": "dress",
+          "group": "clothes"
+        },
+        {
+          "item": "🚜",
+          "name": "tractor",
+          "group": "vehicles"
+        },
+        {
+          "item": "✂️",
+          "name": "scissors",
+          "group": "school"
+        },
+        {
+          "item": "👟",
+          "name": "shoe",
+          "group": "clothes"
+        },
+        {
+          "item": "🚗",
+          "name": "car",
+          "group": "vehicles"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-16",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "sea",
+          "label": "Sea animals",
+          "picture": "🌊"
+        },
+        {
+          "id": "wild",
+          "label": "Wild animals",
+          "picture": "🌴"
+        },
+        {
+          "id": "farm",
+          "label": "Farm animals",
+          "picture": "🚜"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐙",
+          "name": "octopus",
+          "group": "sea"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "farm"
+        },
+        {
+          "item": "🦒",
+          "name": "giraffe",
+          "group": "wild"
+        },
+        {
+          "item": "🦓",
+          "name": "zebra",
+          "group": "wild"
+        },
+        {
+          "item": "🐮",
+          "name": "cow",
+          "group": "farm"
+        },
+        {
+          "item": "🐳",
+          "name": "whale",
+          "group": "sea"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-17",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "school",
+          "label": "School things",
+          "picture": "🏫"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        },
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "picture": "🛣️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🚲",
+          "name": "bicycle",
+          "group": "vehicles"
+        },
+        {
+          "item": "👟",
+          "name": "shoe",
+          "group": "clothes"
+        },
+        {
+          "item": "🚂",
+          "name": "train",
+          "group": "vehicles"
+        },
+        {
+          "item": "🖍️",
+          "name": "crayon",
+          "group": "school"
+        },
+        {
+          "item": "👕",
+          "name": "shirt",
+          "group": "clothes"
+        },
+        {
+          "item": "✏️",
+          "name": "pencil",
+          "group": "school"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-18",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "school",
+          "label": "School things",
+          "picture": "🏫"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        },
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "picture": "🛣️"
+        }
+      ],
+      "items": [
+        {
+          "item": "👗",
+          "name": "dress",
+          "group": "clothes"
+        },
+        {
+          "item": "🖍️",
+          "name": "crayon",
+          "group": "school"
+        },
+        {
+          "item": "👟",
+          "name": "shoe",
+          "group": "clothes"
+        },
+        {
+          "item": "✂️",
+          "name": "scissors",
+          "group": "school"
+        },
+        {
+          "item": "🚗",
+          "name": "car",
+          "group": "vehicles"
+        },
+        {
+          "item": "✈️",
+          "name": "aeroplane",
+          "group": "vehicles"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-19",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "school",
+          "label": "School things",
+          "picture": "🏫"
+        },
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "picture": "🛣️"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        }
+      ],
+      "items": [
+        {
+          "item": "🖍️",
+          "name": "crayon",
+          "group": "school"
+        },
+        {
+          "item": "🚗",
+          "name": "car",
+          "group": "vehicles"
+        },
+        {
+          "item": "🚌",
+          "name": "bus",
+          "group": "vehicles"
+        },
+        {
+          "item": "🧣",
+          "name": "scarf",
+          "group": "clothes"
+        },
+        {
+          "item": "✏️",
+          "name": "pencil",
+          "group": "school"
+        },
+        {
+          "item": "🧦",
+          "name": "socks",
+          "group": "clothes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g1-sorting-20",
+    "grade": 1,
+    "subject": "thinking",
+    "topic": "g1-sorting",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "picture": "🛣️"
+        },
+        {
+          "id": "school",
+          "label": "School things",
+          "picture": "🏫"
+        },
+        {
+          "id": "clothes",
+          "label": "Clothes",
+          "picture": "👚"
+        }
+      ],
+      "items": [
+        {
+          "item": "🖍️",
+          "name": "crayon",
+          "group": "school"
+        },
+        {
+          "item": "🧣",
+          "name": "scarf",
+          "group": "clothes"
+        },
+        {
+          "item": "✈️",
+          "name": "aeroplane",
+          "group": "vehicles"
+        },
+        {
+          "item": "⛵",
+          "name": "boat",
+          "group": "vehicles"
+        },
+        {
+          "item": "✂️",
+          "name": "scissors",
+          "group": "school"
+        },
+        {
+          "item": "🧤",
+          "name": "gloves",
+          "group": "clothes"
+        }
+      ]
+    }
+  }
+]

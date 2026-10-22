@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Phase 1 — Grade 1 Maths and English are playable.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Phase 1 — all four Grade 1 subjects are playable: Maths, English, Puzzles and Thinking Skills.**
 
 ## Getting started
 
@@ -56,6 +56,27 @@ Four topics, 20 puzzles each across 3 levels — 80 puzzles, built from the word
 
 Rhymes are grouped by sound, not spelling (bear/chair, bee/key), in `RHYME_FAMILIES`. A missing-letter puzzle never offers a wrong letter that spells another real word (c_t: no "o", because "cot" is a word). The content checker enforces both. No puzzle depends on hearing an isolated letter sound, because the device voice can't say "buh"; recorded clips can add that later.
 
+## Grade 1 Puzzles and Thinking Skills (Phase 1)
+
+Five topics, 20 puzzles each across 3 levels — 100 puzzles, built from the picture categories in `packages/content/src/categories.ts` (farm, wild and sea animals; fruit; vegetables; vehicles; clothes; school things; weather).
+
+| Subject | Topic | Puzzle type | Levels | Star for… |
+|---|---|---|---|---|
+| Puzzles | Odd one out | `odd-one-out` | very different (3 vegetables + a lion) · same family (sea animals + a giraffe) · 5 items | right on the first tap |
+| Puzzles | Picture crossword | `crossword` | two 3-letter words, 2 blanks · up to 4 letters, 3 blanks · 4–5 letters, 4 blanks incl. the shared square | no wrong letters |
+| Thinking | Sorting | `sort-into-groups` | 2 groups, 4 items · 2 groups, 6 items · 3 animal or thing groups | no wrong groups |
+| Thinking | Memory pairs | `memory-match` | 3 pairs · 4 pairs · 6 pairs | no more wrong guesses than pairs |
+| Thinking | Mazes | `maze` | 3×3 · 4×4 · 5×5 | at most 2 bumps into walls |
+
+Crosswords, sorting, memory and mazes take several taps, so each has its own player in `apps/mobile/src/components/puzzles/interactive.tsx`; single-tap types use `renderers.tsx`. The content checker makes sure:
+- exactly one item can be the odd one out (counting families too: cow, pig, hen, lion → only lion);
+- crossword words agree where they cross and every missing letter is offered;
+- each sorting item belongs to exactly one of its groups;
+- every memory card has one match;
+- every maze can be solved.
+
+Tap a crossword clue picture or a sorting item to hear its name. Mazes work with the arrow buttons, by tapping the next square, or with the keyboard arrow keys on the web.
+
 How play works: a session is 10 puzzles, unsolved ones first and easiest first. Each question is read aloud (with a 🔊 button to repeat it). A wrong pick wiggles and the child can try again. A star is earned only for a right answer on the first try. Stars, solved puzzles and the daily streak are saved on the device. Parent settings (progress, sound, change grade, reset) are behind a multiplication-question parent gate.
 
 ## Voice
@@ -90,3 +111,7 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | English topics | Picture words | Missing letter | First letters | Rhymes |
 |---|---|---|---|---|
 | ![](docs/screenshots/app-7-english-topics.png) | ![](docs/screenshots/app-8-picture-words.png) | ![](docs/screenshots/app-hard-g1-words.png) | ![](docs/screenshots/app-hard-g1-sounds.png) | ![](docs/screenshots/app-type-g1-rhymes.png) |
+
+| Odd one out | Crossword | Sorting | Memory | Maze |
+|---|---|---|---|---|
+| ![](docs/screenshots/app-type-g1-odd-one-out.png) | ![](docs/screenshots/app-type-g1-crossword.png) | ![](docs/screenshots/app-type-g1-sorting.png) | ![](docs/screenshots/app-type-g1-memory.png) | ![](docs/screenshots/app-type-g1-mazes.png) |

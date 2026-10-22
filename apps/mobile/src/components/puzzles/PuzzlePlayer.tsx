@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, type Puzzle, type PuzzleOption } from '@quickstep/content';
+import { PHRASES, isInteractive, type ChoicePuzzle, type InteractivePuzzle, type Puzzle, type PuzzleOption } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font, text } from '../../lib/theme';
+import { PLAYERS } from './interactive';
 import { RENDERERS } from './renderers';
 
 type Props = {
@@ -13,11 +14,50 @@ type Props = {
   onSolved: (firstTry: boolean) => void;
 };
 
-/**
- * Plays one puzzle of any type. A wrong pick wiggles and can be retried;
- * a star is only earned when the first pick is right.
- */
-export function PuzzlePlayer({ puzzle, sound, onSolved }: Props) {
+/** Plays one puzzle of any type, with the prompt, read-aloud button and feedback line. */
+export function PuzzlePlayer(props: Props) {
+  const { puzzle, sound } = props;
+  useEffect(() => say(puzzle.prompt, sound), [puzzle, sound]);
+  return (
+    <View style={styles.card}>
+      <View style={styles.promptRow}>
+        <Text style={[text.h2, { flex: 1 }]}>{puzzle.prompt}</Text>
+        <Pressable onPress={() => say(puzzle.prompt, true)} style={styles.speak} accessibilityRole="button" accessibilityLabel="Read the question aloud" hitSlop={8}>
+          <Text style={{ fontSize: 22 }}>🔊</Text>
+        </Pressable>
+      </View>
+      {isInteractive(puzzle) ? <InteractiveBody {...props} puzzle={puzzle} /> : <ChoiceBody {...props} puzzle={puzzle} />}
+    </View>
+  );
+}
+
+/** Multi-step puzzles (crossword, sorting, memory, maze); the type's player decides when it's solved. */
+function InteractiveBody({ puzzle, sound, onSolved }: Props & { puzzle: InteractivePuzzle }) {
+  const [message, setMessage] = useState<{ text: string; good: boolean; n: number } | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const Player = PLAYERS[puzzle.type] as any;
+  return (
+    <>
+      <Player
+        puzzle={puzzle}
+        sound={sound}
+        onMistake={(m?: string) => {
+          setMessage((prev) => ({ text: m ?? 'Almost! Look again.', good: false, n: (prev?.n ?? 0) + 1 }));
+          if (!m) say(PHRASES.tryAgain, sound);
+        }}
+        onSolved={(star: boolean) => {
+          setMessage({ text: star ? 'Great job! +1 star' : 'You got it!', good: true, n: -1 });
+          say(star ? PHRASES.great : PHRASES.gotIt, sound);
+          onSolved(star);
+        }}
+      />
+      <View style={styles.feedbackRow}>{message && <Feedback key={message.n} text={message.text} good={message.good} />}</View>
+    </>
+  );
+}
+
+/** One-tap puzzles. A wrong pick wiggles and can be retried; a star is only earned when the first pick is right. */
+function ChoiceBody({ puzzle, sound, onSolved }: Props & { puzzle: ChoicePuzzle }) {
   // Parent keys this component by puzzle id, so state starts fresh per puzzle.
   const [wrong, setWrong] = useState<PuzzleOption[]>([]);
   const [solved, setSolved] = useState(false);
@@ -26,8 +66,6 @@ export function PuzzlePlayer({ puzzle, sound, onSolved }: Props) {
   const r = RENDERERS[puzzle.type] as any;
   const Stimulus = r.Stimulus;
   const cols: number = r.columns(puzzle);
-
-  useEffect(() => say(puzzle.prompt, sound), [puzzle, sound]);
 
   const pick = (opt: PuzzleOption) => {
     if (solved || wrong.includes(opt)) return;
@@ -47,14 +85,7 @@ export function PuzzlePlayer({ puzzle, sound, onSolved }: Props) {
   const message = solved ? (wrong.length ? 'You got it!' : 'Great job! +1 star') : wrong.length ? 'Almost! Look again.' : null;
 
   return (
-    <View style={styles.card}>
-      <View style={styles.promptRow}>
-        <Text style={[text.h2, { flex: 1 }]}>{puzzle.prompt}</Text>
-        <Pressable onPress={() => say(puzzle.prompt, true)} style={styles.speak} accessibilityRole="button" accessibilityLabel="Read the question aloud" hitSlop={8}>
-          <Text style={{ fontSize: 22 }}>🔊</Text>
-        </Pressable>
-      </View>
-
+    <>
       {Stimulus && <Stimulus puzzle={puzzle} />}
 
       <View style={styles.options}>
@@ -69,7 +100,7 @@ export function PuzzlePlayer({ puzzle, sound, onSolved }: Props) {
               height={r.optionHeight ?? 84}
               onPress={() => pick(opt)}
               disabled={solved}
-              label={String(opt)}
+              label={r.label ? r.label(opt) : String(opt)}
             >
               {r.option(opt, puzzle)}
             </Option>
@@ -78,7 +109,7 @@ export function PuzzlePlayer({ puzzle, sound, onSolved }: Props) {
       </View>
 
       <View style={styles.feedbackRow}>{message && <Feedback key={`${wrong.length}-${solved}`} text={message} good={solved} />}</View>
-    </View>
+    </>
   );
 }
 

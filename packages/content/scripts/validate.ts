@@ -4,7 +4,8 @@
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { KNOWN_WORDS, rhymes } from '../src/words.ts';
+import { CATEGORIES, oddCandidates } from '../src/categories.ts';
+import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
 const SHAPES = ['star', 'circle', 'square', 'tri', 'diamond', 'rectangle'];
@@ -17,8 +18,10 @@ const files = (dir: string): string[] =>
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function check(p: any): string | null {
-  for (const k of ['id', 'grade', 'subject', 'topic', 'difficulty', 'prompt', 'type', 'payload', 'options', 'answer']) if (p[k] === undefined) return `missing "${k}"`;
+  for (const k of ['id', 'grade', 'subject', 'topic', 'difficulty', 'prompt', 'type', 'payload']) if (p[k] === undefined) return `missing "${k}"`;
   if (![1, 2, 3].includes(p.difficulty)) return 'difficulty must be 1, 2 or 3';
+  if (INTERACTIVE[p.type]) return INTERACTIVE[p.type](p.payload);
+  for (const k of ['options', 'answer']) if (p[k] === undefined) return `missing "${k}"`;
   if (!Array.isArray(p.options) || p.options.length < 2) return 'needs at least 2 options';
   if (new Set(p.options).size !== p.options.length) return 'options must be unique';
   if (!p.options.includes(p.answer)) return 'answer is not one of the options';
@@ -70,10 +73,82 @@ function check(p: any): string | null {
       const noPic = p.options.find((o: string) => !q.pictures?.[o]);
       return noPic ? `no picture for ${noPic}` : null;
     }
+    case 'odd-one-out': {
+      const group = CATEGORIES.find((c) => c.id === q.group);
+      if (!group) return `unknown group ${q.group}`;
+      const valid = oddCandidates(p.options);
+      if (valid.length !== 1) return `${valid.length} items could be the odd one out (${valid.join(' ')})`;
+      return valid[0] === p.answer ? null : `the odd one out is ${valid[0]}`;
+    }
     default:
       return `unknown type "${p.type}"`;
   }
 }
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const INTERACTIVE: Record<string, (q: any) => string | null> = {
+  crossword(q) {
+    const grid = new Map<string, string>();
+    for (const w of q.words) {
+      if (PICTURES[w.word] !== w.picture) return `wrong picture for ${w.word}`;
+      for (let k = 0; k < w.word.length; k++) {
+        const key = w.dir === 'across' ? `${w.row},${w.col + k}` : `${w.row + k},${w.col}`;
+        if (grid.has(key) && grid.get(key) !== w.word[k]) return `words clash at ${key}`;
+        grid.set(key, w.word[k]);
+      }
+    }
+    if (!q.blanks.length) return 'no blanks';
+    for (const [r, c] of q.blanks) {
+      const l = grid.get(`${r},${c}`);
+      if (!l) return `blank ${r},${c} is not on a word`;
+      if (!q.letters.includes(l)) return `letter "${l}" is not offered`;
+    }
+    return new Set(q.letters).size === q.letters.length ? null : 'letters must be unique';
+  },
+  'sort-into-groups'(q) {
+    const ids = q.groups.map((g: { id: string }) => g.id);
+    if (ids.length < 2) return 'needs at least 2 groups';
+    for (const it of q.items) {
+      if (!ids.includes(it.group)) return `${it.name} has unknown group ${it.group}`;
+      const cat = CATEGORIES.find((c) => c.id === it.group);
+      if (!cat?.items.some(([e]) => e === it.item)) return `${it.name} is not in ${it.group}`;
+      const also = ids.find((g: string) => g !== it.group && CATEGORIES.find((c) => c.id === g)?.items.some(([e]) => e === it.item));
+      if (also) return `${it.name} fits ${also} too`;
+    }
+    return ids.every((g: string) => q.items.some((it: { group: string }) => it.group === g)) ? null : 'a group has no items';
+  },
+  'memory-match'(q) {
+    const counts = new Map<string, number>();
+    for (const c of q.cards) counts.set(c, (counts.get(c) ?? 0) + 1);
+    if ([...counts.values()].some((n) => n !== 2)) return 'every picture must appear exactly twice';
+    return q.cards.length % q.cols === 0 ? null : 'cards must fill the grid';
+  },
+  maze(q) {
+    const { rows, cols, cells, start, goal } = q;
+    if (cells.length !== rows * cols) return 'cells must fill the grid';
+    const dirs = [[-1, 0, 1, 4], [0, 1, 2, 8], [1, 0, 4, 1], [0, -1, 8, 2]];
+    for (let i = 0; i < cells.length; i++) {
+      const r = Math.floor(i / cols), c = i % cols;
+      for (const [dr, dc, bit, back] of dirs) {
+        if (!(cells[i] & bit)) continue;
+        const nr = r + dr, nc = c + dc;
+        if (nr < 0 || nr >= rows || nc < 0 || nc >= cols) return `cell ${r},${c} opens off the grid`;
+        if (!(cells[nr * cols + nc] & back)) return `wall between ${r},${c} and ${nr},${nc} is one-sided`;
+      }
+    }
+    // The goal must be reachable from the start.
+    const seen = new Set([start[0] * cols + start[1]]);
+    const queue = [start[0] * cols + start[1]];
+    while (queue.length) {
+      const i = queue.shift()!;
+      for (const [dr, dc, bit] of dirs) if (cells[i] & bit) {
+        const n = (Math.floor(i / cols) + dr) * cols + (i % cols) + dc;
+        if (!seen.has(n)) { seen.add(n); queue.push(n); }
+      }
+    }
+    return seen.has(goal[0] * cols + goal[1]) ? null : 'goal cannot be reached';
+  },
+};
 
 for (const file of files(ROOT)) {
   const name = relative(ROOT, file);
