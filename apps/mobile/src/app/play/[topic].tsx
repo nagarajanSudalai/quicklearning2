@@ -1,4 +1,4 @@
-import { TOPICS, puzzlesFor } from '@quickstep/content';
+import { SESSION_LENGTH, TOPICS, puzzlesFor } from '@quickstep/content';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -6,8 +6,6 @@ import { PuzzlePlayer } from '../../components/puzzles/PuzzlePlayer';
 import { Button3D, Screen } from '../../components/ui';
 import { useProgress } from '../../lib/progress';
 import { colors, font } from '../../lib/theme';
-
-const SESSION = 10;
 
 export default function Play() {
   const { topic: topicId } = useLocalSearchParams<{ topic: string }>();
@@ -17,7 +15,7 @@ export default function Play() {
   // Fixed for the session: unsolved puzzles first (easiest first), then replays.
   const [queue] = useState(() => {
     const all = puzzlesFor(topicId);
-    return [...all.filter((p) => !solved[p.id]), ...all.filter((p) => solved[p.id])].slice(0, SESSION);
+    return [...all.filter((p) => !solved[p.id]), ...all.filter((p) => solved[p.id])].slice(0, SESSION_LENGTH);
   });
   const [i, setI] = useState(0);
   const [done, setDone] = useState(false);

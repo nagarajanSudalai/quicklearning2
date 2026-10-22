@@ -9,6 +9,7 @@ import patterns from '../puzzles/g1-maths/patterns.json';
 export * from './types';
 export * from './tokens';
 export * from './curriculum';
+export * from './voice';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [...counting, ...addition, ...subtraction, ...shapes, ...compare, ...patterns] as Puzzle[];

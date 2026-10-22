@@ -1,4 +1,4 @@
-import { TOPICS } from '@quickstep/content';
+import { TOPICS, cheerFor, resultLine } from '@quickstep/content';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect } from 'react';
 import { Animated, StyleSheet, Text, View } from 'react-native';
@@ -15,9 +15,9 @@ export default function Result() {
   const total = Number(params.total) || 0;
   const { sound } = useProgress();
   const pop = usePop('result');
-  const cheer = stars === total ? 'Perfect!' : stars >= total / 2 ? 'Well done!' : 'Good try!';
+  const cheer = cheerFor(stars, total);
 
-  useEffect(() => say(`${cheer} You earned ${stars} stars.`, sound), [cheer, stars, sound]);
+  useEffect(() => say(resultLine(stars, total), sound), [stars, total, sound]);
 
   return (
     <Screen title={topic?.title}>

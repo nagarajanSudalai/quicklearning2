@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
-import type { Puzzle, PuzzleOption } from '@quickstep/content';
+import { PHRASES, type Puzzle, type PuzzleOption } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font, text } from '../../lib/theme';
@@ -34,13 +34,13 @@ export function PuzzlePlayer({ puzzle, sound, onSolved }: Props) {
     if (opt === puzzle.answer) {
       setSolved(true);
       buzz('right');
-      say(wrong.length ? 'You got it!' : 'Great job!', sound);
+      say(wrong.length ? PHRASES.gotIt : PHRASES.great, sound);
       onSolved(wrong.length === 0);
     } else {
       setWrong((w) => [...w, opt]);
       setWiggles((n) => n + 1);
       buzz('wrong');
-      say('Almost! Try again.', sound);
+      say(PHRASES.tryAgain, sound);
     }
   };
 
