@@ -14,7 +14,7 @@ export const GRADE_COLORS: Record<Grade, string> = {
 export const GRADE_NOTES: Record<Grade, string> = {
   1: 'Grade 1 · ages 6–7: counting, shapes, simple patterns and picture words.',
   2: 'Grade 2 · ages 7–8: numbers to 100, time, money, spelling and sentences, sudoku.',
-  3: 'Grade 3 · ages 8–9: times tables, logic grids, spelling crosswords.',
+  3: 'Grade 3 · ages 8–9: numbers to 1000, times tables, fractions, reading, logic grids.',
   4: 'Grade 4 · ages 9–10: fractions, sudoku, word ladders, reading puzzles.',
   5: 'Grade 5 · ages 10–11: decimals, brain teasers, science quizzes.',
 };
@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -63,6 +63,13 @@ export const TOPICS: Topic[] = [
   { id: 'g2-order', grade: 2, subject: 'thinking', title: 'What comes first?', blurb: 'Put steps in order', glyph: '1·2·3', color: colors.orange },
   { id: 'g2-riddles', grade: 2, subject: 'thinking', title: 'Who am I?', blurb: 'Listen to the clues', glyph: '?', color: colors.purple },
   { id: 'g2-mazes', grade: 2, subject: 'thinking', title: 'Bigger mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
+  { id: 'g3-numbers', grade: 3, subject: 'maths', title: 'Numbers to 1000', blurb: 'Hundreds, tens and ones', glyph: '100', color: colors.pink },
+  { id: 'g3-add-sub', grade: 3, subject: 'maths', title: 'Add and subtract', blurb: '3-digit numbers', glyph: '±', color: colors.orange },
+  { id: 'g3-tables', grade: 3, subject: 'maths', title: 'Times tables', blurb: 'Tables 2 to 10', glyph: '×', color: colors.green },
+  { id: 'g3-sharing', grade: 3, subject: 'maths', title: 'Sharing equally', blurb: 'Start to divide', glyph: '÷', color: colors.blue },
+  { id: 'g3-fractions', grade: 3, subject: 'maths', title: 'Fractions', blurb: 'Halves, thirds, quarters', glyph: '½', color: colors.purple },
+  { id: 'g3-time', grade: 3, subject: 'maths', title: 'Time and calendar', blurb: 'Clocks, days and months', glyph: '📅', color: colors.teal },
+  { id: 'g3-money-measure', grade: 3, subject: 'maths', title: 'Money and length', blurb: 'Change and centimetres', glyph: '₹', color: colors.orange },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

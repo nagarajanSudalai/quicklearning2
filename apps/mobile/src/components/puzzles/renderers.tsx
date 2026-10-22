@@ -4,7 +4,7 @@ import { nameOf, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
-import { Blocks, Clock, Groups, Money } from '../maths/Visuals';
+import { Blocks, Clock, Fraction, Groups, Money, Ruler } from '../maths/Visuals';
 
 /**
  * One entry per puzzle type: what to show above the answers, how to draw one
@@ -69,19 +69,23 @@ export const RENDERERS: Renderers = {
   },
   arithmetic: {
     Stimulus: ({ puzzle }) => {
-      const { a, b, op, item } = puzzle.payload;
-      const sym = op === '+' ? '+' : op === '-' ? '−' : '×';
+      const { a, b, op, item, missing } = puzzle.payload;
+      const sym = op === '+' ? '+' : op === '-' ? '−' : op === '×' ? '×' : '÷';
+      const result = op === '+' ? a + b : op === '-' ? a - b : op === '×' ? a * b : a / b;
       return (
         <View style={[styles.panel, { flexDirection: 'column', flexWrap: 'nowrap', gap: 12 }]}>
           {item && op === '×' && <Groups a={a} b={b} item={item} />}
-          {item && op !== '×' && (
+          {item && op === '÷' && <Groups a={b} b={a / b} item={item} />}
+          {item && (op === '+' || op === '-') && (
             <View style={styles.sumRow}>
               <View style={styles.sumSide}><EmojiGroup item={item} count={a} size={28} /></View>
               <Text style={styles.op}>{sym}</Text>
               <View style={[styles.sumSide, op === '-' && { opacity: 0.35 }]}><EmojiGroup item={item} count={b} size={28} /></View>
             </View>
           )}
-          <Text style={styles.equation}>{a} {sym} {b} = ?</Text>
+          <Text style={styles.equation}>
+            {missing ? `${missing === 'a' ? '?' : a} ${sym} ${missing === 'b' ? '?' : b} = ${result}` : `${a} ${sym} ${b} = ?`}
+          </Text>
         </View>
       );
     },
@@ -146,10 +150,10 @@ export const RENDERERS: Renderers = {
   },
   'place-value': {
     Stimulus: ({ puzzle }) => {
-      const { tens, ones, ask } = puzzle.payload;
+      const { hundreds, tens, ones, ask } = puzzle.payload;
       return (
         <View style={[styles.panel, styles.pictureBox]}>
-          {ask === 'number' ? <Blocks tens={tens} ones={ones} /> : <Text style={styles.equation}>{tens * 10 + ones}</Text>}
+          {ask === 'number' ? <Blocks hundreds={hundreds} tens={tens} ones={ones} /> : <Text style={styles.equation}>{(hundreds ?? 0) * 100 + tens * 10 + ones}</Text>}
         </View>
       );
     },
@@ -183,7 +187,8 @@ export const RENDERERS: Renderers = {
   },
   money: {
     Stimulus: ({ puzzle }) => (
-      <View style={styles.panel}>
+      <View style={[styles.panel, styles.pictureBox]}>
+        {puzzle.payload.price !== undefined && <Text style={styles.sentenceText}>🧸 costs ₹{puzzle.payload.price}. You pay:</Text>}
         <Money coins={puzzle.payload.coins} notes={puzzle.payload.notes} />
       </View>
     ),
@@ -220,6 +225,56 @@ export const RENDERERS: Renderers = {
     columns: (p) => (p.options.length === 4 ? 2 : 3),
     optionHeight: 100,
     label: (e) => e,
+  },
+  'compare-numbers': {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, { gap: 14, flexWrap: 'nowrap' }]}>
+        <Text style={styles.equation}>{puzzle.payload.a}</Text>
+        <View style={[styles.blank, { width: 50, height: 50 }]}><Text style={styles.blankText}>?</Text></View>
+        <Text style={styles.equation}>{puzzle.payload.b}</Text>
+      </View>
+    ),
+    option: (s) => <Text style={styles.number}>{s}</Text>,
+    columns: () => 3,
+    label: (s) => (s === '<' ? 'less than' : s === '>' ? 'greater than' : 'equals'),
+  },
+  fraction: {
+    Stimulus: ({ puzzle }) => {
+      const { shape, parts, shaded, ask } = puzzle.payload;
+      return (
+        <View style={[styles.panel, styles.pictureBox]}>
+          {ask === 'name' ? <Fraction shape={shape} parts={parts} shaded={shaded} /> : <Text style={styles.equation}>{puzzle.answer}</Text>}
+        </View>
+      );
+    },
+    option: (f, p) => {
+      if (p.payload.ask === 'name') return <Text style={styles.number}>{f}</Text>;
+      const [s, n] = f.split('/').map((x) => parseInt(x, 10));
+      return <Fraction shape={p.payload.shape} parts={n} shaded={s} size={64} />;
+    },
+    columns: () => 3,
+    optionHeight: 100,
+  },
+  calendar: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.pictureBox]}>
+        <Text style={styles.picture}>{puzzle.payload.kind === 'day' ? '🗓️' : '📅'}</Text>
+        <Text style={styles.pictureWord}>{puzzle.payload.base}</Text>
+      </View>
+    ),
+    option: (t) => <Text style={styles.timeOption} adjustsFontSizeToFit numberOfLines={1}>{t}</Text>,
+    columns: () => 1,
+    optionHeight: 56,
+  },
+  measure: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, { overflow: 'hidden' }]}>
+        <Ruler item={puzzle.payload.item} start={puzzle.payload.start} length={puzzle.payload.length} />
+      </View>
+    ),
+    option: (n) => <Text style={[styles.number, { fontSize: 28 }]} numberOfLines={1}>{n} cm</Text>,
+    columns: () => 3,
+    label: (n) => `${n} centimetres`,
   },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,

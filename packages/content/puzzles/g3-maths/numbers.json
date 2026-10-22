@@ -1,0 +1,410 @@
+[
+  {
+    "id": "g3-numbers-01",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 5,
+      "tens": 2,
+      "ones": 1,
+      "ask": "number"
+    },
+    "options": [
+      621,
+      511,
+      521
+    ],
+    "answer": 521
+  },
+  {
+    "id": "g3-numbers-02",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 8,
+      "tens": 5,
+      "ones": 7,
+      "ask": "number"
+    },
+    "options": [
+      847,
+      857,
+      957
+    ],
+    "answer": 857
+  },
+  {
+    "id": "g3-numbers-03",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 1,
+      "tens": 8,
+      "ones": 3,
+      "ask": "number"
+    },
+    "options": [
+      381,
+      183,
+      283
+    ],
+    "answer": 183
+  },
+  {
+    "id": "g3-numbers-04",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 8,
+      "tens": 6,
+      "ones": 0,
+      "ask": "number"
+    },
+    "options": [
+      860,
+      870,
+      760
+    ],
+    "answer": 860
+  },
+  {
+    "id": "g3-numbers-05",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 3,
+      "tens": 0,
+      "ones": 6,
+      "ask": "number"
+    },
+    "options": [
+      206,
+      306,
+      316
+    ],
+    "answer": 306
+  },
+  {
+    "id": "g3-numbers-06",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 9,
+      "tens": 0,
+      "ones": 2,
+      "ask": "number"
+    },
+    "options": [
+      902,
+      209,
+      912
+    ],
+    "answer": 902
+  },
+  {
+    "id": "g3-numbers-07",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 6,
+      "tens": 7,
+      "ones": 7,
+      "ask": "number"
+    },
+    "options": [
+      776,
+      777,
+      677
+    ],
+    "answer": 677
+  },
+  {
+    "id": "g3-numbers-08",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 2,
+    "prompt": "How many hundreds are in 317?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 3,
+      "tens": 1,
+      "ones": 7,
+      "ask": "hundreds"
+    },
+    "options": [
+      3,
+      1,
+      7
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g3-numbers-09",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 2,
+    "prompt": "How many tens are in 952?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 9,
+      "tens": 5,
+      "ones": 2,
+      "ask": "tens"
+    },
+    "options": [
+      9,
+      2,
+      5
+    ],
+    "answer": 5
+  },
+  {
+    "id": "g3-numbers-10",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 2,
+    "prompt": "How many hundreds are in 166?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 1,
+      "tens": 6,
+      "ones": 6,
+      "ask": "hundreds"
+    },
+    "options": [
+      1,
+      5,
+      6
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g3-numbers-11",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 2,
+    "prompt": "How many tens are in 380?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 3,
+      "tens": 8,
+      "ones": 0,
+      "ask": "tens"
+    },
+    "options": [
+      8,
+      3,
+      0
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g3-numbers-12",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 2,
+    "prompt": "How many hundreds are in 794?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 7,
+      "tens": 9,
+      "ones": 4,
+      "ask": "hundreds"
+    },
+    "options": [
+      9,
+      4,
+      7
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g3-numbers-13",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 2,
+    "prompt": "How many tens are in 542?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 5,
+      "tens": 4,
+      "ones": 2,
+      "ask": "tens"
+    },
+    "options": [
+      4,
+      2,
+      5
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g3-numbers-14",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 2,
+    "prompt": "How many tens are in 689?",
+    "type": "place-value",
+    "payload": {
+      "hundreds": 6,
+      "tens": 8,
+      "ones": 9,
+      "ask": "tens"
+    },
+    "options": [
+      8,
+      9,
+      6
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g3-numbers-15",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 338 and 388?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 338,
+      "b": 388
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g3-numbers-16",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 826 and 826?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 826,
+      "b": 826
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "="
+  },
+  {
+    "id": "g3-numbers-17",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 683 and 691?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 683,
+      "b": 691
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g3-numbers-18",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 188 and 881?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 188,
+      "b": 881
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g3-numbers-19",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 937 and 938?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 937,
+      "b": 938
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g3-numbers-20",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 220 and 217?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 220,
+      "b": 217
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": ">"
+  }
+]

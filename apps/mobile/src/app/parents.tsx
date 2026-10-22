@@ -6,12 +6,12 @@ import { Button3D, Screen } from '../components/ui';
 import { useProgress } from '../lib/progress';
 import { colors, font, text } from '../lib/theme';
 
-// 2-digit × 1-digit: beyond what a Grade 1–2 child can work out.
+// 2-digit × 2-digit: beyond what a Grade 1–3 child can work out in their head.
 const rnd = (lo: number, hi: number) => lo + Math.floor(Math.random() * (hi - lo + 1));
 
 /** Parent gate: a sum a young child can't do, in front of settings. */
 export default function Parents() {
-  const [q] = useState(() => [rnd(12, 19), rnd(3, 9)] as const);
+  const [q] = useState(() => [rnd(12, 29), rnd(11, 19)] as const);
   const [answer, setAnswer] = useState('');
   const [open, setOpen] = useState(false);
   const p = useProgress();

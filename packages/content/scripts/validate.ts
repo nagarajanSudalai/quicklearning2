@@ -8,6 +8,7 @@ import { CATEGORIES, oddCandidates } from '../src/categories.ts';
 import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
+import { calendarAnswer } from '../src/calendar.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
@@ -34,7 +35,9 @@ function check(p: any): string | null {
     case 'count-objects':
       return q.count === p.answer ? null : `count is ${q.count} but answer is ${p.answer}`;
     case 'arithmetic': {
-      const v = q.op === '+' ? q.a + q.b : q.op === '-' ? q.a - q.b : q.op === '×' ? q.a * q.b : NaN;
+      if (q.op === '÷' && q.a % q.b !== 0) return `${q.a} ÷ ${q.b} doesn't divide exactly`;
+      if (q.missing) return q[q.missing] === p.answer ? null : `missing number is ${q[q.missing]}`;
+      const v = q.op === '+' ? q.a + q.b : q.op === '-' ? q.a - q.b : q.op === '×' ? q.a * q.b : q.op === '÷' ? q.a / q.b : NaN;
       return v === p.answer ? null : `${q.a} ${q.op} ${q.b} is ${v}, not ${p.answer}`;
     }
     case 'shape-match':
@@ -78,8 +81,9 @@ function check(p: any): string | null {
       return noPic ? `no picture for ${noPic}` : null;
     }
     case 'place-value': {
-      if (q.tens < 0 || q.tens > 9 || q.ones < 0 || q.ones > 9) return 'digits must be 0–9';
-      const want = q.ask === 'tens' ? q.tens : q.ask === 'ones' ? q.ones : q.tens * 10 + q.ones;
+      const h = q.hundreds ?? 0;
+      if ([h, q.tens, q.ones].some((x) => x < 0 || x > 9)) return 'digits must be 0–9';
+      const want = q.ask === 'hundreds' ? h : q.ask === 'tens' ? q.tens : q.ask === 'ones' ? q.ones : h * 100 + q.tens * 10 + q.ones;
       return want === p.answer ? null : `answer should be ${want}`;
     }
     case 'number-pattern': {
@@ -99,9 +103,13 @@ function check(p: any): string | null {
       return want === p.answer ? null : `the clock shows ${want}`;
     }
     case 'money': {
-      const ok = q.coins.every((c: number) => [1, 2, 5, 10].includes(c)) && q.notes.every((n: number) => [10, 20, 50, 100].includes(n));
+      const ok = q.coins.every((c: number) => [1, 2, 5, 10].includes(c)) && q.notes.every((n: number) => [10, 20, 50, 100, 200].includes(n));
       if (!ok) return 'unknown coin or note';
       const total = [...q.coins, ...q.notes].reduce((s: number, x: number) => s + x, 0);
+      if (q.price !== undefined) {
+        if (q.price >= total) return 'price must be less than the money paid';
+        return total - q.price === p.answer ? null : `change is ₹${total - q.price}`;
+      }
       return total === p.answer ? null : `coins and notes add up to ₹${total}`;
     }
     case 'fill-blank': {
@@ -121,6 +129,26 @@ function check(p: any): string | null {
       // A wrong option must not be another riddle's answer with the same clues.
       return p.options.every((o: string) => q.names[o]) ? null : 'every option needs a name';
     }
+    case 'compare-numbers': {
+      const want = q.a > q.b ? '>' : q.a < q.b ? '<' : '=';
+      return want === p.answer ? null : `${q.a} ${want} ${q.b}`;
+    }
+    case 'fraction': {
+      if (q.shaded < 1 || q.shaded >= q.parts) return 'shaded must be between 1 and parts − 1';
+      const want = `${q.shaded}/${q.parts}`;
+      if (want !== p.answer) return `shaded part is ${want}`;
+      // No wrong option may be the same amount (1/2 and 2/4).
+      const val = (f: string) => { const [a, b] = f.split('/').map(Number); return a / b; };
+      const same = p.options.find((o: string) => o !== p.answer && val(o) === val(p.answer));
+      return same ? `${same} is the same as ${p.answer}` : null;
+    }
+    case 'calendar': {
+      const want = calendarAnswer(q.kind, q.base, q.offset);
+      return want === p.answer ? null : `answer should be ${want}`;
+    }
+    case 'measure':
+      if (q.length < 1 || q.start < 0 || q.start + q.length > 15) return 'object must fit on a 15 cm ruler';
+      return q.length === p.answer ? null : `the object is ${q.length} cm long`;
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);
       if (!group) return `unknown group ${q.group}`;

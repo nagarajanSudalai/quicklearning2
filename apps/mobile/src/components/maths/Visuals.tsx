@@ -1,11 +1,16 @@
-import Svg, { Circle, Line, Text as SvgText } from 'react-native-svg';
+import Svg, { Circle, Line, Path, Rect, Text as SvgText } from 'react-native-svg';
 import { StyleSheet, Text, View } from 'react-native';
 import { colors, font } from '../../lib/theme';
 
 /** Tens as rods of 10 cubes, ones as single cubes (NCERT-style place-value blocks). */
-export function Blocks({ tens, ones }: { tens: number; ones: number }) {
+export function Blocks({ hundreds = 0, tens, ones }: { hundreds?: number; tens: number; ones: number }) {
   return (
-    <View style={styles.blocks} accessibilityLabel={`${tens} tens and ${ones} ones`}>
+    <View style={styles.blocks} accessibilityLabel={`${hundreds ? `${hundreds} hundreds, ` : ''}${tens} tens and ${ones} ones`}>
+      {hundreds > 0 && (
+        <View style={styles.flats}>
+          {Array.from({ length: hundreds }, (_, i) => <View key={i} style={styles.flat} />)}
+        </View>
+      )}
       <View style={styles.rods}>
         {Array.from({ length: tens }, (_, i) => (
           <View key={i} style={styles.rod}>
@@ -83,7 +88,60 @@ export function Groups({ a, b, item }: { a: number; b: number; item: string }) {
   );
 }
 
+/** A circle or bar cut into `parts` equal pieces with `shaded` filled in. */
+export function Fraction({ shape, parts, shaded, size = 120 }: { shape: 'circle' | 'bar'; parts: number; shaded: number; size?: number }) {
+  if (shape === 'bar') {
+    const w = 100 / parts;
+    return (
+      <Svg width={size * 1.4} height={size * 0.45} viewBox="0 0 100 30" accessibilityLabel={`${shaded} of ${parts} parts shaded`}>
+        {Array.from({ length: parts }, (_, k) => (
+          <Rect key={k} x={k * w + 0.5} y={1} width={w - 1} height={28} rx={2} fill={k < shaded ? colors.purple : '#fff'} stroke={colors.ink} strokeWidth={1.5} />
+        ))}
+      </Svg>
+    );
+  }
+  const slice = (k: number) => {
+    const a0 = (k / parts) * 2 * Math.PI - Math.PI / 2, a1 = ((k + 1) / parts) * 2 * Math.PI - Math.PI / 2;
+    const p = (a: number) => `${50 + 46 * Math.cos(a)} ${50 + 46 * Math.sin(a)}`;
+    return `M50 50 L${p(a0)} A46 46 0 ${a1 - a0 > Math.PI ? 1 : 0} 1 ${p(a1)} Z`;
+  };
+  return (
+    <Svg width={size} height={size} viewBox="0 0 100 100" accessibilityLabel={`${shaded} of ${parts} parts shaded`}>
+      {Array.from({ length: parts }, (_, k) => (
+        <Path key={k} d={slice(k)} fill={k < shaded ? colors.purple : '#fff'} stroke={colors.ink} strokeWidth={2} />
+      ))}
+    </Svg>
+  );
+}
+
+/** A 15 cm ruler with an object lying from `start` to `start + length`. */
+export function Ruler({ item, start, length }: { item: string; start: number; length: number }) {
+  // The SVG is drawn at `cm` units per centimetre and shown at scale `k`, so the object above uses the same scale.
+  const cm = 20, w = 15 * cm + 20, k = 0.85;
+  return (
+    <View style={{ alignItems: 'flex-start', width: w * k }}>
+      <View style={{ flexDirection: 'row', marginLeft: (10 + start * cm) * k, width: length * cm * k, height: 34, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.brandTint, borderRadius: 8 }}>
+        <Text style={{ fontSize: 24 }} numberOfLines={1}>{item}</Text>
+      </View>
+      <Svg width={w * k} height={46 * k} viewBox={`0 0 ${w} 46`} accessibilityLabel="ruler">
+        <Rect x={0} y={0} width={w} height={46} rx={6} fill="#ffe9a8" stroke={colors.ink} strokeWidth={1.5} />
+        {Array.from({ length: 16 }, (_, k) => (
+          <Line key={k} x1={10 + k * cm} y1={0} x2={10 + k * cm} y2={k % 5 === 0 ? 20 : 14} stroke={colors.ink} strokeWidth={1.5} />
+        ))}
+        {Array.from({ length: 16 }, (_, k) => (
+          <SvgText key={`t${k}`} x={10 + k * cm} y={36} fontSize={11} fontWeight="700" fill={colors.ink} textAnchor="middle">{k}</SvgText>
+        ))}
+        {/* Line up the object's ends with the ruler marks. */}
+        <Line x1={10 + start * cm} y1={0} x2={10 + start * cm} y2={46} stroke={colors.brand} strokeWidth={2} strokeDasharray="3 3" />
+        <Line x1={10 + (start + length) * cm} y1={0} x2={10 + (start + length) * cm} y2={46} stroke={colors.brand} strokeWidth={2} strokeDasharray="3 3" />
+      </Svg>
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
+  flats: { flexDirection: 'row', flexWrap: 'wrap', gap: 4, maxWidth: 170 },
+  flat: { width: 50, height: 50, backgroundColor: colors.green, borderRadius: 4, borderWidth: 2, borderColor: '#1f8a50' },
   blocks: { flexDirection: 'row', alignItems: 'flex-end', gap: 14, flexWrap: 'wrap', justifyContent: 'center' },
   rods: { flexDirection: 'row', gap: 4 },
   rod: { gap: 1, padding: 1, backgroundColor: colors.brandDark, borderRadius: 3 },

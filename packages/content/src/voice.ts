@@ -34,6 +34,8 @@ export function speakable(text: string) {
     .replace(/\s*\+\s*/g, ' plus ')
     .replace(/\s*[−-]\s*(?=\d)/g, ' minus ')
     .replace(/\s*×\s*/g, ' times ')
+    .replace(/\s*÷\s*/g, ' divided by ')
+    .replace(/(\d+)\/(\d+)/g, (_, a, b) => fractionWords(Number(a), Number(b)))
     .replace(/₹\s?(\d+)/g, (_, n) => `${n} ${n === '1' ? 'rupee' : 'rupees'}`)
     .replace(/\s*=\s*\?/g, ' equals what?')
     .replace(/★/g, ' stars')
@@ -74,4 +76,12 @@ export function pickVoice<V extends VoiceLike>(voices: V[]): V | undefined {
     if (s > bestScore) [best, bestScore] = [v, s];
   }
   return best;
+}
+
+const DENOM: Record<number, [string, string]> = { 2: ['half', 'halves'], 3: ['third', 'thirds'], 4: ['quarter', 'quarters'], 5: ['fifth', 'fifths'], 6: ['sixth', 'sixths'], 8: ['eighth', 'eighths'] };
+const NUM = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'];
+/** "3/4" → "three quarters". */
+function fractionWords(a: number, b: number) {
+  const d = DENOM[b];
+  return d ? `${NUM[a] ?? a} ${a === 1 ? d[0] : d[1]}` : `${a} out of ${b}`;
 }

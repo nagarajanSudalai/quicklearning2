@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g3-add-sub-01",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 1,
+    "prompt": "What is 505 plus 342?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 505,
+      "op": "+",
+      "b": 342
+    },
+    "options": [
+      747,
+      847,
+      947
+    ],
+    "answer": 847
+  },
+  {
+    "id": "g3-add-sub-02",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 1,
+    "prompt": "What is 793 take away 583?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 793,
+      "op": "-",
+      "b": 583
+    },
+    "options": [
+      210,
+      209,
+      211
+    ],
+    "answer": 210
+  },
+  {
+    "id": "g3-add-sub-03",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 1,
+    "prompt": "What is 763 plus 126?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 763,
+      "op": "+",
+      "b": 126
+    },
+    "options": [
+      889,
+      879,
+      789
+    ],
+    "answer": 889
+  },
+  {
+    "id": "g3-add-sub-04",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 1,
+    "prompt": "What is 488 take away 245?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 488,
+      "op": "-",
+      "b": 245
+    },
+    "options": [
+      253,
+      233,
+      243
+    ],
+    "answer": 243
+  },
+  {
+    "id": "g3-add-sub-05",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 1,
+    "prompt": "What is 265 plus 534?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 265,
+      "op": "+",
+      "b": 534
+    },
+    "options": [
+      799,
+      789,
+      800
+    ],
+    "answer": 799
+  },
+  {
+    "id": "g3-add-sub-06",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 1,
+    "prompt": "What is 688 take away 443?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 688,
+      "op": "-",
+      "b": 443
+    },
+    "options": [
+      255,
+      245,
+      345
+    ],
+    "answer": 245
+  },
+  {
+    "id": "g3-add-sub-07",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 1,
+    "prompt": "What is 145 plus 652?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 145,
+      "op": "+",
+      "b": 652
+    },
+    "options": [
+      797,
+      807,
+      697
+    ],
+    "answer": 797
+  },
+  {
+    "id": "g3-add-sub-08",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 2,
+    "prompt": "What is 238 take away 190?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 238,
+      "op": "-",
+      "b": 190
+    },
+    "options": [
+      48,
+      38,
+      148
+    ],
+    "answer": 48
+  },
+  {
+    "id": "g3-add-sub-09",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 2,
+    "prompt": "What is 662 plus 156?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 662,
+      "op": "+",
+      "b": 156
+    },
+    "options": [
+      818,
+      817,
+      808
+    ],
+    "answer": 818
+  },
+  {
+    "id": "g3-add-sub-10",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 2,
+    "prompt": "What is 162 take away 117?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 162,
+      "op": "-",
+      "b": 117
+    },
+    "options": [
+      45,
+      46,
+      145
+    ],
+    "answer": 45
+  },
+  {
+    "id": "g3-add-sub-11",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 2,
+    "prompt": "What is 647 plus 204?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 647,
+      "op": "+",
+      "b": 204
+    },
+    "options": [
+      751,
+      951,
+      851
+    ],
+    "answer": 851
+  },
+  {
+    "id": "g3-add-sub-12",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 2,
+    "prompt": "What is 141 take away 125?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 141,
+      "op": "-",
+      "b": 125
+    },
+    "options": [
+      16,
+      26,
+      17
+    ],
+    "answer": 16
+  },
+  {
+    "id": "g3-add-sub-13",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 2,
+    "prompt": "What is 671 plus 285?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 671,
+      "op": "+",
+      "b": 285
+    },
+    "options": [
+      956,
+      955,
+      957
+    ],
+    "answer": 956
+  },
+  {
+    "id": "g3-add-sub-14",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 2,
+    "prompt": "What is 395 take away 369?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 395,
+      "op": "-",
+      "b": 369
+    },
+    "options": [
+      26,
+      27,
+      25
+    ],
+    "answer": 26
+  },
+  {
+    "id": "g3-add-sub-15",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 3,
+    "prompt": "What is 255 plus 657?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 255,
+      "op": "+",
+      "b": 657
+    },
+    "options": [
+      912,
+      812,
+      1012
+    ],
+    "answer": 912
+  },
+  {
+    "id": "g3-add-sub-16",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 3,
+    "prompt": "What is 802 take away 488?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 802,
+      "op": "-",
+      "b": 488
+    },
+    "options": [
+      414,
+      214,
+      314
+    ],
+    "answer": 314
+  },
+  {
+    "id": "g3-add-sub-17",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 3,
+    "prompt": "What is 497 plus 276?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 497,
+      "op": "+",
+      "b": 276
+    },
+    "options": [
+      783,
+      773,
+      763
+    ],
+    "answer": 773
+  },
+  {
+    "id": "g3-add-sub-18",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 3,
+    "prompt": "What is 213 take away 168?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 213,
+      "op": "-",
+      "b": 168
+    },
+    "options": [
+      45,
+      46,
+      44
+    ],
+    "answer": 45
+  },
+  {
+    "id": "g3-add-sub-19",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 3,
+    "prompt": "What is 798 plus 132?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 798,
+      "op": "+",
+      "b": 132
+    },
+    "options": [
+      940,
+      931,
+      930
+    ],
+    "answer": 930
+  },
+  {
+    "id": "g3-add-sub-20",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-add-sub",
+    "difficulty": 3,
+    "prompt": "What is 223 take away 168?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 223,
+      "op": "-",
+      "b": 168
+    },
+    "options": [
+      55,
+      155,
+      54
+    ],
+    "answer": 55
+  }
+]

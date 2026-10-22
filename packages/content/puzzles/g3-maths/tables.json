@@ -1,0 +1,408 @@
+[
+  {
+    "id": "g3-tables-01",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 1,
+    "prompt": "What is 4 times 10?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 4,
+      "op": "×",
+      "b": 10
+    },
+    "options": [
+      36,
+      40,
+      30
+    ],
+    "answer": 40
+  },
+  {
+    "id": "g3-tables-02",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 1,
+    "prompt": "What is 4 times 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 4,
+      "op": "×",
+      "b": 3
+    },
+    "options": [
+      8,
+      13,
+      12
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g3-tables-03",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 1,
+    "prompt": "What is 2 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 2,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      2,
+      4,
+      6
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g3-tables-04",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 1,
+    "prompt": "What is 3 times 9?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3,
+      "op": "×",
+      "b": 9
+    },
+    "options": [
+      36,
+      24,
+      27
+    ],
+    "answer": 27
+  },
+  {
+    "id": "g3-tables-05",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 1,
+    "prompt": "What is 3 times 7?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3,
+      "op": "×",
+      "b": 7
+    },
+    "options": [
+      28,
+      24,
+      21
+    ],
+    "answer": 21
+  },
+  {
+    "id": "g3-tables-06",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 1,
+    "prompt": "What is 2 times 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 2,
+      "op": "×",
+      "b": 3
+    },
+    "options": [
+      9,
+      7,
+      6
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g3-tables-07",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 1,
+    "prompt": "What is 5 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 5,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      8,
+      12,
+      10
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g3-tables-08",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 2,
+    "prompt": "What is 8 times 5?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 8,
+      "op": "×",
+      "b": 5
+    },
+    "options": [
+      40,
+      32,
+      35
+    ],
+    "answer": 40
+  },
+  {
+    "id": "g3-tables-09",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 2,
+    "prompt": "What is 8 times 9?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 8,
+      "op": "×",
+      "b": 9
+    },
+    "options": [
+      81,
+      73,
+      72
+    ],
+    "answer": 72
+  },
+  {
+    "id": "g3-tables-10",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 2,
+    "prompt": "What is 9 times 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 9,
+      "op": "×",
+      "b": 3
+    },
+    "options": [
+      36,
+      27,
+      18
+    ],
+    "answer": 27
+  },
+  {
+    "id": "g3-tables-11",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 2,
+    "prompt": "What is 7 times 9?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 7,
+      "op": "×",
+      "b": 9
+    },
+    "options": [
+      54,
+      63,
+      56
+    ],
+    "answer": 63
+  },
+  {
+    "id": "g3-tables-12",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 2,
+    "prompt": "What is 6 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 6,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      10,
+      18,
+      12
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g3-tables-13",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 2,
+    "prompt": "What is 7 times 7?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 7,
+      "op": "×",
+      "b": 7
+    },
+    "options": [
+      49,
+      50,
+      42
+    ],
+    "answer": 49
+  },
+  {
+    "id": "g3-tables-14",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 2,
+    "prompt": "What is 7 times 8?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 7,
+      "op": "×",
+      "b": 8
+    },
+    "options": [
+      63,
+      57,
+      56
+    ],
+    "answer": 56
+  },
+  {
+    "id": "g3-tables-15",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 3,
+    "prompt": "What number times 5 makes 45?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 9,
+      "op": "×",
+      "b": 5,
+      "missing": "a"
+    },
+    "options": [
+      9,
+      7,
+      8
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g3-tables-16",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 3,
+    "prompt": "What number times 8 makes 72?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 9,
+      "op": "×",
+      "b": 8,
+      "missing": "a"
+    },
+    "options": [
+      11,
+      10,
+      9
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g3-tables-17",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 3,
+    "prompt": "What number times 2 makes 18?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 9,
+      "op": "×",
+      "b": 2,
+      "missing": "a"
+    },
+    "options": [
+      10,
+      9,
+      8
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g3-tables-18",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 3,
+    "prompt": "What number times 2 makes 16?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 8,
+      "op": "×",
+      "b": 2,
+      "missing": "a"
+    },
+    "options": [
+      7,
+      9,
+      8
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g3-tables-19",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 3,
+    "prompt": "What number times 7 makes 56?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 8,
+      "op": "×",
+      "b": 7,
+      "missing": "a"
+    },
+    "options": [
+      8,
+      6,
+      9
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g3-tables-20",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-tables",
+    "difficulty": 3,
+    "prompt": "What number times 6 makes 36?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 6,
+      "op": "×",
+      "b": 6,
+      "missing": "a"
+    },
+    "options": [
+      4,
+      6,
+      8
+    ],
+    "answer": 6
+  }
+]

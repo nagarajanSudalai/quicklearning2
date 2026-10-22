@@ -33,7 +33,7 @@ export type CountPuzzle = Base & {
 /** "3 + 2 = ?" with optional emoji pictures for each side. */
 export type ArithmeticPuzzle = Base & {
   type: 'arithmetic';
-  payload: { a: number; op: '+' | '-' | '×'; b: number; item?: string };
+  payload: { a: number; op: '+' | '-' | '×' | '÷'; b: number; item?: string; missing?: 'a' | 'b' };
   options: number[];
   answer: number;
 };
@@ -97,7 +97,7 @@ export type OddOneOutPuzzle = Base & {
 /** Tens rods and ones cubes. `ask`: the whole number, or just the tens or ones digit. */
 export type PlaceValuePuzzle = Base & {
   type: 'place-value';
-  payload: { tens: number; ones: number; ask: 'number' | 'tens' | 'ones' };
+  payload: { hundreds?: number; tens: number; ones: number; ask: 'number' | 'hundreds' | 'tens' | 'ones' };
   options: number[];
   answer: number;
 };
@@ -113,7 +113,7 @@ export type NumberPatternPuzzle = Base & {
 /** An analogue clock; options are time labels like "half past 3". */
 export type ClockPuzzle = Base & {
   type: 'clock';
-  payload: { hour: number; minute: 0 | 15 | 30 | 45 };
+  payload: { hour: number; minute: number };
   options: string[];
   answer: string;
 };
@@ -121,7 +121,7 @@ export type ClockPuzzle = Base & {
 /** Rupee coins and notes to add up. */
 export type MoneyPuzzle = Base & {
   type: 'money';
-  payload: { coins: number[]; notes: number[] };
+  payload: { coins: number[]; notes: number[]; price?: number };
   options: number[];
   answer: number;
 };
@@ -140,6 +140,38 @@ export type RiddlePuzzle = Base & {
   payload: { clues: string[]; names: Record<string, string> };
   options: string[];
   answer: string;
+};
+
+/** Compare two numbers with <, > or =. */
+export type CompareNumbersPuzzle = Base & {
+  type: 'compare-numbers';
+  payload: { a: number; b: number };
+  options: string[];
+  answer: string;
+};
+
+/** A shape cut into equal parts, some shaded. `ask: 'name'` → pick the fraction; `'picture'` → pick the picture of `answer`. */
+export type FractionPuzzle = Base & {
+  type: 'fraction';
+  payload: { shape: 'circle' | 'bar'; ask: 'name' | 'picture'; parts: number; shaded: number };
+  options: string[];
+  answer: string;
+};
+
+/** Days of the week and months: what comes `offset` after (or before) `base`, or days in a month. */
+export type CalendarPuzzle = Base & {
+  type: 'calendar';
+  payload: { kind: 'day' | 'month' | 'days-in'; base: string; offset: number };
+  options: string[];
+  answer: string;
+};
+
+/** Read the length of an object on a centimetre ruler. */
+export type MeasurePuzzle = Base & {
+  type: 'measure';
+  payload: { item: string; start: number; length: number };
+  options: number[];
+  answer: number;
 };
 
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
@@ -210,7 +242,11 @@ export type ChoicePuzzle =
   | ClockPuzzle
   | MoneyPuzzle
   | FillBlankPuzzle
-  | RiddlePuzzle;
+  | RiddlePuzzle
+  | CompareNumbersPuzzle
+  | FractionPuzzle
+  | CalendarPuzzle
+  | MeasurePuzzle;
 
 /** Puzzles with their own multi-step play. */
 export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle;

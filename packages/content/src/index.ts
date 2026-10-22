@@ -32,6 +32,14 @@ import g2Order from '../puzzles/g2-thinking/order.json';
 import g2Riddles from '../puzzles/g2-thinking/riddles.json';
 import g2Mazes from '../puzzles/g2-thinking/mazes.json';
 
+import g3Numbers from '../puzzles/g3-maths/numbers.json';
+import g3AddSub from '../puzzles/g3-maths/add-sub.json';
+import g3Tables from '../puzzles/g3-maths/tables.json';
+import g3Sharing from '../puzzles/g3-maths/sharing.json';
+import g3Fractions from '../puzzles/g3-maths/fractions.json';
+import g3Time from '../puzzles/g3-maths/time.json';
+import g3MoneyMeasure from '../puzzles/g3-maths/money-measure.json';
+
 export * from './types';
 export * from './tokens';
 export * from './curriculum';
@@ -43,6 +51,7 @@ export * from './words2';
 export * from './sudoku';
 export * from './thinking2';
 export * from './adaptive';
+export * from './calendar';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -54,6 +63,7 @@ export const PUZZLES = [
   ...g2Plurals, ...g2Opposites, ...g2Grammar, ...g2Spelling, ...g2Sentences,
   ...g2Crossword, ...g2Sudoku,
   ...g2Order, ...g2Riddles, ...g2Mazes,
+  ...g3Numbers, ...g3AddSub, ...g3Tables, ...g3Sharing, ...g3Fractions, ...g3Time, ...g3MoneyMeasure,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

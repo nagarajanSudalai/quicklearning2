@@ -1,0 +1,395 @@
+[
+  {
+    "id": "g3-time-01",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 2,
+      "minute": 15
+    },
+    "options": [
+      "3:10",
+      "quarter past 3",
+      "quarter past 2"
+    ],
+    "answer": "quarter past 2"
+  },
+  {
+    "id": "g3-time-02",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 9,
+      "minute": 20
+    },
+    "options": [
+      "quarter to 5",
+      "9:20",
+      "9:25"
+    ],
+    "answer": "9:20"
+  },
+  {
+    "id": "g3-time-03",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 12,
+      "minute": 10
+    },
+    "options": [
+      "12:05",
+      "1:10",
+      "12:10"
+    ],
+    "answer": "12:10"
+  },
+  {
+    "id": "g3-time-04",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 4,
+      "minute": 15
+    },
+    "options": [
+      "4:20",
+      "quarter past 4",
+      "3:20"
+    ],
+    "answer": "quarter past 4"
+  },
+  {
+    "id": "g3-time-05",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 6,
+      "minute": 35
+    },
+    "options": [
+      "7:35",
+      "6:40",
+      "6:35"
+    ],
+    "answer": "6:35"
+  },
+  {
+    "id": "g3-time-06",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 10,
+      "minute": 5
+    },
+    "options": [
+      "10:05",
+      "11:05",
+      "quarter past 10"
+    ],
+    "answer": "10:05"
+  },
+  {
+    "id": "g3-time-07",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 10,
+      "minute": 10
+    },
+    "options": [
+      "10:10",
+      "quarter past 10",
+      "10:05"
+    ],
+    "answer": "10:10"
+  },
+  {
+    "id": "g3-time-08",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 2,
+    "prompt": "What day comes after Thursday?",
+    "type": "calendar",
+    "payload": {
+      "kind": "day",
+      "base": "Thursday",
+      "offset": 1
+    },
+    "options": [
+      "Tuesday",
+      "Monday",
+      "Friday"
+    ],
+    "answer": "Friday"
+  },
+  {
+    "id": "g3-time-09",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 2,
+    "prompt": "Today is Friday. What day will it be in 3 days?",
+    "type": "calendar",
+    "payload": {
+      "kind": "day",
+      "base": "Friday",
+      "offset": 3
+    },
+    "options": [
+      "Saturday",
+      "Wednesday",
+      "Monday"
+    ],
+    "answer": "Monday"
+  },
+  {
+    "id": "g3-time-10",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 2,
+    "prompt": "What day comes after Monday?",
+    "type": "calendar",
+    "payload": {
+      "kind": "day",
+      "base": "Monday",
+      "offset": 1
+    },
+    "options": [
+      "Sunday",
+      "Thursday",
+      "Tuesday"
+    ],
+    "answer": "Tuesday"
+  },
+  {
+    "id": "g3-time-11",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 2,
+    "prompt": "Today is Friday. What day will it be in 2 days?",
+    "type": "calendar",
+    "payload": {
+      "kind": "day",
+      "base": "Friday",
+      "offset": 2
+    },
+    "options": [
+      "Sunday",
+      "Thursday",
+      "Monday"
+    ],
+    "answer": "Sunday"
+  },
+  {
+    "id": "g3-time-12",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 2,
+    "prompt": "What day comes after Sunday?",
+    "type": "calendar",
+    "payload": {
+      "kind": "day",
+      "base": "Sunday",
+      "offset": 1
+    },
+    "options": [
+      "Wednesday",
+      "Monday",
+      "Saturday"
+    ],
+    "answer": "Monday"
+  },
+  {
+    "id": "g3-time-13",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 2,
+    "prompt": "Today is Tuesday. What day will it be in 2 days?",
+    "type": "calendar",
+    "payload": {
+      "kind": "day",
+      "base": "Tuesday",
+      "offset": 2
+    },
+    "options": [
+      "Friday",
+      "Sunday",
+      "Thursday"
+    ],
+    "answer": "Thursday"
+  },
+  {
+    "id": "g3-time-14",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 2,
+    "prompt": "Today is Thursday. What day will it be in 2 days?",
+    "type": "calendar",
+    "payload": {
+      "kind": "day",
+      "base": "Thursday",
+      "offset": 2
+    },
+    "options": [
+      "Wednesday",
+      "Saturday",
+      "Sunday"
+    ],
+    "answer": "Saturday"
+  },
+  {
+    "id": "g3-time-15",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 3,
+    "prompt": "Which month comes after December?",
+    "type": "calendar",
+    "payload": {
+      "kind": "month",
+      "base": "December",
+      "offset": 1
+    },
+    "options": [
+      "January",
+      "November",
+      "August"
+    ],
+    "answer": "January"
+  },
+  {
+    "id": "g3-time-16",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 3,
+    "prompt": "How many days are there in October?",
+    "type": "calendar",
+    "payload": {
+      "kind": "days-in",
+      "base": "October",
+      "offset": 0
+    },
+    "options": [
+      "28",
+      "30",
+      "31"
+    ],
+    "answer": "31"
+  },
+  {
+    "id": "g3-time-17",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 3,
+    "prompt": "Which month comes after October?",
+    "type": "calendar",
+    "payload": {
+      "kind": "month",
+      "base": "October",
+      "offset": 1
+    },
+    "options": [
+      "August",
+      "November",
+      "September"
+    ],
+    "answer": "November"
+  },
+  {
+    "id": "g3-time-18",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 3,
+    "prompt": "How many days are there in August?",
+    "type": "calendar",
+    "payload": {
+      "kind": "days-in",
+      "base": "August",
+      "offset": 0
+    },
+    "options": [
+      "28",
+      "30",
+      "31"
+    ],
+    "answer": "31"
+  },
+  {
+    "id": "g3-time-19",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 3,
+    "prompt": "Which month comes after April?",
+    "type": "calendar",
+    "payload": {
+      "kind": "month",
+      "base": "April",
+      "offset": 1
+    },
+    "options": [
+      "June",
+      "February",
+      "May"
+    ],
+    "answer": "May"
+  },
+  {
+    "id": "g3-time-20",
+    "grade": 3,
+    "subject": "maths",
+    "topic": "g3-time",
+    "difficulty": 3,
+    "prompt": "How many days are there in May?",
+    "type": "calendar",
+    "payload": {
+      "kind": "days-in",
+      "base": "May",
+      "offset": 0
+    },
+    "options": [
+      "28",
+      "30",
+      "31"
+    ],
+    "answer": "31"
+  }
+]
