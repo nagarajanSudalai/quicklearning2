@@ -42,6 +42,7 @@ export * from './time';
 export * from './words2';
 export * from './sudoku';
 export * from './thinking2';
+export * from './adaptive';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [

@@ -9,6 +9,6 @@
     "validate": "node scripts/validate.ts",
     "typecheck": "tsc --noEmit",
     "voice": "node scripts/generate-voice.ts",
-    "test": "node scripts/test-voice.ts"
+    "test": "node scripts/test.ts"
   }
 }

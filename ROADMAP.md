@@ -24,10 +24,13 @@
 - Compliance: COPPA / GDPR-K, Apple Kids category, Google Designed for Families. No ads, no third-party tracking, privacy policy.
 - **Public launch with Grade 1.**
 
-## Phase 3 — Grade 2
-- Reuse all Grade 1 types at higher levels.
-- New types: `mini-crossword`, `number-pattern`, add/subtract within 100, `word-builder`.
-- Adaptive difficulty v1: move up or down a level based on the last 5 answers.
+## Phase 3 — Grade 2 ✅
+- NCERT/CBSE Class 2 order, all four subjects (340 puzzles):
+  - **Maths:** place value, adding and taking away to 100, skip counting, equal groups (×), time, rupees.
+  - **English:** plurals, opposites, a/an and is/are, spelling and sentence building.
+  - **Puzzles:** 3-word mini crosswords, 4×4 picture sudoku.
+  - **Thinking:** ordering steps, riddles, mazes up to 7×7.
+- **Adaptive difficulty v1:** up a level after 3 first-try answers in a row, down after 2 misses in a row.
 
 ## Phase 4 — Science, Practice & Tests (Grades 1–2)
 - Science: `picture-quiz`, `true-false`, `label-the-picture`.

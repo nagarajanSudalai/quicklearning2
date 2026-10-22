@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Phase 1 — all four Grade 1 subjects are playable: Maths, English, Puzzles and Thinking Skills.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1 and 2 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (640 puzzles) — with adaptive difficulty.**
 
 ## Getting started
 
@@ -77,7 +77,46 @@ Crosswords, sorting, memory and mazes take several taps, so each has its own pla
 
 Tap a crossword clue picture or a sorting item to hear its name. Mazes work with the arrow buttons, by tapping the next square, or with the keyboard arrow keys on the web.
 
-How play works: a session is 10 puzzles, unsolved ones first and easiest first. Each question is read aloud (with a 🔊 button to repeat it). A wrong pick wiggles and the child can try again. A star is earned only for a right answer on the first try. Stars, solved puzzles and the daily streak are saved on the device. Parent settings (progress, sound, change grade, reset) are behind a multiplication-question parent gate.
+## Grade 2 (Phase 3), NCERT/CBSE Class 2
+
+17 topics, 20 puzzles each across 3 levels — 340 puzzles.
+
+| Subject | Topic | Puzzle type | Levels |
+|---|---|---|---|
+| Maths | Tens and ones | `place-value` | blocks to 50 · to 99 · "How many tens/ones in 47?" |
+| Maths | Adding to 100 | `arithmetic` | 2-digit + 1-digit · 2-digit + 2-digit · with carrying |
+| Maths | Taking away to 100 | `arithmetic` | − 1-digit · 2-digit − 2-digit · with borrowing |
+| Maths | Skip counting | `number-pattern` | by 2s/5s/10s, last missing · by 2–10, middle missing · counting back |
+| Maths | Equal groups | `arithmetic` (×) | groups of pictures up to 5 × 3 · up to 5 × 5 · ×2, ×5, ×10 facts |
+| Maths | Time | `clock` | o'clock · half past · quarter past / quarter to |
+| Maths | Money | `money` | ₹1/₹2/₹5 coins to ₹10 · coins and ₹10/₹20 notes to ₹50 · with ₹50 notes to ₹100 |
+| English | One and many | `fill-blank` (plural) | add -s · add -es · mice, feet, teeth, children, sheep |
+| English | Opposites | `fill-blank` (opposite) | big/small… · heavy/light… · open/close, inside/outside… |
+| English | a or an, is or are | `fill-blank` (article, is-are) | a/an · is/are · mixed |
+| English | Spell it | `build` (letters) | 3 letters · 4 letters · 5 letters + a spare |
+| English | Make a sentence | `build` (words) | 3 words · 4–5 words · 5–6 words + a spare |
+| Puzzles | Mini crossword | `crossword` | 2 words, 3 blanks · 3 words, 4 blanks · 3 words, 6 blanks |
+| Puzzles | Picture sudoku | `sudoku` (4×4) | 3 blanks · 6 blanks · 9 blanks |
+| Thinking | What comes first? | `order-steps` | 2–3 steps · 4 steps · 4–5 steps |
+| Thinking | Who am I? | `riddle` | 2 clues, very different pictures · 3 clues, look-alikes · 4 look-alikes |
+| Thinking | Bigger mazes | `maze` | 5×5 · 6×6 · 7×7 |
+
+Content lives in `src/words2.ts` (plurals, opposites, a/an nouns, is/are subjects, sentences), `src/thinking2.ts` (sequences, riddles), `src/time.ts` and `src/sudoku.ts`. The checker recomputes every answer:
+- each clock label matches its hands;
+- coins and notes add up;
+- the place-value answer matches its blocks;
+- skip-counting sequences go up by a constant step;
+- each fill-blank answer follows its rule;
+- build tiles spell the target;
+- crossword clue squares are clear;
+- each sudoku has exactly one solution;
+- ordered steps match their sequence.
+
+## Adaptive difficulty
+
+A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
+
+How play works: Each question is read aloud (with a 🔊 button to repeat it). A wrong pick wiggles and the child can try again. A star is earned only for a right answer on the first try. Stars, solved puzzles and the daily streak are saved on the device. Parent settings (progress, sound, change grade, reset) are behind a parent gate: a 2-digit × 1-digit question.
 
 ## Voice
 
@@ -85,7 +124,7 @@ Every question is read aloud in Indian English.
 
 - **Now:** the app picks the best voice on each device. It prefers Indian English, then high-quality voices (iOS Enhanced, Android network, browser cloud voices), and falls back to British English. Speech is slightly slower and higher-pitched than normal, for children (`apps/mobile/src/lib/voice.ts`).
 - **Recorded clips (optional, sounds much more natural):** `npm run voice -w packages/content` records one clip for every puzzle prompt and fixed phrase with Google Cloud Text-to-Speech (`en-IN-Neural2-A`). It needs `GOOGLE_TTS_API_KEY`. Clips go to `apps/mobile/assets/voice/` and are listed in `src/lib/voice-manifest.ts`. The app plays a clip when one exists and uses the device voice for anything else. Re-run it after adding puzzles; only new lines are recorded. Use `--sample 5` to audition a few clips first, and `--voice` / `--rate` / `--pitch` to change the voice.
-- Spoken fixed lines ("Great job!", result messages) live in `packages/content/src/voice.ts`, so they get clips too. `npm test` checks the voice picker.
+- Spoken fixed lines ("Great job!", result messages) live in `packages/content/src/voice.ts`, so they get clips too. `npm test` checks the voice picker and adaptive difficulty.
 
 ## Adding content
 
@@ -115,3 +154,17 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Odd one out | Crossword | Sorting | Memory | Maze |
 |---|---|---|---|---|
 | ![](docs/screenshots/app-type-g1-odd-one-out.png) | ![](docs/screenshots/app-type-g1-crossword.png) | ![](docs/screenshots/app-type-g1-sorting.png) | ![](docs/screenshots/app-type-g1-memory.png) | ![](docs/screenshots/app-type-g1-mazes.png) |
+
+### Grade 2
+
+| Grades | Tens and ones | Time | Money | Equal groups |
+|---|---|---|---|---|
+| ![](docs/screenshots/g2-grades.png) | ![](docs/screenshots/g2-place-value.png) | ![](docs/screenshots/g2-time.png) | ![](docs/screenshots/g2-money.png) | ![](docs/screenshots/g2-groups.png) |
+
+| One and many | Spell it | Make a sentence | Mini crossword | Sudoku |
+|---|---|---|---|---|
+| ![](docs/screenshots/g2-plurals.png) | ![](docs/screenshots/g2-spelling.png) | ![](docs/screenshots/g2-sentences.png) | ![](docs/screenshots/g2-crossword-19.png) | ![](docs/screenshots/g2-sudoku-start.png) |
+
+| What comes first? | Who am I? | Bigger maze |
+|---|---|---|
+| ![](docs/screenshots/g2-order.png) | ![](docs/screenshots/g2-riddle.png) | ![](docs/screenshots/g2-maze.png) |
