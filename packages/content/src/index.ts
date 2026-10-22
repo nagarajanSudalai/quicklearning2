@@ -40,6 +40,12 @@ import g3Fractions from '../puzzles/g3-maths/fractions.json';
 import g3Time from '../puzzles/g3-maths/time.json';
 import g3MoneyMeasure from '../puzzles/g3-maths/money-measure.json';
 
+import g3EWordClass from '../puzzles/g3-english/word-class.json';
+import g3EPast from '../puzzles/g3-english/past.json';
+import g3ESynonyms from '../puzzles/g3-english/synonyms.json';
+import g3ESpelling from '../puzzles/g3-english/spelling.json';
+import g3EReading from '../puzzles/g3-english/reading.json';
+
 export * from './types';
 export * from './tokens';
 export * from './curriculum';
@@ -52,6 +58,7 @@ export * from './sudoku';
 export * from './thinking2';
 export * from './adaptive';
 export * from './calendar';
+export * from './words3';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -64,6 +71,7 @@ export const PUZZLES = [
   ...g2Crossword, ...g2Sudoku,
   ...g2Order, ...g2Riddles, ...g2Mazes,
   ...g3Numbers, ...g3AddSub, ...g3Tables, ...g3Sharing, ...g3Fractions, ...g3Time, ...g3MoneyMeasure,
+  ...g3EWordClass, ...g3EPast, ...g3ESynonyms, ...g3ESpelling, ...g3EReading,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

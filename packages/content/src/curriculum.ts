@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -70,6 +70,11 @@ export const TOPICS: Topic[] = [
   { id: 'g3-fractions', grade: 3, subject: 'maths', title: 'Fractions', blurb: 'Halves, thirds, quarters', glyph: '½', color: colors.purple },
   { id: 'g3-time', grade: 3, subject: 'maths', title: 'Time and calendar', blurb: 'Clocks, days and months', glyph: '📅', color: colors.teal },
   { id: 'g3-money-measure', grade: 3, subject: 'maths', title: 'Money and length', blurb: 'Change and centimetres', glyph: '₹', color: colors.orange },
+  { id: 'g3-word-class', grade: 3, subject: 'english', title: 'Naming, doing, describing', blurb: 'Nouns, verbs, adjectives', glyph: 'N V A', color: colors.blue },
+  { id: 'g3-past', grade: 3, subject: 'english', title: 'Yesterday (past tense)', blurb: 'play → played, go → went', glyph: '⏪', color: colors.pink },
+  { id: 'g3-synonyms', grade: 3, subject: 'english', title: 'Same meaning, same sound', blurb: 'Synonyms and homophones', glyph: '≈', color: colors.green },
+  { id: 'g3-spelling', grade: 3, subject: 'english', title: 'Spelling bee', blurb: 'Longer words', glyph: '🐝', color: colors.orange },
+  { id: 'g3-reading', grade: 3, subject: 'english', title: 'Read and answer', blurb: 'Short stories', glyph: '📖', color: colors.purple },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

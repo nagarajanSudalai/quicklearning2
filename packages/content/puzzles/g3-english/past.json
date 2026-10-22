@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g3-past-01",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 1,
+    "prompt": "Yesterday I ___ (cook).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (cook).",
+      "rule": "past",
+      "base": "cook"
+    },
+    "options": [
+      "cook",
+      "cookd",
+      "cooked"
+    ],
+    "answer": "cooked"
+  },
+  {
+    "id": "g3-past-02",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 1,
+    "prompt": "Yesterday I ___ (walk).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (walk).",
+      "rule": "past",
+      "base": "walk"
+    },
+    "options": [
+      "walkd",
+      "walk",
+      "walked"
+    ],
+    "answer": "walked"
+  },
+  {
+    "id": "g3-past-03",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 1,
+    "prompt": "Yesterday I ___ (help).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (help).",
+      "rule": "past",
+      "base": "help"
+    },
+    "options": [
+      "help",
+      "helpd",
+      "helped"
+    ],
+    "answer": "helped"
+  },
+  {
+    "id": "g3-past-04",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 1,
+    "prompt": "Yesterday I ___ (paint).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (paint).",
+      "rule": "past",
+      "base": "paint"
+    },
+    "options": [
+      "painted",
+      "paint",
+      "paintd"
+    ],
+    "answer": "painted"
+  },
+  {
+    "id": "g3-past-05",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 1,
+    "prompt": "Yesterday I ___ (climb).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (climb).",
+      "rule": "past",
+      "base": "climb"
+    },
+    "options": [
+      "climbed",
+      "climbd",
+      "climb"
+    ],
+    "answer": "climbed"
+  },
+  {
+    "id": "g3-past-06",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 1,
+    "prompt": "Yesterday I ___ (play).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (play).",
+      "rule": "past",
+      "base": "play"
+    },
+    "options": [
+      "playd",
+      "played",
+      "play"
+    ],
+    "answer": "played"
+  },
+  {
+    "id": "g3-past-07",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 1,
+    "prompt": "Yesterday I ___ (jump).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (jump).",
+      "rule": "past",
+      "base": "jump"
+    },
+    "options": [
+      "jumpd",
+      "jump",
+      "jumped"
+    ],
+    "answer": "jumped"
+  },
+  {
+    "id": "g3-past-08",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 2,
+    "prompt": "Yesterday I ___ (try).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (try).",
+      "rule": "past",
+      "base": "try"
+    },
+    "options": [
+      "tryed",
+      "tryd",
+      "tried"
+    ],
+    "answer": "tried"
+  },
+  {
+    "id": "g3-past-09",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 2,
+    "prompt": "Yesterday I ___ (cry).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (cry).",
+      "rule": "past",
+      "base": "cry"
+    },
+    "options": [
+      "cryd",
+      "cried",
+      "cryed"
+    ],
+    "answer": "cried"
+  },
+  {
+    "id": "g3-past-10",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 2,
+    "prompt": "Yesterday I ___ (hop).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (hop).",
+      "rule": "past",
+      "base": "hop"
+    },
+    "options": [
+      "hoped",
+      "hopped",
+      "hopd"
+    ],
+    "answer": "hopped"
+  },
+  {
+    "id": "g3-past-11",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 2,
+    "prompt": "Yesterday I ___ (dance).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (dance).",
+      "rule": "past",
+      "base": "dance"
+    },
+    "options": [
+      "danceded",
+      "danced",
+      "dance"
+    ],
+    "answer": "danced"
+  },
+  {
+    "id": "g3-past-12",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 2,
+    "prompt": "Yesterday I ___ (hug).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (hug).",
+      "rule": "past",
+      "base": "hug"
+    },
+    "options": [
+      "hugd",
+      "hugged",
+      "huged"
+    ],
+    "answer": "hugged"
+  },
+  {
+    "id": "g3-past-13",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 2,
+    "prompt": "Yesterday I ___ (smile).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (smile).",
+      "rule": "past",
+      "base": "smile"
+    },
+    "options": [
+      "smileded",
+      "smiled",
+      "smile"
+    ],
+    "answer": "smiled"
+  },
+  {
+    "id": "g3-past-14",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 2,
+    "prompt": "Yesterday I ___ (stop).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (stop).",
+      "rule": "past",
+      "base": "stop"
+    },
+    "options": [
+      "stoped",
+      "stopped",
+      "stopd"
+    ],
+    "answer": "stopped"
+  },
+  {
+    "id": "g3-past-15",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 3,
+    "prompt": "Yesterday I ___ (sit).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (sit).",
+      "rule": "past",
+      "base": "sit"
+    },
+    "options": [
+      "sitd",
+      "sited",
+      "sat"
+    ],
+    "answer": "sat"
+  },
+  {
+    "id": "g3-past-16",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 3,
+    "prompt": "Yesterday I ___ (sing).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (sing).",
+      "rule": "past",
+      "base": "sing"
+    },
+    "options": [
+      "singd",
+      "sang",
+      "singed"
+    ],
+    "answer": "sang"
+  },
+  {
+    "id": "g3-past-17",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 3,
+    "prompt": "Yesterday I ___ (swim).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (swim).",
+      "rule": "past",
+      "base": "swim"
+    },
+    "options": [
+      "swimed",
+      "swam",
+      "swimd"
+    ],
+    "answer": "swam"
+  },
+  {
+    "id": "g3-past-18",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 3,
+    "prompt": "Yesterday I ___ (take).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (take).",
+      "rule": "past",
+      "base": "take"
+    },
+    "options": [
+      "took",
+      "taked",
+      "take"
+    ],
+    "answer": "took"
+  },
+  {
+    "id": "g3-past-19",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 3,
+    "prompt": "Yesterday I ___ (drink).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (drink).",
+      "rule": "past",
+      "base": "drink"
+    },
+    "options": [
+      "drinkd",
+      "drinked",
+      "drank"
+    ],
+    "answer": "drank"
+  },
+  {
+    "id": "g3-past-20",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-past",
+    "difficulty": 3,
+    "prompt": "Yesterday I ___ (run).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Yesterday I ___ (run).",
+      "rule": "past",
+      "base": "run"
+    },
+    "options": [
+      "runed",
+      "ran",
+      "rund"
+    ],
+    "answer": "ran"
+  }
+]

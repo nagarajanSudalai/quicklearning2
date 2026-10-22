@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Animated, StyleSheet, Text, View } from 'react-native';
-import { nameOf, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@quickstep/content';
+import { nameOf, plainSentence, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@quickstep/content';
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
@@ -40,6 +40,9 @@ function PopShape({ kind, index, round, size }: { kind: Parameters<typeof Shape>
     </Animated.View>
   );
 }
+
+/** Shrink long words to fit an option box (adjustsFontSizeToFit doesn't work on the web). */
+const fit = (w: string, size: number, maxChars: number) => ({ fontSize: w.length > maxChars ? Math.round((size * maxChars) / w.length) : size });
 
 const Number = ({ n }: { n: PuzzleOption }) => <Text style={styles.number}>{String(n)}</Text>;
 
@@ -134,7 +137,7 @@ export const RENDERERS: Renderers = {
         </Picture>
       );
     },
-    option: (w) => <Text style={w.length > 1 ? styles.word : styles.letter} adjustsFontSizeToFit numberOfLines={1}>{w}</Text>,
+    option: (w) => <Text style={w.length > 1 ? [styles.word, fit(w, 26, 5)] : styles.letter} numberOfLines={1}>{w}</Text>,
     columns: () => 3,
   },
   rhyme: {
@@ -142,7 +145,7 @@ export const RENDERERS: Renderers = {
     option: (w, p) => (
       <View style={styles.wordCard}>
         <Text style={styles.optionPicture}>{p.payload.pictures[w]}</Text>
-        <Text style={styles.wordSmall} adjustsFontSizeToFit numberOfLines={1}>{w}</Text>
+        <Text style={[styles.wordSmall, fit(w, 20, 6)]} numberOfLines={1}>{w}</Text>
       </View>
     ),
     columns: (p) => (p.options.length === 4 ? 2 : 3),
@@ -210,7 +213,7 @@ export const RENDERERS: Renderers = {
         </View>
       );
     },
-    option: (w) => <Text style={styles.word} adjustsFontSizeToFit numberOfLines={1}>{w}</Text>,
+    option: (w) => <Text style={[styles.word, fit(w, 26, 5)]} numberOfLines={1}>{w}</Text>,
     columns: (p) => p.options.length,
   },
   riddle: {
@@ -276,6 +279,27 @@ export const RENDERERS: Renderers = {
     columns: () => 3,
     label: (n) => `${n} centimetres`,
   },
+  'word-class': {
+    Stimulus: ({ puzzle }) => (
+      <View style={styles.panel}>
+        <Text style={styles.sentenceText}>{plainSentence(puzzle.payload.tagged)}</Text>
+      </View>
+    ),
+    option: (w) => <Text style={[styles.wordSmall, fit(w, 20, 6)]} numberOfLines={1}>{w}</Text>,
+    columns: (p) => Math.min(3, p.options.length),
+    optionHeight: 60,
+  },
+  passage: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.clues]}>
+        <Text style={styles.passage}>{puzzle.payload.text}</Text>
+        <Text style={styles.question}>{puzzle.payload.question}</Text>
+      </View>
+    ),
+    option: (a) => <Text style={styles.timeOption} adjustsFontSizeToFit numberOfLines={2}>{a}</Text>,
+    columns: () => 1,
+    optionHeight: 58,
+  },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,
     columns: (p) => (p.options.length === 5 ? 3 : 2),
@@ -323,6 +347,8 @@ const styles = StyleSheet.create({
   wordBlank: { width: 70, height: 40 },
   clues: { flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'flex-start', gap: 6 },
   clue: { fontFamily: font.bodyBold, fontSize: 18, color: colors.ink, lineHeight: 24 },
+  passage: { fontFamily: font.body, fontSize: 18, lineHeight: 27, color: colors.ink },
+  question: { fontFamily: font.bodyHeavy, fontSize: 18, color: colors.brandDeep },
   oddItem: { fontSize: 56, lineHeight: 68 },
   wordSmall: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
 });

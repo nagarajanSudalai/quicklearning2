@@ -1,0 +1,646 @@
+[
+  {
+    "id": "g3-spelling-01",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 1,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "f",
+        "l",
+        "o",
+        "w",
+        "e",
+        "r"
+      ],
+      "tiles": [
+        "f",
+        "w",
+        "r",
+        "o",
+        "e",
+        "l"
+      ],
+      "picture": "🌸",
+      "say": "flower",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-02",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 1,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "p",
+        "e",
+        "n",
+        "c",
+        "i",
+        "l"
+      ],
+      "tiles": [
+        "e",
+        "p",
+        "c",
+        "l",
+        "i",
+        "n"
+      ],
+      "picture": "✏️",
+      "say": "pencil",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-03",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 1,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "t",
+        "u",
+        "r",
+        "t",
+        "l",
+        "e"
+      ],
+      "tiles": [
+        "r",
+        "l",
+        "t",
+        "t",
+        "e",
+        "u"
+      ],
+      "picture": "🐢",
+      "say": "turtle",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-04",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 1,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "b",
+        "a",
+        "n",
+        "a",
+        "n",
+        "a"
+      ],
+      "tiles": [
+        "n",
+        "a",
+        "a",
+        "b",
+        "a",
+        "n"
+      ],
+      "picture": "🍌",
+      "say": "banana",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-05",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 1,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "r",
+        "a",
+        "b",
+        "b",
+        "i",
+        "t"
+      ],
+      "tiles": [
+        "i",
+        "b",
+        "t",
+        "a",
+        "b",
+        "r"
+      ],
+      "picture": "🐰",
+      "say": "rabbit",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-06",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 1,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "m",
+        "o",
+        "n",
+        "k",
+        "e",
+        "y"
+      ],
+      "tiles": [
+        "m",
+        "o",
+        "e",
+        "n",
+        "k",
+        "y"
+      ],
+      "picture": "🐒",
+      "say": "monkey",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-07",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 1,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "c",
+        "a",
+        "r",
+        "r",
+        "o",
+        "t"
+      ],
+      "tiles": [
+        "r",
+        "t",
+        "a",
+        "c",
+        "o",
+        "r"
+      ],
+      "picture": "🥕",
+      "say": "carrot",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-08",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 2,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "c",
+        "h",
+        "i",
+        "c",
+        "k",
+        "e",
+        "n"
+      ],
+      "tiles": [
+        "c",
+        "i",
+        "e",
+        "h",
+        "c",
+        "n",
+        "k"
+      ],
+      "picture": "🐔",
+      "say": "chicken",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-09",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 2,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "p",
+        "u",
+        "m",
+        "p",
+        "k",
+        "i",
+        "n"
+      ],
+      "tiles": [
+        "u",
+        "i",
+        "n",
+        "p",
+        "p",
+        "k",
+        "m"
+      ],
+      "picture": "🎃",
+      "say": "pumpkin",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-10",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 2,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "p",
+        "e",
+        "a",
+        "c",
+        "o",
+        "c",
+        "k"
+      ],
+      "tiles": [
+        "p",
+        "c",
+        "c",
+        "a",
+        "e",
+        "o",
+        "k"
+      ],
+      "picture": "🦚",
+      "say": "peacock",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-11",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 2,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "d",
+        "o",
+        "l",
+        "p",
+        "h",
+        "i",
+        "n"
+      ],
+      "tiles": [
+        "n",
+        "o",
+        "p",
+        "l",
+        "i",
+        "d",
+        "h"
+      ],
+      "picture": "🐬",
+      "say": "dolphin",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-12",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 2,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "o",
+        "c",
+        "t",
+        "o",
+        "p",
+        "u",
+        "s"
+      ],
+      "tiles": [
+        "o",
+        "s",
+        "u",
+        "c",
+        "p",
+        "t",
+        "o"
+      ],
+      "picture": "🐙",
+      "say": "octopus",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-13",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 2,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "r",
+        "a",
+        "i",
+        "n",
+        "b",
+        "o",
+        "w"
+      ],
+      "tiles": [
+        "o",
+        "i",
+        "b",
+        "r",
+        "w",
+        "n",
+        "a"
+      ],
+      "picture": "🌈",
+      "say": "rainbow",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-14",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 2,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "g",
+        "i",
+        "r",
+        "a",
+        "f",
+        "f",
+        "e"
+      ],
+      "tiles": [
+        "f",
+        "r",
+        "e",
+        "a",
+        "f",
+        "g",
+        "i"
+      ],
+      "picture": "🦒",
+      "say": "giraffe",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-15",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 3,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "e",
+        "l",
+        "e",
+        "p",
+        "h",
+        "a",
+        "n",
+        "t"
+      ],
+      "tiles": [
+        "s",
+        "e",
+        "l",
+        "n",
+        "h",
+        "a",
+        "e",
+        "t",
+        "p"
+      ],
+      "picture": "🐘",
+      "say": "elephant",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-16",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 3,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "u",
+        "m",
+        "b",
+        "r",
+        "e",
+        "l",
+        "l",
+        "a"
+      ],
+      "tiles": [
+        "c",
+        "a",
+        "l",
+        "u",
+        "e",
+        "b",
+        "r",
+        "l",
+        "m"
+      ],
+      "picture": "☂️",
+      "say": "umbrella",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-17",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 3,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "c",
+        "o",
+        "m",
+        "p",
+        "u",
+        "t",
+        "e",
+        "r"
+      ],
+      "tiles": [
+        "r",
+        "e",
+        "h",
+        "c",
+        "p",
+        "t",
+        "u",
+        "m",
+        "o"
+      ],
+      "picture": "💻",
+      "say": "computer",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-18",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 3,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "b",
+        "r",
+        "o",
+        "c",
+        "c",
+        "o",
+        "l",
+        "i"
+      ],
+      "tiles": [
+        "o",
+        "l",
+        "b",
+        "c",
+        "c",
+        "o",
+        "r",
+        "i",
+        "w"
+      ],
+      "picture": "🥦",
+      "say": "broccoli",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-19",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 3,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "d",
+        "i",
+        "n",
+        "o",
+        "s",
+        "a",
+        "u",
+        "r"
+      ],
+      "tiles": [
+        "s",
+        "u",
+        "o",
+        "d",
+        "r",
+        "a",
+        "n",
+        "i",
+        "m"
+      ],
+      "picture": "🦕",
+      "say": "dinosaur",
+      "joiner": ""
+    }
+  },
+  {
+    "id": "g3-spelling-20",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-spelling",
+    "difficulty": 3,
+    "prompt": "Listen and spell the word.",
+    "type": "build",
+    "payload": {
+      "answer": [
+        "s",
+        "c",
+        "i",
+        "s",
+        "s",
+        "o",
+        "r",
+        "s"
+      ],
+      "tiles": [
+        "c",
+        "s",
+        "o",
+        "i",
+        "r",
+        "s",
+        "s",
+        "s",
+        "b"
+      ],
+      "picture": "✂️",
+      "say": "scissors",
+      "joiner": ""
+    }
+  }
+]

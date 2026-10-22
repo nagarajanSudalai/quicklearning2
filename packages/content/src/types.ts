@@ -129,7 +129,7 @@ export type MoneyPuzzle = Base & {
 /** A sentence with a blank (___) to fill; `rule` and `base` let the checker work out the answer. */
 export type FillBlankPuzzle = Base & {
   type: 'fill-blank';
-  payload: { sentence: string; picture?: string; rule: 'plural' | 'opposite' | 'article' | 'is-are'; base: string };
+  payload: { sentence: string; picture?: string; rule: 'plural' | 'opposite' | 'article' | 'is-are' | 'past' | 'synonym' | 'homophone'; base: string };
   options: string[];
   answer: string;
 };
@@ -172,6 +172,22 @@ export type MeasurePuzzle = Base & {
   payload: { item: string; start: number; length: number };
   options: number[];
   answer: number;
+};
+
+/** Tap the naming (noun), doing (verb) or describing (adjective) word in a sentence. Options are its words. */
+export type WordClassPuzzle = Base & {
+  type: 'word-class';
+  payload: { tagged: string; ask: 'noun' | 'verb' | 'adjective' };
+  options: string[];
+  answer: string;
+};
+
+/** A short passage and a question about it. */
+export type PassagePuzzle = Base & {
+  type: 'passage';
+  payload: { text: string; question: string };
+  options: string[];
+  answer: string;
 };
 
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
@@ -246,7 +262,9 @@ export type ChoicePuzzle =
   | CompareNumbersPuzzle
   | FractionPuzzle
   | CalendarPuzzle
-  | MeasurePuzzle;
+  | MeasurePuzzle
+  | WordClassPuzzle
+  | PassagePuzzle;
 
 /** Puzzles with their own multi-step play. */
 export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle;

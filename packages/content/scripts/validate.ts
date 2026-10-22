@@ -9,6 +9,7 @@ import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
 import { calendarAnswer } from '../src/calendar.ts';
+import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
@@ -119,6 +120,16 @@ function check(p: any): string | null {
       else if (q.rule === 'opposite') want = OPPOSITES.find(([w]) => w === q.base)?.[1];
       else if (q.rule === 'article') want = article(q.base);
       else if (q.rule === 'is-are') { const s = IS_ARE.find((x) => x.subject === q.base); want = s ? (s.plural ? 'are' : 'is') : undefined; }
+      else if (q.rule === 'past') want = PAST[q.base]?.past;
+      else if (q.rule === 'synonym') {
+        want = SYNONYMS.find(([w]) => w === q.base)?.[1];
+        const clash = p.options.find((o: string) => o !== p.answer && SYNONYMS.some(([a, b]) => (a === q.base && b === o) || (b === q.base && a === o)));
+        if (clash) return `${clash} also means ${q.base}`;
+      } else if (q.rule === 'homophone') {
+        const h = HOMOPHONES.find((x) => x.sentence === q.sentence);
+        want = h?.answer;
+        if (h && p.options.some((o: string) => !h.set.includes(o))) return 'options must be words that sound the same';
+      }
       if (!want) return `no ${q.rule} rule for "${q.base}"`;
       return want === p.answer ? null : `answer should be "${want}"`;
     }
@@ -149,6 +160,19 @@ function check(p: any): string | null {
     case 'measure':
       if (q.length < 1 || q.start < 0 || q.start + q.length > 15) return 'object must fit on a 15 cm ruler';
       return q.length === p.answer ? null : `the object is ${q.length} cm long`;
+    case 'word-class': {
+      const words = parseTagged(q.tagged);
+      const hits = words.filter((w) => w.tag === q.ask);
+      if (hits.length !== 1) return `sentence has ${hits.length} ${q.ask}s`;
+      if (p.options.some((o: string) => !words.some((w) => w.word === o))) return 'options must be words of the sentence';
+      return hits[0].word === p.answer ? null : `the ${q.ask} is "${hits[0].word}"`;
+    }
+    case 'passage': {
+      const b = PASSAGES.find((x) => x.text === q.text && x.question === q.question);
+      if (!b) return 'passage not in the bank';
+      if (p.options.some((o: string) => o !== b.answer && !b.wrong.includes(o))) return 'unknown option';
+      return b.answer === p.answer ? null : `answer is "${b.answer}"`;
+    }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);
       if (!group) return `unknown group ${q.group}`;

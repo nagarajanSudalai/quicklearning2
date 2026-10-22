@@ -1,0 +1,412 @@
+[
+  {
+    "id": "g3-word-class-01",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 1,
+    "prompt": "Tap the naming word (noun) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The bright/adjective sun/noun shines/verb.",
+      "ask": "noun"
+    },
+    "options": [
+      "The",
+      "bright",
+      "sun",
+      "shines"
+    ],
+    "answer": "sun"
+  },
+  {
+    "id": "g3-word-class-02",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 1,
+    "prompt": "Tap the naming word (noun) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "We eat/verb sweet/adjective mangoes/noun.",
+      "ask": "noun"
+    },
+    "options": [
+      "We",
+      "eat",
+      "sweet",
+      "mangoes"
+    ],
+    "answer": "mangoes"
+  },
+  {
+    "id": "g3-word-class-03",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 1,
+    "prompt": "Tap the naming word (noun) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The cold/adjective wind/noun blows/verb.",
+      "ask": "noun"
+    },
+    "options": [
+      "The",
+      "cold",
+      "wind",
+      "blows"
+    ],
+    "answer": "wind"
+  },
+  {
+    "id": "g3-word-class-04",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 1,
+    "prompt": "Tap the naming word (noun) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The brave/adjective soldier/noun marches/verb.",
+      "ask": "noun"
+    },
+    "options": [
+      "The",
+      "brave",
+      "soldier",
+      "marches"
+    ],
+    "answer": "soldier"
+  },
+  {
+    "id": "g3-word-class-05",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 1,
+    "prompt": "Tap the naming word (noun) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The old/adjective man/noun walks/verb slowly.",
+      "ask": "noun"
+    },
+    "options": [
+      "The",
+      "old",
+      "man",
+      "walks",
+      "slowly"
+    ],
+    "answer": "man"
+  },
+  {
+    "id": "g3-word-class-06",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 1,
+    "prompt": "Tap the naming word (noun) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The tall/adjective boy/noun runs/verb fast.",
+      "ask": "noun"
+    },
+    "options": [
+      "The",
+      "tall",
+      "boy",
+      "runs",
+      "fast"
+    ],
+    "answer": "boy"
+  },
+  {
+    "id": "g3-word-class-07",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 1,
+    "prompt": "Tap the naming word (noun) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The dog/noun barks/verb loudly.",
+      "ask": "noun"
+    },
+    "options": [
+      "The",
+      "dog",
+      "barks",
+      "loudly"
+    ],
+    "answer": "dog"
+  },
+  {
+    "id": "g3-word-class-08",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 2,
+    "prompt": "Tap the doing word (verb) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The old/adjective man/noun walks/verb slowly.",
+      "ask": "verb"
+    },
+    "options": [
+      "The",
+      "old",
+      "man",
+      "walks",
+      "slowly"
+    ],
+    "answer": "walks"
+  },
+  {
+    "id": "g3-word-class-09",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 2,
+    "prompt": "Tap the doing word (verb) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Meena/noun sings/verb sweetly.",
+      "ask": "verb"
+    },
+    "options": [
+      "Meena",
+      "sings",
+      "sweetly"
+    ],
+    "answer": "sings"
+  },
+  {
+    "id": "g3-word-class-10",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 2,
+    "prompt": "Tap the doing word (verb) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The dog/noun barks/verb loudly.",
+      "ask": "verb"
+    },
+    "options": [
+      "The",
+      "dog",
+      "barks",
+      "loudly"
+    ],
+    "answer": "barks"
+  },
+  {
+    "id": "g3-word-class-11",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 2,
+    "prompt": "Tap the doing word (verb) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Grandma/noun tells/verb long/adjective stories/noun.",
+      "ask": "verb"
+    },
+    "options": [
+      "Grandma",
+      "tells",
+      "long",
+      "stories"
+    ],
+    "answer": "tells"
+  },
+  {
+    "id": "g3-word-class-12",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 2,
+    "prompt": "Tap the doing word (verb) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Fish/noun swim/verb in the blue/adjective sea/noun.",
+      "ask": "verb"
+    },
+    "options": [
+      "Fish",
+      "swim",
+      "in",
+      "the",
+      "blue",
+      "sea"
+    ],
+    "answer": "swim"
+  },
+  {
+    "id": "g3-word-class-13",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 2,
+    "prompt": "Tap the doing word (verb) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The red/adjective kite/noun flies/verb high.",
+      "ask": "verb"
+    },
+    "options": [
+      "The",
+      "red",
+      "kite",
+      "flies",
+      "high"
+    ],
+    "answer": "flies"
+  },
+  {
+    "id": "g3-word-class-14",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 2,
+    "prompt": "Tap the doing word (verb) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Ravi/noun kicks/verb the ball/noun.",
+      "ask": "verb"
+    },
+    "options": [
+      "Ravi",
+      "kicks",
+      "the",
+      "ball"
+    ],
+    "answer": "kicks"
+  },
+  {
+    "id": "g3-word-class-15",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 3,
+    "prompt": "Tap the describing word (adjective) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Children/noun play/verb in the green/adjective park/noun.",
+      "ask": "adjective"
+    },
+    "options": [
+      "Children",
+      "play",
+      "in",
+      "the",
+      "green",
+      "park"
+    ],
+    "answer": "green"
+  },
+  {
+    "id": "g3-word-class-16",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 3,
+    "prompt": "Tap the describing word (adjective) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "We eat/verb sweet/adjective mangoes/noun.",
+      "ask": "adjective"
+    },
+    "options": [
+      "We",
+      "eat",
+      "sweet",
+      "mangoes"
+    ],
+    "answer": "sweet"
+  },
+  {
+    "id": "g3-word-class-17",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 3,
+    "prompt": "Tap the describing word (adjective) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The old/adjective man/noun walks/verb slowly.",
+      "ask": "adjective"
+    },
+    "options": [
+      "The",
+      "old",
+      "man",
+      "walks",
+      "slowly"
+    ],
+    "answer": "old"
+  },
+  {
+    "id": "g3-word-class-18",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 3,
+    "prompt": "Tap the describing word (adjective) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The bright/adjective sun/noun shines/verb.",
+      "ask": "adjective"
+    },
+    "options": [
+      "The",
+      "bright",
+      "sun",
+      "shines"
+    ],
+    "answer": "bright"
+  },
+  {
+    "id": "g3-word-class-19",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 3,
+    "prompt": "Tap the describing word (adjective) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Fish/noun swim/verb in the blue/adjective sea/noun.",
+      "ask": "adjective"
+    },
+    "options": [
+      "Fish",
+      "swim",
+      "in",
+      "the",
+      "blue",
+      "sea"
+    ],
+    "answer": "blue"
+  },
+  {
+    "id": "g3-word-class-20",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-word-class",
+    "difficulty": 3,
+    "prompt": "Tap the describing word (adjective) in this sentence.",
+    "type": "word-class",
+    "payload": {
+      "tagged": "A small/adjective cat/noun sleeps/verb.",
+      "ask": "adjective"
+    },
+    "options": [
+      "A",
+      "small",
+      "cat",
+      "sleeps"
+    ],
+    "answer": "small"
+  }
+]

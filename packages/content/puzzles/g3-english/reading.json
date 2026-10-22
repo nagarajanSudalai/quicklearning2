@@ -1,0 +1,382 @@
+[
+  {
+    "id": "g3-reading-01",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 1,
+    "prompt": "Meena has a little puppy. Its name is Moti. Moti likes to play with a red ball. Who is Moti?",
+    "type": "passage",
+    "payload": {
+      "text": "Meena has a little puppy. Its name is Moti. Moti likes to play with a red ball.",
+      "question": "Who is Moti?"
+    },
+    "options": [
+      "a girl",
+      "a cat",
+      "a puppy"
+    ],
+    "answer": "a puppy"
+  },
+  {
+    "id": "g3-reading-02",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 1,
+    "prompt": "Ravi went to the market with his father. They bought apples and bananas. Who went to the market with Ravi?",
+    "type": "passage",
+    "payload": {
+      "text": "Ravi went to the market with his father. They bought apples and bananas.",
+      "question": "Who went to the market with Ravi?"
+    },
+    "options": [
+      "his mother",
+      "his friend",
+      "his father"
+    ],
+    "answer": "his father"
+  },
+  {
+    "id": "g3-reading-03",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 1,
+    "prompt": "The farmer gets up early. He gives water to his cows. Then he works in the field. Who gets up early?",
+    "type": "passage",
+    "payload": {
+      "text": "The farmer gets up early. He gives water to his cows. Then he works in the field.",
+      "question": "Who gets up early?"
+    },
+    "options": [
+      "the farmer",
+      "the baby",
+      "the cow"
+    ],
+    "answer": "the farmer"
+  },
+  {
+    "id": "g3-reading-04",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 1,
+    "prompt": "A little mouse lived in a hole. One day a lion caught it. The mouse said, \"Please let me go.\" Who caught the mouse?",
+    "type": "passage",
+    "payload": {
+      "text": "A little mouse lived in a hole. One day a lion caught it. The mouse said, \"Please let me go.\"",
+      "question": "Who caught the mouse?"
+    },
+    "options": [
+      "a lion",
+      "a snake",
+      "an owl"
+    ],
+    "answer": "a lion"
+  },
+  {
+    "id": "g3-reading-05",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 1,
+    "prompt": "Asha and her grandmother made laddoos for Diwali. Everyone said they were tasty. Who made laddoos with Asha?",
+    "type": "passage",
+    "payload": {
+      "text": "Asha and her grandmother made laddoos for Diwali. Everyone said they were tasty.",
+      "question": "Who made laddoos with Asha?"
+    },
+    "options": [
+      "her grandmother",
+      "her teacher",
+      "her friend"
+    ],
+    "answer": "her grandmother"
+  },
+  {
+    "id": "g3-reading-06",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 1,
+    "prompt": "Kabir has a new bicycle. It is blue. He rides it to the park every evening. Who has a new bicycle?",
+    "type": "passage",
+    "payload": {
+      "text": "Kabir has a new bicycle. It is blue. He rides it to the park every evening.",
+      "question": "Who has a new bicycle?"
+    },
+    "options": [
+      "Kabir",
+      "Ravi",
+      "Meena"
+    ],
+    "answer": "Kabir"
+  },
+  {
+    "id": "g3-reading-07",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 1,
+    "prompt": "A crow was thirsty. It found a pot with a little water. It dropped stones into the pot. Who was thirsty?",
+    "type": "passage",
+    "payload": {
+      "text": "A crow was thirsty. It found a pot with a little water. It dropped stones into the pot.",
+      "question": "Who was thirsty?"
+    },
+    "options": [
+      "a crow",
+      "a dog",
+      "a child"
+    ],
+    "answer": "a crow"
+  },
+  {
+    "id": "g3-reading-08",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 2,
+    "prompt": "Grandpa planted a mango seed. He watered it every day. After many years, it became a big tree. What did Grandpa plant?",
+    "type": "passage",
+    "payload": {
+      "text": "Grandpa planted a mango seed. He watered it every day. After many years, it became a big tree.",
+      "question": "What did Grandpa plant?"
+    },
+    "options": [
+      "a rose",
+      "a mango seed",
+      "a banana"
+    ],
+    "answer": "a mango seed"
+  },
+  {
+    "id": "g3-reading-09",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 2,
+    "prompt": "Every morning, Sam drinks a glass of milk. Then he brushes his teeth and gets ready for school. What does Sam drink every morning?",
+    "type": "passage",
+    "payload": {
+      "text": "Every morning, Sam drinks a glass of milk. Then he brushes his teeth and gets ready for school.",
+      "question": "What does Sam drink every morning?"
+    },
+    "options": [
+      "juice",
+      "tea",
+      "milk"
+    ],
+    "answer": "milk"
+  },
+  {
+    "id": "g3-reading-10",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 2,
+    "prompt": "The baker makes bread in a big oven. People come early to buy it while it is still warm. What does the baker make?",
+    "type": "passage",
+    "payload": {
+      "text": "The baker makes bread in a big oven. People come early to buy it while it is still warm.",
+      "question": "What does the baker make?"
+    },
+    "options": [
+      "soup",
+      "cake",
+      "bread"
+    ],
+    "answer": "bread"
+  },
+  {
+    "id": "g3-reading-11",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 2,
+    "prompt": "The ant worked hard all summer. It stored food in its home. In winter, it had plenty to eat. What did the ant store?",
+    "type": "passage",
+    "payload": {
+      "text": "The ant worked hard all summer. It stored food in its home. In winter, it had plenty to eat.",
+      "question": "What did the ant store?"
+    },
+    "options": [
+      "stones",
+      "food",
+      "water"
+    ],
+    "answer": "food"
+  },
+  {
+    "id": "g3-reading-12",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 2,
+    "prompt": "It was raining. Priya took her yellow umbrella and walked to school. She did not get wet. What did Priya take to school?",
+    "type": "passage",
+    "payload": {
+      "text": "It was raining. Priya took her yellow umbrella and walked to school. She did not get wet.",
+      "question": "What did Priya take to school?"
+    },
+    "options": [
+      "an umbrella",
+      "a coat",
+      "a kite"
+    ],
+    "answer": "an umbrella"
+  },
+  {
+    "id": "g3-reading-13",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 2,
+    "prompt": "On Sunday, Arjun and his sister flew kites on the roof. Arjun’s kite was green. What colour was Arjun’s kite?",
+    "type": "passage",
+    "payload": {
+      "text": "On Sunday, Arjun and his sister flew kites on the roof. Arjun’s kite was green.",
+      "question": "What colour was Arjun’s kite?"
+    },
+    "options": [
+      "red",
+      "blue",
+      "green"
+    ],
+    "answer": "green"
+  },
+  {
+    "id": "g3-reading-14",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 2,
+    "prompt": "Riya went to the zoo. She saw a tiger, a peacock and a big elephant. She liked the elephant best. Which animal did Riya like best?",
+    "type": "passage",
+    "payload": {
+      "text": "Riya went to the zoo. She saw a tiger, a peacock and a big elephant. She liked the elephant best.",
+      "question": "Which animal did Riya like best?"
+    },
+    "options": [
+      "the elephant",
+      "the tiger",
+      "the monkey"
+    ],
+    "answer": "the elephant"
+  },
+  {
+    "id": "g3-reading-15",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 3,
+    "prompt": "The birds flew south when winter came. They went to find warm places and food. Why did the birds fly south?",
+    "type": "passage",
+    "payload": {
+      "text": "The birds flew south when winter came. They went to find warm places and food.",
+      "question": "Why did the birds fly south?"
+    },
+    "options": [
+      "to see the sea",
+      "to sing songs",
+      "to find warm places"
+    ],
+    "answer": "to find warm places"
+  },
+  {
+    "id": "g3-reading-16",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 3,
+    "prompt": "Rohan ran very fast in the race. He did not stop even when he was tired. He came first. Why did Rohan come first?",
+    "type": "passage",
+    "payload": {
+      "text": "Rohan ran very fast in the race. He did not stop even when he was tired. He came first.",
+      "question": "Why did Rohan come first?"
+    },
+    "options": [
+      "the others fell",
+      "he did not stop",
+      "he started early"
+    ],
+    "answer": "he did not stop"
+  },
+  {
+    "id": "g3-reading-17",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 3,
+    "prompt": "The street was very dark at night. Papa took a torch when he went to buy milk. Why did Papa take a torch?",
+    "type": "passage",
+    "payload": {
+      "text": "The street was very dark at night. Papa took a torch when he went to buy milk.",
+      "question": "Why did Papa take a torch?"
+    },
+    "options": [
+      "the shop was closed",
+      "the street was dark",
+      "it was raining"
+    ],
+    "answer": "the street was dark"
+  },
+  {
+    "id": "g3-reading-18",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 3,
+    "prompt": "Anu forgot her lunch box at home. Her friend Tara shared her rotis with her. Anu said thank you. Why did Tara share her rotis?",
+    "type": "passage",
+    "payload": {
+      "text": "Anu forgot her lunch box at home. Her friend Tara shared her rotis with her. Anu said thank you.",
+      "question": "Why did Tara share her rotis?"
+    },
+    "options": [
+      "Tara was not hungry",
+      "Anu was ill",
+      "Anu forgot her lunch"
+    ],
+    "answer": "Anu forgot her lunch"
+  },
+  {
+    "id": "g3-reading-19",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 3,
+    "prompt": "The plant on the window was dry and droopy. Neha gave it water. The next day it stood tall again. Why did the plant stand tall again?",
+    "type": "passage",
+    "payload": {
+      "text": "The plant on the window was dry and droopy. Neha gave it water. The next day it stood tall again.",
+      "question": "Why did the plant stand tall again?"
+    },
+    "options": [
+      "it got sun",
+      "Neha watered it",
+      "it rained"
+    ],
+    "answer": "Neha watered it"
+  },
+  {
+    "id": "g3-reading-20",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-reading",
+    "difficulty": 3,
+    "prompt": "Mira woke up late and missed the school bus. Her mother drove her to school in the car. Why did Mira miss the bus?",
+    "type": "passage",
+    "payload": {
+      "text": "Mira woke up late and missed the school bus. Her mother drove her to school in the car.",
+      "question": "Why did Mira miss the bus?"
+    },
+    "options": [
+      "she woke up late",
+      "she was ill",
+      "the bus was early"
+    ],
+    "answer": "she woke up late"
+  }
+]

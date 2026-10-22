@@ -1,0 +1,393 @@
+[
+  {
+    "id": "g3-synonyms-01",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 1,
+    "prompt": "A word that means big is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means big is ___.",
+      "rule": "synonym",
+      "base": "big"
+    },
+    "options": [
+      "large",
+      "finish",
+      "close"
+    ],
+    "answer": "large"
+  },
+  {
+    "id": "g3-synonyms-02",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 1,
+    "prompt": "A word that means scared is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means scared is ___.",
+      "rule": "synonym",
+      "base": "scared"
+    },
+    "options": [
+      "close",
+      "afraid",
+      "silent"
+    ],
+    "answer": "afraid"
+  },
+  {
+    "id": "g3-synonyms-03",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 1,
+    "prompt": "A word that means shut is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means shut is ___.",
+      "rule": "synonym",
+      "base": "shut"
+    },
+    "options": [
+      "close",
+      "glad",
+      "gift"
+    ],
+    "answer": "close"
+  },
+  {
+    "id": "g3-synonyms-04",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 1,
+    "prompt": "A word that means shout is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means shout is ___.",
+      "rule": "synonym",
+      "base": "shout"
+    },
+    "options": [
+      "silent",
+      "present",
+      "yell"
+    ],
+    "answer": "yell"
+  },
+  {
+    "id": "g3-synonyms-05",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 1,
+    "prompt": "A word that means small is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means small is ___.",
+      "rule": "synonym",
+      "base": "small"
+    },
+    "options": [
+      "tiny",
+      "see",
+      "close"
+    ],
+    "answer": "tiny"
+  },
+  {
+    "id": "g3-synonyms-06",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 1,
+    "prompt": "A word that means smart is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means smart is ___.",
+      "rule": "synonym",
+      "base": "smart"
+    },
+    "options": [
+      "look",
+      "clever",
+      "beautiful"
+    ],
+    "answer": "clever"
+  },
+  {
+    "id": "g3-synonyms-07",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 1,
+    "prompt": "A word that means gift is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means gift is ___.",
+      "rule": "synonym",
+      "base": "gift"
+    },
+    "options": [
+      "look",
+      "afraid",
+      "present"
+    ],
+    "answer": "present"
+  },
+  {
+    "id": "g3-synonyms-08",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 2,
+    "prompt": "The ___ is red and pretty.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The ___ is red and pretty.",
+      "rule": "homophone",
+      "base": "The ___ is red and pretty."
+    },
+    "options": [
+      "flour",
+      "flower"
+    ],
+    "answer": "flower"
+  },
+  {
+    "id": "g3-synonyms-09",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 2,
+    "prompt": "The sky is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The sky is ___.",
+      "rule": "homophone",
+      "base": "The sky is ___."
+    },
+    "options": [
+      "blew",
+      "blue"
+    ],
+    "answer": "blue"
+  },
+  {
+    "id": "g3-synonyms-10",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 2,
+    "prompt": "Put the box over ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Put the box over ___.",
+      "rule": "homophone",
+      "base": "Put the box over ___."
+    },
+    "options": [
+      "there",
+      "their"
+    ],
+    "answer": "there"
+  },
+  {
+    "id": "g3-synonyms-11",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 2,
+    "prompt": "The children took ___ bags.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The children took ___ bags.",
+      "rule": "homophone",
+      "base": "The children took ___ bags."
+    },
+    "options": [
+      "their",
+      "there"
+    ],
+    "answer": "their"
+  },
+  {
+    "id": "g3-synonyms-12",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 2,
+    "prompt": "Ravi is my ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Ravi is my ___.",
+      "rule": "homophone",
+      "base": "Ravi is my ___."
+    },
+    "options": [
+      "son",
+      "sun"
+    ],
+    "answer": "son"
+  },
+  {
+    "id": "g3-synonyms-13",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 2,
+    "prompt": "We swim in the ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "We swim in the ___.",
+      "rule": "homophone",
+      "base": "We swim in the ___."
+    },
+    "options": [
+      "sea",
+      "see"
+    ],
+    "answer": "sea"
+  },
+  {
+    "id": "g3-synonyms-14",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 2,
+    "prompt": "I can ___ the moon.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "I can ___ the moon.",
+      "rule": "homophone",
+      "base": "I can ___ the moon."
+    },
+    "options": [
+      "sea",
+      "see"
+    ],
+    "answer": "see"
+  },
+  {
+    "id": "g3-synonyms-15",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 3,
+    "prompt": "The wind ___ hard.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The wind ___ hard.",
+      "rule": "homophone",
+      "base": "The wind ___ hard."
+    },
+    "options": [
+      "blew",
+      "blue"
+    ],
+    "answer": "blew"
+  },
+  {
+    "id": "g3-synonyms-16",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 3,
+    "prompt": "A word that means silent is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means silent is ___.",
+      "rule": "synonym",
+      "base": "silent"
+    },
+    "options": [
+      "yell",
+      "small",
+      "quiet"
+    ],
+    "answer": "quiet"
+  },
+  {
+    "id": "g3-synonyms-17",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 3,
+    "prompt": "I ___ a letter.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "I ___ a letter.",
+      "rule": "homophone",
+      "base": "I ___ a letter."
+    },
+    "options": [
+      "right",
+      "write"
+    ],
+    "answer": "write"
+  },
+  {
+    "id": "g3-synonyms-18",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 3,
+    "prompt": "A word that means near is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means near is ___.",
+      "rule": "synonym",
+      "base": "near"
+    },
+    "options": [
+      "close",
+      "gift",
+      "large"
+    ],
+    "answer": "close"
+  },
+  {
+    "id": "g3-synonyms-19",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 3,
+    "prompt": "Can I come ___?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Can I come ___?",
+      "rule": "homophone",
+      "base": "Can I come ___?"
+    },
+    "options": [
+      "to",
+      "too",
+      "two"
+    ],
+    "answer": "too"
+  },
+  {
+    "id": "g3-synonyms-20",
+    "grade": 3,
+    "subject": "english",
+    "topic": "g3-synonyms",
+    "difficulty": 3,
+    "prompt": "A word that means happy is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means happy is ___.",
+      "rule": "synonym",
+      "base": "happy"
+    },
+    "options": [
+      "tiny",
+      "fast",
+      "glad"
+    ],
+    "answer": "glad"
+  }
+]
