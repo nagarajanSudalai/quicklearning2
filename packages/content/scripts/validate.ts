@@ -5,6 +5,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CATEGORIES, oddCandidates } from '../src/categories.ts';
+import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { timeLabel } from '../src/time.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
@@ -136,6 +137,10 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
         grid.set(key, w.word[k]);
       }
     }
+    for (const w of q.words) {
+      const clue = w.dir === 'across' ? `${w.row},${w.col - 1}` : `${w.row - 1},${w.col}`;
+      if (grid.has(clue)) return `clue square for ${w.word} is on a letter`;
+    }
     if (!q.blanks.length) return 'no blanks';
     for (const [r, c] of q.blanks) {
       const l = grid.get(`${r},${c}`);
@@ -174,6 +179,15 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     }
     if (left.length > 1) return 'at most one spare tile';
     return q.tiles.slice(0, q.answer.length).join(q.joiner) === q.say ? 'tiles are already in order' : null;
+  },
+  sudoku(q) {
+    if (q.symbols.length !== 4 || new Set(q.symbols).size !== 4) return 'needs 4 different symbols';
+    if (q.grid.length !== 16 || q.solution.length !== 16) return 'grid must be 4×4';
+    if (!isSolved(q.solution)) return 'solution breaks a row, column or box';
+    if (q.grid.some((v: number | null, i: number) => v !== null && v !== q.solution[i])) return 'a given square disagrees with the solution';
+    if (!q.grid.includes(null)) return 'no blanks';
+    const n = countSolutions(q.grid);
+    return n === 1 ? null : `${n === 0 ? 'no' : 'more than one'} solution`;
   },
   maze(q) {
     const { rows, cols, cells, start, goal } = q;

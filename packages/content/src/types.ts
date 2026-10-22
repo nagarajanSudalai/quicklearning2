@@ -173,6 +173,12 @@ export type BuildPuzzle = Base & {
   payload: { answer: string[]; tiles: string[]; picture: string; say: string; joiner: '' | ' ' };
 };
 
+/** 4×4 picture sudoku. `grid` holds symbol indexes, `null` for blanks; `solution` is the full grid. */
+export type SudokuPuzzle = Base & {
+  type: 'sudoku';
+  payload: { symbols: string[]; grid: (number | null)[]; solution: number[] };
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -192,7 +198,7 @@ export type ChoicePuzzle =
   | FillBlankPuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -200,7 +206,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {
