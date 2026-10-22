@@ -10,7 +10,9 @@
     "build:web": "npm run build -w apps/web",
     "mobile": "npm run start -w apps/mobile",
     "validate-content": "npm run validate -w packages/content",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "build:app": "npm run export:web -w apps/mobile",
+    "build": "npm run build:web && npm run build:app && rm -rf apps/web/dist/app && cp -r apps/mobile/dist apps/web/dist/app"
   },
   "overrides": {
     "react": "19.3.0",

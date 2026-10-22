@@ -11,8 +11,8 @@ button { font: inherit; }
 .container { max-width: 1280px; width: 100%; box-sizing: border-box; margin: 56px auto 0; padding: 0 24px; }
 
 /* Shared chunky "3D" button */
-.btn-3d { border: 0; cursor: pointer; background: #4b3fe0; color: #fff; }
-.btn-3d:hover { background: #3f33d6; }
+.btn-3d { border: 0; cursor: pointer; background: #4b3fe0; color: #fff; display: inline-block; }
+.btn-3d:hover { background: #3f33d6; color: #fff; }
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid #eeebfa; }

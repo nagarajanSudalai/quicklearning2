@@ -29,6 +29,9 @@
       "expo-router",
       "expo-font"
     ],
-    "scheme": "quickstep"
+    "scheme": "quickstep",
+    "experiments": {
+      "baseUrl": "/app"
+    }
   }
 }

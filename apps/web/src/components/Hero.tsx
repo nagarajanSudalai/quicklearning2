@@ -54,7 +54,7 @@ export function Hero({ animations }: { animations: boolean }) {
             ))}
           </div>
           <div>
-            <button className="btn-3d btn-explore">Explore the App →</button>
+            <a href="/app/" className="btn-3d btn-explore">Explore the App →</a>
           </div>
         </div>
 

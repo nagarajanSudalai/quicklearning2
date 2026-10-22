@@ -21,6 +21,15 @@ npm run validate-content    # check every puzzle in packages/content/puzzles
 npm run typecheck
 ```
 
+## Deploying (Vercel)
+
+`vercel.json` at the repo root builds both parts into one site:
+
+- `/` is the homepage (`apps/web`).
+- `/app` is the app's web version (`apps/mobile`, exported by Expo with base path `/app`).
+
+`npm run build` does the same locally; the output goes to `apps/web/dist`. In Vercel project settings, leave **Root Directory** empty (repo root) and the framework preset on **Other**. `vercel.json` sets the build command and output directory.
+
 ## Grade 1 Maths (Phase 1)
 
 Six topics, 20 puzzles each across 3 levels — 120 puzzles:

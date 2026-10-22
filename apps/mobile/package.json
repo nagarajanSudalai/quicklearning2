@@ -33,7 +33,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
-    "export:web": "expo export --platform web"
+    "export:web": "EXPO_OFFLINE=1 expo export --platform web"
   },
   "private": true
 }
