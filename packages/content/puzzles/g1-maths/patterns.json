@@ -1,0 +1,485 @@
+[
+  {
+    "id": "g1-patterns-01",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 1,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "diamond",
+        "square",
+        "diamond",
+        "square",
+        "diamond"
+      ]
+    },
+    "options": [
+      "square",
+      "diamond",
+      "star"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-patterns-02",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 1,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "diamond",
+        "square",
+        "diamond",
+        "square",
+        "diamond"
+      ]
+    },
+    "options": [
+      "circle",
+      "square",
+      "diamond"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-patterns-03",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 1,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "diamond",
+        "circle",
+        "diamond",
+        "circle",
+        "diamond"
+      ]
+    },
+    "options": [
+      "diamond",
+      "square",
+      "circle"
+    ],
+    "answer": "circle"
+  },
+  {
+    "id": "g1-patterns-04",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 1,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "square",
+        "star",
+        "square",
+        "star",
+        "square"
+      ]
+    },
+    "options": [
+      "star",
+      "circle",
+      "diamond"
+    ],
+    "answer": "star"
+  },
+  {
+    "id": "g1-patterns-05",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 1,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "star",
+        "tri",
+        "star",
+        "tri",
+        "star"
+      ]
+    },
+    "options": [
+      "star",
+      "tri",
+      "diamond"
+    ],
+    "answer": "tri"
+  },
+  {
+    "id": "g1-patterns-06",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 1,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "square",
+        "diamond",
+        "square",
+        "diamond",
+        "square"
+      ]
+    },
+    "options": [
+      "star",
+      "circle",
+      "diamond"
+    ],
+    "answer": "diamond"
+  },
+  {
+    "id": "g1-patterns-07",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 1,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "diamond",
+        "tri",
+        "diamond",
+        "tri",
+        "diamond"
+      ]
+    },
+    "options": [
+      "tri",
+      "star",
+      "circle"
+    ],
+    "answer": "tri"
+  },
+  {
+    "id": "g1-patterns-08",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 2,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "square",
+        "tri",
+        "tri",
+        "square",
+        "tri"
+      ]
+    },
+    "options": [
+      "square",
+      "star",
+      "tri"
+    ],
+    "answer": "tri"
+  },
+  {
+    "id": "g1-patterns-09",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 2,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "circle",
+        "diamond",
+        "diamond",
+        "circle",
+        "diamond"
+      ]
+    },
+    "options": [
+      "diamond",
+      "square",
+      "tri"
+    ],
+    "answer": "diamond"
+  },
+  {
+    "id": "g1-patterns-10",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 2,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "diamond",
+        "square",
+        "square",
+        "diamond",
+        "square"
+      ]
+    },
+    "options": [
+      "square",
+      "star",
+      "tri"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-patterns-11",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 2,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "tri",
+        "square",
+        "square",
+        "tri",
+        "square"
+      ]
+    },
+    "options": [
+      "circle",
+      "square",
+      "diamond"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-patterns-12",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 2,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "square",
+        "tri",
+        "tri",
+        "square",
+        "tri"
+      ]
+    },
+    "options": [
+      "diamond",
+      "square",
+      "tri"
+    ],
+    "answer": "tri"
+  },
+  {
+    "id": "g1-patterns-13",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 2,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "tri",
+        "star",
+        "star",
+        "tri",
+        "star"
+      ]
+    },
+    "options": [
+      "star",
+      "tri",
+      "circle"
+    ],
+    "answer": "star"
+  },
+  {
+    "id": "g1-patterns-14",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 2,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "diamond",
+        "diamond",
+        "star",
+        "diamond",
+        "diamond"
+      ]
+    },
+    "options": [
+      "star",
+      "circle",
+      "square"
+    ],
+    "answer": "star"
+  },
+  {
+    "id": "g1-patterns-15",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 3,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "square",
+        "star",
+        "diamond",
+        "square",
+        "star"
+      ]
+    },
+    "options": [
+      "square",
+      "circle",
+      "diamond"
+    ],
+    "answer": "diamond"
+  },
+  {
+    "id": "g1-patterns-16",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 3,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "star",
+        "diamond",
+        "tri",
+        "star",
+        "diamond"
+      ]
+    },
+    "options": [
+      "tri",
+      "square",
+      "diamond"
+    ],
+    "answer": "tri"
+  },
+  {
+    "id": "g1-patterns-17",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 3,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "diamond",
+        "circle",
+        "circle",
+        "square",
+        "diamond",
+        "circle"
+      ]
+    },
+    "options": [
+      "diamond",
+      "circle",
+      "square"
+    ],
+    "answer": "circle"
+  },
+  {
+    "id": "g1-patterns-18",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 3,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "tri",
+        "square",
+        "star",
+        "tri",
+        "square"
+      ]
+    },
+    "options": [
+      "star",
+      "tri",
+      "diamond"
+    ],
+    "answer": "star"
+  },
+  {
+    "id": "g1-patterns-19",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 3,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "circle",
+        "star",
+        "star",
+        "tri",
+        "circle",
+        "star"
+      ]
+    },
+    "options": [
+      "tri",
+      "square",
+      "star"
+    ],
+    "answer": "star"
+  },
+  {
+    "id": "g1-patterns-20",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-patterns",
+    "difficulty": 3,
+    "prompt": "What comes next?",
+    "type": "pattern",
+    "payload": {
+      "seq": [
+        "tri",
+        "circle",
+        "circle",
+        "star",
+        "tri",
+        "circle"
+      ]
+    },
+    "options": [
+      "diamond",
+      "circle",
+      "star"
+    ],
+    "answer": "circle"
+  }
+]

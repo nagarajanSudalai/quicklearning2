@@ -1,0 +1,502 @@
+[
+  {
+    "id": "g1-compare-01",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 1,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "🌸",
+        "count": 2
+      },
+      "right": {
+        "item": "⚽",
+        "count": 7
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-02",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 1,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🐟",
+        "count": 4
+      },
+      "right": {
+        "item": "⭐",
+        "count": 1
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-03",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 1,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "⭐",
+        "count": 1
+      },
+      "right": {
+        "item": "🎈",
+        "count": 6
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-04",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 1,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🚗",
+        "count": 3
+      },
+      "right": {
+        "item": "⚽",
+        "count": 6
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  },
+  {
+    "id": "g1-compare-05",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 1,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "🎈",
+        "count": 8
+      },
+      "right": {
+        "item": "🌸",
+        "count": 4
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  },
+  {
+    "id": "g1-compare-06",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 1,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🚗",
+        "count": 4
+      },
+      "right": {
+        "item": "🍓",
+        "count": 8
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  },
+  {
+    "id": "g1-compare-07",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 1,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "🐥",
+        "count": 1
+      },
+      "right": {
+        "item": "🎈",
+        "count": 5
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-08",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 2,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🌸",
+        "count": 5
+      },
+      "right": {
+        "item": "🐞",
+        "count": 3
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-09",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 2,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "🐞",
+        "count": 8
+      },
+      "right": {
+        "item": "🍎",
+        "count": 10
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-10",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 2,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🚗",
+        "count": 10
+      },
+      "right": {
+        "item": "🐞",
+        "count": 8
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-11",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 2,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "🍓",
+        "count": 4
+      },
+      "right": {
+        "item": "🚗",
+        "count": 2
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  },
+  {
+    "id": "g1-compare-12",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 2,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🐥",
+        "count": 7
+      },
+      "right": {
+        "item": "⭐",
+        "count": 5
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-13",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 2,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "🎈",
+        "count": 7
+      },
+      "right": {
+        "item": "🍎",
+        "count": 5
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  },
+  {
+    "id": "g1-compare-14",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 2,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🍎",
+        "count": 10
+      },
+      "right": {
+        "item": "🐞",
+        "count": 8
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-15",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 3,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "🚗",
+        "count": 5
+      },
+      "right": {
+        "item": "🐞",
+        "count": 6
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-16",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 3,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🐟",
+        "count": 10
+      },
+      "right": {
+        "item": "🐥",
+        "count": 9
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-17",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 3,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "⭐",
+        "count": 2
+      },
+      "right": {
+        "item": "🐥",
+        "count": 1
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  },
+  {
+    "id": "g1-compare-18",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 3,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🐥",
+        "count": 4
+      },
+      "right": {
+        "item": "🚗",
+        "count": 3
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g1-compare-19",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 3,
+    "prompt": "Which group has more?",
+    "type": "compare",
+    "payload": {
+      "ask": "more",
+      "left": {
+        "item": "⚽",
+        "count": 9
+      },
+      "right": {
+        "item": "🐥",
+        "count": 8
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  },
+  {
+    "id": "g1-compare-20",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-compare",
+    "difficulty": 3,
+    "prompt": "Which group has fewer?",
+    "type": "compare",
+    "payload": {
+      "ask": "fewer",
+      "left": {
+        "item": "🐞",
+        "count": 7
+      },
+      "right": {
+        "item": "🚗",
+        "count": 8
+      }
+    },
+    "options": [
+      "left",
+      "right"
+    ],
+    "answer": "left"
+  }
+]

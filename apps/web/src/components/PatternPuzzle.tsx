@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import { PUZZLES, type ShapeKind } from '../data';
+import { puzzlesFor, type PatternPuzzle as Pattern, type ShapeKind } from '@quickstep/content';
 import { Shape } from './Shape';
+
+// The easiest pattern puzzles from the app's Grade 1 Maths bank.
+const PUZZLES = (puzzlesFor('g1-patterns') as Pattern[]).filter((p) => p.difficulty === 1);
 
 export function PatternPuzzle({ animations }: { animations: boolean }) {
   const [round, setRound] = useState(0);
@@ -8,12 +11,12 @@ export function PatternPuzzle({ animations }: { animations: boolean }) {
   const [stars, setStars] = useState(12);
 
   const p = PUZZLES[round % PUZZLES.length];
-  const correct = picked === p.ans;
+  const correct = picked === p.answer;
 
   const pick = (k: ShapeKind) => {
     if (picked) return;
     setPicked(k);
-    if (k === p.ans) setStars((s) => s + 1);
+    if (k === p.answer) setStars((s) => s + 1);
   };
 
   const next = () => {
@@ -29,7 +32,7 @@ export function PatternPuzzle({ animations }: { animations: boolean }) {
       </div>
 
       <div className="puzzle__seq">
-        {p.seq.map((k, i) => (
+        {p.payload.seq.map((k, i) => (
           // keyed by round so the pop animation replays for each new puzzle
           <Shape key={`${round}-${i}`} kind={k} animation={animations ? `pop .4s ${i * 0.07}s both` : undefined} />
         ))}
@@ -37,8 +40,8 @@ export function PatternPuzzle({ animations }: { animations: boolean }) {
       </div>
 
       <div className="puzzle__choices">
-        {p.opts.map((k) => {
-          const state = picked === k ? (k === p.ans ? 'right' : 'wrong') : undefined;
+        {p.options.map((k) => {
+          const state = picked === k ? (k === p.answer ? 'right' : 'wrong') : undefined;
           return (
             <button
               key={`${round}-${k}`}

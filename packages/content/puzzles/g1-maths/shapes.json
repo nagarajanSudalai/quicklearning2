@@ -1,0 +1,368 @@
+[
+  {
+    "id": "g1-shapes-01",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 1,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "tri",
+      "circle",
+      "square"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-02",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 1,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "tri",
+      "square",
+      "circle"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-03",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 1,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "tri",
+      "square",
+      "circle"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-04",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 1,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "circle",
+      "tri",
+      "square"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-05",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 1,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "tri",
+      "square",
+      "circle"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-06",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 1,
+    "prompt": "Tap the triangle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "tri"
+    },
+    "options": [
+      "square",
+      "circle",
+      "tri"
+    ],
+    "answer": "tri"
+  },
+  {
+    "id": "g1-shapes-07",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 1,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "tri",
+      "square",
+      "circle"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-08",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 2,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "square",
+      "tri",
+      "star"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-09",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 2,
+    "prompt": "Tap the circle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "circle"
+    },
+    "options": [
+      "star",
+      "diamond",
+      "circle"
+    ],
+    "answer": "circle"
+  },
+  {
+    "id": "g1-shapes-10",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 2,
+    "prompt": "Tap the diamond.",
+    "type": "shape-match",
+    "payload": {
+      "target": "diamond"
+    },
+    "options": [
+      "circle",
+      "diamond",
+      "square"
+    ],
+    "answer": "diamond"
+  },
+  {
+    "id": "g1-shapes-11",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 2,
+    "prompt": "Tap the diamond.",
+    "type": "shape-match",
+    "payload": {
+      "target": "diamond"
+    },
+    "options": [
+      "tri",
+      "square",
+      "diamond"
+    ],
+    "answer": "diamond"
+  },
+  {
+    "id": "g1-shapes-12",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 2,
+    "prompt": "Tap the circle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "circle"
+    },
+    "options": [
+      "circle",
+      "square",
+      "star"
+    ],
+    "answer": "circle"
+  },
+  {
+    "id": "g1-shapes-13",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 2,
+    "prompt": "Tap the circle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "circle"
+    },
+    "options": [
+      "circle",
+      "tri",
+      "star"
+    ],
+    "answer": "circle"
+  },
+  {
+    "id": "g1-shapes-14",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 2,
+    "prompt": "Tap the circle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "circle"
+    },
+    "options": [
+      "circle",
+      "star",
+      "diamond"
+    ],
+    "answer": "circle"
+  },
+  {
+    "id": "g1-shapes-15",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 3,
+    "prompt": "Tap the rectangle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "rectangle"
+    },
+    "options": [
+      "circle",
+      "rectangle",
+      "square",
+      "star"
+    ],
+    "answer": "rectangle"
+  },
+  {
+    "id": "g1-shapes-16",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 3,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "rectangle",
+      "circle",
+      "square",
+      "star"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-17",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 3,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "rectangle",
+      "diamond",
+      "square",
+      "circle"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-18",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 3,
+    "prompt": "Tap the circle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "circle"
+    },
+    "options": [
+      "square",
+      "rectangle",
+      "tri",
+      "circle"
+    ],
+    "answer": "circle"
+  },
+  {
+    "id": "g1-shapes-19",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 3,
+    "prompt": "Tap the square.",
+    "type": "shape-match",
+    "payload": {
+      "target": "square"
+    },
+    "options": [
+      "rectangle",
+      "diamond",
+      "tri",
+      "square"
+    ],
+    "answer": "square"
+  },
+  {
+    "id": "g1-shapes-20",
+    "grade": 1,
+    "subject": "maths",
+    "topic": "g1-shapes",
+    "difficulty": 3,
+    "prompt": "Tap the rectangle.",
+    "type": "shape-match",
+    "payload": {
+      "target": "rectangle"
+    },
+    "options": [
+      "tri",
+      "rectangle",
+      "circle",
+      "square"
+    ],
+    "answer": "rectangle"
+  }
+]

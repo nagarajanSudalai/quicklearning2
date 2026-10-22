@@ -1,25 +1,19 @@
 {
-  "name": "quickstep-web",
+  "name": "quickstep",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "web": "npm run dev -w apps/web",
+    "build:web": "npm run build -w apps/web",
+    "mobile": "npm run start -w apps/mobile",
+    "validate-content": "npm run validate -w packages/content",
+    "typecheck": "npm run typecheck --workspaces --if-present"
   },
-  "dependencies": {
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1"
-  },
-  "devDependencies": {
-    "@types/node": "^24.19.2",
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "oxlint": "^1.88.0",
-    "typescript": "~6.0.3",
-    "vite": "^8.3.4"
+  "overrides": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   }
 }
