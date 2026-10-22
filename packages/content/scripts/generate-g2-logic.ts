@@ -5,6 +5,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cellsOf, layoutCrossword } from '../src/crossword.ts';
 import { countSolutions } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { PICTURES } from '../src/words.ts';
@@ -27,54 +28,6 @@ const base = (topic: string, i: number, difficulty: number, prompt: string, subj
   id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade: 2, subject, topic, difficulty, prompt,
 });
 
-type Word = { word: string; picture: string; row: number; col: number; dir: 'across' | 'down' };
-const cellsOf = (w: Word) => [...w.word].map((ch, k) => [w.dir === 'across' ? w.row : w.row + k, w.dir === 'across' ? w.col + k : w.col, ch] as const);
-const clueOf = (w: Word) => (w.dir === 'across' ? `${w.row},${w.col - 1}` : `${w.row - 1},${w.col}`);
-
-/**
- * Lay out `words` as across / down / across. Each later word crosses the previous one.
- * Returns null if letters clash, words touch where they shouldn't, or a clue square is taken.
- */
-function layout(list: string[]): Word[] | null {
-  const ws: Word[] = [{ word: list[0], picture: PICTURES[list[0]], row: 0, col: 0, dir: 'across' }];
-  for (let n = 1; n < list.length; n++) {
-    const prev = ws[n - 1], w = list[n], dir = prev.dir === 'across' ? 'down' : 'across';
-    const options: Word[] = [];
-    for (let a = 0; a < prev.word.length; a++) for (let b = 0; b < w.length; b++) {
-      if (prev.word[a] !== w[b]) continue;
-      const [r, c] = prev.dir === 'across' ? [prev.row, prev.col + a] : [prev.row + a, prev.col];
-      options.push(dir === 'down' ? { word: w, picture: PICTURES[w], row: r - b, col: c, dir } : { word: w, picture: PICTURES[w], row: r, col: c - b, dir });
-    }
-    const placed = shuffle(options).find((cand) => fits([...ws, cand]));
-    if (!placed) return null;
-    ws.push(placed);
-  }
-  // Shift so every word starts at row/column 0 or more.
-  const minR = Math.min(...ws.map((w) => w.row)), minC = Math.min(...ws.map((w) => w.col));
-  return ws.map((w) => ({ ...w, row: w.row - minR, col: w.col - minC }));
-}
-
-function fits(ws: Word[]): boolean {
-  const grid = new Map<string, { ch: string; owners: number }>();
-  for (const w of ws) for (const [r, c, ch] of cellsOf(w)) {
-    const k = `${r},${c}`, cur = grid.get(k);
-    if (cur && cur.ch !== ch) return false;
-    grid.set(k, { ch, owners: (cur?.owners ?? 0) + 1 });
-  }
-  // Words may only meet at shared squares: no side-by-side letters from different words.
-  for (const [k] of grid) {
-    const [r, c] = k.split(',').map(Number);
-    const inWord = (rr: number, cc: number) => ws.filter((w) => cellsOf(w).some(([a, b]) => a === rr && b === cc));
-    const mine = inWord(r, c);
-    for (const [dr, dc] of [[0, 1], [1, 0]]) {
-      const theirs = inWord(r + dr, c + dc);
-      if (theirs.length && !theirs.some((t) => mine.includes(t))) return false;
-    }
-  }
-  const clues = ws.map(clueOf);
-  return new Set(clues).size === clues.length && clues.every((k) => !grid.has(k));
-}
-
 function crossword() {
   const pool = Object.keys(PICTURES).filter((w) => w.length >= 3 && w.length <= 5);
   const used = new Set<string>();
@@ -84,7 +37,7 @@ function crossword() {
       const list = shuffle(pool).slice(0, n);
       const key = [...list].sort().join('+');
       if (used.has(key)) continue;
-      const ws = layout(list);
+      const ws = layoutCrossword(list, PICTURES, shuffle);
       if (!ws) continue;
       used.add(key);
       const cells = new Map<string, string>();

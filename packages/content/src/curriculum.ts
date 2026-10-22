@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -75,6 +75,8 @@ export const TOPICS: Topic[] = [
   { id: 'g3-synonyms', grade: 3, subject: 'english', title: 'Same meaning, same sound', blurb: 'Synonyms and homophones', glyph: '≈', color: colors.green },
   { id: 'g3-spelling', grade: 3, subject: 'english', title: 'Spelling bee', blurb: 'Longer words', glyph: '🐝', color: colors.orange },
   { id: 'g3-reading', grade: 3, subject: 'english', title: 'Read and answer', blurb: 'Short stories', glyph: '📖', color: colors.purple },
+  { id: 'g3-crossword', grade: 3, subject: 'puzzles', title: 'Clue crossword', blurb: 'Read the clues', glyph: '▦', color: colors.blue },
+  { id: 'g3-sudoku', grade: 3, subject: 'puzzles', title: 'Sudoku 6×6', blurb: 'Numbers 1 to 6', glyph: '6', color: colors.green },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

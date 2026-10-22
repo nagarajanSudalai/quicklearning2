@@ -1,18 +1,24 @@
-// 4×4 sudoku helpers: rows, columns and 2×2 boxes each hold every symbol once.
+// Sudoku helpers for 4×4 (2×2 boxes) and 6×6 (boxes 2 rows × 3 columns) grids:
+// rows, columns and boxes each hold every symbol once. The size comes from the grid length.
 
-const SIZE = 4;
-const unitsOf = (i: number) => {
-  const r = Math.floor(i / SIZE), c = i % SIZE;
-  const br = r - (r % 2), bc = c - (c % 2);
-  const row = Array.from({ length: SIZE }, (_, k) => r * SIZE + k);
-  const col = Array.from({ length: SIZE }, (_, k) => k * SIZE + c);
-  const box = [0, 1, 2, 3].map((k) => (br + Math.floor(k / 2)) * SIZE + bc + (k % 2));
+const shapeOf = (cells: number) => {
+  const size = Math.round(Math.sqrt(cells));
+  return { size, boxR: 2, boxC: size === 6 ? 3 : 2 };
+};
+
+const unitsOf = (i: number, cells: number) => {
+  const { size, boxR, boxC } = shapeOf(cells);
+  const r = Math.floor(i / size), c = i % size;
+  const br = r - (r % boxR), bc = c - (c % boxC);
+  const row = Array.from({ length: size }, (_, k) => r * size + k);
+  const col = Array.from({ length: size }, (_, k) => k * size + c);
+  const box = Array.from({ length: size }, (_, k) => (br + Math.floor(k / boxC)) * size + bc + (k % boxC));
   return [row, col, box];
 };
 
 /** A cell may hold `v` if no other cell in its row, column or box already does. */
 export const canPlace = (grid: (number | null)[], i: number, v: number) =>
-  unitsOf(i).every((u) => u.every((j) => j === i || grid[j] !== v));
+  unitsOf(i, grid.length).every((u) => u.every((j) => j === i || grid[j] !== v));
 
 export const isSolved = (grid: (number | null)[]) =>
   grid.every((v, i) => v !== null && canPlace(grid, i, v));
@@ -21,8 +27,9 @@ export const isSolved = (grid: (number | null)[]) =>
 export function countSolutions(grid: (number | null)[], limit = 2): number {
   const i = grid.indexOf(null);
   if (i === -1) return isSolved(grid) ? 1 : 0;
+  const { size } = shapeOf(grid.length);
   let n = 0;
-  for (let v = 0; v < SIZE && n < limit; v++) {
+  for (let v = 0; v < size && n < limit; v++) {
     if (!canPlace(grid, i, v)) continue;
     const g = [...grid];
     g[i] = v;
@@ -30,3 +37,6 @@ export function countSolutions(grid: (number | null)[], limit = 2): number {
   }
   return n;
 }
+
+/** Box shape for drawing: thick lines after every `boxC` columns and `boxR` rows. */
+export const sudokuShape = shapeOf;

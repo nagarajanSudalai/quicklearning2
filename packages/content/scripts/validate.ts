@@ -9,6 +9,7 @@ import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
 import { calendarAnswer } from '../src/calendar.ts';
+import { CLUES } from '../src/thinking3.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
@@ -190,7 +191,7 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
   crossword(q) {
     const grid = new Map<string, string>();
     for (const w of q.words) {
-      if (PICTURES[w.word] !== w.picture) return `wrong picture for ${w.word}`;
+      if (w.clue !== undefined ? CLUES[w.word] !== w.clue : PICTURES[w.word] !== w.picture) return `wrong clue for ${w.word}`;
       for (let k = 0; k < w.word.length; k++) {
         const key = w.dir === 'across' ? `${w.row},${w.col + k}` : `${w.row + k},${w.col}`;
         if (grid.has(key) && grid.get(key) !== w.word[k]) return `words clash at ${key}`;
@@ -241,8 +242,9 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     return q.tiles.slice(0, q.answer.length).join(q.joiner) === q.say ? 'tiles are already in order' : null;
   },
   sudoku(q) {
-    if (q.symbols.length !== 4 || new Set(q.symbols).size !== 4) return 'needs 4 different symbols';
-    if (q.grid.length !== 16 || q.solution.length !== 16) return 'grid must be 4×4';
+    const size = q.symbols.length;
+    if (![4, 6].includes(size) || new Set(q.symbols).size !== size) return 'needs 4 or 6 different symbols';
+    if (q.grid.length !== size * size || q.solution.length !== size * size) return `grid must be ${size}×${size}`;
     if (!isSolved(q.solution)) return 'solution breaks a row, column or box';
     if (q.grid.some((v: number | null, i: number) => v !== null && v !== q.solution[i])) return 'a given square disagrees with the solution';
     if (!q.grid.includes(null)) return 'no blanks';

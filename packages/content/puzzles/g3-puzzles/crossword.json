@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "g3-crossword-01",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "queen",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A king’s wife"
+        },
+        {
+          "word": "seven",
+          "row": 0,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "Six plus one"
+        },
+        {
+          "word": "tiger",
+          "row": 1,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "India's national animal"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "letters": [
+        "t",
+        "q",
+        "g",
+        "s",
+        "d",
+        "n",
+        "b",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-02",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "water",
+          "row": 4,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "You drink it"
+        },
+        {
+          "word": "night",
+          "row": 0,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "When the moon shines"
+        },
+        {
+          "word": "lemon",
+          "row": 0,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "letters": [
+        "i",
+        "r",
+        "e",
+        "b",
+        "n",
+        "o",
+        "a",
+        "w"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-03",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "table",
+          "row": 0,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "tiger",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national animal"
+        },
+        {
+          "word": "camel",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It lives in the desert"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "letters": [
+        "p",
+        "m",
+        "r",
+        "d",
+        "a",
+        "g",
+        "l",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-04",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "eight",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Two times four"
+        },
+        {
+          "word": "camel",
+          "row": 0,
+          "col": 0,
+          "dir": "down",
+          "picture": "",
+          "clue": "It lives in the desert"
+        },
+        {
+          "word": "apple",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A red or green fruit"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "letters": [
+        "p",
+        "a",
+        "l",
+        "i",
+        "n",
+        "b",
+        "e",
+        "f"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-05",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "plate",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat food from it"
+        },
+        {
+          "word": "winter",
+          "row": 0,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "The cold season"
+        },
+        {
+          "word": "mango",
+          "row": 2,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "The king of fruits"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "letters": [
+        "a",
+        "t",
+        "c",
+        "w",
+        "i",
+        "n",
+        "p",
+        "g"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-06",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "heart",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It beats in your chest"
+        },
+        {
+          "word": "apple",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "A red or green fruit"
+        },
+        {
+          "word": "plate",
+          "row": 2,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat food from it"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "letters": [
+        "h",
+        "p",
+        "m",
+        "a",
+        "t",
+        "r",
+        "o",
+        "f"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-07",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "heart",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It beats in your chest"
+        },
+        {
+          "word": "seven",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "Six plus one"
+        },
+        {
+          "word": "lemon",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "letters": [
+        "n",
+        "h",
+        "t",
+        "l",
+        "e",
+        "k",
+        "a",
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-08",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "tiger",
+          "row": 0,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "India's national animal"
+        },
+        {
+          "word": "tooth",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You bite with it"
+        },
+        {
+          "word": "lemon",
+          "row": 2,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        },
+        {
+          "word": "ocean",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "A very big sea"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "letters": [
+        "s",
+        "c",
+        "t",
+        "m",
+        "r",
+        "o",
+        "n",
+        "w"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-09",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "eagle",
+          "row": 7,
+          "col": 5,
+          "dir": "across",
+          "picture": "",
+          "clue": "A big bird that hunts"
+        },
+        {
+          "word": "plate",
+          "row": 3,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat food from it"
+        },
+        {
+          "word": "pencil",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You write with it"
+        },
+        {
+          "word": "table",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat at it"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "letters": [
+        "r",
+        "k",
+        "l",
+        "p",
+        "c",
+        "a",
+        "u",
+        "n"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-10",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "snake",
+          "row": 6,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "It has no legs"
+        },
+        {
+          "word": "queen",
+          "row": 2,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "A king’s wife"
+        },
+        {
+          "word": "kitten",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A baby cat"
+        },
+        {
+          "word": "violin",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "You play it with a bow"
+        }
+      ],
+      "blanks": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "letters": [
+        "k",
+        "p",
+        "i",
+        "d",
+        "n",
+        "e",
+        "t",
+        "f"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-11",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "river",
+          "row": 8,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "Water that flows to the sea"
+        },
+        {
+          "word": "table",
+          "row": 4,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "eight",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Two times four"
+        },
+        {
+          "word": "pencil",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "You write with it"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "letters": [
+        "l",
+        "u",
+        "e",
+        "t",
+        "v",
+        "h",
+        "g",
+        "n"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-12",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "water",
+          "row": 0,
+          "col": 4,
+          "dir": "across",
+          "picture": "",
+          "clue": "You drink it"
+        },
+        {
+          "word": "winter",
+          "row": 0,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "The cold season"
+        },
+        {
+          "word": "snake",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It has no legs"
+        },
+        {
+          "word": "honey",
+          "row": 2,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "Bees make it"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "letters": [
+        "r",
+        "b",
+        "y",
+        "s",
+        "w",
+        "u",
+        "a",
+        "n"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-13",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "puppy",
+          "row": 0,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A baby dog"
+        },
+        {
+          "word": "parrot",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A green bird that talks"
+        },
+        {
+          "word": "kitten",
+          "row": 5,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A baby cat"
+        },
+        {
+          "word": "table",
+          "row": 5,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat at it"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "letters": [
+        "u",
+        "o",
+        "r",
+        "p",
+        "a",
+        "k",
+        "i",
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-14",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "chair",
+          "row": 0,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You sit on it"
+        },
+        {
+          "word": "apple",
+          "row": 0,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "A red or green fruit"
+        },
+        {
+          "word": "heart",
+          "row": 4,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "It beats in your chest"
+        },
+        {
+          "word": "bread",
+          "row": 3,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "A baker makes it"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "letters": [
+        "b",
+        "t",
+        "a",
+        "i",
+        "c",
+        "d",
+        "l",
+        "o"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-15",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "snake",
+          "row": 5,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It has no legs"
+        },
+        {
+          "word": "eagle",
+          "row": 1,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "A big bird that hunts"
+        },
+        {
+          "word": "night",
+          "row": 3,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "When the moon shines"
+        },
+        {
+          "word": "winter",
+          "row": 0,
+          "col": 6,
+          "dir": "down",
+          "picture": "",
+          "clue": "The cold season"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "letters": [
+        "a",
+        "w",
+        "h",
+        "e",
+        "g",
+        "l",
+        "t",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-16",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "water",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You drink it"
+        },
+        {
+          "word": "lemon",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        },
+        {
+          "word": "pencil",
+          "row": 4,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You write with it"
+        },
+        {
+          "word": "kitten",
+          "row": 3,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "A baby cat"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "letters": [
+        "o",
+        "l",
+        "h",
+        "w",
+        "e",
+        "c",
+        "r",
+        "m"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-17",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "mango",
+          "row": 2,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "The king of fruits"
+        },
+        {
+          "word": "camel",
+          "row": 0,
+          "col": 0,
+          "dir": "down",
+          "picture": "",
+          "clue": "It lives in the desert"
+        },
+        {
+          "word": "lemon",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        },
+        {
+          "word": "night",
+          "row": 4,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "When the moon shines"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "letters": [
+        "m",
+        "c",
+        "o",
+        "l",
+        "g",
+        "w",
+        "a",
+        "n"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-18",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "table",
+          "row": 5,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "apple",
+          "row": 2,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A red or green fruit"
+        },
+        {
+          "word": "parrot",
+          "row": 3,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "A green bird that talks"
+        },
+        {
+          "word": "tooth",
+          "row": 0,
+          "col": 8,
+          "dir": "down",
+          "picture": "",
+          "clue": "You bite with it"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "letters": [
+        "i",
+        "t",
+        "o",
+        "b",
+        "y",
+        "a",
+        "r",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-19",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "green",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "The colour of leaves"
+        },
+        {
+          "word": "heart",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "It beats in your chest"
+        },
+        {
+          "word": "bread",
+          "row": 3,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A baker makes it"
+        },
+        {
+          "word": "table",
+          "row": 2,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat at it"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "letters": [
+        "a",
+        "r",
+        "e",
+        "h",
+        "t",
+        "l",
+        "n",
+        "s"
+      ]
+    }
+  },
+  {
+    "id": "g3-crossword-20",
+    "grade": 3,
+    "subject": "puzzles",
+    "topic": "g3-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "green",
+          "row": 7,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "The colour of leaves"
+        },
+        {
+          "word": "tiger",
+          "row": 4,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national animal"
+        },
+        {
+          "word": "water",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You drink it"
+        },
+        {
+          "word": "snake",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "It has no legs"
+        }
+      ],
+      "blanks": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "letters": [
+        "a",
+        "i",
+        "w",
+        "r",
+        "d",
+        "e",
+        "k",
+        "t"
+      ]
+    }
+  }
+]

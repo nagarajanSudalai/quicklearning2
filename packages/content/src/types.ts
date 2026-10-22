@@ -192,7 +192,8 @@ export type PassagePuzzle = Base & {
 
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
 
-export type CrosswordWord = { word: string; picture: string; row: number; col: number; dir: 'across' | 'down' };
+/** A crossword word; the clue is a `picture` (emoji) or, from Grade 3, a text `clue`. */
+export type CrosswordWord = { word: string; picture: string; clue?: string; row: number; col: number; dir: 'across' | 'down' };
 
 /** Picture crossword: fill the `blanks` cells (in order) by tapping letters from `letters`. */
 export type CrosswordPuzzle = Base & {
@@ -229,7 +230,7 @@ export type BuildPuzzle = Base & {
   payload: { answer: string[]; tiles: string[]; picture: string; say: string; joiner: '' | ' ' };
 };
 
-/** 4×4 picture sudoku. `grid` holds symbol indexes, `null` for blanks; `solution` is the full grid. */
+/** 4×4 picture or 6×6 number sudoku (size = symbols.length). `grid` holds symbol indexes, `null` for blanks; `solution` is the full grid. */
 export type SudokuPuzzle = Base & {
   type: 'sudoku';
   payload: { symbols: string[]; grid: (number | null)[]; solution: number[] };

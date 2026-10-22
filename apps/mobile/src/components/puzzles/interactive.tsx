@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, type BuildPuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
+import { PHRASES, sudokuShape, type BuildPuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
@@ -83,10 +83,11 @@ function Crossword({ puzzle, onSolved, onMistake }: PlayerProps<CrosswordPuzzle>
               const r = ri - 1, c = ci - 1;
               const clue = clueAt(r, c);
               if (clue) {
+                const num = words.indexOf(clue) + 1;
                 return (
-                  <Pressable key={ci} onPress={() => say(clue.word, true)} accessibilityRole="button" accessibilityLabel={`Clue: ${clue.word}, ${clue.dir}`}
+                  <Pressable key={ci} onPress={() => say(clue.clue ?? clue.word, true)} accessibilityRole="button" accessibilityLabel={clue.clue ? `Clue ${num}: ${clue.clue}` : `Clue: ${clue.word}, ${clue.dir}`}
                     style={[styles.clue, { width: size, height: size }]}>
-                    <Text style={{ fontSize: size * 0.55 }}>{clue.picture}</Text>
+                    {clue.clue ? <Text style={[styles.clueNum, { fontSize: size * 0.5 }]}>{num}</Text> : <Text style={{ fontSize: size * 0.55 }}>{clue.picture}</Text>}
                     <Text style={styles.clueArrow}>{clue.dir === 'across' ? '→' : '↓'}</Text>
                   </Pressable>
                 );
@@ -105,6 +106,15 @@ function Crossword({ puzzle, onSolved, onMistake }: PlayerProps<CrosswordPuzzle>
           </View>
         ))}
       </View>
+      {words.some((w) => w.clue) && (
+        <View style={styles.clueList}>
+          {words.map((w, k) => (
+            <Pressable key={k} onPress={() => say(w.clue ?? '', true)} accessibilityRole="button" accessibilityLabel={`Hear clue ${k + 1}`}>
+              <Text style={styles.clueLine}><Text style={styles.clueLineNum}>{k + 1} {w.dir === 'across' ? '→' : '↓'}</Text>  {w.clue}</Text>
+            </Pressable>
+          ))}
+        </View>
+      )}
       <View style={styles.letterRow}>
         {letters.map((l) => (
           <Tap key={l} onPress={() => tapLetter(l)} wiggle={wiggle.letter === l ? wiggle.n : 0} label={l} disabled={done} style={styles.letterKey}>
@@ -293,6 +303,7 @@ function Sudoku({ puzzle, onSolved, onMistake }: PlayerProps<SudokuPuzzle>) {
   const [mistakes, setMistakes] = useState(0);
   const [wiggle, setWiggle] = useState<{ v: number; n: number }>({ v: -1, n: 0 });
   const done = !grid.includes(null);
+  const { size: n, boxR, boxC } = sudokuShape(grid.length);
 
   const place = (v: number) => {
     if (done || sel === -1) return;
@@ -308,25 +319,26 @@ function Sudoku({ puzzle, onSolved, onMistake }: PlayerProps<SudokuPuzzle>) {
     g[sel] = v;
     setGrid(g);
     // Move to the next empty square, wrapping round.
-    const next = [...g.keys()].map((k) => (sel + 1 + k) % 16).find((k) => g[k] === null) ?? -1;
+    const next = [...g.keys()].map((k) => (sel + 1 + k) % g.length).find((k) => g[k] === null) ?? -1;
     setSel(next);
     if (next === -1) onSolved(mistakes === 0);
   };
 
-  const size = 62;
+  const size = n === 6 ? 46 : 62;
   return (
     <View style={{ gap: 14, alignItems: 'center' }}>
       <View style={styles.sudoku}>
-        {Array.from({ length: 4 }, (_, r) => (
+        {Array.from({ length: n }, (_, r) => (
           <View key={r} style={{ flexDirection: 'row' }}>
-            {Array.from({ length: 4 }, (_, c) => {
-              const k = r * 4 + c, v = grid[k], given = start[k] !== null;
+            {Array.from({ length: n }, (_, c) => {
+              const k = r * n + c, v = grid[k], given = start[k] !== null;
+              const edge = (i: number, box: number) => (i === n - 1 ? 0 : (i + 1) % box === 0 ? 3 : 1);
               return (
                 <Pressable key={c} onPress={() => !given && v === null && setSel(k)} accessibilityRole="button"
                   accessibilityLabel={v !== null ? symbols[v] : `Empty square, row ${r + 1}, column ${c + 1}`}
-                  style={[styles.sCell, { width: size, height: size, borderRightWidth: c === 1 ? 3 : c === 3 ? 0 : 1, borderBottomWidth: r === 1 ? 3 : r === 3 ? 0 : 1 },
+                  style={[styles.sCell, { width: size, height: size, borderRightWidth: edge(c, boxC), borderBottomWidth: edge(r, boxR) },
                     given && styles.sGiven, !given && v !== null && styles.cellDone, sel === k && styles.cellActive]}>
-                  <Text style={{ fontSize: 32 }}>{v !== null ? symbols[v] : ''}</Text>
+                  <Text style={n === 6 ? styles.sNumber : { fontSize: 32 }}>{v !== null ? symbols[v] : ''}</Text>
                 </Pressable>
               );
             })}
@@ -336,7 +348,7 @@ function Sudoku({ puzzle, onSolved, onMistake }: PlayerProps<SudokuPuzzle>) {
       <View style={styles.letterRow}>
         {symbols.map((s, v) => (
           <Tap key={v} onPress={() => place(v)} wiggle={wiggle.v === v ? wiggle.n : 0} label={`Place ${s}`} disabled={done} style={styles.letterKey}>
-            <Text style={{ fontSize: 30 }}>{s}</Text>
+            <Text style={n === 6 ? styles.sNumber : { fontSize: 30 }}>{s}</Text>
           </Tap>
         ))}
       </View>
@@ -523,6 +535,11 @@ const styles = StyleSheet.create({
   orderNum: { position: 'absolute', top: 2, left: 6, fontFamily: font.bodyHeavy, fontSize: 12, color: colors.muted },
   orderTile: { width: 92, height: 100, padding: 4 },
   orderName: { fontFamily: font.bodyBold, fontSize: 12, color: colors.inkSoft, textAlign: 'center' },
+  sNumber: { fontFamily: font.display, fontSize: 26, color: colors.ink },
+  clueNum: { fontFamily: font.display, color: colors.brand },
+  clueList: { gap: 4, backgroundColor: colors.panel, borderRadius: 14, padding: 12 },
+  clueLine: { fontFamily: font.bodyBold, fontSize: 15, color: colors.ink },
+  clueLineNum: { fontFamily: font.bodyHeavy, color: colors.brand },
   hint: { fontFamily: font.bodyBold, fontSize: 12, color: colors.muted },
   slots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' },
   letterSlot: { width: 46, height: 52, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },
