@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g2-subtraction-01",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 1,
+    "prompt": "What is 96 take away 1?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 96,
+      "op": "-",
+      "b": 1
+    },
+    "options": [
+      94,
+      97,
+      95
+    ],
+    "answer": 95
+  },
+  {
+    "id": "g2-subtraction-02",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 1,
+    "prompt": "What is 45 take away 4?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 45,
+      "op": "-",
+      "b": 4
+    },
+    "options": [
+      43,
+      41,
+      51
+    ],
+    "answer": 41
+  },
+  {
+    "id": "g2-subtraction-03",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 1,
+    "prompt": "What is 58 take away 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 58,
+      "op": "-",
+      "b": 6
+    },
+    "options": [
+      52,
+      53,
+      62
+    ],
+    "answer": 52
+  },
+  {
+    "id": "g2-subtraction-04",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 1,
+    "prompt": "What is 37 take away 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 37,
+      "op": "-",
+      "b": 6
+    },
+    "options": [
+      41,
+      32,
+      31
+    ],
+    "answer": 31
+  },
+  {
+    "id": "g2-subtraction-05",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 1,
+    "prompt": "What is 28 take away 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 28,
+      "op": "-",
+      "b": 2
+    },
+    "options": [
+      24,
+      27,
+      26
+    ],
+    "answer": 26
+  },
+  {
+    "id": "g2-subtraction-06",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 1,
+    "prompt": "What is 25 take away 5?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 25,
+      "op": "-",
+      "b": 5
+    },
+    "options": [
+      20,
+      21,
+      30
+    ],
+    "answer": 20
+  },
+  {
+    "id": "g2-subtraction-07",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 1,
+    "prompt": "What is 33 take away 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 33,
+      "op": "-",
+      "b": 3
+    },
+    "options": [
+      30,
+      31,
+      40
+    ],
+    "answer": 30
+  },
+  {
+    "id": "g2-subtraction-08",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 2,
+    "prompt": "What is 65 take away 43?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 65,
+      "op": "-",
+      "b": 43
+    },
+    "options": [
+      24,
+      22,
+      32
+    ],
+    "answer": 22
+  },
+  {
+    "id": "g2-subtraction-09",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 2,
+    "prompt": "What is 93 take away 43?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 93,
+      "op": "-",
+      "b": 43
+    },
+    "options": [
+      52,
+      49,
+      50
+    ],
+    "answer": 50
+  },
+  {
+    "id": "g2-subtraction-10",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 2,
+    "prompt": "What is 39 take away 12?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 39,
+      "op": "-",
+      "b": 12
+    },
+    "options": [
+      27,
+      28,
+      26
+    ],
+    "answer": 27
+  },
+  {
+    "id": "g2-subtraction-11",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 2,
+    "prompt": "What is 97 take away 90?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 97,
+      "op": "-",
+      "b": 90
+    },
+    "options": [
+      9,
+      7,
+      17
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g2-subtraction-12",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 2,
+    "prompt": "What is 48 take away 30?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 48,
+      "op": "-",
+      "b": 30
+    },
+    "options": [
+      18,
+      16,
+      19
+    ],
+    "answer": 18
+  },
+  {
+    "id": "g2-subtraction-13",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 2,
+    "prompt": "What is 39 take away 27?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 39,
+      "op": "-",
+      "b": 27
+    },
+    "options": [
+      12,
+      10,
+      13
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-subtraction-14",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 2,
+    "prompt": "What is 43 take away 13?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 43,
+      "op": "-",
+      "b": 13
+    },
+    "options": [
+      40,
+      28,
+      30
+    ],
+    "answer": 30
+  },
+  {
+    "id": "g2-subtraction-15",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 3,
+    "prompt": "What is 94 take away 25?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 94,
+      "op": "-",
+      "b": 25
+    },
+    "options": [
+      69,
+      68,
+      79
+    ],
+    "answer": 69
+  },
+  {
+    "id": "g2-subtraction-16",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 3,
+    "prompt": "What is 75 take away 47?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 75,
+      "op": "-",
+      "b": 47
+    },
+    "options": [
+      18,
+      28,
+      29
+    ],
+    "answer": 28
+  },
+  {
+    "id": "g2-subtraction-17",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 3,
+    "prompt": "What is 73 take away 36?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 73,
+      "op": "-",
+      "b": 36
+    },
+    "options": [
+      38,
+      37,
+      36
+    ],
+    "answer": 37
+  },
+  {
+    "id": "g2-subtraction-18",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 3,
+    "prompt": "What is 52 take away 36?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 52,
+      "op": "-",
+      "b": 36
+    },
+    "options": [
+      16,
+      6,
+      15
+    ],
+    "answer": 16
+  },
+  {
+    "id": "g2-subtraction-19",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 3,
+    "prompt": "What is 47 take away 19?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 47,
+      "op": "-",
+      "b": 19
+    },
+    "options": [
+      28,
+      38,
+      18
+    ],
+    "answer": 28
+  },
+  {
+    "id": "g2-subtraction-20",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-subtraction",
+    "difficulty": 3,
+    "prompt": "What is 50 take away 38?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 50,
+      "op": "-",
+      "b": 38
+    },
+    "options": [
+      13,
+      12,
+      2
+    ],
+    "answer": 12
+  }
+]

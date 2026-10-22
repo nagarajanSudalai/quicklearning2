@@ -33,7 +33,7 @@ export type CountPuzzle = Base & {
 /** "3 + 2 = ?" with optional emoji pictures for each side. */
 export type ArithmeticPuzzle = Base & {
   type: 'arithmetic';
-  payload: { a: number; op: '+' | '-'; b: number; item?: string };
+  payload: { a: number; op: '+' | '-' | '×'; b: number; item?: string };
   options: number[];
   answer: number;
 };
@@ -94,6 +94,38 @@ export type OddOneOutPuzzle = Base & {
   answer: string;
 };
 
+/** Tens rods and ones cubes. `ask`: the whole number, or just the tens or ones digit. */
+export type PlaceValuePuzzle = Base & {
+  type: 'place-value';
+  payload: { tens: number; ones: number; ask: 'number' | 'tens' | 'ones' };
+  options: number[];
+  answer: number;
+};
+
+/** A counting sequence with one blank (`null`). */
+export type NumberPatternPuzzle = Base & {
+  type: 'number-pattern';
+  payload: { seq: (number | null)[] };
+  options: number[];
+  answer: number;
+};
+
+/** An analogue clock; options are time labels like "half past 3". */
+export type ClockPuzzle = Base & {
+  type: 'clock';
+  payload: { hour: number; minute: 0 | 15 | 30 | 45 };
+  options: string[];
+  answer: string;
+};
+
+/** Rupee coins and notes to add up. */
+export type MoneyPuzzle = Base & {
+  type: 'money';
+  payload: { coins: number[]; notes: number[] };
+  options: number[];
+  answer: number;
+};
+
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
 
 export type CrosswordWord = { word: string; picture: string; row: number; col: number; dir: 'across' | 'down' };
@@ -138,7 +170,11 @@ export type ChoicePuzzle =
   | FirstLetterPuzzle
   | PictureWordPuzzle
   | RhymePuzzle
-  | OddOneOutPuzzle;
+  | OddOneOutPuzzle
+  | PlaceValuePuzzle
+  | NumberPatternPuzzle
+  | ClockPuzzle
+  | MoneyPuzzle;
 
 /** Puzzles with their own multi-step play. */
 export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle;

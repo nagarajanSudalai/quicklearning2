@@ -4,6 +4,7 @@ import { nameOf, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
+import { Blocks, Clock, Groups, Money } from '../maths/Visuals';
 
 /**
  * One entry per puzzle type: what to show above the answers, how to draw one
@@ -69,16 +70,18 @@ export const RENDERERS: Renderers = {
   arithmetic: {
     Stimulus: ({ puzzle }) => {
       const { a, b, op, item } = puzzle.payload;
+      const sym = op === '+' ? '+' : op === '-' ? '−' : '×';
       return (
         <View style={[styles.panel, { flexDirection: 'column', flexWrap: 'nowrap', gap: 12 }]}>
-          {item && (
+          {item && op === '×' && <Groups a={a} b={b} item={item} />}
+          {item && op !== '×' && (
             <View style={styles.sumRow}>
               <View style={styles.sumSide}><EmojiGroup item={item} count={a} size={28} /></View>
-              <Text style={styles.op}>{op === '+' ? '+' : '−'}</Text>
+              <Text style={styles.op}>{sym}</Text>
               <View style={[styles.sumSide, op === '-' && { opacity: 0.35 }]}><EmojiGroup item={item} count={b} size={28} /></View>
             </View>
           )}
-          <Text style={styles.equation}>{a} {op === '+' ? '+' : '−'} {b} = ?</Text>
+          <Text style={styles.equation}>{a} {sym} {b} = ?</Text>
         </View>
       );
     },
@@ -141,6 +144,53 @@ export const RENDERERS: Renderers = {
     columns: (p) => (p.options.length === 4 ? 2 : 3),
     optionHeight: 120,
   },
+  'place-value': {
+    Stimulus: ({ puzzle }) => {
+      const { tens, ones, ask } = puzzle.payload;
+      return (
+        <View style={[styles.panel, styles.pictureBox]}>
+          {ask === 'number' ? <Blocks tens={tens} ones={ones} /> : <Text style={styles.equation}>{tens * 10 + ones}</Text>}
+        </View>
+      );
+    },
+    option: (n) => <Number n={n} />,
+    columns: () => 3,
+  },
+  'number-pattern': {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, { gap: 8, flexWrap: 'nowrap' }]}>
+        {puzzle.payload.seq.map((x, i) =>
+          x === null ? (
+            <View key={i} style={[styles.blank, { width: 50, height: 50 }]}><Text style={styles.blankText}>?</Text></View>
+          ) : (
+            <Text key={i} style={styles.seqNumber}>{x}</Text>
+          ),
+        )}
+      </View>
+    ),
+    option: (n) => <Number n={n} />,
+    columns: () => 3,
+  },
+  clock: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.pictureBox]}>
+        <Clock hour={puzzle.payload.hour} minute={puzzle.payload.minute} />
+      </View>
+    ),
+    option: (t) => <Text style={styles.timeOption} adjustsFontSizeToFit numberOfLines={2}>{t}</Text>,
+    columns: () => 1,
+    optionHeight: 60,
+  },
+  money: {
+    Stimulus: ({ puzzle }) => (
+      <View style={styles.panel}>
+        <Money coins={puzzle.payload.coins} notes={puzzle.payload.notes} />
+      </View>
+    ),
+    option: (n) => <Text style={styles.number}>₹{n}</Text>,
+    columns: () => 3,
+    label: (n) => `${n} rupees`,
+  },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,
     columns: (p) => (p.options.length === 5 ? 3 : 2),
@@ -181,6 +231,8 @@ const styles = StyleSheet.create({
   word: { fontFamily: font.display, fontSize: 26, color: colors.ink },
   wordCard: { alignItems: 'center', gap: 2, width: '100%' },
   optionPicture: { fontSize: 44, lineHeight: 54 },
+  seqNumber: { fontFamily: font.display, fontSize: 30, color: colors.ink, minWidth: 40, textAlign: 'center' },
+  timeOption: { fontFamily: font.displaySemi, fontSize: 22, color: colors.ink, textAlign: 'center' },
   oddItem: { fontSize: 56, lineHeight: 68 },
   wordSmall: { fontFamily: font.displaySemi, fontSize: 20, color: colors.ink },
 });

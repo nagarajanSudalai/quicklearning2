@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g2-addition-01",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 1,
+    "prompt": "What is 65 plus 4?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 65,
+      "op": "+",
+      "b": 4
+    },
+    "options": [
+      71,
+      68,
+      69
+    ],
+    "answer": 69
+  },
+  {
+    "id": "g2-addition-02",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 1,
+    "prompt": "What is 26 plus 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 26,
+      "op": "+",
+      "b": 3
+    },
+    "options": [
+      29,
+      31,
+      39
+    ],
+    "answer": 29
+  },
+  {
+    "id": "g2-addition-03",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 1,
+    "prompt": "What is 62 plus 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 62,
+      "op": "+",
+      "b": 3
+    },
+    "options": [
+      67,
+      65,
+      64
+    ],
+    "answer": 65
+  },
+  {
+    "id": "g2-addition-04",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 1,
+    "prompt": "What is 45 plus 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 45,
+      "op": "+",
+      "b": 3
+    },
+    "options": [
+      48,
+      47,
+      50
+    ],
+    "answer": 48
+  },
+  {
+    "id": "g2-addition-05",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 1,
+    "prompt": "What is 32 plus 4?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 32,
+      "op": "+",
+      "b": 4
+    },
+    "options": [
+      36,
+      46,
+      38
+    ],
+    "answer": 36
+  },
+  {
+    "id": "g2-addition-06",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 1,
+    "prompt": "What is 52 plus 1?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 52,
+      "op": "+",
+      "b": 1
+    },
+    "options": [
+      55,
+      52,
+      53
+    ],
+    "answer": 53
+  },
+  {
+    "id": "g2-addition-07",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 1,
+    "prompt": "What is 10 plus 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 10,
+      "op": "+",
+      "b": 2
+    },
+    "options": [
+      12,
+      11,
+      13
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-addition-08",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 2,
+    "prompt": "What is 31 plus 25?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 31,
+      "op": "+",
+      "b": 25
+    },
+    "options": [
+      56,
+      54,
+      55
+    ],
+    "answer": 56
+  },
+  {
+    "id": "g2-addition-09",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 2,
+    "prompt": "What is 40 plus 57?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 40,
+      "op": "+",
+      "b": 57
+    },
+    "options": [
+      99,
+      97,
+      96
+    ],
+    "answer": 97
+  },
+  {
+    "id": "g2-addition-10",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 2,
+    "prompt": "What is 15 plus 10?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 15,
+      "op": "+",
+      "b": 10
+    },
+    "options": [
+      26,
+      25,
+      27
+    ],
+    "answer": 25
+  },
+  {
+    "id": "g2-addition-11",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 2,
+    "prompt": "What is 23 plus 16?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 23,
+      "op": "+",
+      "b": 16
+    },
+    "options": [
+      49,
+      40,
+      39
+    ],
+    "answer": 39
+  },
+  {
+    "id": "g2-addition-12",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 2,
+    "prompt": "What is 84 plus 12?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 84,
+      "op": "+",
+      "b": 12
+    },
+    "options": [
+      96,
+      106,
+      95
+    ],
+    "answer": 96
+  },
+  {
+    "id": "g2-addition-13",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 2,
+    "prompt": "What is 65 plus 14?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 65,
+      "op": "+",
+      "b": 14
+    },
+    "options": [
+      80,
+      79,
+      77
+    ],
+    "answer": 79
+  },
+  {
+    "id": "g2-addition-14",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 2,
+    "prompt": "What is 74 plus 25?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 74,
+      "op": "+",
+      "b": 25
+    },
+    "options": [
+      109,
+      100,
+      99
+    ],
+    "answer": 99
+  },
+  {
+    "id": "g2-addition-15",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 3,
+    "prompt": "What is 18 plus 34?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 18,
+      "op": "+",
+      "b": 34
+    },
+    "options": [
+      52,
+      42,
+      51
+    ],
+    "answer": 52
+  },
+  {
+    "id": "g2-addition-16",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 3,
+    "prompt": "What is 57 plus 18?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 57,
+      "op": "+",
+      "b": 18
+    },
+    "options": [
+      65,
+      74,
+      75
+    ],
+    "answer": 75
+  },
+  {
+    "id": "g2-addition-17",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 3,
+    "prompt": "What is 14 plus 18?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 14,
+      "op": "+",
+      "b": 18
+    },
+    "options": [
+      42,
+      32,
+      22
+    ],
+    "answer": 32
+  },
+  {
+    "id": "g2-addition-18",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 3,
+    "prompt": "What is 76 plus 15?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 76,
+      "op": "+",
+      "b": 15
+    },
+    "options": [
+      91,
+      101,
+      92
+    ],
+    "answer": 91
+  },
+  {
+    "id": "g2-addition-19",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 3,
+    "prompt": "What is 29 plus 62?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 29,
+      "op": "+",
+      "b": 62
+    },
+    "options": [
+      90,
+      101,
+      91
+    ],
+    "answer": 91
+  },
+  {
+    "id": "g2-addition-20",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-addition",
+    "difficulty": 3,
+    "prompt": "What is 12 plus 68?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 12,
+      "op": "+",
+      "b": 68
+    },
+    "options": [
+      79,
+      70,
+      80
+    ],
+    "answer": 80
+  }
+]

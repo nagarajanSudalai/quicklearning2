@@ -1,0 +1,482 @@
+[
+  {
+    "id": "g2-skip-counting-01",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        10,
+        15,
+        20,
+        25,
+        null
+      ]
+    },
+    "options": [
+      31,
+      30,
+      20
+    ],
+    "answer": 30
+  },
+  {
+    "id": "g2-skip-counting-02",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        0,
+        2,
+        4,
+        6,
+        null
+      ]
+    },
+    "options": [
+      18,
+      8,
+      7
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g2-skip-counting-03",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        4,
+        6,
+        8,
+        10,
+        null
+      ]
+    },
+    "options": [
+      9,
+      11,
+      12
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-skip-counting-04",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        0,
+        5,
+        10,
+        15,
+        null
+      ]
+    },
+    "options": [
+      21,
+      10,
+      20
+    ],
+    "answer": 20
+  },
+  {
+    "id": "g2-skip-counting-05",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        5,
+        10,
+        15,
+        20,
+        null
+      ]
+    },
+    "options": [
+      15,
+      35,
+      25
+    ],
+    "answer": 25
+  },
+  {
+    "id": "g2-skip-counting-06",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        40,
+        50,
+        60,
+        70,
+        null
+      ]
+    },
+    "options": [
+      80,
+      81,
+      79
+    ],
+    "answer": 80
+  },
+  {
+    "id": "g2-skip-counting-07",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        0,
+        10,
+        20,
+        30,
+        null
+      ]
+    },
+    "options": [
+      41,
+      39,
+      40
+    ],
+    "answer": 40
+  },
+  {
+    "id": "g2-skip-counting-08",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        3,
+        6,
+        9,
+        null,
+        15
+      ]
+    },
+    "options": [
+      8,
+      12,
+      13
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-skip-counting-09",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        0,
+        null,
+        6,
+        9,
+        12
+      ]
+    },
+    "options": [
+      3,
+      4,
+      7
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g2-skip-counting-10",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        15,
+        20,
+        null,
+        30,
+        35
+      ]
+    },
+    "options": [
+      25,
+      31,
+      35
+    ],
+    "answer": 25
+  },
+  {
+    "id": "g2-skip-counting-11",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        9,
+        12,
+        15,
+        null,
+        21
+      ]
+    },
+    "options": [
+      18,
+      8,
+      28
+    ],
+    "answer": 18
+  },
+  {
+    "id": "g2-skip-counting-12",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        6,
+        9,
+        null,
+        15,
+        18
+      ]
+    },
+    "options": [
+      22,
+      12,
+      16
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-skip-counting-13",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        4,
+        8,
+        null,
+        16,
+        20
+      ]
+    },
+    "options": [
+      12,
+      22,
+      11
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-skip-counting-14",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        20,
+        25,
+        null,
+        35,
+        40
+      ]
+    },
+    "options": [
+      29,
+      31,
+      30
+    ],
+    "answer": 30
+  },
+  {
+    "id": "g2-skip-counting-15",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        60,
+        null,
+        40,
+        30,
+        20
+      ]
+    },
+    "options": [
+      50,
+      40,
+      49
+    ],
+    "answer": 50
+  },
+  {
+    "id": "g2-skip-counting-16",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        92,
+        90,
+        null,
+        86,
+        84
+      ]
+    },
+    "options": [
+      88,
+      98,
+      89
+    ],
+    "answer": 88
+  },
+  {
+    "id": "g2-skip-counting-17",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        90,
+        88,
+        null,
+        84,
+        82
+      ]
+    },
+    "options": [
+      86,
+      87,
+      76
+    ],
+    "answer": 86
+  },
+  {
+    "id": "g2-skip-counting-18",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        80,
+        75,
+        null,
+        65,
+        60
+      ]
+    },
+    "options": [
+      70,
+      69,
+      76
+    ],
+    "answer": 70
+  },
+  {
+    "id": "g2-skip-counting-19",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        95,
+        90,
+        null,
+        80,
+        75
+      ]
+    },
+    "options": [
+      79,
+      84,
+      85
+    ],
+    "answer": 85
+  },
+  {
+    "id": "g2-skip-counting-20",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-skip-counting",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        90,
+        85,
+        80,
+        null,
+        70
+      ]
+    },
+    "options": [
+      74,
+      75,
+      65
+    ],
+    "answer": 75
+  }
+]

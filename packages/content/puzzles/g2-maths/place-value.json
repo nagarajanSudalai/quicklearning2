@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g2-place-value-01",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 1,
+      "ones": 4,
+      "ask": "number"
+    },
+    "options": [
+      14,
+      13,
+      41
+    ],
+    "answer": 14
+  },
+  {
+    "id": "g2-place-value-02",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 2,
+      "ones": 1,
+      "ask": "number"
+    },
+    "options": [
+      12,
+      11,
+      21
+    ],
+    "answer": 21
+  },
+  {
+    "id": "g2-place-value-03",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 2,
+      "ones": 8,
+      "ask": "number"
+    },
+    "options": [
+      18,
+      82,
+      28
+    ],
+    "answer": 28
+  },
+  {
+    "id": "g2-place-value-04",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 4,
+      "ones": 3,
+      "ask": "number"
+    },
+    "options": [
+      43,
+      44,
+      34
+    ],
+    "answer": 43
+  },
+  {
+    "id": "g2-place-value-05",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 1,
+      "ones": 3,
+      "ask": "number"
+    },
+    "options": [
+      13,
+      23,
+      31
+    ],
+    "answer": 13
+  },
+  {
+    "id": "g2-place-value-06",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 4,
+      "ones": 6,
+      "ask": "number"
+    },
+    "options": [
+      47,
+      46,
+      64
+    ],
+    "answer": 46
+  },
+  {
+    "id": "g2-place-value-07",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 1,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 4,
+      "ones": 9,
+      "ask": "number"
+    },
+    "options": [
+      48,
+      94,
+      49
+    ],
+    "answer": 49
+  },
+  {
+    "id": "g2-place-value-08",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 2,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 8,
+      "ones": 1,
+      "ask": "number"
+    },
+    "options": [
+      81,
+      82,
+      18
+    ],
+    "answer": 81
+  },
+  {
+    "id": "g2-place-value-09",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 2,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 3,
+      "ones": 2,
+      "ask": "number"
+    },
+    "options": [
+      32,
+      42,
+      23
+    ],
+    "answer": 32
+  },
+  {
+    "id": "g2-place-value-10",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 2,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 8,
+      "ones": 7,
+      "ask": "number"
+    },
+    "options": [
+      78,
+      86,
+      87
+    ],
+    "answer": 87
+  },
+  {
+    "id": "g2-place-value-11",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 2,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 4,
+      "ones": 1,
+      "ask": "number"
+    },
+    "options": [
+      41,
+      14,
+      51
+    ],
+    "answer": 41
+  },
+  {
+    "id": "g2-place-value-12",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 2,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 9,
+      "ones": 8,
+      "ask": "number"
+    },
+    "options": [
+      98,
+      97,
+      89
+    ],
+    "answer": 98
+  },
+  {
+    "id": "g2-place-value-13",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 2,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 7,
+      "ones": 7,
+      "ask": "number"
+    },
+    "options": [
+      76,
+      77,
+      87
+    ],
+    "answer": 77
+  },
+  {
+    "id": "g2-place-value-14",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 2,
+    "prompt": "What number is this?",
+    "type": "place-value",
+    "payload": {
+      "tens": 6,
+      "ones": 8,
+      "ask": "number"
+    },
+    "options": [
+      68,
+      78,
+      86
+    ],
+    "answer": 68
+  },
+  {
+    "id": "g2-place-value-15",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 3,
+    "prompt": "How many ones are in 82?",
+    "type": "place-value",
+    "payload": {
+      "tens": 8,
+      "ones": 2,
+      "ask": "ones"
+    },
+    "options": [
+      7,
+      8,
+      2
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g2-place-value-16",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 3,
+    "prompt": "How many tens are in 80?",
+    "type": "place-value",
+    "payload": {
+      "tens": 8,
+      "ones": 0,
+      "ask": "tens"
+    },
+    "options": [
+      0,
+      8,
+      3
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g2-place-value-17",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 3,
+    "prompt": "How many ones are in 23?",
+    "type": "place-value",
+    "payload": {
+      "tens": 2,
+      "ones": 3,
+      "ask": "ones"
+    },
+    "options": [
+      9,
+      3,
+      2
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g2-place-value-18",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 3,
+    "prompt": "How many tens are in 47?",
+    "type": "place-value",
+    "payload": {
+      "tens": 4,
+      "ones": 7,
+      "ask": "tens"
+    },
+    "options": [
+      6,
+      7,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g2-place-value-19",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 3,
+    "prompt": "How many ones are in 83?",
+    "type": "place-value",
+    "payload": {
+      "tens": 8,
+      "ones": 3,
+      "ask": "ones"
+    },
+    "options": [
+      3,
+      8,
+      9
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g2-place-value-20",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-place-value",
+    "difficulty": 3,
+    "prompt": "How many tens are in 54?",
+    "type": "place-value",
+    "payload": {
+      "tens": 5,
+      "ones": 4,
+      "ask": "tens"
+    },
+    "options": [
+      4,
+      7,
+      5
+    ],
+    "answer": 5
+  }
+]

@@ -1,0 +1,491 @@
+[
+  {
+    "id": "g2-money-01",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 1,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        2,
+        2
+      ],
+      "notes": []
+    },
+    "options": [
+      19,
+      9,
+      10
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g2-money-02",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 1,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        2,
+        1
+      ],
+      "notes": []
+    },
+    "options": [
+      8,
+      3,
+      13
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g2-money-03",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 1,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        1
+      ],
+      "notes": []
+    },
+    "options": [
+      1,
+      7,
+      6
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g2-money-04",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 1,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        2,
+        1,
+        1
+      ],
+      "notes": []
+    },
+    "options": [
+      2,
+      9,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g2-money-05",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 1,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        2
+      ],
+      "notes": []
+    },
+    "options": [
+      9,
+      7,
+      2
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g2-money-06",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 1,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        1,
+        1
+      ],
+      "notes": []
+    },
+    "options": [
+      8,
+      7,
+      12
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g2-money-07",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 1,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        5
+      ],
+      "notes": []
+    },
+    "options": [
+      20,
+      15,
+      10
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g2-money-08",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 2,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        2,
+        2
+      ],
+      "notes": [
+        20,
+        20
+      ]
+    },
+    "options": [
+      47,
+      49,
+      48
+    ],
+    "answer": 49
+  },
+  {
+    "id": "g2-money-09",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 2,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        1,
+        1
+      ],
+      "notes": [
+        20,
+        20
+      ]
+    },
+    "options": [
+      42,
+      49,
+      47
+    ],
+    "answer": 47
+  },
+  {
+    "id": "g2-money-10",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 2,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        10,
+        1,
+        1,
+        1
+      ],
+      "notes": [
+        20,
+        10
+      ]
+    },
+    "options": [
+      42,
+      38,
+      43
+    ],
+    "answer": 43
+  },
+  {
+    "id": "g2-money-11",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 2,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        1
+      ],
+      "notes": [
+        20
+      ]
+    },
+    "options": [
+      21,
+      26,
+      28
+    ],
+    "answer": 26
+  },
+  {
+    "id": "g2-money-12",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 2,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        2
+      ],
+      "notes": [
+        10
+      ]
+    },
+    "options": [
+      15,
+      17,
+      19
+    ],
+    "answer": 17
+  },
+  {
+    "id": "g2-money-13",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 2,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        10,
+        1
+      ],
+      "notes": [
+        10,
+        10
+      ]
+    },
+    "options": [
+      36,
+      31,
+      41
+    ],
+    "answer": 31
+  },
+  {
+    "id": "g2-money-14",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 2,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        2,
+        1
+      ],
+      "notes": [
+        20,
+        10
+      ]
+    },
+    "options": [
+      33,
+      35,
+      28
+    ],
+    "answer": 33
+  },
+  {
+    "id": "g2-money-15",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 3,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        10,
+        10
+      ],
+      "notes": [
+        20,
+        10
+      ]
+    },
+    "options": [
+      50,
+      55,
+      49
+    ],
+    "answer": 50
+  },
+  {
+    "id": "g2-money-16",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 3,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        10,
+        10
+      ],
+      "notes": [
+        50
+      ]
+    },
+    "options": [
+      75,
+      70,
+      80
+    ],
+    "answer": 70
+  },
+  {
+    "id": "g2-money-17",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 3,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        10,
+        1
+      ],
+      "notes": [
+        50,
+        20
+      ]
+    },
+    "options": [
+      76,
+      83,
+      81
+    ],
+    "answer": 81
+  },
+  {
+    "id": "g2-money-18",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 3,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        5,
+        2,
+        1
+      ],
+      "notes": [
+        10,
+        10,
+        10
+      ]
+    },
+    "options": [
+      41,
+      43,
+      53
+    ],
+    "answer": 43
+  },
+  {
+    "id": "g2-money-19",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 3,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        5,
+        2,
+        2,
+        1
+      ],
+      "notes": [
+        50,
+        10
+      ]
+    },
+    "options": [
+      75,
+      70,
+      80
+    ],
+    "answer": 70
+  },
+  {
+    "id": "g2-money-20",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-money",
+    "difficulty": 3,
+    "prompt": "How much money is there?",
+    "type": "money",
+    "payload": {
+      "coins": [
+        10,
+        5,
+        1
+      ],
+      "notes": [
+        10
+      ]
+    },
+    "options": [
+      27,
+      26,
+      21
+    ],
+    "answer": 26
+  }
+]

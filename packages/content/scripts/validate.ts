@@ -5,6 +5,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CATEGORIES, oddCandidates } from '../src/categories.ts';
+import { timeLabel } from '../src/time.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
@@ -30,7 +31,7 @@ function check(p: any): string | null {
     case 'count-objects':
       return q.count === p.answer ? null : `count is ${q.count} but answer is ${p.answer}`;
     case 'arithmetic': {
-      const v = q.op === '+' ? q.a + q.b : q.op === '-' ? q.a - q.b : NaN;
+      const v = q.op === '+' ? q.a + q.b : q.op === '-' ? q.a - q.b : q.op === '×' ? q.a * q.b : NaN;
       return v === p.answer ? null : `${q.a} ${q.op} ${q.b} is ${v}, not ${p.answer}`;
     }
     case 'shape-match':
@@ -72,6 +73,33 @@ function check(p: any): string | null {
       if (extra) return `${extra} also rhymes with ${q.word}`;
       const noPic = p.options.find((o: string) => !q.pictures?.[o]);
       return noPic ? `no picture for ${noPic}` : null;
+    }
+    case 'place-value': {
+      if (q.tens < 0 || q.tens > 9 || q.ones < 0 || q.ones > 9) return 'digits must be 0–9';
+      const want = q.ask === 'tens' ? q.tens : q.ask === 'ones' ? q.ones : q.tens * 10 + q.ones;
+      return want === p.answer ? null : `answer should be ${want}`;
+    }
+    case 'number-pattern': {
+      const blanks = q.seq.filter((x: number | null) => x === null).length;
+      if (blanks !== 1) return 'needs exactly one blank';
+      const i = q.seq.indexOf(null);
+      const known = q.seq.map((x: number | null, k: number) => [k, x]).filter(([, x]: [number, number | null]) => x !== null) as [number, number][];
+      const step = (known[1][1] - known[0][1]) / (known[1][0] - known[0][0]);
+      if (!Number.isInteger(step) || step === 0) return 'no constant step';
+      if (!known.every(([k, x]) => x === known[0][1] + step * (k - known[0][0]))) return 'numbers do not go up by the same step';
+      const want = known[0][1] + step * (i - known[0][0]);
+      return want === p.answer ? null : `missing number is ${want}`;
+    }
+    case 'clock': {
+      const want = timeLabel(q.hour, q.minute);
+      if (p.options.some((o: string) => o !== p.answer && o === want)) return 'duplicate right answer';
+      return want === p.answer ? null : `the clock shows ${want}`;
+    }
+    case 'money': {
+      const ok = q.coins.every((c: number) => [1, 2, 5, 10].includes(c)) && q.notes.every((n: number) => [10, 20, 50, 100].includes(n));
+      if (!ok) return 'unknown coin or note';
+      const total = [...q.coins, ...q.notes].reduce((s: number, x: number) => s + x, 0);
+      return total === p.answer ? null : `coins and notes add up to ₹${total}`;
     }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);

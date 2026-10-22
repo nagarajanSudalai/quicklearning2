@@ -13,7 +13,7 @@ export const GRADE_COLORS: Record<Grade, string> = {
 
 export const GRADE_NOTES: Record<Grade, string> = {
   1: 'Grade 1 · ages 6–7: counting, shapes, simple patterns and picture words.',
-  2: 'Grade 2 · ages 7–8: addition & subtraction, number patterns, mini crosswords.',
+  2: 'Grade 2 · ages 7–8: numbers to 100, time, money, spelling and sentences, sudoku.',
   3: 'Grade 3 · ages 8–9: times tables, logic grids, spelling crosswords.',
   4: 'Grade 4 · ages 9–10: fractions, sudoku, word ladders, reading puzzles.',
   5: 'Grade 5 · ages 10–11: decimals, brain teasers, science quizzes.',
@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -46,6 +46,13 @@ export const TOPICS: Topic[] = [
   { id: 'g1-crossword', grade: 1, subject: 'puzzles', title: 'Picture crossword', blurb: 'Fill in the letters', glyph: '▦', color: colors.blue },
   { id: 'g1-sorting', grade: 1, subject: 'thinking', title: 'Sorting', blurb: 'Put things in groups', glyph: '⇄', color: colors.green },
   { id: 'g1-memory', grade: 1, subject: 'thinking', title: 'Memory pairs', blurb: 'Find the matching cards', glyph: '▢▢', color: colors.purple },
+  { id: 'g2-place-value', grade: 2, subject: 'maths', title: 'Tens and ones', blurb: 'Numbers to 100', glyph: '10', color: colors.pink },
+  { id: 'g2-addition', grade: 2, subject: 'maths', title: 'Adding to 100', blurb: 'With and without carrying', glyph: '+', color: colors.orange },
+  { id: 'g2-subtraction', grade: 2, subject: 'maths', title: 'Taking away to 100', blurb: 'With and without borrowing', glyph: '−', color: colors.green },
+  { id: 'g2-skip-counting', grade: 2, subject: 'maths', title: 'Skip counting', blurb: 'In 2s, 5s and 10s', glyph: '2·4·6', color: colors.blue },
+  { id: 'g2-groups', grade: 2, subject: 'maths', title: 'Equal groups', blurb: 'Start to multiply', glyph: '×', color: colors.purple },
+  { id: 'g2-time', grade: 2, subject: 'maths', title: 'Time', blurb: "O'clock and half past", glyph: '🕒', color: colors.teal },
+  { id: 'g2-money', grade: 2, subject: 'maths', title: 'Money', blurb: 'Coins and notes in ₹', glyph: '₹', color: colors.orange },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

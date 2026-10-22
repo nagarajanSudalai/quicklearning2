@@ -1,0 +1,416 @@
+[
+  {
+    "id": "g2-groups-01",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 1,
+    "prompt": "5 groups of 2. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 5,
+      "op": "×",
+      "b": 2,
+      "item": "🍓"
+    },
+    "options": [
+      10,
+      9,
+      11
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g2-groups-02",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 1,
+    "prompt": "2 groups of 2. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 2,
+      "op": "×",
+      "b": 2,
+      "item": "🍪"
+    },
+    "options": [
+      4,
+      3,
+      6
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g2-groups-03",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 1,
+    "prompt": "4 groups of 3. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 4,
+      "op": "×",
+      "b": 3,
+      "item": "🍎"
+    },
+    "options": [
+      12,
+      9,
+      8
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-groups-04",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 1,
+    "prompt": "3 groups of 3. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3,
+      "op": "×",
+      "b": 3,
+      "item": "🌸"
+    },
+    "options": [
+      9,
+      12,
+      6
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g2-groups-05",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 1,
+    "prompt": "5 groups of 3. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 5,
+      "op": "×",
+      "b": 3,
+      "item": "🍎"
+    },
+    "options": [
+      14,
+      18,
+      15
+    ],
+    "answer": 15
+  },
+  {
+    "id": "g2-groups-06",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 1,
+    "prompt": "3 groups of 2. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3,
+      "op": "×",
+      "b": 2,
+      "item": "🍎"
+    },
+    "options": [
+      6,
+      5,
+      7
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g2-groups-07",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 1,
+    "prompt": "2 groups of 3. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 2,
+      "op": "×",
+      "b": 3,
+      "item": "⚽"
+    },
+    "options": [
+      6,
+      7,
+      8
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g2-groups-08",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 2,
+    "prompt": "3 groups of 4. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3,
+      "op": "×",
+      "b": 4,
+      "item": "⚽"
+    },
+    "options": [
+      16,
+      12,
+      8
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g2-groups-09",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 2,
+    "prompt": "2 groups of 5. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 2,
+      "op": "×",
+      "b": 5,
+      "item": "⚽"
+    },
+    "options": [
+      8,
+      9,
+      10
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g2-groups-10",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 2,
+    "prompt": "4 groups of 4. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 4,
+      "op": "×",
+      "b": 4,
+      "item": "🍎"
+    },
+    "options": [
+      12,
+      16,
+      20
+    ],
+    "answer": 16
+  },
+  {
+    "id": "g2-groups-11",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 2,
+    "prompt": "5 groups of 5. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 5,
+      "op": "×",
+      "b": 5,
+      "item": "🌸"
+    },
+    "options": [
+      24,
+      25,
+      20
+    ],
+    "answer": 25
+  },
+  {
+    "id": "g2-groups-12",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 2,
+    "prompt": "4 groups of 5. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 4,
+      "op": "×",
+      "b": 5,
+      "item": "🍓"
+    },
+    "options": [
+      20,
+      15,
+      21
+    ],
+    "answer": 20
+  },
+  {
+    "id": "g2-groups-13",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 2,
+    "prompt": "4 groups of 2. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 4,
+      "op": "×",
+      "b": 2,
+      "item": "🍎"
+    },
+    "options": [
+      8,
+      10,
+      7
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g2-groups-14",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 2,
+    "prompt": "5 groups of 4. How many in all?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 5,
+      "op": "×",
+      "b": 4,
+      "item": "🎈"
+    },
+    "options": [
+      25,
+      15,
+      20
+    ],
+    "answer": 20
+  },
+  {
+    "id": "g2-groups-15",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 3,
+    "prompt": "What is 5 times 10?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 5,
+      "op": "×",
+      "b": 10
+    },
+    "options": [
+      50,
+      49,
+      45
+    ],
+    "answer": 50
+  },
+  {
+    "id": "g2-groups-16",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 3,
+    "prompt": "What is 3 times 10?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3,
+      "op": "×",
+      "b": 10
+    },
+    "options": [
+      30,
+      31,
+      40
+    ],
+    "answer": 30
+  },
+  {
+    "id": "g2-groups-17",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 3,
+    "prompt": "What is 4 times 10?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 4,
+      "op": "×",
+      "b": 10
+    },
+    "options": [
+      44,
+      39,
+      40
+    ],
+    "answer": 40
+  },
+  {
+    "id": "g2-groups-18",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 3,
+    "prompt": "What is 9 times 5?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 9,
+      "op": "×",
+      "b": 5
+    },
+    "options": [
+      45,
+      40,
+      36
+    ],
+    "answer": 45
+  },
+  {
+    "id": "g2-groups-19",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 3,
+    "prompt": "What is 8 times 5?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 8,
+      "op": "×",
+      "b": 5
+    },
+    "options": [
+      40,
+      35,
+      32
+    ],
+    "answer": 40
+  },
+  {
+    "id": "g2-groups-20",
+    "grade": 2,
+    "subject": "maths",
+    "topic": "g2-groups",
+    "difficulty": 3,
+    "prompt": "What is 6 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 6,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      18,
+      12,
+      11
+    ],
+    "answer": 12
+  }
+]

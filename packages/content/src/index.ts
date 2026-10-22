@@ -14,6 +14,13 @@ import crossword from '../puzzles/g1-puzzles/crossword.json';
 import sorting from '../puzzles/g1-thinking/sorting.json';
 import memory from '../puzzles/g1-thinking/memory.json';
 import mazes from '../puzzles/g1-thinking/mazes.json';
+import g2PlaceValue from '../puzzles/g2-maths/place-value.json';
+import g2Addition from '../puzzles/g2-maths/addition.json';
+import g2Subtraction from '../puzzles/g2-maths/subtraction.json';
+import g2SkipCounting from '../puzzles/g2-maths/skip-counting.json';
+import g2Groups from '../puzzles/g2-maths/groups.json';
+import g2Time from '../puzzles/g2-maths/time.json';
+import g2Money from '../puzzles/g2-maths/money.json';
 
 export * from './types';
 export * from './tokens';
@@ -21,6 +28,7 @@ export * from './curriculum';
 export * from './voice';
 export * from './words';
 export * from './categories';
+export * from './time';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -28,6 +36,7 @@ export const PUZZLES = [
   ...letters, ...sounds, ...words, ...rhymes,
   ...oddOneOut, ...crossword,
   ...sorting, ...memory, ...mazes,
+  ...g2PlaceValue, ...g2Addition, ...g2Subtraction, ...g2SkipCounting, ...g2Groups, ...g2Time, ...g2Money,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

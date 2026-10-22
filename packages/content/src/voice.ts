@@ -33,6 +33,8 @@ export function speakable(text: string) {
   return text
     .replace(/\s*\+\s*/g, ' plus ')
     .replace(/\s*[−-]\s*(?=\d)/g, ' minus ')
+    .replace(/\s*×\s*/g, ' times ')
+    .replace(/₹\s?(\d+)/g, (_, n) => `${n} ${n === '1' ? 'rupee' : 'rupees'}`)
     .replace(/\s*=\s*\?/g, ' equals what?')
     .replace(/★/g, ' stars')
     .replace(/\s+/g, ' ')
