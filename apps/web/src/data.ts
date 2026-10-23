@@ -1,3 +1,7 @@
+import bookStackArt from './assets/card-book-stack.svg';
+import calendarArt from './assets/card-calendar.svg';
+import lightbulbArt from './assets/card-lightbulb.svg';
+import parentChildArt from './assets/card-parent-child.svg';
 // Grades, subjects and puzzle content are shared with the mobile app.
 export { GRADES, GRADE_COLORS, GRADE_NOTES, SUBJECTS, type Grade } from '@quickstep/content';
 
@@ -14,10 +18,10 @@ export const TAGS: Record<PostCategory, [string, string, string]> = {
 };
 
 export const POSTS: { cat: PostCategory; title: string; desc: string; when: string; img: string; bg: string }[] = [
-  { cat: 'Exam Updates', title: 'CBSE Class 10 Datesheet Announced', desc: 'Check important dates and official notice here.', when: '2 days ago', img: 'calendar art', bg: '#ffecec' },
-  { cat: 'Learning Guides', title: '7 Fun Number Puzzles for Primary Students', desc: 'Make maths fun with these simple activities.', when: '3 days ago', img: 'lightbulb art', bg: '#fff4dc' },
-  { cat: 'Parenting', title: 'How to Build a Daily Learning Habit', desc: 'Practical tips to encourage consistent learning.', when: '5 days ago', img: 'parent + child', bg: '#f2ecff' },
-  { cat: 'Study Tips', title: 'Best Books for Grade 1–5 Maths and English', desc: 'A curated list for home practice and concept building.', when: '1 week ago', img: 'book stack', bg: '#e9f6ff' },
+  { cat: 'Exam Updates', title: 'CBSE Class 10 Datesheet Announced', desc: 'Check important dates and official notice here.', when: '2 days ago', img: calendarArt, bg: '#ffecec' },
+  { cat: 'Learning Guides', title: '7 Fun Number Puzzles for Primary Students', desc: 'Make maths fun with these simple activities.', when: '3 days ago', img: lightbulbArt, bg: '#fff4dc' },
+  { cat: 'Parenting', title: 'How to Build a Daily Learning Habit', desc: 'Practical tips to encourage consistent learning.', when: '5 days ago', img: parentChildArt, bg: '#f2ecff' },
+  { cat: 'Study Tips', title: 'Best Books for Grade 1–5 Maths and English', desc: 'A curated list for home practice and concept building.', when: '1 week ago', img: bookStackArt, bg: '#e9f6ff' },
 ];
 
 export const FLOATERS = [

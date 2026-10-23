@@ -1,4 +1,5 @@
 import { useState, type CSSProperties } from 'react';
+import heroArt from '../assets/hero-illustration.svg';
 import { FLOATERS, GRADES, GRADE_COLORS, GRADE_NOTES, type Grade } from '../data';
 
 const BADGES = [
@@ -78,10 +79,7 @@ export function Hero({ animations }: { animations: boolean }) {
               {f.t}
             </span>
           ))}
-          {/* TODO: replace with the real hero illustration */}
-          <div className="placeholder hero__placeholder">
-            <span>hero illustration — kids + robot mascot hopping number stepping-stones</span>
-          </div>
+          <img className="hero__img" src={heroArt} alt="Children and a robot hopping across numbered stepping stones" width={1200} height={800} />
           <div className="ribbons">
             {RIBBONS.map((r) => (
               <span key={r.label} className="ribbon" style={{ background: r.bg, boxShadow: `0 4px 0 ${r.shadow}`, transform: `rotate(${r.rot})` }}>

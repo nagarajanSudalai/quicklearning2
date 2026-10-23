@@ -25,9 +25,8 @@ export function Discover() {
           const [tagBg, tagFg, tagLabel] = TAGS[x.cat];
           return (
             <a key={x.title} href="#" className="post">
-              {/* TODO: replace with real article thumbnail */}
-              <span className="post__thumb" style={{ background: `repeating-linear-gradient(135deg,${x.bg} 0 10px,#fff 10px 20px)` }}>
-                {x.img}
+              <span className="post__thumb" style={{ background: x.bg }}>
+                <img src={x.img} alt="" width={400} height={400} />
               </span>
               <span className="post__body">
                 <span className="post__tag" style={{ background: tagBg, color: tagFg }}>
