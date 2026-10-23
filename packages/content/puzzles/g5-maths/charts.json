@@ -1,0 +1,823 @@
+[
+  {
+    "id": "g5-charts-01",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 1,
+    "prompt": "How many children for Mango?",
+    "type": "chart",
+    "payload": {
+      "title": "Favourite fruits in class 5",
+      "unit": "children",
+      "bars": [
+        {
+          "label": "Mango",
+          "value": 16
+        },
+        {
+          "label": "Banana",
+          "value": 10
+        },
+        {
+          "label": "Apple",
+          "value": 30
+        },
+        {
+          "label": "Grapes",
+          "value": 20
+        }
+      ],
+      "ask": {
+        "kind": "value",
+        "label": "Mango"
+      }
+    },
+    "options": [
+      "18",
+      "14",
+      "16"
+    ],
+    "answer": "16"
+  },
+  {
+    "id": "g5-charts-02",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 1,
+    "prompt": "How many books for Kabir?",
+    "type": "chart",
+    "payload": {
+      "title": "Books read in a month",
+      "unit": "books",
+      "bars": [
+        {
+          "label": "Asha",
+          "value": 18
+        },
+        {
+          "label": "Ravi",
+          "value": 12
+        },
+        {
+          "label": "Meena",
+          "value": 16
+        },
+        {
+          "label": "Kabir",
+          "value": 24
+        }
+      ],
+      "ask": {
+        "kind": "value",
+        "label": "Kabir"
+      }
+    },
+    "options": [
+      "24",
+      "26",
+      "22"
+    ],
+    "answer": "24"
+  },
+  {
+    "id": "g5-charts-03",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 1,
+    "prompt": "How many days for June?",
+    "type": "chart",
+    "payload": {
+      "title": "Rainy days",
+      "unit": "days",
+      "bars": [
+        {
+          "label": "June",
+          "value": 22
+        },
+        {
+          "label": "July",
+          "value": 26
+        },
+        {
+          "label": "August",
+          "value": 30
+        },
+        {
+          "label": "September",
+          "value": 14
+        }
+      ],
+      "ask": {
+        "kind": "value",
+        "label": "June"
+      }
+    },
+    "options": [
+      "22",
+      "24",
+      "20"
+    ],
+    "answer": "22"
+  },
+  {
+    "id": "g5-charts-04",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 1,
+    "prompt": "How many runs for Sam?",
+    "type": "chart",
+    "payload": {
+      "title": "Runs scored",
+      "unit": "runs",
+      "bars": [
+        {
+          "label": "Arjun",
+          "value": 28
+        },
+        {
+          "label": "Priya",
+          "value": 22
+        },
+        {
+          "label": "Sam",
+          "value": 24
+        },
+        {
+          "label": "Tara",
+          "value": 4
+        }
+      ],
+      "ask": {
+        "kind": "value",
+        "label": "Sam"
+      }
+    },
+    "options": [
+      "26",
+      "24",
+      "22"
+    ],
+    "answer": "24"
+  },
+  {
+    "id": "g5-charts-05",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 1,
+    "prompt": "How many trees for Class C?",
+    "type": "chart",
+    "payload": {
+      "title": "Trees planted",
+      "unit": "trees",
+      "bars": [
+        {
+          "label": "Class A",
+          "value": 8
+        },
+        {
+          "label": "Class B",
+          "value": 18
+        },
+        {
+          "label": "Class C",
+          "value": 30
+        },
+        {
+          "label": "Class D",
+          "value": 22
+        }
+      ],
+      "ask": {
+        "kind": "value",
+        "label": "Class C"
+      }
+    },
+    "options": [
+      "30",
+      "32",
+      "28"
+    ],
+    "answer": "30"
+  },
+  {
+    "id": "g5-charts-06",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 1,
+    "prompt": "How many children for Banana?",
+    "type": "chart",
+    "payload": {
+      "title": "Favourite fruits in class 5",
+      "unit": "children",
+      "bars": [
+        {
+          "label": "Mango",
+          "value": 4
+        },
+        {
+          "label": "Banana",
+          "value": 30
+        },
+        {
+          "label": "Apple",
+          "value": 26
+        },
+        {
+          "label": "Grapes",
+          "value": 20
+        }
+      ],
+      "ask": {
+        "kind": "value",
+        "label": "Banana"
+      }
+    },
+    "options": [
+      "32",
+      "28",
+      "30"
+    ],
+    "answer": "30"
+  },
+  {
+    "id": "g5-charts-07",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 1,
+    "prompt": "How many books for Meena?",
+    "type": "chart",
+    "payload": {
+      "title": "Books read in a month",
+      "unit": "books",
+      "bars": [
+        {
+          "label": "Asha",
+          "value": 6
+        },
+        {
+          "label": "Ravi",
+          "value": 24
+        },
+        {
+          "label": "Meena",
+          "value": 22
+        },
+        {
+          "label": "Kabir",
+          "value": 12
+        }
+      ],
+      "ask": {
+        "kind": "value",
+        "label": "Meena"
+      }
+    },
+    "options": [
+      "20",
+      "24",
+      "22"
+    ],
+    "answer": "22"
+  },
+  {
+    "id": "g5-charts-08",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 2,
+    "prompt": "How many more days does September have than June?",
+    "type": "chart",
+    "payload": {
+      "title": "Rainy days",
+      "unit": "days",
+      "bars": [
+        {
+          "label": "June",
+          "value": 16
+        },
+        {
+          "label": "July",
+          "value": 20
+        },
+        {
+          "label": "August",
+          "value": 14
+        },
+        {
+          "label": "September",
+          "value": 26
+        }
+      ],
+      "ask": {
+        "kind": "diff",
+        "a": "September",
+        "b": "June"
+      }
+    },
+    "options": [
+      "12",
+      "10",
+      "8"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": "g5-charts-09",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 2,
+    "prompt": "How many more runs does Arjun have than Priya?",
+    "type": "chart",
+    "payload": {
+      "title": "Runs scored",
+      "unit": "runs",
+      "bars": [
+        {
+          "label": "Arjun",
+          "value": 26
+        },
+        {
+          "label": "Priya",
+          "value": 20
+        },
+        {
+          "label": "Sam",
+          "value": 30
+        },
+        {
+          "label": "Tara",
+          "value": 16
+        }
+      ],
+      "ask": {
+        "kind": "diff",
+        "a": "Arjun",
+        "b": "Priya"
+      }
+    },
+    "options": [
+      "8",
+      "4",
+      "6"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": "g5-charts-10",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 2,
+    "prompt": "How many more trees does Class B have than Class D?",
+    "type": "chart",
+    "payload": {
+      "title": "Trees planted",
+      "unit": "trees",
+      "bars": [
+        {
+          "label": "Class A",
+          "value": 4
+        },
+        {
+          "label": "Class B",
+          "value": 16
+        },
+        {
+          "label": "Class C",
+          "value": 18
+        },
+        {
+          "label": "Class D",
+          "value": 12
+        }
+      ],
+      "ask": {
+        "kind": "diff",
+        "a": "Class B",
+        "b": "Class D"
+      }
+    },
+    "options": [
+      "4",
+      "6",
+      "2"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "g5-charts-11",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 2,
+    "prompt": "How many more children does Mango have than Grapes?",
+    "type": "chart",
+    "payload": {
+      "title": "Favourite fruits in class 5",
+      "unit": "children",
+      "bars": [
+        {
+          "label": "Mango",
+          "value": 12
+        },
+        {
+          "label": "Banana",
+          "value": 8
+        },
+        {
+          "label": "Apple",
+          "value": 22
+        },
+        {
+          "label": "Grapes",
+          "value": 6
+        }
+      ],
+      "ask": {
+        "kind": "diff",
+        "a": "Grapes",
+        "b": "Mango"
+      }
+    },
+    "options": [
+      "8",
+      "6",
+      "4"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": "g5-charts-12",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 2,
+    "prompt": "How many more books does Kabir have than Ravi?",
+    "type": "chart",
+    "payload": {
+      "title": "Books read in a month",
+      "unit": "books",
+      "bars": [
+        {
+          "label": "Asha",
+          "value": 18
+        },
+        {
+          "label": "Ravi",
+          "value": 4
+        },
+        {
+          "label": "Meena",
+          "value": 8
+        },
+        {
+          "label": "Kabir",
+          "value": 30
+        }
+      ],
+      "ask": {
+        "kind": "diff",
+        "a": "Ravi",
+        "b": "Kabir"
+      }
+    },
+    "options": [
+      "28",
+      "26",
+      "24"
+    ],
+    "answer": "26"
+  },
+  {
+    "id": "g5-charts-13",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 2,
+    "prompt": "How many more days does September have than August?",
+    "type": "chart",
+    "payload": {
+      "title": "Rainy days",
+      "unit": "days",
+      "bars": [
+        {
+          "label": "June",
+          "value": 6
+        },
+        {
+          "label": "July",
+          "value": 8
+        },
+        {
+          "label": "August",
+          "value": 18
+        },
+        {
+          "label": "September",
+          "value": 26
+        }
+      ],
+      "ask": {
+        "kind": "diff",
+        "a": "August",
+        "b": "September"
+      }
+    },
+    "options": [
+      "8",
+      "6",
+      "10"
+    ],
+    "answer": "8"
+  },
+  {
+    "id": "g5-charts-14",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 2,
+    "prompt": "How many more runs does Tara have than Priya?",
+    "type": "chart",
+    "payload": {
+      "title": "Runs scored",
+      "unit": "runs",
+      "bars": [
+        {
+          "label": "Arjun",
+          "value": 30
+        },
+        {
+          "label": "Priya",
+          "value": 6
+        },
+        {
+          "label": "Sam",
+          "value": 8
+        },
+        {
+          "label": "Tara",
+          "value": 14
+        }
+      ],
+      "ask": {
+        "kind": "diff",
+        "a": "Tara",
+        "b": "Priya"
+      }
+    },
+    "options": [
+      "10",
+      "6",
+      "8"
+    ],
+    "answer": "8"
+  },
+  {
+    "id": "g5-charts-15",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 3,
+    "prompt": "Which bar is the smallest?",
+    "type": "chart",
+    "payload": {
+      "title": "Trees planted",
+      "unit": "trees",
+      "bars": [
+        {
+          "label": "Class A",
+          "value": 12
+        },
+        {
+          "label": "Class B",
+          "value": 14
+        },
+        {
+          "label": "Class C",
+          "value": 10
+        },
+        {
+          "label": "Class D",
+          "value": 22
+        }
+      ],
+      "ask": {
+        "kind": "least"
+      }
+    },
+    "options": [
+      "Class D",
+      "Class B",
+      "Class C"
+    ],
+    "answer": "Class C"
+  },
+  {
+    "id": "g5-charts-16",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 3,
+    "prompt": "How many children in total?",
+    "type": "chart",
+    "payload": {
+      "title": "Favourite fruits in class 5",
+      "unit": "children",
+      "bars": [
+        {
+          "label": "Mango",
+          "value": 20
+        },
+        {
+          "label": "Banana",
+          "value": 10
+        },
+        {
+          "label": "Apple",
+          "value": 30
+        },
+        {
+          "label": "Grapes",
+          "value": 14
+        }
+      ],
+      "ask": {
+        "kind": "total"
+      }
+    },
+    "options": [
+      "72",
+      "76",
+      "74"
+    ],
+    "answer": "74"
+  },
+  {
+    "id": "g5-charts-17",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 3,
+    "prompt": "How many books in total?",
+    "type": "chart",
+    "payload": {
+      "title": "Books read in a month",
+      "unit": "books",
+      "bars": [
+        {
+          "label": "Asha",
+          "value": 18
+        },
+        {
+          "label": "Ravi",
+          "value": 16
+        },
+        {
+          "label": "Meena",
+          "value": 28
+        },
+        {
+          "label": "Kabir",
+          "value": 14
+        }
+      ],
+      "ask": {
+        "kind": "total"
+      }
+    },
+    "options": [
+      "76",
+      "74",
+      "78"
+    ],
+    "answer": "76"
+  },
+  {
+    "id": "g5-charts-18",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 3,
+    "prompt": "Which bar is the smallest?",
+    "type": "chart",
+    "payload": {
+      "title": "Rainy days",
+      "unit": "days",
+      "bars": [
+        {
+          "label": "June",
+          "value": 16
+        },
+        {
+          "label": "July",
+          "value": 12
+        },
+        {
+          "label": "August",
+          "value": 22
+        },
+        {
+          "label": "September",
+          "value": 18
+        }
+      ],
+      "ask": {
+        "kind": "least"
+      }
+    },
+    "options": [
+      "July",
+      "June",
+      "September"
+    ],
+    "answer": "July"
+  },
+  {
+    "id": "g5-charts-19",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 3,
+    "prompt": "Which bar is the smallest?",
+    "type": "chart",
+    "payload": {
+      "title": "Runs scored",
+      "unit": "runs",
+      "bars": [
+        {
+          "label": "Arjun",
+          "value": 30
+        },
+        {
+          "label": "Priya",
+          "value": 10
+        },
+        {
+          "label": "Sam",
+          "value": 14
+        },
+        {
+          "label": "Tara",
+          "value": 16
+        }
+      ],
+      "ask": {
+        "kind": "least"
+      }
+    },
+    "options": [
+      "Tara",
+      "Sam",
+      "Priya"
+    ],
+    "answer": "Priya"
+  },
+  {
+    "id": "g5-charts-20",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-charts",
+    "difficulty": 3,
+    "prompt": "Which bar is the smallest?",
+    "type": "chart",
+    "payload": {
+      "title": "Trees planted",
+      "unit": "trees",
+      "bars": [
+        {
+          "label": "Class A",
+          "value": 28
+        },
+        {
+          "label": "Class B",
+          "value": 18
+        },
+        {
+          "label": "Class C",
+          "value": 10
+        },
+        {
+          "label": "Class D",
+          "value": 26
+        }
+      ],
+      "ask": {
+        "kind": "least"
+      }
+    },
+    "options": [
+      "Class D",
+      "Class C",
+      "Class B"
+    ],
+    "answer": "Class C"
+  }
+]

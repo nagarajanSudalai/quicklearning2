@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, clueText, fits, sudokuShape, type PickAllPuzzle, type WordLadderPuzzle, type BuildPuzzle, type LogicGridPuzzle, type MagicSquarePuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
+import { PHRASES, clueText, fits, sudokuShape, type PickAllPuzzle, type SumGridPuzzle, type WordLadderPuzzle, type BuildPuzzle, type LogicGridPuzzle, type MagicSquarePuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
@@ -29,6 +29,7 @@ export const PLAYERS: Players = {
   'magic-square': MagicSquare,
   'pick-all': PickAll,
   'word-ladder': WordLadder,
+  'sum-grid': SumGrid,
 };
 
 /** A tappable box that wiggles each time `wiggle` increments. */
@@ -657,6 +658,68 @@ function WordLadder({ puzzle, sound, onSolved, onMistake }: PlayerProps<WordLadd
   );
 }
 
+// ---------- Sum grid ----------
+
+function SumGrid({ puzzle, onSolved, onMistake }: PlayerProps<SumGridPuzzle>) {
+  const { grid: start, solution, rows, cols } = puzzle.payload;
+  const [grid, setGrid] = useState(start);
+  const [sel, setSel] = useState(() => start.indexOf(null));
+  const [mistakes, setMistakes] = useState(0);
+  const [wiggle, setWiggle] = useState<{ v: number; n: number }>({ v: -1, n: 0 });
+  const done = !grid.includes(null);
+  const left = [1, 2, 3, 4, 5, 6, 7, 8, 9].filter((v) => !grid.includes(v));
+
+  const place = (v: number) => {
+    if (done || sel === -1) return;
+    if (solution[sel] !== v) {
+      buzz('wrong');
+      setMistakes((m) => m + 1);
+      setWiggle((w) => ({ v, n: w.n + 1 }));
+      onMistake();
+      return;
+    }
+    buzz('right');
+    const g = [...grid];
+    g[sel] = v;
+    setGrid(g);
+    const next = [...g.keys()].map((k) => (sel + 1 + k) % 9).find((k) => g[k] === null) ?? -1;
+    setSel(next);
+    if (next === -1) onSolved(mistakes === 0);
+  };
+
+  return (
+    <View style={{ gap: 14, alignItems: 'center' }}>
+      <View>
+        {[0, 1, 2].map((r) => (
+          <View key={r} style={{ flexDirection: 'row', alignItems: 'center' }}>
+            {[0, 1, 2].map((c) => {
+              const k = r * 3 + c, v = grid[k], given = start[k] !== null;
+              return (
+                <Pressable key={c} onPress={() => !given && v === null && setSel(k)} accessibilityRole="button"
+                  accessibilityLabel={v !== null ? String(v) : `Empty square, row ${r + 1}, column ${c + 1}`}
+                  style={[styles.mCell, given && styles.sGiven, !given && v !== null && styles.cellDone, sel === k && styles.cellActive]}>
+                  <Text style={styles.mNum}>{v ?? ''}</Text>
+                </Pressable>
+              );
+            })}
+            <Text style={styles.sumTotal}>= {rows[r]}</Text>
+          </View>
+        ))}
+        <View style={{ flexDirection: 'row' }}>
+          {cols.map((t, c) => <View key={c} style={{ width: 72, alignItems: 'center' }}><Text style={styles.sumTotal}>{t}</Text></View>)}
+        </View>
+      </View>
+      <View style={styles.letterRow}>
+        {left.map((v) => (
+          <Tap key={v} onPress={() => place(v)} wiggle={wiggle.v === v ? wiggle.n : 0} label={`Place ${v}`} disabled={done} style={styles.letterKey}>
+            <Text style={styles.sNumber}>{v}</Text>
+          </Tap>
+        ))}
+      </View>
+    </View>
+  );
+}
+
 // ---------- Maze ----------
 
 const MOVES = { up: [-1, 0, 1], right: [0, 1, 2], down: [1, 0, 4], left: [0, -1, 8] } as const;
@@ -804,6 +867,7 @@ const styles = StyleSheet.create({
   rungBlank: { backgroundColor: colors.surface, borderColor: colors.blank, borderStyle: 'dashed', minWidth: 90, justifyContent: 'center' },
   rungLetter: { fontFamily: font.display, fontSize: 26, color: colors.ink, letterSpacing: 2 },
   blankRung: { fontFamily: font.display, fontSize: 24, color: colors.blank },
+  sumTotal: { width: 52, textAlign: 'center', fontFamily: font.bodyHeavy, fontSize: 17, color: colors.brandDeep },
   hint: { fontFamily: font.bodyBold, fontSize: 12, color: colors.muted },
   slots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' },
   letterSlot: { width: 46, height: 52, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },

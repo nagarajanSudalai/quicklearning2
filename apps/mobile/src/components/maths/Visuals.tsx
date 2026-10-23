@@ -140,13 +140,15 @@ export function Ruler({ item, start, length }: { item: string; start: number; le
 }
 
 /** A shape on squared paper; with `labels`, a plain rectangle with its side lengths written on. */
-export function GridShape({ rows, cols, cells, labels }: { rows: number; cols: number; cells: boolean[]; labels?: boolean }) {
+export function GridShape({ rows, cols, cells, labels, triangle }: { rows: number; cols: number; cells: boolean[]; labels?: boolean; triangle?: boolean }) {
   const cell = Math.min(36, Math.floor(260 / cols));
   if (labels) {
     const w = cols * 24, h = rows * 24;
     return (
       <Svg width={w + 70} height={h + 50} accessibilityLabel={`rectangle ${cols} by ${rows}`}>
-        <Rect x={60} y={10} width={w} height={h} fill={colors.brandTint} stroke={colors.brand} strokeWidth={3} />
+        {triangle
+          ? <Path d={`M60 ${10 + h} L${60 + w} ${10 + h} L60 10 Z`} fill={colors.brandTint} stroke={colors.brand} strokeWidth={3} />
+          : <Rect x={60} y={10} width={w} height={h} fill={colors.brandTint} stroke={colors.brand} strokeWidth={3} />}
         <SvgText x={60 + w / 2} y={h + 36} fontSize={16} fontWeight="700" fill={colors.ink} textAnchor="middle">{cols} cm</SvgText>
         <SvgText x={52} y={10 + h / 2 + 5} fontSize={16} fontWeight="700" fill={colors.ink} textAnchor="end">{rows} cm</SvgText>
       </Svg>
@@ -157,6 +159,64 @@ export function GridShape({ rows, cols, cells, labels }: { rows: number; cols: n
       {cells.map((on, k) => (
         <Rect key={k} x={1 + (k % cols) * cell} y={1 + Math.floor(k / cols) * cell} width={cell} height={cell}
           fill={on ? colors.purple : '#fff'} stroke={on ? colors.brandDark : colors.choiceBorder} strokeWidth={on ? 1.5 : 1} />
+      ))}
+    </Svg>
+  );
+}
+
+/** 10×10 grid with the first `shaded` squares filled. */
+export function HundredGrid({ shaded }: { shaded: number }) {
+  const c = 19;
+  return (
+    <Svg width={c * 10 + 2} height={c * 10 + 2} accessibilityLabel={`${shaded} of 100 squares shaded`}>
+      {Array.from({ length: 100 }, (_, k) => (
+        <Rect key={k} x={1 + (k % 10) * c} y={1 + Math.floor(k / 10) * c} width={c} height={c} fill={k < shaded ? colors.purple : '#fff'} stroke={colors.choiceBorder} strokeWidth={1} />
+      ))}
+    </Svg>
+  );
+}
+
+/** An angle opening anticlockwise from a horizontal arm; with `scale`, a protractor in 10° steps. */
+export function Angle({ degrees, scale }: { degrees: number; scale?: boolean }) {
+  const cx = 120, cy = 130, r = 100;
+  const pt = (deg: number, len: number) => [cx + len * Math.cos((deg * Math.PI) / 180), cy - len * Math.sin((deg * Math.PI) / 180)];
+  const [ex, ey] = pt(degrees, r);
+  const [ax, ay] = pt(degrees, 30);
+  return (
+    <Svg width={240} height={150} accessibilityLabel={`angle of ${degrees} degrees`}>
+      {scale && <Path d={`M${cx - r} ${cy} A${r} ${r} 0 0 1 ${cx + r} ${cy}`} fill="#fff7d6" stroke={colors.ink} strokeWidth={1.5} />}
+      {scale && Array.from({ length: 19 }, (_, k) => {
+        const [x1, y1] = pt(k * 10, r), [x2, y2] = pt(k * 10, k % 3 === 0 ? r - 14 : r - 8), [tx, ty] = pt(k * 10, r - 24);
+        return [
+          <Line key={`t${k}`} x1={x1} y1={y1} x2={x2} y2={y2} stroke={colors.ink} strokeWidth={1} />,
+          k % 3 === 0 ? <SvgText key={`n${k}`} x={tx} y={ty + 4} fontSize={10} fill={colors.ink} textAnchor="middle">{k * 10}</SvgText> : null,
+        ];
+      })}
+      <Line x1={cx} y1={cy} x2={cx + r} y2={cy} stroke={colors.brand} strokeWidth={4} strokeLinecap="round" />
+      <Line x1={cx} y1={cy} x2={ex} y2={ey} stroke={colors.brand} strokeWidth={4} strokeLinecap="round" />
+      {degrees === 90
+        ? <Path d={`M${cx + 18} ${cy} L${cx + 18} ${cy - 18} L${cx} ${cy - 18}`} fill="none" stroke={colors.pink} strokeWidth={2.5} />
+        : <Path d={`M${cx + 30} ${cy} A30 30 0 ${degrees > 180 ? 1 : 0} 0 ${ax} ${ay}`} fill="none" stroke={colors.pink} strokeWidth={2.5} />}
+      <Circle cx={cx} cy={cy} r={4} fill={colors.ink} />
+    </Svg>
+  );
+}
+
+/** A labelled bar chart with gridlines every 4 units. */
+export function BarChart({ title, bars }: { title: string; bars: { label: string; value: number }[] }) {
+  const max = Math.ceil(Math.max(...bars.map((b) => b.value)) / 4) * 4;
+  const W = 270, H = 170, left = 28, bottom = 26, plotH = H - bottom - 18, bw = (W - left) / bars.length;
+  const y = (v: number) => 18 + plotH - (v / max) * plotH;
+  return (
+    <Svg width={W} height={H + 18} accessibilityLabel={title}>
+      <SvgText x={W / 2} y={12} fontSize={12} fontWeight="700" fill={colors.ink} textAnchor="middle">{title}</SvgText>
+      {Array.from({ length: max / 4 + 1 }, (_, k) => (
+        [<Line key={`g${k}`} x1={left} x2={W} y1={y(k * 4)} y2={y(k * 4)} stroke={colors.choiceBorder} strokeWidth={1} />,
+          <SvgText key={`l${k}`} x={left - 4} y={y(k * 4) + 4} fontSize={10} fill={colors.muted} textAnchor="end">{k * 4}</SvgText>]
+      ))}
+      {bars.map((b, k) => (
+        [<Rect key={`b${k}`} x={left + k * bw + bw * 0.2} y={y(b.value)} width={bw * 0.6} height={y(0) - y(b.value)} rx={3} fill={[colors.pink, colors.orange, colors.green, colors.blue][k % 4]} />,
+          <SvgText key={`x${k}`} x={left + k * bw + bw / 2} y={H + 2} fontSize={11} fontWeight="700" fill={colors.ink} textAnchor="middle">{b.label}</SvgText>]
       ))}
     </Svg>
   );

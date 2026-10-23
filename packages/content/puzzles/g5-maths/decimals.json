@@ -1,0 +1,396 @@
+[
+  {
+    "id": "g5-decimals-01",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 1,
+    "prompt": "Which is bigger, 0.12 or 0.9?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.12",
+      "b": "0.9"
+    },
+    "options": [
+      "0.12",
+      "0.9"
+    ],
+    "answer": "0.9"
+  },
+  {
+    "id": "g5-decimals-02",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 1,
+    "prompt": "Which is bigger, 0.84 or 0.5?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.84",
+      "b": "0.5"
+    },
+    "options": [
+      "0.84",
+      "0.5"
+    ],
+    "answer": "0.84"
+  },
+  {
+    "id": "g5-decimals-03",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 1,
+    "prompt": "Which is bigger, 0.93 or 0.5?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.93",
+      "b": "0.5"
+    },
+    "options": [
+      "0.93",
+      "0.5"
+    ],
+    "answer": "0.93"
+  },
+  {
+    "id": "g5-decimals-04",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 1,
+    "prompt": "Which is bigger, 0.11 or 0.3?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.11",
+      "b": "0.3"
+    },
+    "options": [
+      "0.11",
+      "0.3"
+    ],
+    "answer": "0.3"
+  },
+  {
+    "id": "g5-decimals-05",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 1,
+    "prompt": "Which is bigger, 0.12 or 0.4?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.12",
+      "b": "0.4"
+    },
+    "options": [
+      "0.12",
+      "0.4"
+    ],
+    "answer": "0.4"
+  },
+  {
+    "id": "g5-decimals-06",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 1,
+    "prompt": "Which is bigger, 0.35 or 0.5?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.35",
+      "b": "0.5"
+    },
+    "options": [
+      "0.35",
+      "0.5"
+    ],
+    "answer": "0.5"
+  },
+  {
+    "id": "g5-decimals-07",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 1,
+    "prompt": "Which is bigger, 0.32 or 0.1?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.32",
+      "b": "0.1"
+    },
+    "options": [
+      "0.32",
+      "0.1"
+    ],
+    "answer": "0.32"
+  },
+  {
+    "id": "g5-decimals-08",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 2,
+    "prompt": "A pen costs ₹7.12 and a notebook costs ₹28.88. How much do they cost together?",
+    "type": "decimal",
+    "payload": {
+      "kind": "add",
+      "a": "7.12",
+      "b": "28.88",
+      "op": "+"
+    },
+    "options": [
+      "36.00",
+      "37.00",
+      "35.90"
+    ],
+    "answer": "36.00"
+  },
+  {
+    "id": "g5-decimals-09",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 2,
+    "prompt": "You have ₹59.82. You spend ₹6.73. How much is left?",
+    "type": "decimal",
+    "payload": {
+      "kind": "add",
+      "a": "59.82",
+      "b": "6.73",
+      "op": "-"
+    },
+    "options": [
+      "52.99",
+      "53.09",
+      "54.09"
+    ],
+    "answer": "53.09"
+  },
+  {
+    "id": "g5-decimals-10",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 2,
+    "prompt": "A pen costs ₹30.99 and a notebook costs ₹12.28. How much do they cost together?",
+    "type": "decimal",
+    "payload": {
+      "kind": "add",
+      "a": "30.99",
+      "b": "12.28",
+      "op": "+"
+    },
+    "options": [
+      "43.17",
+      "44.27",
+      "43.27"
+    ],
+    "answer": "43.27"
+  },
+  {
+    "id": "g5-decimals-11",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 2,
+    "prompt": "A pen costs ₹64.27 and a notebook costs ₹38.14. How much do they cost together?",
+    "type": "decimal",
+    "payload": {
+      "kind": "add",
+      "a": "64.27",
+      "b": "38.14",
+      "op": "+"
+    },
+    "options": [
+      "102.41",
+      "102.31",
+      "103.41"
+    ],
+    "answer": "102.41"
+  },
+  {
+    "id": "g5-decimals-12",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 2,
+    "prompt": "A pen costs ₹31.36 and a notebook costs ₹45.38. How much do they cost together?",
+    "type": "decimal",
+    "payload": {
+      "kind": "add",
+      "a": "31.36",
+      "b": "45.38",
+      "op": "+"
+    },
+    "options": [
+      "76.74",
+      "77.74",
+      "76.64"
+    ],
+    "answer": "76.74"
+  },
+  {
+    "id": "g5-decimals-13",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 2,
+    "prompt": "A pen costs ₹3.89 and a notebook costs ₹46.71. How much do they cost together?",
+    "type": "decimal",
+    "payload": {
+      "kind": "add",
+      "a": "3.89",
+      "b": "46.71",
+      "op": "+"
+    },
+    "options": [
+      "51.60",
+      "50.60",
+      "50.50"
+    ],
+    "answer": "50.60"
+  },
+  {
+    "id": "g5-decimals-14",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 2,
+    "prompt": "You have ₹37.84. You spend ₹10.02. How much is left?",
+    "type": "decimal",
+    "payload": {
+      "kind": "add",
+      "a": "37.84",
+      "b": "10.02",
+      "op": "-"
+    },
+    "options": [
+      "27.82",
+      "28.82",
+      "27.72"
+    ],
+    "answer": "27.82"
+  },
+  {
+    "id": "g5-decimals-15",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 3,
+    "prompt": "Round 10.8 to the nearest whole number.",
+    "type": "decimal",
+    "payload": {
+      "kind": "round",
+      "a": "10.8"
+    },
+    "options": [
+      "11",
+      "10",
+      "12"
+    ],
+    "answer": "11"
+  },
+  {
+    "id": "g5-decimals-16",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 3,
+    "prompt": "Round 17.4 to the nearest whole number.",
+    "type": "decimal",
+    "payload": {
+      "kind": "round",
+      "a": "17.4"
+    },
+    "options": [
+      "18",
+      "17",
+      "16"
+    ],
+    "answer": "17"
+  },
+  {
+    "id": "g5-decimals-17",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 3,
+    "prompt": "Round 26.1 to the nearest whole number.",
+    "type": "decimal",
+    "payload": {
+      "kind": "round",
+      "a": "26.1"
+    },
+    "options": [
+      "26",
+      "25",
+      "27"
+    ],
+    "answer": "26"
+  },
+  {
+    "id": "g5-decimals-18",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 3,
+    "prompt": "Round 79.6 to the nearest whole number.",
+    "type": "decimal",
+    "payload": {
+      "kind": "round",
+      "a": "79.6"
+    },
+    "options": [
+      "80",
+      "79",
+      "81"
+    ],
+    "answer": "80"
+  },
+  {
+    "id": "g5-decimals-19",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 3,
+    "prompt": "Round 24.3 to the nearest whole number.",
+    "type": "decimal",
+    "payload": {
+      "kind": "round",
+      "a": "24.3"
+    },
+    "options": [
+      "25",
+      "23",
+      "24"
+    ],
+    "answer": "24"
+  },
+  {
+    "id": "g5-decimals-20",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-decimals",
+    "difficulty": 3,
+    "prompt": "Round 19.1 to the nearest whole number.",
+    "type": "decimal",
+    "payload": {
+      "kind": "round",
+      "a": "19.1"
+    },
+    "options": [
+      "20",
+      "18",
+      "19"
+    ],
+    "answer": "19"
+  }
+]

@@ -1,0 +1,480 @@
+[
+  {
+    "id": "g5-geometry-01",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 1,
+    "prompt": "What kind of angle is this?",
+    "type": "angle",
+    "payload": {
+      "degrees": 90,
+      "ask": "name"
+    },
+    "options": [
+      "acute",
+      "right",
+      "obtuse"
+    ],
+    "answer": "right"
+  },
+  {
+    "id": "g5-geometry-02",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 1,
+    "prompt": "What kind of angle is this?",
+    "type": "angle",
+    "payload": {
+      "degrees": 30,
+      "ask": "name"
+    },
+    "options": [
+      "acute",
+      "right",
+      "obtuse"
+    ],
+    "answer": "acute"
+  },
+  {
+    "id": "g5-geometry-03",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 1,
+    "prompt": "What kind of angle is this?",
+    "type": "angle",
+    "payload": {
+      "degrees": 110,
+      "ask": "name"
+    },
+    "options": [
+      "acute",
+      "right",
+      "obtuse"
+    ],
+    "answer": "obtuse"
+  },
+  {
+    "id": "g5-geometry-04",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 1,
+    "prompt": "What kind of angle is this?",
+    "type": "angle",
+    "payload": {
+      "degrees": 70,
+      "ask": "name"
+    },
+    "options": [
+      "acute",
+      "right",
+      "obtuse"
+    ],
+    "answer": "acute"
+  },
+  {
+    "id": "g5-geometry-05",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 1,
+    "prompt": "What kind of angle is this?",
+    "type": "angle",
+    "payload": {
+      "degrees": 120,
+      "ask": "name"
+    },
+    "options": [
+      "acute",
+      "right",
+      "obtuse"
+    ],
+    "answer": "obtuse"
+  },
+  {
+    "id": "g5-geometry-06",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 1,
+    "prompt": "What kind of angle is this?",
+    "type": "angle",
+    "payload": {
+      "degrees": 150,
+      "ask": "name"
+    },
+    "options": [
+      "acute",
+      "right",
+      "obtuse"
+    ],
+    "answer": "obtuse"
+  },
+  {
+    "id": "g5-geometry-07",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 1,
+    "prompt": "What kind of angle is this?",
+    "type": "angle",
+    "payload": {
+      "degrees": 140,
+      "ask": "name"
+    },
+    "options": [
+      "acute",
+      "right",
+      "obtuse"
+    ],
+    "answer": "obtuse"
+  },
+  {
+    "id": "g5-geometry-08",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 2,
+    "prompt": "How big is this angle?",
+    "type": "angle",
+    "payload": {
+      "degrees": 40,
+      "ask": "measure"
+    },
+    "options": [
+      "140°",
+      "50°",
+      "40°"
+    ],
+    "answer": "40°"
+  },
+  {
+    "id": "g5-geometry-09",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 2,
+    "prompt": "How big is this angle?",
+    "type": "angle",
+    "payload": {
+      "degrees": 110,
+      "ask": "measure"
+    },
+    "options": [
+      "120°",
+      "70°",
+      "110°"
+    ],
+    "answer": "110°"
+  },
+  {
+    "id": "g5-geometry-10",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 2,
+    "prompt": "How big is this angle?",
+    "type": "angle",
+    "payload": {
+      "degrees": 100,
+      "ask": "measure"
+    },
+    "options": [
+      "100°",
+      "110°",
+      "80°"
+    ],
+    "answer": "100°"
+  },
+  {
+    "id": "g5-geometry-11",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 2,
+    "prompt": "How big is this angle?",
+    "type": "angle",
+    "payload": {
+      "degrees": 30,
+      "ask": "measure"
+    },
+    "options": [
+      "40°",
+      "150°",
+      "30°"
+    ],
+    "answer": "30°"
+  },
+  {
+    "id": "g5-geometry-12",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 2,
+    "prompt": "How big is this angle?",
+    "type": "angle",
+    "payload": {
+      "degrees": 130,
+      "ask": "measure"
+    },
+    "options": [
+      "50°",
+      "140°",
+      "130°"
+    ],
+    "answer": "130°"
+  },
+  {
+    "id": "g5-geometry-13",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 2,
+    "prompt": "How big is this angle?",
+    "type": "angle",
+    "payload": {
+      "degrees": 140,
+      "ask": "measure"
+    },
+    "options": [
+      "40°",
+      "140°",
+      "150°"
+    ],
+    "answer": "140°"
+  },
+  {
+    "id": "g5-geometry-14",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 2,
+    "prompt": "How big is this angle?",
+    "type": "angle",
+    "payload": {
+      "degrees": 20,
+      "ask": "measure"
+    },
+    "options": [
+      "160°",
+      "20°",
+      "30°"
+    ],
+    "answer": "20°"
+  },
+  {
+    "id": "g5-geometry-15",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 3,
+    "prompt": "A triangle has a base of 4 cm and a height of 2 cm. What is its area in square cm?",
+    "type": "grid-shape",
+    "payload": {
+      "rows": 2,
+      "cols": 4,
+      "cells": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "ask": "area",
+      "labels": true,
+      "triangle": true
+    },
+    "options": [
+      8,
+      4,
+      3
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-geometry-16",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 3,
+    "prompt": "A triangle has a base of 8 cm and a height of 2 cm. What is its area in square cm?",
+    "type": "grid-shape",
+    "payload": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "ask": "area",
+      "labels": true,
+      "triangle": true
+    },
+    "options": [
+      8,
+      10,
+      9
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g5-geometry-17",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 3,
+    "prompt": "A triangle has a base of 6 cm and a height of 3 cm. What is its area in square cm?",
+    "type": "grid-shape",
+    "payload": {
+      "rows": 3,
+      "cols": 6,
+      "cells": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "ask": "area",
+      "labels": true,
+      "triangle": true
+    },
+    "options": [
+      18,
+      8,
+      9
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g5-geometry-18",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 3,
+    "prompt": "A triangle has a base of 2 cm and a height of 2 cm. What is its area in square cm?",
+    "type": "grid-shape",
+    "payload": {
+      "rows": 2,
+      "cols": 2,
+      "cells": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ask": "area",
+      "labels": true,
+      "triangle": true
+    },
+    "options": [
+      3,
+      2,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g5-geometry-19",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 3,
+    "prompt": "A triangle has a base of 2 cm and a height of 3 cm. What is its area in square cm?",
+    "type": "grid-shape",
+    "payload": {
+      "rows": 3,
+      "cols": 2,
+      "cells": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "ask": "area",
+      "labels": true,
+      "triangle": true
+    },
+    "options": [
+      4,
+      2,
+      3
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g5-geometry-20",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-geometry",
+    "difficulty": 3,
+    "prompt": "A triangle has a base of 4 cm and a height of 4 cm. What is its area in square cm?",
+    "type": "grid-shape",
+    "payload": {
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "ask": "area",
+      "labels": true,
+      "triangle": true
+    },
+    "options": [
+      8,
+      7,
+      10
+    ],
+    "answer": 8
+  }
+]

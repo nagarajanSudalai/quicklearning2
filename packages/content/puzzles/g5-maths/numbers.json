@@ -1,0 +1,438 @@
+[
+  {
+    "id": "g5-numbers-01",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 1,
+    "prompt": "How many thousands are in 31,656?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 3,
+      "thousands": 1,
+      "hundreds": 6,
+      "tens": 5,
+      "ones": 6,
+      "ask": "thousands"
+    },
+    "options": [
+      6,
+      3,
+      1
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g5-numbers-02",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 1,
+    "prompt": "How many ten thousands are in 99,739?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 9,
+      "thousands": 9,
+      "hundreds": 7,
+      "tens": 3,
+      "ones": 9,
+      "ask": "tenThousands"
+    },
+    "options": [
+      7,
+      2,
+      9
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g5-numbers-03",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 1,
+    "prompt": "How many ten thousands are in 95,513?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 9,
+      "thousands": 5,
+      "hundreds": 5,
+      "tens": 1,
+      "ones": 3,
+      "ask": "tenThousands"
+    },
+    "options": [
+      9,
+      7,
+      5
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g5-numbers-04",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 1,
+    "prompt": "How many ten thousands are in 86,287?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 8,
+      "thousands": 6,
+      "hundreds": 2,
+      "tens": 8,
+      "ones": 7,
+      "ask": "tenThousands"
+    },
+    "options": [
+      2,
+      6,
+      8
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g5-numbers-05",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 1,
+    "prompt": "How many thousands are in 74,862?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 7,
+      "thousands": 4,
+      "hundreds": 8,
+      "tens": 6,
+      "ones": 2,
+      "ask": "thousands"
+    },
+    "options": [
+      7,
+      4,
+      8
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-numbers-06",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 1,
+    "prompt": "How many ten thousands are in 24,321?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 2,
+      "thousands": 4,
+      "hundreds": 3,
+      "tens": 2,
+      "ones": 1,
+      "ask": "tenThousands"
+    },
+    "options": [
+      2,
+      4,
+      3
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g5-numbers-07",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 1,
+    "prompt": "How many thousands are in 91,812?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 9,
+      "thousands": 1,
+      "hundreds": 8,
+      "tens": 1,
+      "ones": 2,
+      "ask": "thousands"
+    },
+    "options": [
+      1,
+      9,
+      8
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g5-numbers-08",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 4,
+      "thousands": 7,
+      "hundreds": 8,
+      "tens": 6,
+      "ones": 3,
+      "ask": "expanded"
+    },
+    "options": [
+      57863,
+      47863,
+      48763
+    ],
+    "answer": 47863
+  },
+  {
+    "id": "g5-numbers-09",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 2,
+      "thousands": 3,
+      "hundreds": 1,
+      "tens": 3,
+      "ones": 4,
+      "ask": "expanded"
+    },
+    "options": [
+      23134,
+      22134,
+      33134
+    ],
+    "answer": 23134
+  },
+  {
+    "id": "g5-numbers-10",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 9,
+      "thousands": 5,
+      "hundreds": 5,
+      "tens": 0,
+      "ones": 4,
+      "ask": "expanded"
+    },
+    "options": [
+      95504,
+      95604,
+      94504
+    ],
+    "answer": 95504
+  },
+  {
+    "id": "g5-numbers-11",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 1,
+      "thousands": 3,
+      "hundreds": 1,
+      "tens": 5,
+      "ones": 4,
+      "ask": "expanded"
+    },
+    "options": [
+      13154,
+      13254,
+      11354
+    ],
+    "answer": 13154
+  },
+  {
+    "id": "g5-numbers-12",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 2,
+      "thousands": 9,
+      "hundreds": 8,
+      "tens": 0,
+      "ones": 3,
+      "ask": "expanded"
+    },
+    "options": [
+      29803,
+      39803,
+      29903
+    ],
+    "answer": 29803
+  },
+  {
+    "id": "g5-numbers-13",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 7,
+      "thousands": 4,
+      "hundreds": 9,
+      "tens": 6,
+      "ones": 8,
+      "ask": "expanded"
+    },
+    "options": [
+      75068,
+      74968,
+      79468
+    ],
+    "answer": 74968
+  },
+  {
+    "id": "g5-numbers-14",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "tenThousands": 3,
+      "thousands": 3,
+      "hundreds": 4,
+      "tens": 3,
+      "ones": 7,
+      "ask": "expanded"
+    },
+    "options": [
+      43437,
+      33437,
+      33537
+    ],
+    "answer": 33437
+  },
+  {
+    "id": "g5-numbers-15",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 80,901 and 81,090?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 80901,
+      "b": 81090
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g5-numbers-16",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 20,375 and 25,730?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 20375,
+      "b": 25730
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g5-numbers-17",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 37,251 and 44,251?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 37251,
+      "b": 44251
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g5-numbers-18",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 92,421 and 92,371?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 92421,
+      "b": 92371
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": ">"
+  },
+  {
+    "id": "g5-numbers-19",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 65,116 and 65,116?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 65116,
+      "b": 65116
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "="
+  },
+  {
+    "id": "g5-numbers-20",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 51,295 and 51,285?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 51295,
+      "b": 51285
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": ">"
+  }
+]

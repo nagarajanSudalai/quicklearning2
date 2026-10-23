@@ -73,6 +73,14 @@ import g4Logic from '../puzzles/g4-thinking/logic.json';
 import g4Patterns from '../puzzles/g4-thinking/patterns.json';
 import g4Codes from '../puzzles/g4-thinking/codes.json';
 
+import g5Numbers from '../puzzles/g5-maths/numbers.json';
+import g5BigOps from '../puzzles/g5-maths/big-ops.json';
+import g5Fractions from '../puzzles/g5-maths/fractions.json';
+import g5Decimals from '../puzzles/g5-maths/decimals.json';
+import g5Percent from '../puzzles/g5-maths/percent.json';
+import g5Geometry from '../puzzles/g5-maths/geometry.json';
+import g5Charts from '../puzzles/g5-maths/charts.json';
+
 export * from './types';
 export * from './tokens';
 export * from './curriculum';
@@ -92,6 +100,7 @@ export * from './logic';
 export * from './maths4';
 export * from './words4';
 export * from './thinking4';
+export * from './maths5';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -110,6 +119,7 @@ export const PUZZLES = [
   ...g4Numbers, ...g4MulDiv, ...g4Factors, ...g4Fractions, ...g4Decimals, ...g4Time, ...g4Area,
   ...g4EPronouns, ...g4ETenses, ...g4EAffixes, ...g4ELadders, ...g4EReading,
   ...g4Crossword, ...g4Sudoku, ...g4Logic, ...g4Patterns, ...g4Codes,
+  ...g5Numbers, ...g5BigOps, ...g5Fractions, ...g5Decimals, ...g5Percent, ...g5Geometry, ...g5Charts,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

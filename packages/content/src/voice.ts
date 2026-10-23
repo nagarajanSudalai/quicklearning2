@@ -33,6 +33,8 @@ export function speakable(text: string) {
   return text
     .replace(/\s*\+\s*/g, ' plus ')
     .replace(/\s*[−-]\s*(?=\d)/g, ' minus ')
+    .replace(/(\d+)%/g, '$1 percent')
+    .replace(/(\d+)°/g, '$1 degrees')
     .replace(/\s*×\s*/g, ' times ')
     .replace(/\s*÷\s*/g, ' divided by ')
     .replace(/(\d+)\/(\d+)/g, (_, a, b) => fractionWords(Number(a), Number(b)))

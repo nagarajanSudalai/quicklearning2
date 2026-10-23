@@ -9,6 +9,7 @@ import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
 import { calendarAnswer } from '../src/calendar.ts';
+import { addFractions, angleName, chartAnswer, decimalSum, percentAnswer, roundWhole, simplify } from '../src/maths5.ts';
 import { CLUES4, encode, patternTerms } from '../src/thinking4.ts';
 import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/maths4.ts';
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
@@ -41,6 +42,7 @@ function check(p: any): string | null {
     case 'count-objects':
       return q.count === p.answer ? null : `count is ${q.count} but answer is ${p.answer}`;
     case 'arithmetic': {
+      if (q.remainder) { const r = q.a % q.b; if (!r) return 'remainder puzzles need a remainder'; return r === p.answer ? null : `remainder is ${r}`; }
       if (q.op === '÷' && q.a % q.b !== 0) return `${q.a} ÷ ${q.b} doesn't divide exactly`;
       if (q.missing) return q[q.missing] === p.answer ? null : `missing number is ${q[q.missing]}`;
       const v = q.op === '+' ? q.a + q.b : q.op === '-' ? q.a - q.b : q.op === '×' ? q.a * q.b : q.op === '÷' ? q.a / q.b : NaN;
@@ -87,10 +89,10 @@ function check(p: any): string | null {
       return noPic ? `no picture for ${noPic}` : null;
     }
     case 'place-value': {
-      const h = q.hundreds ?? 0, th = q.thousands ?? 0;
-      if ([th, h, q.tens, q.ones].some((x) => x < 0 || x > 9)) return 'digits must be 0–9';
-      const whole = th * 1000 + h * 100 + q.tens * 10 + q.ones;
-      const want = q.ask === 'thousands' ? th : q.ask === 'hundreds' ? h : q.ask === 'tens' ? q.tens : q.ask === 'ones' ? q.ones : whole;
+      const h = q.hundreds ?? 0, th = q.thousands ?? 0, tt = q.tenThousands ?? 0;
+      if ([tt, th, h, q.tens, q.ones].some((x) => x < 0 || x > 9)) return 'digits must be 0–9';
+      const whole = tt * 10000 + th * 1000 + h * 100 + q.tens * 10 + q.ones;
+      const want = q.ask === 'tenThousands' ? tt : q.ask === 'thousands' ? th : q.ask === 'hundreds' ? h : q.ask === 'tens' ? q.tens : q.ask === 'ones' ? q.ones : whole;
       return want === p.answer ? null : `answer should be ${want}`;
     }
     case 'number-pattern': {
@@ -213,8 +215,19 @@ function check(p: any): string | null {
         const want = fracStr(fracCmp(q.a, q.b) > 0 ? q.a : q.b);
         return want === p.answer ? null : `${want} is bigger`;
       }
-      if (q.a[1] !== q.b[1]) return 'add needs the same bottom number';
-      const want = fracStr([q.a[0] + q.b[0], q.a[1]]);
+      if (q.op === 'simplify') {
+        const want = fracStr(simplify(q.a));
+        if (want === fracStr(q.a)) return 'already in simplest form';
+        if (p.options.some((o: string) => o !== p.answer && fracCmp(val(o), q.a) === 0 && fracStr(simplify(val(o))) === o)) return 'another option is also the simplest form';
+        return want === p.answer ? null : `simplest form is ${want}`;
+      }
+      if (q.op === 'of') {
+        const v = (q.a[0] * q.n) / q.a[1];
+        if (!Number.isInteger(v)) return 'answer is not a whole number';
+        return String(v) === p.answer ? null : `${fracStr(q.a)} of ${q.n} is ${v}`;
+      }
+      // Unlike bottoms: answer in lowest terms. Like bottoms (Grade 4): add the tops.
+      const want = q.a[1] === q.b[1] ? fracStr([q.a[0] + q.b[0], q.a[1]]) : fracStr(addFractions(q.a, q.b));
       // No wrong option may be the same amount written differently.
       if (p.options.some((o: string) => o !== p.answer && fracCmp(val(o), val(want)) === 0)) return 'an option equals the sum';
       return want === p.answer ? null : `sum is ${want}`;
@@ -223,6 +236,8 @@ function check(p: any): string | null {
       let want: string;
       if (q.kind === 'paise') want = String(q.rupees * 100 + q.paise);
       else if (q.kind === 'tenths') { if (q.tenths < 1 || q.tenths > 9) return 'tenths must be 1–9'; want = `0.${q.tenths}`; }
+      else if (q.kind === 'add') { want = decimalSum(q.a, q.b, q.op); if (Number(want) < 0) return 'result is negative'; }
+      else if (q.kind === 'round') { if (q.a.endsWith('.5')) return 'halfway numbers are ambiguous for children'; want = roundWhole(q.a); }
       else { if (Number(q.a) === Number(q.b)) return 'decimals are equal'; want = Number(q.a) > Number(q.b) ? q.a : q.b; }
       return want === p.answer ? null : `answer is ${want}`;
     }
@@ -234,13 +249,30 @@ function check(p: any): string | null {
     case 'grid-shape': {
       if (q.cells.length !== q.rows * q.cols) return 'cells must fill the grid';
       const m = gridMeasure(q.rows, q.cols, q.cells);
-      const want = q.ask === 'area' ? m.area : m.perimeter;
+      const want = q.triangle ? (q.rows * q.cols) / 2 : q.ask === 'area' ? m.area : m.perimeter;
+      if (q.triangle && q.ask !== 'area') return 'triangles only ask for area';
       return want === p.answer ? null : `${q.ask} is ${want}`;
     }
     case 'cipher': {
       const code = encode(q.word, q.kind, q.shift);
       const want = q.ask === 'decode' ? q.word : code;
       if (q.ask === 'encode' && new Set(p.options).size !== p.options.length) return 'options must differ';
+      return want === p.answer ? null : `answer is ${want}`;
+    }
+    case 'percent': {
+      const want = percentAnswer(q);
+      if (q.kind === 'grid' && (q.shaded < 1 || q.shaded > 99)) return 'shaded must be 1–99';
+      return want === p.answer ? null : `answer is ${want}`;
+    }
+    case 'angle': {
+      if (q.degrees <= 0 || q.degrees > 180 || q.degrees % 10) return 'angles are 10° steps up to 180°';
+      const want = q.ask === 'name' ? angleName(q.degrees) : `${q.degrees}°`;
+      return want === p.answer ? null : `answer is ${want}`;
+    }
+    case 'chart': {
+      const values = q.bars.map((b: { value: number }) => b.value);
+      if ((q.ask.kind === 'most' || q.ask.kind === 'least') && new Set(values).size !== values.length) return 'tied bars';
+      const want = chartAnswer(q.bars, q.ask);
       return want === p.answer ? null : `answer is ${want}`;
     }
     case 'odd-one-out': {

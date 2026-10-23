@@ -1,0 +1,395 @@
+[
+  {
+    "id": "g5-percent-01",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 1,
+    "prompt": "The grid has 100 squares. What percent is shaded?",
+    "type": "percent",
+    "payload": {
+      "kind": "grid",
+      "shaded": 16
+    },
+    "options": [
+      "26%",
+      "84%",
+      "16%"
+    ],
+    "answer": "16%"
+  },
+  {
+    "id": "g5-percent-02",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 1,
+    "prompt": "The grid has 100 squares. What percent is shaded?",
+    "type": "percent",
+    "payload": {
+      "kind": "grid",
+      "shaded": 68
+    },
+    "options": [
+      "78%",
+      "32%",
+      "68%"
+    ],
+    "answer": "68%"
+  },
+  {
+    "id": "g5-percent-03",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 1,
+    "prompt": "The grid has 100 squares. What percent is shaded?",
+    "type": "percent",
+    "payload": {
+      "kind": "grid",
+      "shaded": 90
+    },
+    "options": [
+      "10%",
+      "100%",
+      "90%"
+    ],
+    "answer": "90%"
+  },
+  {
+    "id": "g5-percent-04",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 1,
+    "prompt": "The grid has 100 squares. What percent is shaded?",
+    "type": "percent",
+    "payload": {
+      "kind": "grid",
+      "shaded": 14
+    },
+    "options": [
+      "24%",
+      "86%",
+      "14%"
+    ],
+    "answer": "14%"
+  },
+  {
+    "id": "g5-percent-05",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 1,
+    "prompt": "The grid has 100 squares. What percent is shaded?",
+    "type": "percent",
+    "payload": {
+      "kind": "grid",
+      "shaded": 91
+    },
+    "options": [
+      "101%",
+      "9%",
+      "91%"
+    ],
+    "answer": "91%"
+  },
+  {
+    "id": "g5-percent-06",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 1,
+    "prompt": "The grid has 100 squares. What percent is shaded?",
+    "type": "percent",
+    "payload": {
+      "kind": "grid",
+      "shaded": 81
+    },
+    "options": [
+      "19%",
+      "91%",
+      "81%"
+    ],
+    "answer": "81%"
+  },
+  {
+    "id": "g5-percent-07",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 1,
+    "prompt": "The grid has 100 squares. What percent is shaded?",
+    "type": "percent",
+    "payload": {
+      "kind": "grid",
+      "shaded": 32
+    },
+    "options": [
+      "68%",
+      "42%",
+      "32%"
+    ],
+    "answer": "32%"
+  },
+  {
+    "id": "g5-percent-08",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 2,
+    "prompt": "What is 50% of 60?",
+    "type": "percent",
+    "payload": {
+      "kind": "of",
+      "pct": 50,
+      "of": 60
+    },
+    "options": [
+      "60",
+      "50",
+      "30"
+    ],
+    "answer": "30"
+  },
+  {
+    "id": "g5-percent-09",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 2,
+    "prompt": "What is 75% of 20?",
+    "type": "percent",
+    "payload": {
+      "kind": "of",
+      "pct": 75,
+      "of": 20
+    },
+    "options": [
+      "5",
+      "15",
+      "75"
+    ],
+    "answer": "15"
+  },
+  {
+    "id": "g5-percent-10",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 2,
+    "prompt": "What is 10% of 40?",
+    "type": "percent",
+    "payload": {
+      "kind": "of",
+      "pct": 10,
+      "of": 40
+    },
+    "options": [
+      "10",
+      "36",
+      "4"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "g5-percent-11",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 2,
+    "prompt": "What is 50% of 40?",
+    "type": "percent",
+    "payload": {
+      "kind": "of",
+      "pct": 50,
+      "of": 40
+    },
+    "options": [
+      "50",
+      "40",
+      "20"
+    ],
+    "answer": "20"
+  },
+  {
+    "id": "g5-percent-12",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 2,
+    "prompt": "What is 10% of 400?",
+    "type": "percent",
+    "payload": {
+      "kind": "of",
+      "pct": 10,
+      "of": 400
+    },
+    "options": [
+      "10",
+      "360",
+      "40"
+    ],
+    "answer": "40"
+  },
+  {
+    "id": "g5-percent-13",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 2,
+    "prompt": "What is 50% of 400?",
+    "type": "percent",
+    "payload": {
+      "kind": "of",
+      "pct": 50,
+      "of": 400
+    },
+    "options": [
+      "200",
+      "50",
+      "400"
+    ],
+    "answer": "200"
+  },
+  {
+    "id": "g5-percent-14",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 2,
+    "prompt": "What is 75% of 40?",
+    "type": "percent",
+    "payload": {
+      "kind": "of",
+      "pct": 75,
+      "of": 40
+    },
+    "options": [
+      "30",
+      "10",
+      "75"
+    ],
+    "answer": "30"
+  },
+  {
+    "id": "g5-percent-15",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 3,
+    "prompt": "A toy costs ₹200. In a sale it is 50% off. What is the sale price?",
+    "type": "percent",
+    "payload": {
+      "kind": "sale",
+      "pct": 50,
+      "price": 200
+    },
+    "options": [
+      "₹300",
+      "₹100",
+      "₹150"
+    ],
+    "answer": "₹100"
+  },
+  {
+    "id": "g5-percent-16",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 3,
+    "prompt": "A toy costs ₹200. In a sale it is 20% off. What is the sale price?",
+    "type": "percent",
+    "payload": {
+      "kind": "sale",
+      "pct": 20,
+      "price": 200
+    },
+    "options": [
+      "₹40",
+      "₹160",
+      "₹180"
+    ],
+    "answer": "₹160"
+  },
+  {
+    "id": "g5-percent-17",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 3,
+    "prompt": "A toy costs ₹200. In a sale it is 25% off. What is the sale price?",
+    "type": "percent",
+    "payload": {
+      "kind": "sale",
+      "pct": 25,
+      "price": 200
+    },
+    "options": [
+      "₹175",
+      "₹150",
+      "₹50"
+    ],
+    "answer": "₹150"
+  },
+  {
+    "id": "g5-percent-18",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 3,
+    "prompt": "A toy costs ₹240. In a sale it is 10% off. What is the sale price?",
+    "type": "percent",
+    "payload": {
+      "kind": "sale",
+      "pct": 10,
+      "price": 240
+    },
+    "options": [
+      "₹216",
+      "₹24",
+      "₹230"
+    ],
+    "answer": "₹216"
+  },
+  {
+    "id": "g5-percent-19",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 3,
+    "prompt": "A toy costs ₹300. In a sale it is 20% off. What is the sale price?",
+    "type": "percent",
+    "payload": {
+      "kind": "sale",
+      "pct": 20,
+      "price": 300
+    },
+    "options": [
+      "₹280",
+      "₹60",
+      "₹240"
+    ],
+    "answer": "₹240"
+  },
+  {
+    "id": "g5-percent-20",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-percent",
+    "difficulty": 3,
+    "prompt": "A toy costs ₹400. In a sale it is 25% off. What is the sale price?",
+    "type": "percent",
+    "payload": {
+      "kind": "sale",
+      "pct": 25,
+      "price": 400
+    },
+    "options": [
+      "₹375",
+      "₹100",
+      "₹300"
+    ],
+    "answer": "₹300"
+  }
+]

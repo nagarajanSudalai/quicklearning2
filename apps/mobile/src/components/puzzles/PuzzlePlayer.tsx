@@ -8,7 +8,7 @@ import { PLAYERS } from './interactive';
 import { RENDERERS } from './renderers';
 
 // Types whose prompt is long or repeated in the panel get a short title; the full prompt is still read aloud.
-const TITLES: Partial<Record<Puzzle['type'], string>> = { 'fill-blank': 'Fill in the blank.', riddle: 'Who am I?', passage: 'Read and answer.', analogy: 'Complete the pair.' };
+const TITLES: Partial<Record<Puzzle['type'], string>> = { 'fill-blank': 'Fill in the blank.', riddle: 'Who am I?', passage: 'Read and answer.', analogy: 'Complete the pair.', idiom: 'What does it mean?', teaser: 'Brain teaser' };
 
 type Props = {
   puzzle: Puzzle;

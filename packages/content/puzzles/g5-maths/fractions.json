@@ -1,0 +1,473 @@
+[
+  {
+    "id": "g5-fractions-01",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 1,
+    "prompt": "Write 8/28 in its simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "simplify",
+      "a": [
+        8,
+        28
+      ]
+    },
+    "options": [
+      "2/7",
+      "2/28",
+      "3/7"
+    ],
+    "answer": "2/7"
+  },
+  {
+    "id": "g5-fractions-02",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 1,
+    "prompt": "Write 16/36 in its simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "simplify",
+      "a": [
+        16,
+        36
+      ]
+    },
+    "options": [
+      "5/9",
+      "4/9",
+      "4/36"
+    ],
+    "answer": "4/9"
+  },
+  {
+    "id": "g5-fractions-03",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 1,
+    "prompt": "Write 5/10 in its simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "simplify",
+      "a": [
+        5,
+        10
+      ]
+    },
+    "options": [
+      "1/10",
+      "2/2",
+      "1/2"
+    ],
+    "answer": "1/2"
+  },
+  {
+    "id": "g5-fractions-04",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 1,
+    "prompt": "Write 15/25 in its simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "simplify",
+      "a": [
+        15,
+        25
+      ]
+    },
+    "options": [
+      "4/5",
+      "3/5",
+      "3/25"
+    ],
+    "answer": "3/5"
+  },
+  {
+    "id": "g5-fractions-05",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 1,
+    "prompt": "Write 4/24 in its simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "simplify",
+      "a": [
+        4,
+        24
+      ]
+    },
+    "options": [
+      "1/24",
+      "1/6",
+      "2/6"
+    ],
+    "answer": "1/6"
+  },
+  {
+    "id": "g5-fractions-06",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 1,
+    "prompt": "Write 5/20 in its simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "simplify",
+      "a": [
+        5,
+        20
+      ]
+    },
+    "options": [
+      "1/4",
+      "1/20",
+      "2/4"
+    ],
+    "answer": "1/4"
+  },
+  {
+    "id": "g5-fractions-07",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 1,
+    "prompt": "Write 12/20 in its simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "simplify",
+      "a": [
+        12,
+        20
+      ]
+    },
+    "options": [
+      "3/20",
+      "3/5",
+      "4/5"
+    ],
+    "answer": "3/5"
+  },
+  {
+    "id": "g5-fractions-08",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 2,
+    "prompt": "What is 3/4 of 32?",
+    "type": "fraction-op",
+    "payload": {
+      "op": "of",
+      "a": [
+        3,
+        4
+      ],
+      "n": 32
+    },
+    "options": [
+      "24",
+      "32",
+      "25"
+    ],
+    "answer": "24"
+  },
+  {
+    "id": "g5-fractions-09",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 2,
+    "prompt": "What is 1/3 of 12?",
+    "type": "fraction-op",
+    "payload": {
+      "op": "of",
+      "a": [
+        1,
+        3
+      ],
+      "n": 12
+    },
+    "options": [
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "g5-fractions-10",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 2,
+    "prompt": "What is 1/4 of 40?",
+    "type": "fraction-op",
+    "payload": {
+      "op": "of",
+      "a": [
+        1,
+        4
+      ],
+      "n": 40
+    },
+    "options": [
+      "10",
+      "20",
+      "11"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": "g5-fractions-11",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 2,
+    "prompt": "What is 1/3 of 27?",
+    "type": "fraction-op",
+    "payload": {
+      "op": "of",
+      "a": [
+        1,
+        3
+      ],
+      "n": 27
+    },
+    "options": [
+      "9",
+      "8",
+      "10"
+    ],
+    "answer": "9"
+  },
+  {
+    "id": "g5-fractions-12",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 2,
+    "prompt": "What is 1/3 of 18?",
+    "type": "fraction-op",
+    "payload": {
+      "op": "of",
+      "a": [
+        1,
+        3
+      ],
+      "n": 18
+    },
+    "options": [
+      "6",
+      "7",
+      "5"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": "g5-fractions-13",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 2,
+    "prompt": "What is 3/4 of 28?",
+    "type": "fraction-op",
+    "payload": {
+      "op": "of",
+      "a": [
+        3,
+        4
+      ],
+      "n": 28
+    },
+    "options": [
+      "20",
+      "22",
+      "21"
+    ],
+    "answer": "21"
+  },
+  {
+    "id": "g5-fractions-14",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 2,
+    "prompt": "What is 1/5 of 30?",
+    "type": "fraction-op",
+    "payload": {
+      "op": "of",
+      "a": [
+        1,
+        5
+      ],
+      "n": 30
+    },
+    "options": [
+      "7",
+      "12",
+      "6"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": "g5-fractions-15",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 3,
+    "prompt": "What is 1/4 + 2/6? Give it in simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "add",
+      "a": [
+        1,
+        4
+      ],
+      "b": [
+        2,
+        6
+      ]
+    },
+    "options": [
+      "7/12",
+      "3/10",
+      "8/12"
+    ],
+    "answer": "7/12"
+  },
+  {
+    "id": "g5-fractions-16",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 3,
+    "prompt": "What is 1/2 + 1/4? Give it in simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "add",
+      "a": [
+        1,
+        2
+      ],
+      "b": [
+        1,
+        4
+      ]
+    },
+    "options": [
+      "1/3",
+      "3/4",
+      "4/4"
+    ],
+    "answer": "3/4"
+  },
+  {
+    "id": "g5-fractions-17",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 3,
+    "prompt": "What is 1/2 + 7/8? Give it in simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "add",
+      "a": [
+        1,
+        2
+      ],
+      "b": [
+        7,
+        8
+      ]
+    },
+    "options": [
+      "12/8",
+      "11/8",
+      "4/5"
+    ],
+    "answer": "11/8"
+  },
+  {
+    "id": "g5-fractions-18",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 3,
+    "prompt": "What is 1/3 + 6/8? Give it in simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "add",
+      "a": [
+        1,
+        3
+      ],
+      "b": [
+        6,
+        8
+      ]
+    },
+    "options": [
+      "13/12",
+      "7/11",
+      "14/12"
+    ],
+    "answer": "13/12"
+  },
+  {
+    "id": "g5-fractions-19",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 3,
+    "prompt": "What is 1/2 + 4/6? Give it in simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "add",
+      "a": [
+        1,
+        2
+      ],
+      "b": [
+        4,
+        6
+      ]
+    },
+    "options": [
+      "8/6",
+      "5/8",
+      "7/6"
+    ],
+    "answer": "7/6"
+  },
+  {
+    "id": "g5-fractions-20",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-fractions",
+    "difficulty": 3,
+    "prompt": "What is 1/2 + 3/6? Give it in simplest form.",
+    "type": "fraction-op",
+    "payload": {
+      "op": "add",
+      "a": [
+        1,
+        2
+      ],
+      "b": [
+        3,
+        6
+      ]
+    },
+    "options": [
+      "1/1",
+      "1/2",
+      "2/1"
+    ],
+    "answer": "1/1"
+  }
+]

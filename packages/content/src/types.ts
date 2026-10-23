@@ -33,7 +33,7 @@ export type CountPuzzle = Base & {
 /** "3 + 2 = ?" with optional emoji pictures for each side. */
 export type ArithmeticPuzzle = Base & {
   type: 'arithmetic';
-  payload: { a: number; op: '+' | '-' | '×' | '÷'; b: number; item?: string; missing?: 'a' | 'b' };
+  payload: { a: number; op: '+' | '-' | '×' | '÷'; b: number; item?: string; missing?: 'a' | 'b'; remainder?: boolean };
   options: number[];
   answer: number;
 };
@@ -97,7 +97,7 @@ export type OddOneOutPuzzle = Base & {
 /** Tens rods and ones cubes. `ask`: the whole number, or just the tens or ones digit. */
 export type PlaceValuePuzzle = Base & {
   type: 'place-value';
-  payload: { thousands?: number; hundreds?: number; tens: number; ones: number; ask: 'number' | 'expanded' | 'thousands' | 'hundreds' | 'tens' | 'ones' };
+  payload: { tenThousands?: number; thousands?: number; hundreds?: number; tens: number; ones: number; ask: 'number' | 'expanded' | 'tenThousands' | 'thousands' | 'hundreds' | 'tens' | 'ones' };
   options: number[];
   answer: number;
 };
@@ -202,7 +202,7 @@ export type AnalogyPuzzle = Base & {
 /** Fraction work with numbers: an equal fraction, the bigger one, or a sum of like fractions. Fractions are [top, bottom]. */
 export type FractionOpPuzzle = Base & {
   type: 'fraction-op';
-  payload: { op: 'equivalent' | 'bigger' | 'add'; a: [number, number]; b?: [number, number] };
+  payload: { op: 'equivalent' | 'bigger' | 'add' | 'simplify' | 'of'; a: [number, number]; b?: [number, number]; n?: number };
   options: string[];
   answer: string;
 };
@@ -210,7 +210,7 @@ export type FractionOpPuzzle = Base & {
 /** Decimals: rupees ↔ paise, tenths shaded on a bar, or the bigger of two decimals. */
 export type DecimalPuzzle = Base & {
   type: 'decimal';
-  payload: { kind: 'paise'; rupees: number; paise: number } | { kind: 'tenths'; tenths: number } | { kind: 'bigger'; a: string; b: string };
+  payload: { kind: 'paise'; rupees: number; paise: number } | { kind: 'tenths'; tenths: number } | { kind: 'bigger'; a: string; b: string } | { kind: 'add'; a: string; b: string; op: '+' | '-' } | { kind: 'round'; a: string };
   options: string[];
   answer: string;
 };
@@ -226,7 +226,7 @@ export type TimeCalcPuzzle = Base & {
 /** A shape on squared paper (`cells` row by row); find its area in squares or its perimeter in edges. */
 export type GridShapePuzzle = Base & {
   type: 'grid-shape';
-  payload: { rows: number; cols: number; cells: boolean[]; ask: 'area' | 'perimeter'; labels?: boolean };
+  payload: { rows: number; cols: number; cells: boolean[]; ask: 'area' | 'perimeter'; labels?: boolean; triangle?: boolean };
   options: number[];
   answer: number;
 };
@@ -238,6 +238,46 @@ export type PatternRule = { kind: 'multiply'; start: number; by: number } | { ki
 export type CipherPuzzle = Base & {
   type: 'cipher';
   payload: { kind: 'number' | 'shift'; shift?: number; word: string; ask: 'decode' | 'encode' };
+  options: string[];
+  answer: string;
+};
+
+/** Percentages: read a shaded 10×10 grid, find a percent of a number, or a sale price after a discount. */
+export type PercentPuzzle = Base & {
+  type: 'percent';
+  payload: { kind: 'grid'; shaded: number } | { kind: 'of'; pct: number; of: number } | { kind: 'sale'; pct: number; price: number };
+  options: string[];
+  answer: string;
+};
+
+/** An angle drawn with a protractor scale: name it (acute/right/obtuse/straight) or read its size. */
+export type AnglePuzzle = Base & {
+  type: 'angle';
+  payload: { degrees: number; ask: 'name' | 'measure' };
+  options: string[];
+  answer: string;
+};
+
+/** A bar chart; ask for one value, a difference, the total, or which bar is biggest/smallest. */
+export type ChartPuzzle = Base & {
+  type: 'chart';
+  payload: { title: string; unit: string; bars: { label: string; value: number }[]; ask: { kind: 'value'; label: string } | { kind: 'diff'; a: string; b: string } | { kind: 'total' } | { kind: 'most' } | { kind: 'least' } };
+  options: string[];
+  answer: string;
+};
+
+/** What does this idiom or proverb mean? */
+export type IdiomPuzzle = Base & {
+  type: 'idiom';
+  payload: { phrase: string; sentence?: string };
+  options: string[];
+  answer: string;
+};
+
+/** A brain teaser (word problem) from the teaser bank. */
+export type TeaserPuzzle = Base & {
+  type: 'teaser';
+  payload: { id: string; text: string };
   options: string[];
   answer: string;
 };
@@ -321,6 +361,12 @@ export type WordLadderPuzzle = Base & {
   payload: { ladder: string[]; choices: string[][] };
 };
 
+/** 3×3 sum grid: fill the blanks with digits 1–9 (each used once) so every row and column adds up to its total. */
+export type SumGridPuzzle = Base & {
+  type: 'sum-grid';
+  payload: { grid: (number | null)[]; solution: number[]; rows: number[]; cols: number[] };
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -350,10 +396,15 @@ export type ChoicePuzzle =
   | DecimalPuzzle
   | TimeCalcPuzzle
   | GridShapePuzzle
-  | CipherPuzzle;
+  | CipherPuzzle
+  | PercentPuzzle
+  | AnglePuzzle
+  | ChartPuzzle
+  | IdiomPuzzle
+  | TeaserPuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle | SumGridPuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -361,7 +412,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square', 'pick-all', 'word-ladder'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square', 'pick-all', 'word-ladder', 'sum-grid'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {

@@ -4,7 +4,7 @@ import { encode, nameOf, plainSentence, type ChoicePuzzle, type ChoiceType, type
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
-import { Blocks, Clock, Fraction, GridShape, Groups, Money, Ruler } from '../maths/Visuals';
+import { Angle, BarChart, Blocks, Clock, Fraction, GridShape, Groups, HundredGrid, Money, Ruler } from '../maths/Visuals';
 
 /**
  * One entry per puzzle type: what to show above the answers, how to draw one
@@ -88,8 +88,8 @@ export const RENDERERS: Renderers = {
               <View style={[styles.sumSide, op === '-' && { opacity: 0.35 }]}><EmojiGroup item={item} count={b} size={28} /></View>
             </View>
           )}
-          <Text style={styles.equation}>
-            {missing ? `${missing === 'a' ? '?' : a} ${sym} ${missing === 'b' ? '?' : b} = ${result}` : `${a} ${sym} ${b} = ?`}
+          <Text style={[styles.equation, puzzle.payload.remainder && { fontSize: 30 }]}>
+            {puzzle.payload.remainder ? `${a} ${sym} ${b} = ${Math.floor(a / b)} R ?` : missing ? `${missing === 'a' ? '?' : a} ${sym} ${missing === 'b' ? '?' : b} = ${result}` : `${a} ${sym} ${b} = ?`}
           </Text>
         </View>
       );
@@ -155,11 +155,11 @@ export const RENDERERS: Renderers = {
   },
   'place-value': {
     Stimulus: ({ puzzle }) => {
-      const { thousands, hundreds, tens, ones, ask } = puzzle.payload;
-      const whole = (thousands ?? 0) * 1000 + (hundreds ?? 0) * 100 + tens * 10 + ones;
+      const { tenThousands, thousands, hundreds, tens, ones, ask } = puzzle.payload;
+      const whole = (tenThousands ?? 0) * 10000 + (thousands ?? 0) * 1000 + (hundreds ?? 0) * 100 + tens * 10 + ones;
       if (ask === 'expanded') {
-        const parts = [(thousands ?? 0) * 1000, (hundreds ?? 0) * 100, tens * 10, ones].filter(Boolean);
-        return <View style={[styles.panel, styles.pictureBox]}><Text style={[styles.equation, { fontSize: 30 }]}>{parts.join(' + ')}</Text></View>;
+        const parts = [(tenThousands ?? 0) * 10000, (thousands ?? 0) * 1000, (hundreds ?? 0) * 100, tens * 10, ones].filter(Boolean);
+        return <View style={[styles.panel, styles.pictureBox]}><Text style={[styles.equation, { fontSize: 30 }]}>{parts.map((x) => x.toLocaleString('en-IN')).join(' + ')}</Text></View>;
       }
       return (
         <View style={[styles.panel, styles.pictureBox]}>
@@ -331,7 +331,8 @@ export const RENDERERS: Renderers = {
   'fraction-op': {
     Stimulus: ({ puzzle }) => {
       const { op, a, b } = puzzle.payload;
-      const text = op === 'equivalent' ? `${a[0]}/${a[1]} = ?` : op === 'add' ? `${a[0]}/${a[1]} + ${b![0]}/${b![1]} = ?` : `${a[0]}/${a[1]}  or  ${b![0]}/${b![1]}`;
+      const { n } = puzzle.payload;
+      const text = op === 'equivalent' || op === 'simplify' ? `${a[0]}/${a[1]} = ?` : op === 'add' ? `${a[0]}/${a[1]} + ${b![0]}/${b![1]} = ?` : op === 'of' ? `${a[0]}/${a[1]} of ${n} = ?` : `${a[0]}/${a[1]}  or  ${b![0]}/${b![1]}`;
       return <View style={[styles.panel, styles.pictureBox]}><Text style={styles.equation}>{text}</Text></View>;
     },
     option: (f) => <Text style={styles.number}>{f}</Text>,
@@ -343,7 +344,7 @@ export const RENDERERS: Renderers = {
       return (
         <View style={[styles.panel, styles.pictureBox]}>
           {q.kind === 'tenths' ? <Fraction shape="bar" parts={10} shaded={q.tenths} size={190} />
-            : <Text style={styles.equation}>{q.kind === 'paise' ? `₹${q.rupees}.${String(q.paise).padStart(2, '0')} = ? paise` : `${q.a}  or  ${q.b}`}</Text>}
+            : <Text style={[styles.equation, { fontSize: 32 }]}>{q.kind === 'paise' ? `₹${q.rupees}.${String(q.paise).padStart(2, '0')} = ? paise` : q.kind === 'add' ? `₹${q.a} ${q.op === '+' ? '+' : '−'} ₹${q.b}` : q.kind === 'round' ? `${q.a} ≈ ?` : `${q.a}  or  ${q.b}`}</Text>}
         </View>
       );
     },
@@ -384,6 +385,56 @@ export const RENDERERS: Renderers = {
       );
     },
     option: (o) => <Text style={[styles.word, fit(o, 24, 6), { letterSpacing: 1 }]} numberOfLines={1}>{o}</Text>,
+    columns: () => 3,
+  },
+  percent: {
+    Stimulus: ({ puzzle }) => {
+      const q = puzzle.payload;
+      return (
+        <View style={[styles.panel, styles.pictureBox]}>
+          {q.kind === 'grid' ? <HundredGrid shaded={q.shaded} /> : <Text style={[styles.equation, { fontSize: 32 }]}>{q.kind === 'of' ? `${q.pct}% of ${q.of}` : `₹${q.price} − ${q.pct}%`}</Text>}
+        </View>
+      );
+    },
+    option: (o) => <Text style={[styles.number, fit(o, 34, 4)]}>{o}</Text>,
+    columns: () => 3,
+  },
+  angle: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.pictureBox]}>
+        <Angle degrees={puzzle.payload.degrees} scale={puzzle.payload.ask === 'measure'} />
+      </View>
+    ),
+    option: (o) => <Text style={[styles.word, fit(o, 24, 6)]}>{o}</Text>,
+    columns: () => 3,
+  },
+  chart: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.pictureBox]}>
+        <BarChart title={puzzle.payload.title} bars={puzzle.payload.bars} />
+      </View>
+    ),
+    option: (o) => <Text style={[styles.word, fit(o, 26, 6)]} numberOfLines={1}>{o}</Text>,
+    columns: () => 3,
+  },
+  idiom: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.clues]}>
+        <Text style={[styles.sentenceText, { color: colors.brandDeep }]}>“{puzzle.payload.phrase}”</Text>
+        {puzzle.payload.sentence && <Text style={styles.passage}>{puzzle.payload.sentence}</Text>}
+      </View>
+    ),
+    option: (a) => <Text style={styles.timeOption} numberOfLines={2}>{a}</Text>,
+    columns: () => 1,
+    optionHeight: 58,
+  },
+  teaser: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.clues]}>
+        <Text style={styles.passage}>🧠 {puzzle.payload.text}</Text>
+      </View>
+    ),
+    option: (a) => <Text style={[styles.word, fit(a, 26, 7)]} numberOfLines={1}>{a}</Text>,
     columns: () => 3,
   },
   'odd-one-out': {

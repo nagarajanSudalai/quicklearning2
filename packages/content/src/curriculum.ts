@@ -16,7 +16,7 @@ export const GRADE_NOTES: Record<Grade, string> = {
   2: 'Grade 2 · ages 7–8: numbers to 100, time, money, spelling and sentences, sudoku.',
   3: 'Grade 3 · ages 8–9: numbers to 1000, times tables, fractions, reading, logic grids.',
   4: 'Grade 4 · ages 9–10: large numbers, fractions, decimals, area, word ladders, codes.',
-  5: 'Grade 5 · ages 10–11: decimals, brain teasers, science quizzes.',
+  5: 'Grade 5 · ages 10–11: big numbers, percentages, angles, charts, idioms, brain teasers.',
 };
 
 export const SUBJECTS: Subject[] = [
@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english', 'puzzles', 'thinking'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english', 'puzzles', 'thinking'], 5: ['maths'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -97,6 +97,13 @@ export const TOPICS: Topic[] = [
   { id: 'g4-logic', grade: 4, subject: 'thinking', title: 'Logic grids', blurb: 'Up to four children', glyph: '✓✗', color: colors.purple },
   { id: 'g4-patterns', grade: 4, subject: 'thinking', title: 'Number patterns', blurb: 'Doubling, growing, squares', glyph: '2·4·8', color: colors.orange },
   { id: 'g4-codes', grade: 4, subject: 'thinking', title: 'Secret codes', blurb: 'Crack and write codes', glyph: '🔐', color: colors.pink },
+  { id: 'g5-numbers', grade: 5, subject: 'maths', title: 'Numbers to 1 lakh', blurb: 'Ten thousands', glyph: '1L', color: colors.pink },
+  { id: 'g5-big-ops', grade: 5, subject: 'maths', title: 'Big × and ÷', blurb: 'Long division too', glyph: '×÷', color: colors.orange },
+  { id: 'g5-fractions', grade: 5, subject: 'maths', title: 'Fractions', blurb: 'Simplify, of, add', glyph: '⅝', color: colors.green },
+  { id: 'g5-decimals', grade: 5, subject: 'maths', title: 'Decimals', blurb: 'Hundredths, money, rounding', glyph: '0.25', color: colors.blue },
+  { id: 'g5-percent', grade: 5, subject: 'maths', title: 'Percentages', blurb: 'Out of 100, sales', glyph: '%', color: colors.purple },
+  { id: 'g5-geometry', grade: 5, subject: 'maths', title: 'Angles and area', blurb: 'Acute, right, obtuse', glyph: '∠', color: colors.teal },
+  { id: 'g5-charts', grade: 5, subject: 'maths', title: 'Bar charts', blurb: 'Read the data', glyph: '📊', color: colors.orange },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

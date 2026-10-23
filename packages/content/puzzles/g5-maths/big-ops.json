@@ -1,0 +1,408 @@
+[
+  {
+    "id": "g5-big-ops-01",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 1,
+    "prompt": "What is 533 times 52?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 533,
+      "op": "×",
+      "b": 52
+    },
+    "options": [
+      27816,
+      28249,
+      27716
+    ],
+    "answer": 27716
+  },
+  {
+    "id": "g5-big-ops-02",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 1,
+    "prompt": "What is 956 times 44?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 956,
+      "op": "×",
+      "b": 44
+    },
+    "options": [
+      42064,
+      41108,
+      51624
+    ],
+    "answer": 42064
+  },
+  {
+    "id": "g5-big-ops-03",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 1,
+    "prompt": "What is 621 times 73?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 621,
+      "op": "×",
+      "b": 73
+    },
+    "options": [
+      45333,
+      45323,
+      51543
+    ],
+    "answer": 45333
+  },
+  {
+    "id": "g5-big-ops-04",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 1,
+    "prompt": "What is 611 times 99?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 611,
+      "op": "×",
+      "b": 99
+    },
+    "options": [
+      60489,
+      66599,
+      60479
+    ],
+    "answer": 60489
+  },
+  {
+    "id": "g5-big-ops-05",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 1,
+    "prompt": "What is 373 times 30?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 373,
+      "op": "×",
+      "b": 30
+    },
+    "options": [
+      11190,
+      11563,
+      10817
+    ],
+    "answer": 11190
+  },
+  {
+    "id": "g5-big-ops-06",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 1,
+    "prompt": "What is 950 times 50?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 950,
+      "op": "×",
+      "b": 50
+    },
+    "options": [
+      57000,
+      47500,
+      47490
+    ],
+    "answer": 47500
+  },
+  {
+    "id": "g5-big-ops-07",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 1,
+    "prompt": "What is 362 times 59?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 362,
+      "op": "×",
+      "b": 59
+    },
+    "options": [
+      20996,
+      21348,
+      21358
+    ],
+    "answer": 21358
+  },
+  {
+    "id": "g5-big-ops-08",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 2,
+    "prompt": "What is 2112 divided by 4?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 2112,
+      "op": "÷",
+      "b": 4
+    },
+    "options": [
+      628,
+      538,
+      528
+    ],
+    "answer": 528
+  },
+  {
+    "id": "g5-big-ops-09",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 2,
+    "prompt": "What is 3916 divided by 4?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3916,
+      "op": "÷",
+      "b": 4
+    },
+    "options": [
+      989,
+      979,
+      969
+    ],
+    "answer": 979
+  },
+  {
+    "id": "g5-big-ops-10",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 2,
+    "prompt": "What is 3858 divided by 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3858,
+      "op": "÷",
+      "b": 6
+    },
+    "options": [
+      743,
+      643,
+      644
+    ],
+    "answer": 643
+  },
+  {
+    "id": "g5-big-ops-11",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 2,
+    "prompt": "What is 7196 divided by 7?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 7196,
+      "op": "÷",
+      "b": 7
+    },
+    "options": [
+      1028,
+      1038,
+      1018
+    ],
+    "answer": 1028
+  },
+  {
+    "id": "g5-big-ops-12",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 2,
+    "prompt": "What is 9354 divided by 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 9354,
+      "op": "÷",
+      "b": 6
+    },
+    "options": [
+      1560,
+      1549,
+      1559
+    ],
+    "answer": 1559
+  },
+  {
+    "id": "g5-big-ops-13",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 2,
+    "prompt": "What is 3702 divided by 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 3702,
+      "op": "÷",
+      "b": 2
+    },
+    "options": [
+      1851,
+      1841,
+      1951
+    ],
+    "answer": 1851
+  },
+  {
+    "id": "g5-big-ops-14",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 2,
+    "prompt": "What is 5322 divided by 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 5322,
+      "op": "÷",
+      "b": 6
+    },
+    "options": [
+      888,
+      987,
+      887
+    ],
+    "answer": 887
+  },
+  {
+    "id": "g5-big-ops-15",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 3,
+    "prompt": "What is the remainder when 393 is divided by 11?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 393,
+      "op": "÷",
+      "b": 11,
+      "remainder": true
+    },
+    "options": [
+      8,
+      7,
+      9
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g5-big-ops-16",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 3,
+    "prompt": "What is the remainder when 939 is divided by 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 939,
+      "op": "÷",
+      "b": 6,
+      "remainder": true
+    },
+    "options": [
+      3,
+      4,
+      2
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g5-big-ops-17",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 3,
+    "prompt": "What is the remainder when 488 is divided by 7?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 488,
+      "op": "÷",
+      "b": 7,
+      "remainder": true
+    },
+    "options": [
+      4,
+      2,
+      5
+    ],
+    "answer": 5
+  },
+  {
+    "id": "g5-big-ops-18",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 3,
+    "prompt": "What is the remainder when 988 is divided by 12?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 988,
+      "op": "÷",
+      "b": 12,
+      "remainder": true
+    },
+    "options": [
+      3,
+      8,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-big-ops-19",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 3,
+    "prompt": "What is the remainder when 787 is divided by 12?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 787,
+      "op": "÷",
+      "b": 12,
+      "remainder": true
+    },
+    "options": [
+      7,
+      8,
+      6
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g5-big-ops-20",
+    "grade": 5,
+    "subject": "maths",
+    "topic": "g5-big-ops",
+    "difficulty": 3,
+    "prompt": "What is the remainder when 434 is divided by 5?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 434,
+      "op": "÷",
+      "b": 5,
+      "remainder": true
+    },
+    "options": [
+      4,
+      3,
+      1
+    ],
+    "answer": 4
+  }
+]
