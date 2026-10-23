@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g5-spelling-01",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 1,
+    "prompt": "You do this up a tree. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "You do this up a tree. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "climb"
+    },
+    "options": [
+      "clim",
+      "climbe",
+      "climb"
+    ],
+    "answer": "climb"
+  },
+  {
+    "id": "g5-spelling-02",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 1,
+    "prompt": "A short, thick finger. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A short, thick finger. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "thumb"
+    },
+    "options": [
+      "thumbe",
+      "thum",
+      "thumb"
+    ],
+    "answer": "thumb"
+  },
+  {
+    "id": "g5-spelling-03",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 1,
+    "prompt": "You cut with it. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "You cut with it. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "knife"
+    },
+    "options": [
+      "nife",
+      "knif",
+      "knife"
+    ],
+    "answer": "knife"
+  },
+  {
+    "id": "g5-spelling-04",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 1,
+    "prompt": "Land with water all around. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Land with water all around. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "island"
+    },
+    "options": [
+      "iland",
+      "island",
+      "islend"
+    ],
+    "answer": "island"
+  },
+  {
+    "id": "g5-spelling-05",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 1,
+    "prompt": "You do this on a door. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "You do this on a door. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "knock"
+    },
+    "options": [
+      "nock",
+      "knock",
+      "knok"
+    ],
+    "answer": "knock"
+  },
+  {
+    "id": "g5-spelling-06",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 1,
+    "prompt": "You do this with a pen. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "You do this with a pen. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "write"
+    },
+    "options": [
+      "rite",
+      "wrigt",
+      "write"
+    ],
+    "answer": "write"
+  },
+  {
+    "id": "g5-spelling-07",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 1,
+    "prompt": "You do this with your ears. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "You do this with your ears. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "listen"
+    },
+    "options": [
+      "lisen",
+      "listen",
+      "lissen"
+    ],
+    "answer": "listen"
+  },
+  {
+    "id": "g5-spelling-08",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 2,
+    "prompt": "Not safe. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Not safe. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "dangerous"
+    },
+    "options": [
+      "dangerouse",
+      "dangerous",
+      "dangerus"
+    ],
+    "answer": "dangerous"
+  },
+  {
+    "id": "g5-spelling-09",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 2,
+    "prompt": "Known by many people. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Known by many people. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "famous"
+    },
+    "options": [
+      "famus",
+      "faimous",
+      "famous"
+    ],
+    "answer": "famous"
+  },
+  {
+    "id": "g5-spelling-10",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 2,
+    "prompt": "You watch it. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "You watch it. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "television"
+    },
+    "options": [
+      "telivision",
+      "televition",
+      "television"
+    ],
+    "answer": "television"
+  },
+  {
+    "id": "g5-spelling-11",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 2,
+    "prompt": "You ask it. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "You ask it. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "question"
+    },
+    "options": [
+      "quesion",
+      "questoin",
+      "question"
+    ],
+    "answer": "question"
+  },
+  {
+    "id": "g5-spelling-12",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 2,
+    "prompt": "A country. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A country. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "nation"
+    },
+    "options": [
+      "nasion",
+      "nation",
+      "nashun"
+    ],
+    "answer": "nation"
+  },
+  {
+    "id": "g5-spelling-13",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 2,
+    "prompt": "Trains stop here. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Trains stop here. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "station"
+    },
+    "options": [
+      "stasion",
+      "stashun",
+      "station"
+    ],
+    "answer": "station"
+  },
+  {
+    "id": "g5-spelling-14",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 2,
+    "prompt": "Trains stop here. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Trains stop here. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "station"
+    },
+    "options": [
+      "stashun",
+      "stasion",
+      "station"
+    ],
+    "answer": "station"
+  },
+  {
+    "id": "g5-spelling-15",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 3,
+    "prompt": "Someone you like and trust. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Someone you like and trust. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "friend"
+    },
+    "options": [
+      "friend",
+      "freind",
+      "frend"
+    ],
+    "answer": "friend"
+  },
+  {
+    "id": "g5-spelling-16",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 3,
+    "prompt": "Apart. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Apart. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "separate"
+    },
+    "options": [
+      "seperate",
+      "separate",
+      "separete"
+    ],
+    "answer": "separate"
+  },
+  {
+    "id": "g5-spelling-17",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 3,
+    "prompt": "The day after Tuesday. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The day after Tuesday. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "Wednesday"
+    },
+    "options": [
+      "Wensday",
+      "Wednsday",
+      "Wednesday"
+    ],
+    "answer": "Wednesday"
+  },
+  {
+    "id": "g5-spelling-18",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 3,
+    "prompt": "Very pretty. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Very pretty. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "beautiful"
+    },
+    "options": [
+      "beautiful",
+      "beutiful",
+      "beautifull"
+    ],
+    "answer": "beautiful"
+  },
+  {
+    "id": "g5-spelling-19",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 3,
+    "prompt": "Needed. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Needed. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "necessary"
+    },
+    "options": [
+      "necessary",
+      "neccessary",
+      "necesary"
+    ],
+    "answer": "necessary"
+  },
+  {
+    "id": "g5-spelling-20",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-spelling",
+    "difficulty": 3,
+    "prompt": "It tells why. Which spelling is right?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "It tells why. Which spelling is right? ___",
+      "rule": "spelling",
+      "base": "because"
+    },
+    "options": [
+      "because",
+      "becos",
+      "becuase"
+    ],
+    "answer": "because"
+  }
+]

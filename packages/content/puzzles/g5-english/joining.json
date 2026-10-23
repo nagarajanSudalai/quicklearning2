@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g5-joining-01",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 1,
+    "prompt": "Do you want to walk ___ take the bus?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Do you want to walk ___ take the bus?",
+      "rule": "conjunction",
+      "base": "Do you want to walk ___ take the bus?"
+    },
+    "options": [
+      "so",
+      "and",
+      "or"
+    ],
+    "answer": "or"
+  },
+  {
+    "id": "g5-joining-02",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 1,
+    "prompt": "The bag is small ___ heavy.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The bag is small ___ heavy.",
+      "rule": "conjunction",
+      "base": "The bag is small ___ heavy."
+    },
+    "options": [
+      "but",
+      "or",
+      "because"
+    ],
+    "answer": "but"
+  },
+  {
+    "id": "g5-joining-03",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 1,
+    "prompt": "Asha ___ Meena went to the market.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Asha ___ Meena went to the market.",
+      "rule": "conjunction",
+      "base": "Asha ___ Meena went to the market."
+    },
+    "options": [
+      "and",
+      "but",
+      "so"
+    ],
+    "answer": "and"
+  },
+  {
+    "id": "g5-joining-04",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 1,
+    "prompt": "He opened the door ___ walked in.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "He opened the door ___ walked in.",
+      "rule": "conjunction",
+      "base": "He opened the door ___ walked in."
+    },
+    "options": [
+      "and",
+      "or",
+      "because"
+    ],
+    "answer": "and"
+  },
+  {
+    "id": "g5-joining-05",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 1,
+    "prompt": "Would you like rice ___ chapati?",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Would you like rice ___ chapati?",
+      "rule": "conjunction",
+      "base": "Would you like rice ___ chapati?"
+    },
+    "options": [
+      "because",
+      "but",
+      "or"
+    ],
+    "answer": "or"
+  },
+  {
+    "id": "g5-joining-06",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 1,
+    "prompt": "I like tea ___ my brother likes coffee.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "I like tea ___ my brother likes coffee.",
+      "rule": "conjunction",
+      "base": "I like tea ___ my brother likes coffee."
+    },
+    "options": [
+      "so",
+      "but",
+      "because"
+    ],
+    "answer": "but"
+  },
+  {
+    "id": "g5-joining-07",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 1,
+    "prompt": "He opened the door ___ walked in.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "He opened the door ___ walked in.",
+      "rule": "conjunction",
+      "base": "He opened the door ___ walked in."
+    },
+    "options": [
+      "and",
+      "because",
+      "or"
+    ],
+    "answer": "and"
+  },
+  {
+    "id": "g5-joining-08",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 2,
+    "prompt": "___ it was late, the shop was still open.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "___ it was late, the shop was still open.",
+      "rule": "conjunction",
+      "base": "___ it was late, the shop was still open."
+    },
+    "options": [
+      "So",
+      "Although",
+      "Because"
+    ],
+    "answer": "Although"
+  },
+  {
+    "id": "g5-joining-09",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 2,
+    "prompt": "She practised daily ___ she won the prize.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "She practised daily ___ she won the prize.",
+      "rule": "conjunction",
+      "base": "She practised daily ___ she won the prize."
+    },
+    "options": [
+      "so",
+      "because",
+      "although"
+    ],
+    "answer": "so"
+  },
+  {
+    "id": "g5-joining-10",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 2,
+    "prompt": "We have lived here ___ 2019.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "We have lived here ___ 2019.",
+      "rule": "preposition",
+      "base": "We have lived here ___ 2019."
+    },
+    "options": [
+      "since",
+      "for",
+      "from"
+    ],
+    "answer": "since"
+  },
+  {
+    "id": "g5-joining-11",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 2,
+    "prompt": "I was tired ___ I went to bed early.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "I was tired ___ I went to bed early.",
+      "rule": "conjunction",
+      "base": "I was tired ___ I went to bed early."
+    },
+    "options": [
+      "so",
+      "or",
+      "because"
+    ],
+    "answer": "so"
+  },
+  {
+    "id": "g5-joining-12",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 2,
+    "prompt": "We stayed inside ___ it was raining.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "We stayed inside ___ it was raining.",
+      "rule": "conjunction",
+      "base": "We stayed inside ___ it was raining."
+    },
+    "options": [
+      "so",
+      "because",
+      "but"
+    ],
+    "answer": "because"
+  },
+  {
+    "id": "g5-joining-13",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 2,
+    "prompt": "The ball is ___ the two chairs.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The ball is ___ the two chairs.",
+      "rule": "preposition",
+      "base": "The ball is ___ the two chairs."
+    },
+    "options": [
+      "among",
+      "on",
+      "between"
+    ],
+    "answer": "between"
+  },
+  {
+    "id": "g5-joining-14",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 2,
+    "prompt": "The plants died ___ nobody watered them.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The plants died ___ nobody watered them.",
+      "rule": "conjunction",
+      "base": "The plants died ___ nobody watered them."
+    },
+    "options": [
+      "or",
+      "because",
+      "so"
+    ],
+    "answer": "because"
+  },
+  {
+    "id": "g5-joining-15",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 3,
+    "prompt": "Wash your hands ___ you eat.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Wash your hands ___ you eat.",
+      "rule": "conjunction",
+      "base": "Wash your hands ___ you eat."
+    },
+    "options": [
+      "but",
+      "because",
+      "before"
+    ],
+    "answer": "before"
+  },
+  {
+    "id": "g5-joining-16",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 3,
+    "prompt": "We go to the hills ___ May.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "We go to the hills ___ May.",
+      "rule": "preposition",
+      "base": "We go to the hills ___ May."
+    },
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": "in"
+  },
+  {
+    "id": "g5-joining-17",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 3,
+    "prompt": "Wait here ___ I come back.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Wait here ___ I come back.",
+      "rule": "conjunction",
+      "base": "Wait here ___ I come back."
+    },
+    "options": [
+      "until",
+      "or",
+      "although"
+    ],
+    "answer": "until"
+  },
+  {
+    "id": "g5-joining-18",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 3,
+    "prompt": "The bird flew ___ the window into the room.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The bird flew ___ the window into the room.",
+      "rule": "preposition",
+      "base": "The bird flew ___ the window into the room."
+    },
+    "options": [
+      "between",
+      "through",
+      "at"
+    ],
+    "answer": "through"
+  },
+  {
+    "id": "g5-joining-19",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 3,
+    "prompt": "We will go out ___ the rain stops.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "We will go out ___ the rain stops.",
+      "rule": "conjunction",
+      "base": "We will go out ___ the rain stops."
+    },
+    "options": [
+      "when",
+      "or",
+      "but"
+    ],
+    "answer": "when"
+  },
+  {
+    "id": "g5-joining-20",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-joining",
+    "difficulty": 3,
+    "prompt": "My birthday is ___ Monday.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "My birthday is ___ Monday.",
+      "rule": "preposition",
+      "base": "My birthday is ___ Monday."
+    },
+    "options": [
+      "at",
+      "in",
+      "on"
+    ],
+    "answer": "on"
+  }
+]

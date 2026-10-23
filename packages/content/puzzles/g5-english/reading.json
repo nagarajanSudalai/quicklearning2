@@ -1,0 +1,382 @@
+[
+  {
+    "id": "g5-reading-01",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 1,
+    "prompt": "Many birds fly south in winter. They travel thousands of kilometres to find warmer places and more food, and return when spring comes. What is this passage mainly about?",
+    "type": "passage",
+    "payload": {
+      "text": "Many birds fly south in winter. They travel thousands of kilometres to find warmer places and more food, and return when spring comes.",
+      "question": "What is this passage mainly about?"
+    },
+    "options": [
+      "why spring comes",
+      "birds travelling in winter",
+      "winter clothes"
+    ],
+    "answer": "birds travelling in winter"
+  },
+  {
+    "id": "g5-reading-02",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 1,
+    "prompt": "Recycling turns old things into new ones. Paper can become new notebooks, and plastic bottles can be made into benches and even clothes. What is this passage mainly about?",
+    "type": "passage",
+    "payload": {
+      "text": "Recycling turns old things into new ones. Paper can become new notebooks, and plastic bottles can be made into benches and even clothes.",
+      "question": "What is this passage mainly about?"
+    },
+    "options": [
+      "what recycling does",
+      "buying new clothes",
+      "why plastic is bad"
+    ],
+    "answer": "what recycling does"
+  },
+  {
+    "id": "g5-reading-03",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 1,
+    "prompt": "Exercise keeps the body strong. Running, cycling and playing games make the heart healthy, and stretching keeps the muscles from getting stiff. What is this passage mainly about?",
+    "type": "passage",
+    "payload": {
+      "text": "Exercise keeps the body strong. Running, cycling and playing games make the heart healthy, and stretching keeps the muscles from getting stiff.",
+      "question": "What is this passage mainly about?"
+    },
+    "options": [
+      "how exercise helps the body",
+      "how to win a race",
+      "healthy food"
+    ],
+    "answer": "how exercise helps the body"
+  },
+  {
+    "id": "g5-reading-04",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 1,
+    "prompt": "Water is precious. We should close the tap while brushing our teeth, fix leaking pipes, and reuse water from washing vegetables to water plants. What is this passage mainly about?",
+    "type": "passage",
+    "payload": {
+      "text": "Water is precious. We should close the tap while brushing our teeth, fix leaking pipes, and reuse water from washing vegetables to water plants.",
+      "question": "What is this passage mainly about?"
+    },
+    "options": [
+      "ways to save water",
+      "how to brush teeth",
+      "growing vegetables"
+    ],
+    "answer": "ways to save water"
+  },
+  {
+    "id": "g5-reading-05",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 1,
+    "prompt": "Camels can live in hot deserts. They store fat in their humps, can go for days without water, and have thick eyelashes that keep out the sand. What is this passage mainly about?",
+    "type": "passage",
+    "payload": {
+      "text": "Camels can live in hot deserts. They store fat in their humps, can go for days without water, and have thick eyelashes that keep out the sand.",
+      "question": "What is this passage mainly about?"
+    },
+    "options": [
+      "why sand is hot",
+      "animals with humps",
+      "how camels live in the desert"
+    ],
+    "answer": "how camels live in the desert"
+  },
+  {
+    "id": "g5-reading-06",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 1,
+    "prompt": "Bees are very important. They carry pollen from flower to flower, which helps plants make fruits and seeds. Without bees, we would have far fewer apples, mangoes and vegetables. What is this passage mainly about?",
+    "type": "passage",
+    "payload": {
+      "text": "Bees are very important. They carry pollen from flower to flower, which helps plants make fruits and seeds. Without bees, we would have far fewer apples, mangoes and vegetables.",
+      "question": "What is this passage mainly about?"
+    },
+    "options": [
+      "how to make honey",
+      "why bees sting",
+      "why bees are important"
+    ],
+    "answer": "why bees are important"
+  },
+  {
+    "id": "g5-reading-07",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 1,
+    "prompt": "The Indian flag has three colours: saffron, white and green. In the centre is a blue wheel with 24 spokes, called the Ashoka Chakra. What is this passage mainly about?",
+    "type": "passage",
+    "payload": {
+      "text": "The Indian flag has three colours: saffron, white and green. In the centre is a blue wheel with 24 spokes, called the Ashoka Chakra.",
+      "question": "What is this passage mainly about?"
+    },
+    "options": [
+      "colours of the rainbow",
+      "the Indian flag",
+      "Indian festivals"
+    ],
+    "answer": "the Indian flag"
+  },
+  {
+    "id": "g5-reading-08",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 2,
+    "prompt": "The ground was wet, the leaves were dripping and there were puddles on the road, but the sun was now shining. What had just happened?",
+    "type": "passage",
+    "payload": {
+      "text": "The ground was wet, the leaves were dripping and there were puddles on the road, but the sun was now shining.",
+      "question": "What had just happened?"
+    },
+    "options": [
+      "someone watered the plants",
+      "there was a flood",
+      "it had rained"
+    ],
+    "answer": "it had rained"
+  },
+  {
+    "id": "g5-reading-09",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 2,
+    "prompt": "Priya’s eyes filled with tears when she saw the broken vase. It had belonged to her grandmother. How did Priya feel?",
+    "type": "passage",
+    "payload": {
+      "text": "Priya’s eyes filled with tears when she saw the broken vase. It had belonged to her grandmother.",
+      "question": "How did Priya feel?"
+    },
+    "options": [
+      "excited",
+      "sad",
+      "angry at her grandmother"
+    ],
+    "answer": "sad"
+  },
+  {
+    "id": "g5-reading-10",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 2,
+    "prompt": "Rohan looked at the dark clouds, picked up his umbrella and put on his raincoat before leaving for school. What did Rohan think would happen?",
+    "type": "passage",
+    "payload": {
+      "text": "Rohan looked at the dark clouds, picked up his umbrella and put on his raincoat before leaving for school.",
+      "question": "What did Rohan think would happen?"
+    },
+    "options": [
+      "it would rain",
+      "he would be late",
+      "school would close"
+    ],
+    "answer": "it would rain"
+  },
+  {
+    "id": "g5-reading-11",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 2,
+    "prompt": "Arjun yawned again and again in class. His eyes kept closing, and he rested his head on the desk. What can you tell about Arjun?",
+    "type": "passage",
+    "payload": {
+      "text": "Arjun yawned again and again in class. His eyes kept closing, and he rested his head on the desk.",
+      "question": "What can you tell about Arjun?"
+    },
+    "options": [
+      "he was excited",
+      "he was sleepy",
+      "he was hungry"
+    ],
+    "answer": "he was sleepy"
+  },
+  {
+    "id": "g5-reading-12",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 2,
+    "prompt": "The shop was full of people buying sweets, lamps and new clothes. Firecrackers could be heard from every street. Which festival was it most likely?",
+    "type": "passage",
+    "payload": {
+      "text": "The shop was full of people buying sweets, lamps and new clothes. Firecrackers could be heard from every street.",
+      "question": "Which festival was it most likely?"
+    },
+    "options": [
+      "Diwali",
+      "a school sports day",
+      "a birthday"
+    ],
+    "answer": "Diwali"
+  },
+  {
+    "id": "g5-reading-13",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 2,
+    "prompt": "Grandpa smiled as he opened the box. Inside was a new pair of glasses, and now he could read the newspaper again. Why was Grandpa happy?",
+    "type": "passage",
+    "payload": {
+      "text": "Grandpa smiled as he opened the box. Inside was a new pair of glasses, and now he could read the newspaper again.",
+      "question": "Why was Grandpa happy?"
+    },
+    "options": [
+      "he could read again",
+      "it was his birthday",
+      "the newspaper was free"
+    ],
+    "answer": "he could read again"
+  },
+  {
+    "id": "g5-reading-14",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 2,
+    "prompt": "Neha checked her watch, ran to the gate and waved her hand at the bus that was pulling away. What most likely happened?",
+    "type": "passage",
+    "payload": {
+      "text": "Neha checked her watch, ran to the gate and waved her hand at the bus that was pulling away.",
+      "question": "What most likely happened?"
+    },
+    "options": [
+      "Neha missed the bus",
+      "Neha was driving",
+      "the bus was early for Neha"
+    ],
+    "answer": "Neha missed the bus"
+  },
+  {
+    "id": "g5-reading-15",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 3,
+    "prompt": "The fox could not reach the grapes hanging high on the vine. After many jumps he walked away, saying, \"They must be sour anyway.\" Which is the best title?",
+    "type": "passage",
+    "payload": {
+      "text": "The fox could not reach the grapes hanging high on the vine. After many jumps he walked away, saying, \"They must be sour anyway.\"",
+      "question": "Which is the best title?"
+    },
+    "options": [
+      "How Grapes Grow",
+      "The Fox and the Sour Grapes",
+      "The Hungry Bird"
+    ],
+    "answer": "The Fox and the Sour Grapes"
+  },
+  {
+    "id": "g5-reading-16",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 3,
+    "prompt": "Kiran found a wallet on the road with money inside. He took it to the police station, and the owner thanked him with a big smile. Which is the best title?",
+    "type": "passage",
+    "payload": {
+      "text": "Kiran found a wallet on the road with money inside. He took it to the police station, and the owner thanked him with a big smile.",
+      "question": "Which is the best title?"
+    },
+    "options": [
+      "An Honest Boy",
+      "The Police Station",
+      "A Lost Road"
+    ],
+    "answer": "An Honest Boy"
+  },
+  {
+    "id": "g5-reading-17",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 3,
+    "prompt": "The villagers had no bridge across the river. Together they collected bamboo and rope, and in two weeks they built one. Now the children walk to school safely. Which is the best title?",
+    "type": "passage",
+    "payload": {
+      "text": "The villagers had no bridge across the river. Together they collected bamboo and rope, and in two weeks they built one. Now the children walk to school safely.",
+      "question": "Which is the best title?"
+    },
+    "options": [
+      "The Deep River",
+      "Bamboo Houses",
+      "A Bridge Built Together"
+    ],
+    "answer": "A Bridge Built Together"
+  },
+  {
+    "id": "g5-reading-18",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 3,
+    "prompt": "Every evening, Meera taught the children of her street to read under the streetlight. Within a year, all of them could read storybooks on their own. Which is the best title?",
+    "type": "passage",
+    "payload": {
+      "text": "Every evening, Meera taught the children of her street to read under the streetlight. Within a year, all of them could read storybooks on their own.",
+      "question": "Which is the best title?"
+    },
+    "options": [
+      "Playing in the Street",
+      "The Streetlight School",
+      "Meera’s New Book"
+    ],
+    "answer": "The Streetlight School"
+  },
+  {
+    "id": "g5-reading-19",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 3,
+    "prompt": "A small seed fell into a crack in the rock. Rain came, and the sun shone. Slowly a tiny plant pushed its way up, and years later a strong tree stood where the seed had been. Which is the best title?",
+    "type": "passage",
+    "payload": {
+      "text": "A small seed fell into a crack in the rock. Rain came, and the sun shone. Slowly a tiny plant pushed its way up, and years later a strong tree stood where the seed had been.",
+      "question": "Which is the best title?"
+    },
+    "options": [
+      "How to Plant a Garden",
+      "The Seed That Never Gave Up",
+      "The Broken Rock"
+    ],
+    "answer": "The Seed That Never Gave Up"
+  },
+  {
+    "id": "g5-reading-20",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-reading",
+    "difficulty": 3,
+    "prompt": "The fox could not reach the grapes hanging high on the vine. After many jumps he walked away, saying, \"They must be sour anyway.\" Which is the best title?",
+    "type": "passage",
+    "payload": {
+      "text": "The fox could not reach the grapes hanging high on the vine. After many jumps he walked away, saying, \"They must be sour anyway.\"",
+      "question": "Which is the best title?"
+    },
+    "options": [
+      "A Good Jump",
+      "The Fox and the Sour Grapes",
+      "How Grapes Grow"
+    ],
+    "answer": "The Fox and the Sour Grapes"
+  }
+]

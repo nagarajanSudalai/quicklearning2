@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english', 'puzzles', 'thinking'], 5: ['maths'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english', 'puzzles', 'thinking'], 5: ['maths', 'english'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -104,6 +104,11 @@ export const TOPICS: Topic[] = [
   { id: 'g5-percent', grade: 5, subject: 'maths', title: 'Percentages', blurb: 'Out of 100, sales', glyph: '%', color: colors.purple },
   { id: 'g5-geometry', grade: 5, subject: 'maths', title: 'Angles and area', blurb: 'Acute, right, obtuse', glyph: '∠', color: colors.teal },
   { id: 'g5-charts', grade: 5, subject: 'maths', title: 'Bar charts', blurb: 'Read the data', glyph: '📊', color: colors.orange },
+  { id: 'g5-joining', grade: 5, subject: 'english', title: 'Joining and position words', blurb: 'and, because, between', glyph: '&', color: colors.blue },
+  { id: 'g5-voice', grade: 5, subject: 'english', title: 'Passive and reported speech', blurb: 'was kicked, said that', glyph: '“ ”', color: colors.pink },
+  { id: 'g5-idioms', grade: 5, subject: 'english', title: 'Idioms and proverbs', blurb: 'a piece of cake', glyph: '🍰', color: colors.green },
+  { id: 'g5-spelling', grade: 5, subject: 'english', title: 'Tricky spellings', blurb: 'knife, station, separate', glyph: 'Ab', color: colors.orange },
+  { id: 'g5-reading', grade: 5, subject: 'english', title: 'Read and infer', blurb: 'Main idea, clues, titles', glyph: '📖', color: colors.purple },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

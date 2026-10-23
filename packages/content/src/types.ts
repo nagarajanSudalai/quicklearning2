@@ -130,7 +130,7 @@ export type MoneyPuzzle = Base & {
 /** A sentence with a blank (___) to fill; `rule` and `base` let the checker work out the answer. */
 export type FillBlankPuzzle = Base & {
   type: 'fill-blank';
-  payload: { sentence: string; picture?: string; rule: 'plural' | 'opposite' | 'article' | 'is-are' | 'past' | 'synonym' | 'homophone' | 'future' | 'continuous' | 'affix'; base: string; who?: string };
+  payload: { sentence: string; picture?: string; rule: 'plural' | 'opposite' | 'article' | 'is-are' | 'past' | 'synonym' | 'homophone' | 'future' | 'continuous' | 'affix' | 'conjunction' | 'preposition' | 'voice' | 'spelling'; base: string; who?: string };
   options: string[];
   answer: string;
 };

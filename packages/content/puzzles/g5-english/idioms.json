@@ -1,0 +1,368 @@
+[
+  {
+    "id": "g5-idioms-01",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 1,
+    "prompt": "What does \"hit the books\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "hit the books"
+    },
+    "options": [
+      "study hard",
+      "throw books",
+      "buy books"
+    ],
+    "answer": "study hard"
+  },
+  {
+    "id": "g5-idioms-02",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 1,
+    "prompt": "What does \"break the ice\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "break the ice"
+    },
+    "options": [
+      "start talking in a friendly way",
+      "break something cold",
+      "get very angry"
+    ],
+    "answer": "start talking in a friendly way"
+  },
+  {
+    "id": "g5-idioms-03",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 1,
+    "prompt": "What does \"under the weather\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "under the weather"
+    },
+    "options": [
+      "feeling ill",
+      "standing in the rain",
+      "feeling happy"
+    ],
+    "answer": "feeling ill"
+  },
+  {
+    "id": "g5-idioms-04",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 1,
+    "prompt": "What does \"let the cat out of the bag\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "let the cat out of the bag"
+    },
+    "options": [
+      "tell a secret",
+      "lose something",
+      "go shopping"
+    ],
+    "answer": "tell a secret"
+  },
+  {
+    "id": "g5-idioms-05",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 1,
+    "prompt": "What does \"once in a blue moon\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "once in a blue moon"
+    },
+    "options": [
+      "very quickly",
+      "very rarely",
+      "on a cloudy day"
+    ],
+    "answer": "very rarely"
+  },
+  {
+    "id": "g5-idioms-06",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 1,
+    "prompt": "What does \"a piece of cake\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "a piece of cake"
+    },
+    "options": [
+      "very hard",
+      "a sweet treat",
+      "very easy"
+    ],
+    "answer": "very easy"
+  },
+  {
+    "id": "g5-idioms-07",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 1,
+    "prompt": "What does \"over the moon\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "over the moon"
+    },
+    "options": [
+      "in space",
+      "very tired",
+      "very happy"
+    ],
+    "answer": "very happy"
+  },
+  {
+    "id": "g5-idioms-08",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 2,
+    "prompt": "What does \"Look before you leap.\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "Look before you leap."
+    },
+    "options": [
+      "always look down",
+      "think before you act",
+      "jump very high"
+    ],
+    "answer": "think before you act"
+  },
+  {
+    "id": "g5-idioms-09",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 2,
+    "prompt": "What does \"Practice makes perfect.\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "Practice makes perfect."
+    },
+    "options": [
+      "do it only once",
+      "doing something again and again makes you good at it",
+      "nobody is perfect"
+    ],
+    "answer": "doing something again and again makes you good at it"
+  },
+  {
+    "id": "g5-idioms-10",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 2,
+    "prompt": "What does \"Slow and steady wins the race.\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "Slow and steady wins the race."
+    },
+    "options": [
+      "running is good",
+      "slow people always lose",
+      "working patiently brings success"
+    ],
+    "answer": "working patiently brings success"
+  },
+  {
+    "id": "g5-idioms-11",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 2,
+    "prompt": "What does \"Don’t judge a book by its cover.\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "Don’t judge a book by its cover."
+    },
+    "options": [
+      "covers are important",
+      "don’t judge by how something looks",
+      "books are boring"
+    ],
+    "answer": "don’t judge by how something looks"
+  },
+  {
+    "id": "g5-idioms-12",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 2,
+    "prompt": "What does \"Two heads are better than one.\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "Two heads are better than one."
+    },
+    "options": [
+      "one person is enough",
+      "heads are heavy",
+      "working together helps"
+    ],
+    "answer": "working together helps"
+  },
+  {
+    "id": "g5-idioms-13",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 2,
+    "prompt": "What does \"Where there’s a will, there’s a way.\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "Where there’s a will, there’s a way."
+    },
+    "options": [
+      "if you really want something, you will find a way",
+      "never give up your toys",
+      "roads are long"
+    ],
+    "answer": "if you really want something, you will find a way"
+  },
+  {
+    "id": "g5-idioms-14",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 2,
+    "prompt": "What does \"Practice makes perfect.\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "Practice makes perfect."
+    },
+    "options": [
+      "do it only once",
+      "nobody is perfect",
+      "doing something again and again makes you good at it"
+    ],
+    "answer": "doing something again and again makes you good at it"
+  },
+  {
+    "id": "g5-idioms-15",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 3,
+    "prompt": "Meena was on cloud nine after winning the race. What does \"on cloud nine\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "on cloud nine",
+      "sentence": "Meena was on cloud nine after winning the race."
+    },
+    "options": [
+      "flying a plane",
+      "extremely happy",
+      "confused"
+    ],
+    "answer": "extremely happy"
+  },
+  {
+    "id": "g5-idioms-16",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 3,
+    "prompt": "That new bicycle cost an arm and a leg. What does \"cost an arm and a leg\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "cost an arm and a leg",
+      "sentence": "That new bicycle cost an arm and a leg."
+    },
+    "options": [
+      "be very expensive",
+      "hurt badly",
+      "be very cheap"
+    ],
+    "answer": "be very expensive"
+  },
+  {
+    "id": "g5-idioms-17",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 3,
+    "prompt": "Please keep an eye on your little brother. What does \"keep an eye on\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "keep an eye on",
+      "sentence": "Please keep an eye on your little brother."
+    },
+    "options": [
+      "forget about",
+      "close one eye",
+      "watch carefully"
+    ],
+    "answer": "watch carefully"
+  },
+  {
+    "id": "g5-idioms-18",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 3,
+    "prompt": "Ravi was in hot water for breaking the window. What does \"in hot water\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "in hot water",
+      "sentence": "Ravi was in hot water for breaking the window."
+    },
+    "options": [
+      "cooking",
+      "in trouble",
+      "very warm"
+    ],
+    "answer": "in trouble"
+  },
+  {
+    "id": "g5-idioms-19",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 3,
+    "prompt": "The two friends don’t always see eye to eye. What does \"see eye to eye\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "see eye to eye",
+      "sentence": "The two friends don’t always see eye to eye."
+    },
+    "options": [
+      "agree",
+      "look at each other",
+      "stand close"
+    ],
+    "answer": "agree"
+  },
+  {
+    "id": "g5-idioms-20",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-idioms",
+    "difficulty": 3,
+    "prompt": "Ravi was in hot water for breaking the window. What does \"in hot water\" mean?",
+    "type": "idiom",
+    "payload": {
+      "phrase": "in hot water",
+      "sentence": "Ravi was in hot water for breaking the window."
+    },
+    "options": [
+      "in trouble",
+      "having a bath",
+      "very warm"
+    ],
+    "answer": "in trouble"
+  }
+]

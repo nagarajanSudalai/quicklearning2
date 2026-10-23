@@ -15,6 +15,7 @@ import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/math
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
 import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
+import { CONJUNCTIONS, IDIOMS, PASSAGES5, PREPOSITIONS, SPELLINGS, VOICE } from '../src/words5.ts';
 import { AFFIXES, ING, LADDER_WORDS, PASSAGES4, SUBJECTS4, oneLetterApart } from '../src/words4.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
@@ -154,6 +155,16 @@ function check(p: any): string | null {
         const real = p.options.find((o: string) => o !== p.answer && AFFIXES.some((a) => a.word === o));
         if (real) return `${real} is also a real word in the bank`;
       }
+      else if (q.rule === 'conjunction' || q.rule === 'preposition' || q.rule === 'voice') {
+        const bank = q.rule === 'conjunction' ? CONJUNCTIONS : q.rule === 'preposition' ? PREPOSITIONS : VOICE;
+        const item = bank.find((x) => x.sentence === q.sentence);
+        if (item && p.options.some((o: string) => !item.options.includes(o))) return 'options differ from the bank';
+        want = item?.answer;
+      } else if (q.rule === 'spelling') {
+        const s = SPELLINGS.find((x) => x.word === q.base);
+        if (s && p.options.some((o: string) => o !== s.word && !s.wrong.includes(o))) return 'unknown spelling option';
+        want = s?.word;
+      }
       if (!want) return `no ${q.rule} rule for "${q.base}"`;
       return want === p.answer ? null : `answer should be "${want}"`;
     }
@@ -192,7 +203,7 @@ function check(p: any): string | null {
       return hits[0].word === p.answer ? null : `the ${q.ask} is "${hits[0].word}"`;
     }
     case 'passage': {
-      const b = [...PASSAGES, ...PASSAGES4].find((x) => x.text === q.text && x.question === q.question);
+      const b = [...PASSAGES, ...PASSAGES4, ...PASSAGES5].find((x) => x.text === q.text && x.question === q.question);
       if (!b) return 'passage not in the bank';
       if (p.options.some((o: string) => o !== b.answer && !b.wrong.includes(o))) return 'unknown option';
       return b.answer === p.answer ? null : `answer is "${b.answer}"`;
@@ -274,6 +285,12 @@ function check(p: any): string | null {
       if ((q.ask.kind === 'most' || q.ask.kind === 'least') && new Set(values).size !== values.length) return 'tied bars';
       const want = chartAnswer(q.bars, q.ask);
       return want === p.answer ? null : `answer is ${want}`;
+    }
+    case 'idiom': {
+      const x = IDIOMS.find((i) => i.phrase === q.phrase);
+      if (!x) return 'idiom not in the bank';
+      if (p.options.some((o: string) => o !== x.meaning && !x.wrong.includes(o))) return 'unknown option';
+      return x.meaning === p.answer ? null : `means "${x.meaning}"`;
     }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);

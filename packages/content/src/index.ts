@@ -81,6 +81,12 @@ import g5Percent from '../puzzles/g5-maths/percent.json';
 import g5Geometry from '../puzzles/g5-maths/geometry.json';
 import g5Charts from '../puzzles/g5-maths/charts.json';
 
+import g5EJoining from '../puzzles/g5-english/joining.json';
+import g5EVoice from '../puzzles/g5-english/voice.json';
+import g5EIdioms from '../puzzles/g5-english/idioms.json';
+import g5ESpelling from '../puzzles/g5-english/spelling.json';
+import g5EReading from '../puzzles/g5-english/reading.json';
+
 export * from './types';
 export * from './tokens';
 export * from './curriculum';
@@ -101,6 +107,7 @@ export * from './maths4';
 export * from './words4';
 export * from './thinking4';
 export * from './maths5';
+export * from './words5';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -120,6 +127,7 @@ export const PUZZLES = [
   ...g4EPronouns, ...g4ETenses, ...g4EAffixes, ...g4ELadders, ...g4EReading,
   ...g4Crossword, ...g4Sudoku, ...g4Logic, ...g4Patterns, ...g4Codes,
   ...g5Numbers, ...g5BigOps, ...g5Fractions, ...g5Decimals, ...g5Percent, ...g5Geometry, ...g5Charts,
+  ...g5EJoining, ...g5EVoice, ...g5EIdioms, ...g5ESpelling, ...g5EReading,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g5-voice-01",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 1,
+    "prompt": "The cook makes the food. → The food ___ by the cook.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The cook makes the food. → The food ___ by the cook.",
+      "rule": "voice",
+      "base": "The cook makes the food. → The food ___ by the cook."
+    },
+    "options": [
+      "is made",
+      "makes",
+      "was made"
+    ],
+    "answer": "is made"
+  },
+  {
+    "id": "g5-voice-02",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 1,
+    "prompt": "Meena wrote a letter. → A letter ___ by Meena.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Meena wrote a letter. → A letter ___ by Meena.",
+      "rule": "voice",
+      "base": "Meena wrote a letter. → A letter ___ by Meena."
+    },
+    "options": [
+      "was wrote",
+      "was written",
+      "wrote"
+    ],
+    "answer": "was written"
+  },
+  {
+    "id": "g5-voice-03",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 1,
+    "prompt": "The children planted trees. → Trees ___ by the children.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The children planted trees. → Trees ___ by the children.",
+      "rule": "voice",
+      "base": "The children planted trees. → Trees ___ by the children."
+    },
+    "options": [
+      "planted",
+      "was planted",
+      "were planted"
+    ],
+    "answer": "were planted"
+  },
+  {
+    "id": "g5-voice-04",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 1,
+    "prompt": "Grandpa reads the newspaper. → The newspaper ___ by Grandpa.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Grandpa reads the newspaper. → The newspaper ___ by Grandpa.",
+      "rule": "voice",
+      "base": "Grandpa reads the newspaper. → The newspaper ___ by Grandpa."
+    },
+    "options": [
+      "reads",
+      "is read",
+      "was read"
+    ],
+    "answer": "is read"
+  },
+  {
+    "id": "g5-voice-05",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 1,
+    "prompt": "The cat drank the milk. → The milk ___ by the cat.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The cat drank the milk. → The milk ___ by the cat.",
+      "rule": "voice",
+      "base": "The cat drank the milk. → The milk ___ by the cat."
+    },
+    "options": [
+      "drank",
+      "was drunk",
+      "was drank"
+    ],
+    "answer": "was drunk"
+  },
+  {
+    "id": "g5-voice-06",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 1,
+    "prompt": "Ravi kicked the ball. → The ball ___ by Ravi.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Ravi kicked the ball. → The ball ___ by Ravi.",
+      "rule": "voice",
+      "base": "Ravi kicked the ball. → The ball ___ by Ravi."
+    },
+    "options": [
+      "was kicked",
+      "kicked",
+      "is kick"
+    ],
+    "answer": "was kicked"
+  },
+  {
+    "id": "g5-voice-07",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 1,
+    "prompt": "Meena wrote a letter. → A letter ___ by Meena.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Meena wrote a letter. → A letter ___ by Meena.",
+      "rule": "voice",
+      "base": "Meena wrote a letter. → A letter ___ by Meena."
+    },
+    "options": [
+      "wrote",
+      "was wrote",
+      "was written"
+    ],
+    "answer": "was written"
+  },
+  {
+    "id": "g5-voice-08",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 2,
+    "prompt": "Kabir said, \"I will come.\" → Kabir said that he ___ come.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Kabir said, \"I will come.\" → Kabir said that he ___ come.",
+      "rule": "voice",
+      "base": "Kabir said, \"I will come.\" → Kabir said that he ___ come."
+    },
+    "options": [
+      "can",
+      "would",
+      "will"
+    ],
+    "answer": "would"
+  },
+  {
+    "id": "g5-voice-09",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 2,
+    "prompt": "Asha said, \"I am hungry.\" → Asha said that she ___ hungry.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Asha said, \"I am hungry.\" → Asha said that she ___ hungry.",
+      "rule": "voice",
+      "base": "Asha said, \"I am hungry.\" → Asha said that she ___ hungry."
+    },
+    "options": [
+      "am",
+      "was",
+      "is"
+    ],
+    "answer": "was"
+  },
+  {
+    "id": "g5-voice-10",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 2,
+    "prompt": "Ravi said, \"I like mangoes.\" → Ravi said that he ___ mangoes.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Ravi said, \"I like mangoes.\" → Ravi said that he ___ mangoes.",
+      "rule": "voice",
+      "base": "Ravi said, \"I like mangoes.\" → Ravi said that he ___ mangoes."
+    },
+    "options": [
+      "liked",
+      "likes",
+      "like"
+    ],
+    "answer": "liked"
+  },
+  {
+    "id": "g5-voice-11",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 2,
+    "prompt": "Mother said, \"It is raining.\" → Mother said that it ___ raining.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Mother said, \"It is raining.\" → Mother said that it ___ raining.",
+      "rule": "voice",
+      "base": "Mother said, \"It is raining.\" → Mother said that it ___ raining."
+    },
+    "options": [
+      "will",
+      "was",
+      "is"
+    ],
+    "answer": "was"
+  },
+  {
+    "id": "g5-voice-12",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 2,
+    "prompt": "Tara said, \"I can swim.\" → Tara said that she ___ swim.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tara said, \"I can swim.\" → Tara said that she ___ swim.",
+      "rule": "voice",
+      "base": "Tara said, \"I can swim.\" → Tara said that she ___ swim."
+    },
+    "options": [
+      "could",
+      "will",
+      "can"
+    ],
+    "answer": "could"
+  },
+  {
+    "id": "g5-voice-13",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 2,
+    "prompt": "Kabir said, \"I will come.\" → Kabir said that he ___ come.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Kabir said, \"I will come.\" → Kabir said that he ___ come.",
+      "rule": "voice",
+      "base": "Kabir said, \"I will come.\" → Kabir said that he ___ come."
+    },
+    "options": [
+      "will",
+      "can",
+      "would"
+    ],
+    "answer": "would"
+  },
+  {
+    "id": "g5-voice-14",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 2,
+    "prompt": "Ravi said, \"I like mangoes.\" → Ravi said that he ___ mangoes.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Ravi said, \"I like mangoes.\" → Ravi said that he ___ mangoes.",
+      "rule": "voice",
+      "base": "Ravi said, \"I like mangoes.\" → Ravi said that he ___ mangoes."
+    },
+    "options": [
+      "likes",
+      "liked",
+      "like"
+    ],
+    "answer": "liked"
+  },
+  {
+    "id": "g5-voice-15",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 3,
+    "prompt": "Everyone loves Priya. → Priya ___ by everyone.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Everyone loves Priya. → Priya ___ by everyone.",
+      "rule": "voice",
+      "base": "Everyone loves Priya. → Priya ___ by everyone."
+    },
+    "options": [
+      "loves",
+      "is loved",
+      "was love"
+    ],
+    "answer": "is loved"
+  },
+  {
+    "id": "g5-voice-16",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 3,
+    "prompt": "Sam said, \"I am reading.\" → Sam said that he ___ reading.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Sam said, \"I am reading.\" → Sam said that he ___ reading.",
+      "rule": "voice",
+      "base": "Sam said, \"I am reading.\" → Sam said that he ___ reading."
+    },
+    "options": [
+      "is",
+      "was",
+      "am"
+    ],
+    "answer": "was"
+  },
+  {
+    "id": "g5-voice-17",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 3,
+    "prompt": "The police caught the thief. → The thief ___ by the police.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The police caught the thief. → The thief ___ by the police.",
+      "rule": "voice",
+      "base": "The police caught the thief. → The thief ___ by the police."
+    },
+    "options": [
+      "was catched",
+      "caught",
+      "was caught"
+    ],
+    "answer": "was caught"
+  },
+  {
+    "id": "g5-voice-18",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 3,
+    "prompt": "The teacher said, \"Sit down.\" → The teacher told us ___ sit down.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The teacher said, \"Sit down.\" → The teacher told us ___ sit down.",
+      "rule": "voice",
+      "base": "The teacher said, \"Sit down.\" → The teacher told us ___ sit down."
+    },
+    "options": [
+      "to",
+      "that",
+      "for"
+    ],
+    "answer": "to"
+  },
+  {
+    "id": "g5-voice-19",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 3,
+    "prompt": "The police caught the thief. → The thief ___ by the police.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The police caught the thief. → The thief ___ by the police.",
+      "rule": "voice",
+      "base": "The police caught the thief. → The thief ___ by the police."
+    },
+    "options": [
+      "was catched",
+      "caught",
+      "was caught"
+    ],
+    "answer": "was caught"
+  },
+  {
+    "id": "g5-voice-20",
+    "grade": 5,
+    "subject": "english",
+    "topic": "g5-voice",
+    "difficulty": 3,
+    "prompt": "The teacher said, \"Sit down.\" → The teacher told us ___ sit down.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "The teacher said, \"Sit down.\" → The teacher told us ___ sit down.",
+      "rule": "voice",
+      "base": "The teacher said, \"Sit down.\" → The teacher told us ___ sit down."
+    },
+    "options": [
+      "to",
+      "that",
+      "for"
+    ],
+    "answer": "to"
+  }
+]
