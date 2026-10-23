@@ -32,8 +32,8 @@
   - **Thinking:** ordering steps, riddles, mazes up to 7×7.
 - **Adaptive difficulty v1:** up a level after 3 first-try answers in a row, down after 2 misses in a row.
 
-## Phase 4 — Science, Practice & Tests (Grades 1–2)
-- Science: `picture-quiz`, `true-false`, `label-the-picture`.
+## Phase 4 — Science, Practice & Tests
+- **Science ✅** — Grades 1–5, NCERT/CBSE EVS order, 3 topics per grade (300 puzzles): labelled diagrams (body, plant, water cycle), picture quizzes, true/false and sorting.
 - Timed topic tests with a report for parents.
 
 ## Phase 5 — Grades 3, 4 and 5

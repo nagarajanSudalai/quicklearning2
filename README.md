@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (1,660 puzzles) — with adaptive difficulty.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in five subjects — Maths, English, Science, Puzzles and Thinking Skills (1,960 puzzles) — with adaptive difficulty.**
 
 ## Getting started
 
@@ -207,6 +207,26 @@ Content lives in `src/maths5.ts`, `src/words5.ts` and `src/thinking5.ts`. The ch
 - brute-forces every sum grid so it has exactly one solution;
 - re-runs each teaser's `solve()` where it has one.
 
+## Science, Grades 1–5 (NCERT/CBSE EVS)
+
+15 topics (3 per grade), 20 puzzles each across 3 levels — 300 puzzles.
+
+| Grade | Topics |
+|---|---|
+| 1 | My body · Living and non-living · Animals around us |
+| 2 | Plants · Food · Weather and seasons |
+| 3 | Animal life (what animals eat) · Senses and body care · Air and water |
+| 4 | Plants and food · Solids, liquids, gases and magnets · The water cycle |
+| 5 | Body systems · Living world (food chains, habitats) · Earth and space |
+
+New puzzle types:
+- **`label-diagram`**: a drawn body, plant or water cycle. Level 1 marks one part with "?"; level 2 numbers every part and asks for one by name or by its job.
+- **`science-quiz`**: a picture and a question.
+- **`true-false`**: a picture and a statement.
+- Sorting reuses `sort-into-groups`, with science groups such as living/non-living, floats/sinks, solid/liquid/gas and magnetic/non-magnetic.
+
+All content lives in `src/science.ts` and is arranged by `scripts/generate-science.ts`. The checker looks every question and fact up in the bank for its topic, checks each diagram answer against the part list (numbers, names and jobs), and keeps science sorting groups apart from the odd-one-out categories.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
@@ -293,3 +313,9 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Crossword | Sum grid | Brain teaser | Series | Codes |
 |---|---|---|---|---|
 | ![](docs/screenshots/g5-crossword.png) | ![](docs/screenshots/g5-sumgrid.png) | ![](docs/screenshots/g5-teaser.png) | ![](docs/screenshots/g5-series.png) | ![](docs/screenshots/g5-codes.png) |
+
+### Science
+
+| Topics | Label the part | Numbered diagram | True or false | Quiz | Sorting |
+|---|---|---|---|---|---|
+| ![](docs/screenshots/sci-topics.png) | ![](docs/screenshots/sci-label.png) | ![](docs/screenshots/sci-water-cycle.png) | ![](docs/screenshots/sci-true-false.png) | ![](docs/screenshots/sci-quiz.png) | ![](docs/screenshots/sci-sort.png) |

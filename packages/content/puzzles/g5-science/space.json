@@ -1,0 +1,395 @@
+[
+  {
+    "id": "g5-sci-space-01",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 1,
+    "prompt": "The Sun is a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q1-1",
+      "picture": "☀️",
+      "question": "The Sun is a…"
+    },
+    "options": [
+      "star",
+      "moon",
+      "planet"
+    ],
+    "answer": "star"
+  },
+  {
+    "id": "g5-sci-space-02",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 1,
+    "prompt": "Which planet do we live on?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q1-2",
+      "picture": "🌍",
+      "question": "Which planet do we live on?"
+    },
+    "options": [
+      "Earth",
+      "Mars",
+      "Jupiter"
+    ],
+    "answer": "Earth"
+  },
+  {
+    "id": "g5-sci-space-03",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 1,
+    "prompt": "Which is the biggest planet?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q1-3",
+      "picture": "🪐",
+      "question": "Which is the biggest planet?"
+    },
+    "options": [
+      "Mercury",
+      "Jupiter",
+      "Earth"
+    ],
+    "answer": "Jupiter"
+  },
+  {
+    "id": "g5-sci-space-04",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 1,
+    "prompt": "Which planet is called the red planet?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q1-4",
+      "picture": "🔴",
+      "question": "Which planet is called the red planet?"
+    },
+    "options": [
+      "Venus",
+      "Saturn",
+      "Mars"
+    ],
+    "answer": "Mars"
+  },
+  {
+    "id": "g5-sci-space-05",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 1,
+    "prompt": "The Moon goes around the…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q1-5",
+      "picture": "🌕",
+      "question": "The Moon goes around the…"
+    },
+    "options": [
+      "Sun only",
+      "Mars",
+      "Earth"
+    ],
+    "answer": "Earth"
+  },
+  {
+    "id": "g5-sci-space-06",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 1,
+    "prompt": "Which planet has bright rings?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q1-6",
+      "picture": "💍",
+      "question": "Which planet has bright rings?"
+    },
+    "options": [
+      "Mercury",
+      "Saturn",
+      "Mars"
+    ],
+    "answer": "Saturn"
+  },
+  {
+    "id": "g5-sci-space-07",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 1,
+    "prompt": "Which planet is closest to the Sun?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q1-7",
+      "picture": "🔥",
+      "question": "Which planet is closest to the Sun?"
+    },
+    "options": [
+      "Mercury",
+      "Earth",
+      "Neptune"
+    ],
+    "answer": "Mercury"
+  },
+  {
+    "id": "g5-sci-space-08",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 2,
+    "prompt": "True or false? The Sun is much bigger than the Earth.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-sci-space-tf2-1",
+      "picture": "☀️",
+      "statement": "The Sun is much bigger than the Earth."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-sci-space-09",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 2,
+    "prompt": "True or false? The Moon makes its own light.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-sci-space-tf2-2",
+      "picture": "🌕",
+      "statement": "The Moon makes its own light."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g5-sci-space-10",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 2,
+    "prompt": "True or false? The Earth is round, like a ball.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-sci-space-tf2-3",
+      "picture": "🌍",
+      "statement": "The Earth is round, like a ball."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-sci-space-11",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 2,
+    "prompt": "True or false? Stars only come out at night; in the day they disappear.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-sci-space-tf2-4",
+      "picture": "⭐",
+      "statement": "Stars only come out at night; in the day they disappear."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g5-sci-space-12",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 2,
+    "prompt": "True or false? There are eight planets in our solar system.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-sci-space-tf2-5",
+      "picture": "🪐",
+      "statement": "There are eight planets in our solar system."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-sci-space-13",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 2,
+    "prompt": "True or false? There is no air to breathe on the Moon.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-sci-space-tf2-6",
+      "picture": "🌕",
+      "statement": "There is no air to breathe on the Moon."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-sci-space-14",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 2,
+    "prompt": "True or false? People live on Mars today.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-sci-space-tf2-7",
+      "picture": "🔴",
+      "statement": "People live on Mars today."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g5-sci-space-15",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 3,
+    "prompt": "Why do we have day and night?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q3-1",
+      "picture": "🌗",
+      "question": "Why do we have day and night?"
+    },
+    "options": [
+      "the Sun goes around the Earth",
+      "clouds cover the Sun",
+      "the Earth spins on its axis"
+    ],
+    "answer": "the Earth spins on its axis"
+  },
+  {
+    "id": "g5-sci-space-16",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 3,
+    "prompt": "How long does the Earth take to go once around the Sun?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q3-2",
+      "picture": "📅",
+      "question": "How long does the Earth take to go once around the Sun?"
+    },
+    "options": [
+      "about 365 days",
+      "one month",
+      "one day"
+    ],
+    "answer": "about 365 days"
+  },
+  {
+    "id": "g5-sci-space-17",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 3,
+    "prompt": "Why does the Moon seem to change shape?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q3-3",
+      "picture": "🌓",
+      "question": "Why does the Moon seem to change shape?"
+    },
+    "options": [
+      "it really changes shape",
+      "we see different parts of its lit side",
+      "clouds cut it"
+    ],
+    "answer": "we see different parts of its lit side"
+  },
+  {
+    "id": "g5-sci-space-18",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 3,
+    "prompt": "On the night of the new moon, the Moon looks…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q3-4",
+      "picture": "🌑",
+      "question": "On the night of the new moon, the Moon looks…"
+    },
+    "options": [
+      "full and round",
+      "like a half circle",
+      "dark, we cannot see it"
+    ],
+    "answer": "dark, we cannot see it"
+  },
+  {
+    "id": "g5-sci-space-19",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 3,
+    "prompt": "India’s mission that landed near the Moon’s south pole in 2023 was…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q3-5",
+      "picture": "🚀",
+      "question": "India’s mission that landed near the Moon’s south pole in 2023 was…"
+    },
+    "options": [
+      "Chandrayaan-3",
+      "Aryabhata",
+      "Mangalyaan"
+    ],
+    "answer": "Chandrayaan-3"
+  },
+  {
+    "id": "g5-sci-space-20",
+    "grade": 5,
+    "subject": "science",
+    "topic": "g5-sci-space",
+    "difficulty": 3,
+    "prompt": "Who was the first Indian to go to space?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-sci-space-q3-6",
+      "picture": "🧑‍🚀",
+      "question": "Who was the first Indian to go to space?"
+    },
+    "options": [
+      "A. P. J. Abdul Kalam",
+      "Rakesh Sharma",
+      "Kalpana Chawla"
+    ],
+    "answer": "Rakesh Sharma"
+  }
+]

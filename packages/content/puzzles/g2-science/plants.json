@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g2-sci-plants-01",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "flower",
+      "ask": "name"
+    },
+    "options": [
+      "flower",
+      "root",
+      "leaf"
+    ],
+    "answer": "flower"
+  },
+  {
+    "id": "g2-sci-plants-02",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "leaf",
+      "ask": "name"
+    },
+    "options": [
+      "stem",
+      "leaf",
+      "root"
+    ],
+    "answer": "leaf"
+  },
+  {
+    "id": "g2-sci-plants-03",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "stem",
+      "ask": "name"
+    },
+    "options": [
+      "flower",
+      "root",
+      "stem"
+    ],
+    "answer": "stem"
+  },
+  {
+    "id": "g2-sci-plants-04",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "root",
+      "ask": "name"
+    },
+    "options": [
+      "root",
+      "fruit",
+      "flower"
+    ],
+    "answer": "root"
+  },
+  {
+    "id": "g2-sci-plants-05",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "fruit",
+      "ask": "name"
+    },
+    "options": [
+      "flower",
+      "leaf",
+      "fruit"
+    ],
+    "answer": "fruit"
+  },
+  {
+    "id": "g2-sci-plants-06",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "flower",
+      "ask": "name"
+    },
+    "options": [
+      "leaf",
+      "flower",
+      "fruit"
+    ],
+    "answer": "flower"
+  },
+  {
+    "id": "g2-sci-plants-07",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "leaf",
+      "ask": "name"
+    },
+    "options": [
+      "fruit",
+      "leaf",
+      "root"
+    ],
+    "answer": "leaf"
+  },
+  {
+    "id": "g2-sci-plants-08",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 2,
+    "prompt": "Which number shows the flower?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "flower",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "g2-sci-plants-09",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 2,
+    "prompt": "Which number shows the leaf?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "leaf",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "2"
+  },
+  {
+    "id": "g2-sci-plants-10",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 2,
+    "prompt": "Which number shows the stem?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "stem",
+      "ask": "find"
+    },
+    "options": [
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3"
+  },
+  {
+    "id": "g2-sci-plants-11",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 2,
+    "prompt": "Which number shows the root?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "root",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "4",
+      "5"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "g2-sci-plants-12",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 2,
+    "prompt": "Which number shows the fruit?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "fruit",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "5"
+    ],
+    "answer": "5"
+  },
+  {
+    "id": "g2-sci-plants-13",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 2,
+    "prompt": "Which number shows the flower?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "flower",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "5"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "g2-sci-plants-14",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 2,
+    "prompt": "Which number shows the leaf?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "plant",
+      "part": "leaf",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "5"
+    ],
+    "answer": "2"
+  },
+  {
+    "id": "g2-sci-plants-15",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 3,
+    "prompt": "What does a plant need to grow?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-plants-q3-1",
+      "picture": "🌱",
+      "question": "What does a plant need to grow?"
+    },
+    "options": [
+      "only darkness",
+      "water, air and sunlight",
+      "only soil"
+    ],
+    "answer": "water, air and sunlight"
+  },
+  {
+    "id": "g2-sci-plants-16",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 3,
+    "prompt": "Which part of the plant makes food?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-plants-q3-2",
+      "picture": "🍃",
+      "question": "Which part of the plant makes food?"
+    },
+    "options": [
+      "root",
+      "leaf",
+      "flower"
+    ],
+    "answer": "leaf"
+  },
+  {
+    "id": "g2-sci-plants-17",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 3,
+    "prompt": "A new plant grows from a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-plants-q3-3",
+      "picture": "🌰",
+      "question": "A new plant grows from a…"
+    },
+    "options": [
+      "leaf",
+      "stone",
+      "seed"
+    ],
+    "answer": "seed"
+  },
+  {
+    "id": "g2-sci-plants-18",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 3,
+    "prompt": "Which part holds the plant firmly in the soil?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-plants-q3-4",
+      "picture": "🌳",
+      "question": "Which part holds the plant firmly in the soil?"
+    },
+    "options": [
+      "root",
+      "fruit",
+      "flower"
+    ],
+    "answer": "root"
+  },
+  {
+    "id": "g2-sci-plants-19",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 3,
+    "prompt": "What happens to a plant kept in a dark cupboard for many days?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-plants-q3-5",
+      "picture": "🪴",
+      "question": "What happens to a plant kept in a dark cupboard for many days?"
+    },
+    "options": [
+      "it grows faster",
+      "it grows flowers",
+      "it turns yellow and weak"
+    ],
+    "answer": "it turns yellow and weak"
+  },
+  {
+    "id": "g2-sci-plants-20",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-plants",
+    "difficulty": 3,
+    "prompt": "Which plant grows in the desert?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-plants-q3-6",
+      "picture": "🌵",
+      "question": "Which plant grows in the desert?"
+    },
+    "options": [
+      "lotus",
+      "rose",
+      "cactus"
+    ],
+    "answer": "cactus"
+  }
+]

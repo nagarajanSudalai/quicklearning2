@@ -1,0 +1,921 @@
+[
+  {
+    "id": "g4-sci-matter-01",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "solid",
+          "label": "Solid",
+          "picture": "🧱"
+        },
+        {
+          "id": "liquid",
+          "label": "Liquid",
+          "picture": "💧"
+        },
+        {
+          "id": "gas",
+          "label": "Gas",
+          "picture": "💨"
+        }
+      ],
+      "items": [
+        {
+          "item": "🪵",
+          "name": "wood",
+          "group": "solid"
+        },
+        {
+          "item": "🧱",
+          "name": "brick",
+          "group": "solid"
+        },
+        {
+          "item": "🥛",
+          "name": "milk",
+          "group": "liquid"
+        },
+        {
+          "item": "💨",
+          "name": "air",
+          "group": "gas"
+        },
+        {
+          "item": "💧",
+          "name": "water",
+          "group": "liquid"
+        },
+        {
+          "item": "🎈",
+          "name": "helium in a balloon",
+          "group": "gas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-02",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "solid",
+          "label": "Solid",
+          "picture": "🧱"
+        },
+        {
+          "id": "liquid",
+          "label": "Liquid",
+          "picture": "💧"
+        },
+        {
+          "id": "gas",
+          "label": "Gas",
+          "picture": "💨"
+        }
+      ],
+      "items": [
+        {
+          "item": "🪨",
+          "name": "stone",
+          "group": "solid"
+        },
+        {
+          "item": "🎈",
+          "name": "helium in a balloon",
+          "group": "gas"
+        },
+        {
+          "item": "🧊",
+          "name": "ice cube",
+          "group": "solid"
+        },
+        {
+          "item": "♨️",
+          "name": "steam",
+          "group": "gas"
+        },
+        {
+          "item": "💧",
+          "name": "water",
+          "group": "liquid"
+        },
+        {
+          "item": "🫗",
+          "name": "oil",
+          "group": "liquid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-03",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "solid",
+          "label": "Solid",
+          "picture": "🧱"
+        },
+        {
+          "id": "liquid",
+          "label": "Liquid",
+          "picture": "💧"
+        },
+        {
+          "id": "gas",
+          "label": "Gas",
+          "picture": "💨"
+        }
+      ],
+      "items": [
+        {
+          "item": "🫧",
+          "name": "air in bubbles",
+          "group": "gas"
+        },
+        {
+          "item": "♨️",
+          "name": "steam",
+          "group": "gas"
+        },
+        {
+          "item": "✏️",
+          "name": "pencil",
+          "group": "solid"
+        },
+        {
+          "item": "🍪",
+          "name": "biscuit",
+          "group": "solid"
+        },
+        {
+          "item": "💧",
+          "name": "water",
+          "group": "liquid"
+        },
+        {
+          "item": "🫗",
+          "name": "oil",
+          "group": "liquid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-04",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "solid",
+          "label": "Solid",
+          "picture": "🧱"
+        },
+        {
+          "id": "liquid",
+          "label": "Liquid",
+          "picture": "💧"
+        },
+        {
+          "id": "gas",
+          "label": "Gas",
+          "picture": "💨"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧱",
+          "name": "brick",
+          "group": "solid"
+        },
+        {
+          "item": "💧",
+          "name": "water",
+          "group": "liquid"
+        },
+        {
+          "item": "🍯",
+          "name": "honey",
+          "group": "liquid"
+        },
+        {
+          "item": "💨",
+          "name": "air",
+          "group": "gas"
+        },
+        {
+          "item": "🎈",
+          "name": "helium in a balloon",
+          "group": "gas"
+        },
+        {
+          "item": "🪨",
+          "name": "stone",
+          "group": "solid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-05",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "solid",
+          "label": "Solid",
+          "picture": "🧱"
+        },
+        {
+          "id": "liquid",
+          "label": "Liquid",
+          "picture": "💧"
+        },
+        {
+          "id": "gas",
+          "label": "Gas",
+          "picture": "💨"
+        }
+      ],
+      "items": [
+        {
+          "item": "🫧",
+          "name": "air in bubbles",
+          "group": "gas"
+        },
+        {
+          "item": "🪵",
+          "name": "wood",
+          "group": "solid"
+        },
+        {
+          "item": "🧊",
+          "name": "ice cube",
+          "group": "solid"
+        },
+        {
+          "item": "♨️",
+          "name": "steam",
+          "group": "gas"
+        },
+        {
+          "item": "💧",
+          "name": "water",
+          "group": "liquid"
+        },
+        {
+          "item": "🫗",
+          "name": "oil",
+          "group": "liquid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-06",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "solid",
+          "label": "Solid",
+          "picture": "🧱"
+        },
+        {
+          "id": "liquid",
+          "label": "Liquid",
+          "picture": "💧"
+        },
+        {
+          "id": "gas",
+          "label": "Gas",
+          "picture": "💨"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥛",
+          "name": "milk",
+          "group": "liquid"
+        },
+        {
+          "item": "🧊",
+          "name": "ice cube",
+          "group": "solid"
+        },
+        {
+          "item": "💨",
+          "name": "air",
+          "group": "gas"
+        },
+        {
+          "item": "🪵",
+          "name": "wood",
+          "group": "solid"
+        },
+        {
+          "item": "🍯",
+          "name": "honey",
+          "group": "liquid"
+        },
+        {
+          "item": "♨️",
+          "name": "steam",
+          "group": "gas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-07",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "solid",
+          "label": "Solid",
+          "picture": "🧱"
+        },
+        {
+          "id": "liquid",
+          "label": "Liquid",
+          "picture": "💧"
+        },
+        {
+          "id": "gas",
+          "label": "Gas",
+          "picture": "💨"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧊",
+          "name": "ice cube",
+          "group": "solid"
+        },
+        {
+          "item": "🫗",
+          "name": "oil",
+          "group": "liquid"
+        },
+        {
+          "item": "🍯",
+          "name": "honey",
+          "group": "liquid"
+        },
+        {
+          "item": "🍪",
+          "name": "biscuit",
+          "group": "solid"
+        },
+        {
+          "item": "🫧",
+          "name": "air in bubbles",
+          "group": "gas"
+        },
+        {
+          "item": "🎈",
+          "name": "helium in a balloon",
+          "group": "gas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-08",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "magnetic",
+          "label": "A magnet pulls it",
+          "picture": "🧲"
+        },
+        {
+          "id": "non-magnetic",
+          "label": "A magnet does not pull it",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥤",
+          "name": "plastic cup",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "magnetic"
+        },
+        {
+          "item": "📎",
+          "name": "steel paper clip",
+          "group": "magnetic"
+        },
+        {
+          "item": "🪵",
+          "name": "wood",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🪶",
+          "name": "feather",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🧷",
+          "name": "safety pin",
+          "group": "magnetic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-09",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "magnetic",
+          "label": "A magnet pulls it",
+          "picture": "🧲"
+        },
+        {
+          "id": "non-magnetic",
+          "label": "A magnet does not pull it",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧷",
+          "name": "safety pin",
+          "group": "magnetic"
+        },
+        {
+          "item": "🪡",
+          "name": "sewing needle",
+          "group": "magnetic"
+        },
+        {
+          "item": "🔑",
+          "name": "iron key",
+          "group": "magnetic"
+        },
+        {
+          "item": "🪶",
+          "name": "feather",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🪵",
+          "name": "wood",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🥤",
+          "name": "plastic cup",
+          "group": "non-magnetic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-10",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "magnetic",
+          "label": "A magnet pulls it",
+          "picture": "🧲"
+        },
+        {
+          "id": "non-magnetic",
+          "label": "A magnet does not pull it",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "magnetic"
+        },
+        {
+          "item": "🪶",
+          "name": "feather",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🔑",
+          "name": "iron key",
+          "group": "magnetic"
+        },
+        {
+          "item": "📎",
+          "name": "steel paper clip",
+          "group": "magnetic"
+        },
+        {
+          "item": "🧽",
+          "name": "sponge",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🧶",
+          "name": "wool",
+          "group": "non-magnetic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-11",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "magnetic",
+          "label": "A magnet pulls it",
+          "picture": "🧲"
+        },
+        {
+          "id": "non-magnetic",
+          "label": "A magnet does not pull it",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "📎",
+          "name": "steel paper clip",
+          "group": "magnetic"
+        },
+        {
+          "item": "🥤",
+          "name": "plastic cup",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🪶",
+          "name": "feather",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🧶",
+          "name": "wool",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🪡",
+          "name": "sewing needle",
+          "group": "magnetic"
+        },
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "magnetic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-12",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "magnetic",
+          "label": "A magnet pulls it",
+          "picture": "🧲"
+        },
+        {
+          "id": "non-magnetic",
+          "label": "A magnet does not pull it",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧷",
+          "name": "safety pin",
+          "group": "magnetic"
+        },
+        {
+          "item": "🔑",
+          "name": "iron key",
+          "group": "magnetic"
+        },
+        {
+          "item": "🪶",
+          "name": "feather",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🪡",
+          "name": "sewing needle",
+          "group": "magnetic"
+        },
+        {
+          "item": "🧶",
+          "name": "wool",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🧽",
+          "name": "sponge",
+          "group": "non-magnetic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-13",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "magnetic",
+          "label": "A magnet pulls it",
+          "picture": "🧲"
+        },
+        {
+          "id": "non-magnetic",
+          "label": "A magnet does not pull it",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🪵",
+          "name": "wood",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🪡",
+          "name": "sewing needle",
+          "group": "magnetic"
+        },
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "magnetic"
+        },
+        {
+          "item": "🧽",
+          "name": "sponge",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🧷",
+          "name": "safety pin",
+          "group": "magnetic"
+        },
+        {
+          "item": "📄",
+          "name": "paper",
+          "group": "non-magnetic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-14",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "magnetic",
+          "label": "A magnet pulls it",
+          "picture": "🧲"
+        },
+        {
+          "id": "non-magnetic",
+          "label": "A magnet does not pull it",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧷",
+          "name": "safety pin",
+          "group": "magnetic"
+        },
+        {
+          "item": "🥤",
+          "name": "plastic cup",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🪵",
+          "name": "wood",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "magnetic"
+        },
+        {
+          "item": "🧶",
+          "name": "wool",
+          "group": "non-magnetic"
+        },
+        {
+          "item": "📎",
+          "name": "steel paper clip",
+          "group": "magnetic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-matter-15",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 3,
+    "prompt": "True or false? Ice is water in its solid form.",
+    "type": "true-false",
+    "payload": {
+      "id": "g4-sci-matter-tf3-1",
+      "picture": "🧊",
+      "statement": "Ice is water in its solid form."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g4-sci-matter-16",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 3,
+    "prompt": "True or false? A liquid takes the shape of its container.",
+    "type": "true-false",
+    "payload": {
+      "id": "g4-sci-matter-tf3-2",
+      "picture": "💧",
+      "statement": "A liquid takes the shape of its container."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g4-sci-matter-17",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 3,
+    "prompt": "True or false? A gas has a fixed shape.",
+    "type": "true-false",
+    "payload": {
+      "id": "g4-sci-matter-tf3-3",
+      "picture": "💨",
+      "statement": "A gas has a fixed shape."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g4-sci-matter-18",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 3,
+    "prompt": "True or false? A magnet pulls a wooden pencil.",
+    "type": "true-false",
+    "payload": {
+      "id": "g4-sci-matter-tf3-4",
+      "picture": "🧲",
+      "statement": "A magnet pulls a wooden pencil."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g4-sci-matter-19",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 3,
+    "prompt": "True or false? Salt dissolves in water.",
+    "type": "true-false",
+    "payload": {
+      "id": "g4-sci-matter-tf3-5",
+      "picture": "🧂",
+      "statement": "Salt dissolves in water."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g4-sci-matter-20",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-matter",
+    "difficulty": 3,
+    "prompt": "True or false? Oil mixes completely with water.",
+    "type": "true-false",
+    "payload": {
+      "id": "g4-sci-matter-tf3-6",
+      "picture": "🫗",
+      "statement": "Oil mixes completely with water."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  }
+]

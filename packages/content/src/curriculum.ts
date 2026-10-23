@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english', 'puzzles', 'thinking'], 5: ['maths', 'english', 'puzzles', 'thinking'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'science', 'puzzles', 'thinking'], 2: ['maths', 'english', 'science', 'puzzles', 'thinking'], 3: ['maths', 'english', 'science', 'puzzles', 'thinking'], 4: ['maths', 'english', 'science', 'puzzles', 'thinking'], 5: ['maths', 'english', 'science', 'puzzles', 'thinking'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -114,6 +114,21 @@ export const TOPICS: Topic[] = [
   { id: 'g5-teasers', grade: 5, subject: 'thinking', title: 'Brain teasers', blurb: 'Think before you tap', glyph: '🧠', color: colors.pink },
   { id: 'g5-series', grade: 5, subject: 'thinking', title: 'Series and analogies', blurb: '2 : 4 :: 5 : ?', glyph: '1,1,2', color: colors.orange },
   { id: 'g5-logic-codes', grade: 5, subject: 'thinking', title: 'Logic and codes', blurb: 'Grids and A ↔ Z', glyph: '🔐', color: colors.purple },
+  { id: 'g1-sci-body', grade: 1, subject: 'science', title: 'My body', blurb: 'Body parts and senses', glyph: '🧒', color: colors.pink },
+  { id: 'g1-sci-living', grade: 1, subject: 'science', title: 'Living and non-living', blurb: 'What grows and breathes?', glyph: '🌱', color: colors.green },
+  { id: 'g1-sci-animals', grade: 1, subject: 'science', title: 'Animals around us', blurb: 'Homes, sounds, babies', glyph: '🐾', color: colors.orange },
+  { id: 'g2-sci-plants', grade: 2, subject: 'science', title: 'Plants', blurb: 'Parts and needs', glyph: '🌿', color: colors.green },
+  { id: 'g2-sci-food', grade: 2, subject: 'science', title: 'Food', blurb: 'Healthy food and where it comes from', glyph: '🍎', color: colors.pink },
+  { id: 'g2-sci-weather', grade: 2, subject: 'science', title: 'Weather and seasons', blurb: 'Sun, rain and cold', glyph: '🌦️', color: colors.blue },
+  { id: 'g3-sci-animals', grade: 3, subject: 'science', title: 'Animal life', blurb: 'What animals eat', glyph: '🦁', color: colors.orange },
+  { id: 'g3-sci-senses', grade: 3, subject: 'science', title: 'Senses and body care', blurb: 'Taste, teeth, bones', glyph: '👅', color: colors.pink },
+  { id: 'g3-sci-air-water', grade: 3, subject: 'science', title: 'Air and water', blurb: 'Floats or sinks?', glyph: '💧', color: colors.blue },
+  { id: 'g4-sci-plants-food', grade: 4, subject: 'science', title: 'Plants and food', blurb: 'Parts we eat, photosynthesis', glyph: '🥬', color: colors.green },
+  { id: 'g4-sci-matter', grade: 4, subject: 'science', title: 'Solids, liquids, gases', blurb: 'And magnets', glyph: '🧲', color: colors.purple },
+  { id: 'g4-sci-water-cycle', grade: 4, subject: 'science', title: 'The water cycle', blurb: 'Evaporation to rain', glyph: '🌧️', color: colors.blue },
+  { id: 'g5-sci-body', grade: 5, subject: 'science', title: 'Body systems', blurb: 'Heart, lungs, brain', glyph: '🫀', color: colors.pink },
+  { id: 'g5-sci-living', grade: 5, subject: 'science', title: 'Living world', blurb: 'Food chains and habitats', glyph: '🌍', color: colors.green },
+  { id: 'g5-sci-space', grade: 5, subject: 'science', title: 'Earth and space', blurb: 'Planets, Moon, day and night', glyph: '🪐', color: colors.purple },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

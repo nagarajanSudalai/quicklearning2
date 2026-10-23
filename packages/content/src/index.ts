@@ -91,6 +91,21 @@ import g5SumGrid from '../puzzles/g5-puzzles/sumgrid.json';
 import g5Teasers from '../puzzles/g5-thinking/teasers.json';
 import g5Series from '../puzzles/g5-thinking/series.json';
 import g5LogicCodes from '../puzzles/g5-thinking/logic-codes.json';
+import sci1Body from '../puzzles/g1-science/body.json';
+import sci1Living from '../puzzles/g1-science/living.json';
+import sci1Animals from '../puzzles/g1-science/animals.json';
+import sci2Plants from '../puzzles/g2-science/plants.json';
+import sci2Food from '../puzzles/g2-science/food.json';
+import sci2Weather from '../puzzles/g2-science/weather.json';
+import sci3Animals from '../puzzles/g3-science/animals.json';
+import sci3Senses from '../puzzles/g3-science/senses.json';
+import sci3AirWater from '../puzzles/g3-science/air-water.json';
+import sci4PlantsFood from '../puzzles/g4-science/plants-food.json';
+import sci4Matter from '../puzzles/g4-science/matter.json';
+import sci4WaterCycle from '../puzzles/g4-science/water-cycle.json';
+import sci5Body from '../puzzles/g5-science/body.json';
+import sci5Living from '../puzzles/g5-science/living.json';
+import sci5Space from '../puzzles/g5-science/space.json';
 
 export * from './types';
 export * from './tokens';
@@ -114,6 +129,7 @@ export * from './thinking4';
 export * from './maths5';
 export * from './words5';
 export * from './thinking5';
+export * from './science';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -135,6 +151,7 @@ export const PUZZLES = [
   ...g5Numbers, ...g5BigOps, ...g5Fractions, ...g5Decimals, ...g5Percent, ...g5Geometry, ...g5Charts,
   ...g5EJoining, ...g5EVoice, ...g5EIdioms, ...g5ESpelling, ...g5EReading,
   ...g5Crossword, ...g5SumGrid, ...g5Teasers, ...g5Series, ...g5LogicCodes,
+  ...sci1Body, ...sci1Living, ...sci1Animals, ...sci2Plants, ...sci2Food, ...sci2Weather, ...sci3Animals, ...sci3Senses, ...sci3AirWater, ...sci4PlantsFood, ...sci4Matter, ...sci4WaterCycle, ...sci5Body, ...sci5Living, ...sci5Space,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

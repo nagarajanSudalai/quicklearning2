@@ -1,0 +1,640 @@
+[
+  {
+    "id": "g2-sci-food-01",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "healthy",
+          "label": "Healthy food",
+          "picture": "💪"
+        },
+        {
+          "id": "junk",
+          "label": "Junk food",
+          "picture": "⚠️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍎",
+          "name": "apple",
+          "group": "healthy"
+        },
+        {
+          "item": "🫘",
+          "name": "dal",
+          "group": "healthy"
+        },
+        {
+          "item": "🍫",
+          "name": "chocolate bar",
+          "group": "junk"
+        },
+        {
+          "item": "🥚",
+          "name": "egg",
+          "group": "healthy"
+        },
+        {
+          "item": "🥤",
+          "name": "cold drink",
+          "group": "junk"
+        },
+        {
+          "item": "🍟",
+          "name": "chips",
+          "group": "junk"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-food-02",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "healthy",
+          "label": "Healthy food",
+          "picture": "💪"
+        },
+        {
+          "id": "junk",
+          "label": "Junk food",
+          "picture": "⚠️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥤",
+          "name": "cold drink",
+          "group": "junk"
+        },
+        {
+          "item": "🥛",
+          "name": "milk",
+          "group": "healthy"
+        },
+        {
+          "item": "🍚",
+          "name": "rice",
+          "group": "healthy"
+        },
+        {
+          "item": "🍭",
+          "name": "lollipop",
+          "group": "junk"
+        },
+        {
+          "item": "🍩",
+          "name": "doughnut",
+          "group": "junk"
+        },
+        {
+          "item": "🥕",
+          "name": "carrot",
+          "group": "healthy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-food-03",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "healthy",
+          "label": "Healthy food",
+          "picture": "💪"
+        },
+        {
+          "id": "junk",
+          "label": "Junk food",
+          "picture": "⚠️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥤",
+          "name": "cold drink",
+          "group": "junk"
+        },
+        {
+          "item": "🥚",
+          "name": "egg",
+          "group": "healthy"
+        },
+        {
+          "item": "🍩",
+          "name": "doughnut",
+          "group": "junk"
+        },
+        {
+          "item": "🍬",
+          "name": "sweets",
+          "group": "junk"
+        },
+        {
+          "item": "🍚",
+          "name": "rice",
+          "group": "healthy"
+        },
+        {
+          "item": "🍎",
+          "name": "apple",
+          "group": "healthy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-food-04",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "healthy",
+          "label": "Healthy food",
+          "picture": "💪"
+        },
+        {
+          "id": "junk",
+          "label": "Junk food",
+          "picture": "⚠️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍫",
+          "name": "chocolate bar",
+          "group": "junk"
+        },
+        {
+          "item": "🫘",
+          "name": "dal",
+          "group": "healthy"
+        },
+        {
+          "item": "🥤",
+          "name": "cold drink",
+          "group": "junk"
+        },
+        {
+          "item": "🍩",
+          "name": "doughnut",
+          "group": "junk"
+        },
+        {
+          "item": "🥚",
+          "name": "egg",
+          "group": "healthy"
+        },
+        {
+          "item": "🥦",
+          "name": "broccoli",
+          "group": "healthy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-food-05",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "healthy",
+          "label": "Healthy food",
+          "picture": "💪"
+        },
+        {
+          "id": "junk",
+          "label": "Junk food",
+          "picture": "⚠️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍚",
+          "name": "rice",
+          "group": "healthy"
+        },
+        {
+          "item": "🥚",
+          "name": "egg",
+          "group": "healthy"
+        },
+        {
+          "item": "🍭",
+          "name": "lollipop",
+          "group": "junk"
+        },
+        {
+          "item": "🥤",
+          "name": "cold drink",
+          "group": "junk"
+        },
+        {
+          "item": "🍫",
+          "name": "chocolate bar",
+          "group": "junk"
+        },
+        {
+          "item": "🥦",
+          "name": "broccoli",
+          "group": "healthy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-food-06",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "healthy",
+          "label": "Healthy food",
+          "picture": "💪"
+        },
+        {
+          "id": "junk",
+          "label": "Junk food",
+          "picture": "⚠️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥤",
+          "name": "cold drink",
+          "group": "junk"
+        },
+        {
+          "item": "🥛",
+          "name": "milk",
+          "group": "healthy"
+        },
+        {
+          "item": "🍬",
+          "name": "sweets",
+          "group": "junk"
+        },
+        {
+          "item": "🍟",
+          "name": "chips",
+          "group": "junk"
+        },
+        {
+          "item": "🥚",
+          "name": "egg",
+          "group": "healthy"
+        },
+        {
+          "item": "🍎",
+          "name": "apple",
+          "group": "healthy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-food-07",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "healthy",
+          "label": "Healthy food",
+          "picture": "💪"
+        },
+        {
+          "id": "junk",
+          "label": "Junk food",
+          "picture": "⚠️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍫",
+          "name": "chocolate bar",
+          "group": "junk"
+        },
+        {
+          "item": "🍩",
+          "name": "doughnut",
+          "group": "junk"
+        },
+        {
+          "item": "🍚",
+          "name": "rice",
+          "group": "healthy"
+        },
+        {
+          "item": "🥕",
+          "name": "carrot",
+          "group": "healthy"
+        },
+        {
+          "item": "🍟",
+          "name": "chips",
+          "group": "junk"
+        },
+        {
+          "item": "🫘",
+          "name": "dal",
+          "group": "healthy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-food-08",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 2,
+    "prompt": "True or false? Fruit and vegetables keep us healthy.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-food-tf2-1",
+      "picture": "🍎",
+      "statement": "Fruit and vegetables keep us healthy."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-food-09",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 2,
+    "prompt": "True or false? We should eat chips every day.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-food-tf2-2",
+      "picture": "🍟",
+      "statement": "We should eat chips every day."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g2-sci-food-10",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 2,
+    "prompt": "True or false? We should wash our hands before eating.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-food-tf2-3",
+      "picture": "🧼",
+      "statement": "We should wash our hands before eating."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-food-11",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 2,
+    "prompt": "True or false? We need to drink water every day.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-food-tf2-4",
+      "picture": "💧",
+      "statement": "We need to drink water every day."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-food-12",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 2,
+    "prompt": "True or false? It is fine to eat food that flies have sat on.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-food-tf2-5",
+      "picture": "🪰",
+      "statement": "It is fine to eat food that flies have sat on."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g2-sci-food-13",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 2,
+    "prompt": "True or false? Milk helps make our bones and teeth strong.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-food-tf2-6",
+      "picture": "🥛",
+      "statement": "Milk helps make our bones and teeth strong."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-food-14",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 2,
+    "prompt": "True or false? Eating lots of sweets is good for our teeth.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-food-tf2-7",
+      "picture": "🍬",
+      "statement": "Eating lots of sweets is good for our teeth."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g2-sci-food-15",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 3,
+    "prompt": "Which animal gives us milk?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-food-q3-1",
+      "picture": "🥛",
+      "question": "Which animal gives us milk?"
+    },
+    "options": [
+      "hen",
+      "cow",
+      "bee"
+    ],
+    "answer": "cow"
+  },
+  {
+    "id": "g2-sci-food-16",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 3,
+    "prompt": "Who makes honey?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-food-q3-2",
+      "picture": "🍯",
+      "question": "Who makes honey?"
+    },
+    "options": [
+      "ants",
+      "cows",
+      "bees"
+    ],
+    "answer": "bees"
+  },
+  {
+    "id": "g2-sci-food-17",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 3,
+    "prompt": "Which animal gives us eggs?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-food-q3-3",
+      "picture": "🥚",
+      "question": "Which animal gives us eggs?"
+    },
+    "options": [
+      "hen",
+      "cow",
+      "goat"
+    ],
+    "answer": "hen"
+  },
+  {
+    "id": "g2-sci-food-18",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 3,
+    "prompt": "Rice comes from a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-food-q3-4",
+      "picture": "🍚",
+      "question": "Rice comes from a…"
+    },
+    "options": [
+      "plant",
+      "factory only",
+      "animal"
+    ],
+    "answer": "plant"
+  },
+  {
+    "id": "g2-sci-food-19",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 3,
+    "prompt": "Butter and curd are made from…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-food-q3-5",
+      "picture": "🧈",
+      "question": "Butter and curd are made from…"
+    },
+    "options": [
+      "honey",
+      "milk",
+      "water"
+    ],
+    "answer": "milk"
+  },
+  {
+    "id": "g2-sci-food-20",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-food",
+    "difficulty": 3,
+    "prompt": "Dal comes from the seeds of…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-food-q3-6",
+      "picture": "🫘",
+      "question": "Dal comes from the seeds of…"
+    },
+    "options": [
+      "rocks",
+      "plants",
+      "animals"
+    ],
+    "answer": "plants"
+  }
+]

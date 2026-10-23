@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g4-sci-water-cycle-01",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "sun",
+      "ask": "name"
+    },
+    "options": [
+      "sun",
+      "sea",
+      "rain"
+    ],
+    "answer": "sun"
+  },
+  {
+    "id": "g4-sci-water-cycle-02",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "cloud",
+      "ask": "name"
+    },
+    "options": [
+      "sea",
+      "water vapour",
+      "cloud"
+    ],
+    "answer": "cloud"
+  },
+  {
+    "id": "g4-sci-water-cycle-03",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "rain",
+      "ask": "name"
+    },
+    "options": [
+      "water vapour",
+      "sea",
+      "rain"
+    ],
+    "answer": "rain"
+  },
+  {
+    "id": "g4-sci-water-cycle-04",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "sea",
+      "ask": "name"
+    },
+    "options": [
+      "water vapour",
+      "sea",
+      "cloud"
+    ],
+    "answer": "sea"
+  },
+  {
+    "id": "g4-sci-water-cycle-05",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "water vapour",
+      "ask": "name"
+    },
+    "options": [
+      "sea",
+      "cloud",
+      "water vapour"
+    ],
+    "answer": "water vapour"
+  },
+  {
+    "id": "g4-sci-water-cycle-06",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "sun",
+      "ask": "name"
+    },
+    "options": [
+      "rain",
+      "sun",
+      "cloud"
+    ],
+    "answer": "sun"
+  },
+  {
+    "id": "g4-sci-water-cycle-07",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "cloud",
+      "ask": "name"
+    },
+    "options": [
+      "cloud",
+      "sea",
+      "sun"
+    ],
+    "answer": "cloud"
+  },
+  {
+    "id": "g4-sci-water-cycle-08",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 2,
+    "prompt": "Which part heats the water?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "sun",
+      "ask": "job"
+    },
+    "options": [
+      "water vapour",
+      "rain",
+      "sun"
+    ],
+    "answer": "sun"
+  },
+  {
+    "id": "g4-sci-water-cycle-09",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 2,
+    "prompt": "Which part holds tiny drops of water?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "cloud",
+      "ask": "job"
+    },
+    "options": [
+      "cloud",
+      "sea",
+      "rain"
+    ],
+    "answer": "cloud"
+  },
+  {
+    "id": "g4-sci-water-cycle-10",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 2,
+    "prompt": "Which part brings water back down?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "rain",
+      "ask": "job"
+    },
+    "options": [
+      "rain",
+      "cloud",
+      "water vapour"
+    ],
+    "answer": "rain"
+  },
+  {
+    "id": "g4-sci-water-cycle-11",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 2,
+    "prompt": "Which part where most water is stored?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "sea",
+      "ask": "job"
+    },
+    "options": [
+      "sea",
+      "rain",
+      "sun"
+    ],
+    "answer": "sea"
+  },
+  {
+    "id": "g4-sci-water-cycle-12",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 2,
+    "prompt": "Which part rises up when water is heated?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "water vapour",
+      "ask": "job"
+    },
+    "options": [
+      "rain",
+      "cloud",
+      "water vapour"
+    ],
+    "answer": "water vapour"
+  },
+  {
+    "id": "g4-sci-water-cycle-13",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 2,
+    "prompt": "Which part heats the water?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "sun",
+      "ask": "job"
+    },
+    "options": [
+      "sun",
+      "sea",
+      "cloud"
+    ],
+    "answer": "sun"
+  },
+  {
+    "id": "g4-sci-water-cycle-14",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 2,
+    "prompt": "Which part holds tiny drops of water?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "water-cycle",
+      "part": "cloud",
+      "ask": "job"
+    },
+    "options": [
+      "sea",
+      "rain",
+      "cloud"
+    ],
+    "answer": "cloud"
+  },
+  {
+    "id": "g4-sci-water-cycle-15",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 3,
+    "prompt": "When water is heated and turns into vapour, it is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-water-cycle-q3-1",
+      "picture": "♨️",
+      "question": "When water is heated and turns into vapour, it is called…"
+    },
+    "options": [
+      "freezing",
+      "condensation",
+      "evaporation"
+    ],
+    "answer": "evaporation"
+  },
+  {
+    "id": "g4-sci-water-cycle-16",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 3,
+    "prompt": "When water vapour cools and forms tiny drops, it is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-water-cycle-q3-2",
+      "picture": "☁️",
+      "question": "When water vapour cools and forms tiny drops, it is called…"
+    },
+    "options": [
+      "evaporation",
+      "condensation",
+      "melting"
+    ],
+    "answer": "condensation"
+  },
+  {
+    "id": "g4-sci-water-cycle-17",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 3,
+    "prompt": "When water falls from clouds as rain or snow, it is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-water-cycle-q3-3",
+      "picture": "🌧️",
+      "question": "When water falls from clouds as rain or snow, it is called…"
+    },
+    "options": [
+      "condensation",
+      "evaporation",
+      "precipitation"
+    ],
+    "answer": "precipitation"
+  },
+  {
+    "id": "g4-sci-water-cycle-18",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 3,
+    "prompt": "When water turns into ice, it is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-water-cycle-q3-4",
+      "picture": "🧊",
+      "question": "When water turns into ice, it is called…"
+    },
+    "options": [
+      "boiling",
+      "freezing",
+      "melting"
+    ],
+    "answer": "freezing"
+  },
+  {
+    "id": "g4-sci-water-cycle-19",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 3,
+    "prompt": "Drops form on the outside of a cold glass because of…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-water-cycle-q3-5",
+      "picture": "🥤",
+      "question": "Drops form on the outside of a cold glass because of…"
+    },
+    "options": [
+      "leaking",
+      "condensation",
+      "evaporation"
+    ],
+    "answer": "condensation"
+  },
+  {
+    "id": "g4-sci-water-cycle-20",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-water-cycle",
+    "difficulty": 3,
+    "prompt": "Water boils at…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-water-cycle-q3-6",
+      "picture": "🌡️",
+      "question": "Water boils at…"
+    },
+    "options": [
+      "50 °C",
+      "0 °C",
+      "100 °C"
+    ],
+    "answer": "100 °C"
+  }
+]

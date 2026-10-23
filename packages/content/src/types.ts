@@ -367,6 +367,31 @@ export type SumGridPuzzle = Base & {
   payload: { grid: (number | null)[]; solution: number[]; rows: number[]; cols: number[] };
 };
 
+/** Science: a picture and a question, answered from the science bank. */
+export type ScienceQuizPuzzle = Base & {
+  type: 'science-quiz';
+  payload: { id: string; picture: string; question: string };
+  options: string[];
+  answer: string;
+};
+
+/** Science: is this statement true or false? */
+export type TrueFalsePuzzle = Base & {
+  type: 'true-false';
+  payload: { id: string; picture: string; statement: string };
+  options: string[];
+  answer: string;
+};
+
+/** Science: a labelled diagram. `name` marks one part with "?"; `find` numbers every part and asks
+ * for one by name; `job` numbers every part and asks which one does a job. */
+export type LabelPuzzle = Base & {
+  type: 'label-diagram';
+  payload: { diagram: string; part: string; ask: 'name' | 'find' | 'job' };
+  options: string[];
+  answer: string;
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -401,7 +426,10 @@ export type ChoicePuzzle =
   | AnglePuzzle
   | ChartPuzzle
   | IdiomPuzzle
-  | TeaserPuzzle;
+  | TeaserPuzzle
+  | ScienceQuizPuzzle
+  | TrueFalsePuzzle
+  | LabelPuzzle;
 
 /** Puzzles with their own multi-step play. */
 export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle | SumGridPuzzle;

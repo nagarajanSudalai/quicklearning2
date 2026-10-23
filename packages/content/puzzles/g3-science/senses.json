@@ -1,0 +1,395 @@
+[
+  {
+    "id": "g3-sci-senses-01",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 1,
+    "prompt": "A lemon tastes…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q1-1",
+      "picture": "🍋",
+      "question": "A lemon tastes…"
+    },
+    "options": [
+      "salty",
+      "sour",
+      "sweet"
+    ],
+    "answer": "sour"
+  },
+  {
+    "id": "g3-sci-senses-02",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 1,
+    "prompt": "Sugar tastes…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q1-2",
+      "picture": "🍬",
+      "question": "Sugar tastes…"
+    },
+    "options": [
+      "sour",
+      "bitter",
+      "sweet"
+    ],
+    "answer": "sweet"
+  },
+  {
+    "id": "g3-sci-senses-03",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 1,
+    "prompt": "Salt tastes…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q1-3",
+      "picture": "🧂",
+      "question": "Salt tastes…"
+    },
+    "options": [
+      "sweet",
+      "sour",
+      "salty"
+    ],
+    "answer": "salty"
+  },
+  {
+    "id": "g3-sci-senses-04",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 1,
+    "prompt": "Bitter gourd (karela) tastes…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q1-4",
+      "picture": "🥒",
+      "question": "Bitter gourd (karela) tastes…"
+    },
+    "options": [
+      "salty",
+      "sweet",
+      "bitter"
+    ],
+    "answer": "bitter"
+  },
+  {
+    "id": "g3-sci-senses-05",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 1,
+    "prompt": "We know a rose smells nice using our…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q1-5",
+      "picture": "🌹",
+      "question": "We know a rose smells nice using our…"
+    },
+    "options": [
+      "skin",
+      "nose",
+      "ears"
+    ],
+    "answer": "nose"
+  },
+  {
+    "id": "g3-sci-senses-06",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 1,
+    "prompt": "We hear a school bell with our…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q1-6",
+      "picture": "🔔",
+      "question": "We hear a school bell with our…"
+    },
+    "options": [
+      "tongue",
+      "ears",
+      "eyes"
+    ],
+    "answer": "ears"
+  },
+  {
+    "id": "g3-sci-senses-07",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 1,
+    "prompt": "We feel that ice is cold with our…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q1-7",
+      "picture": "🧊",
+      "question": "We feel that ice is cold with our…"
+    },
+    "options": [
+      "eyes",
+      "nose",
+      "skin"
+    ],
+    "answer": "skin"
+  },
+  {
+    "id": "g3-sci-senses-08",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 2,
+    "prompt": "True or false? We should brush our teeth twice a day.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-senses-tf2-1",
+      "picture": "🪥",
+      "statement": "We should brush our teeth twice a day."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-senses-09",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 2,
+    "prompt": "True or false? Watching TV from very close is good for our eyes.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-senses-tf2-2",
+      "picture": "📺",
+      "statement": "Watching TV from very close is good for our eyes."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g3-sci-senses-10",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 2,
+    "prompt": "True or false? We should keep our nails short and clean.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-senses-tf2-3",
+      "picture": "✂️",
+      "statement": "We should keep our nails short and clean."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-senses-11",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 2,
+    "prompt": "True or false? It is safe to put a pencil in your ear.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-senses-tf2-4",
+      "picture": "🖊️",
+      "statement": "It is safe to put a pencil in your ear."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g3-sci-senses-12",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 2,
+    "prompt": "True or false? Bathing every day keeps our skin clean.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-senses-tf2-5",
+      "picture": "🛁",
+      "statement": "Bathing every day keeps our skin clean."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-senses-13",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 2,
+    "prompt": "True or false? We should look straight at the Sun.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-senses-tf2-6",
+      "picture": "☀️",
+      "statement": "We should look straight at the Sun."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g3-sci-senses-14",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 2,
+    "prompt": "True or false? Sleeping well helps our body grow.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-senses-tf2-7",
+      "picture": "😴",
+      "statement": "Sleeping well helps our body grow."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-senses-15",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 3,
+    "prompt": "Which teeth are sharp and used for tearing food?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q3-1",
+      "picture": "🦷",
+      "question": "Which teeth are sharp and used for tearing food?"
+    },
+    "options": [
+      "molars",
+      "milk teeth",
+      "canines"
+    ],
+    "answer": "canines"
+  },
+  {
+    "id": "g3-sci-senses-16",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 3,
+    "prompt": "Which teeth are flat and used for grinding food?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q3-2",
+      "picture": "🦷",
+      "question": "Which teeth are flat and used for grinding food?"
+    },
+    "options": [
+      "molars",
+      "incisors",
+      "canines"
+    ],
+    "answer": "molars"
+  },
+  {
+    "id": "g3-sci-senses-17",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 3,
+    "prompt": "What protects our brain?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q3-3",
+      "picture": "🦴",
+      "question": "What protects our brain?"
+    },
+    "options": [
+      "the ribs",
+      "the knee",
+      "the skull"
+    ],
+    "answer": "the skull"
+  },
+  {
+    "id": "g3-sci-senses-18",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 3,
+    "prompt": "What protects our heart and lungs?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q3-4",
+      "picture": "🫁",
+      "question": "What protects our heart and lungs?"
+    },
+    "options": [
+      "the skull",
+      "the spine",
+      "the ribs"
+    ],
+    "answer": "the ribs"
+  },
+  {
+    "id": "g3-sci-senses-19",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 3,
+    "prompt": "What helps our bones move?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q3-5",
+      "picture": "💪",
+      "question": "What helps our bones move?"
+    },
+    "options": [
+      "hair",
+      "nails",
+      "muscles"
+    ],
+    "answer": "muscles"
+  },
+  {
+    "id": "g3-sci-senses-20",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-senses",
+    "difficulty": 3,
+    "prompt": "How many times a day should we brush our teeth?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-senses-q3-6",
+      "picture": "🪥",
+      "question": "How many times a day should we brush our teeth?"
+    },
+    "options": [
+      "once a week",
+      "never",
+      "twice"
+    ],
+    "answer": "twice"
+  }
+]

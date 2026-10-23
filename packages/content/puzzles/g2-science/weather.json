@@ -1,0 +1,676 @@
+[
+  {
+    "id": "g2-sci-weather-01",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 1,
+    "prompt": "What do we wear on a hot sunny day?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-weather-q1-1",
+      "picture": "☀️",
+      "question": "What do we wear on a hot sunny day?"
+    },
+    "options": [
+      "raincoat",
+      "woollen sweater",
+      "cotton clothes"
+    ],
+    "answer": "cotton clothes"
+  },
+  {
+    "id": "g2-sci-weather-02",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 1,
+    "prompt": "What do we carry on a rainy day?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-weather-q1-2",
+      "picture": "🌧️",
+      "question": "What do we carry on a rainy day?"
+    },
+    "options": [
+      "kite",
+      "sunglasses",
+      "umbrella"
+    ],
+    "answer": "umbrella"
+  },
+  {
+    "id": "g2-sci-weather-03",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 1,
+    "prompt": "What do we wear on a cold day?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-weather-q1-3",
+      "picture": "❄️",
+      "question": "What do we wear on a cold day?"
+    },
+    "options": [
+      "sweater",
+      "cap",
+      "shorts"
+    ],
+    "answer": "sweater"
+  },
+  {
+    "id": "g2-sci-weather-04",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 1,
+    "prompt": "On a windy day it is good to fly a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-weather-q1-4",
+      "picture": "🌬️",
+      "question": "On a windy day it is good to fly a…"
+    },
+    "options": [
+      "umbrella",
+      "kite",
+      "boat"
+    ],
+    "answer": "kite"
+  },
+  {
+    "id": "g2-sci-weather-05",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 1,
+    "prompt": "A rainbow comes when the sun shines during…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-weather-q1-5",
+      "picture": "🌈",
+      "question": "A rainbow comes when the sun shines during…"
+    },
+    "options": [
+      "night",
+      "rain",
+      "snow"
+    ],
+    "answer": "rain"
+  },
+  {
+    "id": "g2-sci-weather-06",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 1,
+    "prompt": "Clouds are made of tiny drops of…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-weather-q1-6",
+      "picture": "⛅",
+      "question": "Clouds are made of tiny drops of…"
+    },
+    "options": [
+      "water",
+      "cotton",
+      "smoke"
+    ],
+    "answer": "water"
+  },
+  {
+    "id": "g2-sci-weather-07",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 1,
+    "prompt": "Which season is the hottest?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-sci-weather-q1-7",
+      "picture": "🌡️",
+      "question": "Which season is the hottest?"
+    },
+    "options": [
+      "winter",
+      "spring",
+      "summer"
+    ],
+    "answer": "summer"
+  },
+  {
+    "id": "g2-sci-weather-08",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "summer",
+          "label": "Summer",
+          "picture": "☀️"
+        },
+        {
+          "id": "winter",
+          "label": "Winter",
+          "picture": "❄️"
+        },
+        {
+          "id": "rainy",
+          "label": "Rainy season",
+          "picture": "🌧️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧦",
+          "name": "woollen socks",
+          "group": "winter"
+        },
+        {
+          "item": "🛶",
+          "name": "paper boat",
+          "group": "rainy"
+        },
+        {
+          "item": "🌈",
+          "name": "rainbow",
+          "group": "rainy"
+        },
+        {
+          "item": "☕",
+          "name": "hot drink",
+          "group": "winter"
+        },
+        {
+          "item": "🍦",
+          "name": "ice cream",
+          "group": "summer"
+        },
+        {
+          "item": "🩳",
+          "name": "shorts",
+          "group": "summer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-weather-09",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "summer",
+          "label": "Summer",
+          "picture": "☀️"
+        },
+        {
+          "id": "winter",
+          "label": "Winter",
+          "picture": "❄️"
+        },
+        {
+          "id": "rainy",
+          "label": "Rainy season",
+          "picture": "🌧️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🩳",
+          "name": "shorts",
+          "group": "summer"
+        },
+        {
+          "item": "🧤",
+          "name": "gloves",
+          "group": "winter"
+        },
+        {
+          "item": "🥾",
+          "name": "gumboots",
+          "group": "rainy"
+        },
+        {
+          "item": "🧥",
+          "name": "coat",
+          "group": "winter"
+        },
+        {
+          "item": "🍦",
+          "name": "ice cream",
+          "group": "summer"
+        },
+        {
+          "item": "☂️",
+          "name": "umbrella",
+          "group": "rainy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-weather-10",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "summer",
+          "label": "Summer",
+          "picture": "☀️"
+        },
+        {
+          "id": "winter",
+          "label": "Winter",
+          "picture": "❄️"
+        },
+        {
+          "id": "rainy",
+          "label": "Rainy season",
+          "picture": "🌧️"
+        }
+      ],
+      "items": [
+        {
+          "item": "☕",
+          "name": "hot drink",
+          "group": "winter"
+        },
+        {
+          "item": "⛈️",
+          "name": "thunderstorm",
+          "group": "rainy"
+        },
+        {
+          "item": "🐸",
+          "name": "frog",
+          "group": "rainy"
+        },
+        {
+          "item": "🧢",
+          "name": "cap",
+          "group": "summer"
+        },
+        {
+          "item": "⛄",
+          "name": "snowman",
+          "group": "winter"
+        },
+        {
+          "item": "🩳",
+          "name": "shorts",
+          "group": "summer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-weather-11",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "summer",
+          "label": "Summer",
+          "picture": "☀️"
+        },
+        {
+          "id": "winter",
+          "label": "Winter",
+          "picture": "❄️"
+        },
+        {
+          "id": "rainy",
+          "label": "Rainy season",
+          "picture": "🌧️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧦",
+          "name": "woollen socks",
+          "group": "winter"
+        },
+        {
+          "item": "🐸",
+          "name": "frog",
+          "group": "rainy"
+        },
+        {
+          "item": "🥾",
+          "name": "gumboots",
+          "group": "rainy"
+        },
+        {
+          "item": "☕",
+          "name": "hot drink",
+          "group": "winter"
+        },
+        {
+          "item": "🩳",
+          "name": "shorts",
+          "group": "summer"
+        },
+        {
+          "item": "🕶️",
+          "name": "sunglasses",
+          "group": "summer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-weather-12",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "summer",
+          "label": "Summer",
+          "picture": "☀️"
+        },
+        {
+          "id": "winter",
+          "label": "Winter",
+          "picture": "❄️"
+        },
+        {
+          "id": "rainy",
+          "label": "Rainy season",
+          "picture": "🌧️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🕶️",
+          "name": "sunglasses",
+          "group": "summer"
+        },
+        {
+          "item": "🧣",
+          "name": "scarf",
+          "group": "winter"
+        },
+        {
+          "item": "☕",
+          "name": "hot drink",
+          "group": "winter"
+        },
+        {
+          "item": "🥾",
+          "name": "gumboots",
+          "group": "rainy"
+        },
+        {
+          "item": "🩳",
+          "name": "shorts",
+          "group": "summer"
+        },
+        {
+          "item": "☂️",
+          "name": "umbrella",
+          "group": "rainy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-weather-13",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "summer",
+          "label": "Summer",
+          "picture": "☀️"
+        },
+        {
+          "id": "winter",
+          "label": "Winter",
+          "picture": "❄️"
+        },
+        {
+          "id": "rainy",
+          "label": "Rainy season",
+          "picture": "🌧️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥾",
+          "name": "gumboots",
+          "group": "rainy"
+        },
+        {
+          "item": "🩳",
+          "name": "shorts",
+          "group": "summer"
+        },
+        {
+          "item": "🧤",
+          "name": "gloves",
+          "group": "winter"
+        },
+        {
+          "item": "🧥",
+          "name": "coat",
+          "group": "winter"
+        },
+        {
+          "item": "🐸",
+          "name": "frog",
+          "group": "rainy"
+        },
+        {
+          "item": "🧢",
+          "name": "cap",
+          "group": "summer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-weather-14",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "summer",
+          "label": "Summer",
+          "picture": "☀️"
+        },
+        {
+          "id": "winter",
+          "label": "Winter",
+          "picture": "❄️"
+        },
+        {
+          "id": "rainy",
+          "label": "Rainy season",
+          "picture": "🌧️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🌈",
+          "name": "rainbow",
+          "group": "rainy"
+        },
+        {
+          "item": "⛄",
+          "name": "snowman",
+          "group": "winter"
+        },
+        {
+          "item": "⛈️",
+          "name": "thunderstorm",
+          "group": "rainy"
+        },
+        {
+          "item": "🪭",
+          "name": "hand fan",
+          "group": "summer"
+        },
+        {
+          "item": "🧦",
+          "name": "woollen socks",
+          "group": "winter"
+        },
+        {
+          "item": "🩳",
+          "name": "shorts",
+          "group": "summer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-sci-weather-15",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 3,
+    "prompt": "True or false? The Sun gives us light and heat.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-weather-tf3-1",
+      "picture": "☀️",
+      "statement": "The Sun gives us light and heat."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-weather-16",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 3,
+    "prompt": "True or false? The Sun shines brightly at midnight.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-weather-tf3-2",
+      "picture": "🌙",
+      "statement": "The Sun shines brightly at midnight."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g2-sci-weather-17",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 3,
+    "prompt": "True or false? Snow falls in very cold places.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-weather-tf3-3",
+      "picture": "❄️",
+      "statement": "Snow falls in very cold places."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-weather-18",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 3,
+    "prompt": "True or false? Clouds bring rain.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-weather-tf3-4",
+      "picture": "🌧️",
+      "statement": "Clouds bring rain."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-weather-19",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 3,
+    "prompt": "True or false? A rainbow has seven colours.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-weather-tf3-5",
+      "picture": "🌈",
+      "statement": "A rainbow has seven colours."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-sci-weather-20",
+    "grade": 2,
+    "subject": "science",
+    "topic": "g2-sci-weather",
+    "difficulty": 3,
+    "prompt": "True or false? We wear cotton shorts in the snow.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-sci-weather-tf3-6",
+      "picture": "⛄",
+      "statement": "We wear cotton shorts in the snow."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  }
+]

@@ -4,6 +4,7 @@ import { encode, nameOf, plainSentence, type ChoicePuzzle, type ChoiceType, type
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
+import { Diagram } from '../science/Diagram';
 import { Angle, BarChart, Blocks, Clock, Fraction, GridShape, Groups, HundredGrid, Money, Ruler } from '../maths/Visuals';
 
 /**
@@ -436,6 +437,32 @@ export const RENDERERS: Renderers = {
     ),
     option: (a) => <Text style={[styles.word, fit(a, 26, 7)]} numberOfLines={1}>{a}</Text>,
     columns: () => 3,
+  },
+  'science-quiz': {
+    Stimulus: ({ puzzle }) => <Picture picture={puzzle.payload.picture} />,
+    option: (a) => <Text style={[styles.timeOption, { fontSize: longest(a).length > 11 ? 18 : 22 }]} numberOfLines={2}>{a}</Text>,
+    columns: (p) => (p.options.some((o) => o.length > 12) ? 1 : 3),
+    optionHeight: 58,
+  },
+  'true-false': {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.clues, { alignItems: 'center' }]}>
+        <Text style={{ fontSize: 56, lineHeight: 68 }}>{puzzle.payload.picture}</Text>
+        <Text style={[styles.sentenceText, { textAlign: 'center' }]}>{puzzle.payload.statement}</Text>
+      </View>
+    ),
+    option: (a) => <Text style={styles.timeOption}>{a === 'True' ? '✓ True' : '✗ False'}</Text>,
+    columns: () => 2,
+  },
+  'label-diagram': {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.pictureBox]}>
+        <Diagram {...puzzle.payload} />
+      </View>
+    ),
+    option: (a) => <Text style={[styles.word, { fontSize: 22 }]} numberOfLines={1}>{a}</Text>,
+    columns: (p) => (p.options.some((o) => o.length > 4) ? 1 : 3),
+    optionHeight: 58,
   },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,

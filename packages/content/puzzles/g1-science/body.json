@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g1-sci-body-01",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "head",
+      "ask": "name"
+    },
+    "options": [
+      "tummy",
+      "head",
+      "leg"
+    ],
+    "answer": "head"
+  },
+  {
+    "id": "g1-sci-body-02",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "arm",
+      "ask": "name"
+    },
+    "options": [
+      "tummy",
+      "hand",
+      "arm"
+    ],
+    "answer": "arm"
+  },
+  {
+    "id": "g1-sci-body-03",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "hand",
+      "ask": "name"
+    },
+    "options": [
+      "hand",
+      "foot",
+      "leg"
+    ],
+    "answer": "hand"
+  },
+  {
+    "id": "g1-sci-body-04",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "leg",
+      "ask": "name"
+    },
+    "options": [
+      "arm",
+      "leg",
+      "head"
+    ],
+    "answer": "leg"
+  },
+  {
+    "id": "g1-sci-body-05",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "foot",
+      "ask": "name"
+    },
+    "options": [
+      "foot",
+      "leg",
+      "head"
+    ],
+    "answer": "foot"
+  },
+  {
+    "id": "g1-sci-body-06",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "tummy",
+      "ask": "name"
+    },
+    "options": [
+      "tummy",
+      "arm",
+      "hand"
+    ],
+    "answer": "tummy"
+  },
+  {
+    "id": "g1-sci-body-07",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "head",
+      "ask": "name"
+    },
+    "options": [
+      "tummy",
+      "head",
+      "foot"
+    ],
+    "answer": "head"
+  },
+  {
+    "id": "g1-sci-body-08",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 2,
+    "prompt": "Which number shows the head?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "head",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "5",
+      "6"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "g1-sci-body-09",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 2,
+    "prompt": "Which number shows the arm?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "arm",
+      "ask": "find"
+    },
+    "options": [
+      "2",
+      "4",
+      "6"
+    ],
+    "answer": "2"
+  },
+  {
+    "id": "g1-sci-body-10",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 2,
+    "prompt": "Which number shows the hand?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "hand",
+      "ask": "find"
+    },
+    "options": [
+      "2",
+      "3",
+      "6"
+    ],
+    "answer": "3"
+  },
+  {
+    "id": "g1-sci-body-11",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 2,
+    "prompt": "Which number shows the leg?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "leg",
+      "ask": "find"
+    },
+    "options": [
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "g1-sci-body-12",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 2,
+    "prompt": "Which number shows the foot?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "foot",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "5",
+      "6"
+    ],
+    "answer": "5"
+  },
+  {
+    "id": "g1-sci-body-13",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 2,
+    "prompt": "Which number shows the tummy?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "tummy",
+      "ask": "find"
+    },
+    "options": [
+      "2",
+      "3",
+      "6"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": "g1-sci-body-14",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 2,
+    "prompt": "Which number shows the head?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "body",
+      "part": "head",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "3",
+      "5"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "g1-sci-body-15",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 3,
+    "prompt": "Which part of the body helps us see?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-sci-body-q3-1",
+      "picture": "🧒",
+      "question": "Which part of the body helps us see?"
+    },
+    "options": [
+      "eyes",
+      "nose",
+      "ears"
+    ],
+    "answer": "eyes"
+  },
+  {
+    "id": "g1-sci-body-16",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 3,
+    "prompt": "Which part of the body helps us hear?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-sci-body-q3-2",
+      "picture": "🧒",
+      "question": "Which part of the body helps us hear?"
+    },
+    "options": [
+      "tongue",
+      "eyes",
+      "ears"
+    ],
+    "answer": "ears"
+  },
+  {
+    "id": "g1-sci-body-17",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 3,
+    "prompt": "Which part of the body helps us smell?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-sci-body-q3-3",
+      "picture": "🧒",
+      "question": "Which part of the body helps us smell?"
+    },
+    "options": [
+      "nose",
+      "ears",
+      "hands"
+    ],
+    "answer": "nose"
+  },
+  {
+    "id": "g1-sci-body-18",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 3,
+    "prompt": "Which part of the body helps us taste?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-sci-body-q3-4",
+      "picture": "🧒",
+      "question": "Which part of the body helps us taste?"
+    },
+    "options": [
+      "nose",
+      "eyes",
+      "tongue"
+    ],
+    "answer": "tongue"
+  },
+  {
+    "id": "g1-sci-body-19",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 3,
+    "prompt": "Which part of the body helps us feel hot and cold?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-sci-body-q3-5",
+      "picture": "✋",
+      "question": "Which part of the body helps us feel hot and cold?"
+    },
+    "options": [
+      "hair",
+      "teeth",
+      "skin"
+    ],
+    "answer": "skin"
+  },
+  {
+    "id": "g1-sci-body-20",
+    "grade": 1,
+    "subject": "science",
+    "topic": "g1-sci-body",
+    "difficulty": 3,
+    "prompt": "What do we use to chew our food?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-sci-body-q3-6",
+      "picture": "🍎",
+      "question": "What do we use to chew our food?"
+    },
+    "options": [
+      "teeth",
+      "ears",
+      "nose"
+    ],
+    "answer": "teeth"
+  }
+]

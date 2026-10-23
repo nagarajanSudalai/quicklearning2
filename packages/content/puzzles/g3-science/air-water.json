@@ -1,0 +1,605 @@
+[
+  {
+    "id": "g3-sci-air-water-01",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 1,
+    "prompt": "True or false? Air is all around us.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-air-water-tf1-1",
+      "picture": "💨",
+      "statement": "Air is all around us."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-air-water-02",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 1,
+    "prompt": "True or false? A balloon gets bigger when we fill it with air.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-air-water-tf1-2",
+      "picture": "🎈",
+      "statement": "A balloon gets bigger when we fill it with air."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-air-water-03",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 1,
+    "prompt": "True or false? We cannot see air, but we can feel it.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-air-water-tf1-3",
+      "picture": "🌬️",
+      "statement": "We cannot see air, but we can feel it."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-air-water-04",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 1,
+    "prompt": "True or false? Fish do not need air at all.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-air-water-tf1-4",
+      "picture": "🐟",
+      "statement": "Fish do not need air at all."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g3-sci-air-water-05",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 1,
+    "prompt": "True or false? A fire needs air to keep burning.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-air-water-tf1-5",
+      "picture": "🔥",
+      "statement": "A fire needs air to keep burning."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-air-water-06",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 1,
+    "prompt": "True or false? Smoke from factories makes the air cleaner.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-air-water-tf1-6",
+      "picture": "🏭",
+      "statement": "Smoke from factories makes the air cleaner."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g3-sci-air-water-07",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 1,
+    "prompt": "True or false? Trees help keep the air clean.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-sci-air-water-tf1-7",
+      "picture": "🌳",
+      "statement": "Trees help keep the air clean."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-sci-air-water-08",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 2,
+    "prompt": "Which water is safe to drink?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-air-water-q2-1",
+      "picture": "🚰",
+      "question": "Which water is safe to drink?"
+    },
+    "options": [
+      "rain puddles",
+      "boiled or filtered water",
+      "pond water"
+    ],
+    "answer": "boiled or filtered water"
+  },
+  {
+    "id": "g3-sci-air-water-09",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 2,
+    "prompt": "Sea water tastes…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-air-water-q2-2",
+      "picture": "🌊",
+      "question": "Sea water tastes…"
+    },
+    "options": [
+      "bitter",
+      "salty",
+      "sweet"
+    ],
+    "answer": "salty"
+  },
+  {
+    "id": "g3-sci-air-water-10",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 2,
+    "prompt": "Which of these is a source of fresh water?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-air-water-q2-3",
+      "picture": "🏞️",
+      "question": "Which of these is a source of fresh water?"
+    },
+    "options": [
+      "sea",
+      "river",
+      "ocean"
+    ],
+    "answer": "river"
+  },
+  {
+    "id": "g3-sci-air-water-11",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 2,
+    "prompt": "Most of the Earth’s surface is covered by…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-air-water-q2-4",
+      "picture": "💧",
+      "question": "Most of the Earth’s surface is covered by…"
+    },
+    "options": [
+      "sand",
+      "water",
+      "forests"
+    ],
+    "answer": "water"
+  },
+  {
+    "id": "g3-sci-air-water-12",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 2,
+    "prompt": "Wet clothes dry faster on a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-air-water-q2-5",
+      "picture": "🧺",
+      "question": "Wet clothes dry faster on a…"
+    },
+    "options": [
+      "rainy day",
+      "cold, still night",
+      "sunny, windy day"
+    ],
+    "answer": "sunny, windy day"
+  },
+  {
+    "id": "g3-sci-air-water-13",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 2,
+    "prompt": "What do we call saving water and using it carefully?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-air-water-q2-6",
+      "picture": "🌍",
+      "question": "What do we call saving water and using it carefully?"
+    },
+    "options": [
+      "flooding",
+      "water pollution",
+      "water conservation"
+    ],
+    "answer": "water conservation"
+  },
+  {
+    "id": "g3-sci-air-water-14",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 2,
+    "prompt": "Collecting rain water to use later is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-air-water-q2-7",
+      "picture": "🪣",
+      "question": "Collecting rain water to use later is called…"
+    },
+    "options": [
+      "irrigation only",
+      "rainwater harvesting",
+      "evaporation"
+    ],
+    "answer": "rainwater harvesting"
+  },
+  {
+    "id": "g3-sci-air-water-15",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "floats",
+          "label": "Floats",
+          "picture": "🛟"
+        },
+        {
+          "id": "sinks",
+          "label": "Sinks",
+          "picture": "⚓"
+        }
+      ],
+      "items": [
+        {
+          "item": "🧽",
+          "name": "sponge",
+          "group": "floats"
+        },
+        {
+          "item": "🪵",
+          "name": "wooden log",
+          "group": "floats"
+        },
+        {
+          "item": "🔑",
+          "name": "key",
+          "group": "sinks"
+        },
+        {
+          "item": "🪨",
+          "name": "stone",
+          "group": "sinks"
+        },
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "sinks"
+        },
+        {
+          "item": "🍃",
+          "name": "leaf",
+          "group": "floats"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-air-water-16",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "floats",
+          "label": "Floats",
+          "picture": "🛟"
+        },
+        {
+          "id": "sinks",
+          "label": "Sinks",
+          "picture": "⚓"
+        }
+      ],
+      "items": [
+        {
+          "item": "🔑",
+          "name": "key",
+          "group": "sinks"
+        },
+        {
+          "item": "🍃",
+          "name": "leaf",
+          "group": "floats"
+        },
+        {
+          "item": "🪵",
+          "name": "wooden log",
+          "group": "floats"
+        },
+        {
+          "item": "🪨",
+          "name": "stone",
+          "group": "sinks"
+        },
+        {
+          "item": "🎈",
+          "name": "balloon",
+          "group": "floats"
+        },
+        {
+          "item": "🔨",
+          "name": "hammer",
+          "group": "sinks"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-air-water-17",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "floats",
+          "label": "Floats",
+          "picture": "🛟"
+        },
+        {
+          "id": "sinks",
+          "label": "Sinks",
+          "picture": "⚓"
+        }
+      ],
+      "items": [
+        {
+          "item": "🎈",
+          "name": "balloon",
+          "group": "floats"
+        },
+        {
+          "item": "🪵",
+          "name": "wooden log",
+          "group": "floats"
+        },
+        {
+          "item": "🪨",
+          "name": "stone",
+          "group": "sinks"
+        },
+        {
+          "item": "🔨",
+          "name": "hammer",
+          "group": "sinks"
+        },
+        {
+          "item": "🧽",
+          "name": "sponge",
+          "group": "floats"
+        },
+        {
+          "item": "🪙",
+          "name": "coin",
+          "group": "sinks"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-air-water-18",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "floats",
+          "label": "Floats",
+          "picture": "🛟"
+        },
+        {
+          "id": "sinks",
+          "label": "Sinks",
+          "picture": "⚓"
+        }
+      ],
+      "items": [
+        {
+          "item": "🏐",
+          "name": "plastic ball",
+          "group": "floats"
+        },
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "sinks"
+        },
+        {
+          "item": "🥄",
+          "name": "steel spoon",
+          "group": "sinks"
+        },
+        {
+          "item": "🧽",
+          "name": "sponge",
+          "group": "floats"
+        },
+        {
+          "item": "🎈",
+          "name": "balloon",
+          "group": "floats"
+        },
+        {
+          "item": "🪨",
+          "name": "stone",
+          "group": "sinks"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-air-water-19",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "floats",
+          "label": "Floats",
+          "picture": "🛟"
+        },
+        {
+          "id": "sinks",
+          "label": "Sinks",
+          "picture": "⚓"
+        }
+      ],
+      "items": [
+        {
+          "item": "🔑",
+          "name": "key",
+          "group": "sinks"
+        },
+        {
+          "item": "🔨",
+          "name": "hammer",
+          "group": "sinks"
+        },
+        {
+          "item": "🥄",
+          "name": "steel spoon",
+          "group": "sinks"
+        },
+        {
+          "item": "🎈",
+          "name": "balloon",
+          "group": "floats"
+        },
+        {
+          "item": "🏐",
+          "name": "plastic ball",
+          "group": "floats"
+        },
+        {
+          "item": "🍃",
+          "name": "leaf",
+          "group": "floats"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-air-water-20",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-air-water",
+    "difficulty": 3,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "floats",
+          "label": "Floats",
+          "picture": "🛟"
+        },
+        {
+          "id": "sinks",
+          "label": "Sinks",
+          "picture": "⚓"
+        }
+      ],
+      "items": [
+        {
+          "item": "🔨",
+          "name": "hammer",
+          "group": "sinks"
+        },
+        {
+          "item": "🏐",
+          "name": "plastic ball",
+          "group": "floats"
+        },
+        {
+          "item": "🔩",
+          "name": "iron nail",
+          "group": "sinks"
+        },
+        {
+          "item": "🪙",
+          "name": "coin",
+          "group": "sinks"
+        },
+        {
+          "item": "🪵",
+          "name": "wooden log",
+          "group": "floats"
+        },
+        {
+          "item": "🎈",
+          "name": "balloon",
+          "group": "floats"
+        }
+      ]
+    }
+  }
+]

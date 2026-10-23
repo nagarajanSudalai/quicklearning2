@@ -1,0 +1,927 @@
+[
+  {
+    "id": "g3-sci-animals-01",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        }
+      ],
+      "items": [
+        {
+          "item": "🦁",
+          "name": "lion",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐊",
+          "name": "crocodile",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐄",
+          "name": "cow",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦅",
+          "name": "eagle",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐪",
+          "name": "camel",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-02",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐺",
+          "name": "wolf",
+          "group": "carnivore"
+        },
+        {
+          "item": "🦓",
+          "name": "zebra",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐐",
+          "name": "goat",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦅",
+          "name": "eagle",
+          "group": "carnivore"
+        },
+        {
+          "item": "🦁",
+          "name": "lion",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-03",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐪",
+          "name": "camel",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦒",
+          "name": "giraffe",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐊",
+          "name": "crocodile",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐺",
+          "name": "wolf",
+          "group": "carnivore"
+        },
+        {
+          "item": "🦈",
+          "name": "shark",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-04",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        }
+      ],
+      "items": [
+        {
+          "item": "🦁",
+          "name": "lion",
+          "group": "carnivore"
+        },
+        {
+          "item": "🦒",
+          "name": "giraffe",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐍",
+          "name": "snake",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐯",
+          "name": "tiger",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐇",
+          "name": "rabbit",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦓",
+          "name": "zebra",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-05",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        }
+      ],
+      "items": [
+        {
+          "item": "🦁",
+          "name": "lion",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐇",
+          "name": "rabbit",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦅",
+          "name": "eagle",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐊",
+          "name": "crocodile",
+          "group": "carnivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-06",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        }
+      ],
+      "items": [
+        {
+          "item": "🦁",
+          "name": "lion",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦒",
+          "name": "giraffe",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦅",
+          "name": "eagle",
+          "group": "carnivore"
+        },
+        {
+          "item": "🦈",
+          "name": "shark",
+          "group": "carnivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-07",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐪",
+          "name": "camel",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦅",
+          "name": "eagle",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐍",
+          "name": "snake",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐊",
+          "name": "crocodile",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐄",
+          "name": "cow",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-08",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        },
+        {
+          "id": "omnivore",
+          "label": "Eat both",
+          "picture": "🍽️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐦",
+          "name": "sparrow",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐯",
+          "name": "tiger",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐺",
+          "name": "wolf",
+          "group": "carnivore"
+        },
+        {
+          "item": "🧒",
+          "name": "human",
+          "group": "omnivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-09",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        },
+        {
+          "id": "omnivore",
+          "label": "Eat both",
+          "picture": "🍽️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐯",
+          "name": "tiger",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐺",
+          "name": "wolf",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐦",
+          "name": "sparrow",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐪",
+          "name": "camel",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐷",
+          "name": "pig",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐐",
+          "name": "goat",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-10",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        },
+        {
+          "id": "omnivore",
+          "label": "Eat both",
+          "picture": "🍽️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐍",
+          "name": "snake",
+          "group": "carnivore"
+        },
+        {
+          "item": "🦓",
+          "name": "zebra",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "herbivore"
+        },
+        {
+          "item": "🧒",
+          "name": "human",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐦",
+          "name": "sparrow",
+          "group": "omnivore"
+        },
+        {
+          "item": "🦁",
+          "name": "lion",
+          "group": "carnivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-11",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        },
+        {
+          "id": "omnivore",
+          "label": "Eat both",
+          "picture": "🍽️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐄",
+          "name": "cow",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐍",
+          "name": "snake",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐺",
+          "name": "wolf",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐒",
+          "name": "monkey",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐔",
+          "name": "hen",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐘",
+          "name": "elephant",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-12",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        },
+        {
+          "id": "omnivore",
+          "label": "Eat both",
+          "picture": "🍽️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐒",
+          "name": "monkey",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐻",
+          "name": "bear",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐺",
+          "name": "wolf",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐪",
+          "name": "camel",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐯",
+          "name": "tiger",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐐",
+          "name": "goat",
+          "group": "herbivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-13",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        },
+        {
+          "id": "omnivore",
+          "label": "Eat both",
+          "picture": "🍽️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🐊",
+          "name": "crocodile",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐦",
+          "name": "sparrow",
+          "group": "omnivore"
+        },
+        {
+          "item": "🧒",
+          "name": "human",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐇",
+          "name": "rabbit",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        },
+        {
+          "item": "🦁",
+          "name": "lion",
+          "group": "carnivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-14",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 2,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "herbivore",
+          "label": "Plant eaters",
+          "picture": "🌿"
+        },
+        {
+          "id": "carnivore",
+          "label": "Meat eaters",
+          "picture": "🍖"
+        },
+        {
+          "id": "omnivore",
+          "label": "Eat both",
+          "picture": "🍽️"
+        }
+      ],
+      "items": [
+        {
+          "item": "🦅",
+          "name": "eagle",
+          "group": "carnivore"
+        },
+        {
+          "item": "🐔",
+          "name": "hen",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐑",
+          "name": "sheep",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐷",
+          "name": "pig",
+          "group": "omnivore"
+        },
+        {
+          "item": "🐇",
+          "name": "rabbit",
+          "group": "herbivore"
+        },
+        {
+          "item": "🐍",
+          "name": "snake",
+          "group": "carnivore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-sci-animals-15",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 3,
+    "prompt": "Why does a parrot have a strong, curved beak?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-animals-q3-1",
+      "picture": "🦜",
+      "question": "Why does a parrot have a strong, curved beak?"
+    },
+    "options": [
+      "to dig soil",
+      "to crack nuts and fruit",
+      "to catch fish"
+    ],
+    "answer": "to crack nuts and fruit"
+  },
+  {
+    "id": "g3-sci-animals-16",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 3,
+    "prompt": "An eagle has sharp, hooked claws to…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-animals-q3-2",
+      "picture": "🦅",
+      "question": "An eagle has sharp, hooked claws to…"
+    },
+    "options": [
+      "catch and hold its prey",
+      "swim fast",
+      "build a web"
+    ],
+    "answer": "catch and hold its prey"
+  },
+  {
+    "id": "g3-sci-animals-17",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 3,
+    "prompt": "Why does a duck have webbed feet?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-animals-q3-3",
+      "picture": "🦆",
+      "question": "Why does a duck have webbed feet?"
+    },
+    "options": [
+      "to swim",
+      "to climb trees",
+      "to dig"
+    ],
+    "answer": "to swim"
+  },
+  {
+    "id": "g3-sci-animals-18",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 3,
+    "prompt": "What covers the body of a bird?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-animals-q3-4",
+      "picture": "🐦",
+      "question": "What covers the body of a bird?"
+    },
+    "options": [
+      "fur",
+      "feathers",
+      "scales"
+    ],
+    "answer": "feathers"
+  },
+  {
+    "id": "g3-sci-animals-19",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 3,
+    "prompt": "How does a fish breathe in water?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-animals-q3-5",
+      "picture": "🐟",
+      "question": "How does a fish breathe in water?"
+    },
+    "options": [
+      "with lungs",
+      "with a nose",
+      "with gills"
+    ],
+    "answer": "with gills"
+  },
+  {
+    "id": "g3-sci-animals-20",
+    "grade": 3,
+    "subject": "science",
+    "topic": "g3-sci-animals",
+    "difficulty": 3,
+    "prompt": "Some bears sleep through the winter. This is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-sci-animals-q3-6",
+      "picture": "🐻",
+      "question": "Some bears sleep through the winter. This is called…"
+    },
+    "options": [
+      "hunting",
+      "hibernation",
+      "migration"
+    ],
+    "answer": "hibernation"
+  }
+]

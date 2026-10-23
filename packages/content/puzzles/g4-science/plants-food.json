@@ -1,0 +1,682 @@
+[
+  {
+    "id": "g4-sci-plants-food-01",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "eat-leaf",
+          "label": "We eat the leaves",
+          "picture": "🍃"
+        },
+        {
+          "id": "eat-fruit",
+          "label": "We eat the fruit",
+          "picture": "🍎"
+        },
+        {
+          "id": "eat-seed",
+          "label": "We eat the seeds",
+          "picture": "🫘"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍆",
+          "name": "brinjal",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🥬",
+          "name": "spinach",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🥒",
+          "name": "cucumber",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🥗",
+          "name": "lettuce",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🌾",
+          "name": "wheat",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🌽",
+          "name": "corn",
+          "group": "eat-seed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-plants-food-02",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "eat-leaf",
+          "label": "We eat the leaves",
+          "picture": "🍃"
+        },
+        {
+          "id": "eat-fruit",
+          "label": "We eat the fruit",
+          "picture": "🍎"
+        },
+        {
+          "id": "eat-seed",
+          "label": "We eat the seeds",
+          "picture": "🫘"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍅",
+          "name": "tomato",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🥬",
+          "name": "spinach",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🥜",
+          "name": "groundnut",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🍆",
+          "name": "brinjal",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🌾",
+          "name": "wheat",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🌿",
+          "name": "mint",
+          "group": "eat-leaf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-plants-food-03",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "eat-leaf",
+          "label": "We eat the leaves",
+          "picture": "🍃"
+        },
+        {
+          "id": "eat-fruit",
+          "label": "We eat the fruit",
+          "picture": "🍎"
+        },
+        {
+          "id": "eat-seed",
+          "label": "We eat the seeds",
+          "picture": "🫘"
+        }
+      ],
+      "items": [
+        {
+          "item": "🌿",
+          "name": "mint",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🫑",
+          "name": "capsicum",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🥗",
+          "name": "lettuce",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🫛",
+          "name": "peas",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🥒",
+          "name": "cucumber",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🌽",
+          "name": "corn",
+          "group": "eat-seed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-plants-food-04",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "eat-leaf",
+          "label": "We eat the leaves",
+          "picture": "🍃"
+        },
+        {
+          "id": "eat-fruit",
+          "label": "We eat the fruit",
+          "picture": "🍎"
+        },
+        {
+          "id": "eat-seed",
+          "label": "We eat the seeds",
+          "picture": "🫘"
+        }
+      ],
+      "items": [
+        {
+          "item": "🌻",
+          "name": "sunflower seeds",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🥒",
+          "name": "cucumber",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🌽",
+          "name": "corn",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🥗",
+          "name": "lettuce",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🥬",
+          "name": "spinach",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🫑",
+          "name": "capsicum",
+          "group": "eat-fruit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-plants-food-05",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "eat-leaf",
+          "label": "We eat the leaves",
+          "picture": "🍃"
+        },
+        {
+          "id": "eat-fruit",
+          "label": "We eat the fruit",
+          "picture": "🍎"
+        },
+        {
+          "id": "eat-seed",
+          "label": "We eat the seeds",
+          "picture": "🫘"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍀",
+          "name": "methi",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🍅",
+          "name": "tomato",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🥬",
+          "name": "spinach",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🌾",
+          "name": "wheat",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🥜",
+          "name": "groundnut",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🫑",
+          "name": "capsicum",
+          "group": "eat-fruit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-plants-food-06",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "eat-leaf",
+          "label": "We eat the leaves",
+          "picture": "🍃"
+        },
+        {
+          "id": "eat-fruit",
+          "label": "We eat the fruit",
+          "picture": "🍎"
+        },
+        {
+          "id": "eat-seed",
+          "label": "We eat the seeds",
+          "picture": "🫘"
+        }
+      ],
+      "items": [
+        {
+          "item": "🍆",
+          "name": "brinjal",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🌽",
+          "name": "corn",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🍀",
+          "name": "methi",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🥒",
+          "name": "cucumber",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🥜",
+          "name": "groundnut",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🥬",
+          "name": "spinach",
+          "group": "eat-leaf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-plants-food-07",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "eat-leaf",
+          "label": "We eat the leaves",
+          "picture": "🍃"
+        },
+        {
+          "id": "eat-fruit",
+          "label": "We eat the fruit",
+          "picture": "🍎"
+        },
+        {
+          "id": "eat-seed",
+          "label": "We eat the seeds",
+          "picture": "🫘"
+        }
+      ],
+      "items": [
+        {
+          "item": "🥗",
+          "name": "lettuce",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🍅",
+          "name": "tomato",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🥬",
+          "name": "spinach",
+          "group": "eat-leaf"
+        },
+        {
+          "item": "🌽",
+          "name": "corn",
+          "group": "eat-seed"
+        },
+        {
+          "item": "🍆",
+          "name": "brinjal",
+          "group": "eat-fruit"
+        },
+        {
+          "item": "🌾",
+          "name": "wheat",
+          "group": "eat-seed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g4-sci-plants-food-08",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 2,
+    "prompt": "Which part of the plant do we eat in a carrot?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q2-1",
+      "picture": "🥕",
+      "question": "Which part of the plant do we eat in a carrot?"
+    },
+    "options": [
+      "root",
+      "leaf",
+      "stem"
+    ],
+    "answer": "root"
+  },
+  {
+    "id": "g4-sci-plants-food-09",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 2,
+    "prompt": "A potato grows under the ground, but it is a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q2-2",
+      "picture": "🥔",
+      "question": "A potato grows under the ground, but it is a…"
+    },
+    "options": [
+      "root",
+      "fruit",
+      "stem"
+    ],
+    "answer": "stem"
+  },
+  {
+    "id": "g4-sci-plants-food-10",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 2,
+    "prompt": "Which part of the plant is ginger?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q2-3",
+      "picture": "🫚",
+      "question": "Which part of the plant is ginger?"
+    },
+    "options": [
+      "flower",
+      "stem",
+      "leaf"
+    ],
+    "answer": "stem"
+  },
+  {
+    "id": "g4-sci-plants-food-11",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 2,
+    "prompt": "Which part of the plant do we eat in spinach?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q2-4",
+      "picture": "🥬",
+      "question": "Which part of the plant do we eat in spinach?"
+    },
+    "options": [
+      "root",
+      "seed",
+      "leaf"
+    ],
+    "answer": "leaf"
+  },
+  {
+    "id": "g4-sci-plants-food-12",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 2,
+    "prompt": "Which part of the plant do we eat in cauliflower and broccoli?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q2-5",
+      "picture": "🥦",
+      "question": "Which part of the plant do we eat in cauliflower and broccoli?"
+    },
+    "options": [
+      "flower",
+      "stem",
+      "root"
+    ],
+    "answer": "flower"
+  },
+  {
+    "id": "g4-sci-plants-food-13",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 2,
+    "prompt": "Which part of the plant do we eat in peas?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q2-6",
+      "picture": "🫛",
+      "question": "Which part of the plant do we eat in peas?"
+    },
+    "options": [
+      "root",
+      "seed",
+      "leaf"
+    ],
+    "answer": "seed"
+  },
+  {
+    "id": "g4-sci-plants-food-14",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 2,
+    "prompt": "Which part of the plant do we eat in a sweet potato?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q2-7",
+      "picture": "🍠",
+      "question": "Which part of the plant do we eat in a sweet potato?"
+    },
+    "options": [
+      "fruit",
+      "root",
+      "leaf"
+    ],
+    "answer": "root"
+  },
+  {
+    "id": "g4-sci-plants-food-15",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 3,
+    "prompt": "Green leaves make food using sunlight. This is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q3-1",
+      "picture": "🍃",
+      "question": "Green leaves make food using sunlight. This is called…"
+    },
+    "options": [
+      "photosynthesis",
+      "evaporation",
+      "digestion"
+    ],
+    "answer": "photosynthesis"
+  },
+  {
+    "id": "g4-sci-plants-food-16",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 3,
+    "prompt": "What gives leaves their green colour?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q3-2",
+      "picture": "🟢",
+      "question": "What gives leaves their green colour?"
+    },
+    "options": [
+      "soil",
+      "chlorophyll",
+      "water"
+    ],
+    "answer": "chlorophyll"
+  },
+  {
+    "id": "g4-sci-plants-food-17",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 3,
+    "prompt": "Which gas do plants take in to make food?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q3-3",
+      "picture": "💨",
+      "question": "Which gas do plants take in to make food?"
+    },
+    "options": [
+      "carbon dioxide",
+      "steam",
+      "oxygen"
+    ],
+    "answer": "carbon dioxide"
+  },
+  {
+    "id": "g4-sci-plants-food-18",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 3,
+    "prompt": "Which gas do plants give out that we breathe?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q3-4",
+      "picture": "🌬️",
+      "question": "Which gas do plants give out that we breathe?"
+    },
+    "options": [
+      "carbon dioxide",
+      "smoke",
+      "oxygen"
+    ],
+    "answer": "oxygen"
+  },
+  {
+    "id": "g4-sci-plants-food-19",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 3,
+    "prompt": "Wheat and rice are called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q3-5",
+      "picture": "🌾",
+      "question": "Wheat and rice are called…"
+    },
+    "options": [
+      "cereals",
+      "pulses",
+      "spices"
+    ],
+    "answer": "cereals"
+  },
+  {
+    "id": "g4-sci-plants-food-20",
+    "grade": 4,
+    "subject": "science",
+    "topic": "g4-sci-plants-food",
+    "difficulty": 3,
+    "prompt": "Peas, beans and dal are called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g4-sci-plants-food-q3-6",
+      "picture": "🫛",
+      "question": "Peas, beans and dal are called…"
+    },
+    "options": [
+      "pulses",
+      "cereals",
+      "fruits"
+    ],
+    "answer": "pulses"
+  }
+]

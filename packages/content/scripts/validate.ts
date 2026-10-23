@@ -15,6 +15,7 @@ import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/math
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
 import { isMagic, logicSolutions, magicSolutions, sumGridSolutions } from '../src/logic.ts';
 import { ANALOGIES5, CLUES5, TEASERS } from '../src/thinking5.ts';
+import { DIAGRAMS, SCIENCE_FACTS, SCIENCE_GROUPS, SCIENCE_QUIZ } from '../src/science.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
 import { CONJUNCTIONS, IDIOMS, PASSAGES5, PREPOSITIONS, SPELLINGS, VOICE } from '../src/words5.ts';
 import { AFFIXES, ING, LADDER_WORDS, PASSAGES4, SUBJECTS4, oneLetterApart } from '../src/words4.ts';
@@ -23,6 +24,7 @@ import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
 const SHAPES = ['star', 'circle', 'square', 'tri', 'diamond', 'rectangle'];
+const GROUPS = [...CATEGORIES, ...SCIENCE_GROUPS];
 const errors: string[] = [];
 const ids = new Set<string>();
 let total = 0;
@@ -294,6 +296,35 @@ function check(p: any): string | null {
       if (p.options.some((o: string) => o !== t.answer && !t.wrong.includes(o))) return 'unknown option';
       return t.answer === p.answer ? null : `answer is ${t.answer}`;
     }
+    case 'science-quiz': {
+      const x = SCIENCE_QUIZ.find((i) => i.id === q.id);
+      if (!x || x.question !== q.question || x.topic !== p.topic) return 'question not in the science bank for this topic';
+      if (p.options.some((o: string) => o !== x.answer && !x.wrong.includes(o))) return 'unknown option';
+      return x.answer === p.answer ? null : `answer is "${x.answer}"`;
+    }
+    case 'true-false': {
+      const x = SCIENCE_FACTS.find((i) => i.id === q.id);
+      if (!x || x.statement !== q.statement || x.topic !== p.topic) return 'fact not in the science bank for this topic';
+      if (p.options.join() !== 'True,False') return 'options must be True, False';
+      return (x.answer ? 'True' : 'False') === p.answer ? null : `answer is ${x.answer}`;
+    }
+    case 'label-diagram': {
+      const dg = DIAGRAMS[q.diagram];
+      if (!dg) return `unknown diagram ${q.diagram}`;
+      const k = dg.parts.findIndex((x) => x.name === q.part);
+      if (k < 0) return `${q.part} is not on the ${q.diagram} diagram`;
+      if (q.ask === 'find') {
+        if (p.options.some((o: string) => !(Number(o) >= 1 && Number(o) <= dg.parts.length))) return 'option is not a marker number';
+        return p.answer === String(k + 1) ? null : `the ${q.part} is number ${k + 1}`;
+      }
+      if (p.options.some((o: string) => !dg.parts.some((x) => x.name === o))) return 'option is not a part of the diagram';
+      if (q.ask === 'job') {
+        const job = dg.parts[k].job;
+        if (!job || p.prompt !== `Which part ${job}?`) return 'prompt does not match the part’s job';
+        if (dg.parts.filter((x) => x.job === job).length !== 1) return 'two parts share this job';
+      }
+      return p.answer === q.part ? null : `answer is ${q.part}`;
+    }
     case 'idiom': {
       const x = IDIOMS.find((i) => i.phrase === q.phrase);
       if (!x) return 'idiom not in the bank';
@@ -341,9 +372,9 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     if (ids.length < 2) return 'needs at least 2 groups';
     for (const it of q.items) {
       if (!ids.includes(it.group)) return `${it.name} has unknown group ${it.group}`;
-      const cat = CATEGORIES.find((c) => c.id === it.group);
+      const cat = GROUPS.find((c) => c.id === it.group);
       if (!cat?.items.some(([e]) => e === it.item)) return `${it.name} is not in ${it.group}`;
-      const also = ids.find((g: string) => g !== it.group && CATEGORIES.find((c) => c.id === g)?.items.some(([e]) => e === it.item));
+      const also = ids.find((g: string) => g !== it.group && GROUPS.find((c) => c.id === g)?.items.some(([e]) => e === it.item));
       if (also) return `${it.name} fits ${also} too`;
     }
     return ids.every((g: string) => q.items.some((it: { group: string }) => it.group === g)) ? null : 'a group has no items';
