@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in five subjects — Maths, English, Science, Puzzles and Thinking Skills (1,960 puzzles) — with adaptive difficulty.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in all six subjects — Maths, English, Science, Puzzles, Thinking Skills (1,960 puzzles) and Practice & Tests — with adaptive difficulty.**
 
 ## Getting started
 
@@ -227,6 +227,22 @@ New puzzle types:
 
 All content lives in `src/science.ts` and is arranged by `scripts/generate-science.ts`. The checker looks every question and fact up in the bank for its topic, checks each diagram answer against the part list (numbers, names and jobs), and keeps science sorting groups apart from the odd-one-out categories.
 
+## Practice & Tests
+
+Each grade has a 10-question test for every subject with enough one-tap puzzles, plus a **Mixed test**:
+- Maths, English and Science for every grade;
+- Thinking Skills for Grades 4–5 (earlier grades' Thinking topics are mostly interactive).
+
+How a test works:
+- **Questions**: 3 easy, 4 medium and 3 tricky, spread across topics and drawn from the existing banks. Crosswords, sudoku, sorting and other interactive puzzles are left out.
+- **One try per question**: a wrong answer is marked and the right one is shown. No stars are given.
+- **Clock**: it counts up, with no time limit.
+- **Report**: score, time taken, and one row per topic. Topics under two-thirds right link to "Practise →".
+- **Parents**: parent settings lists recent tests and the topics that need practice.
+- **Saving**: reports are stored on the device with the rest of the progress.
+
+The logic is in `packages/content/src/tests.ts` (`testsFor`, `buildTest`, `scoreTest`). `npm test` checks every grade's tests (level mix, no repeats, the right bank) and the scoring.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
@@ -319,3 +335,9 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Topics | Label the part | Numbered diagram | True or false | Quiz | Sorting |
 |---|---|---|---|---|---|
 | ![](docs/screenshots/sci-topics.png) | ![](docs/screenshots/sci-label.png) | ![](docs/screenshots/sci-water-cycle.png) | ![](docs/screenshots/sci-true-false.png) | ![](docs/screenshots/sci-quiz.png) | ![](docs/screenshots/sci-sort.png) |
+
+### Practice & Tests
+
+| Tests | One try | Report | Parents |
+|---|---|---|---|
+| ![](docs/screenshots/tests-list.png) | ![](docs/screenshots/tests-question.png) | ![](docs/screenshots/tests-report.png) | ![](docs/screenshots/tests-parents.png) |

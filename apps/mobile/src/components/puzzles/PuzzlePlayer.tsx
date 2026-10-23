@@ -15,6 +15,8 @@ type Props = {
   sound: boolean;
   /** Called once, when the child finds the right answer. */
   onSolved: (firstTry: boolean) => void;
+  /** Test mode (one-tap puzzles only): the first pick is final; `onSolved` gets whether it was right. */
+  test?: boolean;
 };
 
 /** Plays one puzzle of any type, with the prompt, read-aloud button and feedback line. */
@@ -61,7 +63,7 @@ function InteractiveBody({ puzzle, sound, onSolved }: Props & { puzzle: Interact
 }
 
 /** One-tap puzzles. A wrong pick wiggles and can be retried; a star is only earned when the first pick is right. */
-function ChoiceBody({ puzzle, sound, onSolved }: Props & { puzzle: ChoicePuzzle }) {
+function ChoiceBody({ puzzle, sound, onSolved, test }: Props & { puzzle: ChoicePuzzle }) {
   // Parent keys this component by puzzle id, so state starts fresh per puzzle.
   const [wrong, setWrong] = useState<PuzzleOption[]>([]);
   const [solved, setSolved] = useState(false);
@@ -73,6 +75,16 @@ function ChoiceBody({ puzzle, sound, onSolved }: Props & { puzzle: ChoicePuzzle 
 
   const pick = (opt: PuzzleOption) => {
     if (solved || wrong.includes(opt)) return;
+    if (test) {
+      // One try: show the right answer either way and move on.
+      const right = opt === puzzle.answer;
+      if (!right) setWrong([opt]);
+      setSolved(true);
+      buzz(right ? 'right' : 'wrong');
+      if (right) say(PHRASES.great, sound);
+      onSolved(right);
+      return;
+    }
     if (opt === puzzle.answer) {
       setSolved(true);
       buzz('right');
@@ -86,7 +98,10 @@ function ChoiceBody({ puzzle, sound, onSolved }: Props & { puzzle: ChoicePuzzle 
     }
   };
 
-  const message = solved ? (wrong.length ? 'You got it!' : 'Great job! +1 star') : wrong.length ? 'Almost! Look again.' : null;
+  const answerName = r.label ? r.label(puzzle.answer) : String(puzzle.answer);
+  const message = test
+    ? solved ? (wrong.length ? `The answer is ${answerName}.` : 'Correct!') : null
+    : solved ? (wrong.length ? 'You got it!' : 'Great job! +1 star') : wrong.length ? 'Almost! Look again.' : null;
 
   return (
     <>
@@ -112,7 +127,7 @@ function ChoiceBody({ puzzle, sound, onSolved }: Props & { puzzle: ChoicePuzzle 
         })}
       </View>
 
-      <View style={styles.feedbackRow}>{message && <Feedback key={`${wrong.length}-${solved}`} text={message} good={solved} />}</View>
+      <View style={styles.feedbackRow}>{message && <Feedback key={`${wrong.length}-${solved}`} text={message} good={solved && !(test && wrong.length)} />}</View>
     </>
   );
 }

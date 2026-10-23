@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import type { Grade } from '@quickstep/content';
+import type { Grade, TestSubject } from '@quickstep/content';
 
 const KEY = 'quickstep/progress/v1';
 
@@ -13,9 +13,13 @@ export type Progress = {
   streak: number;
   /** Local date (YYYY-MM-DD) of the last correct answer, for the daily streak. */
   lastPlayed: string | null;
+  /** Practice test reports, newest first. */
+  tests: TestRecord[];
 };
 
-const EMPTY: Progress = { grade: null, stars: 0, solved: {}, sound: true, streak: 0, lastPlayed: null };
+export type TestRecord = { id: string; grade: Grade; subject: TestSubject; date: string; right: number; total: number; seconds: number; byTopic: { topic: string; right: number; total: number }[]; weak: string[] };
+
+const EMPTY: Progress = { grade: null, stars: 0, solved: {}, sound: true, streak: 0, lastPlayed: null, tests: [] };
 
 type Ctx = Progress & {
   ready: boolean;
@@ -24,6 +28,8 @@ type Ctx = Progress & {
   /** Record a correct answer; a star is earned only on the first try. */
   recordSolved: (puzzleId: string, firstTry: boolean) => void;
   reset: () => void;
+  /** Save a practice test report (keeps the latest 30). */
+  recordTest: (r: TestRecord) => void;
 };
 
 const ProgressContext = createContext<Ctx | null>(null);
@@ -61,6 +67,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       recordSolved,
       setGrade: (grade) => setState((s) => ({ ...s, grade })),
       setSound: (sound) => setState((s) => ({ ...s, sound })),
+      recordTest: (r) => setState((s) => ({ ...s, tests: [r, ...s.tests].slice(0, 30) })),
       reset: () => setState((s) => ({ ...EMPTY, sound: s.sound })),
     }),
     [state, ready, recordSolved],

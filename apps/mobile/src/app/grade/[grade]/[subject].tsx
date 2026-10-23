@@ -1,6 +1,7 @@
 import { SUBJECTS, puzzlesFor, topicsFor, type Grade, type SubjectId } from '@quickstep/content';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { TestList } from '../../../components/TestList';
 import { Screen, Tile } from '../../../components/ui';
 import { useProgress } from '../../../lib/progress';
 import { colors, font, text } from '../../../lib/theme';
@@ -12,6 +13,7 @@ export default function SubjectTopics() {
   const subject = SUBJECTS.find((s) => s.id === params.subject);
   const { solved } = useProgress();
   const topics = topicsFor(grade, params.subject);
+  if (params.subject === 'practice') return <TestList grade={grade} />;
 
   return (
     <Screen back title={`Grade ${grade} · ${subject?.name ?? ''}`}>

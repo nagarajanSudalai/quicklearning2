@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'science', 'puzzles', 'thinking'], 2: ['maths', 'english', 'science', 'puzzles', 'thinking'], 3: ['maths', 'english', 'science', 'puzzles', 'thinking'], 4: ['maths', 'english', 'science', 'puzzles', 'thinking'], 5: ['maths', 'english', 'science', 'puzzles', 'thinking'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 2: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 3: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 4: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 5: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },

@@ -1,4 +1,5 @@
-import { TOPICS, puzzlesFor } from '@quickstep/content';
+import { PUZZLES, TOPICS, puzzlesFor, testsFor } from '@quickstep/content';
+import { clock } from '../components/TestList';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Alert, Platform, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
@@ -52,6 +53,19 @@ export default function Parents() {
 
   return (
     <Screen back title="Parent settings">
+      <View style={styles.card}>
+        <Text style={text.h3}>Recent tests</Text>
+        {p.tests.length === 0 && <Text style={text.small}>No tests taken yet. Tests are under Practice & Tests.</Text>}
+        {p.tests.slice(0, 10).map((r) => (
+          <View key={r.date} style={styles.row}>
+            <Text style={styles.label}>{new Date(r.date).toLocaleDateString()} · Grade {r.grade} {testsFor(PUZZLES, r.grade).find((t) => t.id === r.id)?.title ?? r.id}</Text>
+            <Text style={styles.value}>{r.right}/{r.total} · {clock(r.seconds)}</Text>
+          </View>
+        ))}
+        {p.tests[0]?.weak.length ? (
+          <Text style={text.small}>Needs practice: {p.tests[0].weak.map((id) => TOPICS.find((t) => t.id === id)?.title ?? id).join(', ')}</Text>
+        ) : null}
+      </View>
       <View style={styles.card}>
         <Text style={text.h3}>Progress</Text>
         <Text style={text.body}>★ {p.stars} stars · 🔥 {p.streak}-day streak</Text>

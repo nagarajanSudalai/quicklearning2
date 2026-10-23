@@ -34,7 +34,7 @@
 
 ## Phase 4 — Science, Practice & Tests
 - **Science ✅** — Grades 1–5, NCERT/CBSE EVS order, 3 topics per grade (300 puzzles): labelled diagrams (body, plant, water cycle), picture quizzes, true/false and sorting.
-- Timed topic tests with a report for parents.
+- **Practice & Tests ✅** — 10-question tests per subject plus a mixed test, for every grade: one try per question, a count-up clock, a per-topic report with "Practise →" links, and recent tests in parent settings.
 
 ## Phase 5 — Grades 3, 4 and 5
 - **Grade 3 ✅** — NCERT/CBSE Class 3, all four subjects (340 puzzles):

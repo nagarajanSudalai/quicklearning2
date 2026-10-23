@@ -9,6 +9,9 @@ import { duration, fits, fracCmp, gridMeasure, to12, to24 } from '../src/maths4.
 import { encode, patternTerms } from '../src/thinking4.ts';
 import { oneLetterApart } from '../src/words4.ts';
 import type { Puzzle } from '../src/types.ts';
+import { buildTest, scoreTest, testsFor } from '../src/tests.ts';
+import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { join } from 'node:path';
 import { pickVoice, speakable, type VoiceLike } from '../src/voice.ts';
 
 const V = (identifier: string, language: string, extra: Partial<VoiceLike> = {}): VoiceLike => ({ identifier, name: identifier, quality: 'Default', language, ...extra });
@@ -102,3 +105,25 @@ const full = [8, 1, 6, 3, 5, 7, 4, 9, 2];
 assert.equal(sumGridSolutions([null, 1, 6, 3, 5, 7, 4, 9, null], [15, 15, 15], [15, 15, 15]), 1);
 assert.equal(sumGridSolutions(full.map(() => null), [15, 15, 15], [15, 15, 15]) > 1, true, 'empty grid is not unique');
 console.log('grade 5 helper tests OK');
+
+// Practice tests
+const walk = (d: string): string[] => readdirSync(d).flatMap((f) => (statSync(join(d, f)).isDirectory() ? walk(join(d, f)) : f.endsWith('.json') ? [join(d, f)] : []));
+const ALL: Puzzle[] = walk(new URL('../puzzles', import.meta.url).pathname).flatMap((f) => JSON.parse(readFileSync(f, 'utf8')));
+let r = 7; const seeded = () => ((r = (r * 1103515245 + 12345) % 2 ** 31) / 2 ** 31);
+for (const g of [1, 2, 3, 4, 5] as const) {
+  const tests = testsFor(ALL, g);
+  assert.ok(tests.some((t) => t.subject === 'mixed'));
+  for (const t of tests) {
+    const qs = buildTest(ALL, g, t.subject, seeded);
+    assert.equal(qs.length, 10, `${t.id} has 10 questions`);
+    assert.equal(new Set(qs.map((q) => q.id)).size, 10, `${t.id} has no repeats`);
+    assert.ok(qs.every((q) => q.grade === g && 'options' in q && (t.subject === 'mixed' || q.subject === t.subject)), `${t.id} draws from the right bank`);
+    assert.deepEqual([1, 2, 3].map((d) => qs.filter((q) => q.difficulty === d).length), [3, 4, 3], `${t.id} level mix`);
+    if (t.subject === 'mixed') assert.ok(new Set(qs.map((q) => q.subject)).size >= 3, `${t.id} mixes subjects`);
+    else assert.ok(new Set(qs.map((q) => q.topic)).size >= 2, `${t.id} covers topics`);
+  }
+}
+assert.ok(!testsFor(ALL, 1).some((t) => t.subject === 'thinking'), 'Grade 1 Thinking is all interactive');
+const sc = scoreTest([{ topic: 'a' }, { topic: 'a' }, { topic: 'a' }, { topic: 'b' }] as Puzzle[], [true, true, false, false]);
+assert.deepEqual([sc.right, sc.total, sc.weak], [2, 4, ['b']]);
+console.log('practice test tests OK');

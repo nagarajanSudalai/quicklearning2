@@ -130,6 +130,7 @@ export * from './maths5';
 export * from './words5';
 export * from './thinking5';
 export * from './science';
+export * from './tests';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
