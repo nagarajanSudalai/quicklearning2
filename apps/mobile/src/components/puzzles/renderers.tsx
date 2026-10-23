@@ -4,7 +4,7 @@ import { nameOf, plainSentence, type ChoicePuzzle, type ChoiceType, type PuzzleO
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
-import { Blocks, Clock, Fraction, Groups, Money, Ruler } from '../maths/Visuals';
+import { Blocks, Clock, Fraction, GridShape, Groups, Money, Ruler } from '../maths/Visuals';
 
 /**
  * One entry per puzzle type: what to show above the answers, how to draw one
@@ -153,10 +153,15 @@ export const RENDERERS: Renderers = {
   },
   'place-value': {
     Stimulus: ({ puzzle }) => {
-      const { hundreds, tens, ones, ask } = puzzle.payload;
+      const { thousands, hundreds, tens, ones, ask } = puzzle.payload;
+      const whole = (thousands ?? 0) * 1000 + (hundreds ?? 0) * 100 + tens * 10 + ones;
+      if (ask === 'expanded') {
+        const parts = [(thousands ?? 0) * 1000, (hundreds ?? 0) * 100, tens * 10, ones].filter(Boolean);
+        return <View style={[styles.panel, styles.pictureBox]}><Text style={[styles.equation, { fontSize: 30 }]}>{parts.join(' + ')}</Text></View>;
+      }
       return (
         <View style={[styles.panel, styles.pictureBox]}>
-          {ask === 'number' ? <Blocks hundreds={hundreds} tens={tens} ones={ones} /> : <Text style={styles.equation}>{(hundreds ?? 0) * 100 + tens * 10 + ones}</Text>}
+          {ask === 'number' ? <Blocks hundreds={hundreds} tens={tens} ones={ones} /> : <Text style={styles.equation}>{whole.toLocaleString('en-IN')}</Text>}
         </View>
       );
     },
@@ -319,6 +324,50 @@ export const RENDERERS: Renderers = {
     option: (o) => ([...o].length <= 2 ? <Text style={styles.oddItem}>{o}</Text> : <Text style={[styles.word, fit(o, 24, 6)]} numberOfLines={1}>{o}</Text>),
     columns: () => 3,
     optionHeight: 96,
+  },
+  'fraction-op': {
+    Stimulus: ({ puzzle }) => {
+      const { op, a, b } = puzzle.payload;
+      const text = op === 'equivalent' ? `${a[0]}/${a[1]} = ?` : op === 'add' ? `${a[0]}/${a[1]} + ${b![0]}/${b![1]} = ?` : `${a[0]}/${a[1]}  or  ${b![0]}/${b![1]}`;
+      return <View style={[styles.panel, styles.pictureBox]}><Text style={styles.equation}>{text}</Text></View>;
+    },
+    option: (f) => <Text style={styles.number}>{f}</Text>,
+    columns: (p) => p.options.length,
+  },
+  decimal: {
+    Stimulus: ({ puzzle }) => {
+      const q = puzzle.payload;
+      return (
+        <View style={[styles.panel, styles.pictureBox]}>
+          {q.kind === 'tenths' ? <Fraction shape="bar" parts={10} shaded={q.tenths} size={190} />
+            : <Text style={styles.equation}>{q.kind === 'paise' ? `₹${q.rupees}.${String(q.paise).padStart(2, '0')} = ? paise` : `${q.a}  or  ${q.b}`}</Text>}
+        </View>
+      );
+    },
+    option: (o) => <Text style={[styles.number, fit(o, 34, 4)]}>{o}</Text>,
+    columns: (p) => p.options.length,
+  },
+  'time-calc': {
+    Stimulus: ({ puzzle }) => {
+      const { kind, a } = puzzle.payload;
+      return (
+        <View style={[styles.panel, styles.pictureBox]}>
+          {kind === 'duration' ? <Text style={styles.picture}>⏱️</Text> : <Text style={styles.equation}>{kind === 'to12' ? `${String(a[0]).padStart(2, '0')}:${String(a[1]).padStart(2, '0')}` : '🕒'}</Text>}
+        </View>
+      );
+    },
+    option: (t) => <Text style={styles.timeOption} numberOfLines={1}>{t}</Text>,
+    columns: () => 1,
+    optionHeight: 56,
+  },
+  'grid-shape': {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.pictureBox]}>
+        <GridShape {...puzzle.payload} />
+      </View>
+    ),
+    option: (n) => <Text style={styles.number}>{n}</Text>,
+    columns: () => 3,
   },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,

@@ -139,6 +139,29 @@ export function Ruler({ item, start, length }: { item: string; start: number; le
   );
 }
 
+/** A shape on squared paper; with `labels`, a plain rectangle with its side lengths written on. */
+export function GridShape({ rows, cols, cells, labels }: { rows: number; cols: number; cells: boolean[]; labels?: boolean }) {
+  const cell = Math.min(36, Math.floor(260 / cols));
+  if (labels) {
+    const w = cols * 24, h = rows * 24;
+    return (
+      <Svg width={w + 70} height={h + 50} accessibilityLabel={`rectangle ${cols} by ${rows}`}>
+        <Rect x={60} y={10} width={w} height={h} fill={colors.brandTint} stroke={colors.brand} strokeWidth={3} />
+        <SvgText x={60 + w / 2} y={h + 36} fontSize={16} fontWeight="700" fill={colors.ink} textAnchor="middle">{cols} cm</SvgText>
+        <SvgText x={52} y={10 + h / 2 + 5} fontSize={16} fontWeight="700" fill={colors.ink} textAnchor="end">{rows} cm</SvgText>
+      </Svg>
+    );
+  }
+  return (
+    <Svg width={cols * cell + 2} height={rows * cell + 2} accessibilityLabel="shape on squared paper">
+      {cells.map((on, k) => (
+        <Rect key={k} x={1 + (k % cols) * cell} y={1 + Math.floor(k / cols) * cell} width={cell} height={cell}
+          fill={on ? colors.purple : '#fff'} stroke={on ? colors.brandDark : colors.choiceBorder} strokeWidth={on ? 1.5 : 1} />
+      ))}
+    </Svg>
+  );
+}
+
 const styles = StyleSheet.create({
   flats: { flexDirection: 'row', flexWrap: 'wrap', gap: 4, maxWidth: 170 },
   flat: { width: 50, height: 50, backgroundColor: colors.green, borderRadius: 4, borderWidth: 2, borderColor: '#1f8a50' },

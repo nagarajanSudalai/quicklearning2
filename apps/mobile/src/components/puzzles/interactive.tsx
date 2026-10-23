@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, clueText, sudokuShape, type BuildPuzzle, type LogicGridPuzzle, type MagicSquarePuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
+import { PHRASES, clueText, fits, sudokuShape, type PickAllPuzzle, type BuildPuzzle, type LogicGridPuzzle, type MagicSquarePuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
@@ -27,6 +27,7 @@ export const PLAYERS: Players = {
   'order-steps': OrderSteps,
   'logic-grid': LogicGrid,
   'magic-square': MagicSquare,
+  'pick-all': PickAll,
 };
 
 /** A tappable box that wiggles each time `wiggle` increments. */
@@ -561,6 +562,48 @@ function MagicSquare({ puzzle, onSolved, onMistake }: PlayerProps<MagicSquarePuz
   );
 }
 
+// ---------- Tap every right answer ----------
+
+function PickAll({ puzzle, onSolved, onMistake }: PlayerProps<PickAllPuzzle>) {
+  const { kind, n, m, items } = puzzle.payload;
+  const right = items.filter((x) => fits(kind, n, x, m));
+  const [found, setFound] = useState<number[]>([]);
+  const [wrong, setWrong] = useState<number[]>([]);
+  const [wiggle, setWiggle] = useState<{ x: number; n: number }>({ x: -1, n: 0 });
+  const done = found.length === right.length;
+
+  const tap = (x: number) => {
+    if (done || found.includes(x) || wrong.includes(x)) return;
+    if (fits(kind, n, x, m)) {
+      buzz('right');
+      const f = [...found, x];
+      setFound(f);
+      if (f.length === right.length) onSolved(wrong.length === 0);
+    } else {
+      buzz('wrong');
+      setWrong((w) => [...w, x]);
+      setWiggle((w) => ({ x, n: w.n + 1 }));
+      onMistake();
+    }
+  };
+
+  return (
+    <View style={{ gap: 12 }}>
+      <Text style={[styles.itemName, { color: colors.muted }]}>Found {found.length} of {right.length}</Text>
+      <View style={styles.memoryGrid}>
+        {items.map((x) => (
+          <View key={x} style={{ width: '31%' }}>
+            <Tap onPress={() => tap(x)} wiggle={wiggle.x === x ? wiggle.n : 0} label={String(x)} disabled={done}
+              style={[styles.pickCell, found.includes(x) && styles.cellDone, wrong.includes(x) && styles.pickWrong]}>
+              <Text style={styles.sNumber}>{x}</Text>
+            </Tap>
+          </View>
+        ))}
+      </View>
+    </View>
+  );
+}
+
 // ---------- Maze ----------
 
 const MOVES = { up: [-1, 0, 1], right: [0, 1, 2], down: [1, 0, 4], left: [0, -1, 8] } as const;
@@ -701,6 +744,8 @@ const styles = StyleSheet.create({
   mCell: { width: 72, height: 72, borderWidth: 2, borderColor: colors.ink, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface, margin: -1 },
   mNum: { fontFamily: font.display, fontSize: 32, color: colors.ink },
   mSum: { width: 36, textAlign: 'center', fontFamily: font.bodyHeavy, fontSize: 15, color: colors.muted },
+  pickCell: { height: 64 },
+  pickWrong: { backgroundColor: colors.wrongTint, borderColor: colors.wrong },
   hint: { fontFamily: font.bodyBold, fontSize: 12, color: colors.muted },
   slots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' },
   letterSlot: { width: 46, height: 52, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },

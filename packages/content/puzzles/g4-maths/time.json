@@ -1,0 +1,443 @@
+[
+  {
+    "id": "g4-time-01",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 5,
+      "minute": 22
+    },
+    "options": [
+      "6:22",
+      "5:22",
+      "5:27"
+    ],
+    "answer": "5:22"
+  },
+  {
+    "id": "g4-time-02",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 12,
+      "minute": 39
+    },
+    "options": [
+      "1:39",
+      "12:44",
+      "12:39"
+    ],
+    "answer": "12:39"
+  },
+  {
+    "id": "g4-time-03",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 11,
+      "minute": 4
+    },
+    "options": [
+      "12:04",
+      "11:04",
+      "11:09"
+    ],
+    "answer": "11:04"
+  },
+  {
+    "id": "g4-time-04",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 6,
+      "minute": 29
+    },
+    "options": [
+      "6:29",
+      "6:34",
+      "7:29"
+    ],
+    "answer": "6:29"
+  },
+  {
+    "id": "g4-time-05",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 2,
+      "minute": 23
+    },
+    "options": [
+      "3:23",
+      "2:28",
+      "2:23"
+    ],
+    "answer": "2:23"
+  },
+  {
+    "id": "g4-time-06",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 10,
+      "minute": 23
+    },
+    "options": [
+      "10:28",
+      "11:23",
+      "10:23"
+    ],
+    "answer": "10:23"
+  },
+  {
+    "id": "g4-time-07",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 1,
+    "prompt": "What time is it?",
+    "type": "clock",
+    "payload": {
+      "hour": 9,
+      "minute": 42
+    },
+    "options": [
+      "9:42",
+      "10:42",
+      "9:47"
+    ],
+    "answer": "9:42"
+  },
+  {
+    "id": "g4-time-08",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 2,
+    "prompt": "Write 4:45 pm in 24-hour time.",
+    "type": "time-calc",
+    "payload": {
+      "kind": "to24",
+      "a": [
+        16,
+        45
+      ]
+    },
+    "options": [
+      "04:45",
+      "16:45"
+    ],
+    "answer": "16:45"
+  },
+  {
+    "id": "g4-time-09",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 2,
+    "prompt": "What is 21:00 in am/pm time?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "to12",
+      "a": [
+        21,
+        0
+      ]
+    },
+    "options": [
+      "9:00 am",
+      "9:00 pm",
+      "10:00 pm"
+    ],
+    "answer": "9:00 pm"
+  },
+  {
+    "id": "g4-time-10",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 2,
+    "prompt": "Write 7:40 pm in 24-hour time.",
+    "type": "time-calc",
+    "payload": {
+      "kind": "to24",
+      "a": [
+        19,
+        40
+      ]
+    },
+    "options": [
+      "07:40",
+      "19:40"
+    ],
+    "answer": "19:40"
+  },
+  {
+    "id": "g4-time-11",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 2,
+    "prompt": "What is 21:30 in am/pm time?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "to12",
+      "a": [
+        21,
+        30
+      ]
+    },
+    "options": [
+      "9:30 pm",
+      "9:30 am",
+      "10:30 pm"
+    ],
+    "answer": "9:30 pm"
+  },
+  {
+    "id": "g4-time-12",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 2,
+    "prompt": "Write 5:15 am in 24-hour time.",
+    "type": "time-calc",
+    "payload": {
+      "kind": "to24",
+      "a": [
+        5,
+        15
+      ]
+    },
+    "options": [
+      "06:15",
+      "05:15",
+      "17:15"
+    ],
+    "answer": "05:15"
+  },
+  {
+    "id": "g4-time-13",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 2,
+    "prompt": "What is 18:55 in am/pm time?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "to12",
+      "a": [
+        18,
+        55
+      ]
+    },
+    "options": [
+      "7:55 pm",
+      "6:55 am",
+      "6:55 pm"
+    ],
+    "answer": "6:55 pm"
+  },
+  {
+    "id": "g4-time-14",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 2,
+    "prompt": "Write 4:20 am in 24-hour time.",
+    "type": "time-calc",
+    "payload": {
+      "kind": "to24",
+      "a": [
+        4,
+        20
+      ]
+    },
+    "options": [
+      "04:20",
+      "16:20",
+      "05:20"
+    ],
+    "answer": "04:20"
+  },
+  {
+    "id": "g4-time-15",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 3,
+    "prompt": "A class starts at 8:40 am and ends at 11:00 am. How long is it?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "duration",
+      "a": [
+        8,
+        40
+      ],
+      "b": [
+        11,
+        0
+      ]
+    },
+    "options": [
+      "2 hours 20 minutes",
+      "2 hours 10 minutes",
+      "3 hours 20 minutes"
+    ],
+    "answer": "2 hours 20 minutes"
+  },
+  {
+    "id": "g4-time-16",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 3,
+    "prompt": "A class starts at 11:05 am and ends at 2:00 pm. How long is it?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "duration",
+      "a": [
+        11,
+        5
+      ],
+      "b": [
+        14,
+        0
+      ]
+    },
+    "options": [
+      "2 hours 45 minutes",
+      "2 hours 55 minutes",
+      "3 hours 55 minutes"
+    ],
+    "answer": "2 hours 55 minutes"
+  },
+  {
+    "id": "g4-time-17",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 3,
+    "prompt": "A class starts at 3:00 pm and ends at 6:05 pm. How long is it?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "duration",
+      "a": [
+        15,
+        0
+      ],
+      "b": [
+        18,
+        5
+      ]
+    },
+    "options": [
+      "4 hours 5 minutes",
+      "3 hours 5 minutes",
+      "2 hours 55 minutes"
+    ],
+    "answer": "3 hours 5 minutes"
+  },
+  {
+    "id": "g4-time-18",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 3,
+    "prompt": "A class starts at 10:15 am and ends at 1:15 pm. How long is it?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "duration",
+      "a": [
+        10,
+        15
+      ],
+      "b": [
+        13,
+        15
+      ]
+    },
+    "options": [
+      "3 hours",
+      "4 hours",
+      "2 hours 50 minutes"
+    ],
+    "answer": "3 hours"
+  },
+  {
+    "id": "g4-time-19",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 3,
+    "prompt": "A class starts at 12:15 pm and ends at 12:50 pm. How long is it?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "duration",
+      "a": [
+        12,
+        15
+      ],
+      "b": [
+        12,
+        50
+      ]
+    },
+    "options": [
+      "35 minutes",
+      "1 hour 35 minutes",
+      "25 minutes"
+    ],
+    "answer": "35 minutes"
+  },
+  {
+    "id": "g4-time-20",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-time",
+    "difficulty": 3,
+    "prompt": "A class starts at 1:35 pm and ends at 4:05 pm. How long is it?",
+    "type": "time-calc",
+    "payload": {
+      "kind": "duration",
+      "a": [
+        13,
+        35
+      ],
+      "b": [
+        16,
+        5
+      ]
+    },
+    "options": [
+      "3 hours 30 minutes",
+      "2 hours 20 minutes",
+      "2 hours 30 minutes"
+    ],
+    "answer": "2 hours 30 minutes"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "id": "g4-numbers-01",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 1,
+    "prompt": "How many hundreds are in 8,687?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 8,
+      "hundreds": 6,
+      "tens": 8,
+      "ones": 7,
+      "ask": "hundreds"
+    },
+    "options": [
+      6,
+      7,
+      8
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g4-numbers-02",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 1,
+    "prompt": "How many thousands are in 5,133?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 5,
+      "hundreds": 1,
+      "tens": 3,
+      "ones": 3,
+      "ask": "thousands"
+    },
+    "options": [
+      5,
+      1,
+      3
+    ],
+    "answer": 5
+  },
+  {
+    "id": "g4-numbers-03",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 1,
+    "prompt": "How many hundreds are in 8,013?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 8,
+      "hundreds": 0,
+      "tens": 1,
+      "ones": 3,
+      "ask": "hundreds"
+    },
+    "options": [
+      1,
+      0,
+      8
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-numbers-04",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 1,
+    "prompt": "How many hundreds are in 8,216?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 8,
+      "hundreds": 2,
+      "tens": 1,
+      "ones": 6,
+      "ask": "hundreds"
+    },
+    "options": [
+      8,
+      2,
+      1
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g4-numbers-05",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 1,
+    "prompt": "How many thousands are in 3,172?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 3,
+      "hundreds": 1,
+      "tens": 7,
+      "ones": 2,
+      "ask": "thousands"
+    },
+    "options": [
+      1,
+      3,
+      7
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g4-numbers-06",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 1,
+    "prompt": "How many hundreds are in 2,259?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 2,
+      "hundreds": 2,
+      "tens": 5,
+      "ones": 9,
+      "ask": "hundreds"
+    },
+    "options": [
+      2,
+      5,
+      9
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g4-numbers-07",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 1,
+    "prompt": "How many hundreds are in 6,018?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 6,
+      "hundreds": 0,
+      "tens": 1,
+      "ones": 8,
+      "ask": "hundreds"
+    },
+    "options": [
+      1,
+      0,
+      6
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-numbers-08",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 3,
+      "hundreds": 3,
+      "tens": 0,
+      "ones": 6,
+      "ask": "expanded"
+    },
+    "options": [
+      3306,
+      3036,
+      3360
+    ],
+    "answer": 3306
+  },
+  {
+    "id": "g4-numbers-09",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 1,
+      "hundreds": 9,
+      "tens": 2,
+      "ones": 0,
+      "ask": "expanded"
+    },
+    "options": [
+      1902,
+      1820,
+      1920
+    ],
+    "answer": 1920
+  },
+  {
+    "id": "g4-numbers-10",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 7,
+      "hundreds": 8,
+      "tens": 7,
+      "ones": 9,
+      "ask": "expanded"
+    },
+    "options": [
+      7879,
+      7779,
+      7897
+    ],
+    "answer": 7879
+  },
+  {
+    "id": "g4-numbers-11",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 1,
+      "hundreds": 3,
+      "tens": 5,
+      "ones": 3,
+      "ask": "expanded"
+    },
+    "options": [
+      2353,
+      1335,
+      1353
+    ],
+    "answer": 1353
+  },
+  {
+    "id": "g4-numbers-12",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 3,
+      "hundreds": 3,
+      "tens": 7,
+      "ones": 1,
+      "ask": "expanded"
+    },
+    "options": [
+      3731,
+      3371,
+      3317
+    ],
+    "answer": 3371
+  },
+  {
+    "id": "g4-numbers-13",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 5,
+      "hundreds": 7,
+      "tens": 8,
+      "ones": 8,
+      "ask": "expanded"
+    },
+    "options": [
+      5788,
+      6788,
+      5688
+    ],
+    "answer": 5788
+  },
+  {
+    "id": "g4-numbers-14",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 2,
+    "prompt": "Which number is this?",
+    "type": "place-value",
+    "payload": {
+      "thousands": 8,
+      "hundreds": 6,
+      "tens": 1,
+      "ones": 8,
+      "ask": "expanded"
+    },
+    "options": [
+      9618,
+      8518,
+      8618
+    ],
+    "answer": 8618
+  },
+  {
+    "id": "g4-numbers-15",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 5,391 and 5,396?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 5391,
+      "b": 5396
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g4-numbers-16",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 8,551 and 8,491?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 8551,
+      "b": 8491
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": ">"
+  },
+  {
+    "id": "g4-numbers-17",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 1,416 and 1,417?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 1416,
+      "b": 1417
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "<"
+  },
+  {
+    "id": "g4-numbers-18",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 4,481 and 4,451?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 4481,
+      "b": 4451
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": ">"
+  },
+  {
+    "id": "g4-numbers-19",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 1,736 and 1,736?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 1736,
+      "b": 1736
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "="
+  },
+  {
+    "id": "g4-numbers-20",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-numbers",
+    "difficulty": 3,
+    "prompt": "Which sign goes between 3,000 and 3,000?",
+    "type": "compare-numbers",
+    "payload": {
+      "a": 3000,
+      "b": 3000
+    },
+    "options": [
+      "<",
+      "=",
+      ">"
+    ],
+    "answer": "="
+  }
+]

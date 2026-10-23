@@ -9,6 +9,7 @@ import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
 import { calendarAnswer } from '../src/calendar.ts';
+import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/maths4.ts';
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
 import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
@@ -84,9 +85,10 @@ function check(p: any): string | null {
       return noPic ? `no picture for ${noPic}` : null;
     }
     case 'place-value': {
-      const h = q.hundreds ?? 0;
-      if ([h, q.tens, q.ones].some((x) => x < 0 || x > 9)) return 'digits must be 0–9';
-      const want = q.ask === 'hundreds' ? h : q.ask === 'tens' ? q.tens : q.ask === 'ones' ? q.ones : h * 100 + q.tens * 10 + q.ones;
+      const h = q.hundreds ?? 0, th = q.thousands ?? 0;
+      if ([th, h, q.tens, q.ones].some((x) => x < 0 || x > 9)) return 'digits must be 0–9';
+      const whole = th * 1000 + h * 100 + q.tens * 10 + q.ones;
+      const want = q.ask === 'thousands' ? th : q.ask === 'hundreds' ? h : q.ask === 'tens' ? q.tens : q.ask === 'ones' ? q.ones : whole;
       return want === p.answer ? null : `answer should be ${want}`;
     }
     case 'number-pattern': {
@@ -180,6 +182,42 @@ function check(p: any): string | null {
       if (!a) return 'analogy not in the bank';
       if (p.options.some((o: string) => o !== a.d && !a.wrong.includes(o))) return 'unknown option';
       return a.d === p.answer ? null : `answer is ${a.d}`;
+    }
+    case 'fraction-op': {
+      const val = (f: string) => f.split('/').map(Number) as [number, number];
+      if (q.op === 'equivalent') {
+        const right = p.options.filter((o: string) => fracCmp(val(o), q.a) === 0 && o !== fracStr(q.a));
+        if (right.length !== 1) return `${right.length} options equal ${fracStr(q.a)}`;
+        return right[0] === p.answer ? null : `${right[0]} equals ${fracStr(q.a)}`;
+      }
+      if (q.op === 'bigger') {
+        if (fracCmp(q.a, q.b) === 0) return 'fractions are equal';
+        const want = fracStr(fracCmp(q.a, q.b) > 0 ? q.a : q.b);
+        return want === p.answer ? null : `${want} is bigger`;
+      }
+      if (q.a[1] !== q.b[1]) return 'add needs the same bottom number';
+      const want = fracStr([q.a[0] + q.b[0], q.a[1]]);
+      // No wrong option may be the same amount written differently.
+      if (p.options.some((o: string) => o !== p.answer && fracCmp(val(o), val(want)) === 0)) return 'an option equals the sum';
+      return want === p.answer ? null : `sum is ${want}`;
+    }
+    case 'decimal': {
+      let want: string;
+      if (q.kind === 'paise') want = String(q.rupees * 100 + q.paise);
+      else if (q.kind === 'tenths') { if (q.tenths < 1 || q.tenths > 9) return 'tenths must be 1–9'; want = `0.${q.tenths}`; }
+      else { if (Number(q.a) === Number(q.b)) return 'decimals are equal'; want = Number(q.a) > Number(q.b) ? q.a : q.b; }
+      return want === p.answer ? null : `answer is ${want}`;
+    }
+    case 'time-calc': {
+      const want = timeCalcAnswer(q.kind, q.a, q.b);
+      if (q.kind === 'duration' && q.b[0] * 60 + q.b[1] <= q.a[0] * 60 + q.a[1]) return 'end must be after start';
+      return want === p.answer ? null : `answer is ${want}`;
+    }
+    case 'grid-shape': {
+      if (q.cells.length !== q.rows * q.cols) return 'cells must fill the grid';
+      const m = gridMeasure(q.rows, q.cols, q.cells);
+      const want = q.ask === 'area' ? m.area : m.perimeter;
+      return want === p.answer ? null : `${q.ask} is ${want}`;
     }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);
@@ -279,6 +317,11 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     if (!q.grid.includes(null)) return 'no blanks';
     const n = magicSolutions(q.grid);
     return n === 1 ? null : `${n} ways to fill the square`;
+  },
+  'pick-all'(q) {
+    if (new Set(q.items).size !== q.items.length) return 'items must be different';
+    const right = q.items.filter((x: number) => fits(q.kind, q.n, x, q.m)).length;
+    return right >= 1 && right < q.items.length ? null : 'needs some right and some wrong numbers';
   },
   maze(q) {
     const { rows, cols, cells, start, goal } = q;

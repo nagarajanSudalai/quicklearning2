@@ -97,7 +97,7 @@ export type OddOneOutPuzzle = Base & {
 /** Tens rods and ones cubes. `ask`: the whole number, or just the tens or ones digit. */
 export type PlaceValuePuzzle = Base & {
   type: 'place-value';
-  payload: { hundreds?: number; tens: number; ones: number; ask: 'number' | 'hundreds' | 'tens' | 'ones' };
+  payload: { thousands?: number; hundreds?: number; tens: number; ones: number; ask: 'number' | 'expanded' | 'thousands' | 'hundreds' | 'tens' | 'ones' };
   options: number[];
   answer: number;
 };
@@ -198,6 +198,38 @@ export type AnalogyPuzzle = Base & {
   answer: string;
 };
 
+/** Fraction work with numbers: an equal fraction, the bigger one, or a sum of like fractions. Fractions are [top, bottom]. */
+export type FractionOpPuzzle = Base & {
+  type: 'fraction-op';
+  payload: { op: 'equivalent' | 'bigger' | 'add'; a: [number, number]; b?: [number, number] };
+  options: string[];
+  answer: string;
+};
+
+/** Decimals: rupees ↔ paise, tenths shaded on a bar, or the bigger of two decimals. */
+export type DecimalPuzzle = Base & {
+  type: 'decimal';
+  payload: { kind: 'paise'; rupees: number; paise: number } | { kind: 'tenths'; tenths: number } | { kind: 'bigger'; a: string; b: string };
+  options: string[];
+  answer: string;
+};
+
+/** Time sums: 12-hour → 24-hour, 24-hour → 12-hour, or how long from `a` to `b`. Times are [hour 0–23, minute]. */
+export type TimeCalcPuzzle = Base & {
+  type: 'time-calc';
+  payload: { kind: 'to24' | 'to12' | 'duration'; a: [number, number]; b?: [number, number] };
+  options: string[];
+  answer: string;
+};
+
+/** A shape on squared paper (`cells` row by row); find its area in squares or its perimeter in edges. */
+export type GridShapePuzzle = Base & {
+  type: 'grid-shape';
+  payload: { rows: number; cols: number; cells: boolean[]; ask: 'area' | 'perimeter'; labels?: boolean };
+  options: number[];
+  answer: number;
+};
+
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
 
 /** A crossword word; the clue is a `picture` (emoji) or, from Grade 3, a text `clue`. */
@@ -264,6 +296,12 @@ export type MagicSquarePuzzle = Base & {
   payload: { grid: (number | null)[]; solution: number[]; target: number };
 };
 
+/** Tap every number that fits the rule (multiples of n, factors of n, or common multiples of n and m). */
+export type PickAllPuzzle = Base & {
+  type: 'pick-all';
+  payload: { kind: 'multiple' | 'factor' | 'common-multiple'; n: number; m?: number; items: number[] };
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -288,10 +326,14 @@ export type ChoicePuzzle =
   | MeasurePuzzle
   | WordClassPuzzle
   | PassagePuzzle
-  | AnalogyPuzzle;
+  | AnalogyPuzzle
+  | FractionOpPuzzle
+  | DecimalPuzzle
+  | TimeCalcPuzzle
+  | GridShapePuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -299,7 +341,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square', 'pick-all'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {

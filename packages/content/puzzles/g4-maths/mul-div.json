@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g4-mul-div-01",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 1,
+    "prompt": "What is 25 times 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 25,
+      "op": "×",
+      "b": 3
+    },
+    "options": [
+      85,
+      75,
+      72
+    ],
+    "answer": 75
+  },
+  {
+    "id": "g4-mul-div-02",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 1,
+    "prompt": "What is 53 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 53,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      96,
+      53,
+      106
+    ],
+    "answer": 106
+  },
+  {
+    "id": "g4-mul-div-03",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 1,
+    "prompt": "What is 84 times 8?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 84,
+      "op": "×",
+      "b": 8
+    },
+    "options": [
+      680,
+      682,
+      672
+    ],
+    "answer": 672
+  },
+  {
+    "id": "g4-mul-div-04",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 1,
+    "prompt": "What is 29 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 29,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      68,
+      58,
+      56
+    ],
+    "answer": 58
+  },
+  {
+    "id": "g4-mul-div-05",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 1,
+    "prompt": "What is 93 times 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 93,
+      "op": "×",
+      "b": 6
+    },
+    "options": [
+      548,
+      558,
+      651
+    ],
+    "answer": 558
+  },
+  {
+    "id": "g4-mul-div-06",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 1,
+    "prompt": "What is 87 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 87,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      164,
+      174,
+      87
+    ],
+    "answer": 174
+  },
+  {
+    "id": "g4-mul-div-07",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 1,
+    "prompt": "What is 68 times 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 68,
+      "op": "×",
+      "b": 2
+    },
+    "options": [
+      136,
+      134,
+      126
+    ],
+    "answer": 136
+  },
+  {
+    "id": "g4-mul-div-08",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 2,
+    "prompt": "What is 735 divided by 7?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 735,
+      "op": "÷",
+      "b": 7
+    },
+    "options": [
+      105,
+      104,
+      95
+    ],
+    "answer": 105
+  },
+  {
+    "id": "g4-mul-div-09",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 2,
+    "prompt": "What is 288 divided by 3?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 288,
+      "op": "÷",
+      "b": 3
+    },
+    "options": [
+      96,
+      95,
+      86
+    ],
+    "answer": 96
+  },
+  {
+    "id": "g4-mul-div-10",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 2,
+    "prompt": "What is 258 divided by 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 258,
+      "op": "÷",
+      "b": 6
+    },
+    "options": [
+      44,
+      53,
+      43
+    ],
+    "answer": 43
+  },
+  {
+    "id": "g4-mul-div-11",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 2,
+    "prompt": "What is 204 divided by 6?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 204,
+      "op": "÷",
+      "b": 6
+    },
+    "options": [
+      44,
+      35,
+      34
+    ],
+    "answer": 34
+  },
+  {
+    "id": "g4-mul-div-12",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 2,
+    "prompt": "What is 184 divided by 8?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 184,
+      "op": "÷",
+      "b": 8
+    },
+    "options": [
+      24,
+      23,
+      22
+    ],
+    "answer": 23
+  },
+  {
+    "id": "g4-mul-div-13",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 2,
+    "prompt": "What is 312 divided by 2?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 312,
+      "op": "÷",
+      "b": 2
+    },
+    "options": [
+      166,
+      156,
+      155
+    ],
+    "answer": 156
+  },
+  {
+    "id": "g4-mul-div-14",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 2,
+    "prompt": "What is 975 divided by 5?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 975,
+      "op": "÷",
+      "b": 5
+    },
+    "options": [
+      205,
+      195,
+      194
+    ],
+    "answer": 195
+  },
+  {
+    "id": "g4-mul-div-15",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 3,
+    "prompt": "What is 19 times 12?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 19,
+      "op": "×",
+      "b": 12
+    },
+    "options": [
+      209,
+      238,
+      228
+    ],
+    "answer": 228
+  },
+  {
+    "id": "g4-mul-div-16",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 3,
+    "prompt": "What is 47 times 20?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 47,
+      "op": "×",
+      "b": 20
+    },
+    "options": [
+      940,
+      893,
+      960
+    ],
+    "answer": 940
+  },
+  {
+    "id": "g4-mul-div-17",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 3,
+    "prompt": "What is 25 times 23?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 25,
+      "op": "×",
+      "b": 23
+    },
+    "options": [
+      575,
+      600,
+      585
+    ],
+    "answer": 575
+  },
+  {
+    "id": "g4-mul-div-18",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 3,
+    "prompt": "What is 35 times 16?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 35,
+      "op": "×",
+      "b": 16
+    },
+    "options": [
+      544,
+      525,
+      560
+    ],
+    "answer": 560
+  },
+  {
+    "id": "g4-mul-div-19",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 3,
+    "prompt": "What is 12 times 25?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 12,
+      "op": "×",
+      "b": 25
+    },
+    "options": [
+      290,
+      300,
+      312
+    ],
+    "answer": 300
+  },
+  {
+    "id": "g4-mul-div-20",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-mul-div",
+    "difficulty": 3,
+    "prompt": "What is 15 times 19?",
+    "type": "arithmetic",
+    "payload": {
+      "a": 15,
+      "op": "×",
+      "b": 19
+    },
+    "options": [
+      300,
+      295,
+      285
+    ],
+    "answer": 285
+  }
+]

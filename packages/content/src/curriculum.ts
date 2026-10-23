@@ -15,7 +15,7 @@ export const GRADE_NOTES: Record<Grade, string> = {
   1: 'Grade 1 · ages 6–7: counting, shapes, simple patterns and picture words.',
   2: 'Grade 2 · ages 7–8: numbers to 100, time, money, spelling and sentences, sudoku.',
   3: 'Grade 3 · ages 8–9: numbers to 1000, times tables, fractions, reading, logic grids.',
-  4: 'Grade 4 · ages 9–10: fractions, sudoku, word ladders, reading puzzles.',
+  4: 'Grade 4 · ages 9–10: large numbers, fractions, decimals, area, word ladders, codes.',
   5: 'Grade 5 · ages 10–11: decimals, brain teasers, science quizzes.',
 };
 
@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -80,6 +80,13 @@ export const TOPICS: Topic[] = [
   { id: 'g3-logic', grade: 3, subject: 'thinking', title: 'Logic grids', blurb: 'Use the clues', glyph: '✓✗', color: colors.purple },
   { id: 'g3-analogies', grade: 3, subject: 'thinking', title: 'Analogies', blurb: 'This is to that', glyph: ':', color: colors.orange },
   { id: 'g3-magic', grade: 3, subject: 'thinking', title: 'Magic squares', blurb: 'Make every line 15', glyph: '15', color: colors.pink },
+  { id: 'g4-numbers', grade: 4, subject: 'maths', title: 'Large numbers', blurb: 'Thousands and expanded form', glyph: '1000', color: colors.pink },
+  { id: 'g4-mul-div', grade: 4, subject: 'maths', title: 'Multiply and divide', blurb: 'Bigger numbers', glyph: '×÷', color: colors.orange },
+  { id: 'g4-factors', grade: 4, subject: 'maths', title: 'Factors and multiples', blurb: 'Tap all that fit', glyph: '✓✓', color: colors.green },
+  { id: 'g4-fractions', grade: 4, subject: 'maths', title: 'Fractions', blurb: 'Equal, bigger, adding', glyph: '¾', color: colors.blue },
+  { id: 'g4-decimals', grade: 4, subject: 'maths', title: 'Decimals', blurb: 'Paise and tenths', glyph: '0.5', color: colors.purple },
+  { id: 'g4-time', grade: 4, subject: 'maths', title: 'Time', blurb: '24-hour clock, how long', glyph: '⏱️', color: colors.teal },
+  { id: 'g4-area', grade: 4, subject: 'maths', title: 'Area and perimeter', blurb: 'Squares and edges', glyph: '▦', color: colors.orange },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

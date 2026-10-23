@@ -1,0 +1,389 @@
+[
+  {
+    "id": "g4-decimals-01",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 1,
+    "prompt": "How many paise is ₹16.25?",
+    "type": "decimal",
+    "payload": {
+      "kind": "paise",
+      "rupees": 16,
+      "paise": 25
+    },
+    "options": [
+      "1625",
+      "185",
+      "41"
+    ],
+    "answer": "1625"
+  },
+  {
+    "id": "g4-decimals-02",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 1,
+    "prompt": "How many paise is ₹8.10?",
+    "type": "decimal",
+    "payload": {
+      "kind": "paise",
+      "rupees": 8,
+      "paise": 10
+    },
+    "options": [
+      "18",
+      "90",
+      "810"
+    ],
+    "answer": "810"
+  },
+  {
+    "id": "g4-decimals-03",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 1,
+    "prompt": "How many paise is ₹14.05?",
+    "type": "decimal",
+    "payload": {
+      "kind": "paise",
+      "rupees": 14,
+      "paise": 5
+    },
+    "options": [
+      "19",
+      "145",
+      "1405"
+    ],
+    "answer": "1405"
+  },
+  {
+    "id": "g4-decimals-04",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 1,
+    "prompt": "How many paise is ₹10.10?",
+    "type": "decimal",
+    "payload": {
+      "kind": "paise",
+      "rupees": 10,
+      "paise": 10
+    },
+    "options": [
+      "1010",
+      "20",
+      "110"
+    ],
+    "answer": "1010"
+  },
+  {
+    "id": "g4-decimals-05",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 1,
+    "prompt": "How many paise is ₹18.10?",
+    "type": "decimal",
+    "payload": {
+      "kind": "paise",
+      "rupees": 18,
+      "paise": 10
+    },
+    "options": [
+      "28",
+      "190",
+      "1810"
+    ],
+    "answer": "1810"
+  },
+  {
+    "id": "g4-decimals-06",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 1,
+    "prompt": "How many paise is ₹4.05?",
+    "type": "decimal",
+    "payload": {
+      "kind": "paise",
+      "rupees": 4,
+      "paise": 5
+    },
+    "options": [
+      "405",
+      "45",
+      "9"
+    ],
+    "answer": "405"
+  },
+  {
+    "id": "g4-decimals-07",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 1,
+    "prompt": "How many paise is ₹1.90?",
+    "type": "decimal",
+    "payload": {
+      "kind": "paise",
+      "rupees": 1,
+      "paise": 90
+    },
+    "options": [
+      "91",
+      "190",
+      "100"
+    ],
+    "answer": "190"
+  },
+  {
+    "id": "g4-decimals-08",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 2,
+    "prompt": "The bar has 10 equal parts. What decimal is shaded?",
+    "type": "decimal",
+    "payload": {
+      "kind": "tenths",
+      "tenths": 7
+    },
+    "options": [
+      "7.0",
+      "0.07",
+      "0.7"
+    ],
+    "answer": "0.7"
+  },
+  {
+    "id": "g4-decimals-09",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 2,
+    "prompt": "The bar has 10 equal parts. What decimal is shaded?",
+    "type": "decimal",
+    "payload": {
+      "kind": "tenths",
+      "tenths": 4
+    },
+    "options": [
+      "0.04",
+      "0.4",
+      "4.0"
+    ],
+    "answer": "0.4"
+  },
+  {
+    "id": "g4-decimals-10",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 2,
+    "prompt": "The bar has 10 equal parts. What decimal is shaded?",
+    "type": "decimal",
+    "payload": {
+      "kind": "tenths",
+      "tenths": 2
+    },
+    "options": [
+      "2.0",
+      "0.02",
+      "0.2"
+    ],
+    "answer": "0.2"
+  },
+  {
+    "id": "g4-decimals-11",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 2,
+    "prompt": "The bar has 10 equal parts. What decimal is shaded?",
+    "type": "decimal",
+    "payload": {
+      "kind": "tenths",
+      "tenths": 6
+    },
+    "options": [
+      "0.06",
+      "0.6",
+      "6.0"
+    ],
+    "answer": "0.6"
+  },
+  {
+    "id": "g4-decimals-12",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 2,
+    "prompt": "The bar has 10 equal parts. What decimal is shaded?",
+    "type": "decimal",
+    "payload": {
+      "kind": "tenths",
+      "tenths": 9
+    },
+    "options": [
+      "9.0",
+      "0.09",
+      "0.9"
+    ],
+    "answer": "0.9"
+  },
+  {
+    "id": "g4-decimals-13",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 2,
+    "prompt": "The bar has 10 equal parts. What decimal is shaded?",
+    "type": "decimal",
+    "payload": {
+      "kind": "tenths",
+      "tenths": 8
+    },
+    "options": [
+      "0.8",
+      "8.0",
+      "0.08"
+    ],
+    "answer": "0.8"
+  },
+  {
+    "id": "g4-decimals-14",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 2,
+    "prompt": "The bar has 10 equal parts. What decimal is shaded?",
+    "type": "decimal",
+    "payload": {
+      "kind": "tenths",
+      "tenths": 1
+    },
+    "options": [
+      "0.1",
+      "1.0",
+      "0.01"
+    ],
+    "answer": "0.1"
+  },
+  {
+    "id": "g4-decimals-15",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 3,
+    "prompt": "Which is bigger, 0.6 or 0.90?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.6",
+      "b": "0.90"
+    },
+    "options": [
+      "0.6",
+      "0.90"
+    ],
+    "answer": "0.90"
+  },
+  {
+    "id": "g4-decimals-16",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 3,
+    "prompt": "Which is bigger, 0.4 or 0.90?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.4",
+      "b": "0.90"
+    },
+    "options": [
+      "0.4",
+      "0.90"
+    ],
+    "answer": "0.90"
+  },
+  {
+    "id": "g4-decimals-17",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 3,
+    "prompt": "Which is bigger, 0.4 or 0.62?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.4",
+      "b": "0.62"
+    },
+    "options": [
+      "0.4",
+      "0.62"
+    ],
+    "answer": "0.62"
+  },
+  {
+    "id": "g4-decimals-18",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 3,
+    "prompt": "Which is bigger, 0.4 or 0.66?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.4",
+      "b": "0.66"
+    },
+    "options": [
+      "0.4",
+      "0.66"
+    ],
+    "answer": "0.66"
+  },
+  {
+    "id": "g4-decimals-19",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 3,
+    "prompt": "Which is bigger, 0.9 or 0.86?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.9",
+      "b": "0.86"
+    },
+    "options": [
+      "0.9",
+      "0.86"
+    ],
+    "answer": "0.9"
+  },
+  {
+    "id": "g4-decimals-20",
+    "grade": 4,
+    "subject": "maths",
+    "topic": "g4-decimals",
+    "difficulty": 3,
+    "prompt": "Which is bigger, 0.6 or 0.29?",
+    "type": "decimal",
+    "payload": {
+      "kind": "bigger",
+      "a": "0.6",
+      "b": "0.29"
+    },
+    "options": [
+      "0.6",
+      "0.29"
+    ],
+    "answer": "0.6"
+  }
+]

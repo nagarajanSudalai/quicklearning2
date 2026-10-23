@@ -36,6 +36,8 @@ export function speakable(text: string) {
     .replace(/\s*×\s*/g, ' times ')
     .replace(/\s*÷\s*/g, ' divided by ')
     .replace(/(\d+)\/(\d+)/g, (_, a, b) => fractionWords(Number(a), Number(b)))
+    .replace(/₹(\d+)\.(\d\d)/g, (_, r, p) => `${r} rupees ${Number(p)} paise`)
+    .replace(/(\d+)\.(\d+)/g, (_, a, b) => `${a} point ${b.split('').join(' ')}`)
     .replace(/₹\s?(\d+)/g, (_, n) => `${n} ${n === '1' ? 'rupee' : 'rupees'}`)
     .replace(/\s*=\s*\?/g, ' equals what?')
     .replace(/★/g, ' stars')
