@@ -13,7 +13,8 @@ import { addFractions, angleName, chartAnswer, decimalSum, percentAnswer, roundW
 import { CLUES4, encode, patternTerms } from '../src/thinking4.ts';
 import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/maths4.ts';
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
-import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
+import { isMagic, logicSolutions, magicSolutions, sumGridSolutions } from '../src/logic.ts';
+import { ANALOGIES5, CLUES5, TEASERS } from '../src/thinking5.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
 import { CONJUNCTIONS, IDIOMS, PASSAGES5, PREPOSITIONS, SPELLINGS, VOICE } from '../src/words5.ts';
 import { AFFIXES, ING, LADDER_WORDS, PASSAGES4, SUBJECTS4, oneLetterApart } from '../src/words4.ts';
@@ -209,7 +210,7 @@ function check(p: any): string | null {
       return b.answer === p.answer ? null : `answer is "${b.answer}"`;
     }
     case 'analogy': {
-      const a = ANALOGIES.find((x) => x.a === q.a && x.b === q.b && x.c === q.c);
+      const a = [...ANALOGIES, ...ANALOGIES5].find((x) => x.a === q.a && x.b === q.b && x.c === q.c);
       if (!a) return 'analogy not in the bank';
       if (p.options.some((o: string) => o !== a.d && !a.wrong.includes(o))) return 'unknown option';
       return a.d === p.answer ? null : `answer is ${a.d}`;
@@ -286,6 +287,13 @@ function check(p: any): string | null {
       const want = chartAnswer(q.bars, q.ask);
       return want === p.answer ? null : `answer is ${want}`;
     }
+    case 'teaser': {
+      const t = TEASERS.find((x) => x.id === q.id);
+      if (!t || t.text !== q.text) return 'teaser not in the bank';
+      if (t.solve && t.solve() !== t.answer) return `bank answer for ${t.id} is wrong`;
+      if (p.options.some((o: string) => o !== t.answer && !t.wrong.includes(o))) return 'unknown option';
+      return t.answer === p.answer ? null : `answer is ${t.answer}`;
+    }
     case 'idiom': {
       const x = IDIOMS.find((i) => i.phrase === q.phrase);
       if (!x) return 'idiom not in the bank';
@@ -309,7 +317,7 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
   crossword(q) {
     const grid = new Map<string, string>();
     for (const w of q.words) {
-      if (w.clue !== undefined ? (CLUES[w.word] ?? CLUES4[w.word]) !== w.clue : PICTURES[w.word] !== w.picture) return `wrong clue for ${w.word}`;
+      if (w.clue !== undefined ? (CLUES[w.word] ?? CLUES4[w.word] ?? CLUES5[w.word]) !== w.clue : PICTURES[w.word] !== w.picture) return `wrong clue for ${w.word}`;
       for (let k = 0; k < w.word.length; k++) {
         const key = w.dir === 'across' ? `${w.row},${w.col + k}` : `${w.row + k},${w.col}`;
         if (grid.has(key) && grid.get(key) !== w.word[k]) return `words clash at ${key}`;
@@ -383,6 +391,16 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     const sols = logicSolutions(n, q.clues);
     if (sols.length !== 1) return `${sols.length} ways fit the clues`;
     return sols[0].every((v: number, k: number) => v === q.solution[k]) ? null : 'solution does not fit the clues';
+  },
+  'sum-grid'(q) {
+    if ([...q.solution].sort().join('') !== '123456789') return 'solution must use 1–9 once';
+    const sum = (ks: number[]) => ks.reduce((t, k) => t + q.solution[k], 0);
+    if ([0, 1, 2].some((r) => sum([r * 3, r * 3 + 1, r * 3 + 2]) !== q.rows[r])) return 'row totals are wrong';
+    if ([0, 1, 2].some((c) => sum([c, c + 3, c + 6]) !== q.cols[c])) return 'column totals are wrong';
+    if (q.grid.some((v: number | null, i: number) => v !== null && v !== q.solution[i])) return 'a given number disagrees with the solution';
+    if (!q.grid.includes(null)) return 'no blanks';
+    const n = sumGridSolutions(q.grid, q.rows, q.cols);
+    return n === 1 ? null : `${n} ways to fill the grid`;
   },
   'magic-square'(q) {
     if (q.target !== 15 || !isMagic(q.solution)) return 'solution is not a 1–9 magic square';

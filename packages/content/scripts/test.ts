@@ -2,7 +2,8 @@
 //   npm test
 import assert from 'node:assert/strict';
 import { nextLevel, pickNext, startLevel } from '../src/adaptive.ts';
-import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
+import { isMagic, logicSolutions, magicSolutions, sumGridSolutions } from '../src/logic.ts';
+import { addFractions, angleName, chartAnswer, percentAnswer, roundWhole, simplify } from '../src/maths5.ts';
 import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { duration, fits, fracCmp, gridMeasure, to12, to24 } from '../src/maths4.ts';
 import { encode, patternTerms } from '../src/thinking4.ts';
@@ -84,3 +85,20 @@ assert.deepEqual(patternTerms({ kind: 'grow', start: 1, step: 1, growth: 1 }, 5)
 assert.ok(oneLetterApart('cat', 'cot') && !oneLetterApart('cat', 'dog'));
 assert.equal(logicSolutions(4, []).length, 24, '4 people, no clues → 24 matchings');
 console.log('grade 4 helper tests OK');
+
+// Grade 5 helpers
+assert.equal(percentAnswer({ kind: 'of', pct: 25, of: 80 }), '20');
+assert.equal(percentAnswer({ kind: 'sale', pct: 10, price: 250 }), '₹225');
+assert.deepEqual([45, 90, 120].map(angleName), ['acute', 'right', 'obtuse']);
+const bars = [{ label: 'Mon', value: 4 }, { label: 'Tue', value: 9 }];
+assert.equal(chartAnswer(bars, { kind: 'diff', a: 'Mon', b: 'Tue' }), '5');
+assert.equal(chartAnswer(bars, { kind: 'most' }), 'Tue');
+assert.deepEqual(simplify([6, 8]), [3, 4]);
+assert.deepEqual(addFractions([1, 2], [1, 4]), [3, 4]);
+assert.equal(roundWhole('7.5'), '8');
+assert.equal(encode('az', 'reverse'), 'ZA');
+assert.deepEqual(patternTerms({ kind: 'fib', a: 1, b: 1 }, 5), [1, 1, 2, 3, 5]);
+const full = [8, 1, 6, 3, 5, 7, 4, 9, 2];
+assert.equal(sumGridSolutions([null, 1, 6, 3, 5, 7, 4, 9, null], [15, 15, 15], [15, 15, 15]), 1);
+assert.equal(sumGridSolutions(full.map(() => null), [15, 15, 15], [15, 15, 15]) > 1, true, 'empty grid is not unique');
+console.log('grade 5 helper tests OK');

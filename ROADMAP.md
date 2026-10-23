@@ -47,7 +47,11 @@
   - **English:** pronouns and adverbs, tenses, prefixes and suffixes, word ladders, reading.
   - **Puzzles:** 5-word crosswords, hard 6×6 sudoku.
   - **Thinking:** 4-person logic grids, number patterns, codes.
-- Grade 5: decimals, percentages, brain teasers.
+- **Grade 5 ✅** — NCERT/CBSE Class 5, all four subjects (340 puzzles):
+  - **Maths:** numbers to 1 lakh, long division with remainders, fractions, decimals, percentages, angles, bar charts.
+  - **English:** conjunctions and prepositions, passive and reported speech, idioms, tricky spellings, inference.
+  - **Puzzles:** 6-word crosswords, 3×3 sum grids.
+  - **Thinking:** brain teasers, series and analogies, logic grids and A ↔ Z codes.
 - Spreadsheet → JSON importer so non-developers can add puzzles.
 
 ## Phase 6 — Growth

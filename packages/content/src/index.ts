@@ -86,6 +86,11 @@ import g5EVoice from '../puzzles/g5-english/voice.json';
 import g5EIdioms from '../puzzles/g5-english/idioms.json';
 import g5ESpelling from '../puzzles/g5-english/spelling.json';
 import g5EReading from '../puzzles/g5-english/reading.json';
+import g5Crossword from '../puzzles/g5-puzzles/crossword.json';
+import g5SumGrid from '../puzzles/g5-puzzles/sumgrid.json';
+import g5Teasers from '../puzzles/g5-thinking/teasers.json';
+import g5Series from '../puzzles/g5-thinking/series.json';
+import g5LogicCodes from '../puzzles/g5-thinking/logic-codes.json';
 
 export * from './types';
 export * from './tokens';
@@ -108,6 +113,7 @@ export * from './words4';
 export * from './thinking4';
 export * from './maths5';
 export * from './words5';
+export * from './thinking5';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -128,6 +134,7 @@ export const PUZZLES = [
   ...g4Crossword, ...g4Sudoku, ...g4Logic, ...g4Patterns, ...g4Codes,
   ...g5Numbers, ...g5BigOps, ...g5Fractions, ...g5Decimals, ...g5Percent, ...g5Geometry, ...g5Charts,
   ...g5EJoining, ...g5EVoice, ...g5EIdioms, ...g5ESpelling, ...g5EReading,
+  ...g5Crossword, ...g5SumGrid, ...g5Teasers, ...g5Series, ...g5LogicCodes,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

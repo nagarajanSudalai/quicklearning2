@@ -232,12 +232,12 @@ export type GridShapePuzzle = Base & {
 };
 
 /** "What comes next?" rules beyond a constant step. */
-export type PatternRule = { kind: 'multiply'; start: number; by: number } | { kind: 'grow'; start: number; step: number; growth: number } | { kind: 'square'; from: number };
+export type PatternRule = { kind: 'multiply'; start: number; by: number } | { kind: 'grow'; start: number; step: number; growth: number } | { kind: 'square'; from: number } | { kind: 'alternate'; start: number; a: number; b: number } | { kind: 'fib'; a: number; b: number };
 
 /** Decode a word written in a code (A=1, B=2… or each letter shifted), or pick the code for a word. */
 export type CipherPuzzle = Base & {
   type: 'cipher';
-  payload: { kind: 'number' | 'shift'; shift?: number; word: string; ask: 'decode' | 'encode' };
+  payload: { kind: 'number' | 'shift' | 'reverse'; shift?: number; word: string; ask: 'decode' | 'encode' };
   options: string[];
   answer: string;
 };

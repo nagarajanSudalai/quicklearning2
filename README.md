@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–4 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (1,320 puzzles) — with adaptive difficulty.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (1,660 puzzles) — with adaptive difficulty.**
 
 ## Getting started
 
@@ -178,6 +178,35 @@ Content lives in `src/maths4.ts`, `src/words4.ts` and `src/thinking4.ts`. The ch
 - rejects any number pattern that a constant step would also explain;
 - re-encodes every code.
 
+## Grade 5, NCERT/CBSE Class 5
+
+17 topics, 20 puzzles each across 3 levels — 340 puzzles.
+
+| Subject | Topic | Puzzle type | Levels |
+|---|---|---|---|
+| Maths | Numbers to 1 lakh | `place-value` (ten thousands), `compare-numbers` | read digits · expanded form · compare 5-digit |
+| Maths | Big × and ÷ | `arithmetic` (with remainder) | 3-digit × 2-digit · 4-digit ÷ 1-digit · long division with remainder |
+| Maths | Fractions | `fraction-op` | simplify · fraction of a number · add unlike fractions |
+| Maths | Decimals | `decimal` | hundredths · add/subtract money · round to the nearest whole |
+| Maths | Percentages | `percent` | shaded 10×10 grid · % of a number · sale price |
+| Maths | Angles and area | `angle`, `grid-shape` | name the angle · measure it · triangle area |
+| Maths | Bar charts | `chart` | read a bar · difference · total, most, least |
+| English | Joining and position words | `fill-blank` | and/but/or · because/so · prepositions |
+| English | Passive and reported speech | `fill-blank`, `build` | passive · reported speech · quotation marks |
+| English | Idioms and proverbs | `idiom` | idioms · proverbs · idiom in a sentence |
+| English | Tricky spellings | `fill-blank`, `build` | silent letters · -tion/-sion · commonly misspelt |
+| English | Read and infer | `passage` | main idea · inference · best title |
+| Puzzles | Crosswords | `crossword` (text clues) | 5 words · 6 words · 6 words, 13 blanks |
+| Puzzles | Sum grids | `sum-grid` (3×3, digits 1–9) | 3 blanks · 5 · 7 |
+| Thinking | Brain teasers | `teaser` | 1-step · 2-step · classic teasers |
+| Thinking | Series and analogies | `analogy`, `number-pattern` | 2 : 4 :: 5 : ? · alternating steps · Fibonacci-like |
+| Thinking | Logic and codes | `logic-grid`, `cipher` | 4×4 grids · A ↔ Z codes · write in code |
+
+Content lives in `src/maths5.ts`, `src/words5.ts` and `src/thinking5.ts`. The checker:
+- recomputes percentages, angles, chart answers, simplified fractions, rounding and remainders;
+- brute-forces every sum grid so it has exactly one solution;
+- re-runs each teaser's `solve()` where it has one.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
@@ -254,3 +283,13 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Tenses | Word ladder | Reading | Big crossword | Logic grid 4×4 | Codes | Patterns |
 |---|---|---|---|---|---|---|
 | ![](docs/screenshots/g4-tenses.png) | ![](docs/screenshots/g4-ladder.png) | ![](docs/screenshots/g4-reading.png) | ![](docs/screenshots/g4-crossword.png) | ![](docs/screenshots/g4-logic.png) | ![](docs/screenshots/g4-codes.png) | ![](docs/screenshots/g4-patterns.png) |
+
+### Grade 5
+
+| Thinking topics | Percent | Angles | Bar chart | Fractions | Idioms | Passive |
+|---|---|---|---|---|---|---|
+| ![](docs/screenshots/g5-topics.png) | ![](docs/screenshots/g5-percent.png) | ![](docs/screenshots/g5-angle.png) | ![](docs/screenshots/g5-chart.png) | ![](docs/screenshots/g5-fractions.png) | ![](docs/screenshots/g5-idioms.png) | ![](docs/screenshots/g5-voice.png) |
+
+| Crossword | Sum grid | Brain teaser | Series | Codes |
+|---|---|---|---|---|
+| ![](docs/screenshots/g5-crossword.png) | ![](docs/screenshots/g5-sumgrid.png) | ![](docs/screenshots/g5-teaser.png) | ![](docs/screenshots/g5-series.png) | ![](docs/screenshots/g5-codes.png) |

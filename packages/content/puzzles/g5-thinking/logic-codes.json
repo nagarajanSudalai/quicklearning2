@@ -1,0 +1,773 @@
+[
+  {
+    "id": "g5-logic-codes-01",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 1,
+    "prompt": "Who has which pet? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "pet",
+      "people": [
+        "Kabir",
+        "Tara",
+        "Arjun",
+        "Sam"
+      ],
+      "items": [
+        {
+          "emoji": "🐰",
+          "name": "rabbit"
+        },
+        {
+          "emoji": "🐶",
+          "name": "dog"
+        },
+        {
+          "emoji": "🐟",
+          "name": "fish"
+        },
+        {
+          "emoji": "🐱",
+          "name": "cat"
+        }
+      ],
+      "clues": [
+        {
+          "person": 2,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 0,
+          "has": false
+        }
+      ],
+      "solution": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g5-logic-codes-02",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 1,
+    "prompt": "Who likes which fruit? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "fruit",
+      "people": [
+        "Tara",
+        "Meena",
+        "Sam",
+        "Kabir"
+      ],
+      "items": [
+        {
+          "emoji": "🍌",
+          "name": "banana"
+        },
+        {
+          "emoji": "🍎",
+          "name": "apple"
+        },
+        {
+          "emoji": "🥭",
+          "name": "mango"
+        },
+        {
+          "emoji": "🍇",
+          "name": "grapes"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        }
+      ],
+      "solution": [
+        0,
+        1,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g5-logic-codes-03",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 1,
+    "prompt": "Who plays which instrument? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "instrument",
+      "people": [
+        "Arjun",
+        "Kabir",
+        "Ravi",
+        "Tara"
+      ],
+      "items": [
+        {
+          "emoji": "🎹",
+          "name": "piano"
+        },
+        {
+          "emoji": "🥁",
+          "name": "drum"
+        },
+        {
+          "emoji": "🎺",
+          "name": "trumpet"
+        },
+        {
+          "emoji": "🎸",
+          "name": "guitar"
+        }
+      ],
+      "clues": [
+        {
+          "person": 3,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 2,
+          "has": false
+        }
+      ],
+      "solution": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "g5-logic-codes-04",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 1,
+    "prompt": "Who plays which game? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "game",
+      "people": [
+        "Ravi",
+        "Arjun",
+        "Meena",
+        "Asha"
+      ],
+      "items": [
+        {
+          "emoji": "♟️",
+          "name": "chess"
+        },
+        {
+          "emoji": "🏏",
+          "name": "cricket"
+        },
+        {
+          "emoji": "🏸",
+          "name": "badminton"
+        },
+        {
+          "emoji": "⚽",
+          "name": "football"
+        }
+      ],
+      "clues": [
+        {
+          "person": 3,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "g5-logic-codes-05",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 1,
+    "prompt": "Who has which pet? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "pet",
+      "people": [
+        "Kabir",
+        "Priya",
+        "Tara",
+        "Sam"
+      ],
+      "items": [
+        {
+          "emoji": "🐱",
+          "name": "cat"
+        },
+        {
+          "emoji": "🐟",
+          "name": "fish"
+        },
+        {
+          "emoji": "🐰",
+          "name": "rabbit"
+        },
+        {
+          "emoji": "🐶",
+          "name": "dog"
+        }
+      ],
+      "clues": [
+        {
+          "person": 1,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 0,
+          "has": true
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g5-logic-codes-06",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 1,
+    "prompt": "Who likes which fruit? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "fruit",
+      "people": [
+        "Arjun",
+        "Priya",
+        "Meena",
+        "Sam"
+      ],
+      "items": [
+        {
+          "emoji": "🍇",
+          "name": "grapes"
+        },
+        {
+          "emoji": "🥭",
+          "name": "mango"
+        },
+        {
+          "emoji": "🍌",
+          "name": "banana"
+        },
+        {
+          "emoji": "🍎",
+          "name": "apple"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "g5-logic-codes-07",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 1,
+    "prompt": "Who plays which instrument? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "instrument",
+      "people": [
+        "Tara",
+        "Sam",
+        "Priya",
+        "Arjun"
+      ],
+      "items": [
+        {
+          "emoji": "🎹",
+          "name": "piano"
+        },
+        {
+          "emoji": "🎺",
+          "name": "trumpet"
+        },
+        {
+          "emoji": "🎸",
+          "name": "guitar"
+        },
+        {
+          "emoji": "🥁",
+          "name": "drum"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 0,
+          "has": false
+        }
+      ],
+      "solution": [
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "g5-logic-codes-08",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: ILHV. In this code the alphabet is turned back to front: A ↔ Z, B ↔ Y, C ↔ X and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "rose",
+      "ask": "decode"
+    },
+    "options": [
+      "gold",
+      "rain",
+      "rose"
+    ],
+    "answer": "rose"
+  },
+  {
+    "id": "g5-logic-codes-09",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: PRMT. In this code the alphabet is turned back to front: A ↔ Z, B ↔ Y, C ↔ X and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "king",
+      "ask": "decode"
+    },
+    "options": [
+      "star",
+      "king",
+      "rain"
+    ],
+    "answer": "king"
+  },
+  {
+    "id": "g5-logic-codes-10",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: XSZRI. In this code the alphabet is turned back to front: A ↔ Z, B ↔ Y, C ↔ X and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "chair",
+      "ask": "decode"
+    },
+    "options": [
+      "apple",
+      "chair",
+      "mango"
+    ],
+    "answer": "chair"
+  },
+  {
+    "id": "g5-logic-codes-11",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: MVHG. In this code the alphabet is turned back to front: A ↔ Z, B ↔ Y, C ↔ X and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "nest",
+      "ask": "decode"
+    },
+    "options": [
+      "star",
+      "nest",
+      "lamp"
+    ],
+    "answer": "nest"
+  },
+  {
+    "id": "g5-logic-codes-12",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: ZKKOV. In this code the alphabet is turned back to front: A ↔ Z, B ↔ Y, C ↔ X and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "apple",
+      "ask": "decode"
+    },
+    "options": [
+      "tiger",
+      "apple",
+      "mango"
+    ],
+    "answer": "apple"
+  },
+  {
+    "id": "g5-logic-codes-13",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: UILT. In this code the alphabet is turned back to front: A ↔ Z, B ↔ Y, C ↔ X and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "frog",
+      "ask": "decode"
+    },
+    "options": [
+      "rose",
+      "frog",
+      "cake"
+    ],
+    "answer": "frog"
+  },
+  {
+    "id": "g5-logic-codes-14",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: WLT. In this code the alphabet is turned back to front: A ↔ Z, B ↔ Y, C ↔ X and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "dog",
+      "ask": "decode"
+    },
+    "options": [
+      "dog",
+      "cat",
+      "sun"
+    ],
+    "answer": "dog"
+  },
+  {
+    "id": "g5-logic-codes-15",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 3,
+    "prompt": "Write \"SHIP\" in code: move each letter 2 places on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 2,
+      "word": "ship",
+      "ask": "encode"
+    },
+    "options": [
+      "UJKR",
+      "TIJQ",
+      "RKJU"
+    ],
+    "answer": "UJKR"
+  },
+  {
+    "id": "g5-logic-codes-16",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 3,
+    "prompt": "Write \"MOON\" in code: turn the alphabet back to front (A ↔ Z, B ↔ Y).",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "moon",
+      "ask": "encode"
+    },
+    "options": [
+      "NPPO",
+      "NLLM",
+      "MLLN"
+    ],
+    "answer": "NLLM"
+  },
+  {
+    "id": "g5-logic-codes-17",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 3,
+    "prompt": "Write \"TIGER\" in code: move each letter 2 places on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 2,
+      "word": "tiger",
+      "ask": "encode"
+    },
+    "options": [
+      "TGIKV",
+      "VKIGT",
+      "UJHFS"
+    ],
+    "answer": "VKIGT"
+  },
+  {
+    "id": "g5-logic-codes-18",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 3,
+    "prompt": "Write \"SUN\" in code: turn the alphabet back to front (A ↔ Z, B ↔ Y).",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "sun",
+      "ask": "encode"
+    },
+    "options": [
+      "MFH",
+      "HFM",
+      "TVO"
+    ],
+    "answer": "HFM"
+  },
+  {
+    "id": "g5-logic-codes-19",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 3,
+    "prompt": "Write \"KING\" in code: move each letter 2 places on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 2,
+      "word": "king",
+      "ask": "encode"
+    },
+    "options": [
+      "LJOH",
+      "IPKM",
+      "MKPI"
+    ],
+    "answer": "MKPI"
+  },
+  {
+    "id": "g5-logic-codes-20",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-logic-codes",
+    "difficulty": 3,
+    "prompt": "Write \"ROSE\" in code: turn the alphabet back to front (A ↔ Z, B ↔ Y).",
+    "type": "cipher",
+    "payload": {
+      "kind": "reverse",
+      "word": "rose",
+      "ask": "encode"
+    },
+    "options": [
+      "ILHV",
+      "VHLI",
+      "SPTF"
+    ],
+    "answer": "ILHV"
+  }
+]

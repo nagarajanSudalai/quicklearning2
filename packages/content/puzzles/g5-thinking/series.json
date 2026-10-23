@@ -1,0 +1,533 @@
+[
+  {
+    "id": "g5-series-01",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 1,
+    "prompt": "A is to C as E is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "A",
+      "b": "C",
+      "c": "E"
+    },
+    "options": [
+      "G",
+      "F",
+      "H"
+    ],
+    "answer": "G"
+  },
+  {
+    "id": "g5-series-02",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 1,
+    "prompt": "10 is to 5 as 30 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "10",
+      "b": "5",
+      "c": "30"
+    },
+    "options": [
+      "10",
+      "15",
+      "25"
+    ],
+    "answer": "15"
+  },
+  {
+    "id": "g5-series-03",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 1,
+    "prompt": "Monday is to Wednesday as Friday is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "Monday",
+      "b": "Wednesday",
+      "c": "Friday"
+    },
+    "options": [
+      "Saturday",
+      "Sunday",
+      "Monday"
+    ],
+    "answer": "Sunday"
+  },
+  {
+    "id": "g5-series-04",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 1,
+    "prompt": "B is to D as M is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "B",
+      "b": "D",
+      "c": "M"
+    },
+    "options": [
+      "N",
+      "O",
+      "P"
+    ],
+    "answer": "O"
+  },
+  {
+    "id": "g5-series-05",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 1,
+    "prompt": "6 is to 36 as 7 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "6",
+      "b": "36",
+      "c": "7"
+    },
+    "options": [
+      "49",
+      "42",
+      "14"
+    ],
+    "answer": "49"
+  },
+  {
+    "id": "g5-series-06",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 1,
+    "prompt": "2 is to 4 as 5 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "2",
+      "b": "4",
+      "c": "5"
+    },
+    "options": [
+      "10",
+      "25",
+      "7"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": "g5-series-07",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 1,
+    "prompt": "100 is to 10 as 400 is to what?",
+    "type": "analogy",
+    "payload": {
+      "a": "100",
+      "b": "10",
+      "c": "400"
+    },
+    "options": [
+      "4",
+      "40",
+      "20"
+    ],
+    "answer": "40"
+  },
+  {
+    "id": "g5-series-08",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        2,
+        8,
+        null,
+        12,
+        10,
+        16
+      ],
+      "rule": {
+        "kind": "alternate",
+        "start": 2,
+        "a": 6,
+        "b": -2
+      }
+    },
+    "options": [
+      7,
+      6,
+      14
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g5-series-09",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        16,
+        21,
+        null,
+        23,
+        20,
+        25
+      ],
+      "rule": {
+        "kind": "alternate",
+        "start": 16,
+        "a": 5,
+        "b": -3
+      }
+    },
+    "options": [
+      26,
+      18,
+      19
+    ],
+    "answer": 18
+  },
+  {
+    "id": "g5-series-10",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        9,
+        12,
+        11,
+        null,
+        13,
+        16
+      ],
+      "rule": {
+        "kind": "alternate",
+        "start": 9,
+        "a": 3,
+        "b": -1
+      }
+    },
+    "options": [
+      10,
+      15,
+      14
+    ],
+    "answer": 14
+  },
+  {
+    "id": "g5-series-11",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        6,
+        9,
+        null,
+        11,
+        10,
+        13
+      ],
+      "rule": {
+        "kind": "alternate",
+        "start": 6,
+        "a": 3,
+        "b": -1
+      }
+    },
+    "options": [
+      8,
+      12,
+      9
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g5-series-12",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        11,
+        15,
+        13,
+        null,
+        15,
+        19
+      ],
+      "rule": {
+        "kind": "alternate",
+        "start": 11,
+        "a": 4,
+        "b": -2
+      }
+    },
+    "options": [
+      17,
+      18,
+      11
+    ],
+    "answer": 17
+  },
+  {
+    "id": "g5-series-13",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        1,
+        6,
+        5,
+        10,
+        null,
+        14
+      ],
+      "rule": {
+        "kind": "alternate",
+        "start": 1,
+        "a": 5,
+        "b": -1
+      }
+    },
+    "options": [
+      10,
+      9,
+      15
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g5-series-14",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        14,
+        17,
+        16,
+        19,
+        null,
+        21
+      ],
+      "rule": {
+        "kind": "alternate",
+        "start": 14,
+        "a": 3,
+        "b": -1
+      }
+    },
+    "options": [
+      22,
+      19,
+      18
+    ],
+    "answer": 18
+  },
+  {
+    "id": "g5-series-15",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        1,
+        4,
+        5,
+        9,
+        null
+      ],
+      "rule": {
+        "kind": "fib",
+        "a": 1,
+        "b": 4
+      }
+    },
+    "options": [
+      15,
+      13,
+      14
+    ],
+    "answer": 14
+  },
+  {
+    "id": "g5-series-16",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        4,
+        4,
+        8,
+        12,
+        null
+      ],
+      "rule": {
+        "kind": "fib",
+        "a": 4,
+        "b": 4
+      }
+    },
+    "options": [
+      16,
+      21,
+      20
+    ],
+    "answer": 20
+  },
+  {
+    "id": "g5-series-17",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        3,
+        4,
+        7,
+        null,
+        18
+      ],
+      "rule": {
+        "kind": "fib",
+        "a": 3,
+        "b": 4
+      }
+    },
+    "options": [
+      11,
+      12,
+      10
+    ],
+    "answer": 11
+  },
+  {
+    "id": "g5-series-18",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        1,
+        2,
+        null,
+        5,
+        8
+      ],
+      "rule": {
+        "kind": "fib",
+        "a": 1,
+        "b": 2
+      }
+    },
+    "options": [
+      3,
+      2,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g5-series-19",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        4,
+        2,
+        null,
+        8,
+        14
+      ],
+      "rule": {
+        "kind": "fib",
+        "a": 4,
+        "b": 2
+      }
+    },
+    "options": [
+      7,
+      6,
+      5
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g5-series-20",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-series",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        4,
+        3,
+        null,
+        10,
+        17
+      ],
+      "rule": {
+        "kind": "fib",
+        "a": 4,
+        "b": 3
+      }
+    },
+    "options": [
+      2,
+      8,
+      7
+    ],
+    "answer": 7
+  }
+]

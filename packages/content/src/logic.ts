@@ -29,3 +29,18 @@ export function magicSolutions(grid: (number | null)[]): number {
     return isMagic(g);
   }).length;
 }
+
+/** Ways to put the missing digits into the blanks so every row and column hits its total. */
+export function sumGridSolutions(grid: (number | null)[], rows: number[], cols: number[]) {
+  const blanks = grid.flatMap((v, k) => (v === null ? [k] : []));
+  const missing = [1, 2, 3, 4, 5, 6, 7, 8, 9].filter((v) => !grid.includes(v));
+  let count = 0;
+  for (const p of permutations(missing.length)) {
+    const g = [...grid];
+    blanks.forEach((k, j) => { g[k] = missing[p[j]]; });
+    const ok = [0, 1, 2].every((r) => g[r * 3]! + g[r * 3 + 1]! + g[r * 3 + 2]! === rows[r])
+      && [0, 1, 2].every((c) => g[c]! + g[c + 3]! + g[c + 6]! === cols[c]);
+    if (ok) count++;
+  }
+  return count;
+}

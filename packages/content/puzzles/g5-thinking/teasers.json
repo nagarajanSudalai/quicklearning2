@@ -1,0 +1,382 @@
+[
+  {
+    "id": "g5-teasers-01",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 1,
+    "prompt": "A farmer has 3 hens and 2 cows. How many legs are there in all?",
+    "type": "teaser",
+    "payload": {
+      "id": "legs1",
+      "text": "A farmer has 3 hens and 2 cows. How many legs are there in all?"
+    },
+    "options": [
+      "14",
+      "20",
+      "12"
+    ],
+    "answer": "14"
+  },
+  {
+    "id": "g5-teasers-02",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 1,
+    "prompt": "Asha has 4 coins of ₹5 and 3 coins of ₹2. How much money does she have?",
+    "type": "teaser",
+    "payload": {
+      "id": "coins1",
+      "text": "Asha has 4 coins of ₹5 and 3 coins of ₹2. How much money does she have?"
+    },
+    "options": [
+      "₹7",
+      "₹23",
+      "₹26"
+    ],
+    "answer": "₹26"
+  },
+  {
+    "id": "g5-teasers-03",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 1,
+    "prompt": "Ravi is 10 years old. His sister is 4 years younger. How old will she be in 3 years?",
+    "type": "teaser",
+    "payload": {
+      "id": "age1",
+      "text": "Ravi is 10 years old. His sister is 4 years younger. How old will she be in 3 years?"
+    },
+    "options": [
+      "9",
+      "6",
+      "13"
+    ],
+    "answer": "9"
+  },
+  {
+    "id": "g5-teasers-04",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 1,
+    "prompt": "Today is Monday. What day will it be 10 days from now?",
+    "type": "teaser",
+    "payload": {
+      "id": "week1",
+      "text": "Today is Monday. What day will it be 10 days from now?"
+    },
+    "options": [
+      "Wednesday",
+      "Monday",
+      "Thursday"
+    ],
+    "answer": "Thursday"
+  },
+  {
+    "id": "g5-teasers-05",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 1,
+    "prompt": "A book has 120 pages. Meena reads 15 pages a day. How many days will she take?",
+    "type": "teaser",
+    "payload": {
+      "id": "pages1",
+      "text": "A book has 120 pages. Meena reads 15 pages a day. How many days will she take?"
+    },
+    "options": [
+      "8",
+      "6",
+      "12"
+    ],
+    "answer": "8"
+  },
+  {
+    "id": "g5-teasers-06",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 1,
+    "prompt": "In a parking lot there are 5 cars and 4 bicycles. How many wheels are there?",
+    "type": "teaser",
+    "payload": {
+      "id": "wheels1",
+      "text": "In a parking lot there are 5 cars and 4 bicycles. How many wheels are there?"
+    },
+    "options": [
+      "28",
+      "18",
+      "20"
+    ],
+    "answer": "28"
+  },
+  {
+    "id": "g5-teasers-07",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 1,
+    "prompt": "A box holds 6 eggs. How many boxes are needed for 45 eggs?",
+    "type": "teaser",
+    "payload": {
+      "id": "eggs1",
+      "text": "A box holds 6 eggs. How many boxes are needed for 45 eggs?"
+    },
+    "options": [
+      "9",
+      "8",
+      "7"
+    ],
+    "answer": "8"
+  },
+  {
+    "id": "g5-teasers-08",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 2,
+    "prompt": "Two numbers add up to 20. One number is 4 more than the other. What is the bigger number?",
+    "type": "teaser",
+    "payload": {
+      "id": "sum2",
+      "text": "Two numbers add up to 20. One number is 4 more than the other. What is the bigger number?"
+    },
+    "options": [
+      "12",
+      "16",
+      "10"
+    ],
+    "answer": "12"
+  },
+  {
+    "id": "g5-teasers-09",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 2,
+    "prompt": "In a field there are cows and hens. There are 10 heads and 28 legs. How many cows are there?",
+    "type": "teaser",
+    "payload": {
+      "id": "legs2",
+      "text": "In a field there are cows and hens. There are 10 heads and 28 legs. How many cows are there?"
+    },
+    "options": [
+      "6",
+      "5",
+      "4"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "g5-teasers-10",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 2,
+    "prompt": "A father is 30 years older than his son. Together their ages add up to 50. How old is the son?",
+    "type": "teaser",
+    "payload": {
+      "id": "age2",
+      "text": "A father is 30 years older than his son. Together their ages add up to 50. How old is the son?"
+    },
+    "options": [
+      "15",
+      "10",
+      "20"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": "g5-teasers-11",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 2,
+    "prompt": "5 friends meet and each shakes hands once with every other friend. How many handshakes are there?",
+    "type": "teaser",
+    "payload": {
+      "id": "handshake2",
+      "text": "5 friends meet and each shakes hands once with every other friend. How many handshakes are there?"
+    },
+    "options": [
+      "10",
+      "20",
+      "25"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": "g5-teasers-12",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 2,
+    "prompt": "In a queue, Tara is 4th from the front and 6th from the back. How many people are in the queue?",
+    "type": "teaser",
+    "payload": {
+      "id": "queue2",
+      "text": "In a queue, Tara is 4th from the front and 6th from the back. How many people are in the queue?"
+    },
+    "options": [
+      "9",
+      "8",
+      "10"
+    ],
+    "answer": "9"
+  },
+  {
+    "id": "g5-teasers-13",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 2,
+    "prompt": "A straight fence is 20 metres long with a post every 5 metres, including both ends. How many posts are there?",
+    "type": "teaser",
+    "payload": {
+      "id": "fence2",
+      "text": "A straight fence is 20 metres long with a post every 5 metres, including both ends. How many posts are there?"
+    },
+    "options": [
+      "5",
+      "20",
+      "6"
+    ],
+    "answer": "5"
+  },
+  {
+    "id": "g5-teasers-14",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 2,
+    "prompt": "A clock strikes once at 1 o’clock, twice at 2 o’clock, and so on. How many times does it strike from 1 to 4 o’clock?",
+    "type": "teaser",
+    "payload": {
+      "id": "clock2",
+      "text": "A clock strikes once at 1 o’clock, twice at 2 o’clock, and so on. How many times does it strike from 1 to 4 o’clock?"
+    },
+    "options": [
+      "4",
+      "10",
+      "8"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": "g5-teasers-15",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 3,
+    "prompt": "It takes 3 minutes to cut a log into 2 pieces. How long does it take to cut it into 4 pieces?",
+    "type": "teaser",
+    "payload": {
+      "id": "cut3",
+      "text": "It takes 3 minutes to cut a log into 2 pieces. How long does it take to cut it into 4 pieces?"
+    },
+    "options": [
+      "9 minutes",
+      "6 minutes",
+      "8 minutes"
+    ],
+    "answer": "9 minutes"
+  },
+  {
+    "id": "g5-teasers-16",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 3,
+    "prompt": "A snail climbs a 10-metre wall. Each day it climbs 3 metres and each night slides back 2 metres. On which day does it reach the top?",
+    "type": "teaser",
+    "payload": {
+      "id": "snail3",
+      "text": "A snail climbs a 10-metre wall. Each day it climbs 3 metres and each night slides back 2 metres. On which day does it reach the top?"
+    },
+    "options": [
+      "day 5",
+      "day 7",
+      "day 8"
+    ],
+    "answer": "day 8"
+  },
+  {
+    "id": "g5-teasers-17",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 3,
+    "prompt": "A drawer has red and blue socks mixed up. In the dark, how many socks must you take to be sure of a matching pair?",
+    "type": "teaser",
+    "payload": {
+      "id": "socks3",
+      "text": "A drawer has red and blue socks mixed up. In the dark, how many socks must you take to be sure of a matching pair?"
+    },
+    "options": [
+      "2",
+      "4",
+      "3"
+    ],
+    "answer": "3"
+  },
+  {
+    "id": "g5-teasers-18",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 3,
+    "prompt": "Meera has 3 brothers. Each brother has 1 sister. How many sisters are there in the family?",
+    "type": "teaser",
+    "payload": {
+      "id": "brothers3",
+      "text": "Meera has 3 brothers. Each brother has 1 sister. How many sisters are there in the family?"
+    },
+    "options": [
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "g5-teasers-19",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 3,
+    "prompt": "Which is heavier: a kilogram of cotton or a kilogram of iron?",
+    "type": "teaser",
+    "payload": {
+      "id": "heavy3",
+      "text": "Which is heavier: a kilogram of cotton or a kilogram of iron?"
+    },
+    "options": [
+      "they weigh the same",
+      "cotton",
+      "it depends"
+    ],
+    "answer": "they weigh the same"
+  },
+  {
+    "id": "g5-teasers-20",
+    "grade": 5,
+    "subject": "thinking",
+    "topic": "g5-teasers",
+    "difficulty": 3,
+    "prompt": "Some months have 31 days and some have 30. How many months have 28 days?",
+    "type": "teaser",
+    "payload": {
+      "id": "month3",
+      "text": "Some months have 31 days and some have 30. How many months have 28 days?"
+    },
+    "options": [
+      "0",
+      "1",
+      "12"
+    ],
+    "answer": "12"
+  }
+]

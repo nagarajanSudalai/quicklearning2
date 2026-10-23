@@ -1,0 +1,2358 @@
+[
+  {
+    "id": "g5-crossword-01",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "heart",
+          "row": 2,
+          "col": 4,
+          "dir": "across",
+          "picture": "",
+          "clue": "It beats in your chest"
+        },
+        {
+          "word": "snake",
+          "row": 0,
+          "col": 6,
+          "dir": "down",
+          "picture": "",
+          "clue": "It has no legs"
+        },
+        {
+          "word": "planet",
+          "row": 4,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "Earth is one"
+        },
+        {
+          "word": "pillow",
+          "row": 4,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "You rest your head on it"
+        },
+        {
+          "word": "silver",
+          "row": 7,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A shiny grey metal"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "letters": [
+        "d",
+        "o",
+        "b",
+        "t",
+        "a",
+        "k",
+        "c",
+        "g",
+        "r",
+        "l",
+        "e",
+        "h"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-02",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "mountain",
+          "row": 8,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Much higher than a hill"
+        },
+        {
+          "word": "bread",
+          "row": 5,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "A baker makes it"
+        },
+        {
+          "word": "table",
+          "row": 5,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "carrot",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "An orange vegetable"
+        },
+        {
+          "word": "pyramid",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "An Egyptian tomb with a point"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          5
+        ]
+      ],
+      "letters": [
+        "e",
+        "d",
+        "a",
+        "y",
+        "s",
+        "r",
+        "o",
+        "i",
+        "t",
+        "p",
+        "c",
+        "n"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-03",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "garden",
+          "row": 2,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "Flowers grow here"
+        },
+        {
+          "word": "plate",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat food from it"
+        },
+        {
+          "word": "forest",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A place with many trees"
+        },
+        {
+          "word": "spring",
+          "row": 4,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "The season of flowers"
+        },
+        {
+          "word": "train",
+          "row": 8,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It runs on tracks"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "letters": [
+        "n",
+        "h",
+        "e",
+        "a",
+        "i",
+        "u",
+        "f",
+        "k",
+        "r",
+        "l",
+        "p",
+        "s"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-04",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "eight",
+          "row": 8,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "Two times four"
+        },
+        {
+          "word": "queen",
+          "row": 6,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "A king’s wife"
+        },
+        {
+          "word": "equator",
+          "row": 6,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "An imaginary line around Earth’s middle"
+        },
+        {
+          "word": "volcano",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "A mountain that can erupt"
+        },
+        {
+          "word": "rocket",
+          "row": 3,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "It flies into space"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "letters": [
+        "t",
+        "v",
+        "d",
+        "n",
+        "y",
+        "f",
+        "w",
+        "g",
+        "e",
+        "o",
+        "i",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-05",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "doctor",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Helps you get well"
+        },
+        {
+          "word": "tomato",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "A red vegetable for salad"
+        },
+        {
+          "word": "journey",
+          "row": 5,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A long trip"
+        },
+        {
+          "word": "rabbit",
+          "row": 5,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "It has long ears"
+        },
+        {
+          "word": "chair",
+          "row": 9,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You sit on it"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "letters": [
+        "c",
+        "m",
+        "h",
+        "y",
+        "s",
+        "d",
+        "o",
+        "w",
+        "b",
+        "e",
+        "a",
+        "u"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-06",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "violin",
+          "row": 0,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You play it with a bow"
+        },
+        {
+          "word": "ocean",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A very big sea"
+        },
+        {
+          "word": "monkey",
+          "row": 4,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "It swings from trees"
+        },
+        {
+          "word": "equator",
+          "row": 4,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "An imaginary line around Earth’s middle"
+        },
+        {
+          "word": "silver",
+          "row": 10,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A shiny grey metal"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          5
+        ]
+      ],
+      "letters": [
+        "n",
+        "u",
+        "c",
+        "a",
+        "e",
+        "k",
+        "y",
+        "w",
+        "o",
+        "m",
+        "i",
+        "r"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-07",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "butter",
+          "row": 1,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "Made from cream"
+        },
+        {
+          "word": "festival",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "A time of celebration"
+        },
+        {
+          "word": "capital",
+          "row": 6,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "The main city of a country"
+        },
+        {
+          "word": "puzzle",
+          "row": 6,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "A problem to solve for fun"
+        },
+        {
+          "word": "lemon",
+          "row": 10,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          6
+        ]
+      ],
+      "letters": [
+        "v",
+        "e",
+        "c",
+        "b",
+        "z",
+        "t",
+        "u",
+        "d",
+        "a",
+        "y",
+        "n",
+        "o"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-08",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "water",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You drink it"
+        },
+        {
+          "word": "pencil",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You write with it"
+        },
+        {
+          "word": "hockey",
+          "row": 3,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A game played with sticks"
+        },
+        {
+          "word": "equator",
+          "row": 3,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "An imaginary line around Earth’s middle"
+        },
+        {
+          "word": "mirror",
+          "row": 9,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You see yourself in it"
+        },
+        {
+          "word": "violin",
+          "row": 5,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "You play it with a bow"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "letters": [
+        "m",
+        "b",
+        "u",
+        "e",
+        "w",
+        "r",
+        "o",
+        "i",
+        "q",
+        "f",
+        "t",
+        "k"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-09",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "eagle",
+          "row": 1,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A big bird that hunts"
+        },
+        {
+          "word": "candle",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "It gives light when lit"
+        },
+        {
+          "word": "ocean",
+          "row": 5,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A very big sea"
+        },
+        {
+          "word": "mountain",
+          "row": 4,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "Much higher than a hill"
+        },
+        {
+          "word": "mirror",
+          "row": 10,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You see yourself in it"
+        },
+        {
+          "word": "library",
+          "row": 7,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You borrow books here"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ]
+      ],
+      "letters": [
+        "d",
+        "p",
+        "r",
+        "o",
+        "a",
+        "y",
+        "g",
+        "u",
+        "n",
+        "e",
+        "i",
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-10",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "zebra",
+          "row": 2,
+          "col": 4,
+          "dir": "across",
+          "picture": "",
+          "clue": "A striped horse-like animal"
+        },
+        {
+          "word": "forest",
+          "row": 0,
+          "col": 7,
+          "dir": "down",
+          "picture": "",
+          "clue": "A place with many trees"
+        },
+        {
+          "word": "cricket",
+          "row": 5,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A game with bats and wickets"
+        },
+        {
+          "word": "violin",
+          "row": 4,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You play it with a bow"
+        },
+        {
+          "word": "mountain",
+          "row": 9,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Much higher than a hill"
+        },
+        {
+          "word": "silver",
+          "row": 8,
+          "col": 6,
+          "dir": "down",
+          "picture": "",
+          "clue": "A shiny grey metal"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          6
+        ]
+      ],
+      "letters": [
+        "r",
+        "k",
+        "m",
+        "e",
+        "c",
+        "z",
+        "g",
+        "n",
+        "w",
+        "t",
+        "b",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-11",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "pyramid",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "An Egyptian tomb with a point"
+        },
+        {
+          "word": "equator",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "An imaginary line around Earth’s middle"
+        },
+        {
+          "word": "volcano",
+          "row": 5,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A mountain that can erupt"
+        },
+        {
+          "word": "apple",
+          "row": 5,
+          "col": 6,
+          "dir": "down",
+          "picture": "",
+          "clue": "A red or green fruit"
+        },
+        {
+          "word": "journey",
+          "row": 9,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A long trip"
+        },
+        {
+          "word": "green",
+          "row": 8,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "The colour of leaves"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          4
+        ]
+      ],
+      "letters": [
+        "e",
+        "o",
+        "l",
+        "b",
+        "c",
+        "g",
+        "u",
+        "d",
+        "r",
+        "q",
+        "p",
+        "f"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-12",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "lotus",
+          "row": 14,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "India's national flower"
+        },
+        {
+          "word": "rabbit",
+          "row": 9,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "It has long ears"
+        },
+        {
+          "word": "market",
+          "row": 9,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You buy things here"
+        },
+        {
+          "word": "tiger",
+          "row": 6,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national animal"
+        },
+        {
+          "word": "water",
+          "row": 6,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "You drink it"
+        },
+        {
+          "word": "equator",
+          "row": 0,
+          "col": 6,
+          "dir": "down",
+          "picture": "",
+          "clue": "An imaginary line around Earth’s middle"
+        }
+      ],
+      "blanks": [
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "letters": [
+        "l",
+        "g",
+        "p",
+        "h",
+        "w",
+        "u",
+        "i",
+        "r",
+        "a",
+        "b",
+        "o",
+        "t"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-13",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "hockey",
+          "row": 17,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A game played with sticks"
+        },
+        {
+          "word": "library",
+          "row": 11,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "You borrow books here"
+        },
+        {
+          "word": "island",
+          "row": 11,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "Land with water all around"
+        },
+        {
+          "word": "compass",
+          "row": 5,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "It shows north"
+        },
+        {
+          "word": "carrot",
+          "row": 6,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "An orange vegetable"
+        },
+        {
+          "word": "thunder",
+          "row": 0,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "The noise after lightning"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          17,
+          2
+        ]
+      ],
+      "letters": [
+        "s",
+        "p",
+        "l",
+        "h",
+        "d",
+        "t",
+        "o",
+        "a",
+        "e",
+        "n",
+        "c",
+        "r"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-14",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "kettle",
+          "row": 12,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "It boils water"
+        },
+        {
+          "word": "winter",
+          "row": 8,
+          "col": 7,
+          "dir": "down",
+          "picture": "",
+          "clue": "The cold season"
+        },
+        {
+          "word": "lemon",
+          "row": 10,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        },
+        {
+          "word": "triangle",
+          "row": 3,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "A shape with three sides"
+        },
+        {
+          "word": "equator",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "An imaginary line around Earth’s middle"
+        },
+        {
+          "word": "cloud",
+          "row": 0,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "It brings rain"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "letters": [
+        "a",
+        "k",
+        "n",
+        "h",
+        "u",
+        "w",
+        "m",
+        "e",
+        "o",
+        "l",
+        "t",
+        "r"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-15",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "pencil",
+          "row": 9,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You write with it"
+        },
+        {
+          "word": "table",
+          "row": 5,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "camera",
+          "row": 6,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It takes photos"
+        },
+        {
+          "word": "garden",
+          "row": 2,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "Flowers grow here"
+        },
+        {
+          "word": "apple",
+          "row": 3,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "A red or green fruit"
+        },
+        {
+          "word": "water",
+          "row": 0,
+          "col": 7,
+          "dir": "down",
+          "picture": "",
+          "clue": "You drink it"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          5
+        ]
+      ],
+      "letters": [
+        "l",
+        "e",
+        "p",
+        "t",
+        "f",
+        "o",
+        "n",
+        "r",
+        "d",
+        "y",
+        "a",
+        "g"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-16",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "camel",
+          "row": 13,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It lives in the desert"
+        },
+        {
+          "word": "bridge",
+          "row": 8,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You cross a river on it"
+        },
+        {
+          "word": "zebra",
+          "row": 8,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A striped horse-like animal"
+        },
+        {
+          "word": "compass",
+          "row": 4,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "It shows north"
+        },
+        {
+          "word": "parrot",
+          "row": 5,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A green bird that talks"
+        },
+        {
+          "word": "doctor",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "Helps you get well"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "letters": [
+        "r",
+        "i",
+        "t",
+        "o",
+        "c",
+        "e",
+        "l",
+        "g",
+        "a",
+        "s",
+        "m",
+        "p"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-17",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "doctor",
+          "row": 12,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Helps you get well"
+        },
+        {
+          "word": "rocket",
+          "row": 7,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "It flies into space"
+        },
+        {
+          "word": "tooth",
+          "row": 8,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "You bite with it"
+        },
+        {
+          "word": "desert",
+          "row": 3,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "A hot, dry, sandy place"
+        },
+        {
+          "word": "snake",
+          "row": 4,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "It has no legs"
+        },
+        {
+          "word": "seven",
+          "row": 0,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "Six plus one"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "letters": [
+        "k",
+        "m",
+        "i",
+        "w",
+        "t",
+        "e",
+        "c",
+        "d",
+        "o",
+        "l",
+        "p",
+        "r"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-18",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "kettle",
+          "row": 2,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "It boils water"
+        },
+        {
+          "word": "kitten",
+          "row": 0,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "A baby cat"
+        },
+        {
+          "word": "harvest",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Gathering the crops"
+        },
+        {
+          "word": "tooth",
+          "row": 4,
+          "col": 6,
+          "dir": "down",
+          "picture": "",
+          "clue": "You bite with it"
+        },
+        {
+          "word": "carrot",
+          "row": 7,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "An orange vegetable"
+        },
+        {
+          "word": "rocket",
+          "row": 7,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "It flies into space"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "letters": [
+        "n",
+        "c",
+        "e",
+        "a",
+        "s",
+        "l",
+        "r",
+        "o",
+        "g",
+        "u",
+        "h",
+        "t"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-19",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "silver",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A shiny grey metal"
+        },
+        {
+          "word": "green",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "The colour of leaves"
+        },
+        {
+          "word": "seven",
+          "row": 3,
+          "col": 4,
+          "dir": "across",
+          "picture": "",
+          "clue": "Six plus one"
+        },
+        {
+          "word": "kettle",
+          "row": 2,
+          "col": 7,
+          "dir": "down",
+          "picture": "",
+          "clue": "It boils water"
+        },
+        {
+          "word": "apple",
+          "row": 7,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "A red or green fruit"
+        },
+        {
+          "word": "puzzle",
+          "row": 7,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "A problem to solve for fun"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "letters": [
+        "l",
+        "t",
+        "v",
+        "z",
+        "o",
+        "r",
+        "s",
+        "u",
+        "n",
+        "p",
+        "k",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g5-crossword-20",
+    "grade": 5,
+    "subject": "puzzles",
+    "topic": "g5-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "eagle",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A big bird that hunts"
+        },
+        {
+          "word": "parrot",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "A green bird that talks"
+        },
+        {
+          "word": "volcano",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A mountain that can erupt"
+        },
+        {
+          "word": "ladder",
+          "row": 3,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "You climb it"
+        },
+        {
+          "word": "zebra",
+          "row": 7,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "A striped horse-like animal"
+        },
+        {
+          "word": "candle",
+          "row": 6,
+          "col": 7,
+          "dir": "down",
+          "picture": "",
+          "clue": "It gives light when lit"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ]
+      ],
+      "letters": [
+        "o",
+        "u",
+        "d",
+        "a",
+        "z",
+        "n",
+        "e",
+        "g",
+        "b",
+        "r",
+        "v",
+        "k"
+      ]
+    }
+  }
+]

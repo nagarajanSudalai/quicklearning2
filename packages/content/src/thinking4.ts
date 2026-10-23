@@ -24,15 +24,18 @@ export const LOGIC_SETS4: { question: string; kind: string; items: [string, stri
 export function patternTerms(rule: PatternRule, n: number): number[] {
   if (rule.kind === 'multiply') return Array.from({ length: n }, (_, k) => rule.start * rule.by ** k);
   if (rule.kind === 'square') return Array.from({ length: n }, (_, k) => (rule.from + k) ** 2);
+  if (rule.kind === 'alternate') { const out = [rule.start]; for (let k = 1; k < n; k++) out.push(out[k - 1] + (k % 2 ? rule.a : rule.b)); return out; }
+  if (rule.kind === 'fib') { const out = [rule.a, rule.b]; while (out.length < n) out.push(out[out.length - 1] + out[out.length - 2]); return out.slice(0, n); }
   const out = [rule.start];
   for (let k = 1; k < n; k++) out.push(out[k - 1] + rule.step + rule.growth * (k - 1));
   return out;
 }
 
 const A = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-/** Write a word in code: A=1 B=2… as "3-1-20", or each letter moved `shift` places on. */
-export function encode(word: string, kind: 'number' | 'shift', shift = 1) {
+/** Write a word in code: A=1 B=2… as "3-1-20", each letter moved `shift` places on, or the reverse alphabet (A↔Z). */
+export function encode(word: string, kind: 'number' | 'shift' | 'reverse', shift = 1) {
   const up = word.toUpperCase();
+  if (kind === 'reverse') return [...up].map((ch) => A[25 - A.indexOf(ch)]).join('');
   if (kind === 'number') return [...up].map((ch) => A.indexOf(ch) + 1).join('-');
   return [...up].map((ch) => A[(A.indexOf(ch) + shift) % 26]).join('');
 }
