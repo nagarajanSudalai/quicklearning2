@@ -42,7 +42,12 @@
   - **English:** word classes, past tense, synonyms and homophones, spelling bee, reading comprehension.
   - **Puzzles:** text-clue crosswords, 6×6 sudoku.
   - **Thinking:** logic grids, analogies, magic squares.
-- Grade 4: fractions (equivalent, add), sudoku 6×6, word ladders. Grade 5: decimals, brain teasers.
+- **Grade 4 ✅** — NCERT/CBSE Class 4, all four subjects (340 puzzles):
+  - **Maths:** large numbers, multiply/divide, factors and multiples, fractions, decimals, 24-hour time, area and perimeter.
+  - **English:** pronouns and adverbs, tenses, prefixes and suffixes, word ladders, reading.
+  - **Puzzles:** 5-word crosswords, hard 6×6 sudoku.
+  - **Thinking:** 4-person logic grids, number patterns, codes.
+- Grade 5: decimals, percentages, brain teasers.
 - Spreadsheet → JSON importer so non-developers can add puzzles.
 
 ## Phase 6 — Growth

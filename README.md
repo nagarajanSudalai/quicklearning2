@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1, 2 and 3 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (980 puzzles) — with adaptive difficulty.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–4 are playable in all four subjects — Maths, English, Puzzles and Thinking Skills (1,320 puzzles) — with adaptive difficulty.**
 
 ## Getting started
 
@@ -147,6 +147,37 @@ The checker recomputes every answer:
 - each logic grid and magic square has exactly one solution;
 - each 6×6 sudoku has exactly one solution.
 
+## Grade 4, NCERT/CBSE Class 4
+
+17 topics, 20 puzzles each across 3 levels — 340 puzzles.
+
+| Subject | Topic | Puzzle type | Levels |
+|---|---|---|---|
+| Maths | Large numbers | `place-value` (thousands, expanded), `compare-numbers` | thousands/hundreds · 3000 + 300 + 6 · compare 4-digit |
+| Maths | Multiply and divide | `arithmetic` | 2-digit × 1-digit · 3-digit ÷ 1-digit · 2-digit × 2-digit |
+| Maths | Factors and multiples | `pick-all` | multiples · factors · common multiples |
+| Maths | Fractions | `fraction-op` | equivalent · bigger · add like fractions |
+| Maths | Decimals | `decimal` | ₹ to paise · tenths on a bar · compare (0.3 vs 0.13) |
+| Maths | Time | `clock`, `time-calc` | to the minute · 24-hour ↔ am/pm · how long |
+| Maths | Area and perimeter | `grid-shape` | count squares · count edges · rectangle sides |
+| English | Pronouns and adverbs | `word-class` | pronouns · adverbs · mixed |
+| English | Tenses | `fill-blank` (future, continuous) | will play · is playing · mixed |
+| English | Prefixes and suffixes | `fill-blank` (affix) | un-/re-/dis- · -ful/-less/-er · mixed |
+| English | Word ladders | `word-ladder` | 2 steps · 3 steps · 3–4 steps |
+| English | Read and think | `passage` | what · why · word meaning in context |
+| Puzzles | Big crossword | `crossword` (text clues) | 4 words · 5 words · 5 words, 11 blanks |
+| Puzzles | Hard sudoku | `sudoku` (6×6) | 18 blanks · 22 · 24 |
+| Thinking | Logic grids | `logic-grid` | 3×3 · 3×3 "not" clues · 4×4 |
+| Thinking | Number patterns | `number-pattern` (rules) | doubling · growing steps · squares |
+| Thinking | Secret codes | `cipher` | A=1 codes · shift codes · write in code |
+
+Content lives in `src/maths4.ts`, `src/words4.ts` and `src/thinking4.ts`. The checker:
+- recomputes fractions exactly (cross-multiplying);
+- recomputes area and perimeter from the shaded cells;
+- requires each word-ladder step to offer exactly one valid one-letter move;
+- rejects any number pattern that a constant step would also explain;
+- re-encodes every code.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
@@ -213,3 +244,13 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Word classes | Clue crossword | Sudoku 6×6 | Logic grid | Analogy | Magic square |
 |---|---|---|---|---|---|
 | ![](docs/screenshots/g3-word-class.png) | ![](docs/screenshots/g3-crossword.png) | ![](docs/screenshots/g3-sudoku.png) | ![](docs/screenshots/g3-logic.png) | ![](docs/screenshots/g3-analogy.png) | ![](docs/screenshots/g3-magic.png) |
+
+### Grade 4
+
+| Subjects | Expanded form | Fractions | Decimals | Time | Area | Factors |
+|---|---|---|---|---|---|---|
+| ![](docs/screenshots/g4-subjects.png) | ![](docs/screenshots/g4-numbers.png) | ![](docs/screenshots/g4-fractions.png) | ![](docs/screenshots/g4-decimals.png) | ![](docs/screenshots/g4-time.png) | ![](docs/screenshots/g4-area.png) | ![](docs/screenshots/g4-factors.png) |
+
+| Tenses | Word ladder | Reading | Big crossword | Logic grid 4×4 | Codes | Patterns |
+|---|---|---|---|---|---|---|
+| ![](docs/screenshots/g4-tenses.png) | ![](docs/screenshots/g4-ladder.png) | ![](docs/screenshots/g4-reading.png) | ![](docs/screenshots/g4-crossword.png) | ![](docs/screenshots/g4-logic.png) | ![](docs/screenshots/g4-codes.png) | ![](docs/screenshots/g4-patterns.png) |
