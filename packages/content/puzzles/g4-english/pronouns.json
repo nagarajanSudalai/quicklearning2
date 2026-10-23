@@ -1,0 +1,419 @@
+[
+  {
+    "id": "g4-pronouns-01",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 1,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "I/pronoun waited patiently/adverb for the bus.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "I",
+      "waited",
+      "patiently",
+      "for",
+      "the",
+      "bus"
+    ],
+    "answer": "I"
+  },
+  {
+    "id": "g4-pronouns-02",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 1,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "You/pronoun write neatly/adverb.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "You",
+      "write",
+      "neatly"
+    ],
+    "answer": "You"
+  },
+  {
+    "id": "g4-pronouns-03",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 1,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Ravi spoke gently/adverb to them/pronoun.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "Ravi",
+      "spoke",
+      "gently",
+      "to",
+      "them"
+    ],
+    "answer": "them"
+  },
+  {
+    "id": "g4-pronouns-04",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 1,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "She/pronoun runs quickly/adverb.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "She",
+      "runs",
+      "quickly"
+    ],
+    "answer": "She"
+  },
+  {
+    "id": "g4-pronouns-05",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 1,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "We/pronoun finished the work early/adverb.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "We",
+      "finished",
+      "the",
+      "work",
+      "early"
+    ],
+    "answer": "We"
+  },
+  {
+    "id": "g4-pronouns-06",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 1,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "He/pronoun sings loudly/adverb.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "He",
+      "sings",
+      "loudly"
+    ],
+    "answer": "He"
+  },
+  {
+    "id": "g4-pronouns-07",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 1,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "They/pronoun walked slowly/adverb home.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "They",
+      "walked",
+      "slowly",
+      "home"
+    ],
+    "answer": "They"
+  },
+  {
+    "id": "g4-pronouns-08",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 2,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The children played happily/adverb in the park.",
+      "ask": "adverb"
+    },
+    "options": [
+      "The",
+      "children",
+      "played",
+      "happily",
+      "in",
+      "the",
+      "park"
+    ],
+    "answer": "happily"
+  },
+  {
+    "id": "g4-pronouns-09",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 2,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "It/pronoun rained heavily/adverb all night.",
+      "ask": "adverb"
+    },
+    "options": [
+      "It",
+      "rained",
+      "heavily",
+      "all",
+      "night"
+    ],
+    "answer": "heavily"
+  },
+  {
+    "id": "g4-pronouns-10",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 2,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "I/pronoun waited patiently/adverb for the bus.",
+      "ask": "adverb"
+    },
+    "options": [
+      "I",
+      "waited",
+      "patiently",
+      "for",
+      "the",
+      "bus"
+    ],
+    "answer": "patiently"
+  },
+  {
+    "id": "g4-pronouns-11",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 2,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The dog barked angrily/adverb at the stranger.",
+      "ask": "adverb"
+    },
+    "options": [
+      "The",
+      "dog",
+      "barked",
+      "angrily",
+      "at",
+      "the",
+      "stranger"
+    ],
+    "answer": "angrily"
+  },
+  {
+    "id": "g4-pronouns-12",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 2,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Please call me/pronoun tomorrow/adverb.",
+      "ask": "adverb"
+    },
+    "options": [
+      "Please",
+      "call",
+      "me",
+      "tomorrow"
+    ],
+    "answer": "tomorrow"
+  },
+  {
+    "id": "g4-pronouns-13",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 2,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The bird flew away/adverb from him/pronoun.",
+      "ask": "adverb"
+    },
+    "options": [
+      "The",
+      "bird",
+      "flew",
+      "away",
+      "from",
+      "him"
+    ],
+    "answer": "away"
+  },
+  {
+    "id": "g4-pronouns-14",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 2,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Ravi spoke gently/adverb to them/pronoun.",
+      "ask": "adverb"
+    },
+    "options": [
+      "Ravi",
+      "spoke",
+      "gently",
+      "to",
+      "them"
+    ],
+    "answer": "gently"
+  },
+  {
+    "id": "g4-pronouns-15",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 3,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "We/pronoun finished the work early/adverb.",
+      "ask": "adverb"
+    },
+    "options": [
+      "We",
+      "finished",
+      "the",
+      "work",
+      "early"
+    ],
+    "answer": "early"
+  },
+  {
+    "id": "g4-pronouns-16",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 3,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Grandma told us/pronoun a story.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "Grandma",
+      "told",
+      "us",
+      "a",
+      "story"
+    ],
+    "answer": "us"
+  },
+  {
+    "id": "g4-pronouns-17",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 3,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Arjun answered the question correctly/adverb.",
+      "ask": "adverb"
+    },
+    "options": [
+      "Arjun",
+      "answered",
+      "the",
+      "question",
+      "correctly"
+    ],
+    "answer": "correctly"
+  },
+  {
+    "id": "g4-pronouns-18",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 3,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "Please call me/pronoun tomorrow/adverb.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "Please",
+      "call",
+      "me",
+      "tomorrow"
+    ],
+    "answer": "me"
+  },
+  {
+    "id": "g4-pronouns-19",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 3,
+    "prompt": "Tap the adverb (a word that tells how, when or where).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "The baby slept peacefully/adverb.",
+      "ask": "adverb"
+    },
+    "options": [
+      "The",
+      "baby",
+      "slept",
+      "peacefully"
+    ],
+    "answer": "peacefully"
+  },
+  {
+    "id": "g4-pronouns-20",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-pronouns",
+    "difficulty": 3,
+    "prompt": "Tap the pronoun (a word used instead of a name).",
+    "type": "word-class",
+    "payload": {
+      "tagged": "It/pronoun rained heavily/adverb all night.",
+      "ask": "pronoun"
+    },
+    "options": [
+      "It",
+      "rained",
+      "heavily",
+      "all",
+      "night"
+    ],
+    "answer": "It"
+  }
+]

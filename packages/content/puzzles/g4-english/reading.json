@@ -1,0 +1,382 @@
+[
+  {
+    "id": "g4-reading-01",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 1,
+    "prompt": "In the monsoon, the dry pond near Sara’s house filled with water. Frogs began to croak at night and ducks came to swim. Sara loved watching them from her window. What came to swim in the pond?",
+    "type": "passage",
+    "payload": {
+      "text": "In the monsoon, the dry pond near Sara’s house filled with water. Frogs began to croak at night and ducks came to swim. Sara loved watching them from her window.",
+      "question": "What came to swim in the pond?"
+    },
+    "options": [
+      "cows",
+      "ducks",
+      "fish"
+    ],
+    "answer": "ducks"
+  },
+  {
+    "id": "g4-reading-02",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 1,
+    "prompt": "Every summer, Ria visits her grandparents in their village. She helps her grandfather feed the cows and pick mangoes from the orchard. In the evening, her grandmother tells her stories of the old days. What does Ria pick in the orchard?",
+    "type": "passage",
+    "payload": {
+      "text": "Every summer, Ria visits her grandparents in their village. She helps her grandfather feed the cows and pick mangoes from the orchard. In the evening, her grandmother tells her stories of the old days.",
+      "question": "What does Ria pick in the orchard?"
+    },
+    "options": [
+      "leaves",
+      "apples",
+      "mangoes"
+    ],
+    "answer": "mangoes"
+  },
+  {
+    "id": "g4-reading-03",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 1,
+    "prompt": "The village had no well, so the women walked far every day to fetch water. The people worked together and dug a new well near the school. Now the children can drink clean water. Where did the people dig the new well?",
+    "type": "passage",
+    "payload": {
+      "text": "The village had no well, so the women walked far every day to fetch water. The people worked together and dug a new well near the school. Now the children can drink clean water.",
+      "question": "Where did the people dig the new well?"
+    },
+    "options": [
+      "near the river",
+      "near the school",
+      "in the forest"
+    ],
+    "answer": "near the school"
+  },
+  {
+    "id": "g4-reading-04",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 1,
+    "prompt": "A tortoise and a hare had a race. The hare ran fast and then slept under a tree. The tortoise kept walking slowly and won the race. Who won the race?",
+    "type": "passage",
+    "payload": {
+      "text": "A tortoise and a hare had a race. The hare ran fast and then slept under a tree. The tortoise kept walking slowly and won the race.",
+      "question": "Who won the race?"
+    },
+    "options": [
+      "the hare",
+      "the fox",
+      "the tortoise"
+    ],
+    "answer": "the tortoise"
+  },
+  {
+    "id": "g4-reading-05",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 1,
+    "prompt": "The school held a science fair. Aman made a small windmill that turned when he blew on it. His friend Zoya showed how plants drink water through their roots. What did Aman make?",
+    "type": "passage",
+    "payload": {
+      "text": "The school held a science fair. Aman made a small windmill that turned when he blew on it. His friend Zoya showed how plants drink water through their roots.",
+      "question": "What did Aman make?"
+    },
+    "options": [
+      "a windmill",
+      "a robot",
+      "a plant"
+    ],
+    "answer": "a windmill"
+  },
+  {
+    "id": "g4-reading-06",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 1,
+    "prompt": "Dev wanted to learn to swim. His uncle took him to the pool every Sunday. At first Dev was scared, but by the end of the year he could swim across the pool. Who took Dev to the pool?",
+    "type": "passage",
+    "payload": {
+      "text": "Dev wanted to learn to swim. His uncle took him to the pool every Sunday. At first Dev was scared, but by the end of the year he could swim across the pool.",
+      "question": "Who took Dev to the pool?"
+    },
+    "options": [
+      "his sister",
+      "his uncle",
+      "his teacher"
+    ],
+    "answer": "his uncle"
+  },
+  {
+    "id": "g4-reading-07",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 1,
+    "prompt": "Lakshmi saved her pocket money for three months. She wanted to buy a book about stars and planets. When she had enough, her father took her to the bookshop. What was the book about?",
+    "type": "passage",
+    "payload": {
+      "text": "Lakshmi saved her pocket money for three months. She wanted to buy a book about stars and planets. When she had enough, her father took her to the bookshop.",
+      "question": "What was the book about?"
+    },
+    "options": [
+      "stars and planets",
+      "animals",
+      "cooking"
+    ],
+    "answer": "stars and planets"
+  },
+  {
+    "id": "g4-reading-08",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 2,
+    "prompt": "Aditi wore a raincoat and boots to school. The sky had been dark and cloudy since morning, and the radio said heavy rain was coming. Why did Aditi wear a raincoat?",
+    "type": "passage",
+    "payload": {
+      "text": "Aditi wore a raincoat and boots to school. The sky had been dark and cloudy since morning, and the radio said heavy rain was coming.",
+      "question": "Why did Aditi wear a raincoat?"
+    },
+    "options": [
+      "it was cold",
+      "heavy rain was coming",
+      "her friend had one"
+    ],
+    "answer": "heavy rain was coming"
+  },
+  {
+    "id": "g4-reading-09",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 2,
+    "prompt": "Tara’s plant grew tall but its leaves turned yellow. Her teacher said it was getting too little sunlight. Tara moved the pot to the window, and soon the leaves were green again. Why did Tara move the pot?",
+    "type": "passage",
+    "payload": {
+      "text": "Tara’s plant grew tall but its leaves turned yellow. Her teacher said it was getting too little sunlight. Tara moved the pot to the window, and soon the leaves were green again.",
+      "question": "Why did Tara move the pot?"
+    },
+    "options": [
+      "to make room",
+      "to show her friends",
+      "to give it more sunlight"
+    ],
+    "answer": "to give it more sunlight"
+  },
+  {
+    "id": "g4-reading-10",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 2,
+    "prompt": "The library was very quiet. A sign on the wall said, \"Please do not talk.\" Rohan whispered to his friend so he would not disturb others. Why did Rohan whisper?",
+    "type": "passage",
+    "payload": {
+      "text": "The library was very quiet. A sign on the wall said, \"Please do not talk.\" Rohan whispered to his friend so he would not disturb others.",
+      "question": "Why did Rohan whisper?"
+    },
+    "options": [
+      "so he would not disturb others",
+      "he had a cold",
+      "his friend was asleep"
+    ],
+    "answer": "so he would not disturb others"
+  },
+  {
+    "id": "g4-reading-11",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 2,
+    "prompt": "Neel practised the flute every evening for a month. At the school function, he played without a single mistake, and everyone clapped loudly. Why did Neel play without mistakes?",
+    "type": "passage",
+    "payload": {
+      "text": "Neel practised the flute every evening for a month. At the school function, he played without a single mistake, and everyone clapped loudly.",
+      "question": "Why did Neel play without mistakes?"
+    },
+    "options": [
+      "he played slowly",
+      "his friend helped",
+      "he practised every evening"
+    ],
+    "answer": "he practised every evening"
+  },
+  {
+    "id": "g4-reading-12",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 2,
+    "prompt": "Kiran forgot to close the gate. The goats walked into the garden and ate all of Mother’s spinach. Kiran said sorry and helped plant new seeds. Why did the goats get into the garden?",
+    "type": "passage",
+    "payload": {
+      "text": "Kiran forgot to close the gate. The goats walked into the garden and ate all of Mother’s spinach. Kiran said sorry and helped plant new seeds.",
+      "question": "Why did the goats get into the garden?"
+    },
+    "options": [
+      "the fence broke",
+      "they were hungry",
+      "the gate was open"
+    ],
+    "answer": "the gate was open"
+  },
+  {
+    "id": "g4-reading-13",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 2,
+    "prompt": "The farmer built a scarecrow and put it in the middle of his field. Before that, crows ate the seeds he had planted. Why did the farmer build a scarecrow?",
+    "type": "passage",
+    "payload": {
+      "text": "The farmer built a scarecrow and put it in the middle of his field. Before that, crows ate the seeds he had planted.",
+      "question": "Why did the farmer build a scarecrow?"
+    },
+    "options": [
+      "to keep crows away",
+      "to mark the field",
+      "to scare children"
+    ],
+    "answer": "to keep crows away"
+  },
+  {
+    "id": "g4-reading-14",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 2,
+    "prompt": "The baker started work at four in the morning. He wanted the bread to be fresh and warm when people came to buy it for breakfast. Why did the baker start so early?",
+    "type": "passage",
+    "payload": {
+      "text": "The baker started work at four in the morning. He wanted the bread to be fresh and warm when people came to buy it for breakfast.",
+      "question": "Why did the baker start so early?"
+    },
+    "options": [
+      "he could not sleep",
+      "so the bread was fresh for breakfast",
+      "he liked the dark"
+    ],
+    "answer": "so the bread was fresh for breakfast"
+  },
+  {
+    "id": "g4-reading-15",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 3,
+    "prompt": "The old fort was enormous. It took the children more than an hour to walk all around its high stone walls. What does \"enormous\" mean here?",
+    "type": "passage",
+    "payload": {
+      "text": "The old fort was enormous. It took the children more than an hour to walk all around its high stone walls.",
+      "question": "What does \"enormous\" mean here?"
+    },
+    "options": [
+      "very old",
+      "very big",
+      "very pretty"
+    ],
+    "answer": "very big"
+  },
+  {
+    "id": "g4-reading-16",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 3,
+    "prompt": "Meera was delighted when she saw her birthday cake. She clapped her hands and jumped with joy. What does \"delighted\" mean here?",
+    "type": "passage",
+    "payload": {
+      "text": "Meera was delighted when she saw her birthday cake. She clapped her hands and jumped with joy.",
+      "question": "What does \"delighted\" mean here?"
+    },
+    "options": [
+      "very pleased",
+      "very full",
+      "a little worried"
+    ],
+    "answer": "very pleased"
+  },
+  {
+    "id": "g4-reading-17",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 3,
+    "prompt": "The path up the hill was narrow, so the children had to walk one behind the other. What does \"narrow\" mean here?",
+    "type": "passage",
+    "payload": {
+      "text": "The path up the hill was narrow, so the children had to walk one behind the other.",
+      "question": "What does \"narrow\" mean here?"
+    },
+    "options": [
+      "not wide",
+      "very long",
+      "very steep"
+    ],
+    "answer": "not wide"
+  },
+  {
+    "id": "g4-reading-18",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 3,
+    "prompt": "The soup was so scalding that Vikram had to wait ten minutes before he could take a sip. What does \"scalding\" mean here?",
+    "type": "passage",
+    "payload": {
+      "text": "The soup was so scalding that Vikram had to wait ten minutes before he could take a sip.",
+      "question": "What does \"scalding\" mean here?"
+    },
+    "options": [
+      "very cold",
+      "very salty",
+      "very hot"
+    ],
+    "answer": "very hot"
+  },
+  {
+    "id": "g4-reading-19",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 3,
+    "prompt": "The kitten was timid. It hid under the bed whenever anyone came into the room and only came out when it was quiet. What does \"timid\" mean here?",
+    "type": "passage",
+    "payload": {
+      "text": "The kitten was timid. It hid under the bed whenever anyone came into the room and only came out when it was quiet.",
+      "question": "What does \"timid\" mean here?"
+    },
+    "options": [
+      "very playful",
+      "shy and easily scared",
+      "sleepy"
+    ],
+    "answer": "shy and easily scared"
+  },
+  {
+    "id": "g4-reading-20",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-reading",
+    "difficulty": 3,
+    "prompt": "After running the race, Raj was exhausted. He sat down under a tree and drank two glasses of water before he could talk. What does \"exhausted\" mean here?",
+    "type": "passage",
+    "payload": {
+      "text": "After running the race, Raj was exhausted. He sat down under a tree and drank two glasses of water before he could talk.",
+      "question": "What does \"exhausted\" mean here?"
+    },
+    "options": [
+      "very tired",
+      "very happy",
+      "very hungry"
+    ],
+    "answer": "very tired"
+  }
+]

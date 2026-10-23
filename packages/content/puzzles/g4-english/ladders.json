@@ -1,0 +1,646 @@
+[
+  {
+    "id": "g4-ladders-01",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 1,
+    "prompt": "Change one letter at a time to turn ship into stop.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "ship",
+        "shop",
+        "stop"
+      ],
+      "choices": [
+        [
+          "foot",
+          "goat",
+          "shop"
+        ],
+        [
+          "bell",
+          "look",
+          "stop"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-02",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 1,
+    "prompt": "Change one letter at a time to turn lion into moon.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "lion",
+        "loon",
+        "moon"
+      ],
+      "choices": [
+        [
+          "warn",
+          "moan",
+          "loon"
+        ],
+        [
+          "wise",
+          "wash",
+          "moon"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-03",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 1,
+    "prompt": "Change one letter at a time to turn fish into wish.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "fish",
+        "dish",
+        "wish"
+      ],
+      "choices": [
+        [
+          "gain",
+          "dish",
+          "rack"
+        ],
+        [
+          "wish",
+          "moan",
+          "lane"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-04",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 1,
+    "prompt": "Change one letter at a time to turn road into loud.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "road",
+        "load",
+        "loud"
+      ],
+      "choices": [
+        [
+          "coat",
+          "cake",
+          "load"
+        ],
+        [
+          "loon",
+          "bond",
+          "loud"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-05",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 1,
+    "prompt": "Change one letter at a time to turn hot into cat.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "hot",
+        "hat",
+        "cat"
+      ],
+      "choices": [
+        [
+          "pan",
+          "can",
+          "hat"
+        ],
+        [
+          "bin",
+          "cat",
+          "get"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-06",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 1,
+    "prompt": "Change one letter at a time to turn rain into grin.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "rain",
+        "gain",
+        "grin"
+      ],
+      "choices": [
+        [
+          "gain",
+          "rock",
+          "lion"
+        ],
+        [
+          "grin",
+          "cord",
+          "make"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-07",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 1,
+    "prompt": "Change one letter at a time to turn hot into cat.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "hot",
+        "hat",
+        "cat"
+      ],
+      "choices": [
+        [
+          "hat",
+          "net",
+          "sun"
+        ],
+        [
+          "beg",
+          "cat",
+          "bun"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-08",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 2,
+    "prompt": "Change one letter at a time to turn bell into tale.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "bell",
+        "ball",
+        "tall",
+        "tale"
+      ],
+      "choices": [
+        [
+          "lean",
+          "ball",
+          "hook"
+        ],
+        [
+          "lean",
+          "tail",
+          "tall"
+        ],
+        [
+          "tale",
+          "wash",
+          "bill"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-09",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 2,
+    "prompt": "Change one letter at a time to turn coat into foot.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "coat",
+        "boat",
+        "boot",
+        "foot"
+      ],
+      "choices": [
+        [
+          "fish",
+          "boom",
+          "boat"
+        ],
+        [
+          "bond",
+          "card",
+          "boot"
+        ],
+        [
+          "warm",
+          "sand",
+          "foot"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-10",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 2,
+    "prompt": "Change one letter at a time to turn pig into man.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "pig",
+        "pin",
+        "pan",
+        "man"
+      ],
+      "choices": [
+        [
+          "rid",
+          "pin",
+          "cot"
+        ],
+        [
+          "tan",
+          "pan",
+          "sit"
+        ],
+        [
+          "bed",
+          "dot",
+          "man"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-11",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 2,
+    "prompt": "Change one letter at a time to turn ten into cap.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "ten",
+        "tan",
+        "can",
+        "cap"
+      ],
+      "choices": [
+        [
+          "tan",
+          "bed",
+          "pin"
+        ],
+        [
+          "can",
+          "hat",
+          "fun"
+        ],
+        [
+          "pin",
+          "cap",
+          "mat"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-12",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 2,
+    "prompt": "Change one letter at a time to turn bed into nod.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "bed",
+        "red",
+        "rod",
+        "nod"
+      ],
+      "choices": [
+        [
+          "bat",
+          "red",
+          "bun"
+        ],
+        [
+          "sun",
+          "ten",
+          "rod"
+        ],
+        [
+          "tip",
+          "nod",
+          "hot"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-13",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 2,
+    "prompt": "Change one letter at a time to turn sun into bit.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "sun",
+        "bun",
+        "bin",
+        "bit"
+      ],
+      "choices": [
+        [
+          "bun",
+          "can",
+          "bed"
+        ],
+        [
+          "bin",
+          "ton",
+          "cap"
+        ],
+        [
+          "nod",
+          "dig",
+          "bit"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-14",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 2,
+    "prompt": "Change one letter at a time to turn hen into net.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "hen",
+        "pen",
+        "pet",
+        "net"
+      ],
+      "choices": [
+        [
+          "gap",
+          "pan",
+          "pen"
+        ],
+        [
+          "sit",
+          "pet",
+          "cat"
+        ],
+        [
+          "tan",
+          "can",
+          "net"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-15",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 3,
+    "prompt": "Change one letter at a time to turn mat into top.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "mat",
+        "map",
+        "mop",
+        "top"
+      ],
+      "choices": [
+        [
+          "cot",
+          "pit",
+          "map"
+        ],
+        [
+          "pin",
+          "pet",
+          "mop"
+        ],
+        [
+          "cot",
+          "top",
+          "pit"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-16",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 3,
+    "prompt": "Change one letter at a time to turn ten into cap.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "ten",
+        "tan",
+        "can",
+        "cap"
+      ],
+      "choices": [
+        [
+          "tan",
+          "bed",
+          "cut"
+        ],
+        [
+          "can",
+          "tip",
+          "sit"
+        ],
+        [
+          "nod",
+          "dig",
+          "cap"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-17",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 3,
+    "prompt": "Change one letter at a time to turn sun into bit.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "sun",
+        "bun",
+        "bin",
+        "bit"
+      ],
+      "choices": [
+        [
+          "hop",
+          "can",
+          "bun"
+        ],
+        [
+          "bin",
+          "bed",
+          "top"
+        ],
+        [
+          "bit",
+          "get",
+          "red"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-18",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 3,
+    "prompt": "Change one letter at a time to turn hand into bead.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "hand",
+        "band",
+        "bend",
+        "bead"
+      ],
+      "choices": [
+        [
+          "bead",
+          "loud",
+          "band"
+        ],
+        [
+          "bend",
+          "step",
+          "rock"
+        ],
+        [
+          "book",
+          "bead",
+          "lord"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-19",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 3,
+    "prompt": "Change one letter at a time to turn cold into warm.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "cold",
+        "cord",
+        "card",
+        "ward",
+        "warm"
+      ],
+      "choices": [
+        [
+          "stop",
+          "boot",
+          "cord"
+        ],
+        [
+          "time",
+          "card",
+          "loud"
+        ],
+        [
+          "load",
+          "rack",
+          "ward"
+        ],
+        [
+          "warm",
+          "bend",
+          "sock"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "g4-ladders-20",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-ladders",
+    "difficulty": 3,
+    "prompt": "Change one letter at a time to turn coat into foot.",
+    "type": "word-ladder",
+    "payload": {
+      "ladder": [
+        "coat",
+        "boat",
+        "boot",
+        "foot"
+      ],
+      "choices": [
+        [
+          "bend",
+          "dash",
+          "boat"
+        ],
+        [
+          "pain",
+          "fish",
+          "boot"
+        ],
+        [
+          "foot",
+          "bond",
+          "grit"
+        ]
+      ]
+    }
+  }
+]

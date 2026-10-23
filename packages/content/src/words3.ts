@@ -1,6 +1,6 @@
 // Word tables and short passages for Grade 3 English. The checker recomputes answers from these.
 
-export type WordClass = 'noun' | 'verb' | 'adjective';
+export type WordClass = 'noun' | 'verb' | 'adjective' | 'pronoun' | 'adverb';
 
 /** Sentences with each word tagged; questions only ask for a class that appears exactly once. */
 export const TAGGED: string[] = [
@@ -28,6 +28,12 @@ export const TAGGED: string[] = [
   'The bright/adjective sun/noun shines/verb.',
 ];
 
+/** How each word class is named in a question. */
+export const WORDS_FOR: Record<WordClass, string> = {
+  noun: 'naming word (noun)', verb: 'doing word (verb)', adjective: 'describing word (adjective)',
+  pronoun: 'pronoun (a word used instead of a name)', adverb: 'adverb (a word that tells how, when or where)',
+};
+
 /** Split a tagged sentence into words (punctuation kept off) and their classes. */
 export function parseTagged(s: string): { word: string; tag?: WordClass }[] {
   return s.replace(/[.,!?]/g, '').split(' ').map((w) => {
@@ -35,7 +41,7 @@ export function parseTagged(s: string): { word: string; tag?: WordClass }[] {
     return { word, tag: tag as WordClass | undefined };
   });
 }
-export const plainSentence = (s: string) => s.replace(/\/(noun|verb|adjective)/g, '');
+export const plainSentence = (s: string) => s.replace(/\/(noun|verb|adjective|pronoun|adverb)/g, '');
 
 /** Present → past. */
 export const PAST: Record<string, { past: string; kind: 'ed' | 'spelling' | 'irregular' }> = {

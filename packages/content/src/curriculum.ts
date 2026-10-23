@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -87,6 +87,11 @@ export const TOPICS: Topic[] = [
   { id: 'g4-decimals', grade: 4, subject: 'maths', title: 'Decimals', blurb: 'Paise and tenths', glyph: '0.5', color: colors.purple },
   { id: 'g4-time', grade: 4, subject: 'maths', title: 'Time', blurb: '24-hour clock, how long', glyph: '⏱️', color: colors.teal },
   { id: 'g4-area', grade: 4, subject: 'maths', title: 'Area and perimeter', blurb: 'Squares and edges', glyph: '▦', color: colors.orange },
+  { id: 'g4-pronouns', grade: 4, subject: 'english', title: 'Pronouns and adverbs', blurb: 'he, she, quickly', glyph: 'he', color: colors.blue },
+  { id: 'g4-tenses', grade: 4, subject: 'english', title: 'Tenses', blurb: 'will play, is playing', glyph: '⏩', color: colors.pink },
+  { id: 'g4-affixes', grade: 4, subject: 'english', title: 'Prefixes and suffixes', blurb: 'un-, re-, -ful, -less', glyph: 'un-', color: colors.green },
+  { id: 'g4-ladders', grade: 4, subject: 'english', title: 'Word ladders', blurb: 'One letter at a time', glyph: '🪜', color: colors.orange },
+  { id: 'g4-reading', grade: 4, subject: 'english', title: 'Read and think', blurb: 'Longer stories', glyph: '📚', color: colors.purple },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

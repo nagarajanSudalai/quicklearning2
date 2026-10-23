@@ -1,0 +1,422 @@
+[
+  {
+    "id": "g4-tenses-01",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 1,
+    "prompt": "Tomorrow he ___ (shop).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow he ___ (shop).",
+      "rule": "future",
+      "base": "shop",
+      "who": "He"
+    },
+    "options": [
+      "is shop",
+      "will shopping",
+      "will shop"
+    ],
+    "answer": "will shop"
+  },
+  {
+    "id": "g4-tenses-02",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 1,
+    "prompt": "Tomorrow the children ___ (write).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow the children ___ (write).",
+      "rule": "future",
+      "base": "write",
+      "who": "The children"
+    },
+    "options": [
+      "are write",
+      "will write",
+      "will writing"
+    ],
+    "answer": "will write"
+  },
+  {
+    "id": "g4-tenses-03",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 1,
+    "prompt": "Tomorrow I ___ (jump).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow I ___ (jump).",
+      "rule": "future",
+      "base": "jump",
+      "who": "I"
+    },
+    "options": [
+      "will jump",
+      "will jumping",
+      "am jump"
+    ],
+    "answer": "will jump"
+  },
+  {
+    "id": "g4-tenses-04",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 1,
+    "prompt": "Tomorrow Ravi ___ (sit).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow Ravi ___ (sit).",
+      "rule": "future",
+      "base": "sit",
+      "who": "Ravi"
+    },
+    "options": [
+      "will sitting",
+      "will sit",
+      "is sit"
+    ],
+    "answer": "will sit"
+  },
+  {
+    "id": "g4-tenses-05",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 1,
+    "prompt": "Tomorrow my mother ___ (skip).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow my mother ___ (skip).",
+      "rule": "future",
+      "base": "skip",
+      "who": "My mother"
+    },
+    "options": [
+      "will skipping",
+      "is skip",
+      "will skip"
+    ],
+    "answer": "will skip"
+  },
+  {
+    "id": "g4-tenses-06",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 1,
+    "prompt": "Tomorrow they ___ (eat).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow they ___ (eat).",
+      "rule": "future",
+      "base": "eat",
+      "who": "They"
+    },
+    "options": [
+      "will eating",
+      "will eat",
+      "are eat"
+    ],
+    "answer": "will eat"
+  },
+  {
+    "id": "g4-tenses-07",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 1,
+    "prompt": "Tomorrow she ___ (cut).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow she ___ (cut).",
+      "rule": "future",
+      "base": "cut",
+      "who": "She"
+    },
+    "options": [
+      "will cut",
+      "will cutting",
+      "is cut"
+    ],
+    "answer": "will cut"
+  },
+  {
+    "id": "g4-tenses-08",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 2,
+    "prompt": "Right now we ___ (dance).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now we ___ (dance).",
+      "rule": "continuous",
+      "base": "dance",
+      "who": "We"
+    },
+    "options": [
+      "am dancing",
+      "are dancing",
+      "are dance"
+    ],
+    "answer": "are dancing"
+  },
+  {
+    "id": "g4-tenses-09",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 2,
+    "prompt": "Right now she ___ (bake).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now she ___ (bake).",
+      "rule": "continuous",
+      "base": "bake",
+      "who": "She"
+    },
+    "options": [
+      "is baking",
+      "is bake",
+      "are baking"
+    ],
+    "answer": "is baking"
+  },
+  {
+    "id": "g4-tenses-10",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 2,
+    "prompt": "Right now I ___ (run).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now I ___ (run).",
+      "rule": "continuous",
+      "base": "run",
+      "who": "I"
+    },
+    "options": [
+      "are running",
+      "am run",
+      "am running"
+    ],
+    "answer": "am running"
+  },
+  {
+    "id": "g4-tenses-11",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 2,
+    "prompt": "Right now my mother ___ (make).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now my mother ___ (make).",
+      "rule": "continuous",
+      "base": "make",
+      "who": "My mother"
+    },
+    "options": [
+      "are making",
+      "is making",
+      "is make"
+    ],
+    "answer": "is making"
+  },
+  {
+    "id": "g4-tenses-12",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 2,
+    "prompt": "Right now we ___ (clap).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now we ___ (clap).",
+      "rule": "continuous",
+      "base": "clap",
+      "who": "We"
+    },
+    "options": [
+      "are clap",
+      "are clapping",
+      "is clapping"
+    ],
+    "answer": "are clapping"
+  },
+  {
+    "id": "g4-tenses-13",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 2,
+    "prompt": "Right now they ___ (walk).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now they ___ (walk).",
+      "rule": "continuous",
+      "base": "walk",
+      "who": "They"
+    },
+    "options": [
+      "are walk",
+      "am walking",
+      "are walking"
+    ],
+    "answer": "are walking"
+  },
+  {
+    "id": "g4-tenses-14",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 2,
+    "prompt": "Right now he ___ (cook).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now he ___ (cook).",
+      "rule": "continuous",
+      "base": "cook",
+      "who": "He"
+    },
+    "options": [
+      "is cooking",
+      "am cooking",
+      "is cook"
+    ],
+    "answer": "is cooking"
+  },
+  {
+    "id": "g4-tenses-15",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 3,
+    "prompt": "Right now Ravi ___ (play).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now Ravi ___ (play).",
+      "rule": "continuous",
+      "base": "play",
+      "who": "Ravi"
+    },
+    "options": [
+      "is play",
+      "is playing",
+      "am playing"
+    ],
+    "answer": "is playing"
+  },
+  {
+    "id": "g4-tenses-16",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 3,
+    "prompt": "Tomorrow the children ___ (swim).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow the children ___ (swim).",
+      "rule": "future",
+      "base": "swim",
+      "who": "The children"
+    },
+    "options": [
+      "will swim",
+      "will swimming",
+      "are swim"
+    ],
+    "answer": "will swim"
+  },
+  {
+    "id": "g4-tenses-17",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 3,
+    "prompt": "Right now he ___ (ride).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now he ___ (ride).",
+      "rule": "continuous",
+      "base": "ride",
+      "who": "He"
+    },
+    "options": [
+      "is riding",
+      "am riding",
+      "is ride"
+    ],
+    "answer": "is riding"
+  },
+  {
+    "id": "g4-tenses-18",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 3,
+    "prompt": "Tomorrow the children ___ (sing).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow the children ___ (sing).",
+      "rule": "future",
+      "base": "sing",
+      "who": "The children"
+    },
+    "options": [
+      "will sing",
+      "will singing",
+      "are sing"
+    ],
+    "answer": "will sing"
+  },
+  {
+    "id": "g4-tenses-19",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 3,
+    "prompt": "Right now my mother ___ (read).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Right now my mother ___ (read).",
+      "rule": "continuous",
+      "base": "read",
+      "who": "My mother"
+    },
+    "options": [
+      "is read",
+      "is reading",
+      "am reading"
+    ],
+    "answer": "is reading"
+  },
+  {
+    "id": "g4-tenses-20",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-tenses",
+    "difficulty": 3,
+    "prompt": "Tomorrow Ravi ___ (drive).",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "Tomorrow Ravi ___ (drive).",
+      "rule": "future",
+      "base": "drive",
+      "who": "Ravi"
+    },
+    "options": [
+      "is drive",
+      "will driving",
+      "will drive"
+    ],
+    "answer": "will drive"
+  }
+]

@@ -13,6 +13,7 @@ import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/math
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
 import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
+import { AFFIXES, ING, LADDER_WORDS, PASSAGES4, SUBJECTS4, oneLetterApart } from '../src/words4.ts';
 import { IS_ARE, OPPOSITES, PLURALS, article } from '../src/words2.ts';
 import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
@@ -134,6 +135,13 @@ function check(p: any): string | null {
         want = h?.answer;
         if (h && p.options.some((o: string) => !h.set.includes(o))) return 'options must be words that sound the same';
       }
+      else if (q.rule === 'future') want = `will ${q.base}`;
+      else if (q.rule === 'continuous') { const s = SUBJECTS4.find((x) => x.who === q.who); want = s && ING[q.base] ? `${s.be} ${ING[q.base]}` : undefined; }
+      else if (q.rule === 'affix') {
+        want = AFFIXES.find((a) => a.word === q.base)?.word;
+        const real = p.options.find((o: string) => o !== p.answer && AFFIXES.some((a) => a.word === o));
+        if (real) return `${real} is also a real word in the bank`;
+      }
       if (!want) return `no ${q.rule} rule for "${q.base}"`;
       return want === p.answer ? null : `answer should be "${want}"`;
     }
@@ -172,7 +180,7 @@ function check(p: any): string | null {
       return hits[0].word === p.answer ? null : `the ${q.ask} is "${hits[0].word}"`;
     }
     case 'passage': {
-      const b = PASSAGES.find((x) => x.text === q.text && x.question === q.question);
+      const b = [...PASSAGES, ...PASSAGES4].find((x) => x.text === q.text && x.question === q.question);
       if (!b) return 'passage not in the bank';
       if (p.options.some((o: string) => o !== b.answer && !b.wrong.includes(o))) return 'unknown option';
       return b.answer === p.answer ? null : `answer is "${b.answer}"`;
@@ -322,6 +330,19 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     if (new Set(q.items).size !== q.items.length) return 'items must be different';
     const right = q.items.filter((x: number) => fits(q.kind, q.n, x, q.m)).length;
     return right >= 1 && right < q.items.length ? null : 'needs some right and some wrong numbers';
+  },
+  'word-ladder'(q) {
+    const l: string[] = q.ladder;
+    if (l.length < 3) return 'ladder needs at least 3 words';
+    for (let k = 1; k < l.length; k++) if (!oneLetterApart(l[k - 1], l[k])) return `${l[k - 1]} → ${l[k]} changes more than one letter`;
+    if (q.choices.length !== l.length - 1) return 'one set of choices per step';
+    for (let k = 0; k < q.choices.length; k++) {
+      const valid = q.choices[k].filter((w: string) => oneLetterApart(l[k], w));
+      if (valid.length !== 1 || valid[0] !== l[k + 1]) return `step ${k + 1} must have exactly one valid move (${l[k + 1]})`;
+      const unknown = q.choices[k].find((w: string) => !LADDER_WORDS.has(w));
+      if (unknown) return `"${unknown}" is not in the word list`;
+    }
+    return null;
   },
   maze(q) {
     const { rows, cols, cells, start, goal } = q;

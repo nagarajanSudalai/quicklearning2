@@ -1,0 +1,400 @@
+[
+  {
+    "id": "g4-affixes-01",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 1,
+    "prompt": "A word that means \"to write again\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"to write again\" is ___.",
+      "rule": "affix",
+      "base": "rewrite"
+    },
+    "options": [
+      "rewrite",
+      "unwrite",
+      "diswrite"
+    ],
+    "answer": "rewrite"
+  },
+  {
+    "id": "g4-affixes-02",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 1,
+    "prompt": "A word that means \"to not like\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"to not like\" is ___.",
+      "rule": "affix",
+      "base": "dislike"
+    },
+    "options": [
+      "dislike",
+      "relike",
+      "dislikes"
+    ],
+    "answer": "dislike"
+  },
+  {
+    "id": "g4-affixes-03",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 1,
+    "prompt": "A word that means \"to do again\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"to do again\" is ___.",
+      "rule": "affix",
+      "base": "redo"
+    },
+    "options": [
+      "redo",
+      "disdo",
+      "undo"
+    ],
+    "answer": "redo"
+  },
+  {
+    "id": "g4-affixes-04",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 1,
+    "prompt": "A word that means \"to read again\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"to read again\" is ___.",
+      "rule": "affix",
+      "base": "reread"
+    },
+    "options": [
+      "unread",
+      "disread",
+      "reread"
+    ],
+    "answer": "reread"
+  },
+  {
+    "id": "g4-affixes-05",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 1,
+    "prompt": "A word that means \"not happy\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"not happy\" is ___.",
+      "rule": "affix",
+      "base": "unhappy"
+    },
+    "options": [
+      "rehappy",
+      "dishappy",
+      "unhappy"
+    ],
+    "answer": "unhappy"
+  },
+  {
+    "id": "g4-affixes-06",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 1,
+    "prompt": "A word that means \"not kind\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"not kind\" is ___.",
+      "rule": "affix",
+      "base": "unkind"
+    },
+    "options": [
+      "rekind",
+      "diskind",
+      "unkind"
+    ],
+    "answer": "unkind"
+  },
+  {
+    "id": "g4-affixes-07",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 1,
+    "prompt": "A word that means \"to open a lock\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"to open a lock\" is ___.",
+      "rule": "affix",
+      "base": "unlock"
+    },
+    "options": [
+      "dislock",
+      "unlock",
+      "unlocks"
+    ],
+    "answer": "unlock"
+  },
+  {
+    "id": "g4-affixes-08",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 2,
+    "prompt": "A word that means \"full of help\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"full of help\" is ___.",
+      "rule": "affix",
+      "base": "helpful"
+    },
+    "options": [
+      "helpfull",
+      "helpful",
+      "helpless"
+    ],
+    "answer": "helpful"
+  },
+  {
+    "id": "g4-affixes-09",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 2,
+    "prompt": "A word that means \"without pain\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"without pain\" is ___.",
+      "rule": "affix",
+      "base": "painless"
+    },
+    "options": [
+      "painless",
+      "painful",
+      "painer"
+    ],
+    "answer": "painless"
+  },
+  {
+    "id": "g4-affixes-10",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 2,
+    "prompt": "A word that means \"full of colour\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"full of colour\" is ___.",
+      "rule": "affix",
+      "base": "colourful"
+    },
+    "options": [
+      "colourless",
+      "colourful",
+      "colourer"
+    ],
+    "answer": "colourful"
+  },
+  {
+    "id": "g4-affixes-11",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 2,
+    "prompt": "A word that means \"full of joy\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"full of joy\" is ___.",
+      "rule": "affix",
+      "base": "joyful"
+    },
+    "options": [
+      "joyful",
+      "joyless",
+      "joyer"
+    ],
+    "answer": "joyful"
+  },
+  {
+    "id": "g4-affixes-12",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 2,
+    "prompt": "A word that means \"full of care\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"full of care\" is ___.",
+      "rule": "affix",
+      "base": "careful"
+    },
+    "options": [
+      "careful",
+      "carefull"
+    ],
+    "answer": "careful"
+  },
+  {
+    "id": "g4-affixes-13",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 2,
+    "prompt": "A word that means \"without care\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"without care\" is ___.",
+      "rule": "affix",
+      "base": "careless"
+    },
+    "options": [
+      "carelessl",
+      "careless"
+    ],
+    "answer": "careless"
+  },
+  {
+    "id": "g4-affixes-14",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 2,
+    "prompt": "A word that means \"without fear\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"without fear\" is ___.",
+      "rule": "affix",
+      "base": "fearless"
+    },
+    "options": [
+      "fearless",
+      "fearful",
+      "fearer"
+    ],
+    "answer": "fearless"
+  },
+  {
+    "id": "g4-affixes-15",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 3,
+    "prompt": "A word that means \"a person who paints\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"a person who paints\" is ___.",
+      "rule": "affix",
+      "base": "painter"
+    },
+    "options": [
+      "painter",
+      "paintless",
+      "paintful"
+    ],
+    "answer": "painter"
+  },
+  {
+    "id": "g4-affixes-16",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 3,
+    "prompt": "A word that means \"to not agree\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"to not agree\" is ___.",
+      "rule": "affix",
+      "base": "disagree"
+    },
+    "options": [
+      "unagree",
+      "disagrees",
+      "disagree"
+    ],
+    "answer": "disagree"
+  },
+  {
+    "id": "g4-affixes-17",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 3,
+    "prompt": "A word that means \"a person who teaches\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"a person who teaches\" is ___.",
+      "rule": "affix",
+      "base": "teacher"
+    },
+    "options": [
+      "teachless",
+      "teacher",
+      "teachful"
+    ],
+    "answer": "teacher"
+  },
+  {
+    "id": "g4-affixes-18",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 3,
+    "prompt": "A word that means \"not safe\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"not safe\" is ___.",
+      "rule": "affix",
+      "base": "unsafe"
+    },
+    "options": [
+      "resafe",
+      "unsafe",
+      "dissafe"
+    ],
+    "answer": "unsafe"
+  },
+  {
+    "id": "g4-affixes-19",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 3,
+    "prompt": "A word that means \"without a home\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"without a home\" is ___.",
+      "rule": "affix",
+      "base": "homeless"
+    },
+    "options": [
+      "homeless",
+      "homeful",
+      "homeer"
+    ],
+    "answer": "homeless"
+  },
+  {
+    "id": "g4-affixes-20",
+    "grade": 4,
+    "subject": "english",
+    "topic": "g4-affixes",
+    "difficulty": 3,
+    "prompt": "A word that means \"not happy\" is ___.",
+    "type": "fill-blank",
+    "payload": {
+      "sentence": "A word that means \"not happy\" is ___.",
+      "rule": "affix",
+      "base": "unhappy"
+    },
+    "options": [
+      "dishappy",
+      "unhappy",
+      "rehappy"
+    ],
+    "answer": "unhappy"
+  }
+]

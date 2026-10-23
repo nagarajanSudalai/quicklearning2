@@ -4,7 +4,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { HOMOPHONES, PASSAGES, PAST, SPELLING_WORDS, SYNONYMS, TAGGED, parseTagged, type WordClass } from '../src/words3.ts';
+import { HOMOPHONES, PASSAGES, PAST, SPELLING_WORDS, SYNONYMS, TAGGED, parseTagged, WORDS_FOR, type WordClass } from '../src/words3.ts';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles', 'g3-english');
 
@@ -29,7 +29,6 @@ function cycler<T>(pool: readonly T[]) {
 }
 
 const ASK: Record<number, WordClass> = { 1: 'noun', 2: 'verb', 3: 'adjective' };
-const WORDS_FOR: Record<WordClass, string> = { noun: 'naming word (noun)', verb: 'doing word (verb)', adjective: 'describing word (adjective)' };
 function wordClass() {
   const pools = Object.fromEntries((['noun', 'verb', 'adjective'] as WordClass[]).map((c) => [c, TAGGED.filter((s) => parseTagged(s).filter((w) => w.tag === c).length === 1)]));
   const next = Object.fromEntries(Object.entries(pools).map(([c, p]) => [c, cycler(p)])) as Record<WordClass, () => string>;

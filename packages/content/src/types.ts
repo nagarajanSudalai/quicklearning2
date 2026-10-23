@@ -129,7 +129,7 @@ export type MoneyPuzzle = Base & {
 /** A sentence with a blank (___) to fill; `rule` and `base` let the checker work out the answer. */
 export type FillBlankPuzzle = Base & {
   type: 'fill-blank';
-  payload: { sentence: string; picture?: string; rule: 'plural' | 'opposite' | 'article' | 'is-are' | 'past' | 'synonym' | 'homophone'; base: string };
+  payload: { sentence: string; picture?: string; rule: 'plural' | 'opposite' | 'article' | 'is-are' | 'past' | 'synonym' | 'homophone' | 'future' | 'continuous' | 'affix'; base: string; who?: string };
   options: string[];
   answer: string;
 };
@@ -177,7 +177,7 @@ export type MeasurePuzzle = Base & {
 /** Tap the naming (noun), doing (verb) or describing (adjective) word in a sentence. Options are its words. */
 export type WordClassPuzzle = Base & {
   type: 'word-class';
-  payload: { tagged: string; ask: 'noun' | 'verb' | 'adjective' };
+  payload: { tagged: string; ask: 'noun' | 'verb' | 'adjective' | 'pronoun' | 'adverb' };
   options: string[];
   answer: string;
 };
@@ -302,6 +302,13 @@ export type PickAllPuzzle = Base & {
   payload: { kind: 'multiple' | 'factor' | 'common-multiple'; n: number; m?: number; items: number[] };
 };
 
+/** Word ladder: get from the first word to the last, changing one letter at a time. `choices[k]` are the
+ * words offered for step k+1; exactly one of them is one letter away from `ladder[k]`. */
+export type WordLadderPuzzle = Base & {
+  type: 'word-ladder';
+  payload: { ladder: string[]; choices: string[][] };
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -333,7 +340,7 @@ export type ChoicePuzzle =
   | GridShapePuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -341,7 +348,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square', 'pick-all'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square', 'pick-all', 'word-ladder'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {

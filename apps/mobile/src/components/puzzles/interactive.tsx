@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { PHRASES, clueText, fits, sudokuShape, type PickAllPuzzle, type BuildPuzzle, type LogicGridPuzzle, type MagicSquarePuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
+import { PHRASES, clueText, fits, sudokuShape, type PickAllPuzzle, type WordLadderPuzzle, type BuildPuzzle, type LogicGridPuzzle, type MagicSquarePuzzle, type CrosswordPuzzle, type SudokuPuzzle, type OrderStepsPuzzle, type InteractivePuzzle, type InteractiveType, type MazePuzzle, type MemoryPuzzle, type SortPuzzle } from '@quickstep/content';
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
@@ -28,6 +28,7 @@ export const PLAYERS: Players = {
   'logic-grid': LogicGrid,
   'magic-square': MagicSquare,
   'pick-all': PickAll,
+  'word-ladder': WordLadder,
 };
 
 /** A tappable box that wiggles each time `wiggle` increments. */
@@ -604,6 +605,58 @@ function PickAll({ puzzle, onSolved, onMistake }: PlayerProps<PickAllPuzzle>) {
   );
 }
 
+// ---------- Word ladder ----------
+
+function WordLadder({ puzzle, sound, onSolved, onMistake }: PlayerProps<WordLadderPuzzle>) {
+  const { ladder, choices } = puzzle.payload;
+  const [step, setStep] = useState(0);
+  const [mistakes, setMistakes] = useState(0);
+  const [wiggle, setWiggle] = useState<{ w: string; n: number }>({ w: '', n: 0 });
+  const done = step === choices.length;
+
+  const tap = (w: string) => {
+    if (done) return;
+    if (w === ladder[step + 1]) {
+      buzz('right');
+      say(w, sound);
+      setStep(step + 1);
+      if (step + 1 === choices.length) onSolved(mistakes === 0);
+    } else {
+      buzz('wrong');
+      setMistakes((m) => m + 1);
+      setWiggle((x) => ({ w, n: x.n + 1 }));
+      onMistake('That changes more than one letter.');
+    }
+  };
+
+  // Highlight the letter that changed from the word above.
+  const Word = ({ w, prev, state }: { w: string; prev?: string; state: 'done' | 'goal' | 'blank' }) => (
+    <View style={[styles.rung, state === 'goal' && styles.rungGoal, state === 'blank' && styles.rungBlank]}>
+      {state === 'blank' ? <Text style={styles.blankRung}>?</Text> : [...w].map((ch, k) => (
+        <Text key={k} style={[styles.rungLetter, prev && prev[k] !== ch && { color: colors.brand }]}>{ch}</Text>
+      ))}
+    </View>
+  );
+
+  return (
+    <View style={{ gap: 12, alignItems: 'center' }}>
+      {ladder.map((w, k) => (
+        <Word key={k} w={w} prev={k > 0 && k <= step ? ladder[k - 1] : undefined}
+          state={k <= step ? 'done' : k === ladder.length - 1 ? 'goal' : 'blank'} />
+      ))}
+      {!done && (
+        <View style={styles.letterRow}>
+          {choices[step].map((w) => (
+            <Tap key={w} onPress={() => tap(w)} wiggle={wiggle.w === w ? wiggle.n : 0} label={w} style={styles.wordTile}>
+              <Text style={styles.wordSlotText}>{w}</Text>
+            </Tap>
+          ))}
+        </View>
+      )}
+    </View>
+  );
+}
+
 // ---------- Maze ----------
 
 const MOVES = { up: [-1, 0, 1], right: [0, 1, 2], down: [1, 0, 4], left: [0, -1, 8] } as const;
@@ -746,6 +799,11 @@ const styles = StyleSheet.create({
   mSum: { width: 36, textAlign: 'center', fontFamily: font.bodyHeavy, fontSize: 15, color: colors.muted },
   pickCell: { height: 64 },
   pickWrong: { backgroundColor: colors.wrongTint, borderColor: colors.wrong },
+  rung: { flexDirection: 'row', gap: 4, paddingHorizontal: 14, paddingVertical: 6, borderRadius: 12, backgroundColor: colors.rightTint, borderWidth: 2, borderColor: colors.right },
+  rungGoal: { backgroundColor: colors.panel, borderColor: colors.blank },
+  rungBlank: { backgroundColor: colors.surface, borderColor: colors.blank, borderStyle: 'dashed', minWidth: 90, justifyContent: 'center' },
+  rungLetter: { fontFamily: font.display, fontSize: 26, color: colors.ink, letterSpacing: 2 },
+  blankRung: { fontFamily: font.display, fontSize: 24, color: colors.blank },
   hint: { fontFamily: font.bodyBold, fontSize: 12, color: colors.muted },
   slots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' },
   letterSlot: { width: 46, height: 52, borderRadius: 10, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.blank, alignItems: 'center', justifyContent: 'center' },

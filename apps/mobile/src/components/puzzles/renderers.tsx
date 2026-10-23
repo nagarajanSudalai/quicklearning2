@@ -44,6 +44,8 @@ function PopShape({ kind, index, round, size }: { kind: Parameters<typeof Shape>
 /** Shrink long words to fit an option box (adjustsFontSizeToFit doesn't work on the web). */
 const fit = (w: string, size: number, maxChars: number) => ({ fontSize: w.length > maxChars ? Math.round((size * maxChars) / w.length) : size });
 
+const longest = (s: string) => s.split(' ').reduce((a, b) => (b.length > a.length ? b : a), '');
+
 const Number = ({ n }: { n: PuzzleOption }) => <Text style={styles.number}>{String(n)}</Text>;
 
 export const RENDERERS: Renderers = {
@@ -218,7 +220,8 @@ export const RENDERERS: Renderers = {
         </View>
       );
     },
-    option: (w) => <Text style={[styles.word, fit(w, 26, 5)]} numberOfLines={1}>{w}</Text>,
+    // Multi-word answers ("will shop") wrap; size by the longest single word.
+    option: (w) => <Text style={[styles.word, { textAlign: 'center' }, fit(longest(w), 24, 5)]} numberOfLines={2}>{w}</Text>,
     columns: (p) => p.options.length,
   },
   riddle: {
@@ -290,7 +293,7 @@ export const RENDERERS: Renderers = {
         <Text style={styles.sentenceText}>{plainSentence(puzzle.payload.tagged)}</Text>
       </View>
     ),
-    option: (w) => <Text style={[styles.wordSmall, fit(w, 20, 6)]} numberOfLines={1}>{w}</Text>,
+    option: (w) => <Text style={[styles.wordSmall, fit(w, 20, 8)]} numberOfLines={1}>{w}</Text>,
     columns: (p) => Math.min(3, p.options.length),
     optionHeight: 60,
   },
