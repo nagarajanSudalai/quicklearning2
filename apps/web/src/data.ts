@@ -27,7 +27,7 @@ export const POSTS: { cat: PostCategory; title: string; desc: string; when: stri
 export const FLOATERS = [
   { t: '3', l: '6%', tp: '8%', c: '#ff4f8b', r: '-12deg', d: 0 },
   { t: '5', l: '10%', tp: '70%', c: '#3b8cff', r: '10deg', d: 0.8 },
-  { t: 'A', l: '48%', tp: '6%', c: '#ff9a2e', r: '8deg', d: 1.4 },
+  { t: 'A', l: '26%', tp: '6%', c: '#ff9a2e', r: '8deg', d: 1.4 },
   { t: '★', l: '30%', tp: '82%', c: '#ffb800', r: '0deg', d: 0.4 },
   { t: '+', l: '58%', tp: '62%', c: '#2fbf71', r: '0deg', d: 1.1 },
 ];

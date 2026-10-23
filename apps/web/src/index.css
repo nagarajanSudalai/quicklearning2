@@ -49,7 +49,7 @@ button { font: inherit; }
 .hero__img { width: 100%; height: auto; align-self: center; border-radius: 32px; display: block; }
 .ribbons { position: absolute; right: -6px; bottom: 24px; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
 .ribbon { font-family: Fredoka; font-weight: 600; font-size: 22px; color: #fff; padding: 8px 26px 8px 18px; border-radius: 10px 4px 4px 10px; }
-.hero__bubble { position: absolute; top: 14px; right: 14px; background: #fff; border-radius: 18px; padding: 12px 16px; font-weight: 800; font-size: 14px; color: #3b2fd0; box-shadow: 0 8px 24px rgba(60,40,160,.12); max-width: 150px; text-align: center; }
+.hero__bubble { position: absolute; top: 14px; right: 14px; background: #fff; border-radius: 18px; padding: 12px 16px; font-weight: 800; font-size: 14px; color: #3b2fd0; box-shadow: 0 8px 24px rgba(60,40,160,.12); max-width: 150px; text-align: center; z-index: 2; }
 
 /* Subject bar */
 .subjects { margin-top: -36px; position: relative; z-index: 2; }
