@@ -4,6 +4,9 @@ import assert from 'node:assert/strict';
 import { nextLevel, pickNext, startLevel } from '../src/adaptive.ts';
 import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
 import { countSolutions, isSolved } from '../src/sudoku.ts';
+import { duration, fits, fracCmp, gridMeasure, to12, to24 } from '../src/maths4.ts';
+import { encode, patternTerms } from '../src/thinking4.ts';
+import { oneLetterApart } from '../src/words4.ts';
 import type { Puzzle } from '../src/types.ts';
 import { pickVoice, speakable, type VoiceLike } from '../src/voice.ts';
 
@@ -26,6 +29,8 @@ assert.equal(speakable('One cat, two ___.'), 'One cat, two blank .');
 assert.equal(speakable('What is 12 ÷ 3?'), 'What is 12 divided by 3?');
 assert.equal(speakable('Which picture shows 3/4?'), 'Which picture shows three quarters?');
 assert.equal(speakable('1/2'), 'one half');
+assert.equal(speakable('₹4.50'), '4 rupees 50 paise');
+assert.equal(speakable('0.75'), '0 point 7 5');
 console.log('voice tests OK');
 
 // Adaptive difficulty
@@ -63,3 +68,19 @@ assert.equal(magicSolutions([2, 7, 6, 9, 5, 1, 4, null, null]), 1);
 assert.equal(logicSolutions(3, [{ person: 0, item: 0, has: true }]).length, 2, 'one clue leaves 2 matchings');
 assert.equal(logicSolutions(3, [{ person: 0, item: 0, has: true }, { person: 1, item: 2, has: false }]).length, 1);
 console.log('solver tests OK');
+
+// Grade 4 helpers
+assert.deepEqual([1, 2, 3, 4, 5, 6, 12].filter((x) => fits('factor', 12, x)), [1, 2, 3, 4, 6, 12]);
+assert.ok(fits('common-multiple', 2, 30, 5) && !fits('common-multiple', 2, 25, 5));
+assert.equal(fracCmp([1, 2], [2, 4]), 0);
+assert.equal(fracCmp([3, 4], [2, 3]), 1);
+assert.equal(to24(15, 5), '15:05');
+assert.equal(to12(0, 30), '12:30 am');
+assert.equal(duration([9, 40], [12, 45]), '3 hours 5 minutes');
+assert.deepEqual(gridMeasure(2, 2, [true, true, true, false]), { area: 3, perimeter: 8 });
+assert.equal(encode('cat', 'number'), '3-1-20');
+assert.equal(encode('zoo', 'shift', 1), 'APP');
+assert.deepEqual(patternTerms({ kind: 'grow', start: 1, step: 1, growth: 1 }, 5), [1, 2, 4, 7, 11]);
+assert.ok(oneLetterApart('cat', 'cot') && !oneLetterApart('cat', 'dog'));
+assert.equal(logicSolutions(4, []).length, 24, '4 people, no clues → 24 matchings');
+console.log('grade 4 helper tests OK');

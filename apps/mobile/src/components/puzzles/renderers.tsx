@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Animated, StyleSheet, Text, View } from 'react-native';
-import { nameOf, plainSentence, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@quickstep/content';
+import { encode, nameOf, plainSentence, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@quickstep/content';
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
@@ -370,6 +370,20 @@ export const RENDERERS: Renderers = {
       </View>
     ),
     option: (n) => <Text style={styles.number}>{n}</Text>,
+    columns: () => 3,
+  },
+  cipher: {
+    Stimulus: ({ puzzle }) => {
+      const q = puzzle.payload;
+      return (
+        <View style={[styles.panel, styles.pictureBox]}>
+          <Text style={styles.picture}>🔐</Text>
+          {q.ask === 'decode' && <Text style={[styles.equation, fit(encode(q.word, q.kind, q.shift), 32, 8), { letterSpacing: 2 }]}>{encode(q.word, q.kind, q.shift)}</Text>}
+          {q.ask === 'encode' && <Text style={styles.pictureWord}>{q.word.toUpperCase()}</Text>}
+        </View>
+      );
+    },
+    option: (o) => <Text style={[styles.word, fit(o, 24, 6), { letterSpacing: 1 }]} numberOfLines={1}>{o}</Text>,
     columns: () => 3,
   },
   'odd-one-out': {

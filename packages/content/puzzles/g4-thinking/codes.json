@@ -1,0 +1,415 @@
+[
+  {
+    "id": "g4-codes-01",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 1,
+    "prompt": "Crack the code: 2-9-18-4. In this code, A = 1, B = 2, C = 3 and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "number",
+      "word": "bird",
+      "ask": "decode"
+    },
+    "options": [
+      "bird",
+      "tree",
+      "gold"
+    ],
+    "answer": "bird"
+  },
+  {
+    "id": "g4-codes-02",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 1,
+    "prompt": "Crack the code: 3-1-11-5. In this code, A = 1, B = 2, C = 3 and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "number",
+      "word": "cake",
+      "ask": "decode"
+    },
+    "options": [
+      "cake",
+      "tree",
+      "star"
+    ],
+    "answer": "cake"
+  },
+  {
+    "id": "g4-codes-03",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 1,
+    "prompt": "Crack the code: 19-8-9-16. In this code, A = 1, B = 2, C = 3 and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "number",
+      "word": "ship",
+      "ask": "decode"
+    },
+    "options": [
+      "ship",
+      "fish",
+      "nest"
+    ],
+    "answer": "ship"
+  },
+  {
+    "id": "g4-codes-04",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 1,
+    "prompt": "Crack the code: 19-20-1-18. In this code, A = 1, B = 2, C = 3 and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "number",
+      "word": "star",
+      "ask": "decode"
+    },
+    "options": [
+      "king",
+      "bird",
+      "star"
+    ],
+    "answer": "star"
+  },
+  {
+    "id": "g4-codes-05",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 1,
+    "prompt": "Crack the code: 14-5-19-20. In this code, A = 1, B = 2, C = 3 and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "number",
+      "word": "nest",
+      "ask": "decode"
+    },
+    "options": [
+      "nest",
+      "tree",
+      "cake"
+    ],
+    "answer": "nest"
+  },
+  {
+    "id": "g4-codes-06",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 1,
+    "prompt": "Crack the code: 13-1-14-7-15. In this code, A = 1, B = 2, C = 3 and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "number",
+      "word": "mango",
+      "ask": "decode"
+    },
+    "options": [
+      "chair",
+      "mango",
+      "tiger"
+    ],
+    "answer": "mango"
+  },
+  {
+    "id": "g4-codes-07",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 1,
+    "prompt": "Crack the code: 12-1-13-16. In this code, A = 1, B = 2, C = 3 and so on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "number",
+      "word": "lamp",
+      "ask": "decode"
+    },
+    "options": [
+      "gold",
+      "cake",
+      "lamp"
+    ],
+    "answer": "lamp"
+  },
+  {
+    "id": "g4-codes-08",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: MBNQ. In this code, each letter is moved 1 place on (A → B).",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "lamp",
+      "ask": "decode"
+    },
+    "options": [
+      "book",
+      "lamp",
+      "frog"
+    ],
+    "answer": "lamp"
+  },
+  {
+    "id": "g4-codes-09",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: CJSE. In this code, each letter is moved 1 place on (A → B).",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "bird",
+      "ask": "decode"
+    },
+    "options": [
+      "bird",
+      "nest",
+      "tree"
+    ],
+    "answer": "bird"
+  },
+  {
+    "id": "g4-codes-10",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: TIJQ. In this code, each letter is moved 1 place on (A → B).",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "ship",
+      "ask": "decode"
+    },
+    "options": [
+      "ship",
+      "moon",
+      "cake"
+    ],
+    "answer": "ship"
+  },
+  {
+    "id": "g4-codes-11",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: NBOHP. In this code, each letter is moved 1 place on (A → B).",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "mango",
+      "ask": "decode"
+    },
+    "options": [
+      "tiger",
+      "apple",
+      "mango"
+    ],
+    "answer": "mango"
+  },
+  {
+    "id": "g4-codes-12",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: EPH. In this code, each letter is moved 1 place on (A → B).",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "dog",
+      "ask": "decode"
+    },
+    "options": [
+      "cat",
+      "dog",
+      "sun"
+    ],
+    "answer": "dog"
+  },
+  {
+    "id": "g4-codes-13",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: DBLF. In this code, each letter is moved 1 place on (A → B).",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "cake",
+      "ask": "decode"
+    },
+    "options": [
+      "star",
+      "king",
+      "cake"
+    ],
+    "answer": "cake"
+  },
+  {
+    "id": "g4-codes-14",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 2,
+    "prompt": "Crack the code: GSPH. In this code, each letter is moved 1 place on (A → B).",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "frog",
+      "ask": "decode"
+    },
+    "options": [
+      "milk",
+      "fish",
+      "frog"
+    ],
+    "answer": "frog"
+  },
+  {
+    "id": "g4-codes-15",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 3,
+    "prompt": "Write \"DOG\" in code: move each letter 1 place on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "dog",
+      "ask": "encode"
+    },
+    "options": [
+      "HPE",
+      "FQI",
+      "EPH"
+    ],
+    "answer": "EPH"
+  },
+  {
+    "id": "g4-codes-16",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 3,
+    "prompt": "Write \"GOLD\" in code: move each letter 2 places on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 2,
+      "word": "gold",
+      "ask": "encode"
+    },
+    "options": [
+      "IQNF",
+      "HPME",
+      "FNQI"
+    ],
+    "answer": "IQNF"
+  },
+  {
+    "id": "g4-codes-17",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 3,
+    "prompt": "Write \"TIGER\" in code: move each letter 1 place on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "tiger",
+      "ask": "encode"
+    },
+    "options": [
+      "UJHFS",
+      "SFHJU",
+      "VKIGT"
+    ],
+    "answer": "UJHFS"
+  },
+  {
+    "id": "g4-codes-18",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 3,
+    "prompt": "Write \"NEST\" in code: move each letter 1 place on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "nest",
+      "ask": "encode"
+    },
+    "options": [
+      "OFTU",
+      "PGUV",
+      "UTFO"
+    ],
+    "answer": "OFTU"
+  },
+  {
+    "id": "g4-codes-19",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 3,
+    "prompt": "Write \"MILK\" in code: move each letter 1 place on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "milk",
+      "ask": "encode"
+    },
+    "options": [
+      "NJML",
+      "OKNM",
+      "LMJN"
+    ],
+    "answer": "NJML"
+  },
+  {
+    "id": "g4-codes-20",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-codes",
+    "difficulty": 3,
+    "prompt": "Write \"SUN\" in code: move each letter 1 place on.",
+    "type": "cipher",
+    "payload": {
+      "kind": "shift",
+      "shift": 1,
+      "word": "sun",
+      "ask": "encode"
+    },
+    "options": [
+      "UWP",
+      "TVO",
+      "OVT"
+    ],
+    "answer": "TVO"
+  }
+]

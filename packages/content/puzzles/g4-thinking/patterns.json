@@ -1,0 +1,589 @@
+[
+  {
+    "id": "g4-patterns-01",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        5,
+        10,
+        20,
+        40,
+        null
+      ],
+      "rule": {
+        "kind": "multiply",
+        "start": 5,
+        "by": 2
+      }
+    },
+    "options": [
+      60,
+      80,
+      81
+    ],
+    "answer": 80
+  },
+  {
+    "id": "g4-patterns-02",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        1,
+        3,
+        9,
+        27,
+        null
+      ],
+      "rule": {
+        "kind": "multiply",
+        "start": 1,
+        "by": 3
+      }
+    },
+    "options": [
+      81,
+      45,
+      82
+    ],
+    "answer": 81
+  },
+  {
+    "id": "g4-patterns-03",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        3,
+        6,
+        12,
+        24,
+        null
+      ],
+      "rule": {
+        "kind": "multiply",
+        "start": 3,
+        "by": 2
+      }
+    },
+    "options": [
+      49,
+      48,
+      36
+    ],
+    "answer": 48
+  },
+  {
+    "id": "g4-patterns-04",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        1,
+        2,
+        4,
+        8,
+        null
+      ],
+      "rule": {
+        "kind": "multiply",
+        "start": 1,
+        "by": 2
+      }
+    },
+    "options": [
+      16,
+      12,
+      17
+    ],
+    "answer": 16
+  },
+  {
+    "id": "g4-patterns-05",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        2,
+        4,
+        8,
+        16,
+        null
+      ],
+      "rule": {
+        "kind": "multiply",
+        "start": 2,
+        "by": 2
+      }
+    },
+    "options": [
+      33,
+      32,
+      24
+    ],
+    "answer": 32
+  },
+  {
+    "id": "g4-patterns-06",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        2,
+        6,
+        18,
+        54,
+        null
+      ],
+      "rule": {
+        "kind": "multiply",
+        "start": 2,
+        "by": 3
+      }
+    },
+    "options": [
+      90,
+      163,
+      162
+    ],
+    "answer": 162
+  },
+  {
+    "id": "g4-patterns-07",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 1,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        3,
+        9,
+        27,
+        81,
+        null
+      ],
+      "rule": {
+        "kind": "multiply",
+        "start": 3,
+        "by": 3
+      }
+    },
+    "options": [
+      244,
+      243,
+      135
+    ],
+    "answer": 243
+  },
+  {
+    "id": "g4-patterns-08",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        9,
+        11,
+        null,
+        21,
+        29
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 9,
+        "step": 2,
+        "growth": 2
+      }
+    },
+    "options": [
+      15,
+      13,
+      16
+    ],
+    "answer": 15
+  },
+  {
+    "id": "g4-patterns-09",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        9,
+        10,
+        null,
+        15,
+        19
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 9,
+        "step": 1,
+        "growth": 1
+      }
+    },
+    "options": [
+      12,
+      11,
+      13
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g4-patterns-10",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        5,
+        8,
+        12,
+        17,
+        null
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 5,
+        "step": 3,
+        "growth": 1
+      }
+    },
+    "options": [
+      24,
+      22,
+      23
+    ],
+    "answer": 23
+  },
+  {
+    "id": "g4-patterns-11",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        2,
+        3,
+        5,
+        8,
+        null
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 2,
+        "step": 1,
+        "growth": 1
+      }
+    },
+    "options": [
+      12,
+      11,
+      13
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g4-patterns-12",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        9,
+        12,
+        16,
+        21,
+        null
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 9,
+        "step": 3,
+        "growth": 1
+      }
+    },
+    "options": [
+      28,
+      27,
+      26
+    ],
+    "answer": 27
+  },
+  {
+    "id": "g4-patterns-13",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        9,
+        12,
+        17,
+        null,
+        33
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 9,
+        "step": 3,
+        "growth": 2
+      }
+    },
+    "options": [
+      22,
+      25,
+      24
+    ],
+    "answer": 24
+  },
+  {
+    "id": "g4-patterns-14",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 2,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        6,
+        9,
+        13,
+        18,
+        null
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 6,
+        "step": 3,
+        "growth": 1
+      }
+    },
+    "options": [
+      24,
+      25,
+      23
+    ],
+    "answer": 24
+  },
+  {
+    "id": "g4-patterns-15",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        2,
+        5,
+        null,
+        17,
+        26
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 2,
+        "step": 3,
+        "growth": 2
+      }
+    },
+    "options": [
+      11,
+      10,
+      8
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g4-patterns-16",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        4,
+        9,
+        16,
+        null,
+        36
+      ],
+      "rule": {
+        "kind": "square",
+        "from": 2
+      }
+    },
+    "options": [
+      25,
+      23,
+      26
+    ],
+    "answer": 25
+  },
+  {
+    "id": "g4-patterns-17",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        4,
+        9,
+        null,
+        28,
+        42
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 4,
+        "step": 5,
+        "growth": 3
+      }
+    },
+    "options": [
+      18,
+      14,
+      17
+    ],
+    "answer": 17
+  },
+  {
+    "id": "g4-patterns-18",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        1,
+        4,
+        9,
+        16,
+        null
+      ],
+      "rule": {
+        "kind": "square",
+        "from": 1
+      }
+    },
+    "options": [
+      26,
+      23,
+      25
+    ],
+    "answer": 25
+  },
+  {
+    "id": "g4-patterns-19",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        19,
+        23,
+        29,
+        null,
+        47
+      ],
+      "rule": {
+        "kind": "grow",
+        "start": 19,
+        "step": 4,
+        "growth": 2
+      }
+    },
+    "options": [
+      35,
+      37,
+      38
+    ],
+    "answer": 37
+  },
+  {
+    "id": "g4-patterns-20",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-patterns",
+    "difficulty": 3,
+    "prompt": "Which number is missing?",
+    "type": "number-pattern",
+    "payload": {
+      "seq": [
+        16,
+        25,
+        36,
+        49,
+        null
+      ],
+      "rule": {
+        "kind": "square",
+        "from": 4
+      }
+    },
+    "options": [
+      64,
+      65,
+      62
+    ],
+    "answer": 64
+  }
+]

@@ -29,7 +29,7 @@ export const SUBJECTS: Subject[] = [
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'puzzles', 'thinking'], 2: ['maths', 'english', 'puzzles', 'thinking'], 3: ['maths', 'english', 'puzzles', 'thinking'], 4: ['maths', 'english', 'puzzles', 'thinking'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -92,6 +92,11 @@ export const TOPICS: Topic[] = [
   { id: 'g4-affixes', grade: 4, subject: 'english', title: 'Prefixes and suffixes', blurb: 'un-, re-, -ful, -less', glyph: 'un-', color: colors.green },
   { id: 'g4-ladders', grade: 4, subject: 'english', title: 'Word ladders', blurb: 'One letter at a time', glyph: '🪜', color: colors.orange },
   { id: 'g4-reading', grade: 4, subject: 'english', title: 'Read and think', blurb: 'Longer stories', glyph: '📚', color: colors.purple },
+  { id: 'g4-crossword', grade: 4, subject: 'puzzles', title: 'Big crossword', blurb: 'Four and five words', glyph: '▦', color: colors.blue },
+  { id: 'g4-sudoku', grade: 4, subject: 'puzzles', title: 'Hard sudoku', blurb: 'Fewer numbers given', glyph: '6', color: colors.green },
+  { id: 'g4-logic', grade: 4, subject: 'thinking', title: 'Logic grids', blurb: 'Up to four children', glyph: '✓✗', color: colors.purple },
+  { id: 'g4-patterns', grade: 4, subject: 'thinking', title: 'Number patterns', blurb: 'Doubling, growing, squares', glyph: '2·4·8', color: colors.orange },
+  { id: 'g4-codes', grade: 4, subject: 'thinking', title: 'Secret codes', blurb: 'Crack and write codes', glyph: '🔐', color: colors.pink },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

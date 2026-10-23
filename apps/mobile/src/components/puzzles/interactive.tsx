@@ -444,7 +444,7 @@ function LogicGrid({ puzzle, sound, onSolved, onMistake }: PlayerProps<LogicGrid
     }
   };
 
-  const cell = n === 2 ? 72 : 64;
+  const cell = n === 2 ? 72 : n === 3 ? 64 : 52;
   return (
     <View style={{ gap: 14 }}>
       <View style={styles.clueList}>
@@ -458,7 +458,7 @@ function LogicGrid({ puzzle, sound, onSolved, onMistake }: PlayerProps<LogicGrid
         })}
       </View>
       <View style={{ alignSelf: 'center' }}>
-        <View style={{ flexDirection: 'row', marginLeft: 76 }}>
+        <View style={{ flexDirection: 'row', marginLeft: n === 4 ? 64 : 76 }}>
           {items.map((it) => (
             <View key={it.name} style={{ width: cell, alignItems: 'center' }}>
               <Text style={{ fontSize: 28 }}>{it.emoji}</Text>
@@ -467,7 +467,7 @@ function LogicGrid({ puzzle, sound, onSolved, onMistake }: PlayerProps<LogicGrid
           ))}
         </View>
         {people.map((name, p) => (
-          <LogicRow key={name} name={name} wiggle={wiggle.p === p ? wiggle.n : 0}>
+          <LogicRow key={name} name={name} narrow={n === 4} wiggle={wiggle.p === p ? wiggle.n : 0}>
             {items.map((it, k) => {
               const on = choice[p] === k;
               const ruledOut = locked[p] ? !on : choice.some((x, q) => q !== p && locked[q] && x === k);
@@ -486,11 +486,11 @@ function LogicGrid({ puzzle, sound, onSolved, onMistake }: PlayerProps<LogicGrid
   );
 }
 
-function LogicRow({ name, wiggle, children }: { name: string; wiggle: number; children: ReactNode }) {
+function LogicRow({ name, wiggle, narrow, children }: { name: string; wiggle: number; narrow?: boolean; children: ReactNode }) {
   const wig = useWiggle(wiggle);
   return (
     <Animated.View style={[{ flexDirection: 'row', alignItems: 'center' }, wig]}>
-      <Text style={styles.lName} numberOfLines={1}>{name}</Text>
+      <Text style={[styles.lName, { width: narrow ? 64 : 76 }]} numberOfLines={1}>{name}</Text>
       {children}
     </Animated.View>
   );

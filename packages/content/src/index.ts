@@ -67,6 +67,12 @@ import g4EAffixes from '../puzzles/g4-english/affixes.json';
 import g4ELadders from '../puzzles/g4-english/ladders.json';
 import g4EReading from '../puzzles/g4-english/reading.json';
 
+import g4Crossword from '../puzzles/g4-puzzles/crossword.json';
+import g4Sudoku from '../puzzles/g4-puzzles/sudoku.json';
+import g4Logic from '../puzzles/g4-thinking/logic.json';
+import g4Patterns from '../puzzles/g4-thinking/patterns.json';
+import g4Codes from '../puzzles/g4-thinking/codes.json';
+
 export * from './types';
 export * from './tokens';
 export * from './curriculum';
@@ -85,6 +91,7 @@ export * from './thinking3';
 export * from './logic';
 export * from './maths4';
 export * from './words4';
+export * from './thinking4';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -102,6 +109,7 @@ export const PUZZLES = [
   ...g3Logic, ...g3Analogies, ...g3Magic,
   ...g4Numbers, ...g4MulDiv, ...g4Factors, ...g4Fractions, ...g4Decimals, ...g4Time, ...g4Area,
   ...g4EPronouns, ...g4ETenses, ...g4EAffixes, ...g4ELadders, ...g4EReading,
+  ...g4Crossword, ...g4Sudoku, ...g4Logic, ...g4Patterns, ...g4Codes,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

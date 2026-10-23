@@ -9,6 +9,7 @@ import { countSolutions, isSolved } from '../src/sudoku.ts';
 import { RIDDLES, SEQUENCES } from '../src/thinking2.ts';
 import { timeLabel } from '../src/time.ts';
 import { calendarAnswer } from '../src/calendar.ts';
+import { CLUES4, encode, patternTerms } from '../src/thinking4.ts';
 import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/maths4.ts';
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
 import { isMagic, logicSolutions, magicSolutions } from '../src/logic.ts';
@@ -96,6 +97,15 @@ function check(p: any): string | null {
       const blanks = q.seq.filter((x: number | null) => x === null).length;
       if (blanks !== 1) return 'needs exactly one blank';
       const i = q.seq.indexOf(null);
+      if (q.rule) {
+        const full = patternTerms(q.rule, q.seq.length);
+        if (q.seq.some((x: number | null, k: number) => x !== null && x !== full[k])) return 'shown numbers do not follow the rule';
+        // A constant step must not also explain the shown numbers (that would give a second answer).
+        const kn = q.seq.map((x: number | null, k: number) => [k, x]).filter(([, x]: [number, number | null]) => x !== null) as [number, number][];
+        const st = (kn[1][1] - kn[0][1]) / (kn[1][0] - kn[0][0]);
+        if (kn.every(([k, x]) => x === kn[0][1] + st * (k - kn[0][0]))) return 'a constant step also fits';
+        return full[i] === p.answer ? null : `missing number is ${full[i]}`;
+      }
       const known = q.seq.map((x: number | null, k: number) => [k, x]).filter(([, x]: [number, number | null]) => x !== null) as [number, number][];
       const step = (known[1][1] - known[0][1]) / (known[1][0] - known[0][0]);
       if (!Number.isInteger(step) || step === 0) return 'no constant step';
@@ -227,6 +237,12 @@ function check(p: any): string | null {
       const want = q.ask === 'area' ? m.area : m.perimeter;
       return want === p.answer ? null : `${q.ask} is ${want}`;
     }
+    case 'cipher': {
+      const code = encode(q.word, q.kind, q.shift);
+      const want = q.ask === 'decode' ? q.word : code;
+      if (q.ask === 'encode' && new Set(p.options).size !== p.options.length) return 'options must differ';
+      return want === p.answer ? null : `answer is ${want}`;
+    }
     case 'odd-one-out': {
       const group = CATEGORIES.find((c) => c.id === q.group);
       if (!group) return `unknown group ${q.group}`;
@@ -244,7 +260,7 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
   crossword(q) {
     const grid = new Map<string, string>();
     for (const w of q.words) {
-      if (w.clue !== undefined ? CLUES[w.word] !== w.clue : PICTURES[w.word] !== w.picture) return `wrong clue for ${w.word}`;
+      if (w.clue !== undefined ? (CLUES[w.word] ?? CLUES4[w.word]) !== w.clue : PICTURES[w.word] !== w.picture) return `wrong clue for ${w.word}`;
       for (let k = 0; k < w.word.length; k++) {
         const key = w.dir === 'across' ? `${w.row},${w.col + k}` : `${w.row + k},${w.col}`;
         if (grid.has(key) && grid.get(key) !== w.word[k]) return `words clash at ${key}`;

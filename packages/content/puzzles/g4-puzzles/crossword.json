@@ -1,0 +1,1999 @@
+[
+  {
+    "id": "g4-crossword-01",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "tiger",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "India's national animal"
+        },
+        {
+          "word": "green",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "The colour of leaves"
+        },
+        {
+          "word": "bridge",
+          "row": 1,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "You cross a river on it"
+        },
+        {
+          "word": "desert",
+          "row": 0,
+          "col": 7,
+          "dir": "down",
+          "picture": "",
+          "clue": "A hot, dry, sandy place"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "letters": [
+        "t",
+        "r",
+        "f",
+        "e",
+        "s",
+        "g",
+        "y",
+        "a",
+        "b",
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-02",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "carrot",
+          "row": 6,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "An orange vegetable"
+        },
+        {
+          "word": "rocket",
+          "row": 1,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "It flies into space"
+        },
+        {
+          "word": "pencil",
+          "row": 3,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "You write with it"
+        },
+        {
+          "word": "water",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You drink it"
+        }
+      ],
+      "blanks": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "letters": [
+        "t",
+        "o",
+        "l",
+        "r",
+        "a",
+        "e",
+        "s",
+        "d",
+        "m",
+        "g"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-03",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "shadow",
+          "row": 2,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "It follows you in the sun"
+        },
+        {
+          "word": "desert",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A hot, dry, sandy place"
+        },
+        {
+          "word": "tooth",
+          "row": 5,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You bite with it"
+        },
+        {
+          "word": "mango",
+          "row": 1,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "The king of fruits"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "letters": [
+        "h",
+        "i",
+        "t",
+        "r",
+        "o",
+        "l",
+        "k",
+        "s",
+        "e",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-04",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "lemon",
+          "row": 7,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        },
+        {
+          "word": "tomato",
+          "row": 2,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A red vegetable for salad"
+        },
+        {
+          "word": "chair",
+          "row": 5,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You sit on it"
+        },
+        {
+          "word": "winter",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "The cold season"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "letters": [
+        "m",
+        "o",
+        "e",
+        "u",
+        "r",
+        "h",
+        "c",
+        "f",
+        "t",
+        "n"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-05",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "island",
+          "row": 7,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "Land with water all around"
+        },
+        {
+          "word": "kettle",
+          "row": 3,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "It boils water"
+        },
+        {
+          "word": "rocket",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It flies into space"
+        },
+        {
+          "word": "tiger",
+          "row": 0,
+          "col": 0,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national animal"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "letters": [
+        "h",
+        "i",
+        "d",
+        "c",
+        "e",
+        "n",
+        "a",
+        "l",
+        "y",
+        "g"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-06",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "seven",
+          "row": 2,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Six plus one"
+        },
+        {
+          "word": "mango",
+          "row": 0,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "The king of fruits"
+        },
+        {
+          "word": "violin",
+          "row": 4,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "You play it with a bow"
+        },
+        {
+          "word": "monkey",
+          "row": 2,
+          "col": 7,
+          "dir": "down",
+          "picture": "",
+          "clue": "It swings from trees"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "letters": [
+        "s",
+        "r",
+        "e",
+        "f",
+        "w",
+        "n",
+        "y",
+        "a",
+        "d",
+        "g"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-07",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 1,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "puppy",
+          "row": 7,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A baby dog"
+        },
+        {
+          "word": "lotus",
+          "row": 4,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national flower"
+        },
+        {
+          "word": "table",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "eight",
+          "row": 0,
+          "col": 0,
+          "dir": "down",
+          "picture": "",
+          "clue": "Two times four"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "letters": [
+        "t",
+        "y",
+        "g",
+        "l",
+        "p",
+        "s",
+        "i",
+        "u",
+        "h",
+        "b"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-08",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "mango",
+          "row": 2,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "The king of fruits"
+        },
+        {
+          "word": "planet",
+          "row": 0,
+          "col": 1,
+          "dir": "down",
+          "picture": "",
+          "clue": "Earth is one"
+        },
+        {
+          "word": "table",
+          "row": 5,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "bridge",
+          "row": 5,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You cross a river on it"
+        },
+        {
+          "word": "silver",
+          "row": 7,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A shiny grey metal"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "letters": [
+        "r",
+        "g",
+        "h",
+        "n",
+        "c",
+        "e",
+        "a",
+        "b",
+        "s",
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-09",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "eagle",
+          "row": 3,
+          "col": 4,
+          "dir": "across",
+          "picture": "",
+          "clue": "A big bird that hunts"
+        },
+        {
+          "word": "camel",
+          "row": 2,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "It lives in the desert"
+        },
+        {
+          "word": "garden",
+          "row": 5,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "Flowers grow here"
+        },
+        {
+          "word": "camera",
+          "row": 0,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "It takes photos"
+        },
+        {
+          "word": "chair",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You sit on it"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "letters": [
+        "b",
+        "c",
+        "i",
+        "m",
+        "g",
+        "y",
+        "a",
+        "l",
+        "n",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-10",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "snake",
+          "row": 8,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "It has no legs"
+        },
+        {
+          "word": "tiger",
+          "row": 5,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national animal"
+        },
+        {
+          "word": "forest",
+          "row": 5,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A place with many trees"
+        },
+        {
+          "word": "candle",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "It gives light when lit"
+        },
+        {
+          "word": "winter",
+          "row": 2,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "The cold season"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "letters": [
+        "m",
+        "w",
+        "c",
+        "r",
+        "l",
+        "o",
+        "t",
+        "y",
+        "i",
+        "s"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-11",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "monkey",
+          "row": 8,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It swings from trees"
+        },
+        {
+          "word": "castle",
+          "row": 3,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "A king lives in it"
+        },
+        {
+          "word": "chair",
+          "row": 3,
+          "col": 4,
+          "dir": "across",
+          "picture": "",
+          "clue": "You sit on it"
+        },
+        {
+          "word": "tomato",
+          "row": 0,
+          "col": 6,
+          "dir": "down",
+          "picture": "",
+          "clue": "A red vegetable for salad"
+        },
+        {
+          "word": "parrot",
+          "row": 0,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A green bird that talks"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "letters": [
+        "a",
+        "n",
+        "t",
+        "f",
+        "e",
+        "r",
+        "o",
+        "h",
+        "m",
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-12",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "plate",
+          "row": 1,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat food from it"
+        },
+        {
+          "word": "castle",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "A king lives in it"
+        },
+        {
+          "word": "planet",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Earth is one"
+        },
+        {
+          "word": "parrot",
+          "row": 3,
+          "col": 0,
+          "dir": "down",
+          "picture": "",
+          "clue": "A green bird that talks"
+        },
+        {
+          "word": "thirty",
+          "row": 8,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Three tens"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "letters": [
+        "l",
+        "y",
+        "t",
+        "s",
+        "o",
+        "f",
+        "a",
+        "w",
+        "p",
+        "b"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-13",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "lemon",
+          "row": 7,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        },
+        {
+          "word": "table",
+          "row": 3,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "castle",
+          "row": 3,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A king lives in it"
+        },
+        {
+          "word": "forest",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "A place with many trees"
+        },
+        {
+          "word": "violin",
+          "row": 1,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "You play it with a bow"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "letters": [
+        "s",
+        "r",
+        "i",
+        "n",
+        "m",
+        "o",
+        "a",
+        "t",
+        "d",
+        "e"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-14",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 2,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "night",
+          "row": 7,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "When the moon shines"
+        },
+        {
+          "word": "lotus",
+          "row": 5,
+          "col": 4,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national flower"
+        },
+        {
+          "word": "table",
+          "row": 5,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "kettle",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "It boils water"
+        },
+        {
+          "word": "camera",
+          "row": 1,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "It takes photos"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "letters": [
+        "o",
+        "r",
+        "n",
+        "d",
+        "l",
+        "e",
+        "a",
+        "m",
+        "u",
+        "t"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-15",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "tomato",
+          "row": 1,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "A red vegetable for salad"
+        },
+        {
+          "word": "ladder",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "You climb it"
+        },
+        {
+          "word": "castle",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A king lives in it"
+        },
+        {
+          "word": "table",
+          "row": 4,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "You eat at it"
+        },
+        {
+          "word": "honey",
+          "row": 8,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Bees make it"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "letters": [
+        "o",
+        "y",
+        "l",
+        "h",
+        "e",
+        "b",
+        "r",
+        "t",
+        "a",
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-16",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "garden",
+          "row": 9,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "Flowers grow here"
+        },
+        {
+          "word": "train",
+          "row": 5,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "It runs on tracks"
+        },
+        {
+          "word": "forest",
+          "row": 5,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A place with many trees"
+        },
+        {
+          "word": "castle",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A king lives in it"
+        },
+        {
+          "word": "island",
+          "row": 2,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "Land with water all around"
+        }
+      ],
+      "blanks": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          5
+        ]
+      ],
+      "letters": [
+        "t",
+        "f",
+        "d",
+        "o",
+        "l",
+        "n",
+        "i",
+        "a",
+        "e",
+        "s"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-17",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "mango",
+          "row": 2,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "The king of fruits"
+        },
+        {
+          "word": "tiger",
+          "row": 0,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "India's national animal"
+        },
+        {
+          "word": "market",
+          "row": 4,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You buy things here"
+        },
+        {
+          "word": "seven",
+          "row": 3,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "Six plus one"
+        },
+        {
+          "word": "silver",
+          "row": 6,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "A shiny grey metal"
+        }
+      ],
+      "blanks": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "letters": [
+        "a",
+        "k",
+        "m",
+        "i",
+        "n",
+        "v",
+        "g",
+        "r",
+        "e",
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-18",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "violin",
+          "row": 1,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "You play it with a bow"
+        },
+        {
+          "word": "snake",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "It has no legs"
+        },
+        {
+          "word": "kettle",
+          "row": 4,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It boils water"
+        },
+        {
+          "word": "thirty",
+          "row": 4,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "Three tens"
+        },
+        {
+          "word": "river",
+          "row": 6,
+          "col": 2,
+          "dir": "across",
+          "picture": "",
+          "clue": "Water that flows to the sea"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "letters": [
+        "e",
+        "k",
+        "w",
+        "i",
+        "t",
+        "r",
+        "o",
+        "l",
+        "s",
+        "v"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-19",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "green",
+          "row": 6,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "The colour of leaves"
+        },
+        {
+          "word": "chair",
+          "row": 2,
+          "col": 2,
+          "dir": "down",
+          "picture": "",
+          "clue": "You sit on it"
+        },
+        {
+          "word": "rocket",
+          "row": 2,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "It flies into space"
+        },
+        {
+          "word": "spring",
+          "row": 0,
+          "col": 0,
+          "dir": "down",
+          "picture": "",
+          "clue": "The season of flowers"
+        },
+        {
+          "word": "silver",
+          "row": 0,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "A shiny grey metal"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "letters": [
+        "h",
+        "i",
+        "k",
+        "e",
+        "r",
+        "t",
+        "n",
+        "m",
+        "v",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "g4-crossword-20",
+    "grade": 4,
+    "subject": "puzzles",
+    "topic": "g4-crossword",
+    "difficulty": 3,
+    "prompt": "Read the clues and fill in the missing letters.",
+    "type": "crossword",
+    "payload": {
+      "words": [
+        {
+          "word": "winter",
+          "row": 0,
+          "col": 0,
+          "dir": "across",
+          "picture": "",
+          "clue": "The cold season"
+        },
+        {
+          "word": "rocket",
+          "row": 0,
+          "col": 5,
+          "dir": "down",
+          "picture": "",
+          "clue": "It flies into space"
+        },
+        {
+          "word": "lotus",
+          "row": 5,
+          "col": 3,
+          "dir": "across",
+          "picture": "",
+          "clue": "India's national flower"
+        },
+        {
+          "word": "lemon",
+          "row": 5,
+          "col": 3,
+          "dir": "down",
+          "picture": "",
+          "clue": "A sour yellow fruit"
+        },
+        {
+          "word": "tooth",
+          "row": 8,
+          "col": 1,
+          "dir": "across",
+          "picture": "",
+          "clue": "You bite with it"
+        }
+      ],
+      "blanks": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "letters": [
+        "w",
+        "h",
+        "t",
+        "u",
+        "i",
+        "o",
+        "k",
+        "m",
+        "r",
+        "c",
+        "l"
+      ]
+    }
+  }
+]

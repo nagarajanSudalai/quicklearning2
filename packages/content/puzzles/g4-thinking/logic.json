@@ -1,0 +1,1123 @@
+[
+  {
+    "id": "g4-logic-01",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 1,
+    "prompt": "Who has which pet? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "pet",
+      "people": [
+        "Meena",
+        "Priya",
+        "Asha"
+      ],
+      "items": [
+        {
+          "emoji": "🐰",
+          "name": "rabbit"
+        },
+        {
+          "emoji": "🐶",
+          "name": "dog"
+        },
+        {
+          "emoji": "🐱",
+          "name": "cat"
+        }
+      ],
+      "clues": [
+        {
+          "person": 2,
+          "item": 0,
+          "has": true
+        },
+        {
+          "person": 1,
+          "item": 1,
+          "has": true
+        }
+      ],
+      "solution": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-02",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 1,
+    "prompt": "Who is eating which fruit? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "fruit",
+      "people": [
+        "Asha",
+        "Meena",
+        "Arjun"
+      ],
+      "items": [
+        {
+          "emoji": "🥭",
+          "name": "mango"
+        },
+        {
+          "emoji": "🍌",
+          "name": "banana"
+        },
+        {
+          "emoji": "🍎",
+          "name": "apple"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 2,
+          "has": true
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": true
+        }
+      ],
+      "solution": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-03",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 1,
+    "prompt": "Who plays which game? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "game",
+      "people": [
+        "Kabir",
+        "Meena",
+        "Asha"
+      ],
+      "items": [
+        {
+          "emoji": "🏏",
+          "name": "cricket"
+        },
+        {
+          "emoji": "⚽",
+          "name": "football"
+        },
+        {
+          "emoji": "🏸",
+          "name": "badminton"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 0,
+          "has": true
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": true
+        }
+      ],
+      "solution": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-04",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 1,
+    "prompt": "Who has which kite? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "kite",
+      "people": [
+        "Ravi",
+        "Tara",
+        "Meena"
+      ],
+      "items": [
+        {
+          "emoji": "🟩",
+          "name": "green kite"
+        },
+        {
+          "emoji": "🟥",
+          "name": "red kite"
+        },
+        {
+          "emoji": "🟦",
+          "name": "blue kite"
+        }
+      ],
+      "clues": [
+        {
+          "person": 1,
+          "item": 0,
+          "has": true
+        },
+        {
+          "person": 0,
+          "item": 1,
+          "has": true
+        }
+      ],
+      "solution": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-05",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 1,
+    "prompt": "Who rides which vehicle? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "vehicle",
+      "people": [
+        "Sam",
+        "Arjun",
+        "Ravi"
+      ],
+      "items": [
+        {
+          "emoji": "🛺",
+          "name": "auto"
+        },
+        {
+          "emoji": "🚌",
+          "name": "bus"
+        },
+        {
+          "emoji": "🚲",
+          "name": "bicycle"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 2,
+          "has": true
+        },
+        {
+          "person": 2,
+          "item": 0,
+          "has": true
+        }
+      ],
+      "solution": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-06",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 1,
+    "prompt": "Who has which pet? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "pet",
+      "people": [
+        "Sam",
+        "Arjun",
+        "Kabir"
+      ],
+      "items": [
+        {
+          "emoji": "🐰",
+          "name": "rabbit"
+        },
+        {
+          "emoji": "🐶",
+          "name": "dog"
+        },
+        {
+          "emoji": "🐱",
+          "name": "cat"
+        }
+      ],
+      "clues": [
+        {
+          "person": 2,
+          "item": 2,
+          "has": true
+        },
+        {
+          "person": 1,
+          "item": 1,
+          "has": true
+        }
+      ],
+      "solution": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-07",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 1,
+    "prompt": "Who is eating which fruit? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "fruit",
+      "people": [
+        "Kabir",
+        "Asha",
+        "Meena"
+      ],
+      "items": [
+        {
+          "emoji": "🍎",
+          "name": "apple"
+        },
+        {
+          "emoji": "🥭",
+          "name": "mango"
+        },
+        {
+          "emoji": "🍌",
+          "name": "banana"
+        }
+      ],
+      "clues": [
+        {
+          "person": 1,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 2,
+          "has": true
+        }
+      ],
+      "solution": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-08",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 2,
+    "prompt": "Who plays which game? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "game",
+      "people": [
+        "Ravi",
+        "Tara",
+        "Arjun"
+      ],
+      "items": [
+        {
+          "emoji": "🏏",
+          "name": "cricket"
+        },
+        {
+          "emoji": "🏸",
+          "name": "badminton"
+        },
+        {
+          "emoji": "⚽",
+          "name": "football"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 0,
+          "has": false
+        }
+      ],
+      "solution": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-09",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 2,
+    "prompt": "Who has which kite? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "kite",
+      "people": [
+        "Tara",
+        "Ravi",
+        "Kabir"
+      ],
+      "items": [
+        {
+          "emoji": "🟦",
+          "name": "blue kite"
+        },
+        {
+          "emoji": "🟩",
+          "name": "green kite"
+        },
+        {
+          "emoji": "🟥",
+          "name": "red kite"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-10",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 2,
+    "prompt": "Who rides which vehicle? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "vehicle",
+      "people": [
+        "Priya",
+        "Meena",
+        "Sam"
+      ],
+      "items": [
+        {
+          "emoji": "🚲",
+          "name": "bicycle"
+        },
+        {
+          "emoji": "🛺",
+          "name": "auto"
+        },
+        {
+          "emoji": "🚌",
+          "name": "bus"
+        }
+      ],
+      "clues": [
+        {
+          "person": 2,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        }
+      ],
+      "solution": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-11",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 2,
+    "prompt": "Who has which pet? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "pet",
+      "people": [
+        "Asha",
+        "Ravi",
+        "Tara"
+      ],
+      "items": [
+        {
+          "emoji": "🐱",
+          "name": "cat"
+        },
+        {
+          "emoji": "🐶",
+          "name": "dog"
+        },
+        {
+          "emoji": "🐰",
+          "name": "rabbit"
+        }
+      ],
+      "clues": [
+        {
+          "person": 1,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-12",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 2,
+    "prompt": "Who is eating which fruit? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "fruit",
+      "people": [
+        "Sam",
+        "Kabir",
+        "Ravi"
+      ],
+      "items": [
+        {
+          "emoji": "🍎",
+          "name": "apple"
+        },
+        {
+          "emoji": "🍌",
+          "name": "banana"
+        },
+        {
+          "emoji": "🥭",
+          "name": "mango"
+        }
+      ],
+      "clues": [
+        {
+          "person": 1,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        }
+      ],
+      "solution": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-13",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 2,
+    "prompt": "Who plays which game? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "game",
+      "people": [
+        "Priya",
+        "Sam",
+        "Kabir"
+      ],
+      "items": [
+        {
+          "emoji": "⚽",
+          "name": "football"
+        },
+        {
+          "emoji": "🏸",
+          "name": "badminton"
+        },
+        {
+          "emoji": "🏏",
+          "name": "cricket"
+        }
+      ],
+      "clues": [
+        {
+          "person": 2,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-14",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 2,
+    "prompt": "Who has which kite? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "kite",
+      "people": [
+        "Ravi",
+        "Priya",
+        "Tara"
+      ],
+      "items": [
+        {
+          "emoji": "🟦",
+          "name": "blue kite"
+        },
+        {
+          "emoji": "🟩",
+          "name": "green kite"
+        },
+        {
+          "emoji": "🟥",
+          "name": "red kite"
+        }
+      ],
+      "clues": [
+        {
+          "person": 2,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-15",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 3,
+    "prompt": "Who plays which instrument? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "instrument",
+      "people": [
+        "Tara",
+        "Sam",
+        "Kabir",
+        "Asha"
+      ],
+      "items": [
+        {
+          "emoji": "🎸",
+          "name": "guitar"
+        },
+        {
+          "emoji": "🎹",
+          "name": "piano"
+        },
+        {
+          "emoji": "🎺",
+          "name": "trumpet"
+        },
+        {
+          "emoji": "🥁",
+          "name": "drum"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 3,
+          "has": true
+        },
+        {
+          "person": 1,
+          "item": 0,
+          "has": false
+        }
+      ],
+      "solution": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-16",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 3,
+    "prompt": "Who plays which game? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "game",
+      "people": [
+        "Ravi",
+        "Kabir",
+        "Priya",
+        "Asha"
+      ],
+      "items": [
+        {
+          "emoji": "♟️",
+          "name": "chess"
+        },
+        {
+          "emoji": "⚽",
+          "name": "football"
+        },
+        {
+          "emoji": "🏸",
+          "name": "badminton"
+        },
+        {
+          "emoji": "🏏",
+          "name": "cricket"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 3,
+          "has": false
+        }
+      ],
+      "solution": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-17",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 3,
+    "prompt": "Who has which pet? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "pet",
+      "people": [
+        "Sam",
+        "Tara",
+        "Ravi",
+        "Asha"
+      ],
+      "items": [
+        {
+          "emoji": "🐱",
+          "name": "cat"
+        },
+        {
+          "emoji": "🐰",
+          "name": "rabbit"
+        },
+        {
+          "emoji": "🐶",
+          "name": "dog"
+        },
+        {
+          "emoji": "🐟",
+          "name": "fish"
+        }
+      ],
+      "clues": [
+        {
+          "person": 3,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 0,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 1,
+          "has": false
+        }
+      ],
+      "solution": [
+        0,
+        1,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-18",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 3,
+    "prompt": "Who likes which fruit? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "fruit",
+      "people": [
+        "Arjun",
+        "Kabir",
+        "Meena",
+        "Priya"
+      ],
+      "items": [
+        {
+          "emoji": "🥭",
+          "name": "mango"
+        },
+        {
+          "emoji": "🍇",
+          "name": "grapes"
+        },
+        {
+          "emoji": "🍎",
+          "name": "apple"
+        },
+        {
+          "emoji": "🍌",
+          "name": "banana"
+        }
+      ],
+      "clues": [
+        {
+          "person": 0,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 0,
+          "has": true
+        },
+        {
+          "person": 2,
+          "item": 2,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 3,
+          "has": false
+        }
+      ],
+      "solution": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-19",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 3,
+    "prompt": "Who plays which instrument? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "instrument",
+      "people": [
+        "Ravi",
+        "Sam",
+        "Kabir",
+        "Tara"
+      ],
+      "items": [
+        {
+          "emoji": "🎹",
+          "name": "piano"
+        },
+        {
+          "emoji": "🥁",
+          "name": "drum"
+        },
+        {
+          "emoji": "🎺",
+          "name": "trumpet"
+        },
+        {
+          "emoji": "🎸",
+          "name": "guitar"
+        }
+      ],
+      "clues": [
+        {
+          "person": 1,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 2,
+          "item": 0,
+          "has": true
+        },
+        {
+          "person": 0,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 3,
+          "has": false
+        }
+      ],
+      "solution": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "g4-logic-20",
+    "grade": 4,
+    "subject": "thinking",
+    "topic": "g4-logic",
+    "difficulty": 3,
+    "prompt": "Who plays which game? Read the clues.",
+    "type": "logic-grid",
+    "payload": {
+      "kind": "game",
+      "people": [
+        "Kabir",
+        "Arjun",
+        "Tara",
+        "Meena"
+      ],
+      "items": [
+        {
+          "emoji": "🏸",
+          "name": "badminton"
+        },
+        {
+          "emoji": "🏏",
+          "name": "cricket"
+        },
+        {
+          "emoji": "⚽",
+          "name": "football"
+        },
+        {
+          "emoji": "♟️",
+          "name": "chess"
+        }
+      ],
+      "clues": [
+        {
+          "person": 3,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 3,
+          "item": 3,
+          "has": false
+        },
+        {
+          "person": 0,
+          "item": 1,
+          "has": false
+        },
+        {
+          "person": 1,
+          "item": 2,
+          "has": false
+        }
+      ],
+      "solution": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  }
+]

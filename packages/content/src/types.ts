@@ -105,7 +105,8 @@ export type PlaceValuePuzzle = Base & {
 /** A counting sequence with one blank (`null`). */
 export type NumberPatternPuzzle = Base & {
   type: 'number-pattern';
-  payload: { seq: (number | null)[] };
+  /** Without `rule` the numbers go up or down by a constant step. */
+  payload: { seq: (number | null)[]; rule?: PatternRule };
   options: number[];
   answer: number;
 };
@@ -230,6 +231,17 @@ export type GridShapePuzzle = Base & {
   answer: number;
 };
 
+/** "What comes next?" rules beyond a constant step. */
+export type PatternRule = { kind: 'multiply'; start: number; by: number } | { kind: 'grow'; start: number; step: number; growth: number } | { kind: 'square'; from: number };
+
+/** Decode a word written in a code (A=1, B=2… or each letter shifted), or pick the code for a word. */
+export type CipherPuzzle = Base & {
+  type: 'cipher';
+  payload: { kind: 'number' | 'shift'; shift?: number; word: string; ask: 'decode' | 'encode' };
+  options: string[];
+  answer: string;
+};
+
 // ---- Interactive puzzles: several taps per puzzle, no single options/answer. ----
 
 /** A crossword word; the clue is a `picture` (emoji) or, from Grade 3, a text `clue`. */
@@ -337,7 +349,8 @@ export type ChoicePuzzle =
   | FractionOpPuzzle
   | DecimalPuzzle
   | TimeCalcPuzzle
-  | GridShapePuzzle;
+  | GridShapePuzzle
+  | CipherPuzzle;
 
 /** Puzzles with their own multi-step play. */
 export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle;
