@@ -1,7 +1,7 @@
 export type ShapeKind = 'star' | 'circle' | 'square' | 'tri' | 'diamond' | 'rectangle';
 
 export type Grade = 1 | 2 | 3 | 4 | 5;
-export type SubjectId = 'maths' | 'english' | 'science' | 'puzzles' | 'thinking' | 'practice';
+export type SubjectId = 'maths' | 'english' | 'science' | 'coding' | 'puzzles' | 'thinking' | 'practice';
 export type Difficulty = 1 | 2 | 3;
 
 /** Everything a puzzle record shares. `prompt` is shown on screen and read aloud. */
@@ -392,6 +392,51 @@ export type LabelPuzzle = Base & {
   answer: string;
 };
 
+/** Coding: a command block. Arrows move one square; `fwd`/`left`/`right` move or turn a robot that
+ * faces a direction; `F` runs the puzzle's function. `times` > 1 is a repeat (loop) block. */
+export type CodeOp = 'up' | 'down' | 'left' | 'right' | 'fwd' | 'turnL' | 'turnR' | 'F';
+export type CodeBlock = { op: CodeOp; times: number };
+
+/** Coding: build a program that walks the robot to the star, picking up every coin on the way.
+ * `fix` puzzles start with a program that has one wrong block. */
+export type CodeGridPuzzle = Base & {
+  type: 'code-grid';
+  payload: {
+    rows: number; cols: number;
+    walls: [number, number][];
+    start: [number, number];
+    /** Facing for turn-and-move puzzles: 0 up, 1 right, 2 down, 3 left. Absent = arrow moves. */
+    facing?: 0 | 1 | 2 | 3;
+    goal: [number, number];
+    coins: [number, number][];
+    palette: CodeOp[];
+    /** Whether blocks can repeat (×2, ×3…). */
+    loops: boolean;
+    /** The function F, for function puzzles. */
+    fn?: CodeBlock[];
+    maxBlocks: number;
+    mode: 'build' | 'fix';
+    /** Starting program (fix puzzles). */
+    program?: CodeBlock[];
+    /** One working program, for the checker. */
+    solution: CodeBlock[];
+  };
+};
+
+/** Coding: read a short program and work out what it does. */
+export type TraceStmt =
+  | { set: string; to: number }
+  | { add: string; by: number }
+  | { say: string }
+  | { repeat: number; body: TraceStmt[] }
+  | { if: { v: string; op: '>' | '<' | '='; n: number }; then: TraceStmt[]; else?: TraceStmt[] };
+export type CodeTracePuzzle = Base & {
+  type: 'code-trace';
+  payload: { program: TraceStmt[]; ask: { v: string } | { says: string } };
+  options: number[];
+  answer: number;
+};
+
 /** Puzzles answered with one tap from a list of options. */
 export type ChoicePuzzle =
   | PatternPuzzle
@@ -429,10 +474,11 @@ export type ChoicePuzzle =
   | TeaserPuzzle
   | ScienceQuizPuzzle
   | TrueFalsePuzzle
-  | LabelPuzzle;
+  | LabelPuzzle
+  | CodeTracePuzzle;
 
 /** Puzzles with their own multi-step play. */
-export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle | SumGridPuzzle;
+export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle | SumGridPuzzle | CodeGridPuzzle;
 
 export type Puzzle = ChoicePuzzle | InteractivePuzzle;
 export type PuzzleType = Puzzle['type'];
@@ -440,7 +486,7 @@ export type ChoiceType = ChoicePuzzle['type'];
 export type InteractiveType = InteractivePuzzle['type'];
 export type PuzzleOption = ChoicePuzzle['options'][number];
 
-export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square', 'pick-all', 'word-ladder', 'sum-grid'];
+export const INTERACTIVE_TYPES: InteractiveType[] = ['crossword', 'sort-into-groups', 'memory-match', 'maze', 'build', 'sudoku', 'order-steps', 'logic-grid', 'magic-square', 'pick-all', 'word-ladder', 'sum-grid', 'code-grid'];
 export const isInteractive = (p: Puzzle): p is InteractivePuzzle => (INTERACTIVE_TYPES as string[]).includes(p.type);
 
 export type Topic = {

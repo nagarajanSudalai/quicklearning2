@@ -54,6 +54,10 @@
   - **Thinking:** brain teasers, series and analogies, logic grids and A ↔ Z codes.
 - Spreadsheet → JSON importer so non-developers can add puzzles.
 
+## Phase 5b — Coding ✅
+- Grades 1–5, 200 puzzles: block programs with a running robot (sequences, debugging, loops, turning, functions) and code reading (loops, if/else, variables).
+- Next: Robotics (sensors, robot parts, simple circuits), building on the coding player.
+
 ## Phase 6 — Growth
 - Discover / articles section backed by a CMS.
 - Subscriptions and family plan, school and teacher accounts, more languages.

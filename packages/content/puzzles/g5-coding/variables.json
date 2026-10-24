@@ -1,0 +1,767 @@
+[
+  {
+    "id": "g5-code-variables-01",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 1,
+    "prompt": "What is total at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 7
+        },
+        {
+          "add": "total",
+          "by": 4
+        },
+        {
+          "add": "total",
+          "by": -7
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      4,
+      6,
+      14
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-code-variables-02",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 1,
+    "prompt": "What is apples at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "apples",
+          "to": 4
+        },
+        {
+          "add": "apples",
+          "by": 2
+        },
+        {
+          "add": "apples",
+          "by": -2
+        }
+      ],
+      "ask": {
+        "v": "apples"
+      }
+    },
+    "options": [
+      6,
+      4,
+      14
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-code-variables-03",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 1,
+    "prompt": "What is total at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 6
+        },
+        {
+          "add": "total",
+          "by": 6
+        },
+        {
+          "add": "total",
+          "by": -5
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      7,
+      6,
+      17
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g5-code-variables-04",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 1,
+    "prompt": "What is total at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 2
+        },
+        {
+          "add": "total",
+          "by": 6
+        },
+        {
+          "add": "total",
+          "by": -2
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      5,
+      6,
+      7
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g5-code-variables-05",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 1,
+    "prompt": "What is apples at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "apples",
+          "to": 2
+        },
+        {
+          "add": "apples",
+          "by": 3
+        },
+        {
+          "add": "apples",
+          "by": -1
+        }
+      ],
+      "ask": {
+        "v": "apples"
+      }
+    },
+    "options": [
+      5,
+      4,
+      3
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-code-variables-06",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 1,
+    "prompt": "What is apples at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "apples",
+          "to": 9
+        },
+        {
+          "add": "apples",
+          "by": 3
+        },
+        {
+          "add": "apples",
+          "by": -6
+        }
+      ],
+      "ask": {
+        "v": "apples"
+      }
+    },
+    "options": [
+      16,
+      12,
+      6
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g5-code-variables-07",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 1,
+    "prompt": "What is steps at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "steps",
+          "to": 5
+        },
+        {
+          "add": "steps",
+          "by": 6
+        },
+        {
+          "add": "steps",
+          "by": -4
+        }
+      ],
+      "ask": {
+        "v": "steps"
+      }
+    },
+    "options": [
+      7,
+      8,
+      9
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g5-code-variables-08",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 2,
+    "prompt": "What is total at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 2
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "total",
+              "by": 4
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      16,
+      14,
+      13
+    ],
+    "answer": 14
+  },
+  {
+    "id": "g5-code-variables-09",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 2,
+    "prompt": "What is apples at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "apples",
+          "to": 3
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "apples",
+              "by": 2
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "apples"
+      }
+    },
+    "options": [
+      11,
+      10,
+      21
+    ],
+    "answer": 11
+  },
+  {
+    "id": "g5-code-variables-10",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 2,
+    "prompt": "What is coins at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "coins",
+          "to": 2
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "coins",
+              "by": 3
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "coins"
+      }
+    },
+    "options": [
+      11,
+      12,
+      13
+    ],
+    "answer": 11
+  },
+  {
+    "id": "g5-code-variables-11",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 2,
+    "prompt": "What is total at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 3
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "total",
+              "by": 2
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      13,
+      11,
+      22
+    ],
+    "answer": 11
+  },
+  {
+    "id": "g5-code-variables-12",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 2,
+    "prompt": "What is apples at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "apples",
+          "to": 5
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "apples",
+              "by": 4
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "apples"
+      }
+    },
+    "options": [
+      16,
+      17,
+      34
+    ],
+    "answer": 17
+  },
+  {
+    "id": "g5-code-variables-13",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 2,
+    "prompt": "What is coins at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "coins",
+          "to": 3
+        },
+        {
+          "repeat": 6,
+          "body": [
+            {
+              "add": "coins",
+              "by": 4
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "coins"
+      }
+    },
+    "options": [
+      27,
+      37,
+      29
+    ],
+    "answer": 27
+  },
+  {
+    "id": "g5-code-variables-14",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 2,
+    "prompt": "What is coins at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "coins",
+          "to": 5
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "coins",
+              "by": 5
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "coins"
+      }
+    },
+    "options": [
+      20,
+      22,
+      30
+    ],
+    "answer": 20
+  },
+  {
+    "id": "g5-code-variables-15",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 3,
+    "prompt": "What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 0
+        },
+        {
+          "set": "count",
+          "to": 1
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "total",
+              "by": 2
+            },
+            {
+              "add": "count",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "add": "total",
+          "by": 4
+        }
+      ],
+      "ask": {
+        "v": "count"
+      }
+    },
+    "options": [
+      5,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-code-variables-16",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 3,
+    "prompt": "What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "steps",
+          "to": 0
+        },
+        {
+          "set": "total",
+          "to": 1
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "steps",
+              "by": 1
+            },
+            {
+              "add": "total",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "add": "steps",
+          "by": 5
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      5,
+      6,
+      10
+    ],
+    "answer": 5
+  },
+  {
+    "id": "g5-code-variables-17",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 3,
+    "prompt": "What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "steps",
+          "to": 0
+        },
+        {
+          "set": "total",
+          "to": 1
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "steps",
+              "by": 1
+            },
+            {
+              "add": "total",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "add": "steps",
+          "by": 2
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      5,
+      4,
+      3
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g5-code-variables-18",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 3,
+    "prompt": "What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "steps",
+          "to": 0
+        },
+        {
+          "set": "total",
+          "to": 1
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "steps",
+              "by": 2
+            },
+            {
+              "add": "total",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "add": "steps",
+          "by": 1
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      10,
+      7,
+      5
+    ],
+    "answer": 5
+  },
+  {
+    "id": "g5-code-variables-19",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 3,
+    "prompt": "What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 0
+        },
+        {
+          "set": "count",
+          "to": 1
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "total",
+              "by": 2
+            },
+            {
+              "add": "count",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "add": "total",
+          "by": 1
+        }
+      ],
+      "ask": {
+        "v": "total"
+      }
+    },
+    "options": [
+      17,
+      14,
+      7
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g5-code-variables-20",
+    "grade": 5,
+    "subject": "coding",
+    "topic": "g5-code-variables",
+    "difficulty": 3,
+    "prompt": "What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "total",
+          "to": 0
+        },
+        {
+          "set": "count",
+          "to": 1
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "total",
+              "by": 1
+            },
+            {
+              "add": "count",
+              "by": 2
+            }
+          ]
+        },
+        {
+          "add": "total",
+          "by": 3
+        }
+      ],
+      "ask": {
+        "v": "count"
+      }
+    },
+    "options": [
+      8,
+      7,
+      17
+    ],
+    "answer": 7
+  }
+]

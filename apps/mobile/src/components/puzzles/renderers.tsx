@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Animated, StyleSheet, Text, View } from 'react-native';
-import { encode, nameOf, plainSentence, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@quickstep/content';
+import { encode, nameOf, traceLines, plainSentence, type ChoicePuzzle, type ChoiceType, type PuzzleOption } from '@quickstep/content';
 import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
@@ -463,6 +463,21 @@ export const RENDERERS: Renderers = {
     option: (a) => <Text style={[styles.word, { fontSize: 22 }]} numberOfLines={1}>{a}</Text>,
     columns: (p) => (p.options.some((o) => o.length > 4) ? 1 : 3),
     optionHeight: 58,
+  },
+  'code-trace': {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, { flexDirection: 'column', alignItems: 'stretch', backgroundColor: '#1e1a4d', gap: 4 }]}>
+        {traceLines(puzzle.payload.program).map((l, k) => (
+          <Text key={k} style={{ fontFamily: font.bodyHeavy, fontSize: 17, color: l.text.startsWith('repeat') || l.text.startsWith('if') || l.text === 'else' ? '#ffc83d' : '#e8e4ff', paddingLeft: 18 * l.depth }}>
+            {l.text}
+          </Text>
+        ))}
+        {'v' in puzzle.payload.ask && <Text style={{ fontFamily: font.display, fontSize: 18, color: '#5ee6ff', marginTop: 6 }}>{puzzle.payload.ask.v} = ?</Text>}
+        {'says' in puzzle.payload.ask && <Text style={{ fontFamily: font.display, fontSize: 18, color: '#5ee6ff', marginTop: 6 }}>How many "{puzzle.payload.ask.says}"?</Text>}
+      </View>
+    ),
+    option: (n) => <Number n={n} />,
+    columns: () => 3,
   },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,

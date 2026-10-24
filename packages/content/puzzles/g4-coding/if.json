@@ -1,0 +1,969 @@
+[
+  {
+    "id": "g4-code-if-01",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 1,
+    "prompt": "What is stars at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "stars",
+          "to": 7
+        },
+        {
+          "if": {
+            "v": "stars",
+            "op": "<",
+            "n": 7
+          },
+          "then": [
+            {
+              "add": "stars",
+              "by": 3
+            }
+          ],
+          "else": [
+            {
+              "add": "stars",
+              "by": -4
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "stars"
+      }
+    },
+    "options": [
+      6,
+      3,
+      13
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g4-code-if-02",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 1,
+    "prompt": "What is score at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 7
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": ">",
+            "n": 6
+          },
+          "then": [
+            {
+              "add": "score",
+              "by": 3
+            }
+          ],
+          "else": [
+            {
+              "add": "score",
+              "by": -5
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "score"
+      }
+    },
+    "options": [
+      11,
+      20,
+      10
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g4-code-if-03",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 1,
+    "prompt": "What is score at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 8
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": "<",
+            "n": 6
+          },
+          "then": [
+            {
+              "add": "score",
+              "by": 5
+            }
+          ],
+          "else": [
+            {
+              "add": "score",
+              "by": -1
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "score"
+      }
+    },
+    "options": [
+      7,
+      9,
+      17
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g4-code-if-04",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 1,
+    "prompt": "What is stars at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "stars",
+          "to": 4
+        },
+        {
+          "if": {
+            "v": "stars",
+            "op": ">",
+            "n": 8
+          },
+          "then": [
+            {
+              "add": "stars",
+              "by": 1
+            }
+          ],
+          "else": [
+            {
+              "add": "stars",
+              "by": -2
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "stars"
+      }
+    },
+    "options": [
+      1,
+      2,
+      3
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g4-code-if-05",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 1,
+    "prompt": "What is score at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 2
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": ">",
+            "n": 8
+          },
+          "then": [
+            {
+              "add": "score",
+              "by": 1
+            }
+          ],
+          "else": [
+            {
+              "add": "score",
+              "by": -1
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "score"
+      }
+    },
+    "options": [
+      11,
+      1,
+      2
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g4-code-if-06",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 1,
+    "prompt": "What is score at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 4
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": "<",
+            "n": 8
+          },
+          "then": [
+            {
+              "add": "score",
+              "by": 4
+            }
+          ],
+          "else": [
+            {
+              "add": "score",
+              "by": -2
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "score"
+      }
+    },
+    "options": [
+      18,
+      10,
+      8
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g4-code-if-07",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 1,
+    "prompt": "What is score at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 8
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": ">",
+            "n": 7
+          },
+          "then": [
+            {
+              "add": "score",
+              "by": 5
+            }
+          ],
+          "else": [
+            {
+              "add": "score",
+              "by": -5
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "score"
+      }
+    },
+    "options": [
+      14,
+      13,
+      12
+    ],
+    "answer": 13
+  },
+  {
+    "id": "g4-code-if-08",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say the word in the question?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "points",
+          "to": 0
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "points",
+              "by": 2
+            }
+          ]
+        },
+        {
+          "if": {
+            "v": "points",
+            "op": ">",
+            "n": 8
+          },
+          "then": [
+            {
+              "say": "yay"
+            }
+          ],
+          "else": [
+            {
+              "say": "hmm"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "yay"
+      }
+    },
+    "options": [
+      10,
+      1,
+      0
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-code-if-09",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say the word in the question?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "points",
+          "to": 0
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "points",
+              "by": 2
+            }
+          ]
+        },
+        {
+          "if": {
+            "v": "points",
+            "op": ">",
+            "n": 12
+          },
+          "then": [
+            {
+              "say": "yay"
+            }
+          ],
+          "else": [
+            {
+              "say": "hmm"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "yay"
+      }
+    },
+    "options": [
+      0,
+      2,
+      10
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-code-if-10",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say the word in the question?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "stars",
+          "to": 0
+        },
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "add": "stars",
+              "by": 2
+            }
+          ]
+        },
+        {
+          "if": {
+            "v": "stars",
+            "op": ">",
+            "n": 7
+          },
+          "then": [
+            {
+              "say": "yay"
+            }
+          ],
+          "else": [
+            {
+              "say": "hmm"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hmm"
+      }
+    },
+    "options": [
+      0,
+      10,
+      2
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-code-if-11",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say the word in the question?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "stars",
+          "to": 0
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "stars",
+              "by": 2
+            }
+          ]
+        },
+        {
+          "if": {
+            "v": "stars",
+            "op": ">",
+            "n": 7
+          },
+          "then": [
+            {
+              "say": "yay"
+            }
+          ],
+          "else": [
+            {
+              "say": "hmm"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hmm"
+      }
+    },
+    "options": [
+      0,
+      1,
+      11
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g4-code-if-12",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say the word in the question?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 0
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "score",
+              "by": 3
+            }
+          ]
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": ">",
+            "n": 7
+          },
+          "then": [
+            {
+              "say": "yay"
+            }
+          ],
+          "else": [
+            {
+              "say": "hmm"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "yay"
+      }
+    },
+    "options": [
+      1,
+      0,
+      2
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g4-code-if-13",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say the word in the question?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 0
+        },
+        {
+          "repeat": 6,
+          "body": [
+            {
+              "add": "score",
+              "by": 2
+            }
+          ]
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": ">",
+            "n": 11
+          },
+          "then": [
+            {
+              "say": "yay"
+            }
+          ],
+          "else": [
+            {
+              "say": "hmm"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hmm"
+      }
+    },
+    "options": [
+      1,
+      2,
+      0
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-code-if-14",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say the word in the question?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 0
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "score",
+              "by": 2
+            }
+          ]
+        },
+        {
+          "if": {
+            "v": "score",
+            "op": ">",
+            "n": 7
+          },
+          "then": [
+            {
+              "say": "yay"
+            }
+          ],
+          "else": [
+            {
+              "say": "hmm"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "yay"
+      }
+    },
+    "options": [
+      2,
+      0,
+      1
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-code-if-15",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 3,
+    "prompt": "What is points at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "points",
+          "to": 0
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "points",
+              "by": 3
+            },
+            {
+              "if": {
+                "v": "points",
+                "op": ">",
+                "n": 5
+              },
+              "then": [
+                {
+                  "add": "points",
+                  "by": -1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "points"
+      }
+    },
+    "options": [
+      11,
+      10,
+      9
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g4-code-if-16",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 3,
+    "prompt": "What is stars at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "stars",
+          "to": 0
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "stars",
+              "by": 2
+            },
+            {
+              "if": {
+                "v": "stars",
+                "op": ">",
+                "n": 5
+              },
+              "then": [
+                {
+                  "add": "stars",
+                  "by": -1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "stars"
+      }
+    },
+    "options": [
+      15,
+      10,
+      5
+    ],
+    "answer": 5
+  },
+  {
+    "id": "g4-code-if-17",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 3,
+    "prompt": "What is points at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "points",
+          "to": 0
+        },
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "add": "points",
+              "by": 3
+            },
+            {
+              "if": {
+                "v": "points",
+                "op": ">",
+                "n": 8
+              },
+              "then": [
+                {
+                  "add": "points",
+                  "by": -1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "points"
+      }
+    },
+    "options": [
+      11,
+      12,
+      22
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g4-code-if-18",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 3,
+    "prompt": "What is points at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "points",
+          "to": 0
+        },
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "add": "points",
+              "by": 4
+            },
+            {
+              "if": {
+                "v": "points",
+                "op": ">",
+                "n": 3
+              },
+              "then": [
+                {
+                  "add": "points",
+                  "by": -1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "points"
+      }
+    },
+    "options": [
+      15,
+      17,
+      30
+    ],
+    "answer": 15
+  },
+  {
+    "id": "g4-code-if-19",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 3,
+    "prompt": "What is score at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "score",
+          "to": 0
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "score",
+              "by": 4
+            },
+            {
+              "if": {
+                "v": "score",
+                "op": ">",
+                "n": 7
+              },
+              "then": [
+                {
+                  "add": "score",
+                  "by": -1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "score"
+      }
+    },
+    "options": [
+      9,
+      20,
+      10
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g4-code-if-20",
+    "grade": 4,
+    "subject": "coding",
+    "topic": "g4-code-if",
+    "difficulty": 3,
+    "prompt": "What is stars at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "stars",
+          "to": 0
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "stars",
+              "by": 4
+            },
+            {
+              "if": {
+                "v": "stars",
+                "op": ">",
+                "n": 8
+              },
+              "then": [
+                {
+                  "add": "stars",
+                  "by": -1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "stars"
+      }
+    },
+    "options": [
+      11,
+      13,
+      21
+    ],
+    "answer": 11
+  }
+]

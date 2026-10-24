@@ -1,0 +1,2227 @@
+[
+  {
+    "id": "g2-code-fix-01",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 1,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "start": [
+        2,
+        0
+      ],
+      "goal": [
+        3,
+        3
+      ],
+      "coins": [],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 4,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-02",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 1,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "start": [
+        3,
+        1
+      ],
+      "goal": [
+        0,
+        3
+      ],
+      "coins": [],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 5,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-03",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 1,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "start": [
+        2,
+        0
+      ],
+      "goal": [
+        0,
+        1
+      ],
+      "coins": [],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 3,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-04",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 1,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          4,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "start": [
+        0,
+        1
+      ],
+      "goal": [
+        3,
+        0
+      ],
+      "coins": [],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 4,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-05",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 1,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "start": [
+        1,
+        2
+      ],
+      "goal": [
+        3,
+        3
+      ],
+      "coins": [],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 3,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-06",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 1,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "start": [
+        0,
+        1
+      ],
+      "goal": [
+        2,
+        3
+      ],
+      "coins": [],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 4,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-07",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 1,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        3
+      ],
+      "coins": [],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 5,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-08",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 2,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "start": [
+        4,
+        0
+      ],
+      "goal": [
+        4,
+        2
+      ],
+      "coins": [
+        [
+          2,
+          0
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 8,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-09",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 2,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "start": [
+        2,
+        0
+      ],
+      "goal": [
+        0,
+        4
+      ],
+      "coins": [
+        [
+          0,
+          3
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 6,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-10",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 2,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "start": [
+        2,
+        4
+      ],
+      "goal": [
+        4,
+        3
+      ],
+      "coins": [
+        [
+          2,
+          3
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 5,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-11",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 2,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "start": [
+        0,
+        1
+      ],
+      "goal": [
+        3,
+        1
+      ],
+      "coins": [
+        [
+          2,
+          4
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 9,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-12",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 2,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "start": [
+        1,
+        4
+      ],
+      "goal": [
+        4,
+        2
+      ],
+      "coins": [
+        [
+          3,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 5,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-13",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 2,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "start": [
+        3,
+        1
+      ],
+      "goal": [
+        2,
+        4
+      ],
+      "coins": [
+        [
+          1,
+          4
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 8,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-14",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 2,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "start": [
+        0,
+        2
+      ],
+      "goal": [
+        3,
+        2
+      ],
+      "coins": [
+        [
+          0,
+          0
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 7,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-15",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 3,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          4,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "start": [
+        0,
+        4
+      ],
+      "goal": [
+        1,
+        1
+      ],
+      "coins": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 6,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-16",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 3,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          4,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "start": [
+        2,
+        3
+      ],
+      "goal": [
+        0,
+        2
+      ],
+      "coins": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 7,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-17",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 3,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "start": [
+        3,
+        4
+      ],
+      "goal": [
+        3,
+        1
+      ],
+      "coins": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 7,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-18",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 3,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          4,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "start": [
+        1,
+        4
+      ],
+      "goal": [
+        4,
+        3
+      ],
+      "coins": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 8,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-19",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 3,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "start": [
+        0,
+        1
+      ],
+      "goal": [
+        1,
+        3
+      ],
+      "coins": [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 7,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "down",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "g2-code-fix-20",
+    "grade": 2,
+    "subject": "coding",
+    "topic": "g2-code-fix",
+    "difficulty": 3,
+    "prompt": "One block is wrong. Tap it, pick the right arrow, then press Run.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 5,
+      "cols": 5,
+      "walls": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "start": [
+        4,
+        3
+      ],
+      "goal": [
+        1,
+        3
+      ],
+      "coins": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": false,
+      "maxBlocks": 9,
+      "mode": "fix",
+      "solution": [
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ],
+      "program": [
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "left",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "up",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        },
+        {
+          "op": "right",
+          "times": 1
+        }
+      ]
+    }
+  }
+]

@@ -15,6 +15,7 @@ import { fits, fracCmp, fracStr, gridMeasure, timeCalcAnswer } from '../src/math
 import { ANALOGIES, CLUES } from '../src/thinking3.ts';
 import { isMagic, logicSolutions, magicSolutions, sumGridSolutions } from '../src/logic.ts';
 import { ANALOGIES5, CLUES5, TEASERS } from '../src/thinking5.ts';
+import { runGrid, traceAnswer } from '../src/coding.ts';
 import { DIAGRAMS, SCIENCE_FACTS, SCIENCE_GROUPS, SCIENCE_QUIZ } from '../src/science.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
 import { CONJUNCTIONS, IDIOMS, PASSAGES5, PREPOSITIONS, SPELLINGS, VOICE } from '../src/words5.ts';
@@ -296,6 +297,11 @@ function check(p: any): string | null {
       if (p.options.some((o: string) => o !== t.answer && !t.wrong.includes(o))) return 'unknown option';
       return t.answer === p.answer ? null : `answer is ${t.answer}`;
     }
+    case 'code-trace': {
+      const want = traceAnswer(q.program, q.ask);
+      if (new Set(p.options).size !== p.options.length) return 'options must be different';
+      return want === p.answer ? null : `answer is ${want}`;
+    }
     case 'science-quiz': {
       const x = SCIENCE_QUIZ.find((i) => i.id === q.id);
       if (!x || x.question !== q.question || x.topic !== p.topic) return 'question not in the science bank for this topic';
@@ -422,6 +428,25 @@ const INTERACTIVE: Record<string, (q: any) => string | null> = {
     const sols = logicSolutions(n, q.clues);
     if (sols.length !== 1) return `${sols.length} ways fit the clues`;
     return sols[0].every((v: number, k: number) => v === q.solution[k]) ? null : 'solution does not fit the clues';
+  },
+  'code-grid'(q) {
+    const inside = ([r, c]: number[]) => r >= 0 && c >= 0 && r < q.rows && c < q.cols;
+    if (![q.start, q.goal, ...q.coins, ...q.walls].every(inside)) return 'a cell is off the grid';
+    const walls = new Set(q.walls.map((w: number[]) => w.join(',')));
+    if ([q.start, q.goal, ...q.coins].some((c: number[]) => walls.has(c.join(',')))) return 'a wall covers the start, star or a coin';
+    if (q.start.join() === q.goal.join()) return 'the robot starts on the star';
+    const ops = (b: { op: string; times: number }[]) => b.every((x) => q.palette.includes(x.op) && x.times >= 1 && (q.loops || x.times === 1));
+    if (!ops(q.solution)) return 'solution uses a block that is not in the palette';
+    if ((q.palette.includes('fwd')) !== (q.facing !== undefined)) return 'turning puzzles need a facing, arrow puzzles must not have one';
+    if (q.palette.includes('F') !== !!q.fn) return 'F block and function must go together';
+    const run = runGrid(q, q.solution);
+    if (!run.ok) return `the stored solution fails (${run.problem})`;
+    if (q.mode === 'fix') {
+      if (!q.program || q.program.length !== q.solution.length) return 'fix puzzles need a program the same length as the solution';
+      if (q.program.filter((b: { op: string }, k: number) => b.op !== q.solution[k].op).length !== 1) return 'fix program must differ by exactly one block';
+      if (runGrid(q, q.program).ok) return 'the program to fix already works';
+    }
+    return null;
   },
   'sum-grid'(q) {
     if ([...q.solution].sort().join('') !== '123456789') return 'solution must use 1–9 once';

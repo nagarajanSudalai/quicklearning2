@@ -1,0 +1,727 @@
+[
+  {
+    "id": "g3-code-trace-01",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 1,
+    "prompt": "How many times does the robot say \"jump\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "jump"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "jump"
+      }
+    },
+    "options": [
+      3,
+      14,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g3-code-trace-02",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 1,
+    "prompt": "How many times does the robot say \"hop\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "say": "hop"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hop"
+      }
+    },
+    "options": [
+      13,
+      4,
+      3
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g3-code-trace-03",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 1,
+    "prompt": "How many times does the robot say \"clap\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "say": "clap"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "clap"
+      }
+    },
+    "options": [
+      5,
+      15,
+      6
+    ],
+    "answer": 5
+  },
+  {
+    "id": "g3-code-trace-04",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 1,
+    "prompt": "How many times does the robot say \"hop\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "hop"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hop"
+      }
+    },
+    "options": [
+      12,
+      2,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g3-code-trace-05",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 1,
+    "prompt": "How many times does the robot say \"clap\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 6,
+          "body": [
+            {
+              "say": "clap"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "clap"
+      }
+    },
+    "options": [
+      6,
+      5,
+      7
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g3-code-trace-06",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 1,
+    "prompt": "How many times does the robot say \"hop\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "hop"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hop"
+      }
+    },
+    "options": [
+      4,
+      8,
+      6
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g3-code-trace-07",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 1,
+    "prompt": "How many times does the robot say \"clap\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "clap"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "clap"
+      }
+    },
+    "options": [
+      12,
+      2,
+      1
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g3-code-trace-08",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say \"beep\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "say": "beep"
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "beep"
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "beep"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      17,
+      8,
+      7
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g3-code-trace-09",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say \"hop\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "say": "hop"
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "hop"
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "hop"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hop"
+      }
+    },
+    "options": [
+      7,
+      6,
+      14
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g3-code-trace-10",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say \"jump\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "say": "jump"
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "jump"
+            }
+          ]
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "say": "jump"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "jump"
+      }
+    },
+    "options": [
+      16,
+      7,
+      8
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g3-code-trace-11",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say \"hello\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "say": "hello"
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "hello"
+            }
+          ]
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "hello"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hello"
+      }
+    },
+    "options": [
+      18,
+      9,
+      10
+    ],
+    "answer": 9
+  },
+  {
+    "id": "g3-code-trace-12",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say \"clap\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "say": "clap"
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "clap"
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "clap"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "clap"
+      }
+    },
+    "options": [
+      14,
+      7,
+      8
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g3-code-trace-13",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say \"jump\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "say": "jump"
+        },
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "jump"
+            }
+          ]
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "jump"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "jump"
+      }
+    },
+    "options": [
+      7,
+      6,
+      8
+    ],
+    "answer": 7
+  },
+  {
+    "id": "g3-code-trace-14",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 2,
+    "prompt": "How many times does the robot say \"jump\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "say": "jump"
+        },
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "jump"
+            }
+          ]
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "say": "jump"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "jump"
+      }
+    },
+    "options": [
+      7,
+      6,
+      12
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g3-code-trace-15",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 3,
+    "prompt": "How many times does the robot say \"beep\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "beep"
+            },
+            {
+              "repeat": 2,
+              "body": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      12,
+      6,
+      16
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g3-code-trace-16",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 3,
+    "prompt": "How many times does the robot say \"hop\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "say": "hop"
+            },
+            {
+              "repeat": 2,
+              "body": [
+                {
+                  "say": "hop"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hop"
+      }
+    },
+    "options": [
+      12,
+      11,
+      14
+    ],
+    "answer": 12
+  },
+  {
+    "id": "g3-code-trace-17",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 3,
+    "prompt": "How many times does the robot say \"hello\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "hello"
+            },
+            {
+              "repeat": 2,
+              "body": [
+                {
+                  "say": "hello"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hello"
+      }
+    },
+    "options": [
+      7,
+      6,
+      5
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g3-code-trace-18",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 3,
+    "prompt": "How many times does the robot say \"hop\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "hop"
+            },
+            {
+              "repeat": 2,
+              "body": [
+                {
+                  "say": "hop"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hop"
+      }
+    },
+    "options": [
+      12,
+      6,
+      5
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g3-code-trace-19",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 3,
+    "prompt": "How many times does the robot say \"hello\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "hello"
+            },
+            {
+              "repeat": 3,
+              "body": [
+                {
+                  "say": "hello"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "hello"
+      }
+    },
+    "options": [
+      8,
+      18,
+      10
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g3-code-trace-20",
+    "grade": 3,
+    "subject": "coding",
+    "topic": "g3-code-trace",
+    "difficulty": 3,
+    "prompt": "How many times does the robot say \"jump\"?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "repeat": 2,
+          "body": [
+            {
+              "say": "jump"
+            },
+            {
+              "repeat": 3,
+              "body": [
+                {
+                  "say": "jump"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "jump"
+      }
+    },
+    "options": [
+      18,
+      10,
+      8
+    ],
+    "answer": 8
+  }
+]

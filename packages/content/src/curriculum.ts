@@ -23,13 +23,14 @@ export const SUBJECTS: Subject[] = [
   { id: 'maths', name: 'Maths', desc: 'Numbers, shapes, patterns and more', glyph: '+−', color: colors.pink },
   { id: 'english', name: 'English', desc: 'Reading, vocabulary, writing and grammar', glyph: 'Aa', color: colors.blue },
   { id: 'science', name: 'Science', desc: 'Explore the world around you', glyph: '⚗', color: colors.green },
+  { id: 'coding', name: 'Coding', desc: 'Program a robot with blocks', glyph: '</>', color: colors.blue },
   { id: 'puzzles', name: 'Puzzles', desc: 'Crosswords, logic, brain games', glyph: '✱', color: colors.orange },
   { id: 'thinking', name: 'Thinking Skills', desc: 'Problem-solving and reasoning', glyph: '?', color: colors.purple },
   { id: 'practice', name: 'Practice & Tests', desc: 'Topic-wise practice and assessments', glyph: '✓', color: colors.teal },
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 2: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 3: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 4: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'], 5: ['maths', 'english', 'science', 'puzzles', 'thinking', 'practice'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 2: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 3: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 4: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 5: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -129,6 +130,16 @@ export const TOPICS: Topic[] = [
   { id: 'g5-sci-body', grade: 5, subject: 'science', title: 'Body systems', blurb: 'Heart, lungs, brain', glyph: '🫀', color: colors.pink },
   { id: 'g5-sci-living', grade: 5, subject: 'science', title: 'Living world', blurb: 'Food chains and habitats', glyph: '🌍', color: colors.green },
   { id: 'g5-sci-space', grade: 5, subject: 'science', title: 'Earth and space', blurb: 'Planets, Moon, day and night', glyph: '🪐', color: colors.purple },
+  { id: 'g1-code-steps', grade: 1, subject: 'coding', title: 'Robot steps', blurb: 'Tap arrows to reach the star', glyph: '🤖', color: colors.blue },
+  { id: 'g1-code-fix', grade: 1, subject: 'coding', title: 'Fix the program', blurb: 'Find the wrong arrow', glyph: '🐞', color: colors.pink },
+  { id: 'g2-code-coins', grade: 2, subject: 'coding', title: 'Coin collector', blurb: 'Longer programs', glyph: '🪙', color: colors.orange },
+  { id: 'g2-code-fix', grade: 2, subject: 'coding', title: 'Debugging', blurb: 'Fix the bug', glyph: '🐞', color: colors.pink },
+  { id: 'g3-code-loops', grade: 3, subject: 'coding', title: 'Loops', blurb: 'Repeat blocks', glyph: '🔁', color: colors.green },
+  { id: 'g3-code-trace', grade: 3, subject: 'coding', title: 'Read the code', blurb: 'How many times?', glyph: '📜', color: colors.purple },
+  { id: 'g4-code-turns', grade: 4, subject: 'coding', title: 'Turn and move', blurb: 'Forward, left, right', glyph: '↪️', color: colors.blue },
+  { id: 'g4-code-if', grade: 4, subject: 'coding', title: 'If and else', blurb: 'Decisions in code', glyph: '🔀', color: colors.orange },
+  { id: 'g5-code-functions', grade: 5, subject: 'coding', title: 'Functions', blurb: 'Build your own block', glyph: '🧩', color: colors.green },
+  { id: 'g5-code-variables', grade: 5, subject: 'coding', title: 'Variables', blurb: 'Keep score in code', glyph: '🔢', color: colors.purple },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

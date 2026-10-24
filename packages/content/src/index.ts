@@ -106,6 +106,16 @@ import sci4WaterCycle from '../puzzles/g4-science/water-cycle.json';
 import sci5Body from '../puzzles/g5-science/body.json';
 import sci5Living from '../puzzles/g5-science/living.json';
 import sci5Space from '../puzzles/g5-science/space.json';
+import code1Steps from '../puzzles/g1-coding/steps.json';
+import code1Fix from '../puzzles/g1-coding/fix.json';
+import code2Coins from '../puzzles/g2-coding/coins.json';
+import code2Fix from '../puzzles/g2-coding/fix.json';
+import code3Loops from '../puzzles/g3-coding/loops.json';
+import code3Trace from '../puzzles/g3-coding/trace.json';
+import code4Turns from '../puzzles/g4-coding/turns.json';
+import code4If from '../puzzles/g4-coding/if.json';
+import code5Functions from '../puzzles/g5-coding/functions.json';
+import code5Variables from '../puzzles/g5-coding/variables.json';
 
 export * from './types';
 export * from './tokens';
@@ -132,6 +142,7 @@ export * from './thinking5';
 export * from './science';
 export * from './tests';
 export * from './sync';
+export * from './coding';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -154,6 +165,7 @@ export const PUZZLES = [
   ...g5EJoining, ...g5EVoice, ...g5EIdioms, ...g5ESpelling, ...g5EReading,
   ...g5Crossword, ...g5SumGrid, ...g5Teasers, ...g5Series, ...g5LogicCodes,
   ...sci1Body, ...sci1Living, ...sci1Animals, ...sci2Plants, ...sci2Food, ...sci2Weather, ...sci3Animals, ...sci3Senses, ...sci3AirWater, ...sci4PlantsFood, ...sci4Matter, ...sci4WaterCycle, ...sci5Body, ...sci5Living, ...sci5Space,
+  ...code1Steps, ...code1Fix, ...code2Coins, ...code2Fix, ...code3Loops, ...code3Trace, ...code4Turns, ...code4If, ...code5Functions, ...code5Variables,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in all six subjects — Maths, English, Science, Puzzles, Thinking Skills (1,960 puzzles) and Practice & Tests — with adaptive difficulty.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in all seven subjects — Maths, English, Science, Coding, Puzzles, Thinking Skills (2,160 puzzles) and Practice & Tests — with adaptive difficulty.**
 
 ## Getting started
 
@@ -295,6 +295,26 @@ Still to do in the Supabase dashboard:
   - How to Build a Daily Learning Habit
   - Best Books for Grade 1–5 Maths and English
 
+## Coding, Grades 1–5
+
+10 topics (2 per grade), 20 puzzles each across 3 levels — 200 puzzles. There's no typing: children build programs from blocks, press **▶ Run** and watch the robot follow them.
+
+| Grade | Topics |
+|---|---|
+| 1 | Robot steps (arrow sequences) · Fix the program (find the wrong arrow) |
+| 2 | Coin collector (longer programs, collect every coin) · Debugging |
+| 3 | Loops (repeat blocks within a block limit) · Read the code (count the loops) |
+| 4 | Turn and move (forward / turn left / turn right) · If and else (trace a program) |
+| 5 | Functions (build with an F block) · Variables (trace a program) |
+
+- **Puzzle types**:
+  - `code-grid` (interactive): blocks, repeat counts, block limit, debug mode.
+  - `code-trace` (one tap): the program is shown Scratch-style and the question asks for a variable's value or a count.
+- **Interpreter**: `packages/content/src/coding.ts` is shared by the app and the checker:
+  - every grid puzzle's stored program is run and must reach the star with every coin;
+  - fix puzzles must differ from a working program by exactly one block and must fail as given;
+  - trace answers are recomputed.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
@@ -399,3 +419,9 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Sign in | Children | Who's playing? |
 |---|---|---|
 | ![](docs/screenshots/account-signin.png) | ![](docs/screenshots/account-children.png) | ![](docs/screenshots/account-who.png) |
+
+### Coding
+
+| Debugging | Loops | Turn and move | Read the code |
+|---|---|---|---|
+| ![](docs/screenshots/code-fix.png) | ![](docs/screenshots/code-loops.png) | ![](docs/screenshots/code-turns.png) | ![](docs/screenshots/code-trace.png) |

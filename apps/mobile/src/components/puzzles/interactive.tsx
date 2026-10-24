@@ -4,6 +4,7 @@ import { PHRASES, clueText, fits, sudokuShape, type PickAllPuzzle, type SumGridP
 import { buzz, say } from '../../lib/feedback';
 import { usePop, useWiggle } from '../../lib/motion';
 import { colors, font } from '../../lib/theme';
+import { CodeGrid } from '../coding/CodeGrid';
 
 export type PlayerProps<P extends InteractivePuzzle> = {
   puzzle: P;
@@ -30,6 +31,7 @@ export const PLAYERS: Players = {
   'pick-all': PickAll,
   'word-ladder': WordLadder,
   'sum-grid': SumGrid,
+  'code-grid': CodeGrid,
 };
 
 /** A tappable box that wiggles each time `wiggle` increments. */

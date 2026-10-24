@@ -11,6 +11,7 @@ import { oneLetterApart } from '../src/words4.ts';
 import type { Puzzle } from '../src/types.ts';
 import { buildTest, scoreTest, testsFor } from '../src/tests.ts';
 import { mergeProgress, type SyncedProgress } from '../src/sync.ts';
+import { expand, runGrid, traceAnswer } from '../src/coding.ts';
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { pickVoice, speakable, type VoiceLike } from '../src/voice.ts';
@@ -139,3 +140,17 @@ assert.equal(m.tests[0].date, '2026-10-21', 'newest test first');
 assert.deepEqual(mergeProgress(dev, null), dev);
 assert.deepEqual(mergeProgress(dev, dev).solved, dev.solved, 'merging twice changes nothing');
 console.log('sync merge tests OK');
+
+// Coding interpreter
+const G = { rows: 3, cols: 3, walls: [[1, 1]] as [number, number][], start: [0, 0] as [number, number], goal: [2, 2] as [number, number], coins: [[0, 2]] as [number, number][], palette: ['up', 'down', 'left', 'right'] as const, loops: true, maxBlocks: 2, mode: 'build' as const, solution: [] };
+const g = { ...G, palette: [...G.palette] };
+assert.ok(runGrid(g, [{ op: 'right', times: 2 }, { op: 'down', times: 2 }]).ok, 'loop blocks reach the star with the coin');
+assert.equal(runGrid(g, [{ op: 'down', times: 2 }, { op: 'right', times: 2 }]).problem, 'coins', 'missing the coin fails');
+assert.equal(runGrid(g, [{ op: 'down', times: 1 }, { op: 'right', times: 1 }]).problem, 'wall', 'walls stop the robot');
+assert.equal(runGrid(g, [{ op: 'right', times: 1 }, { op: 'right', times: 1 }, { op: 'down', times: 2 }]).problem, 'blocks', 'block limit');
+const turnsG = { ...g, palette: ['fwd', 'turnL', 'turnR'] as ('fwd' | 'turnL' | 'turnR')[], facing: 1 as const, maxBlocks: 3 };
+assert.ok(runGrid(turnsG, [{ op: 'fwd', times: 2 }, { op: 'turnR', times: 1 }, { op: 'fwd', times: 2 }]).ok, 'facing robot turns right to go down');
+assert.deepEqual(expand([{ op: 'F', times: 2 }], [{ op: 'right', times: 1 }, { op: 'up', times: 1 }]), ['right', 'up', 'right', 'up']);
+assert.equal(traceAnswer([{ repeat: 3, body: [{ say: 'hi' }, { repeat: 2, body: [{ say: 'hi' }] }] }], { says: 'hi' }), 9);
+assert.equal(traceAnswer([{ set: 'x', to: 0 }, { repeat: 4, body: [{ add: 'x', by: 3 }, { if: { v: 'x', op: '>', n: 5 }, then: [{ add: 'x', by: -1 }] }] }], { v: 'x' }), 9);
+console.log('coding interpreter tests OK');
