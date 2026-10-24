@@ -264,12 +264,16 @@ How it's built:
 - **App**: `apps/mobile/src/lib/supabase.ts` and `lib/progress.tsx` handle sync, and the parent-settings UI is `components/AccountCard.tsx`.
 - **Privacy**: the policy is at `/privacy.html`.
 
-### Turning it on
-1. In Supabase, open **SQL Editor** and run `supabase/migrations/0001_parent_accounts.sql`.
-2. Under **Authentication → Emails → Magic Link**, put the code in the template body, e.g. `Your QuickStep code is {{ .Token }}`, so the email shows a 6-digit code.
-3. Under **Authentication → URL Configuration**, add your site URL.
-4. Copy the **publishable key** (Project Settings → API Keys) into `EXPO_PUBLIC_SUPABASE_KEY`, either in `apps/mobile/.env` or as a Vercel environment variable. The project URL is already set. Then redeploy.
-5. Supabase's built-in email sender allows only a few emails an hour. Before launch, add your own SMTP provider under Authentication → SMTP.
+### Setup status
+Done:
+- The tables, security rules and functions are applied to the QuickStep Supabase project (migrations `0001`–`0002`).
+- I checked that a parent can't see or change another parent's children and that a 5th child is blocked.
+- The publishable key is in `apps/mobile/.env`, so accounts are switched on.
+
+Still to do in the Supabase dashboard:
+1. **Authentication → Emails → Magic Link**: put the code in the template body, e.g. `Your QuickStep code is {{ .Token }}`, so parents get a 6-digit code.
+2. **Authentication → URL Configuration**: set the Site URL to `https://quicklearning2.vercel.app`.
+3. Before launch, add your own SMTP provider under Authentication → SMTP. The built-in sender allows only a few emails an hour.
 
 ## Adaptive difficulty
 
