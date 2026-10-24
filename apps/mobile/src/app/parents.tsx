@@ -1,5 +1,6 @@
 import { PUZZLES, TOPICS, puzzlesFor, testsFor } from '@quickstep/content';
 import { clock } from '../components/TestList';
+import { AccountCard } from '../components/AccountCard';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Alert, Platform, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
@@ -53,6 +54,7 @@ export default function Parents() {
 
   return (
     <Screen back title="Parent settings">
+      <AccountCard />
       <View style={styles.card}>
         <Text style={text.h3}>Recent tests</Text>
         {p.tests.length === 0 && <Text style={text.small}>No tests taken yet. Tests are under Practice & Tests.</Text>}
@@ -86,7 +88,7 @@ export default function Parents() {
       </View>
       <Button3D label="Change grade" onPress={() => router.replace('/?change=1')} />
       <Button3D label="Reset progress" color={colors.wrongText} shadow="#9e1f4b" onPress={resetProgress} />
-      <Text style={[text.small, { textAlign: 'center' }]}>QuickStep has no ads and no tracking. Progress is stored only on this device.</Text>
+      <Text style={[text.small, { textAlign: 'center' }]}>QuickStep has no ads and no tracking. Progress is stored on this device, and in your parent account if you sign in.</Text>
     </Screen>
   );
 }

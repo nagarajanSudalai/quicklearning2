@@ -19,7 +19,7 @@
 - Still to do: letter-sound puzzles (need recorded clips), mascot animation (Lottie/Rive) once art is ready, sound effects, internal test builds with EAS (TestFlight + Play internal track).
 
 ## Phase 2 — Accounts, progress and store launch
-- Supabase: parent sign-up, up to 4 child profiles, progress synced across devices.
+- **Supabase parent accounts ✅** (built; switched on once the publishable key is added) — email-code sign-in, up to 4 child profiles, progress synced and merged across devices, delete account, privacy page.
 - Parent dashboard: time spent, topics done, weak areas.
 - Compliance: COPPA / GDPR-K, Apple Kids category, Google Designed for Families. No ads, no third-party tracking, privacy policy.
 - **Public launch with Grade 1.**

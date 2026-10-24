@@ -243,6 +243,34 @@ How a test works:
 
 The logic is in `packages/content/src/tests.ts` (`testsFor`, `buildTest`, `scoreTest`). `npm test` checks every grade's tests (level mix, no repeats, the right bank) and the scoring.
 
+## Parent accounts (Supabase)
+
+Optional. Without an account the app works exactly as before, with progress kept on the device.
+
+What a signed-in parent gets:
+- **Sign-in**: an email address and a 6-digit code, with no password.
+- **Children**: up to 4 profiles, each with a nickname and a grade.
+- **Sync**: each child's stars, solved puzzles, streak and test reports are kept on every device.
+- **Switching**: children switch profile on **Who's playing?** (from "Playing as … · Switch" on the grade screen) without the parent gate.
+- **First child**: takes over whatever was already played on that device.
+- **Merging**: progress is merged, never overwritten. Solved puzzles are combined, the higher star count is kept, and test reports are combined (`packages/content/src/sync.ts`).
+- **Delete account**: removes the parent, every child profile and all synced progress.
+
+How it's built:
+- **Database**: `supabase/migrations/0001_parent_accounts.sql` creates the `children` and `progress` tables.
+  - Row-level security means a parent only ever sees their own children.
+  - A trigger caps each parent at 4 children.
+  - `delete_my_account()` removes the parent and everything linked to them.
+- **App**: `apps/mobile/src/lib/supabase.ts` and `lib/progress.tsx` handle sync, and the parent-settings UI is `components/AccountCard.tsx`.
+- **Privacy**: the policy is at `/privacy.html`.
+
+### Turning it on
+1. In Supabase, open **SQL Editor** and run `supabase/migrations/0001_parent_accounts.sql`.
+2. Under **Authentication → Emails → Magic Link**, put the code in the template body, e.g. `Your QuickStep code is {{ .Token }}`, so the email shows a 6-digit code.
+3. Under **Authentication → URL Configuration**, add your site URL.
+4. Copy the **publishable key** (Project Settings → API Keys) into `EXPO_PUBLIC_SUPABASE_KEY`, either in `apps/mobile/.env` or as a Vercel environment variable. The project URL is already set. Then redeploy.
+5. Supabase's built-in email sender allows only a few emails an hour. Before launch, add your own SMTP provider under Authentication → SMTP.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
@@ -341,3 +369,9 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Tests | One try | Report | Parents |
 |---|---|---|---|
 | ![](docs/screenshots/tests-list.png) | ![](docs/screenshots/tests-question.png) | ![](docs/screenshots/tests-report.png) | ![](docs/screenshots/tests-parents.png) |
+
+### Parent accounts
+
+| Sign in | Children | Who's playing? |
+|---|---|---|
+| ![](docs/screenshots/account-signin.png) | ![](docs/screenshots/account-children.png) | ![](docs/screenshots/account-who.png) |

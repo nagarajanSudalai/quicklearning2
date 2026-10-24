@@ -18,7 +18,7 @@ export default function App({ animations = true }: { animations?: boolean }) {
         <div className="site-footer__inner">
           <span>© 2026 QuickStep</span>
           <span className="site-footer__links">
-            <a href="#">Privacy</a>
+            <a href="/privacy.html">Privacy</a>
             <a href="#">For Schools</a>
             <a href="#">Contact</a>
           </span>

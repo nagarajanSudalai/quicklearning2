@@ -10,6 +10,7 @@ import { encode, patternTerms } from '../src/thinking4.ts';
 import { oneLetterApart } from '../src/words4.ts';
 import type { Puzzle } from '../src/types.ts';
 import { buildTest, scoreTest, testsFor } from '../src/tests.ts';
+import { mergeProgress, type SyncedProgress } from '../src/sync.ts';
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { pickVoice, speakable, type VoiceLike } from '../src/voice.ts';
@@ -127,3 +128,14 @@ assert.ok(!testsFor(ALL, 1).some((t) => t.subject === 'thinking'), 'Grade 1 Thin
 const sc = scoreTest([{ topic: 'a' }, { topic: 'a' }, { topic: 'a' }, { topic: 'b' }] as Puzzle[], [true, true, false, false]);
 assert.deepEqual([sc.right, sc.total, sc.weak], [2, 4, ['b']]);
 console.log('practice test tests OK');
+
+// Progress sync merge
+const dev: SyncedProgress = { stars: 5, solved: { a: true, b: true }, streak: 2, lastPlayed: '2026-10-20', tests: [{ date: '2026-10-19' }] };
+const cloud: SyncedProgress = { stars: 8, solved: { b: true, c: true }, streak: 4, lastPlayed: '2026-10-22', tests: [{ date: '2026-10-19' }, { date: '2026-10-21' }] };
+const m = mergeProgress(dev, cloud);
+assert.deepEqual(Object.keys(m.solved).sort(), ['a', 'b', 'c']);
+assert.deepEqual([m.stars, m.streak, m.lastPlayed, m.tests.length], [8, 4, '2026-10-22', 2]);
+assert.equal(m.tests[0].date, '2026-10-21', 'newest test first');
+assert.deepEqual(mergeProgress(dev, null), dev);
+assert.deepEqual(mergeProgress(dev, dev).solved, dev.solved, 'merging twice changes nothing');
+console.log('sync merge tests OK');

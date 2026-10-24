@@ -2,16 +2,23 @@ import { GRADE_NOTES, SUBJECTS, isAvailable, type Grade } from '@quickstep/conte
 import { Link, router, useLocalSearchParams } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Screen, Tile } from '../../../components/ui';
+import { useProgress } from '../../../lib/progress';
 import { colors, font, text } from '../../../lib/theme';
 
 export default function GradeHome() {
   const grade = Number(useLocalSearchParams<{ grade: string }>().grade) as Grade;
+  const { account } = useProgress();
   return (
     <Screen>
       <View style={styles.head}>
         <Text style={text.h1}>Grade {grade}</Text>
         <Link href="/?change=1" style={styles.link}>Change grade</Link>
       </View>
+      {account.active && (
+        <Link href="/who" style={styles.link}>
+          Playing as {account.active.name}{account.children.length > 1 ? ' · Switch' : ''}
+        </Link>
+      )}
       <Text style={text.body}>{GRADE_NOTES[grade]}</Text>
       <View style={styles.list}>
         {SUBJECTS.map((s) => {
