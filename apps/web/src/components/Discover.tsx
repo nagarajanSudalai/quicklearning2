@@ -6,7 +6,7 @@ export function Discover() {
   const posts = POSTS.filter((x) => tab === 'All' || x.cat === tab);
 
   return (
-    <section className="container discover">
+    <section id="discover" className="container discover">
       <div className="discover__head">
         <div>
           <h2 className="discover__title">Discover, Learn Beyond the App</h2>
@@ -24,7 +24,7 @@ export function Discover() {
         {posts.map((x) => {
           const [tagBg, tagFg, tagLabel] = TAGS[x.cat];
           return (
-            <a key={x.title} href="#" className="post">
+            <a key={x.title} href={`/articles/${x.slug}.html`} className="post">
               <span className="post__thumb" style={{ background: x.bg }}>
                 <img src={x.img} alt="" width={400} height={400} />
               </span>

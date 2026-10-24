@@ -275,6 +275,26 @@ Still to do in the Supabase dashboard:
 2. **Authentication → URL Configuration**: set the Site URL to `https://quicklearning2.vercel.app`.
 3. Before launch, add your own SMTP provider under Authentication → SMTP. The built-in sender allows only a few emails an hour.
 
+## Homepage menu and articles
+
+| Menu | Goes to |
+|---|---|
+| Home | top of the homepage |
+| Learning | the subjects row; each subject tile opens that subject in the app |
+| Games | the app's Puzzles for the chosen grade |
+| Practice | the app's Practice & Tests for the chosen grade |
+| Discover | the articles section |
+| For Parents | a section on accounts, test reports, adaptive levels and privacy, with a link to parent settings |
+
+- **Grade**: the grade picked in the hero is remembered in the browser and used by these links. With no grade picked, they open the app's grade picker.
+- **Phones**: the menu collapses into a ☰ button.
+- **Highlighting**: the highlighted item follows the section in view.
+- **Articles**: static pages in `apps/web/public/articles/` (index at `/articles/`), sharing `article.css`:
+  - Getting Ready for Term-End Assessments
+  - 7 Fun Number Puzzles for Primary Students
+  - How to Build a Daily Learning Habit
+  - Best Books for Grade 1–5 Maths and English
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.

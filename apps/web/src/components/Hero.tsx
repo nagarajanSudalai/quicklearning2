@@ -1,6 +1,7 @@
-import { useState, type CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 import heroArt from '../assets/hero-illustration.svg';
-import { FLOATERS, GRADES, GRADE_COLORS, GRADE_NOTES, type Grade } from '../data';
+import { FLOATERS, GRADES, GRADE_COLORS, GRADE_NOTES } from '../data';
+import { useGrade } from '../grade-context';
 
 const BADGES = [
   { label: 'Curriculum aligned', color: '#2fbf71' },
@@ -17,7 +18,8 @@ const RIBBONS = [
 ];
 
 export function Hero({ animations }: { animations: boolean }) {
-  const [grade, setGrade] = useState<Grade>(1);
+  const { grade: chosen, setGrade } = useGrade();
+  const grade = chosen ?? 1;
 
   return (
     <section className="hero">
@@ -34,7 +36,7 @@ export function Hero({ animations }: { animations: boolean }) {
                 <button
                   key={g}
                   className="grade-btn"
-                  aria-pressed={grade === g}
+                  aria-pressed={chosen === g}
                   style={{ '--c': GRADE_COLORS[g] } as CSSProperties}
                   onClick={() => setGrade(g)}
                 >

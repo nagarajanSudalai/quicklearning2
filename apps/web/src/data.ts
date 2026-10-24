@@ -17,11 +17,11 @@ export const TAGS: Record<PostCategory, [string, string, string]> = {
   'Study Tips': ['#f6e6ff', '#8a2fc4', 'STUDY TIPS'],
 };
 
-export const POSTS: { cat: PostCategory; title: string; desc: string; when: string; img: string; bg: string }[] = [
-  { cat: 'Exam Updates', title: 'CBSE Class 10 Datesheet Announced', desc: 'Check important dates and official notice here.', when: '2 days ago', img: calendarArt, bg: '#ffecec' },
-  { cat: 'Learning Guides', title: '7 Fun Number Puzzles for Primary Students', desc: 'Make maths fun with these simple activities.', when: '3 days ago', img: lightbulbArt, bg: '#fff4dc' },
-  { cat: 'Parenting', title: 'How to Build a Daily Learning Habit', desc: 'Practical tips to encourage consistent learning.', when: '5 days ago', img: parentChildArt, bg: '#f2ecff' },
-  { cat: 'Study Tips', title: 'Best Books for Grade 1–5 Maths and English', desc: 'A curated list for home practice and concept building.', when: '1 week ago', img: bookStackArt, bg: '#e9f6ff' },
+export const POSTS: { cat: PostCategory; slug: string; title: string; desc: string; when: string; img: string; bg: string }[] = [
+  { cat: 'Exam Updates', slug: 'term-end-assessments', title: 'Getting Ready for Term-End Assessments', desc: 'A calm two-week plan for Classes 1–5.', when: '5 min read', img: calendarArt, bg: '#ffecec' },
+  { cat: 'Learning Guides', slug: 'fun-number-puzzles', title: '7 Fun Number Puzzles for Primary Students', desc: 'Make maths fun with these simple activities.', when: '6 min read', img: lightbulbArt, bg: '#fff4dc' },
+  { cat: 'Parenting', slug: 'daily-learning-habit', title: 'How to Build a Daily Learning Habit', desc: 'Practical tips to encourage consistent learning.', when: '5 min read', img: parentChildArt, bg: '#f2ecff' },
+  { cat: 'Study Tips', slug: 'best-books-grade-1-5', title: 'Best Books for Grade 1–5 Maths and English', desc: 'A curated list for home practice and concept building.', when: '6 min read', img: bookStackArt, bg: '#e9f6ff' },
 ];
 
 export const FLOATERS = [

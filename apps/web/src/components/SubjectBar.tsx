@@ -1,11 +1,13 @@
 import { SUBJECTS } from '../data';
+import { appLink, useGrade } from '../grade-context';
 
 export function SubjectBar() {
+  const { grade } = useGrade();
   return (
-    <section className="container subjects">
+    <section id="learning" className="container subjects">
       <div className="subjects__card">
         {SUBJECTS.map((s) => (
-          <a key={s.name} href="#" className="subject">
+          <a key={s.name} href={appLink(grade, s.id)} className="subject">
             <span className="subject__tile" style={{ background: s.color }} aria-hidden>
               {s.glyph}
             </span>
