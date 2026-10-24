@@ -1,0 +1,395 @@
+[
+  {
+    "id": "g2-robo-senses-01",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 1,
+    "prompt": "People see with eyes. A robot “sees” with a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q1-1",
+      "picture": "👀",
+      "question": "People see with eyes. A robot “sees” with a…"
+    },
+    "options": [
+      "motor",
+      "speaker",
+      "camera"
+    ],
+    "answer": "camera"
+  },
+  {
+    "id": "g2-robo-senses-02",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 1,
+    "prompt": "People hear with ears. A robot “hears” with a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q1-2",
+      "picture": "👂",
+      "question": "People hear with ears. A robot “hears” with a…"
+    },
+    "options": [
+      "light",
+      "wheel",
+      "microphone"
+    ],
+    "answer": "microphone"
+  },
+  {
+    "id": "g2-robo-senses-03",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 1,
+    "prompt": "A robot knows it has bumped into something with a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q1-3",
+      "picture": "✋",
+      "question": "A robot knows it has bumped into something with a…"
+    },
+    "options": [
+      "microphone",
+      "speaker",
+      "touch sensor"
+    ],
+    "answer": "touch sensor"
+  },
+  {
+    "id": "g2-robo-senses-04",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 1,
+    "prompt": "A robot talks to us using a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q1-4",
+      "picture": "🗣️",
+      "question": "A robot talks to us using a…"
+    },
+    "options": [
+      "battery",
+      "camera",
+      "speaker"
+    ],
+    "answer": "speaker"
+  },
+  {
+    "id": "g2-robo-senses-05",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 1,
+    "prompt": "A robot can tell if a room is dark using a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q1-5",
+      "picture": "💡",
+      "question": "A robot can tell if a room is dark using a…"
+    },
+    "options": [
+      "light sensor",
+      "touch sensor",
+      "speaker"
+    ],
+    "answer": "light sensor"
+  },
+  {
+    "id": "g2-robo-senses-06",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 1,
+    "prompt": "A robot measures how hot something is with a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q1-6",
+      "picture": "🌡️",
+      "question": "A robot measures how hot something is with a…"
+    },
+    "options": [
+      "camera",
+      "microphone",
+      "temperature sensor"
+    ],
+    "answer": "temperature sensor"
+  },
+  {
+    "id": "g2-robo-senses-07",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 1,
+    "prompt": "Some robots use sound echoes to find walls, like a bat. This is a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q1-7",
+      "picture": "🦇",
+      "question": "Some robots use sound echoes to find walls, like a bat. This is a…"
+    },
+    "options": [
+      "speaker",
+      "light bulb",
+      "distance sensor"
+    ],
+    "answer": "distance sensor"
+  },
+  {
+    "id": "g2-robo-senses-08",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 2,
+    "prompt": "True or false? A camera can be a robot’s “eyes”.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-robo-senses-tf2-1",
+      "picture": "📷",
+      "statement": "A camera can be a robot’s “eyes”."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-robo-senses-09",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 2,
+    "prompt": "True or false? A microphone helps a robot hear sounds.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-robo-senses-tf2-2",
+      "picture": "🎤",
+      "statement": "A microphone helps a robot hear sounds."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-robo-senses-10",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 2,
+    "prompt": "True or false? Every robot can smell flowers.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-robo-senses-tf2-3",
+      "picture": "👃",
+      "statement": "Every robot can smell flowers."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g2-robo-senses-11",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 2,
+    "prompt": "True or false? A touch sensor tells a robot when it bumps into something.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-robo-senses-tf2-4",
+      "picture": "✋",
+      "statement": "A touch sensor tells a robot when it bumps into something."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-robo-senses-12",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 2,
+    "prompt": "True or false? A speaker helps a robot see in the dark.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-robo-senses-tf2-5",
+      "picture": "🔊",
+      "statement": "A speaker helps a robot see in the dark."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g2-robo-senses-13",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 2,
+    "prompt": "True or false? A light sensor can tell if it is day or night.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-robo-senses-tf2-6",
+      "picture": "💡",
+      "statement": "A light sensor can tell if it is day or night."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-robo-senses-14",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 2,
+    "prompt": "True or false? Sensors send information to the robot’s computer.",
+    "type": "true-false",
+    "payload": {
+      "id": "g2-robo-senses-tf2-7",
+      "picture": "🧠",
+      "statement": "Sensors send information to the robot’s computer."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g2-robo-senses-15",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 3,
+    "prompt": "A shop door opens by itself when you walk near. Which sensor does it use?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q3-1",
+      "picture": "🚪",
+      "question": "A shop door opens by itself when you walk near. Which sensor does it use?"
+    },
+    "options": [
+      "a microphone",
+      "a temperature sensor",
+      "a motion sensor"
+    ],
+    "answer": "a motion sensor"
+  },
+  {
+    "id": "g2-robo-senses-16",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 3,
+    "prompt": "Street lights switch on by themselves at night. Which sensor helps?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q3-2",
+      "picture": "🌃",
+      "question": "Street lights switch on by themselves at night. Which sensor helps?"
+    },
+    "options": [
+      "a touch sensor",
+      "a light sensor",
+      "a sound sensor"
+    ],
+    "answer": "a light sensor"
+  },
+  {
+    "id": "g2-robo-senses-17",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 3,
+    "prompt": "A car beeps when it is about to hit a wall while parking. Which sensor is it?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q3-3",
+      "picture": "🚗",
+      "question": "A car beeps when it is about to hit a wall while parking. Which sensor is it?"
+    },
+    "options": [
+      "a light sensor",
+      "a temperature sensor",
+      "a distance sensor"
+    ],
+    "answer": "a distance sensor"
+  },
+  {
+    "id": "g2-robo-senses-18",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 3,
+    "prompt": "Your phone screen knows where your finger is. That is a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q3-4",
+      "picture": "📱",
+      "question": "Your phone screen knows where your finger is. That is a…"
+    },
+    "options": [
+      "thermometer",
+      "microphone",
+      "touch screen"
+    ],
+    "answer": "touch screen"
+  },
+  {
+    "id": "g2-robo-senses-19",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 3,
+    "prompt": "A robot vacuum stops at the top of the stairs. What does it sense?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q3-5",
+      "picture": "🧹",
+      "question": "A robot vacuum stops at the top of the stairs. What does it sense?"
+    },
+    "options": [
+      "the floor ending below it",
+      "the colour of the walls",
+      "the time of day"
+    ],
+    "answer": "the floor ending below it"
+  },
+  {
+    "id": "g2-robo-senses-20",
+    "grade": 2,
+    "subject": "robotics",
+    "topic": "g2-robo-senses",
+    "difficulty": 3,
+    "prompt": "An air conditioner turns off when the room is cool enough. Which sensor helps?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g2-robo-senses-q3-6",
+      "picture": "❄️",
+      "question": "An air conditioner turns off when the room is cool enough. Which sensor helps?"
+    },
+    "options": [
+      "a temperature sensor",
+      "a camera",
+      "a touch sensor"
+    ],
+    "answer": "a temperature sensor"
+  }
+]

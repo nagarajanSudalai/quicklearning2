@@ -1,0 +1,402 @@
+[
+  {
+    "id": "g1-robo-parts-01",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "camera",
+      "ask": "name"
+    },
+    "options": [
+      "wheels",
+      "camera",
+      "antenna"
+    ],
+    "answer": "camera"
+  },
+  {
+    "id": "g1-robo-parts-02",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "antenna",
+      "ask": "name"
+    },
+    "options": [
+      "wheels",
+      "antenna",
+      "gripper"
+    ],
+    "answer": "antenna"
+  },
+  {
+    "id": "g1-robo-parts-03",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "gripper",
+      "ask": "name"
+    },
+    "options": [
+      "gripper",
+      "camera",
+      "wheels"
+    ],
+    "answer": "gripper"
+  },
+  {
+    "id": "g1-robo-parts-04",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "battery",
+      "ask": "name"
+    },
+    "options": [
+      "camera",
+      "antenna",
+      "battery"
+    ],
+    "answer": "battery"
+  },
+  {
+    "id": "g1-robo-parts-05",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "wheels",
+      "ask": "name"
+    },
+    "options": [
+      "arm",
+      "antenna",
+      "wheels"
+    ],
+    "answer": "wheels"
+  },
+  {
+    "id": "g1-robo-parts-06",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "arm",
+      "ask": "name"
+    },
+    "options": [
+      "camera",
+      "wheels",
+      "arm"
+    ],
+    "answer": "arm"
+  },
+  {
+    "id": "g1-robo-parts-07",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 1,
+    "prompt": "What is the part marked with a question mark?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "camera",
+      "ask": "name"
+    },
+    "options": [
+      "arm",
+      "camera",
+      "wheels"
+    ],
+    "answer": "camera"
+  },
+  {
+    "id": "g1-robo-parts-08",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 2,
+    "prompt": "Which number shows the camera?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "camera",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "5"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "g1-robo-parts-09",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 2,
+    "prompt": "Which number shows the antenna?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "antenna",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "2"
+  },
+  {
+    "id": "g1-robo-parts-10",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 2,
+    "prompt": "Which number shows the gripper?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "gripper",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "3",
+      "4"
+    ],
+    "answer": "3"
+  },
+  {
+    "id": "g1-robo-parts-11",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 2,
+    "prompt": "Which number shows the battery?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "battery",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "4",
+      "6"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "g1-robo-parts-12",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 2,
+    "prompt": "Which number shows the wheels?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "wheels",
+      "ask": "find"
+    },
+    "options": [
+      "2",
+      "5",
+      "6"
+    ],
+    "answer": "5"
+  },
+  {
+    "id": "g1-robo-parts-13",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 2,
+    "prompt": "Which number shows the arm?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "arm",
+      "ask": "find"
+    },
+    "options": [
+      "2",
+      "3",
+      "6"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": "g1-robo-parts-14",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 2,
+    "prompt": "Which number shows the camera?",
+    "type": "label-diagram",
+    "payload": {
+      "diagram": "robot",
+      "part": "camera",
+      "ask": "find"
+    },
+    "options": [
+      "1",
+      "2",
+      "6"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "g1-robo-parts-15",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 3,
+    "prompt": "What does a robot use to see?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-robo-parts-q3-1",
+      "picture": "📷",
+      "question": "What does a robot use to see?"
+    },
+    "options": [
+      "a camera",
+      "a battery",
+      "wheels"
+    ],
+    "answer": "a camera"
+  },
+  {
+    "id": "g1-robo-parts-16",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 3,
+    "prompt": "Which part lets a robot pick things up?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-robo-parts-q3-2",
+      "picture": "🦾",
+      "question": "Which part lets a robot pick things up?"
+    },
+    "options": [
+      "a battery",
+      "an antenna",
+      "an arm with a gripper"
+    ],
+    "answer": "an arm with a gripper"
+  },
+  {
+    "id": "g1-robo-parts-17",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 3,
+    "prompt": "What helps a robot move around?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-robo-parts-q3-3",
+      "picture": "🛞",
+      "question": "What helps a robot move around?"
+    },
+    "options": [
+      "wheels or legs",
+      "a speaker",
+      "a camera"
+    ],
+    "answer": "wheels or legs"
+  },
+  {
+    "id": "g1-robo-parts-18",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 3,
+    "prompt": "Where does a robot get its power?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-robo-parts-q3-4",
+      "picture": "🔋",
+      "question": "Where does a robot get its power?"
+    },
+    "options": [
+      "the wheels",
+      "the gripper",
+      "the battery"
+    ],
+    "answer": "the battery"
+  },
+  {
+    "id": "g1-robo-parts-19",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 3,
+    "prompt": "The robot’s computer is like its…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-robo-parts-q3-5",
+      "picture": "🧠",
+      "question": "The robot’s computer is like its…"
+    },
+    "options": [
+      "brain",
+      "hair",
+      "feet"
+    ],
+    "answer": "brain"
+  },
+  {
+    "id": "g1-robo-parts-20",
+    "grade": 1,
+    "subject": "robotics",
+    "topic": "g1-robo-parts",
+    "difficulty": 3,
+    "prompt": "What does a robot use to send and receive signals?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g1-robo-parts-q3-6",
+      "picture": "📡",
+      "question": "What does a robot use to send and receive signals?"
+    },
+    "options": [
+      "an antenna",
+      "a wheel",
+      "a gripper"
+    ],
+    "answer": "an antenna"
+  }
+]

@@ -7,6 +7,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { runGrid, traceAnswer } from '../src/coding.ts';
 import type { CodeBlock, CodeOp, TraceStmt } from '../src/types.ts';
+import { CIRCUIT_ITEMS, bulbLights } from '../src/robotics.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
 let seed = 20261901;
@@ -82,7 +83,7 @@ const wallsFor = (rows: number, cols: number, path: Cell[], density: number): Ce
   return shuffle(free).slice(0, Math.round(free.length * density));
 };
 
-type Spec = { rows: number; segs: () => number[]; coins: number; walls: number; mode: 'build' | 'fix'; style: 'arrows' | 'loops' | 'turns' | 'fn'; extra: number };
+type Spec = { subject?: string; item?: string; prompt?: string; rows: number; segs: () => number[]; coins: number; walls: number; mode: 'build' | 'fix'; style: 'arrows' | 'loops' | 'turns' | 'fn'; extra: number };
 
 function grid(topic: string, grade: number, i: number, d: number, spec: Spec, seen: Set<string>) {
   for (;;) {
@@ -116,7 +117,7 @@ function grid(topic: string, grade: number, i: number, d: number, spec: Spec, se
     const payload = {
       rows, cols: rows, walls, start: p.cells[0], ...(facing !== undefined ? { facing } : {}), goal: p.cells[p.cells.length - 1], coins, palette,
       loops: spec.style !== 'arrows', ...(fn ? { fn } : {}), maxBlocks: solution.length + spec.extra, mode: spec.mode,
-      solution,
+      solution, ...(spec.item ? { item: spec.item } : {}),
     } as const;
     let program: CodeBlock[] | undefined;
     if (spec.mode === 'fix') {
@@ -131,12 +132,12 @@ function grid(topic: string, grade: number, i: number, d: number, spec: Spec, se
     const key = JSON.stringify([full.start, full.goal, p.moves]);
     if (seen.has(key)) continue;
     seen.add(key);
-    const prompt = spec.mode === 'fix' ? 'One block is wrong. Tap it, pick the right arrow, then press Run.'
+    const prompt = spec.prompt ? spec.prompt : spec.mode === 'fix' ? 'One block is wrong. Tap it, pick the right arrow, then press Run.'
       : spec.style === 'fn' ? 'Use the F block to get the robot to the star.'
       : spec.style === 'loops' ? `Get the robot to the star using ${full.maxBlocks} blocks or fewer.`
       : spec.style === 'turns' ? 'Turn and move the robot to the star.'
       : full.coins.length ? 'Collect the coins and reach the star.' : 'Help the robot reach the star.';
-    return { id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade, subject: 'coding', topic, difficulty: d, prompt, type: 'code-grid', payload: full };
+    return { id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade, subject: spec.subject ?? 'coding', topic, difficulty: d, prompt, type: 'code-grid', payload: full };
   }
 }
 
@@ -149,7 +150,7 @@ function trace(topic: string, grade: number, i: number, d: number, make: (d: num
     seen.add(key);
     const wrong = shuffle([answer + 1, answer - 1, answer + 2, answer * 2, answer + 10].filter((x) => x >= 0 && x !== answer));
     const options = shuffle([answer, ...[...new Set(wrong)].slice(0, 2)]);
-    return { id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade, subject: 'coding', topic, difficulty: d, prompt, type: 'code-trace', payload: { program, ask }, options, answer };
+    return { id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade, subject: topic.includes('-robo-') ? 'robotics' : 'coding', topic, difficulty: d, prompt, type: 'code-trace', payload: { program, ask }, options, answer };
   }
 }
 
@@ -182,7 +183,39 @@ const varTrace = (d: number): Made => {
   return { program: [{ set: v, to: 0 }, { set: w, to: 1 }, { repeat: int(3, 4), body: [{ add: v, by: int(1, 3) }, { add: w, by: int(1, 2) }] }, { add: v, by: int(1, 5) }], ask: pick([{ v }, { v: w }]), prompt: 'What is the value asked for at the end?' };
 };
 
-const TOPICS: { grade: number; id: string; file: string; make: (i: number, d: number, seen: Set<string>) => object }[] = [
+const sensorTrace = (d: number): Made => {
+  if (d === 1) {
+    const dist = int(2, 20), n = pick([5, 10]);
+    return { program: [{ set: 'distance', to: dist }, { if: { v: 'distance', op: '<', n }, then: [{ say: 'stop' }], else: [{ say: 'go' }] }], ask: { says: pick(['stop', 'go']) }, prompt: 'The robot reads its distance sensor. How many times does it say the word?' };
+  }
+  if (d === 2) {
+    const start = int(10, 20), step = int(2, 4), n = int(3, 6), lim = int(4, 9);
+    return { program: [{ set: 'distance', to: start }, { repeat: n, body: [{ add: 'distance', by: -step }, { if: { v: 'distance', op: '<', n: lim }, then: [{ say: 'beep' }] }] }], ask: { says: 'beep' }, prompt: 'The robot drives towards a wall. How many times does it beep?' };
+  }
+  const n = int(4, 6), lim = int(2, 5);
+  return { program: [{ set: 'light', to: 0 }, { set: 'lamps', to: 0 }, { repeat: n, body: [{ add: 'light', by: int(1, 2) }, { if: { v: 'light', op: '>', n: lim }, then: [{ add: 'lamps', by: 1 }], else: [{ add: 'lamps', by: 0 }] }] }], ask: pick([{ v: 'lamps' }, { v: 'light' }]), prompt: 'The robot checks its light sensor. What is the value asked for at the end?' };
+};
+
+function circuit(topic: string, i: number, d: number, seen: Set<string>) {
+  // Aim for a mix of Yes and No; fall back to any new circuit if the wanted answer runs out.
+  const want = i % 2 === 0;
+  for (let tries = 0; ; tries++) {
+    const bulbs = pick([1, 2] as const);
+    const payload: { battery: boolean; broken: boolean; bulbs: 1 | 2; switch?: 'open' | 'closed'; gap?: { item: string; name: string } } =
+      d === 1 ? { battery: rand() < 0.75, broken: rand() < 0.4, bulbs }
+      : d === 2 ? { battery: rand() < 0.8, broken: rand() < 0.3, bulbs, switch: pick(['open', 'closed'] as const) }
+      : { battery: true, broken: false, bulbs, switch: 'closed', gap: (({ item, name }) => ({ item, name }))(pick(CIRCUIT_ITEMS)) };
+    const key = JSON.stringify(payload);
+    if (seen.has(key)) continue;
+    if (bulbLights(payload) !== want && tries < 40) continue;
+    seen.add(key);
+    const answer = bulbLights(payload) ? 'Yes' : 'No';
+    const prompt = d === 3 ? `The ${payload.gap!.name} closes the gap in the wire. Will the bulb light up?` : `Will the ${bulbs === 2 ? 'bulbs' : 'bulb'} light up?`;
+    return { id: `${topic}-${String(i + 1).padStart(2, '0')}`, grade: 4, subject: 'robotics', topic, difficulty: d, prompt, type: 'circuit', payload, options: ['Yes', 'No'], answer };
+  }
+}
+
+const TOPICS: { grade: number; id: string; file: string; dir?: string; make: (i: number, d: number, seen: Set<string>) => object }[] = [
   { grade: 1, id: 'g1-code-steps', file: 'steps', make: (i, d, s) => grid('g1-code-steps', 1, i, d, { rows: 4, segs: () => (d === 1 ? [int(2, 3)] : d === 2 ? [int(1, 3), int(1, 2)] : [int(2, 3), int(1, 2), int(1, 2)]), coins: 0, walls: d === 1 ? 0 : 0.3, mode: 'build', style: 'arrows', extra: 2 }, s) },
   { grade: 1, id: 'g1-code-fix', file: 'fix', make: (i, d, s) => grid('g1-code-fix', 1, i, d, { rows: 4, segs: () => (d === 1 ? [int(2, 3)] : d === 2 ? [int(2, 3), int(1, 2)] : [int(2, 3), int(1, 2), int(1, 2)]), coins: 0, walls: 0.25, mode: 'fix', style: 'arrows', extra: 0 }, s) },
   { grade: 2, id: 'g2-code-coins', file: 'coins', make: (i, d, s) => grid('g2-code-coins', 2, i, d, { rows: 5, segs: () => (d === 1 ? [int(2, 3), int(1, 3)] : d === 2 ? [int(2, 3), int(2, 3), int(1, 2)] : [int(2, 3), int(2, 3), int(1, 3), int(1, 2)]), coins: d, walls: 0.3, mode: 'build', style: 'arrows', extra: 2 }, s) },
@@ -193,13 +226,19 @@ const TOPICS: { grade: number; id: string; file: string; make: (i: number, d: nu
   { grade: 4, id: 'g4-code-if', file: 'if', make: (i, d, s) => trace('g4-code-if', 4, i, d, ifTrace, s) },
   { grade: 5, id: 'g5-code-functions', file: 'functions', make: (i, d, s) => grid('g5-code-functions', 5, i, d, { rows: 6, segs: () => [], coins: d === 3 ? 1 : 0, walls: 0.2, mode: 'build', style: 'fn', extra: 0 }, s) },
   { grade: 5, id: 'g5-code-variables', file: 'variables', make: (i, d, s) => trace('g5-code-variables', 5, i, d, varTrace, s) },
+  // Robotics: missions with the coding robot, sensor programs and circuits.
+  { grade: 2, id: 'g2-robo-pickup', file: 'pickup', dir: 'robotics', make: (i, d, s) => grid('g2-robo-pickup', 2, i, d, { subject: 'robotics', item: '📦', prompt: 'Program the robot to pick up every parcel and reach the star.', rows: 5, segs: () => (d === 1 ? [int(2, 3), int(1, 3)] : [int(2, 3), int(2, 3), int(1, 3)]), coins: d, walls: 0.25, mode: 'build', style: 'arrows', extra: 2 }, s) },
+  { grade: 3, id: 'g3-robo-delivery', file: 'delivery', dir: 'robotics', make: (i, d, s) => grid('g3-robo-delivery', 3, i, d, { subject: 'robotics', item: '📦', prompt: 'Deliver the parcels! The battery lasts for only a few blocks, so use repeats.', rows: 6, segs: () => (d === 1 ? [int(3, 5), int(2, 3)] : d === 2 ? [int(3, 4), int(2, 4), int(2, 3)] : [int(2, 4), int(2, 4), int(2, 3), int(2, 3)]), coins: d, walls: 0.25, mode: 'build', style: 'loops', extra: 0 }, s) },
+  { grade: 4, id: 'g4-robo-circuits', file: 'circuits', dir: 'robotics', make: (i, d, s) => circuit('g4-robo-circuits', i, d, s) },
+  { grade: 4, id: 'g4-robo-sensors', file: 'sensors', dir: 'robotics', make: (i, d, s) => trace('g4-robo-sensors', 4, i, d, sensorTrace, s) },
+  { grade: 5, id: 'g5-robo-mission', file: 'mission', dir: 'robotics', make: (i, d, s) => grid('g5-robo-mission', 5, i, d, { subject: 'robotics', item: '🪨', prompt: 'Drive the rover: collect every rock sample and reach the base.', rows: 6, segs: () => (d === 1 ? [int(2, 4), int(2, 3)] : d === 2 ? [int(2, 4), int(2, 3), int(2, 3)] : [int(2, 3), int(2, 3), int(2, 3), int(1, 3)]), coins: d, walls: 0.25, mode: 'build', style: 'turns', extra: 1 }, s) },
 ];
 
 for (const t of TOPICS) {
   const seen = new Set<string>();
   const puzzles = levels.map((d, i) => t.make(i, d, seen));
-  const dir = join(ROOT, `g${t.grade}-coding`);
+  const dir = join(ROOT, `g${t.grade}-${t.dir ?? 'coding'}`);
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, `${t.file}.json`), JSON.stringify(puzzles, null, 2) + '\n');
-  console.log(`g${t.grade}-coding/${t.file}: ${puzzles.length} puzzles`);
+  console.log(`g${t.grade}-${t.dir ?? 'coding'}/${t.file}: ${puzzles.length} puzzles`);
 }

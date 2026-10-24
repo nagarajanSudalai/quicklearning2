@@ -116,6 +116,16 @@ import code4Turns from '../puzzles/g4-coding/turns.json';
 import code4If from '../puzzles/g4-coding/if.json';
 import code5Functions from '../puzzles/g5-coding/functions.json';
 import code5Variables from '../puzzles/g5-coding/variables.json';
+import robo1World from '../puzzles/g1-robotics/world.json';
+import robo1Parts from '../puzzles/g1-robotics/parts.json';
+import robo2Senses from '../puzzles/g2-robotics/senses.json';
+import robo2Pickup from '../puzzles/g2-robotics/pickup.json';
+import robo3Power from '../puzzles/g3-robotics/power.json';
+import robo3Delivery from '../puzzles/g3-robotics/delivery.json';
+import robo4Circuits from '../puzzles/g4-robotics/circuits.json';
+import robo4Sensors from '../puzzles/g4-robotics/sensors.json';
+import robo5Real from '../puzzles/g5-robotics/real.json';
+import robo5Mission from '../puzzles/g5-robotics/mission.json';
 
 export * from './types';
 export * from './tokens';
@@ -143,6 +153,7 @@ export * from './science';
 export * from './tests';
 export * from './sync';
 export * from './coding';
+export * from './robotics';
 
 // JSON is checked by `npm run validate-content`, so the cast is safe.
 export const PUZZLES = [
@@ -166,6 +177,7 @@ export const PUZZLES = [
   ...g5Crossword, ...g5SumGrid, ...g5Teasers, ...g5Series, ...g5LogicCodes,
   ...sci1Body, ...sci1Living, ...sci1Animals, ...sci2Plants, ...sci2Food, ...sci2Weather, ...sci3Animals, ...sci3Senses, ...sci3AirWater, ...sci4PlantsFood, ...sci4Matter, ...sci4WaterCycle, ...sci5Body, ...sci5Living, ...sci5Space,
   ...code1Steps, ...code1Fix, ...code2Coins, ...code2Fix, ...code3Loops, ...code3Trace, ...code4Turns, ...code4If, ...code5Functions, ...code5Variables,
+  ...robo1World, ...robo1Parts, ...robo2Senses, ...robo2Pickup, ...robo3Power, ...robo3Delivery, ...robo4Circuits, ...robo4Sensors, ...robo5Real, ...robo5Mission,
 ] as unknown as Puzzle[];
 
 /** A topic's puzzles, easiest first (stable within a difficulty). */

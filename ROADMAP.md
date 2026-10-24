@@ -56,7 +56,7 @@
 
 ## Phase 5b — Coding ✅
 - Grades 1–5, 200 puzzles: block programs with a running robot (sequences, debugging, loops, turning, functions) and code reading (loops, if/else, variables).
-- Next: Robotics (sensors, robot parts, simple circuits), building on the coding player.
+- **Robotics ✅** — Grades 1–5, 200 puzzles: robots around us, robot parts, sensors, power, circuits, sensor programs, real robots, and robot missions.
 
 ## Phase 6 — Growth
 - Discover / articles section backed by a CMS.

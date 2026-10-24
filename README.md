@@ -8,7 +8,7 @@ Grade-wise puzzles and games for children in Grades 1–5. One codebase, three p
 | `apps/mobile` | The app — Expo / React Native for iOS, Android and web |
 | `packages/content` | Shared puzzle bank (JSON), curriculum, puzzle types and design tokens |
 
-See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in all seven subjects — Maths, English, Science, Coding, Puzzles, Thinking Skills (2,160 puzzles) and Practice & Tests — with adaptive difficulty.**
+See [ROADMAP.md](ROADMAP.md) for the phase plan. **Current status: Grades 1–5 are playable in all eight subjects — Maths, English, Science, Coding, Robotics, Puzzles, Thinking Skills (2,360 puzzles) and Practice & Tests — with adaptive difficulty.**
 
 ## Getting started
 
@@ -315,6 +315,25 @@ Still to do in the Supabase dashboard:
   - fix puzzles must differ from a working program by exactly one block and must fail as given;
   - trace answers are recomputed.
 
+## Robotics, Grades 1–5
+
+10 topics (2 per grade), 20 puzzles each across 3 levels — 200 puzzles.
+
+| Grade | Topics |
+|---|---|
+| 1 | Robots around us · Parts of a robot (labelled robot diagram) |
+| 2 | Robot senses (cameras, microphones, touch and light sensors) · Parcel robot (program a pickup) |
+| 3 | Power and motors (batteries, electricity safety) · Delivery robot (loops to save battery) |
+| 4 | Circuits (“Will the bulb light up?”) · Sensor programs (if the distance sensor says…) |
+| 5 | Real robots (Pragyan, Vyommitra, Mars rovers, AI) · Rover mission (turn, drive, collect samples) |
+
+- **Reused puzzle types**:
+  - Science's quizzes, true/false, sorting and diagrams (a new robot drawing);
+  - the coding robot, with parcels or rock samples to collect;
+  - the code reader, for sensor programs.
+- **New `circuit` type**: battery, one or two bulbs, a switch, a broken wire, or a gap closed by an object that may conduct. The checker recomputes the answer with `bulbLights()`.
+- **Content**: lives in `packages/content/src/robotics.ts`.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.
@@ -425,3 +444,9 @@ Puzzles are data, not code. Each record in `packages/content/puzzles/**.json` lo
 | Debugging | Loops | Turn and move | Read the code |
 |---|---|---|---|
 | ![](docs/screenshots/code-fix.png) | ![](docs/screenshots/code-loops.png) | ![](docs/screenshots/code-turns.png) | ![](docs/screenshots/code-trace.png) |
+
+### Robotics
+
+| Robot parts | Circuits | Rover mission |
+|---|---|---|
+| ![](docs/screenshots/robo-parts.png) | ![](docs/screenshots/robo-circuit.png) | ![](docs/screenshots/robo-mission.png) |

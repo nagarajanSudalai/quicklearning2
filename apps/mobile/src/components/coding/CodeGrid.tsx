@@ -97,7 +97,7 @@ export function CodeGrid({ puzzle, sound, onSolved, onMistake }: PlayerProps<Cod
                       {g.facing !== undefined && <Text style={styles.face}>{FACE[robot.facing]}</Text>}
                     </View>
                   ) : isGoal ? <Text style={{ fontSize: size * 0.5 }}>⭐</Text>
-                    : coins.has(key) && !visited.has(key) ? <Text style={{ fontSize: size * 0.42 }}>🪙</Text>
+                    : coins.has(key) && !visited.has(key) ? <Text style={{ fontSize: size * 0.42 }}>{g.item ?? '🪙'}</Text>
                     : walls.has(key) ? <Text style={{ fontSize: size * 0.42 }}>🧱</Text> : null}
                 </View>
               );

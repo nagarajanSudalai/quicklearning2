@@ -5,8 +5,8 @@ import type { Grade, Puzzle, SubjectId } from './types';
 
 export const TEST_LENGTH = 10;
 const MIX: [1 | 2 | 3, number][] = [[1, 3], [2, 4], [3, 3]];
-const TESTED: SubjectId[] = ['maths', 'english', 'science', 'coding', 'thinking'];
-const NAMES: Partial<Record<SubjectId, string>> = { maths: 'Maths test', english: 'English test', science: 'Science test', coding: 'Coding test', thinking: 'Thinking Skills test' };
+const TESTED: SubjectId[] = ['maths', 'english', 'science', 'coding', 'robotics', 'thinking'];
+const NAMES: Partial<Record<SubjectId, string>> = { maths: 'Maths test', english: 'English test', science: 'Science test', coding: 'Coding test', robotics: 'Robotics test', thinking: 'Thinking Skills test' };
 
 export type TestSubject = SubjectId | 'mixed';
 export type TestInfo = { id: string; grade: Grade; subject: TestSubject; title: string };

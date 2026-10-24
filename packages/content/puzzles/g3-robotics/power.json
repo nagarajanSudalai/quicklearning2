@@ -1,0 +1,641 @@
+[
+  {
+    "id": "g3-robo-power-01",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "electric",
+          "label": "Needs electricity",
+          "picture": "🔌"
+        },
+        {
+          "id": "not-electric",
+          "label": "No electricity",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🚲",
+          "name": "bicycle",
+          "group": "not-electric"
+        },
+        {
+          "item": "🖥️",
+          "name": "computer",
+          "group": "electric"
+        },
+        {
+          "item": "📱",
+          "name": "phone",
+          "group": "electric"
+        },
+        {
+          "item": "🪁",
+          "name": "kite",
+          "group": "not-electric"
+        },
+        {
+          "item": "🔦",
+          "name": "torch",
+          "group": "electric"
+        },
+        {
+          "item": "🪑",
+          "name": "chair",
+          "group": "not-electric"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-robo-power-02",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "electric",
+          "label": "Needs electricity",
+          "picture": "🔌"
+        },
+        {
+          "id": "not-electric",
+          "label": "No electricity",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "⚽",
+          "name": "ball",
+          "group": "not-electric"
+        },
+        {
+          "item": "🚲",
+          "name": "bicycle",
+          "group": "not-electric"
+        },
+        {
+          "item": "🪑",
+          "name": "chair",
+          "group": "not-electric"
+        },
+        {
+          "item": "🎧",
+          "name": "headphones",
+          "group": "electric"
+        },
+        {
+          "item": "📺",
+          "name": "TV",
+          "group": "electric"
+        },
+        {
+          "item": "🖥️",
+          "name": "computer",
+          "group": "electric"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-robo-power-03",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "electric",
+          "label": "Needs electricity",
+          "picture": "🔌"
+        },
+        {
+          "id": "not-electric",
+          "label": "No electricity",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🚲",
+          "name": "bicycle",
+          "group": "not-electric"
+        },
+        {
+          "item": "📱",
+          "name": "phone",
+          "group": "electric"
+        },
+        {
+          "item": "🧸",
+          "name": "teddy bear",
+          "group": "not-electric"
+        },
+        {
+          "item": "🥄",
+          "name": "spoon",
+          "group": "not-electric"
+        },
+        {
+          "item": "🎧",
+          "name": "headphones",
+          "group": "electric"
+        },
+        {
+          "item": "⌚",
+          "name": "digital watch",
+          "group": "electric"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-robo-power-04",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "electric",
+          "label": "Needs electricity",
+          "picture": "🔌"
+        },
+        {
+          "id": "not-electric",
+          "label": "No electricity",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "🤖",
+          "name": "robot",
+          "group": "electric"
+        },
+        {
+          "item": "💡",
+          "name": "bulb",
+          "group": "electric"
+        },
+        {
+          "item": "📱",
+          "name": "phone",
+          "group": "electric"
+        },
+        {
+          "item": "🚲",
+          "name": "bicycle",
+          "group": "not-electric"
+        },
+        {
+          "item": "📕",
+          "name": "book",
+          "group": "not-electric"
+        },
+        {
+          "item": "⚽",
+          "name": "ball",
+          "group": "not-electric"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-robo-power-05",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "electric",
+          "label": "Needs electricity",
+          "picture": "🔌"
+        },
+        {
+          "id": "not-electric",
+          "label": "No electricity",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "⚽",
+          "name": "ball",
+          "group": "not-electric"
+        },
+        {
+          "item": "🪁",
+          "name": "kite",
+          "group": "not-electric"
+        },
+        {
+          "item": "🖥️",
+          "name": "computer",
+          "group": "electric"
+        },
+        {
+          "item": "📱",
+          "name": "phone",
+          "group": "electric"
+        },
+        {
+          "item": "🎧",
+          "name": "headphones",
+          "group": "electric"
+        },
+        {
+          "item": "🥄",
+          "name": "spoon",
+          "group": "not-electric"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-robo-power-06",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "electric",
+          "label": "Needs electricity",
+          "picture": "🔌"
+        },
+        {
+          "id": "not-electric",
+          "label": "No electricity",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "📕",
+          "name": "book",
+          "group": "not-electric"
+        },
+        {
+          "item": "⌚",
+          "name": "digital watch",
+          "group": "electric"
+        },
+        {
+          "item": "💡",
+          "name": "bulb",
+          "group": "electric"
+        },
+        {
+          "item": "✏️",
+          "name": "pencil",
+          "group": "not-electric"
+        },
+        {
+          "item": "🥄",
+          "name": "spoon",
+          "group": "not-electric"
+        },
+        {
+          "item": "📺",
+          "name": "TV",
+          "group": "electric"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-robo-power-07",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 1,
+    "prompt": "Put each one in the right group.",
+    "type": "sort-into-groups",
+    "payload": {
+      "groups": [
+        {
+          "id": "electric",
+          "label": "Needs electricity",
+          "picture": "🔌"
+        },
+        {
+          "id": "not-electric",
+          "label": "No electricity",
+          "picture": "🚫"
+        }
+      ],
+      "items": [
+        {
+          "item": "📕",
+          "name": "book",
+          "group": "not-electric"
+        },
+        {
+          "item": "💡",
+          "name": "bulb",
+          "group": "electric"
+        },
+        {
+          "item": "🧸",
+          "name": "teddy bear",
+          "group": "not-electric"
+        },
+        {
+          "item": "📱",
+          "name": "phone",
+          "group": "electric"
+        },
+        {
+          "item": "⚽",
+          "name": "ball",
+          "group": "not-electric"
+        },
+        {
+          "item": "🖥️",
+          "name": "computer",
+          "group": "electric"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g3-robo-power-08",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 2,
+    "prompt": "A battery stores energy as…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-robo-power-q2-1",
+      "picture": "🔋",
+      "question": "A battery stores energy as…"
+    },
+    "options": [
+      "water",
+      "chemical energy",
+      "sound"
+    ],
+    "answer": "chemical energy"
+  },
+  {
+    "id": "g3-robo-power-09",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 2,
+    "prompt": "Which part turns electricity into movement in a robot?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-robo-power-q2-2",
+      "picture": "⚙️",
+      "question": "Which part turns electricity into movement in a robot?"
+    },
+    "options": [
+      "a bulb",
+      "a motor",
+      "a speaker"
+    ],
+    "answer": "a motor"
+  },
+  {
+    "id": "g3-robo-power-10",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 2,
+    "prompt": "Solar panels turn sunlight into…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-robo-power-q2-3",
+      "picture": "☀️",
+      "question": "Solar panels turn sunlight into…"
+    },
+    "options": [
+      "water",
+      "electricity",
+      "wind"
+    ],
+    "answer": "electricity"
+  },
+  {
+    "id": "g3-robo-power-11",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 2,
+    "prompt": "Who should put a plug into a socket?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-robo-power-q2-4",
+      "picture": "🔌",
+      "question": "Who should put a plug into a socket?"
+    },
+    "options": [
+      "anyone, with a metal spoon",
+      "a grown-up, with dry hands",
+      "a child, with wet hands"
+    ],
+    "answer": "a grown-up, with dry hands"
+  },
+  {
+    "id": "g3-robo-power-12",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 2,
+    "prompt": "Wind turbines make electricity from…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-robo-power-q2-5",
+      "picture": "💨",
+      "question": "Wind turbines make electricity from…"
+    },
+    "options": [
+      "sunlight at night",
+      "moving cars",
+      "moving air"
+    ],
+    "answer": "moving air"
+  },
+  {
+    "id": "g3-robo-power-13",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 2,
+    "prompt": "What should we do with old batteries?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-robo-power-q2-6",
+      "picture": "♻️",
+      "question": "What should we do with old batteries?"
+    },
+    "options": [
+      "throw them in a fire",
+      "give them to a battery recycling point",
+      "bury them in the garden"
+    ],
+    "answer": "give them to a battery recycling point"
+  },
+  {
+    "id": "g3-robo-power-14",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 2,
+    "prompt": "A bulb turns electricity into…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g3-robo-power-q2-7",
+      "picture": "💡",
+      "question": "A bulb turns electricity into…"
+    },
+    "options": [
+      "light (and some heat)",
+      "sound",
+      "water"
+    ],
+    "answer": "light (and some heat)"
+  },
+  {
+    "id": "g3-robo-power-15",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 3,
+    "prompt": "True or false? A battery stores energy that a robot can use later.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-robo-power-tf3-1",
+      "picture": "🔋",
+      "statement": "A battery stores energy that a robot can use later."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-robo-power-16",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 3,
+    "prompt": "True or false? It is safe to touch switches with wet hands.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-robo-power-tf3-2",
+      "picture": "💧",
+      "statement": "It is safe to touch switches with wet hands."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g3-robo-power-17",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 3,
+    "prompt": "True or false? A motor makes a robot’s wheels turn.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-robo-power-tf3-3",
+      "picture": "⚙️",
+      "statement": "A motor makes a robot’s wheels turn."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-robo-power-18",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 3,
+    "prompt": "True or false? Solar panels can charge batteries using sunlight.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-robo-power-tf3-4",
+      "picture": "☀️",
+      "statement": "Solar panels can charge batteries using sunlight."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g3-robo-power-19",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 3,
+    "prompt": "True or false? Playing with plug sockets is safe for children.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-robo-power-tf3-5",
+      "picture": "🔌",
+      "statement": "Playing with plug sockets is safe for children."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g3-robo-power-20",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-power",
+    "difficulty": 3,
+    "prompt": "True or false? Old batteries should go in the normal rubbish bin.",
+    "type": "true-false",
+    "payload": {
+      "id": "g3-robo-power-tf3-6",
+      "picture": "♻️",
+      "statement": "Old batteries should go in the normal rubbish bin."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  }
+]

@@ -4,7 +4,12 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { DIAGRAMS, SCIENCE_FACTS, SCIENCE_GROUPS, SCIENCE_QUIZ } from '../src/science.ts';
+import { DIAGRAMS, SCIENCE_FACTS as SCI_FACTS, SCIENCE_GROUPS as SCI_GROUPS, SCIENCE_QUIZ as SCI_QUIZ } from '../src/science.ts';
+import { ROBO_FACTS, ROBO_GROUPS, ROBO_QUIZ } from '../src/robotics.ts';
+
+const SCIENCE_QUIZ = [...SCI_QUIZ, ...ROBO_QUIZ];
+const SCIENCE_FACTS = [...SCI_FACTS, ...ROBO_FACTS];
+const SCIENCE_GROUPS = [...SCI_GROUPS, ...ROBO_GROUPS];
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
 
@@ -24,7 +29,7 @@ const sort = (groups: string[], per: number): Level => ({ kind: 'sort', groups, 
 const quiz: Level = { kind: 'quiz' }, tf: Level = { kind: 'tf' };
 const label = (diagram: string, ask: 'name' | 'find' | 'job'): Level => ({ kind: 'label', diagram, ask });
 
-const TOPICS: { grade: number; id: string; file: string; levels: [Level, Level, Level] }[] = [
+const TOPICS: { grade: number; id: string; file: string; levels: [Level, Level, Level]; subject?: string }[] = [
   { grade: 1, id: 'g1-sci-body', file: 'body', levels: [label('body', 'name'), label('body', 'find'), quiz] },
   { grade: 1, id: 'g1-sci-living', file: 'living', levels: [sort(['living', 'non-living'], 2), sort(['living', 'non-living'], 3), tf] },
   { grade: 1, id: 'g1-sci-animals', file: 'animals', levels: [quiz, quiz, sort(['on-land', 'in-water', 'in-air'], 2)] },
@@ -40,12 +45,18 @@ const TOPICS: { grade: number; id: string; file: string; levels: [Level, Level, 
   { grade: 5, id: 'g5-sci-body', file: 'body', levels: [quiz, tf, quiz] },
   { grade: 5, id: 'g5-sci-living', file: 'living', levels: [quiz, sort(['desert', 'polar', 'pond'], 2), tf] },
   { grade: 5, id: 'g5-sci-space', file: 'space', levels: [quiz, tf, quiz] },
+  // Robotics topics that use the same puzzle types (missions, sensors and circuits are in generate-coding.ts).
+  { grade: 1, id: 'g1-robo-world', file: 'world', subject: 'robotics', levels: [quiz, quiz, tf] },
+  { grade: 1, id: 'g1-robo-parts', file: 'parts', subject: 'robotics', levels: [label('robot', 'name'), label('robot', 'find'), quiz] },
+  { grade: 2, id: 'g2-robo-senses', file: 'senses', subject: 'robotics', levels: [quiz, tf, quiz] },
+  { grade: 3, id: 'g3-robo-power', file: 'power', subject: 'robotics', levels: [sort(['electric', 'not-electric'], 3), quiz, tf] },
+  { grade: 5, id: 'g5-robo-real', file: 'real', subject: 'robotics', levels: [quiz, tf, quiz] },
 ];
 const COUNTS = [7, 7, 6];
 
 function make(t: (typeof TOPICS)[number], d: 1 | 2 | 3, n: number, start: number): object[] {
   const L = t.levels[d - 1];
-  const base = (k: number, prompt: string) => ({ id: `${t.id}-${String(start + k + 1).padStart(2, '0')}`, grade: t.grade, subject: 'science', topic: t.id, difficulty: d, prompt });
+  const base = (k: number, prompt: string) => ({ id: `${t.id}-${String(start + k + 1).padStart(2, '0')}`, grade: t.grade, subject: t.subject ?? 'science', topic: t.id, difficulty: d, prompt });
   if (L.kind === 'quiz') {
     const bank = SCIENCE_QUIZ.filter((x) => x.topic === t.id && x.level === d);
     if (bank.length < n) throw new Error(`${t.id} level ${d}: ${bank.length} quiz items, need ${n}`);
@@ -87,8 +98,8 @@ function make(t: (typeof TOPICS)[number], d: 1 | 2 | 3, n: number, start: number
 for (const t of TOPICS) {
   let start = 0;
   const puzzles = ([1, 2, 3] as const).flatMap((d) => { const ps = make(t, d, COUNTS[d - 1], start); start += ps.length; return ps; });
-  const dir = join(ROOT, `g${t.grade}-science`);
+  const dir = join(ROOT, `g${t.grade}-${t.subject ?? 'science'}`);
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, `${t.file}.json`), JSON.stringify(puzzles, null, 2) + '\n');
-  console.log(`g${t.grade}-science/${t.file}: ${puzzles.length} puzzles`);
+  console.log(`g${t.grade}-${t.subject ?? 'science'}/${t.file}: ${puzzles.length} puzzles`);
 }

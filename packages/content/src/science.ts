@@ -57,6 +57,17 @@ export const DIAGRAMS: Record<string, { title: string; parts: { name: string; x:
       { name: 'fruit', x: 92, y: 96, job: 'keeps the seeds safe' },
     ],
   },
+  robot: {
+    title: 'Parts of a robot',
+    parts: [
+      { name: 'camera', x: 150, y: 52, job: 'helps the robot see' },
+      { name: 'antenna', x: 150, y: 12, job: 'sends and receives signals' },
+      { name: 'gripper', x: 46, y: 164, job: 'picks things up' },
+      { name: 'battery', x: 150, y: 132, job: 'stores the energy' },
+      { name: 'wheels', x: 112, y: 222, job: 'move the robot around' },
+      { name: 'arm', x: 76, y: 118 },
+    ],
+  },
   'water-cycle': {
     title: 'The water cycle',
     parts: [

@@ -24,13 +24,14 @@ export const SUBJECTS: Subject[] = [
   { id: 'english', name: 'English', desc: 'Reading, vocabulary, writing and grammar', glyph: 'Aa', color: colors.blue },
   { id: 'science', name: 'Science', desc: 'Explore the world around you', glyph: '⚗', color: colors.green },
   { id: 'coding', name: 'Coding', desc: 'Program a robot with blocks', glyph: '</>', color: colors.blue },
+  { id: 'robotics', name: 'Robotics', desc: 'Robots, sensors and circuits', glyph: '🤖', color: colors.teal },
   { id: 'puzzles', name: 'Puzzles', desc: 'Crosswords, logic, brain games', glyph: '✱', color: colors.orange },
   { id: 'thinking', name: 'Thinking Skills', desc: 'Problem-solving and reasoning', glyph: '?', color: colors.purple },
   { id: 'practice', name: 'Practice & Tests', desc: 'Topic-wise practice and assessments', glyph: '✓', color: colors.teal },
 ];
 
 /** Grades and subjects that have playable content today. */
-export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 2: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 3: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 4: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'], 5: ['maths', 'english', 'science', 'coding', 'puzzles', 'thinking', 'practice'] };
+export const AVAILABLE: Partial<Record<Grade, SubjectId[]>> = { 1: ['maths', 'english', 'science', 'coding', 'robotics', 'puzzles', 'thinking', 'practice'], 2: ['maths', 'english', 'science', 'coding', 'robotics', 'puzzles', 'thinking', 'practice'], 3: ['maths', 'english', 'science', 'coding', 'robotics', 'puzzles', 'thinking', 'practice'], 4: ['maths', 'english', 'science', 'coding', 'robotics', 'puzzles', 'thinking', 'practice'], 5: ['maths', 'english', 'science', 'coding', 'robotics', 'puzzles', 'thinking', 'practice'] };
 
 export const TOPICS: Topic[] = [
   { id: 'g1-counting', grade: 1, subject: 'maths', title: 'Counting', blurb: 'Count up to 20', glyph: '123', color: colors.pink },
@@ -140,6 +141,16 @@ export const TOPICS: Topic[] = [
   { id: 'g4-code-if', grade: 4, subject: 'coding', title: 'If and else', blurb: 'Decisions in code', glyph: '🔀', color: colors.orange },
   { id: 'g5-code-functions', grade: 5, subject: 'coding', title: 'Functions', blurb: 'Build your own block', glyph: '🧩', color: colors.green },
   { id: 'g5-code-variables', grade: 5, subject: 'coding', title: 'Variables', blurb: 'Keep score in code', glyph: '🔢', color: colors.purple },
+  { id: 'g1-robo-world', grade: 1, subject: 'robotics', title: 'Robots around us', blurb: 'What robots do', glyph: '🤖', color: colors.teal },
+  { id: 'g1-robo-parts', grade: 1, subject: 'robotics', title: 'Parts of a robot', blurb: 'Camera, arm, wheels', glyph: '🦾', color: colors.blue },
+  { id: 'g2-robo-senses', grade: 2, subject: 'robotics', title: 'Robot senses', blurb: 'Sensors are robot eyes and ears', glyph: '📷', color: colors.purple },
+  { id: 'g2-robo-pickup', grade: 2, subject: 'robotics', title: 'Parcel robot', blurb: 'Program a pickup', glyph: '📦', color: colors.orange },
+  { id: 'g3-robo-power', grade: 3, subject: 'robotics', title: 'Power and motors', blurb: 'Batteries and electricity', glyph: '🔋', color: colors.green },
+  { id: 'g3-robo-delivery', grade: 3, subject: 'robotics', title: 'Delivery robot', blurb: 'Save battery with loops', glyph: '🚚', color: colors.orange },
+  { id: 'g4-robo-circuits', grade: 4, subject: 'robotics', title: 'Circuits', blurb: 'Will the bulb light up?', glyph: '💡', color: colors.pink },
+  { id: 'g4-robo-sensors', grade: 4, subject: 'robotics', title: 'Sensor programs', blurb: 'If the sensor says…', glyph: '📡', color: colors.purple },
+  { id: 'g5-robo-real', grade: 5, subject: 'robotics', title: 'Real robots', blurb: 'Rovers, humanoids, AI', glyph: '🌕', color: colors.blue },
+  { id: 'g5-robo-mission', grade: 5, subject: 'robotics', title: 'Rover mission', blurb: 'Turn, drive, collect', glyph: '🛰️', color: colors.teal },
   { id: 'g1-mazes', grade: 1, subject: 'thinking', title: 'Mazes', blurb: 'Find the way through', glyph: '⌇', color: colors.pink },
 ];
 

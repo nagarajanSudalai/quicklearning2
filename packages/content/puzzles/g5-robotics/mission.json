@@ -1,0 +1,1906 @@
+[
+  {
+    "id": "g5-robo-mission-01",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 1,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "start": [
+        4,
+        5
+      ],
+      "facing": 1,
+      "goal": [
+        2,
+        3
+      ],
+      "coins": [
+        [
+          3,
+          5
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 5,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-02",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 1,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        4,
+        3
+      ],
+      "facing": 0,
+      "goal": [
+        0,
+        0
+      ],
+      "coins": [
+        [
+          0,
+          2
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "fwd",
+          "times": 4
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-03",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 1,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "start": [
+        2,
+        1
+      ],
+      "facing": 0,
+      "goal": [
+        0,
+        5
+      ],
+      "coins": [
+        [
+          2,
+          2
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 5,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 4
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-04",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 1,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "start": [
+        2,
+        2
+      ],
+      "facing": 1,
+      "goal": [
+        4,
+        0
+      ],
+      "coins": [
+        [
+          3,
+          0
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 5,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 2
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-05",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 1,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        0,
+        2
+      ],
+      "facing": 1,
+      "goal": [
+        2,
+        5
+      ],
+      "coins": [
+        [
+          0,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-06",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 1,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "start": [
+        3,
+        0
+      ],
+      "facing": 0,
+      "goal": [
+        1,
+        4
+      ],
+      "coins": [
+        [
+          2,
+          4
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 5,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 4
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-07",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 1,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "start": [
+        1,
+        1
+      ],
+      "facing": 2,
+      "goal": [
+        4,
+        4
+      ],
+      "coins": [
+        [
+          1,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 5,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-08",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 2,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "start": [
+        3,
+        0
+      ],
+      "facing": 2,
+      "goal": [
+        3,
+        3
+      ],
+      "coins": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 7,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 2
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-09",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 2,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "start": [
+        0,
+        2
+      ],
+      "facing": 1,
+      "goal": [
+        1,
+        5
+      ],
+      "coins": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 7,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 4
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-10",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 2,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        4,
+        3
+      ],
+      "facing": 3,
+      "goal": [
+        0,
+        0
+      ],
+      "coins": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 7,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-11",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 2,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "start": [
+        4,
+        0
+      ],
+      "facing": 2,
+      "goal": [
+        1,
+        1
+      ],
+      "coins": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 7,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 4
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-12",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 2,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "start": [
+        0,
+        5
+      ],
+      "facing": 0,
+      "goal": [
+        0,
+        2
+      ],
+      "coins": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 7,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 2
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-13",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 2,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "start": [
+        2,
+        2
+      ],
+      "facing": 1,
+      "goal": [
+        2,
+        4
+      ],
+      "coins": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 7,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-14",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 2,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "start": [
+        2,
+        1
+      ],
+      "facing": 0,
+      "goal": [
+        0,
+        2
+      ],
+      "coins": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 7,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 4
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-15",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 3,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "start": [
+        4,
+        0
+      ],
+      "facing": 3,
+      "goal": [
+        0,
+        4
+      ],
+      "coins": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 9,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 1
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-16",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 3,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "start": [
+        1,
+        1
+      ],
+      "facing": 1,
+      "goal": [
+        1,
+        5
+      ],
+      "coins": [
+        [
+          4,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 9,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-17",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 3,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "facing": 2,
+      "goal": [
+        0,
+        5
+      ],
+      "coins": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 9,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-18",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 3,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        4,
+        5
+      ],
+      "facing": 0,
+      "goal": [
+        4,
+        0
+      ],
+      "coins": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 9,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-19",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 3,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "start": [
+        0,
+        1
+      ],
+      "facing": 2,
+      "goal": [
+        5,
+        0
+      ],
+      "coins": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 9,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnR",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  },
+  {
+    "id": "g5-robo-mission-20",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-mission",
+    "difficulty": 3,
+    "prompt": "Drive the rover: collect every rock sample and reach the base.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "start": [
+        5,
+        1
+      ],
+      "facing": 2,
+      "goal": [
+        5,
+        0
+      ],
+      "coins": [
+        [
+          5,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "palette": [
+        "fwd",
+        "turnL",
+        "turnR"
+      ],
+      "loops": true,
+      "maxBlocks": 9,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 2
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        },
+        {
+          "op": "turnL",
+          "times": 1
+        },
+        {
+          "op": "fwd",
+          "times": 3
+        }
+      ],
+      "item": "🪨"
+    }
+  }
+]

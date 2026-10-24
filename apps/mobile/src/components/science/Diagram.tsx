@@ -31,6 +31,25 @@ const ART: Record<string, () => React.ReactNode> = {
       <Circle cx={150} cy={34} r={8} fill="#ffc83d" />
     </G>
   ),
+  robot: () => (
+    <G>
+      <Line x1={150} y1={30} x2={150} y2={14} stroke={colors.ink} strokeWidth={4} />
+      <Circle cx={150} cy={12} r={6} fill={colors.pink} />
+      <Rect x={108} y={30} width={84} height={56} rx={16} fill="#8f84f5" />
+      <Rect x={120} y={40} width={60} height={30} rx={10} fill="#1e1a4d" />
+      <Circle cx={138} cy={55} r={7} fill="#5ee6ff" /><Circle cx={162} cy={55} r={7} fill="#5ee6ff" />
+      <Rect x={100} y={92} width={100} height={100} rx={18} fill={colors.brand} />
+      <Rect x={130} y={116} width={40} height={32} rx={6} fill="#ffc83d" />
+      <Rect x={140} y={110} width={20} height={8} rx={2} fill="#ffc83d" />
+      <Line x1={100} y1={104} x2={58} y2={150} stroke="#8f84f5" strokeWidth={14} strokeLinecap="round" />
+      <Line x1={200} y1={104} x2={242} y2={150} stroke="#8f84f5" strokeWidth={14} strokeLinecap="round" />
+      <Path d="M58 150 l-16 10 M58 150 l-4 20" stroke={colors.ink} strokeWidth={6} strokeLinecap="round" />
+      <Path d="M242 150 l16 10 M242 150 l4 20" stroke={colors.ink} strokeWidth={6} strokeLinecap="round" />
+      <Rect x={96} y={192} width={108} height={14} rx={6} fill="#5d5a7a" />
+      <Circle cx={112} cy={218} r={16} fill={colors.ink} /><Circle cx={188} cy={218} r={16} fill={colors.ink} />
+      <Circle cx={112} cy={218} r={6} fill="#aaa" /><Circle cx={188} cy={218} r={6} fill="#aaa" />
+    </G>
+  ),
   'water-cycle': () => (
     <G>
       <Rect x={0} y={0} width={300} height={190} fill="#eaf4ff" />

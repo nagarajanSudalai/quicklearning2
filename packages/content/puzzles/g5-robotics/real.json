@@ -1,0 +1,395 @@
+[
+  {
+    "id": "g5-robo-real-01",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 1,
+    "prompt": "Which Indian rover explored the Moon’s south pole region in 2023?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q1-1",
+      "picture": "🌕",
+      "question": "Which Indian rover explored the Moon’s south pole region in 2023?"
+    },
+    "options": [
+      "Pragyan (Chandrayaan-3)",
+      "Mangalyaan",
+      "Aryabhata"
+    ],
+    "answer": "Pragyan (Chandrayaan-3)"
+  },
+  {
+    "id": "g5-robo-real-02",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 1,
+    "prompt": "What is the name of ISRO’s humanoid robot built for the Gaganyaan mission?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q1-2",
+      "picture": "👩‍🚀",
+      "question": "What is the name of ISRO’s humanoid robot built for the Gaganyaan mission?"
+    },
+    "options": [
+      "Vyommitra",
+      "Vikram",
+      "Pragyan"
+    ],
+    "answer": "Vyommitra"
+  },
+  {
+    "id": "g5-robo-real-03",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 1,
+    "prompt": "NASA rovers such as Curiosity and Perseverance explore which planet?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q1-3",
+      "picture": "🔴",
+      "question": "NASA rovers such as Curiosity and Perseverance explore which planet?"
+    },
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter"
+    ],
+    "answer": "Mars"
+  },
+  {
+    "id": "g5-robo-real-04",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 1,
+    "prompt": "The word “robot” first appeared in a play by Karel Čapek. It comes from a Czech word meaning…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q1-4",
+      "picture": "📖",
+      "question": "The word “robot” first appeared in a play by Karel Čapek. It comes from a Czech word meaning…"
+    },
+    "options": [
+      "hard work",
+      "computer",
+      "metal man"
+    ],
+    "answer": "hard work"
+  },
+  {
+    "id": "g5-robo-real-05",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 1,
+    "prompt": "A robot shaped like a human, with a head, arms and legs, is called a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q1-5",
+      "picture": "🦿",
+      "question": "A robot shaped like a human, with a head, arms and legs, is called a…"
+    },
+    "options": [
+      "rover",
+      "drone",
+      "humanoid"
+    ],
+    "answer": "humanoid"
+  },
+  {
+    "id": "g5-robo-real-06",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 1,
+    "prompt": "Why are robot arms used to paint cars?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q1-6",
+      "picture": "🏭",
+      "question": "Why are robot arms used to paint cars?"
+    },
+    "options": [
+      "they never need electricity",
+      "they enjoy colours",
+      "they work fast and the same way every time"
+    ],
+    "answer": "they work fast and the same way every time"
+  },
+  {
+    "id": "g5-robo-real-07",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 1,
+    "prompt": "A drone that delivers medicines to faraway villages is useful because…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q1-7",
+      "picture": "🛰️",
+      "question": "A drone that delivers medicines to faraway villages is useful because…"
+    },
+    "options": [
+      "it never needs charging",
+      "it can fly over roads and rivers",
+      "it can carry a whole hospital"
+    ],
+    "answer": "it can fly over roads and rivers"
+  },
+  {
+    "id": "g5-robo-real-08",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 2,
+    "prompt": "True or false? Chandrayaan-3’s lander was called Vikram and its rover was called Pragyan.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-robo-real-tf2-1",
+      "picture": "🌕",
+      "statement": "Chandrayaan-3’s lander was called Vikram and its rover was called Pragyan."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-robo-real-09",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 2,
+    "prompt": "True or false? All robots look like humans.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-robo-real-tf2-2",
+      "picture": "🤖",
+      "statement": "All robots look like humans."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g5-robo-real-10",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 2,
+    "prompt": "True or false? People drive Mars rovers live with a joystick, with no delay.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-robo-real-tf2-3",
+      "picture": "🔴",
+      "statement": "People drive Mars rovers live with a joystick, with no delay."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g5-robo-real-11",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 2,
+    "prompt": "True or false? Robots in factories can work for many hours without needing rest.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-robo-real-tf2-4",
+      "picture": "🏭",
+      "statement": "Robots in factories can work for many hours without needing rest."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-robo-real-12",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 2,
+    "prompt": "True or false? Robots can explore places too dangerous for people, like volcanoes.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-robo-real-tf2-5",
+      "picture": "🧑‍🔬",
+      "statement": "Robots can explore places too dangerous for people, like volcanoes."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-robo-real-13",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 2,
+    "prompt": "True or false? A robot understands everything just like a person does.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-robo-real-tf2-6",
+      "picture": "🧠",
+      "statement": "A robot understands everything just like a person does."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "g5-robo-real-14",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 2,
+    "prompt": "True or false? Self-driving cars use cameras and other sensors to see the road.",
+    "type": "true-false",
+    "payload": {
+      "id": "g5-robo-real-tf2-7",
+      "picture": "📷",
+      "statement": "Self-driving cars use cameras and other sensors to see the road."
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "g5-robo-real-15",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 3,
+    "prompt": "When a robot learns to recognise cats from thousands of photos, this is called…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q3-1",
+      "picture": "🧠",
+      "question": "When a robot learns to recognise cats from thousands of photos, this is called…"
+    },
+    "options": [
+      "photosynthesis",
+      "machine learning",
+      "evaporation"
+    ],
+    "answer": "machine learning"
+  },
+  {
+    "id": "g5-robo-real-16",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 3,
+    "prompt": "A robot that plans its own path around obstacles is using…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q3-2",
+      "picture": "🧭",
+      "question": "A robot that plans its own path around obstacles is using…"
+    },
+    "options": [
+      "only its wheels",
+      "magic",
+      "sensors and a program that makes decisions"
+    ],
+    "answer": "sensors and a program that makes decisions"
+  },
+  {
+    "id": "g5-robo-real-17",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 3,
+    "prompt": "Why does a Mars rover need to make some decisions by itself?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q3-3",
+      "picture": "📶",
+      "question": "Why does a Mars rover need to make some decisions by itself?"
+    },
+    "options": [
+      "Mars has no sunlight",
+      "it has no camera",
+      "signals take minutes to travel between Earth and Mars"
+    ],
+    "answer": "signals take minutes to travel between Earth and Mars"
+  },
+  {
+    "id": "g5-robo-real-18",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 3,
+    "prompt": "A prosthetic robotic hand helps a person by…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q3-4",
+      "picture": "🦾",
+      "question": "A prosthetic robotic hand helps a person by…"
+    },
+    "options": [
+      "painting pictures by itself",
+      "moving fingers using signals from the arm’s muscles",
+      "growing new skin"
+    ],
+    "answer": "moving fingers using signals from the arm’s muscles"
+  },
+  {
+    "id": "g5-robo-real-19",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 3,
+    "prompt": "Which is the most important rule when building robots?",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q3-5",
+      "picture": "⚠️",
+      "question": "Which is the most important rule when building robots?"
+    },
+    "options": [
+      "they must be safe for people",
+      "they must never be switched off",
+      "they must be as big as possible"
+    ],
+    "answer": "they must be safe for people"
+  },
+  {
+    "id": "g5-robo-real-20",
+    "grade": 5,
+    "subject": "robotics",
+    "topic": "g5-robo-real",
+    "difficulty": 3,
+    "prompt": "A robot sorting red and blue balls repeats: look, decide, move. This is a…",
+    "type": "science-quiz",
+    "payload": {
+      "id": "g5-robo-real-q3-6",
+      "picture": "🔁",
+      "question": "A robot sorting red and blue balls repeats: look, decide, move. This is a…"
+    },
+    "options": [
+      "loop",
+      "battery",
+      "sensor"
+    ],
+    "answer": "loop"
+  }
+]

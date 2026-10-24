@@ -1,0 +1,1650 @@
+[
+  {
+    "id": "g3-robo-delivery-01",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 1,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "start": [
+        2,
+        1
+      ],
+      "goal": [
+        4,
+        5
+      ],
+      "coins": [
+        [
+          2,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 2,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "right",
+          "times": 4
+        },
+        {
+          "op": "down",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-02",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 1,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "start": [
+        0,
+        5
+      ],
+      "goal": [
+        3,
+        1
+      ],
+      "coins": [
+        [
+          0,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 2,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "left",
+          "times": 4
+        },
+        {
+          "op": "down",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-03",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 1,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "start": [
+        1,
+        5
+      ],
+      "goal": [
+        5,
+        2
+      ],
+      "coins": [
+        [
+          4,
+          5
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 2,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "down",
+          "times": 4
+        },
+        {
+          "op": "left",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-04",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 1,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "start": [
+        3,
+        5
+      ],
+      "goal": [
+        5,
+        0
+      ],
+      "coins": [
+        [
+          3,
+          4
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 2,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "left",
+          "times": 5
+        },
+        {
+          "op": "down",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-05",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 1,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "start": [
+        5,
+        1
+      ],
+      "goal": [
+        2,
+        4
+      ],
+      "coins": [
+        [
+          3,
+          1
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 2,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "up",
+          "times": 3
+        },
+        {
+          "op": "right",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-06",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 1,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          2,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "start": [
+        4,
+        5
+      ],
+      "goal": [
+        1,
+        2
+      ],
+      "coins": [
+        [
+          1,
+          5
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 2,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "up",
+          "times": 3
+        },
+        {
+          "op": "left",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-07",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 1,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "start": [
+        5,
+        5
+      ],
+      "goal": [
+        3,
+        0
+      ],
+      "coins": [
+        [
+          5,
+          0
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 2,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "left",
+          "times": 5
+        },
+        {
+          "op": "up",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-08",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 2,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "start": [
+        5,
+        2
+      ],
+      "goal": [
+        1,
+        2
+      ],
+      "coins": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 3,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "right",
+          "times": 3
+        },
+        {
+          "op": "up",
+          "times": 4
+        },
+        {
+          "op": "left",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-09",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 2,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "start": [
+        5,
+        0
+      ],
+      "goal": [
+        1,
+        2
+      ],
+      "coins": [
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 3,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "right",
+          "times": 4
+        },
+        {
+          "op": "up",
+          "times": 4
+        },
+        {
+          "op": "left",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-10",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 2,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        0
+      ],
+      "coins": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 3,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "right",
+          "times": 3
+        },
+        {
+          "op": "down",
+          "times": 2
+        },
+        {
+          "op": "left",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-11",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 2,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "start": [
+        4,
+        0
+      ],
+      "goal": [
+        2,
+        4
+      ],
+      "coins": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 3,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "up",
+          "times": 4
+        },
+        {
+          "op": "right",
+          "times": 4
+        },
+        {
+          "op": "down",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-12",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 2,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "start": [
+        0,
+        1
+      ],
+      "goal": [
+        4,
+        1
+      ],
+      "coins": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 3,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "right",
+          "times": 3
+        },
+        {
+          "op": "down",
+          "times": 4
+        },
+        {
+          "op": "left",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-13",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 2,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "start": [
+        3,
+        4
+      ],
+      "goal": [
+        0,
+        4
+      ],
+      "coins": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 3,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "left",
+          "times": 3
+        },
+        {
+          "op": "up",
+          "times": 3
+        },
+        {
+          "op": "right",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-14",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 2,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "start": [
+        0,
+        2
+      ],
+      "goal": [
+        4,
+        2
+      ],
+      "coins": [
+        [
+          4,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 3,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "right",
+          "times": 3
+        },
+        {
+          "op": "down",
+          "times": 4
+        },
+        {
+          "op": "left",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-15",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 3,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "start": [
+        5,
+        1
+      ],
+      "goal": [
+        4,
+        2
+      ],
+      "coins": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "up",
+          "times": 3
+        },
+        {
+          "op": "right",
+          "times": 4
+        },
+        {
+          "op": "down",
+          "times": 2
+        },
+        {
+          "op": "left",
+          "times": 3
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-16",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 3,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "start": [
+        2,
+        5
+      ],
+      "goal": [
+        2,
+        3
+      ],
+      "coins": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "up",
+          "times": 2
+        },
+        {
+          "op": "left",
+          "times": 4
+        },
+        {
+          "op": "down",
+          "times": 2
+        },
+        {
+          "op": "right",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-17",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 3,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "start": [
+        1,
+        1
+      ],
+      "goal": [
+        1,
+        5
+      ],
+      "coins": [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "down",
+          "times": 3
+        },
+        {
+          "op": "right",
+          "times": 2
+        },
+        {
+          "op": "up",
+          "times": 3
+        },
+        {
+          "op": "right",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-18",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 3,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "start": [
+        4,
+        3
+      ],
+      "goal": [
+        3,
+        2
+      ],
+      "coins": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "up",
+          "times": 4
+        },
+        {
+          "op": "left",
+          "times": 3
+        },
+        {
+          "op": "down",
+          "times": 3
+        },
+        {
+          "op": "right",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-19",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 3,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "start": [
+        4,
+        4
+      ],
+      "goal": [
+        2,
+        3
+      ],
+      "coins": [
+        [
+          4,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "left",
+          "times": 3
+        },
+        {
+          "op": "up",
+          "times": 4
+        },
+        {
+          "op": "right",
+          "times": 2
+        },
+        {
+          "op": "down",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  },
+  {
+    "id": "g3-robo-delivery-20",
+    "grade": 3,
+    "subject": "robotics",
+    "topic": "g3-robo-delivery",
+    "difficulty": 3,
+    "prompt": "Deliver the parcels! The battery lasts for only a few blocks, so use repeats.",
+    "type": "code-grid",
+    "payload": {
+      "rows": 6,
+      "cols": 6,
+      "walls": [
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "start": [
+        4,
+        0
+      ],
+      "goal": [
+        3,
+        4
+      ],
+      "coins": [
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "palette": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "loops": true,
+      "maxBlocks": 4,
+      "mode": "build",
+      "solution": [
+        {
+          "op": "up",
+          "times": 4
+        },
+        {
+          "op": "right",
+          "times": 2
+        },
+        {
+          "op": "down",
+          "times": 3
+        },
+        {
+          "op": "right",
+          "times": 2
+        }
+      ],
+      "item": "📦"
+    }
+  }
+]

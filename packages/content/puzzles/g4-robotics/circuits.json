@@ -1,0 +1,419 @@
+[
+  {
+    "id": "g4-robo-circuits-01",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 1,
+    "prompt": "Will the bulbs light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 2
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "g4-robo-circuits-02",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 1,
+    "prompt": "Will the bulbs light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": true,
+      "bulbs": 2
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-03",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 1,
+    "prompt": "Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 1
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "g4-robo-circuits-04",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 1,
+    "prompt": "Will the bulbs light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": false,
+      "broken": true,
+      "bulbs": 2
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-05",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 1,
+    "prompt": "Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": true,
+      "bulbs": 1
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-06",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 1,
+    "prompt": "Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": false,
+      "broken": true,
+      "bulbs": 1
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-07",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 1,
+    "prompt": "Will the bulbs light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": false,
+      "broken": false,
+      "bulbs": 2
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-08",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 2,
+    "prompt": "Will the bulbs light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": true,
+      "bulbs": 2,
+      "switch": "closed"
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-09",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 2,
+    "prompt": "Will the bulbs light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 2,
+      "switch": "closed"
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "g4-robo-circuits-10",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 2,
+    "prompt": "Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": true,
+      "bulbs": 1,
+      "switch": "closed"
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-11",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 2,
+    "prompt": "Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 1,
+      "switch": "closed"
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "g4-robo-circuits-12",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 2,
+    "prompt": "Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": true,
+      "bulbs": 1,
+      "switch": "open"
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-13",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 2,
+    "prompt": "Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 1,
+      "switch": "open"
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-14",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 2,
+    "prompt": "Will the bulbs light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": false,
+      "broken": false,
+      "bulbs": 2,
+      "switch": "open"
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-15",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 3,
+    "prompt": "The steel spoon closes the gap in the wire. Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 1,
+      "switch": "closed",
+      "gap": {
+        "item": "🥄",
+        "name": "steel spoon"
+      }
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "g4-robo-circuits-16",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 3,
+    "prompt": "The wooden stick closes the gap in the wire. Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 2,
+      "switch": "closed",
+      "gap": {
+        "item": "🪵",
+        "name": "wooden stick"
+      }
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-17",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 3,
+    "prompt": "The steel spoon closes the gap in the wire. Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 2,
+      "switch": "closed",
+      "gap": {
+        "item": "🥄",
+        "name": "steel spoon"
+      }
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "g4-robo-circuits-18",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 3,
+    "prompt": "The rubber balloon closes the gap in the wire. Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 2,
+      "switch": "closed",
+      "gap": {
+        "item": "🎈",
+        "name": "rubber balloon"
+      }
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  },
+  {
+    "id": "g4-robo-circuits-19",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 3,
+    "prompt": "The steel paper clip closes the gap in the wire. Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 2,
+      "switch": "closed",
+      "gap": {
+        "item": "📎",
+        "name": "steel paper clip"
+      }
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "id": "g4-robo-circuits-20",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-circuits",
+    "difficulty": 3,
+    "prompt": "The wool closes the gap in the wire. Will the bulb light up?",
+    "type": "circuit",
+    "payload": {
+      "battery": true,
+      "broken": false,
+      "bulbs": 1,
+      "switch": "closed",
+      "gap": {
+        "item": "🧶",
+        "name": "wool"
+      }
+    },
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "No"
+  }
+]

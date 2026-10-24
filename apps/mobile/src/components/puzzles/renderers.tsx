@@ -5,6 +5,7 @@ import { colors, font } from '../../lib/theme';
 import { usePop } from '../../lib/motion';
 import { Shape } from '../Shape';
 import { Diagram } from '../science/Diagram';
+import { Circuit } from '../science/Circuit';
 import { Angle, BarChart, Blocks, Clock, Fraction, GridShape, Groups, HundredGrid, Money, Ruler } from '../maths/Visuals';
 
 /**
@@ -478,6 +479,15 @@ export const RENDERERS: Renderers = {
     ),
     option: (n) => <Number n={n} />,
     columns: () => 3,
+  },
+  circuit: {
+    Stimulus: ({ puzzle }) => (
+      <View style={[styles.panel, styles.pictureBox]}>
+        <Circuit {...puzzle.payload} />
+      </View>
+    ),
+    option: (a) => <Text style={styles.timeOption}>{a === 'Yes' ? '💡 Yes' : '⚫ No'}</Text>,
+    columns: () => 2,
   },
   'odd-one-out': {
     option: (e) => <Text style={styles.oddItem}>{e}</Text>,

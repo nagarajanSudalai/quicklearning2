@@ -1,0 +1,980 @@
+[
+  {
+    "id": "g4-robo-sensors-01",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 1,
+    "prompt": "The robot reads its distance sensor. How many times does it say the word?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 9
+        },
+        {
+          "if": {
+            "v": "distance",
+            "op": "<",
+            "n": 5
+          },
+          "then": [
+            {
+              "say": "stop"
+            }
+          ],
+          "else": [
+            {
+              "say": "go"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "stop"
+      }
+    },
+    "options": [
+      10,
+      1,
+      0
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-robo-sensors-02",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 1,
+    "prompt": "The robot reads its distance sensor. How many times does it say the word?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 19
+        },
+        {
+          "if": {
+            "v": "distance",
+            "op": "<",
+            "n": 10
+          },
+          "then": [
+            {
+              "say": "stop"
+            }
+          ],
+          "else": [
+            {
+              "say": "go"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "stop"
+      }
+    },
+    "options": [
+      2,
+      0,
+      1
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-robo-sensors-03",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 1,
+    "prompt": "The robot reads its distance sensor. How many times does it say the word?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 8
+        },
+        {
+          "if": {
+            "v": "distance",
+            "op": "<",
+            "n": 10
+          },
+          "then": [
+            {
+              "say": "stop"
+            }
+          ],
+          "else": [
+            {
+              "say": "go"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "stop"
+      }
+    },
+    "options": [
+      3,
+      1,
+      2
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g4-robo-sensors-04",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 1,
+    "prompt": "The robot reads its distance sensor. How many times does it say the word?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 12
+        },
+        {
+          "if": {
+            "v": "distance",
+            "op": "<",
+            "n": 10
+          },
+          "then": [
+            {
+              "say": "stop"
+            }
+          ],
+          "else": [
+            {
+              "say": "go"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "stop"
+      }
+    },
+    "options": [
+      10,
+      1,
+      0
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-robo-sensors-05",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 1,
+    "prompt": "The robot reads its distance sensor. How many times does it say the word?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 7
+        },
+        {
+          "if": {
+            "v": "distance",
+            "op": "<",
+            "n": 5
+          },
+          "then": [
+            {
+              "say": "stop"
+            }
+          ],
+          "else": [
+            {
+              "say": "go"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "stop"
+      }
+    },
+    "options": [
+      2,
+      1,
+      0
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-robo-sensors-06",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 1,
+    "prompt": "The robot reads its distance sensor. How many times does it say the word?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 13
+        },
+        {
+          "if": {
+            "v": "distance",
+            "op": "<",
+            "n": 5
+          },
+          "then": [
+            {
+              "say": "stop"
+            }
+          ],
+          "else": [
+            {
+              "say": "go"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "stop"
+      }
+    },
+    "options": [
+      10,
+      1,
+      0
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-robo-sensors-07",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 1,
+    "prompt": "The robot reads its distance sensor. How many times does it say the word?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 5
+        },
+        {
+          "if": {
+            "v": "distance",
+            "op": "<",
+            "n": 5
+          },
+          "then": [
+            {
+              "say": "stop"
+            }
+          ],
+          "else": [
+            {
+              "say": "go"
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "go"
+      }
+    },
+    "options": [
+      1,
+      11,
+      2
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g4-robo-sensors-08",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 2,
+    "prompt": "The robot drives towards a wall. How many times does it beep?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 15
+        },
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "add": "distance",
+              "by": -4
+            },
+            {
+              "if": {
+                "v": "distance",
+                "op": "<",
+                "n": 6
+              },
+              "then": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      4,
+      5,
+      3
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g4-robo-sensors-09",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 2,
+    "prompt": "The robot drives towards a wall. How many times does it beep?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 11
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "distance",
+              "by": -3
+            },
+            {
+              "if": {
+                "v": "distance",
+                "op": "<",
+                "n": 5
+              },
+              "then": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      3,
+      2,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g4-robo-sensors-10",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 2,
+    "prompt": "The robot drives towards a wall. How many times does it beep?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 20
+        },
+        {
+          "repeat": 3,
+          "body": [
+            {
+              "add": "distance",
+              "by": -3
+            },
+            {
+              "if": {
+                "v": "distance",
+                "op": "<",
+                "n": 4
+              },
+              "then": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      10,
+      1,
+      0
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g4-robo-sensors-11",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 2,
+    "prompt": "The robot drives towards a wall. How many times does it beep?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 12
+        },
+        {
+          "repeat": 6,
+          "body": [
+            {
+              "add": "distance",
+              "by": -2
+            },
+            {
+              "if": {
+                "v": "distance",
+                "op": "<",
+                "n": 8
+              },
+              "then": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      4,
+      14,
+      5
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g4-robo-sensors-12",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 2,
+    "prompt": "The robot drives towards a wall. How many times does it beep?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 17
+        },
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "add": "distance",
+              "by": -3
+            },
+            {
+              "if": {
+                "v": "distance",
+                "op": "<",
+                "n": 9
+              },
+              "then": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      5,
+      3,
+      2
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g4-robo-sensors-13",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 2,
+    "prompt": "The robot drives towards a wall. How many times does it beep?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 13
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "distance",
+              "by": -3
+            },
+            {
+              "if": {
+                "v": "distance",
+                "op": "<",
+                "n": 4
+              },
+              "then": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      3,
+      1,
+      2
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g4-robo-sensors-14",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 2,
+    "prompt": "The robot drives towards a wall. How many times does it beep?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "distance",
+          "to": 11
+        },
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "add": "distance",
+              "by": -2
+            },
+            {
+              "if": {
+                "v": "distance",
+                "op": "<",
+                "n": 7
+              },
+              "then": [
+                {
+                  "say": "beep"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "says": "beep"
+      }
+    },
+    "options": [
+      3,
+      2,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g4-robo-sensors-15",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 3,
+    "prompt": "The robot checks its light sensor. What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "light",
+          "to": 0
+        },
+        {
+          "set": "lamps",
+          "to": 0
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "light",
+              "by": 2
+            },
+            {
+              "if": {
+                "v": "light",
+                "op": ">",
+                "n": 5
+              },
+              "then": [
+                {
+                  "add": "lamps",
+                  "by": 1
+                }
+              ],
+              "else": [
+                {
+                  "add": "lamps",
+                  "by": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "lamps"
+      }
+    },
+    "options": [
+      2,
+      12,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g4-robo-sensors-16",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 3,
+    "prompt": "The robot checks its light sensor. What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "light",
+          "to": 0
+        },
+        {
+          "set": "lamps",
+          "to": 0
+        },
+        {
+          "repeat": 4,
+          "body": [
+            {
+              "add": "light",
+              "by": 2
+            },
+            {
+              "if": {
+                "v": "light",
+                "op": ">",
+                "n": 2
+              },
+              "then": [
+                {
+                  "add": "lamps",
+                  "by": 1
+                }
+              ],
+              "else": [
+                {
+                  "add": "lamps",
+                  "by": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "light"
+      }
+    },
+    "options": [
+      18,
+      8,
+      9
+    ],
+    "answer": 8
+  },
+  {
+    "id": "g4-robo-sensors-17",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 3,
+    "prompt": "The robot checks its light sensor. What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "light",
+          "to": 0
+        },
+        {
+          "set": "lamps",
+          "to": 0
+        },
+        {
+          "repeat": 6,
+          "body": [
+            {
+              "add": "light",
+              "by": 2
+            },
+            {
+              "if": {
+                "v": "light",
+                "op": ">",
+                "n": 4
+              },
+              "then": [
+                {
+                  "add": "lamps",
+                  "by": 1
+                }
+              ],
+              "else": [
+                {
+                  "add": "lamps",
+                  "by": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "lamps"
+      }
+    },
+    "options": [
+      5,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "id": "g4-robo-sensors-18",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 3,
+    "prompt": "The robot checks its light sensor. What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "light",
+          "to": 0
+        },
+        {
+          "set": "lamps",
+          "to": 0
+        },
+        {
+          "repeat": 5,
+          "body": [
+            {
+              "add": "light",
+              "by": 2
+            },
+            {
+              "if": {
+                "v": "light",
+                "op": ">",
+                "n": 3
+              },
+              "then": [
+                {
+                  "add": "lamps",
+                  "by": 1
+                }
+              ],
+              "else": [
+                {
+                  "add": "lamps",
+                  "by": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "light"
+      }
+    },
+    "options": [
+      20,
+      10,
+      9
+    ],
+    "answer": 10
+  },
+  {
+    "id": "g4-robo-sensors-19",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 3,
+    "prompt": "The robot checks its light sensor. What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "light",
+          "to": 0
+        },
+        {
+          "set": "lamps",
+          "to": 0
+        },
+        {
+          "repeat": 6,
+          "body": [
+            {
+              "add": "light",
+              "by": 1
+            },
+            {
+              "if": {
+                "v": "light",
+                "op": ">",
+                "n": 2
+              },
+              "then": [
+                {
+                  "add": "lamps",
+                  "by": 1
+                }
+              ],
+              "else": [
+                {
+                  "add": "lamps",
+                  "by": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "light"
+      }
+    },
+    "options": [
+      16,
+      6,
+      5
+    ],
+    "answer": 6
+  },
+  {
+    "id": "g4-robo-sensors-20",
+    "grade": 4,
+    "subject": "robotics",
+    "topic": "g4-robo-sensors",
+    "difficulty": 3,
+    "prompt": "The robot checks its light sensor. What is the value asked for at the end?",
+    "type": "code-trace",
+    "payload": {
+      "program": [
+        {
+          "set": "light",
+          "to": 0
+        },
+        {
+          "set": "lamps",
+          "to": 0
+        },
+        {
+          "repeat": 6,
+          "body": [
+            {
+              "add": "light",
+              "by": 1
+            },
+            {
+              "if": {
+                "v": "light",
+                "op": ">",
+                "n": 3
+              },
+              "then": [
+                {
+                  "add": "lamps",
+                  "by": 1
+                }
+              ],
+              "else": [
+                {
+                  "add": "lamps",
+                  "by": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ask": {
+        "v": "lamps"
+      }
+    },
+    "options": [
+      3,
+      5,
+      6
+    ],
+    "answer": 3
+  }
+]

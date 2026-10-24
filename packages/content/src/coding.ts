@@ -50,7 +50,7 @@ export function runGrid(g: Grid, program: CodeBlock[]): RunResult {
 export const PROBLEM_TEXT: Record<Exclude<RunResult['problem'], null>, string> = {
   wall: 'Bump! The robot hit a wall.',
   short: 'The robot stopped before the star.',
-  coins: 'Almost! Pick up every coin on the way.',
+  coins: 'Almost! Collect everything on the way.',
   blocks: 'Too many blocks — try using fewer.',
   empty: 'Add some blocks first.',
 };

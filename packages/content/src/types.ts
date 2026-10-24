@@ -1,7 +1,7 @@
 export type ShapeKind = 'star' | 'circle' | 'square' | 'tri' | 'diamond' | 'rectangle';
 
 export type Grade = 1 | 2 | 3 | 4 | 5;
-export type SubjectId = 'maths' | 'english' | 'science' | 'coding' | 'puzzles' | 'thinking' | 'practice';
+export type SubjectId = 'maths' | 'english' | 'science' | 'coding' | 'robotics' | 'puzzles' | 'thinking' | 'practice';
 export type Difficulty = 1 | 2 | 3;
 
 /** Everything a puzzle record shares. `prompt` is shown on screen and read aloud. */
@@ -420,7 +420,18 @@ export type CodeGridPuzzle = Base & {
     program?: CodeBlock[];
     /** One working program, for the checker. */
     solution: CodeBlock[];
+    /** What the robot collects instead of coins (robotics missions), e.g. 📦. */
+    item?: string;
   };
+};
+
+/** Robotics: will the bulb light up? A loop of wire with a battery, maybe a switch, a broken
+ * wire, or a gap closed by an object that may or may not conduct electricity. */
+export type CircuitPuzzle = Base & {
+  type: 'circuit';
+  payload: { battery: boolean; broken: boolean; bulbs: 1 | 2; switch?: 'open' | 'closed'; gap?: { item: string; name: string } };
+  options: string[];
+  answer: string;
 };
 
 /** Coding: read a short program and work out what it does. */
@@ -475,7 +486,8 @@ export type ChoicePuzzle =
   | ScienceQuizPuzzle
   | TrueFalsePuzzle
   | LabelPuzzle
-  | CodeTracePuzzle;
+  | CodeTracePuzzle
+  | CircuitPuzzle;
 
 /** Puzzles with their own multi-step play. */
 export type InteractivePuzzle = CrosswordPuzzle | SortPuzzle | MemoryPuzzle | MazePuzzle | BuildPuzzle | SudokuPuzzle | OrderStepsPuzzle | LogicGridPuzzle | MagicSquarePuzzle | PickAllPuzzle | WordLadderPuzzle | SumGridPuzzle | CodeGridPuzzle;

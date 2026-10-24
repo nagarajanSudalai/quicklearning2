@@ -16,6 +16,7 @@ import { ANALOGIES, CLUES } from '../src/thinking3.ts';
 import { isMagic, logicSolutions, magicSolutions, sumGridSolutions } from '../src/logic.ts';
 import { ANALOGIES5, CLUES5, TEASERS } from '../src/thinking5.ts';
 import { runGrid, traceAnswer } from '../src/coding.ts';
+import { CIRCUIT_ITEMS, ROBO_FACTS, ROBO_GROUPS, ROBO_QUIZ, bulbLights } from '../src/robotics.ts';
 import { DIAGRAMS, SCIENCE_FACTS, SCIENCE_GROUPS, SCIENCE_QUIZ } from '../src/science.ts';
 import { HOMOPHONES, PASSAGES, PAST, SYNONYMS, parseTagged } from '../src/words3.ts';
 import { CONJUNCTIONS, IDIOMS, PASSAGES5, PREPOSITIONS, SPELLINGS, VOICE } from '../src/words5.ts';
@@ -25,7 +26,9 @@ import { KNOWN_WORDS, PICTURES, rhymes } from '../src/words.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'puzzles');
 const SHAPES = ['star', 'circle', 'square', 'tri', 'diamond', 'rectangle'];
-const GROUPS = [...CATEGORIES, ...SCIENCE_GROUPS];
+const GROUPS = [...CATEGORIES, ...SCIENCE_GROUPS, ...ROBO_GROUPS];
+const QUIZ = [...SCIENCE_QUIZ, ...ROBO_QUIZ];
+const FACTS = [...SCIENCE_FACTS, ...ROBO_FACTS];
 const errors: string[] = [];
 const ids = new Set<string>();
 let total = 0;
@@ -297,19 +300,25 @@ function check(p: any): string | null {
       if (p.options.some((o: string) => o !== t.answer && !t.wrong.includes(o))) return 'unknown option';
       return t.answer === p.answer ? null : `answer is ${t.answer}`;
     }
+    case 'circuit': {
+      if (p.options.join() !== 'Yes,No') return 'options must be Yes, No';
+      if (q.gap && !CIRCUIT_ITEMS.some((c) => c.name === q.gap.name && c.item === q.gap.item)) return `unknown object ${q.gap.name}`;
+      const want = bulbLights(q) ? 'Yes' : 'No';
+      return want === p.answer ? null : `answer is ${want}`;
+    }
     case 'code-trace': {
       const want = traceAnswer(q.program, q.ask);
       if (new Set(p.options).size !== p.options.length) return 'options must be different';
       return want === p.answer ? null : `answer is ${want}`;
     }
     case 'science-quiz': {
-      const x = SCIENCE_QUIZ.find((i) => i.id === q.id);
+      const x = QUIZ.find((i) => i.id === q.id);
       if (!x || x.question !== q.question || x.topic !== p.topic) return 'question not in the science bank for this topic';
       if (p.options.some((o: string) => o !== x.answer && !x.wrong.includes(o))) return 'unknown option';
       return x.answer === p.answer ? null : `answer is "${x.answer}"`;
     }
     case 'true-false': {
-      const x = SCIENCE_FACTS.find((i) => i.id === q.id);
+      const x = FACTS.find((i) => i.id === q.id);
       if (!x || x.statement !== q.statement || x.topic !== p.topic) return 'fact not in the science bank for this topic';
       if (p.options.join() !== 'True,False') return 'options must be True, False';
       return (x.answer ? 'True' : 'False') === p.answer ? null : `answer is ${x.answer}`;
