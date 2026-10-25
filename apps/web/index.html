@@ -1,15 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuickStep · Learn, Think, Discover</title>
+    <title>QuickStep · Fun Learning App for Classes 1–5 (CBSE/NCERT)</title>
+    <meta name="description" content="Free learning games and practice for Classes 1 to 5: Maths, English, Science, Coding and Robotics, following the NCERT/CBSE syllabus. Puzzles, tests and progress reports — no ads." />
+    <link rel="canonical" href="__SITE_URL__/" />
+    <meta name="theme-color" content="#4f3bdb" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="QuickStep" />
+    <meta property="og:title" content="QuickStep · Fun Learning App for Classes 1–5" />
+    <meta property="og:description" content="Maths, English, Science, Coding and Robotics for Classes 1–5, as puzzles and games. NCERT/CBSE aligned, ad-free." />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:image" content="__SITE_URL__/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QuickStep · Fun Learning App for Classes 1–5" />
+    <meta name="twitter:description" content="Maths, English, Science, Coding and Robotics for Classes 1–5, as puzzles and games." />
+    <meta name="twitter:image" content="__SITE_URL__/og-image.png" />
+    <!-- __SEARCH_CONSOLE__ -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          { "@type": "Organization", "@id": "__SITE_URL__/#org", "name": "QuickStep", "url": "__SITE_URL__/", "logo": "__SITE_URL__/og-image.png" },
+          { "@type": "WebSite", "@id": "__SITE_URL__/#site", "name": "QuickStep", "url": "__SITE_URL__/", "inLanguage": "en-IN", "publisher": { "@id": "__SITE_URL__/#org" } },
+          {
+            "@type": "WebApplication",
+            "name": "QuickStep",
+            "url": "__SITE_URL__/app/",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Any (web browser)",
+            "audience": { "@type": "EducationalAudience", "educationalRole": "student", "audienceType": "Children in Classes 1–5" },
+            "educationalLevel": ["Class 1", "Class 2", "Class 3", "Class 4", "Class 5"],
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+            "publisher": { "@id": "__SITE_URL__/#org" }
+          }
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!--app--></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

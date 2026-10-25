@@ -334,6 +334,24 @@ Still to do in the Supabase dashboard:
 - **New `circuit` type**: battery, one or two bulbs, a switch, a broken wire, or a gap closed by an object that may conduct. The checker recomputes the answer with `bulbLights()`.
 - **Content**: lives in `packages/content/src/robotics.ts`.
 
+## SEO and the domain
+
+`npm run build` ends with `apps/web/scripts/seo.mjs`, which:
+- **pre-renders the homepage**, so search engines and link previews see the full page without JavaScript;
+- **writes a page per class** at `/class-1/` … `/class-5/`. Each lists every topic in every subject with links into the app, plus structured data (Course and BreadcrumbList);
+- **fills in the site address** (`__SITE_URL__`) in canonical links, Open Graph/Twitter tags and structured data on the homepage, articles and privacy page;
+- **writes `sitemap.xml` and `robots.txt`**. The app at `/app/` is `noindex` and not crawled, since its screens are for playing.
+
+The share image is `apps/web/public/og-image.png` (1200×630).
+
+### Moving to the real domain
+1. **Buy the domain**, e.g. at Cloudflare Registrar, Namecheap or GoDaddy, and get the `.in` too if you like.
+2. **Vercel → Project → Settings → Domains**: add `www.yourdomain.com` and `yourdomain.com`, and make one redirect to the other. Add the DNS records Vercel shows at your registrar: usually an `A` record for the bare domain and a `CNAME` for `www`.
+3. **Vercel → Settings → Environment Variables**: set `SITE_URL=https://www.yourdomain.com` and redeploy. Every canonical link, the sitemap and the share tags switch over.
+4. **Supabase → Authentication → URL Configuration**: change the Site URL to the new address.
+5. **Google Search Console**: add the domain, verify it with the DNS TXT record (or set `GOOGLE_SITE_VERIFICATION` in Vercel to add the meta tag), then submit `https://www.yourdomain.com/sitemap.xml`.
+6. **Bing Webmaster Tools**: import from Search Console.
+
 ## Adaptive difficulty
 
 A session is 10 puzzles. It starts at the easiest level that still has unsolved puzzles, moves **up a level after 3 first-try answers in a row**, and **down a level after 2 misses in a row**. Within a level, unsolved puzzles come before replays. The rules are in `packages/content/src/adaptive.ts`, and `npm test` covers them.

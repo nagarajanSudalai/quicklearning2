@@ -12,7 +12,7 @@
     "validate-content": "npm run validate -w packages/content",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "build:app": "npm run export:web -w apps/mobile",
-    "build": "npm run build:web && npm run build:app && rm -rf apps/web/dist/app && cp -r apps/mobile/dist apps/web/dist/app",
+    "build": "npm run build:web && npm run build:app && rm -rf apps/web/dist/app && cp -r apps/mobile/dist apps/web/dist/app && node apps/web/scripts/seo.mjs",
     "test": "npm run test -w packages/content"
   },
   "overrides": {

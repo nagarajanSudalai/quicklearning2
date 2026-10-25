@@ -22,6 +22,7 @@ export default function App({ animations = true }: { animations?: boolean }) {
         <div className="site-footer__inner">
           <span>© 2026 QuickStep</span>
           <span className="site-footer__links">
+            {[1, 2, 3, 4, 5].map((g) => <a key={g} href={`/class-${g}/`}>Class {g}</a>)}
             <a href="/privacy.html">Privacy</a>
             <a href="#parents">For Parents</a>
             <a href="/articles/">Articles</a>
